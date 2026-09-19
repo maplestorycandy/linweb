@@ -27,4 +27,6 @@ Thumbs.db
 src_cs_backup/
 build_web.bat
 *.tpz
+storage_backup/
+
 

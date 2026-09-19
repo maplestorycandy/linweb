@@ -13,8 +13,8 @@ func _ready() -> void:
 	show_menu()
 
 func _apply_theme() -> void:
-	# 強制載入繁體中文字型 NotoSansTC，解決 WebAssembly 平台缺字 tofu 亂碼問題
-	var font_path = "res://assets/fonts/NotoSansTC-VF.ttf"
+	# 載入輕量像素繁體中文字型 Cubic_11，解決 WebAssembly 平台缺字 tofu 亂碼問題，且體積僅 2.7MB 秒開
+	var font_path = "res://assets/fonts/Cubic_11.ttf"
 	if ResourceLoader.exists(font_path):
 		var f: FontFile = load(font_path)
 		if f != null:
@@ -22,7 +22,8 @@ func _apply_theme() -> void:
 			th.default_font = f
 			th.default_font_size = 13
 			self.theme = th
-			print("[GameRoot] 已成功套用全域中文字型：NotoSansTC-VF.ttf")
+			print("[GameRoot] 已成功套用全域中文字型：Cubic_11.ttf")
+
 
 func show_screen(screen: Control) -> void:
 	if _current_screen != null:

@@ -302,19 +302,21 @@ func _refresh() -> void:
 
 func _update_preview() -> void:
 	var c_key = CLASS_KEYS[_class_index]
-	var idx = 378
+	var prefix = "m_" if _male else "f_"
+	var name = "m_knight"
 	match c_key:
-		"royal": idx = 714 if _male else 629
-		"knight": idx = 378 if _male else 315
-		"elf": idx = 245 if _male else 166
-		"mage": idx = 531 if _male else 452
-		"dark": idx = 90 if _male else 25
-		"illusion": idx = 968 if _male else 1039
-		"dragon": idx = 841 if _male else 908
-		"warrior": idx = 1992 if _male else 1908
-	var p = "res://assets/start/%d.png" % idx
+		"royal": name = "prince" if _male else "princess"
+		"knight": name = prefix + "knight"
+		"elf": name = prefix + "elf"
+		"mage": name = prefix + "mage"
+		"dark": name = prefix + "dark"
+		"illusion": name = prefix + "illusionist"
+		"dragon": name = prefix + "Dknight"
+		"warrior": name = prefix + "warrior"
+	var p = "res://assets/start/%s.png" % name
 	if ResourceLoader.exists(p):
 		_preview_rect.texture = load(p)
+
 
 func _on_create_confirmed() -> void:
 	var c_key = CLASS_KEYS[_class_index]

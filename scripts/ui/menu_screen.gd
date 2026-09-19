@@ -290,19 +290,24 @@ func _add_slot_card(info: Dictionary, column: int) -> void:
 		name_lbl.add_theme_font_size_override("font_size", 12)
 		card.add_child(name_lbl)
 
-func _get_start_seq_texture(class_name: String, gender: String) -> Texture2D:
-	# 依職業獲取 assets/start/ 裡的第一幀或立繪
-	var idx = 378 # 預設騎士
-	match class_name:
-		"royal": idx = 714 if gender == "male" else 629
-		"knight": idx = 378 if gender == "male" else 315
-		"elf": idx = 245 if gender == "male" else 166
-		"mage": idx = 531 if gender == "male" else 452
-		"dark": idx = 90 if gender == "male" else 25
-	var p = "res://assets/start/%d.png" % idx
+func _get_start_seq_texture(cls_key: String, gender: String) -> Texture2D:
+	var prefix = "m_" if gender == "male" else "f_"
+	var name = "m_knight"
+	match cls_key:
+		"royal": name = "prince" if gender == "male" else "princess"
+		"knight": name = prefix + "knight"
+		"elf": name = prefix + "elf"
+		"mage": name = prefix + "mage"
+		"dark": name = prefix + "dark"
+		"illusion": name = prefix + "illusionist"
+		"dragon": name = prefix + "Dknight"
+		"warrior": name = prefix + "warrior"
+	var p = "res://assets/start/%s.png" % name
 	if ResourceLoader.exists(p):
 		return load(p)
 	return null
+
+
 
 func _add_selected_info(info: Dictionary) -> void:
 	var is_empty = info.get("empty", false) or not info.has("name") or str(info.get("name", "")).is_empty()
