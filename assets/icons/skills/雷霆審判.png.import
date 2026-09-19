@@ -2,13 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://zeus_icon_skill_253"
-path="res://.godot/imported/assets/icons/skills/雷霆審判.png-zeus13394.ctex"
+uid="uid://bvfl37qralh1r"
+path="res://.godot/imported/雷霆審判.png-fc2e5e56e21a82c7df1374222a2d19a9.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
-source_file="res://assets/atlas/anim/assets/icons/skills/雷霆審判.png"
-dest_files=["res://.godot/imported/assets/icons/skills/雷霆審判.png-zeus13394.ctex"]
+source_file="res://assets/icons/skills/雷霆審判.png"
+dest_files=["res://.godot/imported/雷霆審判.png-fc2e5e56e21a82c7df1374222a2d19a9.ctex"]
 
 [params]
 
@@ -20,6 +23,7 @@ compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false
 mipmaps/limit=-1
+roughness/mode=0
 roughness/src_normal=""
 process/fix_alpha_border=true
 process/premult_alpha=false

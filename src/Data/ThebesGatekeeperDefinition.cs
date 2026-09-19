@@ -1,3 +1,0 @@
-namespace IdleLineage.Data;
-
-public sealed record ThebesGatekeeperDefinition(string DisplayName, int SpriteGfx, int SpriteAnchorX, int SpriteAnchorY, string InteractionLandmarkId, string RequiredKeyItemKey, string DestinationMapKey, string ArrivalLandmarkId);

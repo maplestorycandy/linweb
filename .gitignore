@@ -22,3 +22,9 @@ build/
 # 系統快取
 .DS_Store
 Thumbs.db
+
+# C# 備份與本地工具
+src_cs_backup/
+build_web.bat
+*.tpz
+

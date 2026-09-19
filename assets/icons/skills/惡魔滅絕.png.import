@@ -2,13 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://demon_icon_skill_256"
-path="res://.godot/imported/assets/icons/skills/惡魔滅絕.png-demon13399.ctex"
+uid="uid://wc5dmmdqjpwg"
+path="res://.godot/imported/惡魔滅絕.png-8aec35539305636511e476bfd4c0ba82.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
-source_file="res://assets/atlas/anim/assets/icons/skills/惡魔滅絕.png"
-dest_files=["res://.godot/imported/assets/icons/skills/惡魔滅絕.png-demon13399.ctex"]
+source_file="res://assets/icons/skills/惡魔滅絕.png"
+dest_files=["res://.godot/imported/惡魔滅絕.png-8aec35539305636511e476bfd4c0ba82.ctex"]
 
 [params]
 
@@ -20,6 +23,7 @@ compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false
 mipmaps/limit=-1
+roughness/mode=0
 roughness/src_normal=""
 process/fix_alpha_border=true
 process/premult_alpha=false

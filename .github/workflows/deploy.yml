@@ -1,12 +1,14 @@
-name: Deploy Idle Lineage Web to GitHub Pages
+name: "Deploy Godot 4 Web to GitHub Pages"
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
+      - master
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -15,24 +17,45 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout Source Code
         uses: actions/checkout@v4
         with:
           lfs: true
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+      - name: Setup Godot 4.3 Engine & Export Templates
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq wget unzip
+          
+          # Download Godot 4.3 Linux Headless Binary
+          wget -q https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_linux.x86_64.zip
+          unzip -q Godot_v4.3-stable_linux.x86_64.zip
+          sudo mv Godot_v4.3-stable_linux.x86_64 /usr/local/bin/godot
+          sudo chmod +x /usr/local/bin/godot
 
-      - name: Upload Pages Artifact
+          # Setup Official Export Templates
+          mkdir -p ~/.local/share/godot/export_templates/4.3.stable
+          wget -q https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_export_templates.tpz
+          unzip -q Godot_v4.3-stable_export_templates.tpz
+          mv templates/* ~/.local/share/godot/export_templates/4.3.stable/
+          rm -rf templates Godot_v4.3-stable_export_templates.tpz Godot_v4.3-stable_linux.x86_64.zip
+
+      - name: Export Web Project
+        run: |
+          mkdir -p build/web
+          # Force import all fonts and assets into .godot cache
+          godot --headless --editor --quit || true
+          # Export release Web package with embedded fonts
+          godot -v --headless --export-release "Web" build/web/index.html
+          cp coi-serviceworker.js build/web/coi-serviceworker.js || true
+
+      - name: Upload GitHub Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: build/web
 
       - name: Deploy to GitHub Pages
         id: deployment

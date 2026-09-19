@@ -2,13 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://demon_icon_skill_255"
-path="res://.godot/imported/assets/icons/skills/獄火煉獄.png-demon13399.ctex"
+uid="uid://b02aaymrnhxpc"
+path="res://.godot/imported/獄火煉獄.png-0447ed1d729552069026b40ca5bcc476.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
-source_file="res://assets/atlas/anim/assets/icons/skills/獄火煉獄.png"
-dest_files=["res://.godot/imported/assets/icons/skills/獄火煉獄.png-demon13399.ctex"]
+source_file="res://assets/icons/skills/獄火煉獄.png"
+dest_files=["res://.godot/imported/獄火煉獄.png-0447ed1d729552069026b40ca5bcc476.ctex"]
 
 [params]
 
@@ -20,6 +23,7 @@ compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=false
 mipmaps/limit=-1
+roughness/mode=0
 roughness/src_normal=""
 process/fix_alpha_border=true
 process/premult_alpha=false

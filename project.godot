@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="Idle Lineage"
-config/description="放置天堂 Fable 5 桌面移植"
+config/description="放置天堂 Web 移植版"
 run/main_scene="res://scenes/app.tscn"
-config/features=PackedStringArray("4.7", "C#", "GL Compatibility")
+config/features=PackedStringArray("4.3", "GL Compatibility")
 
 [autoload]
 
 AtlasLibrary="*res://scripts/atlas_library.gd"
+DataManager="*res://scripts/data_manager.gd"
 
 [display]
 
@@ -27,10 +28,6 @@ window/size/window_width_override=1600
 window/size/window_height_override=900
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
-
-[dotnet]
-
-project/assembly_name="IdleLineage"
 
 [editor_overrides]
 
