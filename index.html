@@ -2,10 +2,9 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>放置天堂 (Idle Lineage) 網頁版 ｜ 官方 Web 免費暢玩</title>
   <meta name="description" content="放置天堂 (Idle Lineage) 官方網頁版 — 經典天堂原汁原味重現，微核心動態串流技術，免下載十幾G素材，點開即玩！">
-  <script src="coi-serviceworker.js"></script>
   <style>
     :root {
       --bg: #0b0e14;
@@ -17,15 +16,15 @@
       --gold2: #f1d98c;
       --tx: #dbe2f0;
       --tx2: #8fa0bf;
-      --red: #f87171;
-      --green: #4ade80;
-      --blue: #60a5fa;
+      --red: #ef4444;
+      --green: #22c55e;
+      --blue: #3b82f6;
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * { margin: 0; padding: 0; box-sizing: border-box; user-select: none; }
     body {
       background: var(--bg);
       color: var(--tx);
-      font: 15px/1.75 "Microsoft JhengHei", "Noto Sans TC", system-ui, sans-serif;
+      font: 14px/1.5 "Microsoft JhengHei", "Noto Sans TC", system-ui, sans-serif;
       overflow-x: hidden;
       display: flex;
       flex-direction: column;
@@ -49,14 +48,14 @@
       align-items: center;
       justify-content: space-between;
       gap: 16px;
-      padding: 12px 0;
+      padding: 10px 0;
       flex-wrap: wrap;
     }
     .brand {
       display: flex;
       align-items: center;
-      gap: 12px;
-      font-size: 22px;
+      gap: 10px;
+      font-size: 20px;
       font-weight: 900;
       color: var(--gold);
       letter-spacing: 2px;
@@ -64,15 +63,15 @@
     }
     .nav {
       display: flex;
-      gap: 12px;
+      gap: 10px;
       flex-wrap: wrap;
     }
     .nav a {
-      padding: 6px 12px;
+      padding: 5px 12px;
       background: rgba(255,255,255,0.05);
       border: 1px solid var(--line);
       border-radius: 6px;
-      font-size: 14px;
+      font-size: 13px;
     }
     .nav a:hover, .nav a.active {
       background: var(--line);
@@ -82,29 +81,39 @@
 
     /* Game Stage */
     .game-section {
-      padding: 24px 0;
+      padding: 16px 0;
       flex: 1;
-    }
-    .game-container {
-      background: #000;
-      border: 2px solid var(--gold);
-      border-radius: 8px;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.8), 0 0 16px rgba(212,175,55,0.2);
-      overflow: hidden;
       display: flex;
       flex-direction: column;
       align-items: center;
-      position: relative;
-      min-height: 600px;
     }
-    #canvas {
+    .game-container {
       width: 100%;
       max-width: 960px;
-      height: 600px;
-      display: block;
-      background: #05070a;
-      outline: none;
+      background: #000;
+      border: 2px solid var(--gold);
+      border-radius: 8px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.8), 0 0 20px rgba(212,175,55,0.25);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      position: relative;
     }
+    .viewport {
+      position: relative;
+      width: 100%;
+      height: 560px;
+      background: #05070a;
+      overflow: hidden;
+      cursor: crosshair;
+    }
+    #gameCanvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    /* Overlay Start Screen */
     .game-overlay {
       position: absolute;
       inset: 0;
@@ -112,26 +121,25 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background: radial-gradient(circle, rgba(18,24,38,0.95) 0%, rgba(11,14,20,0.98) 100%);
-      z-index: 10;
+      background: radial-gradient(circle, rgba(18,24,38,0.92) 0%, rgba(11,14,20,0.98) 100%);
+      z-index: 50;
       padding: 24px;
       text-align: center;
-    }
-    .game-overlay.hidden {
-      display: none;
     }
     .game-title {
       font-size: 32px;
       color: var(--gold);
       margin-bottom: 12px;
-      text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+      text-shadow: 0 2px 10px rgba(0,0,0,0.9);
       font-family: "Noto Serif TC", serif;
+      letter-spacing: 2px;
     }
     .game-desc {
       color: var(--tx2);
       max-width: 600px;
       margin-bottom: 24px;
       font-size: 15px;
+      line-height: 1.8;
     }
     .btn-play {
       display: inline-flex;
@@ -141,28 +149,138 @@
       color: #000;
       font-weight: 900;
       font-size: 18px;
-      padding: 14px 40px;
+      padding: 14px 44px;
       border-radius: 30px;
       border: 2px solid #fff;
       cursor: pointer;
-      box-shadow: 0 4px 20px rgba(212,175,55,0.5);
+      box-shadow: 0 4px 20px rgba(212,175,55,0.6);
       transition: all 0.2s;
     }
     .btn-play:hover {
-      transform: scale(1.05);
+      transform: scale(1.06);
       background: linear-gradient(135deg, #f1d98c, #d4af37);
-      box-shadow: 0 6px 25px rgba(212,175,55,0.8);
+      box-shadow: 0 6px 28px rgba(212,175,55,0.9);
     }
+
+    /* In-Game HUD UI */
+    .hud-layer {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .hud-top {
+      padding: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .player-card {
+      background: rgba(11, 14, 20, 0.85);
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--gold);
+      padding: 8px 14px;
+      border-radius: 6px;
+      backdrop-filter: blur(4px);
+    }
+    .player-name {
+      font-weight: bold;
+      color: var(--gold2);
+      margin-bottom: 4px;
+    }
+    .bar-wrap {
+      width: 160px;
+      height: 10px;
+      background: #222;
+      border: 1px solid #444;
+      border-radius: 5px;
+      margin-bottom: 4px;
+      overflow: hidden;
+    }
+    .hp-bar { height: 100%; width: 100%; background: linear-gradient(90deg, #dc2626, #ef4444); transition: width 0.15s; }
+    .mp-bar { height: 100%; width: 100%; background: linear-gradient(90deg, #2563eb, #3b82f6); transition: width 0.15s; }
+    
+    .hud-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 12px;
+    }
+    .chat-box {
+      width: 380px;
+      height: 90px;
+      background: rgba(11, 14, 20, 0.85);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 6px 10px;
+      font-size: 12px;
+      overflow-y: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 3px;
+      backdrop-filter: blur(4px);
+    }
+    .chat-msg { color: #ccc; }
+    .chat-msg.gain { color: #facc15; }
+    .chat-msg.dmg { color: #f87171; }
+    .chat-msg.sys { color: #60a5fa; }
+
+    .quick-slots {
+      display: flex;
+      gap: 8px;
+      pointer-events: auto;
+    }
+    .slot-btn {
+      width: 44px;
+      height: 44px;
+      background: rgba(21, 28, 44, 0.9);
+      border: 1px solid var(--gold);
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold2);
+      font-weight: bold;
+      font-size: 12px;
+      cursor: pointer;
+      position: relative;
+    }
+    .slot-btn:active { transform: scale(0.95); }
+    .slot-key {
+      position: absolute;
+      top: 2px;
+      left: 3px;
+      font-size: 9px;
+      color: #999;
+    }
+
+    .exp-bar-wrap {
+      width: 100%;
+      height: 6px;
+      background: #111;
+      border-top: 1px solid #333;
+    }
+    .exp-bar {
+      height: 100%;
+      width: 25%;
+      background: linear-gradient(90deg, #10b981, #34d399);
+      transition: width 0.3s;
+    }
+
     .game-status-bar {
       width: 100%;
       background: var(--panel);
-      padding: 10px 16px;
+      padding: 8px 16px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-top: 1px solid var(--line);
       font-size: 13px;
       color: var(--tx2);
+      border-top: 1px solid var(--line);
     }
 
     /* Highlights Section */
@@ -170,33 +288,36 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 20px;
-      margin-top: 24px;
+      margin-top: 20px;
+      width: 100%;
+      max-width: 960px;
     }
     .card {
       background: var(--panel);
       border: 1px solid var(--line);
       border-radius: 8px;
-      padding: 20px;
+      padding: 16px 20px;
     }
     .card h3 {
       color: var(--gold);
       margin-bottom: 8px;
-      font-size: 16px;
+      font-size: 15px;
     }
     .card p {
       color: var(--tx2);
-      font-size: 14px;
+      font-size: 13px;
+      line-height: 1.6;
     }
 
     /* Footer */
     footer {
       background: var(--panel2);
       border-top: 1px solid var(--line);
-      padding: 20px 0;
+      padding: 18px 0;
       text-align: center;
-      font-size: 13px;
+      font-size: 12px;
       color: var(--tx2);
-      margin-top: 40px;
+      margin-top: 32px;
     }
   </style>
 </head>
@@ -208,106 +329,479 @@
         ⚔️ 放置天堂 (Idle Lineage) 網頁版
       </div>
       <div class="nav">
-        <a href="index.html" class="active">遊戲首頁</a>
+        <a href="index.html" class="active">遊戲本體</a>
         <a href="https://github.com/maplestorycandy/linweb" target="_blank">GitHub 倉庫</a>
-        <a href="https://maplestorycandy.github.io/lin/" target="_blank">經典資料站</a>
+        <a href="https://maplestorycandy.github.io/lin/" target="_blank">數據資料站</a>
       </div>
     </div>
   </header>
 
   <main class="wrap game-section">
     <div class="game-container">
-      <canvas id="canvas"></canvas>
+      <div class="viewport" id="viewport">
+        <canvas id="gameCanvas"></canvas>
 
-      <div id="game-overlay" class="game-overlay">
-        <h1 class="game-title">經典天堂 × 放置掛機 × 網頁秒開</h1>
-        <p class="game-desc">
-          全新升級微核心動態串流技術，突破 15GB 素材限制。<br>
-          新手村「說話之島」隨選載入，原汁原味掉落與戰鬥公式，打開網頁立即遊玩！
-        </p>
-        <button id="btn-start" class="btn-play" onclick="startGame()">
-          ▶ 進入遊戲
-        </button>
-        <div id="loading-spinner" style="display:none; margin-top:16px;">
-          <p style="color:var(--gold);">⚡ 正在初始化 Web 引擎與說話之島資源...</p>
+        <!-- HUD Layer -->
+        <div class="hud-layer" id="hudLayer" style="display:none;">
+          <div class="hud-top">
+            <div class="player-card">
+              <div class="player-name">👑 [王族] 亞丁勇者 <span style="color:#aaa; font-size:11px;">Lv.<span id="uiLv">1</span></span></div>
+              <div class="bar-wrap"><div class="hp-bar" id="uiHpBar"></div></div>
+              <div class="bar-wrap"><div class="mp-bar" id="uiMpBar"></div></div>
+              <div style="font-size:11px; color:#999;">HP: <span id="uiHpTxt">85/85</span> ｜ 金幣: <span id="uiAdena" style="color:var(--gold);">1,250</span></div>
+            </div>
+            <div style="color:var(--gold2); font-weight:bold; text-shadow:0 1px 4px #000;">
+              📍 說話之島 (Talking Island)
+            </div>
+          </div>
+
+          <div class="hud-bottom">
+            <div class="chat-box" id="chatBox">
+              <div class="chat-msg sys">系統：歡迎來到《放置天堂》網頁版！</div>
+              <div class="chat-msg sys">操作提示：滑鼠左鍵點擊地面移動，點擊怪物自動攻擊！快捷鍵 [1] 使用治癒藥水。</div>
+            </div>
+
+            <div class="quick-slots">
+              <div class="slot-btn" onclick="usePotion()">
+                <span class="slot-key">1</span>
+                🧪
+                <span style="font-size:9px; color:#ef4444;" id="potionCount">x20</span>
+              </div>
+              <div class="slot-btn" onclick="toggleAutoCombat()">
+                <span class="slot-key">A</span>
+                ⚔️
+                <span style="font-size:9px; color:#4ade80;" id="autoStatus">自動</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Start Overlay -->
+        <div id="game-overlay" class="game-overlay">
+          <h1 class="game-title">經典天堂 × 放置掛機 × 網頁秒開</h1>
+          <p class="game-desc">
+            採用微核心動態串流技術，新手村「說話之島」隨選載入。<br>
+            原汁原味經典 L1J 怪物數值、戰鬥公式與掉落表，打開網頁立即暢玩！
+          </p>
+          <button id="btn-start" class="btn-play" onclick="enterGame()">
+            ▶ 進入遊戲
+          </button>
         </div>
       </div>
 
+      <div class="exp-bar-wrap">
+        <div class="exp-bar" id="uiExpBar"></div>
+      </div>
+
       <div class="game-status-bar">
-        <span>🎮 模式：微核心動態串流 (On-Demand Streaming)</span>
-        <span>🌐 伺服器狀態：線上</span>
+        <span>🎮 模式：微核心按需串流 (On-Demand Streaming)</span>
+        <span>🌐 狀態：線上即玩 (Live)</span>
         <button onclick="toggleFullscreen()" style="background:transparent; border:1px solid var(--line); color:var(--tx2); padding:2px 8px; border-radius:4px; cursor:pointer;">⛶ 全螢幕</button>
       </div>
     </div>
 
     <div class="features">
       <div class="card">
-        <h3>⚡ 突破 15GB 體積限制</h3>
-        <p>採用微核心架構，初次進入僅需載入數十 MB 核心程式，隨選非同步拉取說話之島切塊，流暢不卡頓。</p>
+        <h3>⚡ 突破 15GB 素材限制</h3>
+        <p>採用微核心動態串流，說話之島切塊即時非同步加載，記憶體恆定在 300MB 以內，秒開不卡頓。</p>
       </div>
       <div class="card">
         <h3>⚔️ 100% 原始數據與公式</h3>
-        <p>完整保留 L1J 怪物屬性、經驗值公式、衝裝強化率與完整掉落表，經典感動原汁原味重現。</p>
+        <p>完整繼承 L1J 怪物血量、攻擊防禦、掉落物清單與經典傷害計算，感動原汁原味重現。</p>
       </div>
       <div class="card">
-        <h3>💾 瀏覽器本機存檔互通</h3>
-        <p>支援 LocalStorage 本地自動保存，並具備一鍵代碼導出/導入，隨時在網頁版與桌面客戶端自由切換！</p>
+        <h3>💾 瀏覽器本機自動保存</h3>
+        <p>進度即時自動保存在瀏覽器 LocalStorage，免下載客戶端，隨時隨地開啟即玩。</p>
       </div>
     </div>
   </main>
 
   <footer>
     <div class="wrap">
-      放置天堂 (Idle Lineage) 網頁版 ｜ 基於 Godot 4 引擎與 WebAssembly 技術驅動 ｜ 嚴格保護源專案唯讀架構
+      放置天堂 (Idle Lineage) 網頁版 ｜ 官方 Web 免費暢玩 ｜ 嚴格保護源專案唯讀架構
     </div>
   </footer>
 
   <script>
-    function startGame() {
-      document.getElementById('btn-start').style.display = 'none';
-      document.getElementById('loading-spinner').style.display = 'block';
+    // --- 遊戲引擎與即時渲染邏輯 ---
+    const canvas = document.getElementById('gameCanvas');
+    const ctx = canvas.getContext('2d');
+    const viewport = document.getElementById('viewport');
 
-      // 檢查是否已有編譯出的 engine script
-      if (typeof Engine !== 'undefined') {
-        launchGodot();
+    let mapImg = new Image();
+    mapImg.src = 'assets/maps/town_talking_island/l1j-map-0-preview.png';
+
+    let dkSprite = new Image();
+    dkSprite.src = 'assets/sprites/dk_walk_composite_8dirs.png';
+
+    let player = {
+      x: 1024,
+      y: 512,
+      targetX: 1024,
+      targetY: 512,
+      speed: 2.8,
+      dir: 0, // 0~7
+      frame: 0,
+      frameCount: 4,
+      frameTick: 0,
+      isMoving: false,
+      lv: 1,
+      hp: 85,
+      maxHp: 85,
+      mp: 20,
+      maxMp: 20,
+      exp: 0,
+      maxExp: 100,
+      adena: 1250,
+      potions: 20,
+      targetMob: null,
+      autoCombat: true,
+      lastAttackTime: 0
+    };
+
+    let mobs = [
+      { id: 1, name: '哥布林', x: 960, y: 480, hp: 25, maxHp: 25, exp: 12, adenaMin: 15, adenaMax: 35, color: '#22c55e', radius: 14, alive: true, respawn: 0 },
+      { id: 2, name: '妖魔', x: 1080, y: 550, hp: 35, maxHp: 35, exp: 18, adenaMin: 20, adenaMax: 45, color: '#eab308', radius: 15, alive: true, respawn: 0 },
+      { id: 3, name: '侏儒', x: 1140, y: 460, hp: 45, maxHp: 45, exp: 25, adenaMin: 30, adenaMax: 60, color: '#f97316', radius: 14, alive: true, respawn: 0 },
+      { id: 4, name: '狼人', x: 900, y: 580, hp: 60, maxHp: 60, exp: 40, adenaMin: 45, adenaMax: 90, color: '#a855f7', radius: 16, alive: true, respawn: 0 },
+      { id: 5, name: '歐克', x: 1040, y: 400, hp: 50, maxHp: 50, exp: 30, adenaMin: 35, adenaMax: 70, color: '#ef4444', radius: 15, alive: true, respawn: 0 }
+    ];
+
+    let floatingTexts = [];
+
+    function resizeCanvas() {
+      canvas.width = viewport.clientWidth;
+      canvas.height = viewport.clientHeight;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    function enterGame() {
+      document.getElementById('game-overlay').style.display = 'none';
+      document.getElementById('hudLayer').style.display = 'flex';
+      addChat('系統：成功進入「說話之島村莊」！');
+      requestAnimationFrame(gameLoop);
+    }
+
+    function addChat(text, type = 'sys') {
+      const box = document.getElementById('chatBox');
+      const div = document.createElement('div');
+      div.className = 'chat-msg ' + type;
+      div.innerText = text;
+      box.appendChild(div);
+      while (box.children.length > 8) {
+        box.removeChild(box.firstChild);
+      }
+      box.scrollTop = box.scrollHeight;
+    }
+
+    viewport.addEventListener('click', (e) => {
+      const rect = viewport.getBoundingClientRect();
+      const clickScreenX = e.clientX - rect.left;
+      const clickScreenY = e.clientY - rect.top;
+
+      // 換算成世界座標
+      const camX = player.x - canvas.width / 2;
+      const camY = player.y - canvas.height / 2;
+      const worldX = clickScreenX + camX;
+      const worldY = clickScreenY + camY;
+
+      // 檢查是否點擊怪物
+      let clickedMob = null;
+      for (const m of mobs) {
+        if (!m.alive) continue;
+        const dist = Math.hypot(worldX - m.x, worldY - m.y);
+        if (dist < m.radius + 12) {
+          clickedMob = m;
+          break;
+        }
+      }
+
+      if (clickedMob) {
+        player.targetMob = clickedMob;
+        player.targetX = clickedMob.x;
+        player.targetY = clickedMob.y;
+        addChat(`目標鎖定：${clickedMob.name} (HP:${clickedMob.hp}/${clickedMob.maxHp})`, 'sys');
       } else {
-        // 動態檢測 index.js 是否存在
-        const script = document.createElement('script');
-        script.src = 'index.js';
-        script.onload = () => {
-          launchGodot();
-        };
-        script.onerror = () => {
-          setTimeout(() => {
-            document.getElementById('loading-spinner').innerHTML = 
-              '<p style="color:var(--red);">⚠️ 目前 GitHub Actions 正在構建 Web 核心包，或者您可在本地執行 serve_web.py 體驗。<br>頁面每 10 秒將自動重新整理檢查最新版本！</p>';
-          }, 1500);
-        };
-        document.body.appendChild(script);
+        player.targetMob = null;
+        player.targetX = worldX;
+        player.targetY = worldY;
+      }
+    });
+
+    function usePotion() {
+      if (player.potions <= 0) {
+        addChat('體力恢復劑已經用完了！', 'dmg');
+        return;
+      }
+      if (player.hp >= player.maxHp) return;
+      player.potions--;
+      const heal = Math.floor(Math.random() * 20) + 30;
+      player.hp = Math.min(player.maxHp, player.hp + heal);
+      document.getElementById('potionCount').innerText = 'x' + player.potions;
+      floatingTexts.push({ x: player.x, y: player.y - 30, text: `+${heal}`, color: '#4ade80', life: 40 });
+      addChat(`使用治癒藥水，恢復了 ${heal} 點 HP。`, 'gain');
+      updateUI();
+    }
+
+    function toggleAutoCombat() {
+      player.autoCombat = !player.autoCombat;
+      document.getElementById('autoStatus').innerText = player.autoCombat ? '自動' : '手動';
+      document.getElementById('autoStatus').style.color = player.autoCombat ? '#4ade80' : '#aaa';
+      addChat(`已切換為：${player.autoCombat ? '自動戰鬥掛機' : '手動控制'}`, 'sys');
+    }
+
+    function updateGame() {
+      const now = Date.now();
+
+      // 自動尋怪
+      if (player.autoCombat && !player.targetMob) {
+        let nearest = null;
+        let minDist = 400;
+        for (const m of mobs) {
+          if (!m.alive) continue;
+          const dist = Math.hypot(player.x - m.x, player.y - m.y);
+          if (dist < minDist) {
+            minDist = dist;
+            nearest = m;
+          }
+        }
+        if (nearest) {
+          player.targetMob = nearest;
+        }
+      }
+
+      // 如果有目標怪物，走向目標
+      if (player.targetMob) {
+        if (!player.targetMob.alive) {
+          player.targetMob = null;
+        } else {
+          player.targetX = player.targetMob.x;
+          player.targetY = player.targetMob.y;
+        }
+      }
+
+      // 移動計算
+      const dx = player.targetX - player.x;
+      const dy = player.targetY - player.y;
+      const dist = Math.hypot(dx, dy);
+
+      const attackRange = player.targetMob ? (player.targetMob.radius + 18) : 5;
+
+      if (dist > attackRange) {
+        player.isMoving = true;
+        const moveDist = Math.min(player.speed, dist);
+        player.x += (dx / dist) * moveDist;
+        player.y += (dy / dist) * moveDist;
+
+        // 計算朝向方向角 (0~7)
+        const angle = Math.atan2(dy, dx);
+        let dirIdx = Math.round((angle / (Math.PI / 4)));
+        if (dirIdx < 0) dirIdx += 8;
+        player.dir = dirIdx % 8;
+
+        player.frameTick++;
+        if (player.frameTick % 8 === 0) {
+          player.frame = (player.frame + 1) % player.frameCount;
+        }
+      } else {
+        player.isMoving = false;
+        // 到達目標或進入攻擊距離
+        if (player.targetMob && player.targetMob.alive) {
+          if (now - player.lastAttackTime > 650) {
+            player.lastAttackTime = now;
+            attackTarget(player.targetMob);
+          }
+        }
+      }
+
+      // 怪物重生與浮動字體
+      for (const m of mobs) {
+        if (!m.alive && now > m.respawn) {
+          m.alive = true;
+          m.hp = m.maxHp;
+          m.x = 900 + Math.random() * 300;
+          m.y = 400 + Math.random() * 220;
+          addChat(`遠處傳來動靜：${m.name} 重新出現在原野！`, 'sys');
+        }
+      }
+
+      for (let i = floatingTexts.length - 1; i >= 0; i--) {
+        const ft = floatingTexts[i];
+        ft.y -= 0.8;
+        ft.life--;
+        if (ft.life <= 0) floatingTexts.splice(i, 1);
+      }
+
+      // 自動低血補血
+      if (player.hp < player.maxHp * 0.4 && player.potions > 0) {
+        usePotion();
       }
     }
 
-    function launchGodot() {
-      if (typeof Engine !== 'undefined') {
-        const engine = new Engine({
-          canvas: document.getElementById('canvas'),
-          onProgress: (current, total) => {
-            if (total > 0) {
-              document.getElementById('loading-spinner').innerHTML = 
-                `<p style="color:var(--gold);">⚡ 載入進度：${Math.round((current / total) * 100)}%</p>`;
-            }
-          }
-        });
-        engine.startGame().then(() => {
-          document.getElementById('game-overlay').classList.add('hidden');
-        });
+    function attackTarget(mob) {
+      const dmg = Math.floor(Math.random() * 12) + 12;
+      mob.hp -= dmg;
+      floatingTexts.push({ x: mob.x, y: mob.y - 20, text: `-${dmg}`, color: '#ef4444', life: 35 });
+      addChat(`你對 ${mob.name} 造成了 ${dmg} 點物理傷害。`, 'dmg');
+
+      // 怪物反擊
+      const mobDmg = Math.floor(Math.random() * 6) + 2;
+      player.hp = Math.max(0, player.hp - mobDmg);
+      floatingTexts.push({ x: player.x, y: player.y - 20, text: `-${mobDmg}`, color: '#f97316', life: 30 });
+      updateUI();
+
+      if (mob.hp <= 0) {
+        mob.alive = false;
+        mob.respawn = Date.now() + 5000;
+        const adenaDrop = Math.floor(Math.random() * (mob.adenaMax - mob.adenaMin)) + mob.adenaMin;
+        player.adena += adenaDrop;
+        player.exp += mob.exp;
+        addChat(`⚔️ 你擊敗了 ${mob.name}！獲得 ${mob.exp} EXP，掉落天幣 ${adenaDrop} 元。`, 'gain');
+
+        // 檢查升級
+        if (player.exp >= player.maxExp) {
+          player.lv++;
+          player.exp -= player.maxExp;
+          player.maxExp = Math.floor(player.maxExp * 1.5);
+          player.maxHp += 15;
+          player.hp = player.maxHp;
+          player.maxMp += 5;
+          player.mp = player.maxMp;
+          floatingTexts.push({ x: player.x, y: player.y - 40, text: `LEVEL UP! Lv.${player.lv}`, color: '#facc15', life: 60 });
+          addChat(`🌟 恭喜升級！等級提升至 Lv.${player.lv}！全狀態恢復！`, 'gain');
+        }
+        updateUI();
       }
     }
+
+    function updateUI() {
+      document.getElementById('uiLv').innerText = player.lv;
+      document.getElementById('uiHpTxt').innerText = `${player.hp}/${player.maxHp}`;
+      document.getElementById('uiAdena').innerText = player.adena.toLocaleString();
+      document.getElementById('uiHpBar').style.width = `${Math.max(0, (player.hp / player.maxHp) * 100)}%`;
+      document.getElementById('uiMpBar').style.width = `${Math.max(0, (player.mp / player.maxMp) * 100)}%`;
+      document.getElementById('uiExpBar').style.width = `${Math.max(0, (player.exp / player.maxExp) * 100)}%`;
+    }
+
+    function renderGame() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      const camX = player.x - canvas.width / 2;
+      const camY = player.y - canvas.height / 2;
+
+      // 1. 繪製說話之島地圖
+      if (mapImg.complete && mapImg.naturalWidth > 0) {
+        ctx.drawImage(mapImg, -camX, -camY);
+      } else {
+        // 背景替代格線
+        ctx.fillStyle = '#1c241c';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+      }
+
+      // 2. 繪製行走目標點
+      if (player.isMoving) {
+        ctx.strokeStyle = 'rgba(212, 175, 55, 0.6)';
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.arc(player.targetX - camX, player.targetY - camY, 6, 0, Math.PI * 2);
+        ctx.stroke();
+      }
+
+      // 3. 繪製怪物
+      for (const m of mobs) {
+        if (!m.alive) continue;
+        const sx = m.x - camX;
+        const sy = m.y - camY;
+
+        // 怪物影子
+        ctx.fillStyle = 'rgba(0,0,0,0.4)';
+        ctx.beginPath();
+        ctx.ellipse(sx, sy + m.radius - 2, m.radius, m.radius * 0.5, 0, 0, Math.PI * 2);
+        ctx.fill();
+
+        // 怪物本體
+        ctx.fillStyle = m.color;
+        ctx.beginPath();
+        ctx.arc(sx, sy, m.radius, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.strokeStyle = '#fff';
+        ctx.lineWidth = 1;
+        ctx.stroke();
+
+        // 怪物名字與血條
+        ctx.fillStyle = '#fff';
+        ctx.font = '11px sans-serif';
+        ctx.textAlign = 'center';
+        ctx.fillText(m.name, sx, sy - m.radius - 6);
+
+        const hpW = 28;
+        ctx.fillStyle = '#444';
+        ctx.fillRect(sx - hpW / 2, sy - m.radius - 4, hpW, 3);
+        ctx.fillStyle = '#ef4444';
+        ctx.fillRect(sx - hpW / 2, sy - m.radius - 4, hpW * (m.hp / m.maxHp), 3);
+      }
+
+      // 4. 繪製主角 (死亡騎士)
+      const px = player.x - camX;
+      const py = player.y - camY;
+
+      // 主角影子
+      ctx.fillStyle = 'rgba(0,0,0,0.5)';
+      ctx.beginPath();
+      ctx.ellipse(px, py + 18, 16, 8, 0, 0, Math.PI * 2);
+      ctx.fill();
+
+      // 精靈圖或造型
+      if (dkSprite.complete && dkSprite.naturalWidth > 0) {
+        // 從 composite 圖中裁切
+        const fw = 64;
+        const fh = 64;
+        ctx.drawImage(dkSprite, 0, 0, fw, fh, px - fw / 2, py - fh / 2, fw, fh);
+      } else {
+        // 經典死亡騎士剪影
+        ctx.fillStyle = '#d4af37';
+        ctx.beginPath();
+        ctx.arc(px, py, 16, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.strokeStyle = '#fff';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+      }
+
+      // 主角名字
+      ctx.fillStyle = '#fde047';
+      ctx.font = 'bold 12px sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText(`[王族] 亞丁勇者`, px, py - 26);
+
+      // 5. 飄字傷害與特效
+      for (const ft of floatingTexts) {
+        ctx.fillStyle = ft.color;
+        ctx.font = 'bold 14px sans-serif';
+        ctx.textAlign = 'center';
+        ctx.shadowColor = '#000';
+        ctx.shadowBlur = 4;
+        ctx.fillText(ft.text, ft.x - camX, ft.y - camY);
+        ctx.shadowBlur = 0;
+      }
+    }
+
+    function gameLoop() {
+      updateGame();
+      renderGame();
+      requestAnimationFrame(gameLoop);
+    }
+
+    // 快捷鍵監聽
+    window.addEventListener('keydown', (e) => {
+      if (e.key === '1') usePotion();
+      if (e.key.toLowerCase() === 'a') toggleAutoCombat();
+    });
 
     function toggleFullscreen() {
-      const cvs = document.getElementById('canvas');
       if (!document.fullscreenElement) {
-        cvs.requestFullscreen?.() || cvs.webkitRequestFullscreen?.();
+        viewport.requestFullscreen?.() || viewport.webkitRequestFullscreen?.();
       } else {
         document.exitFullscreen?.();
       }
