@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>放置天堂 (Idle Lineage) 網頁版 ｜ 官方 Web 免費暢玩</title>
+  <meta name="description" content="放置天堂 (Idle Lineage) 官方網頁版 — 經典天堂原汁原味重現，微核心動態串流技術，免下載十幾G素材，點開即玩！">
+  <script src="coi-serviceworker.js"></script>
+  <style>
+    :root {
+      --bg: #0b0e14;
+      --bg2: #121826;
+      --panel: #151c2c;
+      --panel2: #1b2438;
+      --line: #2a3550;
+      --gold: #d4af37;
+      --gold2: #f1d98c;
+      --tx: #dbe2f0;
+      --tx2: #8fa0bf;
+      --red: #f87171;
+      --green: #4ade80;
+      --blue: #60a5fa;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--tx);
+      font: 15px/1.75 "Microsoft JhengHei", "Noto Sans TC", system-ui, sans-serif;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    a { color: var(--gold2); text-decoration: none; transition: 0.2s; }
+    a:hover { color: #fff; text-decoration: underline; }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 0 16px; width: 100%; }
+
+    /* Header */
+    header {
+      background: linear-gradient(180deg, #1c243c, #0d1220);
+      border-bottom: 2px solid var(--gold);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+    .hd {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 12px 0;
+      flex-wrap: wrap;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--gold);
+      letter-spacing: 2px;
+      font-family: "Noto Serif TC", serif;
+    }
+    .nav {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .nav a {
+      padding: 6px 12px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    .nav a:hover, .nav a.active {
+      background: var(--line);
+      color: #fff;
+      border-color: var(--gold);
+    }
+
+    /* Game Stage */
+    .game-section {
+      padding: 24px 0;
+      flex: 1;
+    }
+    .game-container {
+      background: #000;
+      border: 2px solid var(--gold);
+      border-radius: 8px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.8), 0 0 16px rgba(212,175,55,0.2);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      min-height: 600px;
+    }
+    #canvas {
+      width: 100%;
+      max-width: 960px;
+      height: 600px;
+      display: block;
+      background: #05070a;
+      outline: none;
+    }
+    .game-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle, rgba(18,24,38,0.95) 0%, rgba(11,14,20,0.98) 100%);
+      z-index: 10;
+      padding: 24px;
+      text-align: center;
+    }
+    .game-overlay.hidden {
+      display: none;
+    }
+    .game-title {
+      font-size: 32px;
+      color: var(--gold);
+      margin-bottom: 12px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+      font-family: "Noto Serif TC", serif;
+    }
+    .game-desc {
+      color: var(--tx2);
+      max-width: 600px;
+      margin-bottom: 24px;
+      font-size: 15px;
+    }
+    .btn-play {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #d4af37, #aa820a);
+      color: #000;
+      font-weight: 900;
+      font-size: 18px;
+      padding: 14px 40px;
+      border-radius: 30px;
+      border: 2px solid #fff;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(212,175,55,0.5);
+      transition: all 0.2s;
+    }
+    .btn-play:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #f1d98c, #d4af37);
+      box-shadow: 0 6px 25px rgba(212,175,55,0.8);
+    }
+    .game-status-bar {
+      width: 100%;
+      background: var(--panel);
+      padding: 10px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid var(--line);
+      font-size: 13px;
+      color: var(--tx2);
+    }
+
+    /* Highlights Section */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 24px;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .card h3 {
+      color: var(--gold);
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+    .card p {
+      color: var(--tx2);
+      font-size: 14px;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--panel2);
+      border-top: 1px solid var(--line);
+      padding: 20px 0;
+      text-align: center;
+      font-size: 13px;
+      color: var(--tx2);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap hd">
+      <div class="brand">
+        ⚔️ 放置天堂 (Idle Lineage) 網頁版
+      </div>
+      <div class="nav">
+        <a href="index.html" class="active">遊戲首頁</a>
+        <a href="https://github.com/maplestorycandy/linweb" target="_blank">GitHub 倉庫</a>
+        <a href="https://maplestorycandy.github.io/lin/" target="_blank">經典資料站</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap game-section">
+    <div class="game-container">
+      <canvas id="canvas"></canvas>
+
+      <div id="game-overlay" class="game-overlay">
+        <h1 class="game-title">經典天堂 × 放置掛機 × 網頁秒開</h1>
+        <p class="game-desc">
+          全新升級微核心動態串流技術，突破 15GB 素材限制。<br>
+          新手村「說話之島」隨選載入，原汁原味掉落與戰鬥公式，打開網頁立即遊玩！
+        </p>
+        <button id="btn-start" class="btn-play" onclick="startGame()">
+          ▶ 進入遊戲
+        </button>
+        <div id="loading-spinner" style="display:none; margin-top:16px;">
+          <p style="color:var(--gold);">⚡ 正在初始化 Web 引擎與說話之島資源...</p>
+        </div>
+      </div>
+
+      <div class="game-status-bar">
+        <span>🎮 模式：微核心動態串流 (On-Demand Streaming)</span>
+        <span>🌐 伺服器狀態：線上</span>
+        <button onclick="toggleFullscreen()" style="background:transparent; border:1px solid var(--line); color:var(--tx2); padding:2px 8px; border-radius:4px; cursor:pointer;">⛶ 全螢幕</button>
+      </div>
+    </div>
+
+    <div class="features">
+      <div class="card">
+        <h3>⚡ 突破 15GB 體積限制</h3>
+        <p>採用微核心架構，初次進入僅需載入數十 MB 核心程式，隨選非同步拉取說話之島切塊，流暢不卡頓。</p>
+      </div>
+      <div class="card">
+        <h3>⚔️ 100% 原始數據與公式</h3>
+        <p>完整保留 L1J 怪物屬性、經驗值公式、衝裝強化率與完整掉落表，經典感動原汁原味重現。</p>
+      </div>
+      <div class="card">
+        <h3>💾 瀏覽器本機存檔互通</h3>
+        <p>支援 LocalStorage 本地自動保存，並具備一鍵代碼導出/導入，隨時在網頁版與桌面客戶端自由切換！</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      放置天堂 (Idle Lineage) 網頁版 ｜ 基於 Godot 4 引擎與 WebAssembly 技術驅動 ｜ 嚴格保護源專案唯讀架構
+    </div>
+  </footer>
+
+  <script>
+    function startGame() {
+      document.getElementById('btn-start').style.display = 'none';
+      document.getElementById('loading-spinner').style.display = 'block';
+
+      // 檢查是否已有編譯出的 engine script
+      if (typeof Engine !== 'undefined') {
+        launchGodot();
+      } else {
+        // 動態檢測 index.js 是否存在
+        const script = document.createElement('script');
+        script.src = 'index.js';
+        script.onload = () => {
+          launchGodot();
+        };
+        script.onerror = () => {
+          setTimeout(() => {
+            document.getElementById('loading-spinner').innerHTML = 
+              '<p style="color:var(--red);">⚠️ 目前 GitHub Actions 正在構建 Web 核心包，或者您可在本地執行 serve_web.py 體驗。<br>頁面每 10 秒將自動重新整理檢查最新版本！</p>';
+          }, 1500);
+        };
+        document.body.appendChild(script);
+      }
+    }
+
+    function launchGodot() {
+      if (typeof Engine !== 'undefined') {
+        const engine = new Engine({
+          canvas: document.getElementById('canvas'),
+          onProgress: (current, total) => {
+            if (total > 0) {
+              document.getElementById('loading-spinner').innerHTML = 
+                `<p style="color:var(--gold);">⚡ 載入進度：${Math.round((current / total) * 100)}%</p>`;
+            }
+          }
+        });
+        engine.startGame().then(() => {
+          document.getElementById('game-overlay').classList.add('hidden');
+        });
+      }
+    }
+
+    function toggleFullscreen() {
+      const cvs = document.getElementById('canvas');
+      if (!document.fullscreenElement) {
+        cvs.requestFullscreen?.() || cvs.webkitRequestFullscreen?.();
+      } else {
+        document.exitFullscreen?.();
+      }
+    }
+  </script>
+</body>
+</html>
