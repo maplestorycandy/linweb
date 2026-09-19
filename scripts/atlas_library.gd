@@ -163,8 +163,32 @@ func clear_cache(group: String = "", atlas_name: String = "") -> void :
 			_frame_cache.erase(k)
 
 
+func make_sprite(group: String, atlas_name: String, action: String = "idle", fps: float = 8.0, loop: bool = true) -> AnimatedSprite2D:
+	var sf = get_sprite_frames(group, atlas_name, fps, loop)
+	if sf == null:
+		return null
+	var spr = AnimatedSprite2D.new()
+	spr.sprite_frames = sf
+	var anims = sf.get_animation_names()
+	if anims.size() == 0:
+		return spr
+	if sf.has_animation(action):
+		spr.play(action)
+	else:
+		# 嘗試找相似 action，如 d5/walk, walk, idle 等
+		var found = false
+		for a in anims:
+			if a.ends_with("/" + action) or a.begins_with(action) or a.contains(action):
+				spr.play(a)
+				found = true
+				break
+		if not found:
+			spr.play(anims[0])
+	return spr
+
 func _warn_once(key: String, msg: String) -> void :
 	if _missing.has(key):
 		return
 	_missing[key] = true
 	push_warning("[AtlasLibrary] " + msg)
+

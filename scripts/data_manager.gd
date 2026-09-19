@@ -6,7 +6,8 @@ extends Node
 var mobs_data: Dictionary = {}
 var maps_data: Dictionary = {}
 var drops_data: Dictionary = {}
-var items_data: Dictionary = {}
+var mob_sprites_data: Dictionary = {}
+var mob_sprites_by_display: Dictionary = {}
 
 func _ready() -> void:
 	load_all_data()
@@ -16,6 +17,7 @@ func load_all_data() -> void:
 	load_maps()
 	load_mobs()
 	load_drops()
+	load_mob_sprites()
 	print("[DataManager] 核心數據表載入完成。")
 
 func load_json(path: String) -> Variant:
@@ -54,12 +56,49 @@ func load_drops() -> void:
 		drops_data = parsed
 		print("[DataManager] 已成功載入掉落物總表。")
 
+func load_mob_sprites() -> void:
+	var parsed: Variant = load_json("res://data/tables/L1J_MOB_SPRITES.json")
+	if typeof(parsed) == TYPE_DICTIONARY:
+		mob_sprites_data = parsed
+		if parsed.has("byDisplay") and typeof(parsed["byDisplay"]) == TYPE_DICTIONARY:
+			mob_sprites_by_display = parsed["byDisplay"]
+		elif parsed.has("byMobKey") and typeof(parsed["byMobKey"]) == TYPE_DICTIONARY:
+			for k in parsed["byMobKey"].keys():
+				var item = parsed["byMobKey"][k]
+				if typeof(item) == TYPE_DICTIONARY and item.has("display") and item.has("atlas"):
+					mob_sprites_by_display[item["display"]] = item["atlas"]
+		print("[DataManager] 已成功載入怪物圖集映射表 (共 %d 項)。" % mob_sprites_by_display.size())
+
+func resolve_mob_atlas(identity: String) -> String:
+	if identity.is_empty():
+		return ""
+	if mob_sprites_by_display.has(identity):
+		var val = mob_sprites_by_display[identity]
+		if typeof(val) == TYPE_DICTIONARY and val.has("atlas"):
+			return val["atlas"]
+		elif typeof(val) == TYPE_STRING:
+			return val
+	if mob_sprites_data.has("byMobKey") and mob_sprites_data["byMobKey"].has(identity):
+		var val2 = mob_sprites_data["byMobKey"][identity]
+		if typeof(val2) == TYPE_DICTIONARY and val2.has("atlas"):
+			return val2["atlas"]
+	# 預設常見怪物 fallback
+	match identity:
+		"狼人": return "mob_1011"
+		"妖魔", "歐克": return "mob_110"
+		"妖魔鬥士": return "mob_111"
+		"哥布林": return "mob_1002"
+		"侏儒": return "mob_1003"
+		"夏洛伯": return "mob_1037"
+		"高崙", "石頭高崙": return "mob_1020"
+		"史萊姆": return "mob_1014"
+		"骷髏": return "mob_1022"
+		"骷髏弓箭手": return "mob_1024"
+		"黑妖魔": return "mob_1104"
+		"妖魔弓箭手": return "mob_1106"
+	return "mob_1011"
+
 func get_mob(mob_id: String) -> Dictionary:
 	if mobs_data.has(mob_id):
 		return mobs_data[mob_id]
-	return {}
-
-func get_map_info(map_key: String) -> Dictionary:
-	if maps_data.has(map_key):
-		return maps_data[map_key]
 	return {}

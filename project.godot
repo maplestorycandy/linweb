@@ -44,8 +44,14 @@ texture={
 "process/premult_alpha": false
 }
 
+[gui]
+
+theme/custom_font="res://assets/fonts/NotoSansTC-VF.ttf"
+theme/default_font_size=14
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+

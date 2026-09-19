@@ -1,17 +1,30 @@
 extends Control
 
-# 放置天堂 Web 版 - 遊戲根節點 (GameRoot)
-# 負責管理遊戲全域畫面（選單 -> 創角 -> ARPG 世界）與存檔狀態
+# 放置天堂 Web 版 - 遊戲主控制器 (GameRoot)
+# 仿照原版 GameRoot.cs，負責視窗排版、主題字型載入與畫面切換
 
 var _current_screen: Control = null
-var current_slot: int = 1
-var player_data: Dictionary = {}
+var _current_slot: int = 1
 
 func _ready() -> void:
 	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	mouse_filter = Control.MOUSE_FILTER_IGNORE
+	_apply_theme()
 	show_menu()
 
-func switch_screen(screen: Control) -> void:
+func _apply_theme() -> void:
+	# 強制載入繁體中文字型 NotoSansTC，解決 WebAssembly 平台缺字 tofu 亂碼問題
+	var font_path = "res://assets/fonts/NotoSansTC-VF.ttf"
+	if ResourceLoader.exists(font_path):
+		var f: FontFile = load(font_path)
+		if f != null:
+			var th = Theme.new()
+			th.default_font = f
+			th.default_font_size = 13
+			self.theme = th
+			print("[GameRoot] 已成功套用全域中文字型：NotoSansTC-VF.ttf")
+
+func show_screen(screen: Control) -> void:
 	if _current_screen != null:
 		_current_screen.queue_free()
 	_current_screen = screen
@@ -19,64 +32,79 @@ func switch_screen(screen: Control) -> void:
 
 func show_menu() -> void:
 	var menu_script = load("res://scripts/ui/menu_screen.gd")
-	if menu_script:
-		var menu = menu_script.new()
-		menu.connect("new_game_requested", Callable(self, "_on_new_game"))
-		menu.connect("load_game_requested", Callable(self, "_on_load_game"))
-		switch_screen(menu)
+	var menu = Control.new()
+	menu.set_script(menu_script)
+	
+	menu.start_new_game.connect(func(slot: int):
+		_current_slot = slot
+		show_create(slot)
+	)
+	
+	menu.load_game.connect(func(slot: int):
+		_current_slot = slot
+		_load_and_enter_game(slot)
+	)
+	
+	show_screen(menu)
 
-func _on_new_game(slot: int) -> void:
-	current_slot = slot
-	show_create()
-
-func _on_load_game(slot: int) -> void:
-	current_slot = slot
-	# 讀取本地 LocalStorage 存檔，若無存檔則進入創角
-	var save = load_slot(slot)
-	if save.is_empty():
-		show_create()
-	else:
-		start_game(save)
-
-func show_create() -> void:
+func show_create(slot: int) -> void:
 	var create_script = load("res://scripts/ui/create_screen.gd")
-	if create_script:
-		var create = create_script.new()
-		create.connect("character_created", Callable(self, "_on_character_created"))
-		create.connect("back_to_menu", Callable(self, "show_menu"))
-		switch_screen(create)
+	var create = Control.new()
+	create.set_script(create_script)
+	
+	create.character_created.connect(func(char_data: Dictionary):
+		# 儲存角色到 Slot
+		var p = "user://character_slot_%d.json" % slot
+		var f = FileAccess.open(p, FileAccess.WRITE)
+		if f != null:
+			f.store_string(JSON.stringify(char_data))
+		enter_world(char_data, slot)
+	)
+	
+	create.back_to_menu.connect(show_menu)
+	show_screen(create)
 
-func _on_character_created(data: Dictionary) -> void:
-	player_data = data
-	save_slot(current_slot, player_data)
-	start_game(player_data)
+func _load_and_enter_game(slot: int) -> void:
+	var p = "user://character_slot_%d.json" % slot
+	if FileAccess.file_exists(p):
+		var f = FileAccess.open(p, FileAccess.READ)
+		if f != null:
+			var parsed = JSON.parse_string(f.get_as_text())
+			if typeof(parsed) == TYPE_DICTIONARY:
+				enter_world(parsed, slot)
+				return
+	# 若沒有存檔，創立預設角色
+	var default_char = {
+		"name": "冒險者",
+		"class": "knight",
+		"gender": "male",
+		"level": 1,
+		"hp": 150,
+		"max_hp": 150,
+		"mp": 30,
+		"max_mp": 30,
+		"ac": 10,
+		"str": 16,
+		"dex": 12,
+		"con": 14,
+		"wis": 9,
+		"cha": 12,
+		"int": 8,
+		"alignment": 32767,
+		"adena": 1000,
+		"exp": 0
+	}
+	enter_world(default_char, slot)
 
-func start_game(data: Dictionary) -> void:
-	player_data = data
+func enter_world(char_data: Dictionary, slot: int) -> void:
 	var world_script = load("res://scripts/arpg/arpg_world.gd")
-	if world_script:
-		var world = world_script.new()
-		world.init_world(player_data)
-		switch_screen(world)
-
-# --- 存檔管理 (LocalStorage / FileAccess) ---
-func get_save_path(slot: int) -> String:
-	return "user://save_slot_%d.json" % slot
-
-func save_slot(slot: int, data: Dictionary) -> void:
-	var path = get_save_path(slot)
-	var file = FileAccess.open(path, FileAccess.WRITE)
-	if file:
-		file.store_string(JSON.stringify(data))
-		print("[SaveManager] 存檔成功 Slot %d" % slot)
-
-func load_slot(slot: int) -> Dictionary:
-	var path = get_save_path(slot)
-	if not FileAccess.file_exists(path):
-		return {}
-	var file = FileAccess.open(path, FileAccess.READ)
-	if file:
-		var parsed = JSON.parse_string(file.get_as_text())
-		if typeof(parsed) == TYPE_DICTIONARY:
-			return parsed
-	return {}
+	var world = Node2D.new()
+	world.set_script(world_script)
+	world.init_world(char_data, slot)
+	world.return_to_menu.connect(show_menu)
+	
+	# 包裝在 Control 容器內
+	var container = Control.new()
+	container.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	container.add_child(world)
+	show_screen(container)
