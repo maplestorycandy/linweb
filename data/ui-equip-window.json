@@ -1,0 +1,278 @@
+{
+ "__doc": [
+  "裝備視窗的 3.8c 版面參數（EquipNStatusUI.xml）＋ L1J 的槽位 tag。",
+  "由 tools/import-equip-window.js 產生（機器產物·不要手改）。",
+  "⚠️ `tag` 是 L1J 的裝備槽位 id；`portSlot` 是人工對照，null ＝港版沒有這個概念。",
+  "⚠️ 技能視窗與背包視窗**沒有對應的 3.8c XML**（背包只有一個 DummyInventoryUI 空殼、",
+  "   技能完全沒有），所以那兩個沒有原版參數可套——見 docs/equip-window-audit.md。"
+ ],
+ "source": "EquipNStatusUI.xml (Tile.pak)",
+ "window": {
+  "basePng": 13068,
+  "closeButton": {
+   "x": 160,
+   "y": 7
+  }
+ },
+ "geometry": {
+  "columns": [
+   28,
+   74,
+   119
+  ],
+  "rowTop": 32,
+  "rowPitch": 38,
+  "slotSize": 32
+ },
+ "counts": {
+  "slots": 24,
+  "mapped": 16,
+  "originalOnly": 8,
+  "portOnly": 1
+ },
+ "slots": [
+  {
+   "name": "ExSlot1",
+   "order": -1,
+   "x": 36,
+   "y": 299,
+   "w": 32,
+   "h": 32,
+   "tag": 15,
+   "portSlot": null
+  },
+  {
+   "name": "ExSlot3",
+   "order": -1,
+   "x": 113,
+   "y": 299,
+   "w": 32,
+   "h": 32,
+   "tag": 16,
+   "portSlot": null
+  },
+  {
+   "name": "ExSlot2",
+   "order": -1,
+   "x": 74,
+   "y": 299,
+   "w": 32,
+   "h": 32,
+   "tag": 18,
+   "portSlot": null
+  },
+  {
+   "name": "Earring",
+   "order": 0,
+   "x": 28,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "tag": 13,
+   "portSlot": "ear1"
+  },
+  {
+   "name": "Helmet",
+   "order": 1,
+   "x": 74,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "tag": 1,
+   "portSlot": "helm"
+  },
+  {
+   "name": "Earring59",
+   "order": 2,
+   "x": 119,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "tag": 26,
+   "portSlot": "ear2"
+  },
+  {
+   "name": "L_Shoulder",
+   "order": 3,
+   "x": 28,
+   "y": 70,
+   "w": 32,
+   "h": 32,
+   "tag": 30,
+   "portSlot": null
+  },
+  {
+   "name": "Necklace",
+   "order": 4,
+   "x": 74,
+   "y": 70,
+   "w": 32,
+   "h": 32,
+   "tag": 11,
+   "portSlot": "amulet"
+  },
+  {
+   "name": "R_Shoulder",
+   "order": 5,
+   "x": 119,
+   "y": 70,
+   "w": 32,
+   "h": 32,
+   "tag": 29,
+   "portSlot": null
+  },
+  {
+   "name": "Glove",
+   "order": 6,
+   "x": 28,
+   "y": 108,
+   "w": 32,
+   "h": 32,
+   "tag": 7,
+   "portSlot": "gloves"
+  },
+  {
+   "name": "Shirt",
+   "order": 7,
+   "x": 74,
+   "y": 108,
+   "w": 32,
+   "h": 32,
+   "tag": 3,
+   "portSlot": "tshirt"
+  },
+  {
+   "name": "Cloak",
+   "order": 8,
+   "x": 119,
+   "y": 108,
+   "w": 32,
+   "h": 32,
+   "tag": 4,
+   "portSlot": "cloak"
+  },
+  {
+   "name": "Weapon",
+   "order": 9,
+   "x": 28,
+   "y": 146,
+   "w": 32,
+   "h": 32,
+   "tag": 9,
+   "portSlot": "wpn"
+  },
+  {
+   "name": "Armor",
+   "order": 10,
+   "x": 74,
+   "y": 146,
+   "w": 32,
+   "h": 32,
+   "tag": 2,
+   "portSlot": "armor"
+  },
+  {
+   "name": "Shield",
+   "order": 11,
+   "x": 119,
+   "y": 146,
+   "w": 32,
+   "h": 32,
+   "tag": 8,
+   "portSlot": "shield"
+  },
+  {
+   "name": "Ring1",
+   "order": 12,
+   "x": 28,
+   "y": 184,
+   "w": 32,
+   "h": 32,
+   "tag": 19,
+   "portSlot": "ring1"
+  },
+  {
+   "name": "Waist",
+   "order": 13,
+   "x": 74,
+   "y": 184,
+   "w": 32,
+   "h": 32,
+   "tag": 12,
+   "portSlot": "belt"
+  },
+  {
+   "name": "Ring2",
+   "order": 14,
+   "x": 119,
+   "y": 184,
+   "w": 32,
+   "h": 32,
+   "tag": 20,
+   "portSlot": "ring2"
+  },
+  {
+   "name": "Ring76",
+   "order": 15,
+   "x": 28,
+   "y": 222,
+   "w": 32,
+   "h": 32,
+   "tag": 21,
+   "portSlot": "ring3"
+  },
+  {
+   "name": "Pants",
+   "order": 16,
+   "x": 74,
+   "y": 222,
+   "w": 32,
+   "h": 32,
+   "tag": 5,
+   "portSlot": null
+  },
+  {
+   "name": "Ring81",
+   "order": 17,
+   "x": 119,
+   "y": 222,
+   "w": 32,
+   "h": 32,
+   "tag": 22,
+   "portSlot": "ring4"
+  },
+  {
+   "name": "Rune",
+   "order": 18,
+   "x": 28,
+   "y": 260,
+   "w": 32,
+   "h": 32,
+   "tag": 23,
+   "portSlot": null
+  },
+  {
+   "name": "Boots",
+   "order": 19,
+   "x": 74,
+   "y": 260,
+   "w": 32,
+   "h": 32,
+   "tag": 6,
+   "portSlot": "boots"
+  },
+  {
+   "name": "Heraldry",
+   "order": 20,
+   "x": 119,
+   "y": 260,
+   "w": 32,
+   "h": 32,
+   "tag": 27,
+   "portSlot": null
+  }
+ ],
+ "portOnlySlots": {
+  "lantern": "燈籠（單頁裝備視窗專用槽）"
+ }
+}

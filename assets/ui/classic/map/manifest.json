@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "authority": "PopUpUI.decrypted.xml",
+  "window": {
+    "width": 548,
+    "height": 339,
+    "baseSurf": 8970,
+    "frameSurf": 8971
+  },
+  "surfaces": [
+    {
+      "id": 8970,
+      "file": "8970.png",
+      "width": 548,
+      "height": 339,
+      "source": "3.3 UI",
+      "sourcePath": "C:\\Users\\User\\Downloads\\3.3 UI\\8970.png",
+      "sha256": "9a9fea0c80267a00fa8c38214aff5207d3e1a35b1b56fa01e4a6bf79b3d50d56"
+    },
+    {
+      "id": 8971,
+      "file": "8971.png",
+      "width": 548,
+      "height": 339,
+      "source": "3.3 UI",
+      "sourcePath": "C:\\Users\\User\\Downloads\\3.3 UI\\8971.png",
+      "sha256": "7180528f9955cdc00f91b1dfb69eaf3076b84a69e8ed6f8801000baa3dfcce36"
+    }
+  ],
+  "runtimeComposition": {
+    "colourLayer": 8970,
+    "opaqueMask": 8971,
+    "maskShader": "classic_map_base.gdshader"
+  }
+}

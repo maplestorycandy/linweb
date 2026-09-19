@@ -1,0 +1,79 @@
+{
+ "__doc": [
+  "使用者明確追加的怪物掉落；不是 L1J-TW-main 原版資料。",
+  "由 tools/l1j-import/import_l1j_drops.py 以 canonical un/npcid 展開；禁止用中文名稱比對。",
+  "41251 骷髏聖盃：所有 main undead=1/3/4 的 canonical 怪物 0.01%。",
+  "41252 珍奇的烏龜：龍龜與伊娃 龍龜 0.25%。",
+  "41253 王宮料理師的調味料：長者 0.01%；黑長者 1%；四賢者 0.5%。",
+  "41254 勝利的徽章：巴風特、巴列斯 1%。",
+  "使用者 2026-08-14 裁決：main 幼龍 45496 分別以 0.001% 掉落頑皮幼龍蛋與淘氣幼龍蛋。"
+ ],
+ "rules": [
+  {
+   "item": "l1j_item_41251",
+   "chancePercent": 0.01,
+   "selector": {
+    "field": "un",
+    "equals": true
+   }
+  },
+  {
+   "item": "l1j_item_41252",
+   "chancePercent": 0.25,
+   "npcids": [
+    45240,
+    45262,
+    45822,
+    45937
+   ]
+  },
+  {
+   "item": "l1j_item_41253",
+   "chancePercent": 0.01,
+   "npcids": [
+    45215
+   ]
+  },
+  {
+   "item": "l1j_item_41253",
+   "chancePercent": 1.0,
+   "npcids": [
+    45545,
+    45550,
+    81176
+   ]
+  },
+  {
+   "item": "l1j_item_41253",
+   "chancePercent": 0.5,
+   "npcids": [
+    45464,
+    45473,
+    45488,
+    45497
+   ]
+  },
+  {
+   "item": "l1j_item_41254",
+   "chancePercent": 1.0,
+   "npcids": [
+    45573,
+    45583
+   ]
+  },
+  {
+   "item": "item_dragon_egg",
+   "chancePercent": 0.001,
+   "npcids": [
+    45496
+   ]
+  },
+  {
+   "item": "item_dragon_egg2",
+   "chancePercent": 0.001,
+   "npcids": [
+    45496
+   ]
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+{
+  "authority": "C:/Users/User/Downloads/MAP/PetSummonUI.decrypted.xml",
+  "window": "Pet_Window",
+  "nativeSize": [144, 39],
+  "baseSurf": 2242,
+  "frameSurf": 2243,
+  "commands": [
+    { "name": "Agressive_Btn", "x": 11, "y": 14, "base": 2244, "push": 2245, "main": "Aggressive" },
+    { "name": "Defensive_Btn", "x": 36, "y": 15, "base": 2250, "push": 2251, "main": "Defensive" },
+    { "name": "Disperse_Btn", "x": 61, "y": 15, "base": 2790, "push": 2791, "main": "Extend" },
+    { "name": "Lookout_Btn", "x": 86, "y": 15, "base": 2788, "push": 2789, "main": "Alert" },
+    { "name": "Rest_Btn", "x": 111, "y": 14, "base": 2248, "push": 2249, "main": "Stay" }
+  ],
+  "inactiveAdjacentSurfaces": [2246, 2247]
+}

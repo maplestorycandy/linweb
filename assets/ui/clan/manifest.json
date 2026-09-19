@@ -1,0 +1,33 @@
+{
+  "authority": "RePledgeUI.decrypted.xml",
+  "window": {
+    "name": "Nonoticeuserinfo_Window",
+    "xmlWidth": 285,
+    "xmlHeight": 413,
+    "basePng": 4361,
+    "renderedFrameSurface": 4451,
+    "renderedFrameWidth": 274,
+    "renderedFrameHeight": 413,
+    "note": "4451 is the supplied 3.3 client-rendered pledge shell. The XML reserves the remaining 11 px for the separately authored vertical scrollbar."
+  },
+  "surfaces": [
+    {
+      "id": 4451,
+      "file": "4451.png",
+      "width": 274,
+      "height": 413,
+      "source": "C:/Users/User/Downloads/3.3 UI/4451.png"
+    }
+  ],
+  "close": {
+    "normal": 9183,
+    "hover": 9183,
+    "pressed": 9183
+  },
+  "content": {
+    "x": 19,
+    "y": 82,
+    "width": 230,
+    "height": 298
+  }
+}

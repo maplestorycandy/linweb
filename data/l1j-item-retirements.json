@@ -1,0 +1,2446 @@
+{
+ "__doc": [
+  "港版原創物品退役紀錄（物品子系統 P0·用戶 2026-08-10）——",
+  "由 tools/l1j-import/retire_port_items.py 產生。這是**已執行**的刪除",
+  "清冊：主樹（L1j-TW-main）沒有這些物品，「取消全部港版的內容」後",
+  "定義與所有資料表引用已實體刪除。重跑本工具讀這份紀錄（冪等）。",
+  "Phase II-3 批把覆蓋層 DB_REMOVALS.items（370 件遺物＋7 種強化卷軸·",
+  "2026-08-03／07-28 的裁決）與機制取消排除（RETIRED_CONTENT）的載體",
+  "一併實體化進本清冊——存檔死 key 的載入處置認這一份。",
+  "⚠️ 2026-08-15：燈籠 l1j_item_40002 與肉 l1j_item_40056 已從本清冊移除——它們後來被裁決復活、目前活在 DB.items，留在「已執行的刪除清冊」裡會讓下一次重跑把它們連定義帶引用一起靜默刪掉。",
+  "⚠️ 2026-08-18：12 本仍有完整技能效果、且 Web 有怪物掉落的職業技能書已依使用者裁決復活，定義與 canonical npcid 掉落由 data/web-skill-acquisition.json 全權管理，因此已從本清冊移除。",
+  "⚠️ 2026-08-19：魔法書(寒冰尖刺)與記憶水晶(降低負重)依使用者裁決恢復原有取得鏈，由 data/user-restored-skill-acquisition.json 全權管理，因此已從本清冊移除。",
+  "⚠️ 2026-08-22：戰士四階試煉的 8 件獎勵／材料與 9 把 Web 有明確掉落或製作來源的鈍器依使用者裁決恢復，由 data/custom-warrior-web-content.json 全權管理，因此已從本清冊移除。"
+ ],
+ "ruling": "用戶 2026-08-10：物品取消全部港版的內容，全部套用 L1J 原生版",
+ "items": [
+  {
+   "key": "acc_118",
+   "n": "守護戒指"
+  },
+  {
+   "key": "acc_119",
+   "n": "長者戒指"
+  },
+  {
+   "key": "acc_123",
+   "n": "妖魔戰士項鍊"
+  },
+  {
+   "key": "acc_124",
+   "n": "守護項鍊"
+  },
+  {
+   "key": "acc_125",
+   "n": "長老項鍊"
+  },
+  {
+   "key": "acc_126",
+   "n": "抗魔項鍊"
+  },
+  {
+   "key": "acc_127",
+   "n": "老舊的身體腰帶"
+  },
+  {
+   "key": "acc_128",
+   "n": "老舊的精神腰帶"
+  },
+  {
+   "key": "acc_129",
+   "n": "老舊的靈魂腰帶"
+  },
+  {
+   "key": "acc_138",
+   "n": "守護皮帶"
+  },
+  {
+   "key": "acc_bear_ring",
+   "n": "熊戒指"
+  },
+  {
+   "key": "acc_belt_earth",
+   "n": "地精靈的皮帶"
+  },
+  {
+   "key": "acc_belt_fire",
+   "n": "火精靈的皮帶"
+  },
+  {
+   "key": "acc_belt_water",
+   "n": "水精靈的皮帶"
+  },
+  {
+   "key": "acc_belt_wind",
+   "n": "風精靈的皮帶"
+  },
+  {
+   "key": "acc_doro",
+   "n": "多羅戒指"
+  },
+  {
+   "key": "acc_icequeen_ear_8_cha",
+   "n": "冰之女王的耳環 Lv8 魅力"
+  },
+  {
+   "key": "acc_icequeen_ear_8_con",
+   "n": "冰之女王的耳環 Lv8 體質"
+  },
+  {
+   "key": "acc_icequeen_ear_8_dex",
+   "n": "冰之女王的耳環 Lv8 敏捷"
+  },
+  {
+   "key": "acc_icequeen_ear_8_int",
+   "n": "冰之女王的耳環 Lv8 智力"
+  },
+  {
+   "key": "acc_icequeen_ear_8_str",
+   "n": "冰之女王的耳環 Lv8 力量"
+  },
+  {
+   "key": "acc_icequeen_ear_8_wis",
+   "n": "冰之女王的耳環 Lv8 精神"
+  },
+  {
+   "key": "acc_mermaid_ring",
+   "n": "美人魚戒指"
+  },
+  {
+   "key": "acc_orin_amulet",
+   "n": "歐林的項鍊"
+  },
+  {
+   "key": "acc_ring_con",
+   "n": "體力戒指"
+  },
+  {
+   "key": "acc_ring_dex",
+   "n": "敏捷戒指"
+  },
+  {
+   "key": "acc_ring_int",
+   "n": "知識戒指"
+  },
+  {
+   "key": "acc_ring_magic",
+   "n": "魔力戒指"
+  },
+  {
+   "key": "acc_ring_str",
+   "n": "力量戒指"
+  },
+  {
+   "key": "acc_sima_ring",
+   "n": "西瑪戒指"
+  },
+  {
+   "key": "amr_darkelf",
+   "n": "黑暗妖精鱗甲"
+  },
+  {
+   "key": "amr_frost",
+   "n": "寒冰盔甲"
+  },
+  {
+   "key": "amr_slayer_plate",
+   "n": "滅魔的 金屬盔甲"
+  },
+  {
+   "key": "amr_slayer_scale",
+   "n": "滅魔的 鱗甲"
+  },
+  {
+   "key": "amr_slayer_shawl",
+   "n": "滅魔的 披肩"
+  },
+  {
+   "key": "amr_slayer_vine",
+   "n": "滅魔的 小藤甲"
+  },
+  {
+   "key": "arm_42",
+   "n": "頭盔"
+  },
+  {
+   "key": "arm_antharas_charm",
+   "n": "安塔瑞斯的魅惑"
+  },
+  {
+   "key": "arm_antharas_majesty",
+   "n": "安塔瑞斯的霸氣"
+  },
+  {
+   "key": "arm_antharas_power",
+   "n": "安塔瑞斯的力量"
+  },
+  {
+   "key": "arm_antharas_spring",
+   "n": "安塔瑞斯的泉源"
+  },
+  {
+   "key": "arm_stone_glove",
+   "n": "石製手套"
+  },
+  {
+   "key": "armguard_con",
+   "n": "體力臂甲"
+  },
+  {
+   "key": "armguard_guardian",
+   "n": "守護者臂甲"
+  },
+  {
+   "key": "armguard_mage",
+   "n": "法師臂甲"
+  },
+  {
+   "key": "bk_dark_erup",
+   "n": "黑暗精靈水晶(迴避提升)"
+  },
+  {
+   "key": "bk_dragon_lavabolt",
+   "n": "龍騎士書板(岩漿之箭)"
+  },
+  {
+   "key": "bk_royal_bravewill",
+   "n": "魔法書(勇猛意志)"
+  },
+  {
+   "key": "bk_royal_kingguard",
+   "n": "魔法書(王者加護)"
+  },
+  {
+   "key": "bk_royal_shield",
+   "n": "魔法書(閃亮之盾)"
+  },
+  {
+   "key": "blt_gasha_ring",
+   "n": "巨型骷髏之指環"
+  },
+  {
+   "key": "blt_mr",
+   "n": "抗魔皮帶"
+  },
+  {
+   "key": "bot_courage",
+   "n": "勇氣長靴"
+  },
+  {
+   "key": "bot_darkelf",
+   "n": "黑暗妖精涼鞋"
+  },
+  {
+   "key": "bot_divine_will",
+   "n": "神意長靴"
+  },
+  {
+   "key": "bot_frost",
+   "n": "寒冰長靴"
+  },
+  {
+   "key": "bot_mana",
+   "n": "瑪那長靴"
+  },
+  {
+   "key": "bot_sephia",
+   "n": "賽菲亞長靴"
+  },
+  {
+   "key": "clk_holy_corps",
+   "n": "神聖執行團的斗篷"
+  },
+  {
+   "key": "clk_marcus",
+   "n": "馬昆斯斗篷"
+  },
+  {
+   "key": "doll_box_high",
+   "n": "高級魔法娃娃的盒子"
+  },
+  {
+   "key": "doll_克特",
+   "n": "魔法娃娃：克特"
+  },
+  {
+   "key": "doll_冰之女王",
+   "n": "魔法娃娃：冰之女王"
+  },
+  {
+   "key": "doll_吸血鬼",
+   "n": "魔法娃娃：吸血鬼"
+  },
+  {
+   "key": "doll_墮落",
+   "n": "魔法娃娃：墮落"
+  },
+  {
+   "key": "doll_女妖精",
+   "n": "魔法娃娃：女妖精"
+  },
+  {
+   "key": "doll_女幻術士",
+   "n": "魔法娃娃：女幻術士"
+  },
+  {
+   "key": "doll_女法師",
+   "n": "魔法娃娃：女法師"
+  },
+  {
+   "key": "doll_女騎士",
+   "n": "魔法娃娃：女騎士"
+  },
+  {
+   "key": "doll_女黑暗妖精",
+   "n": "魔法娃娃：女黑暗妖精"
+  },
+  {
+   "key": "doll_女龍騎士",
+   "n": "魔法娃娃：女龍騎士"
+  },
+  {
+   "key": "doll_安塔瑞斯",
+   "n": "魔法娃娃：安塔瑞斯"
+  },
+  {
+   "key": "doll_巨人",
+   "n": "魔法娃娃：巨人"
+  },
+  {
+   "key": "doll_巴拉卡斯",
+   "n": "魔法娃娃：巴拉卡斯"
+  },
+  {
+   "key": "doll_巴蘭卡",
+   "n": "魔法娃娃：巴蘭卡"
+  },
+  {
+   "key": "doll_巴風特",
+   "n": "魔法娃娃：巴風特"
+  },
+  {
+   "key": "doll_希爾黛斯",
+   "n": "魔法娃娃：希爾黛斯"
+  },
+  {
+   "key": "doll_思克巴女皇",
+   "n": "魔法娃娃：思克巴女皇"
+  },
+  {
+   "key": "doll_木乃伊王",
+   "n": "魔法娃娃：木乃伊王"
+  },
+  {
+   "key": "doll_林德拜爾",
+   "n": "魔法娃娃：林德拜爾"
+  },
+  {
+   "key": "doll_死亡騎士",
+   "n": "魔法娃娃：死亡騎士"
+  },
+  {
+   "key": "doll_法利昂",
+   "n": "魔法娃娃：法利昂"
+  },
+  {
+   "key": "doll_獨眼巨人",
+   "n": "魔法娃娃：獨眼巨人"
+  },
+  {
+   "key": "doll_王子",
+   "n": "魔法娃娃：王子"
+  },
+  {
+   "key": "doll_男妖精",
+   "n": "魔法娃娃：男妖精"
+  },
+  {
+   "key": "doll_男幻術士",
+   "n": "魔法娃娃：男幻術士"
+  },
+  {
+   "key": "doll_男法師",
+   "n": "魔法娃娃：男法師"
+  },
+  {
+   "key": "doll_男騎士",
+   "n": "魔法娃娃：男騎士"
+  },
+  {
+   "key": "doll_男黑暗妖精",
+   "n": "魔法娃娃：男黑暗妖精"
+  },
+  {
+   "key": "doll_男龍騎士",
+   "n": "魔法娃娃：男龍騎士"
+  },
+  {
+   "key": "doll_稻草人",
+   "n": "魔法娃娃：稻草人"
+  },
+  {
+   "key": "doll_美人魚",
+   "n": "魔法娃娃：美人魚"
+  },
+  {
+   "key": "doll_艾莉絲",
+   "n": "魔法娃娃：艾莉絲"
+  },
+  {
+   "key": "doll_莫提斯",
+   "n": "魔法娃娃：莫提斯"
+  },
+  {
+   "key": "doll_變形怪",
+   "n": "魔法娃娃：變形怪"
+  },
+  {
+   "key": "doll_阿魯巴",
+   "n": "魔法娃娃：阿魯巴"
+  },
+  {
+   "key": "doll_雪人",
+   "n": "魔法娃娃：雪人"
+  },
+  {
+   "key": "doll_飛龍",
+   "n": "魔法娃娃：飛龍"
+  },
+  {
+   "key": "doll_黑長者",
+   "n": "魔法娃娃：黑長者"
+  },
+  {
+   "key": "ear_soul_fighter",
+   "n": "靈魂耳環(鬥士)"
+  },
+  {
+   "key": "ear_soul_knight",
+   "n": "靈魂耳環(騎士)"
+  },
+  {
+   "key": "ear_soul_mage",
+   "n": "靈魂耳環(法師)"
+  },
+  {
+   "key": "glv_reaper",
+   "n": "死神之手"
+  },
+  {
+   "key": "hlm_darkelf",
+   "n": "黑暗妖精頭箍"
+  },
+  {
+   "key": "hlm_frost",
+   "n": "寒冰頭盔"
+  },
+  {
+   "key": "hlm_holy_corps",
+   "n": "神聖執行團的頭盔"
+  },
+  {
+   "key": "hlm_icequeen_charm",
+   "n": "冰之女王魅力頭飾"
+  },
+  {
+   "key": "item_ancientkey",
+   "n": "古代鑰匙"
+  },
+  {
+   "key": "item_demon_search",
+   "n": "妖魔搜索文件"
+  },
+  {
+   "key": "item_dk_insignia",
+   "n": "死亡騎士之印記"
+  },
+  {
+   "key": "item_forgotten_leather",
+   "n": "被遺忘的皮盔甲"
+  },
+  {
+   "key": "item_forgotten_plate",
+   "n": "被遺忘的金屬盔甲"
+  },
+  {
+   "key": "item_forgotten_robe",
+   "n": "被遺忘的長袍"
+  },
+  {
+   "key": "item_forgotten_scale",
+   "n": "被遺忘的鱗甲"
+  },
+  {
+   "key": "item_giltas_seal",
+   "n": "吉爾塔斯的封印"
+  },
+  {
+   "key": "item_hatin_diary",
+   "n": "黑暗哈汀的日記本"
+  },
+  {
+   "key": "item_kangaroo_feed",
+   "n": "袋鼠的飼料"
+  },
+  {
+   "key": "item_king_key",
+   "n": "軍王的鑰匙"
+  },
+  {
+   "key": "item_koreadog_feed",
+   "n": "高麗犬誘食"
+  },
+  {
+   "key": "item_mastery_proof",
+   "n": "精通之證"
+  },
+  {
+   "key": "item_monkey_feed",
+   "n": "猴子的飼料"
+  },
+  {
+   "key": "item_olin_diary",
+   "n": "歐林的日記本"
+  },
+  {
+   "key": "item_panda_feed",
+   "n": "貓熊的飼料"
+  },
+  {
+   "key": "item_pride_dom_1",
+   "n": "傲慢之塔支配符(1F)"
+  },
+  {
+   "key": "item_pride_dom_11",
+   "n": "傲慢之塔支配符(11F)"
+  },
+  {
+   "key": "item_pride_dom_21",
+   "n": "傲慢之塔支配符(21F)"
+  },
+  {
+   "key": "item_pride_dom_31",
+   "n": "傲慢之塔支配符(31F)"
+  },
+  {
+   "key": "item_pride_dom_41",
+   "n": "傲慢之塔支配符(41F)"
+  },
+  {
+   "key": "item_pride_dom_51",
+   "n": "傲慢之塔支配符(51F)"
+  },
+  {
+   "key": "item_pride_dom_61",
+   "n": "傲慢之塔支配符(61F)"
+  },
+  {
+   "key": "item_pride_dom_71",
+   "n": "傲慢之塔支配符(71F)"
+  },
+  {
+   "key": "item_pride_dom_81",
+   "n": "傲慢之塔支配符(81F)"
+  },
+  {
+   "key": "item_pride_dom_91",
+   "n": "傲慢之塔支配符(91F)"
+  },
+  {
+   "key": "item_pride_pass_1",
+   "n": "傲慢之塔傳送符(1F)"
+  },
+  {
+   "key": "item_pride_scroll_1",
+   "n": "傲慢之塔傳送卷軸(1F)"
+  },
+  {
+   "key": "item_pride_scroll_11",
+   "n": "傲慢之塔移動卷軸(11F)"
+  },
+  {
+   "key": "item_pride_scroll_21",
+   "n": "傲慢之塔移動卷軸(21F)"
+  },
+  {
+   "key": "item_pride_scroll_31",
+   "n": "傲慢之塔移動卷軸(31F)"
+  },
+  {
+   "key": "item_pride_scroll_41",
+   "n": "傲慢之塔移動卷軸(41F)"
+  },
+  {
+   "key": "item_pride_scroll_51",
+   "n": "傲慢之塔移動卷軸(51F)"
+  },
+  {
+   "key": "item_pride_scroll_61",
+   "n": "傲慢之塔移動卷軸(61F)"
+  },
+  {
+   "key": "item_pride_scroll_71",
+   "n": "傲慢之塔移動卷軸(71F)"
+  },
+  {
+   "key": "item_pride_scroll_81",
+   "n": "傲慢之塔移動卷軸(81F)"
+  },
+  {
+   "key": "item_pride_scroll_91",
+   "n": "傲慢之塔移動卷軸(91F)"
+  },
+  {
+   "key": "item_pride_sealed_1",
+   "n": "封印的傲慢之塔傳送符(1F)"
+  },
+  {
+   "key": "item_shadow_temple_key",
+   "n": "暗影神殿鑰匙"
+  },
+  {
+   "key": "item_tiger_feed",
+   "n": "虎男誘食"
+  },
+  {
+   "key": "mat_desire_guard_hide_earth",
+   "n": "地之守護者的皮"
+  },
+  {
+   "key": "mat_desire_guard_tail_earth",
+   "n": "地之守護者的尾巴"
+  },
+  {
+   "key": "mat_gasha_soul",
+   "n": "巨大骷髏的妖魂"
+  },
+  {
+   "key": "mat_silverore",
+   "n": "銀礦石"
+  },
+  {
+   "key": "mat_youkai_soul",
+   "n": "封印的妖怪之魂"
+  },
+  {
+   "key": "mem_crush",
+   "n": "記憶水晶(粉碎能量)"
+  },
+  {
+   "key": "new_item_144",
+   "n": "夏洛伯之爪"
+  },
+  {
+   "key": "new_item_172",
+   "n": "安特的樹皮"
+  },
+  {
+   "key": "new_item_186",
+   "n": "糖果"
+  },
+  {
+   "key": "new_item_222",
+   "n": "畢克斯的羽毛"
+  },
+  {
+   "key": "new_item_223",
+   "n": "畢克斯的沙漏"
+  },
+  {
+   "key": "new_item_228",
+   "n": "污染的精靈水晶(水)"
+  },
+  {
+   "key": "new_item_229",
+   "n": "污染的精靈水晶(火)"
+  },
+  {
+   "key": "new_item_230",
+   "n": "污染的精靈水晶(地)"
+  },
+  {
+   "key": "new_item_231",
+   "n": "污染的精靈水晶(風)"
+  },
+  {
+   "key": "new_item_232",
+   "n": "邪惡蜥蜴之鱗"
+  },
+  {
+   "key": "new_item_233",
+   "n": "神秘魔力恢復藥水"
+  },
+  {
+   "key": "new_item_235",
+   "n": "思克巴女皇的神祕魔杖"
+  },
+  {
+   "key": "new_item_236",
+   "n": "說話之島的回憶"
+  },
+  {
+   "key": "new_item_237",
+   "n": "安特的樹枝"
+  },
+  {
+   "key": "new_item_bless_acc",
+   "n": "賦予飾品祝福卷軸"
+  },
+  {
+   "key": "new_item_bless_arm",
+   "n": "賦予盔甲祝福卷軸"
+  },
+  {
+   "key": "new_item_bless_wpn",
+   "n": "賦予武器祝福卷軸"
+  },
+  {
+   "key": "panacea_cha",
+   "n": "萬能藥(CHA)"
+  },
+  {
+   "key": "panacea_con",
+   "n": "萬能藥(CON)"
+  },
+  {
+   "key": "panacea_dex",
+   "n": "萬能藥(DEX)"
+  },
+  {
+   "key": "panacea_int",
+   "n": "萬能藥(INT)"
+  },
+  {
+   "key": "panacea_str",
+   "n": "萬能藥(STR)"
+  },
+  {
+   "key": "panacea_white",
+   "n": "純白的萬能藥"
+  },
+  {
+   "key": "panacea_wis",
+   "n": "萬能藥(WIS)"
+  },
+  {
+   "key": "potion_blue",
+   "n": "藍色藥水"
+  },
+  {
+   "key": "relic_amp_staff",
+   "n": "安普長老的拐杖"
+  },
+  {
+   "key": "relic_ancient_spider_claw",
+   "n": "上古蜘蛛之爪"
+  },
+  {
+   "key": "relic_ant_incubessence",
+   "n": "孵育螞蟻精華"
+  },
+  {
+   "key": "relic_ant_pincer",
+   "n": "斷裂的昆蟲巨鉗"
+  },
+  {
+   "key": "relic_apprentice_wand",
+   "n": "黑魔法學徒魔杖"
+  },
+  {
+   "key": "relic_armadillo_helm",
+   "n": "犰狳尖刺頭盔"
+  },
+  {
+   "key": "relic_armor_spareblade",
+   "n": "詛咒鎧甲的備用刀"
+  },
+  {
+   "key": "relic_arrowfur_cloak",
+   "n": "佈滿箭矢的毛皮"
+  },
+  {
+   "key": "relic_aruba_haste",
+   "n": "阿魯巴的加速棍棒"
+  },
+  {
+   "key": "relic_ash_fist",
+   "n": "燃燒殆盡的灰燼之拳"
+  },
+  {
+   "key": "relic_ashbeast_chain",
+   "n": "灰燼巨獸的束鏈"
+  },
+  {
+   "key": "relic_ashwarrior_flamesword",
+   "n": "灰燼戰士的火焰長劍"
+  },
+  {
+   "key": "relic_avenger_crossbow",
+   "n": "復仇者的十字弩弓"
+  },
+  {
+   "key": "relic_axetaurus_brutalaxe",
+   "n": "牛頭怪的殘暴巨斧"
+  },
+  {
+   "key": "relic_azt_mirror",
+   "n": "阿茲特的反光石"
+  },
+  {
+   "key": "relic_azt_prism",
+   "n": "阿茲特的折射寶石"
+  },
+  {
+   "key": "relic_bandit_token",
+   "n": "盜掠者的信物"
+  },
+  {
+   "key": "relic_bara_eye",
+   "n": "毒蛾的赤紅眼球"
+  },
+  {
+   "key": "relic_bara_wing",
+   "n": "沾滿鱗粉的飛翼"
+  },
+  {
+   "key": "relic_bat_wing",
+   "n": "飛蝠之翼"
+  },
+  {
+   "key": "relic_beagle_nose",
+   "n": "小獵犬的追蹤鼻"
+  },
+  {
+   "key": "relic_bear_fishbone",
+   "n": "吃剩的魚骨頭"
+  },
+  {
+   "key": "relic_bear_fur",
+   "n": "歐熊的柔軟毛皮"
+  },
+  {
+   "key": "relic_bear_vitality",
+   "n": "巨熊的生命力"
+  },
+  {
+   "key": "relic_beheading_scythe",
+   "n": "斬首的巨大鐮刀"
+  },
+  {
+   "key": "relic_beholder_gaze",
+   "n": "眼魔的凝視"
+  },
+  {
+   "key": "relic_bk_lance",
+   "n": "黑騎士的精銳長槍"
+  },
+  {
+   "key": "relic_black_gale",
+   "n": "黑色疾風"
+  },
+  {
+   "key": "relic_blackmage_pants",
+   "n": "黑法師的修身褲"
+  },
+  {
+   "key": "relic_blackmane_coat",
+   "n": "漆黑鬃毛長大衣"
+  },
+  {
+   "key": "relic_blacktiger_whip",
+   "n": "黑虎的雙尾鞭"
+  },
+  {
+   "key": "relic_blood_ritual_dagger",
+   "n": "血祭儀式短刀"
+  },
+  {
+   "key": "relic_bloodknight_dual",
+   "n": "嗜血騎士的雙刀"
+  },
+  {
+   "key": "relic_bluetail_tail",
+   "n": "藍尾蜥蜴的斷尾"
+  },
+  {
+   "key": "relic_bombflower_core",
+   "n": "爆彈花蕊"
+  },
+  {
+   "key": "relic_bone_bow",
+   "n": "殘暴的骸骨意志之弓"
+  },
+  {
+   "key": "relic_broken_halfhelm",
+   "n": "被敲爛的半邊頭盔"
+  },
+  {
+   "key": "relic_burden_gauntlet",
+   "n": "負重的堅忍巨臂"
+  },
+  {
+   "key": "relic_burning_love",
+   "n": "火熱愛意"
+  },
+  {
+   "key": "relic_calamity_egg",
+   "n": "充滿災厄氣息的蛋"
+  },
+  {
+   "key": "relic_cat_paw",
+   "n": "柔軟的肉球"
+  },
+  {
+   "key": "relic_caveman_webbing",
+   "n": "穴居人的蹼"
+  },
+  {
+   "key": "relic_cerberus_horn",
+   "n": "詛咒三頭獸的犄角"
+  },
+  {
+   "key": "relic_cerberus_pin",
+   "n": "地獄犬三頭釵"
+  },
+  {
+   "key": "relic_cerberus_wand",
+   "n": "三頭犬魔杖"
+  },
+  {
+   "key": "relic_charm_heart",
+   "n": "魅惑之心"
+  },
+  {
+   "key": "relic_cockatrice_gaze",
+   "n": "石化雞蛇的凝視"
+  },
+  {
+   "key": "relic_cold_blueflame",
+   "n": "凜冽的青色火炎"
+  },
+  {
+   "key": "relic_collie_fur",
+   "n": "柯利的柔毛"
+  },
+  {
+   "key": "relic_corpse_needle",
+   "n": "屍毒之針"
+  },
+  {
+   "key": "relic_corrosive_jelly_skin",
+   "n": "腐蝕的果凍外皮"
+  },
+  {
+   "key": "relic_crab_claw",
+   "n": "蟹人的巨鉗"
+  },
+  {
+   "key": "relic_crescent_earring",
+   "n": "月牙耳環"
+  },
+  {
+   "key": "relic_croc_fang",
+   "n": "巨大鱷魚的狩獵牙"
+  },
+  {
+   "key": "relic_croc_leather",
+   "n": "巨大鱷魚的皮革盔甲"
+  },
+  {
+   "key": "relic_croc_soul",
+   "n": "被遺忘的鱷魚靈魂"
+  },
+  {
+   "key": "relic_croc_tshirt",
+   "n": "鱷魚皮內衣"
+  },
+  {
+   "key": "relic_cross_tombshield",
+   "n": "十字墓碑盾"
+  },
+  {
+   "key": "relic_crusher_hammer",
+   "n": "重裝戰士的粉碎鎚"
+  },
+  {
+   "key": "relic_cursed_egg",
+   "n": "充滿詛咒氣息的蛋"
+  },
+  {
+   "key": "relic_cyclops_dollsuit",
+   "n": "獨眼巨人的手製娃娃裝"
+  },
+  {
+   "key": "relic_dark_manaball",
+   "n": "漆黑的瑪那水晶球"
+  },
+  {
+   "key": "relic_dark_metal_club",
+   "n": "暗黑的金屬棍棒"
+  },
+  {
+   "key": "relic_darkelf_chainsword",
+   "n": "暗精靈鎖鏈劍"
+  },
+  {
+   "key": "relic_darkelf_grindblade",
+   "n": "黑暗殘兵的研磨利刃"
+  },
+  {
+   "key": "relic_darkelf_shootglove",
+   "n": "黑暗殘兵輔助射擊手套"
+  },
+  {
+   "key": "relic_darkremnant_boots",
+   "n": "黑暗殘兵的訓練靴"
+  },
+  {
+   "key": "relic_darkscorpion_pincers",
+   "n": "暗黑蠍的雙鉗"
+  },
+  {
+   "key": "relic_darkspirit_shroud",
+   "n": "暗靈的迷霧披肩"
+  },
+  {
+   "key": "relic_darkthief_claw",
+   "n": "黑暗盜賊的兇殺爪"
+  },
+  {
+   "key": "relic_deadgeneral_greatsword",
+   "n": "不死將軍的珍愛巨劍"
+  },
+  {
+   "key": "relic_death_leaf",
+   "n": "隱蔽的死亡草葉"
+  },
+  {
+   "key": "relic_deepfish_skin",
+   "n": "深海魚的電擊皮"
+  },
+  {
+   "key": "relic_djinn_promise",
+   "n": "巨靈的承諾"
+  },
+  {
+   "key": "relic_doberman_fang",
+   "n": "杜賓的尖銳犬齒"
+  },
+  {
+   "key": "relic_doom_egg",
+   "n": "充滿厄運氣息的蛋"
+  },
+  {
+   "key": "relic_doomsday_egg",
+   "n": "充滿破滅氣息的蛋"
+  },
+  {
+   "key": "relic_doro_vitality",
+   "n": "多羅的生命能量"
+  },
+  {
+   "key": "relic_dragonturtle_shell",
+   "n": "龍龜的背殼"
+  },
+  {
+   "key": "relic_drake_pawprint",
+   "n": "幼龍的爪印"
+  },
+  {
+   "key": "relic_dream_flamesoul",
+   "n": "幻夢的火炎靈魂"
+  },
+  {
+   "key": "relic_dream_mushroom_soul",
+   "n": "夢幻的蘑菇靈魂"
+  },
+  {
+   "key": "relic_dullahan_ember",
+   "n": "無頭騎士的餘火"
+  },
+  {
+   "key": "relic_dwarf_chainmail",
+   "n": "侏儒的笨重鎖甲"
+  },
+  {
+   "key": "relic_dwarf_sheet",
+   "n": "侏儒的舊床單"
+  },
+  {
+   "key": "relic_earth_barrier",
+   "n": "地元素屏障"
+  },
+  {
+   "key": "relic_earthfang_core",
+   "n": "地之牙的殘核"
+  },
+  {
+   "key": "relic_earthking_resist",
+   "n": "地精靈王的抗拒"
+  },
+  {
+   "key": "relic_earthshatter_sword",
+   "n": "大地碎裂劍"
+  },
+  {
+   "key": "relic_elastic_rib",
+   "n": "有彈性的肋骨"
+  },
+  {
+   "key": "relic_elder_obsidian_orb",
+   "n": "長老的黑曜水晶球"
+  },
+  {
+   "key": "relic_elder_thunder",
+   "n": "長老的雷電能量"
+  },
+  {
+   "key": "relic_elmo_spear",
+   "n": "艾爾摩尖頭槍"
+  },
+  {
+   "key": "relic_elmore_greatsword",
+   "n": "艾爾摩古戰場巨劍"
+  },
+  {
+   "key": "relic_endless_nightmare",
+   "n": "永不終止的夢魘"
+  },
+  {
+   "key": "relic_ent_bark",
+   "n": "安特的乾枯樹皮"
+  },
+  {
+   "key": "relic_eto_wand",
+   "n": "艾庫艾托的枯竭魔杖"
+  },
+  {
+   "key": "relic_eto_whip",
+   "n": "艾庫艾托的鞭笞藤"
+  },
+  {
+   "key": "relic_evilchest_relic",
+   "n": "邪惡寶箱內的遺物"
+  },
+  {
+   "key": "relic_evillizard_eye",
+   "n": "邪惡蜥蜴的眼瞳"
+  },
+  {
+   "key": "relic_executor_axe",
+   "n": "處刑人的護身斧"
+  },
+  {
+   "key": "relic_executor_skewer",
+   "n": "處刑者的串刺刑具"
+  },
+  {
+   "key": "relic_eye_crystal",
+   "n": "通透的水晶體"
+  },
+  {
+   "key": "relic_fearless_charge",
+   "n": "無所畏懼的突擊"
+  },
+  {
+   "key": "relic_fighter_armor",
+   "n": "鬥士的決戰服裝"
+  },
+  {
+   "key": "relic_fighter_axe",
+   "n": "鬥士的老舊戰斧"
+  },
+  {
+   "key": "relic_fire_barrier",
+   "n": "火元素屏障"
+  },
+  {
+   "key": "relic_fire_hide",
+   "n": "黝黑的烈火皮囊"
+  },
+  {
+   "key": "relic_fireegg_orb",
+   "n": "纏繞炎球"
+  },
+  {
+   "key": "relic_firefang_ember",
+   "n": "火之牙的餘燼"
+  },
+  {
+   "key": "relic_fireking_blast",
+   "n": "火精靈王的爆焰"
+  },
+  {
+   "key": "relic_flame_avatar",
+   "n": "火焰化身的外皮"
+  },
+  {
+   "key": "relic_flame_baphomet_armor",
+   "n": "烈焰焚燒的巴風特盔甲"
+  },
+  {
+   "key": "relic_flame_belt",
+   "n": "火焰環繞的腰帶"
+  },
+  {
+   "key": "relic_flame_dk_sword",
+   "n": "烈焰的死亡騎士之劍"
+  },
+  {
+   "key": "relic_flamearcher_bracer",
+   "n": "烈焰射手的護腕"
+  },
+  {
+   "key": "relic_flamemage_robe",
+   "n": "烈焰巫師的正式長袍"
+  },
+  {
+   "key": "relic_fly_curse",
+   "n": "蠅災的詛咒"
+  },
+  {
+   "key": "relic_follower_cloak",
+   "n": "隨從的護身斗篷"
+  },
+  {
+   "key": "relic_forgotten_sniperbow",
+   "n": "遺忘者的狙擊弓"
+  },
+  {
+   "key": "relic_forgotten_spear",
+   "n": "遺忘士兵的老舊長槍"
+  },
+  {
+   "key": "relic_fox_scarf",
+   "n": "貴重狐毛圍巾"
+  },
+  {
+   "key": "relic_frost_avatar",
+   "n": "寒冷化身的堅軀"
+  },
+  {
+   "key": "relic_frost_stone_shield",
+   "n": "剝落的厚重冰石"
+  },
+  {
+   "key": "relic_frostdeath_breath",
+   "n": "殘冰的死亡氣息"
+  },
+  {
+   "key": "relic_gale_fistblade",
+   "n": "疾風拳刃"
+  },
+  {
+   "key": "relic_gatekeeper_boots",
+   "n": "守門人的破舊履"
+  },
+  {
+   "key": "relic_general_swordguard",
+   "n": "將軍愛用的握劍護腕"
+  },
+  {
+   "key": "relic_genie_wishes",
+   "n": "巨靈的三個願望"
+  },
+  {
+   "key": "relic_ghost_teardrop",
+   "n": "受困幽魂的淚滴"
+  },
+  {
+   "key": "relic_ghoul_bracelet",
+   "n": "食屍鬼的手環"
+  },
+  {
+   "key": "relic_ghoul_fang",
+   "n": "兇殘惡鬼的毒牙"
+  },
+  {
+   "key": "relic_ghoul_visage",
+   "n": "食屍鬼的啃食面容"
+  },
+  {
+   "key": "relic_giant_clubfrag",
+   "n": "巨人的木棒殘片"
+  },
+  {
+   "key": "relic_giant_throwstone",
+   "n": "巨人的拋投石"
+  },
+  {
+   "key": "relic_giant_toothpick",
+   "n": "巨人戰士的牙籤"
+  },
+  {
+   "key": "relic_giantant_antenna",
+   "n": "巨蟻的誘導觸角"
+  },
+  {
+   "key": "relic_giantant_eye",
+   "n": "巨大螞蟻的複眼"
+  },
+  {
+   "key": "relic_gladiator_scimitar",
+   "n": "鬥士的歷戰彎刀"
+  },
+  {
+   "key": "relic_gnomeearth_tshirt",
+   "n": "髒汙的地精靈T恤"
+  },
+  {
+   "key": "relic_goat_demon_feet",
+   "n": "山羊惡魔的雙足"
+  },
+  {
+   "key": "relic_goblin_blade",
+   "n": "哥布林的石刃"
+  },
+  {
+   "key": "relic_golem_fist",
+   "n": "石頭高崙的重拳"
+  },
+  {
+   "key": "relic_golem_lifemark",
+   "n": "高崙的生命印記"
+  },
+  {
+   "key": "relic_green_imp_nail",
+   "n": "綠色妖鬼的指甲"
+  },
+  {
+   "key": "relic_griffin_claw",
+   "n": "獅鷲的鋒利鷹爪"
+  },
+  {
+   "key": "relic_griffin_feather",
+   "n": "格利芬的輕柔羽翼"
+  },
+  {
+   "key": "relic_guard_pike",
+   "n": "警衛的穿心矛"
+  },
+  {
+   "key": "relic_guard_roughgloves",
+   "n": "歷練的警衛粗布手套"
+  },
+  {
+   "key": "relic_guard_spear",
+   "n": "鎧衛隊的漆黑長槍"
+  },
+  {
+   "key": "relic_guard_towershield",
+   "n": "鎧衛隊的漆黑塔盾"
+  },
+  {
+   "key": "relic_guardian_greatsword",
+   "n": "鎧甲守衛的笨重巨劍"
+  },
+  {
+   "key": "relic_guardian_riddle",
+   "n": "守護獸的難題"
+  },
+  {
+   "key": "relic_handy_quiver",
+   "n": "改造便利箭筒"
+  },
+  {
+   "key": "relic_harvey_claw",
+   "n": "哈維的吸血爪"
+  },
+  {
+   "key": "relic_healer_wand",
+   "n": "治癒者的恢復魔棒"
+  },
+  {
+   "key": "relic_heavy_belt",
+   "n": "重戰士的鏈鎖腰帶"
+  },
+  {
+   "key": "relic_hellfire_hammer",
+   "n": "業火鍛造鎚"
+  },
+  {
+   "key": "relic_hellhound_chain",
+   "n": "束縛犬的控制鎖鏈"
+  },
+  {
+   "key": "relic_hermitcrab_shell",
+   "n": "寄居蟹的巨大背殼"
+  },
+  {
+   "key": "relic_high_lizard_armguard",
+   "n": "高等蜥蜴鱗臂甲"
+  },
+  {
+   "key": "relic_hobgoblin_grinder",
+   "n": "哈柏哥布林的研磨刀"
+  },
+  {
+   "key": "relic_husky_bone",
+   "n": "哈士奇的骨棒"
+  },
+  {
+   "key": "relic_icefang_armguard",
+   "n": "冰牙虎臂甲"
+  },
+  {
+   "key": "relic_icefield_pick",
+   "n": "冰原十字鎬"
+  },
+  {
+   "key": "relic_icestone_maul",
+   "n": "冰石的強襲鎚"
+  },
+  {
+   "key": "relic_imp_fang",
+   "n": "仿製小惡魔尖牙套"
+  },
+  {
+   "key": "relic_iron_stone_shield",
+   "n": "笨重的鋼鐵石盾"
+  },
+  {
+   "key": "relic_jack_sling",
+   "n": "傑克的彈弓"
+  },
+  {
+   "key": "relic_kaira_fang",
+   "n": "艾庫卡伊拉的毒牙"
+  },
+  {
+   "key": "relic_kaira_hood",
+   "n": "艾庫卡伊拉的華麗兜帽"
+  },
+  {
+   "key": "relic_kangaroo_gloves",
+   "n": "袋鼠的拳擊套"
+  },
+  {
+   "key": "relic_kasta_hump",
+   "n": "妖鬼王的畸形背瘤"
+  },
+  {
+   "key": "relic_killerbee_sting",
+   "n": "殺人蜂的尾刺"
+  },
+  {
+   "key": "relic_kobold_club",
+   "n": "地靈的木棍"
+  },
+  {
+   "key": "relic_kurt_shield",
+   "n": "克特之盾"
+  },
+  {
+   "key": "relic_lamia_tailscale",
+   "n": "蛇女的尾鱗甲"
+  },
+  {
+   "key": "relic_lava_fists",
+   "n": "熔岩灼燒的雙拳"
+  },
+  {
+   "key": "relic_lava_nozzle",
+   "n": "火山怪獸的熔岩噴嘴"
+  },
+  {
+   "key": "relic_lightbeam_wand",
+   "n": "光束強化魔杖"
+  },
+  {
+   "key": "relic_lining_chainshirt",
+   "n": "盔甲內襯鎖鏈衣"
+  },
+  {
+   "key": "relic_lizard_scale",
+   "n": "破舊的蜥蜴甲"
+  },
+  {
+   "key": "relic_lizard_shield",
+   "n": "蜥蜴人的鋼鐵圓盾"
+  },
+  {
+   "key": "relic_lizard_tongue",
+   "n": "灼熱蜥蜴長舌"
+  },
+  {
+   "key": "relic_lizardlord_crown",
+   "n": "蜥蜴領主的王冠"
+  },
+  {
+   "key": "relic_lizardman_cleaver",
+   "n": "蜥蜴人的大砍刀"
+  },
+  {
+   "key": "relic_lycan_swiftlegs",
+   "n": "黑夜狼人的駿腿"
+  },
+  {
+   "key": "relic_mage_dagger",
+   "n": "法師的護身短刀"
+  },
+  {
+   "key": "relic_mage_scrap_note",
+   "n": "古代法師的隨手小抄"
+  },
+  {
+   "key": "relic_mageblade_knife",
+   "n": "專精劍術的魔劍士之刀"
+  },
+  {
+   "key": "relic_magic_resist_shirt",
+   "n": "魔力阻抗襯衫"
+  },
+  {
+   "key": "relic_maid_gift",
+   "n": "侍女的贈禮"
+  },
+  {
+   "key": "relic_mana_array_boots",
+   "n": "魔力凝聚的法陣"
+  },
+  {
+   "key": "relic_mana_spring_boots",
+   "n": "魔力泉源長靴"
+  },
+  {
+   "key": "relic_mandra_spirit",
+   "n": "曼陀羅之靈"
+  },
+  {
+   "key": "relic_marksman_corset",
+   "n": "精銳射手的戰鬥束衣"
+  },
+  {
+   "key": "relic_maze_demon_glare",
+   "n": "迷宮惡魔的瞥視"
+  },
+  {
+   "key": "relic_medusa_stinger",
+   "n": "蛇妖的無慈悲尾刺"
+  },
+  {
+   "key": "relic_mermaid_tear",
+   "n": "人魚的淚滴"
+  },
+  {
+   "key": "relic_metalshell_shin",
+   "n": "金屬甲殼脛甲"
+  },
+  {
+   "key": "relic_militia_armor",
+   "n": "民兵的萬用護甲"
+  },
+  {
+   "key": "relic_mini_darkelf",
+   "n": "被差遣的迷你闇精靈"
+  },
+  {
+   "key": "relic_minotaur_flail",
+   "n": "牛頭人的流星鎚"
+  },
+  {
+   "key": "relic_modded_crossbow",
+   "n": "擅自改造的十字弓"
+  },
+  {
+   "key": "relic_monia_sandals",
+   "n": "莫妮亞的疾速涼鞋"
+  },
+  {
+   "key": "relic_monkey_staff",
+   "n": "猴子的金箍棒"
+  },
+  {
+   "key": "relic_monsterhand_skin",
+   "n": "怪手皮"
+  },
+  {
+   "key": "relic_moonhowl_helm",
+   "n": "月下狂嘯"
+  },
+  {
+   "key": "relic_morph_blade",
+   "n": "不定形的變幻劍"
+  },
+  {
+   "key": "relic_mud_idol",
+   "n": "特產易碎泥偶"
+  },
+  {
+   "key": "relic_mud_jar",
+   "n": "祭祀儀式陶罐"
+  },
+  {
+   "key": "relic_mushroom_cap",
+   "n": "菌菇傘帽"
+  },
+  {
+   "key": "relic_mutant_lamia_scale",
+   "n": "變種蛇女的詭異鱗片"
+  },
+  {
+   "key": "relic_myriad_avatar",
+   "n": "百變化身"
+  },
+  {
+   "key": "relic_necro_book",
+   "n": "死靈之書"
+  },
+  {
+   "key": "relic_ocean_orb",
+   "n": "魔力塑造的海洋水晶球"
+  },
+  {
+   "key": "relic_ogi_greataxe",
+   "n": "歐吉的巨大戰斧"
+  },
+  {
+   "key": "relic_ogre_mawashi",
+   "n": "食人妖精的相撲褌"
+  },
+  {
+   "key": "relic_ogreking_collar",
+   "n": "食人妖精王的尖刺項圈"
+  },
+  {
+   "key": "relic_ohm_heavyarmor",
+   "n": "歐姆士兵的重裝鎧甲"
+  },
+  {
+   "key": "relic_ohm_hidepants",
+   "n": "歐姆的粗皮褲"
+  },
+  {
+   "key": "relic_ohm_maul",
+   "n": "歐姆裝甲兵的超重鎚"
+  },
+  {
+   "key": "relic_ohm_shackle",
+   "n": "歐姆的腳鐐"
+  },
+  {
+   "key": "relic_orc_butcher",
+   "n": "妖魔的屠刀"
+  },
+  {
+   "key": "relic_orc_cleaver",
+   "n": "妖魔的老舊菜刀"
+  },
+  {
+   "key": "relic_orc_gloves",
+   "n": "妖魔的拳擊套"
+  },
+  {
+   "key": "relic_orc_lid",
+   "n": "妖魔的鍋蓋"
+  },
+  {
+   "key": "relic_orc_loincloth",
+   "n": "妖魔的兜襠布"
+  },
+  {
+   "key": "relic_orc_nail",
+   "n": "惡臭的妖魔指甲"
+  },
+  {
+   "key": "relic_orc_pole",
+   "n": "妖魔的曬衣桿"
+  },
+  {
+   "key": "relic_orcarcher_bow",
+   "n": "妖魔弓箭手的彈簧弓"
+  },
+  {
+   "key": "relic_orcmage_cloth",
+   "n": "妖魔法師的餐桌巾"
+  },
+  {
+   "key": "relic_orin_ring",
+   "n": "與歐林的定情之戒"
+  },
+  {
+   "key": "relic_overlook_thunder",
+   "n": "俯瞰大地的雷電"
+  },
+  {
+   "key": "relic_pan_staff",
+   "n": "牧神的放牧棍"
+  },
+  {
+   "key": "relic_panda_eyes",
+   "n": "貓熊的黑眼圈"
+  },
+  {
+   "key": "relic_paper_cloak",
+   "n": "輕薄的紙披風"
+  },
+  {
+   "key": "relic_parrot_beak",
+   "n": "七彩鸚鵡喙"
+  },
+  {
+   "key": "relic_pet_devotion",
+   "n": "珍愛夥伴的執念"
+  },
+  {
+   "key": "relic_petrify_essence",
+   "n": "石化魔法的精髓"
+  },
+  {
+   "key": "relic_pirate_bandana",
+   "n": "海賊骷髏的陳年頭巾"
+  },
+  {
+   "key": "relic_pirate_dual",
+   "n": "傳說海賊的迷幻雙刀"
+  },
+  {
+   "key": "relic_pirate_ring",
+   "n": "海賊的統御之戒"
+  },
+  {
+   "key": "relic_pirate_scimitar",
+   "n": "海賊經典彎刀"
+  },
+  {
+   "key": "relic_poison_vial",
+   "n": "施毒者的實驗瓶"
+  },
+  {
+   "key": "relic_powder_arrow",
+   "n": "無限火藥爆裂矢"
+  },
+  {
+   "key": "relic_priest_collar",
+   "n": "司祭的鎖喉頸圈"
+  },
+  {
+   "key": "relic_priest_gloves",
+   "n": "司祭的斷指護手"
+  },
+  {
+   "key": "relic_priest_hood",
+   "n": "司祭的無眼頭飾"
+  },
+  {
+   "key": "relic_priest_robe",
+   "n": "司祭的腐爛長袍"
+  },
+  {
+   "key": "relic_priest_sandals",
+   "n": "司祭的殘破草鞋"
+  },
+  {
+   "key": "relic_pup_fang",
+   "n": "幼犬的稚嫩犬齒"
+  },
+  {
+   "key": "relic_pure_maiden_love",
+   "n": "純潔少女的憐愛"
+  },
+  {
+   "key": "relic_rabbit_foot",
+   "n": "幸運暴走兔腳"
+  },
+  {
+   "key": "relic_raccoon_leaf",
+   "n": "浣熊的變身葉"
+  },
+  {
+   "key": "relic_raider_belt",
+   "n": "掠奪者的染血腰帶"
+  },
+  {
+   "key": "relic_ratman_skewer",
+   "n": "鼠人的烤肉叉"
+  },
+  {
+   "key": "relic_reaper_scythe",
+   "n": "死神的鐮刀破片"
+  },
+  {
+   "key": "relic_red_wraith",
+   "n": "滲透紅光的背後靈"
+  },
+  {
+   "key": "relic_redimp_nail",
+   "n": "紅色妖鬼的詛咒指甲"
+  },
+  {
+   "key": "relic_redscorpion_ring",
+   "n": "紅蠍尾環戒"
+  },
+  {
+   "key": "relic_remnant_barrier",
+   "n": "殘兵法師的魔力護盾"
+  },
+  {
+   "key": "relic_roach_shell",
+   "n": "蟑螂的黑光甲殼"
+  },
+  {
+   "key": "relic_rockmage_secret",
+   "n": "破岩法師的秘術"
+  },
+  {
+   "key": "relic_runaway_carrot",
+   "n": "暴走兔最愛的胡蘿蔔"
+  },
+  {
+   "key": "relic_scarab_nest",
+   "n": "聖甲蟲的孵育巢"
+  },
+  {
+   "key": "relic_scarab_shin",
+   "n": "古代聖甲蟲脛甲"
+  },
+  {
+   "key": "relic_scorch_greatsword",
+   "n": "烈炎燒灼的滾燙巨劍"
+  },
+  {
+   "key": "relic_scorpion_sting",
+   "n": "毒蠍的尾刺"
+  },
+  {
+   "key": "relic_scout_scope",
+   "n": "巡守的望遠鏡"
+  },
+  {
+   "key": "relic_seawater_shirt",
+   "n": "浸泡海水的內衣"
+  },
+  {
+   "key": "relic_serpent_fang",
+   "n": "蛇神的倒勾獠牙"
+  },
+  {
+   "key": "relic_serpent_gaze",
+   "n": "蛇神的凝視"
+  },
+  {
+   "key": "relic_serrated_fangs",
+   "n": "無數鋸齒的邪惡利牙"
+  },
+  {
+   "key": "relic_shadow_stinger",
+   "n": "來自陰影的刺劍"
+  },
+  {
+   "key": "relic_shapeshifter_underwear",
+   "n": "百變的透明內衣"
+  },
+  {
+   "key": "relic_shark_teeth",
+   "n": "鯊魚的千刃牙"
+  },
+  {
+   "key": "relic_sharpshooter_bow",
+   "n": "神射手的重弦弓"
+  },
+  {
+   "key": "relic_shepherd_boots",
+   "n": "放牧者的皮靴"
+  },
+  {
+   "key": "relic_silent_venom",
+   "n": "沉默的毒液"
+  },
+  {
+   "key": "relic_ska_armguard",
+   "n": "薩德司卡石護臂"
+  },
+  {
+   "key": "relic_ska_soul",
+   "n": "阿茲特獻祭亡靈"
+  },
+  {
+   "key": "relic_sky_god_avatar",
+   "n": "天空之神的化身"
+  },
+  {
+   "key": "relic_slave_shirt",
+   "n": "奴隸粗布衫"
+  },
+  {
+   "key": "relic_soldier_medal",
+   "n": "士兵的榮譽勳章"
+  },
+  {
+   "key": "relic_soldierant_carapace",
+   "n": "兵蟻的光澤背甲"
+  },
+  {
+   "key": "relic_soulreaper_dual",
+   "n": "奪魂者雙刃劍"
+  },
+  {
+   "key": "relic_sparta_grudge",
+   "n": "史巴托的怨念"
+  },
+  {
+   "key": "relic_sparto_shard",
+   "n": "殘暴骸骨的破片"
+  },
+  {
+   "key": "relic_sphinx_black_wing",
+   "n": "人面獅身的漆黑羽翼"
+  },
+  {
+   "key": "relic_spider_claw",
+   "n": "巨大蜘蛛的恐懼尖爪"
+  },
+  {
+   "key": "relic_spider_queen_footprints",
+   "n": "蜘蛛女王的足跡"
+  },
+  {
+   "key": "relic_sr_akaoni_pants",
+   "n": "赤鬼的內褲"
+  },
+  {
+   "key": "relic_sr_aooni_shirt",
+   "n": "青鬼的虎皮衫"
+  },
+  {
+   "key": "relic_sr_asura_arm",
+   "n": "阿修羅的武神技"
+  },
+  {
+   "key": "relic_sr_child_ring",
+   "n": "牛鬼之子的黑戒"
+  },
+  {
+   "key": "relic_sr_gasha_skull",
+   "n": "巨大骷髏的頭骨"
+  },
+  {
+   "key": "relic_sr_kama_blade",
+   "n": "鐮鼬的尾刃"
+  },
+  {
+   "key": "relic_sr_kama_pot",
+   "n": "鐮鼬的藥壺"
+  },
+  {
+   "key": "relic_sr_kappa_plate",
+   "n": "河童的尻子玉"
+  },
+  {
+   "key": "relic_sr_kettle_lid",
+   "n": "沸騰蒸氣的鍋蓋"
+  },
+  {
+   "key": "relic_sr_kettle_maul",
+   "n": "沸騰蒸氣的巨釜"
+  },
+  {
+   "key": "relic_sr_kyuubi_wand",
+   "n": "九尾妖狐的怒火"
+  },
+  {
+   "key": "relic_sr_neck_scarf",
+   "n": "長首妖怪的圍巾"
+  },
+  {
+   "key": "relic_sr_nue_tail",
+   "n": "毒鵺的黑尾"
+  },
+  {
+   "key": "relic_sr_old_umbrella",
+   "n": "老舊的百年唐傘"
+  },
+  {
+   "key": "relic_sr_tengu_fan",
+   "n": "天狗的羽扇"
+  },
+  {
+   "key": "relic_sr_ushioni_horn",
+   "n": "牛鬼的斷角"
+  },
+  {
+   "key": "relic_stalker_chest",
+   "n": "潛行者的祕密箱子"
+  },
+  {
+   "key": "relic_starfish_arm",
+   "n": "海星的分裂腕足"
+  },
+  {
+   "key": "relic_stbernard_barrel",
+   "n": "聖伯納的急救酒桶"
+  },
+  {
+   "key": "relic_steel_bulwark",
+   "n": "不動的鋼鐵堅壁"
+  },
+  {
+   "key": "relic_steelmonk_staff",
+   "n": "鋼鐵僧侶的錫杖"
+  },
+  {
+   "key": "relic_strong_femur",
+   "n": "強韌的大腿骨"
+  },
+  {
+   "key": "relic_succubus_queen_kiss",
+   "n": "斯克巴女皇的魅惑之吻"
+  },
+  {
+   "key": "relic_succubus_temptation",
+   "n": "魅魔女皇的誘惑"
+  },
+  {
+   "key": "relic_succubus_wand",
+   "n": "思克巴女皇的熱情魔杖"
+  },
+  {
+   "key": "relic_summon_cloth",
+   "n": "召喚儀式的魔術布"
+  },
+  {
+   "key": "relic_summoner_whip",
+   "n": "喚獸師的訓練鞭"
+  },
+  {
+   "key": "relic_swordsman_underwear",
+   "n": "劍客的輕便內衣"
+  },
+  {
+   "key": "relic_tamer_dogclub",
+   "n": "馴獸師的訓狗棒"
+  },
+  {
+   "key": "relic_tamer_feedbag",
+   "n": "馴獸師的飼料袋"
+  },
+  {
+   "key": "relic_tamer_petarm",
+   "n": "馴獸師手做寵物專用盔甲"
+  },
+  {
+   "key": "relic_teo_footprint",
+   "n": "薩德提歐的笨重足跡"
+  },
+  {
+   "key": "relic_teo_hammer",
+   "n": "薩德提歐的玩具鎚"
+  },
+  {
+   "key": "relic_thorn_curse",
+   "n": "荊棘纏身的詛咒"
+  },
+  {
+   "key": "relic_thorn_needle",
+   "n": "刺針"
+  },
+  {
+   "key": "relic_thunder_crown",
+   "n": "雷光加護的頭飾"
+  },
+  {
+   "key": "relic_tiger_fur",
+   "n": "虎男的斑紋毛皮"
+  },
+  {
+   "key": "relic_treasured_carrot",
+   "n": "珍藏的巨大胡蘿蔔"
+  },
+  {
+   "key": "relic_troll_belly",
+   "n": "食人妖精的緩衝肚"
+  },
+  {
+   "key": "relic_troll_regen_ring",
+   "n": "巨魔的再生戒指"
+  },
+  {
+   "key": "relic_true_dragonslayer",
+   "n": "真‧屠龍劍"
+  },
+  {
+   "key": "relic_ungoliant_plate",
+   "n": "楊果里恩的腹甲"
+  },
+  {
+   "key": "relic_unsealed_baphomet_wand",
+   "n": "解除封印的巴風特魔杖"
+  },
+  {
+   "key": "relic_venom_avatar",
+   "n": "毒液化身"
+  },
+  {
+   "key": "relic_venom_fang",
+   "n": "劇毒的獠牙"
+  },
+  {
+   "key": "relic_veteran_greatsword",
+   "n": "資深殘兵的重型劍"
+  },
+  {
+   "key": "relic_veteran_lizard_gauntlet",
+   "n": "資深蜥蜴族護手"
+  },
+  {
+   "key": "relic_vigor_belt",
+   "n": "精氣流動的腰帶"
+  },
+  {
+   "key": "relic_warlock_grimoire",
+   "n": "巫師的黑暗魔導書"
+  },
+  {
+   "key": "relic_warrior_blackblade",
+   "n": "戰士的漆黑之劍"
+  },
+  {
+   "key": "relic_water_barrier",
+   "n": "水元素屏障"
+  },
+  {
+   "key": "relic_water_orb",
+   "n": "水靈的魔力珠"
+  },
+  {
+   "key": "relic_waterfang_tear",
+   "n": "水之牙的淚滴"
+  },
+  {
+   "key": "relic_waterking_caress",
+   "n": "水精靈王的撫摸"
+  },
+  {
+   "key": "relic_watersprite_string",
+   "n": "水靈的琴弦"
+  },
+  {
+   "key": "relic_wearying_dream",
+   "n": "耗弱精神的惡夢"
+  },
+  {
+   "key": "relic_weathered_obelisk",
+   "n": "風化的巨型方尖碑"
+  },
+  {
+   "key": "relic_weathered_skull",
+   "n": "風化的頭蓋骨"
+  },
+  {
+   "key": "relic_werewolf_mace",
+   "n": "狼人的釘錘"
+  },
+  {
+   "key": "relic_whirlwind_xbow",
+   "n": "旋風十字弓"
+  },
+  {
+   "key": "relic_whiteant_shell",
+   "n": "白螞蟻蛋殼"
+  },
+  {
+   "key": "relic_whitetiger_coat",
+   "n": "純白虎皮大衣"
+  },
+  {
+   "key": "relic_wild_mane_coat",
+   "n": "狂野的鬃毛外套"
+  },
+  {
+   "key": "relic_wind_barrier",
+   "n": "風元素屏障"
+  },
+  {
+   "key": "relic_windfang_breeze",
+   "n": "風之牙的微風"
+  },
+  {
+   "key": "relic_windking_roar",
+   "n": "風精靈王的狂嘯"
+  },
+  {
+   "key": "relic_wing_chaos_blades",
+   "n": "飛翼的混沌雙刀"
+  },
+  {
+   "key": "relic_wisp_remnant",
+   "n": "幽光的殘念"
+  },
+  {
+   "key": "relic_wisp_thought",
+   "n": "幽光的思念"
+  },
+  {
+   "key": "relic_wither_amulet",
+   "n": "凋零法師的護身符"
+  },
+  {
+   "key": "relic_wolf_shawl",
+   "n": "狼毛披肩"
+  },
+  {
+   "key": "relic_wornout_underwear",
+   "n": "戰場風化的老舊內衣"
+  },
+  {
+   "key": "relic_yeti_fist",
+   "n": "雪人之拳"
+  },
+  {
+   "key": "relic_yeti_foot",
+   "n": "雪怪的大腳"
+  },
+  {
+   "key": "relic_yuka_blowdart",
+   "n": "艾庫尤卡的吹箭"
+  },
+  {
+   "key": "relic_yuka_quiver",
+   "n": "艾庫尤卡的永續箭筒"
+  },
+  {
+   "key": "relic_zombie_shin",
+   "n": "殭屍的小腿骨"
+  },
+  {
+   "key": "rem_blood",
+   "n": "之血"
+  },
+  {
+   "key": "rem_bone",
+   "n": "之骨"
+  },
+  {
+   "key": "rem_claw",
+   "n": "之爪"
+  },
+  {
+   "key": "rem_eye",
+   "n": "之眼"
+  },
+  {
+   "key": "rem_fang",
+   "n": "之牙"
+  },
+  {
+   "key": "rem_flesh",
+   "n": "之肉"
+  },
+  {
+   "key": "rem_heart",
+   "n": "之心"
+  },
+  {
+   "key": "rem_scale",
+   "n": "之鱗"
+  },
+  {
+   "key": "rng_harpy",
+   "n": "哈維戒指"
+  },
+  {
+   "key": "rng_sage",
+   "n": "賢者之戒"
+  },
+  {
+   "key": "scroll_acc",
+   "n": "對飾品施法的卷軸"
+  },
+  {
+   "key": "scroll_armor",
+   "n": "對盔甲施法的卷軸"
+  },
+  {
+   "key": "scroll_armor_b",
+   "n": "祝福的 對盔甲施法的卷軸"
+  },
+  {
+   "key": "scroll_armor_c",
+   "n": "詛咒的 對盔甲施法的卷軸"
+  },
+  {
+   "key": "scroll_weapon",
+   "n": "對武器施法的卷軸"
+  },
+  {
+   "key": "scroll_weapon_b",
+   "n": "祝福的 對武器施法的卷軸"
+  },
+  {
+   "key": "scroll_weapon_c",
+   "n": "詛咒的 對武器施法的卷軸"
+  },
+  {
+   "key": "shd_phantom_eye",
+   "n": "幻象眼魔的心眼"
+  },
+  {
+   "key": "shd_rebel",
+   "n": "反叛者的盾牌"
+  },
+  {
+   "key": "shd_redknight",
+   "n": "紅騎士盾牌"
+  },
+  {
+   "key": "sherine_crystal",
+   "n": "席琳結晶"
+  },
+  {
+   "key": "wpn_ancient_spear",
+   "n": "古代神之槍"
+  },
+  {
+   "key": "wpn_angel_wand",
+   "n": "天使魔杖"
+  },
+  {
+   "key": "wpn_chain_bloodthirst",
+   "n": "嗜血者鎖鏈劍"
+  },
+  {
+   "key": "wpn_chain_frost",
+   "n": "寒冰鎖鏈劍"
+  },
+  {
+   "key": "wpn_chain_resonance",
+   "n": "共鳴鎖鏈劍"
+  },
+  {
+   "key": "wpn_claw_destroy",
+   "n": "破壞鋼爪"
+  },
+  {
+   "key": "wpn_demon_bow_hidden",
+   "n": "隱藏的魔族弓箭"
+  },
+  {
+   "key": "wpn_demon_chain_hidden",
+   "n": "隱藏的魔族鎖鏈劍"
+  },
+  {
+   "key": "wpn_demon_claw_hidden",
+   "n": "隱藏的魔族鋼爪"
+  },
+  {
+   "key": "wpn_demon_qigu_hidden",
+   "n": "隱藏的魔族奇古獸"
+  },
+  {
+   "key": "wpn_demon_sword_hidden",
+   "n": "隱藏的魔族之劍"
+  },
+  {
+   "key": "wpn_demon_wand_hidden",
+   "n": "隱藏的魔族魔杖"
+  },
+  {
+   "key": "wpn_demonking_2hsword",
+   "n": "惡魔王雙手劍"
+  },
+  {
+   "key": "wpn_demonking_bow",
+   "n": "惡魔王弓"
+  },
+  {
+   "key": "wpn_demonking_dual",
+   "n": "惡魔王雙刀"
+  },
+  {
+   "key": "wpn_demonking_spear",
+   "n": "惡魔王矛"
+  },
+  {
+   "key": "wpn_demonking_wand",
+   "n": "惡魔王魔杖"
+  },
+  {
+   "key": "wpn_desire_balrog_2h_t1",
+   "n": "炎魔雙手劍一階"
+  },
+  {
+   "key": "wpn_desire_balrog_2h_t2",
+   "n": "炎魔雙手劍二階"
+  },
+  {
+   "key": "wpn_desire_balrog_2h_t3",
+   "n": "炎魔雙手劍三階"
+  },
+  {
+   "key": "wpn_desire_balrog_2h_t4",
+   "n": "炎魔雙手劍四階"
+  },
+  {
+   "key": "wpn_desire_balrog_2h_t5",
+   "n": "炎魔雙手劍五階"
+  },
+  {
+   "key": "wpn_desire_balrog_2h_t6",
+   "n": "炎魔雙手劍六階"
+  },
+  {
+   "key": "wpn_desire_balrog_2h_t7",
+   "n": "炎魔雙手劍七階"
+  },
+  {
+   "key": "wpn_desire_balrog_2h_t8",
+   "n": "炎魔雙手劍八階"
+  },
+  {
+   "key": "wpn_dual_destroy",
+   "n": "破壞雙刀"
+  },
+  {
+   "key": "wpn_eva_scold",
+   "n": "伊娃的責罵"
+  },
+  {
+   "key": "wpn_kukulkan_gauntlet",
+   "n": "提卡爾庫庫爾坎鐵手甲"
+  },
+  {
+   "key": "wpn_kukulkan_spear",
+   "n": "提卡爾庫庫爾坎之矛"
+  },
+  {
+   "key": "wpn_onmyoji_fan",
+   "n": "陰陽師的扇子"
+  },
+  {
+   "key": "wpn_pagrio_wrath",
+   "n": "帕格里奧之怒"
+  },
+  {
+   "key": "wpn_qigu_frost",
+   "n": "寒冰奇古獸"
+  },
+  {
+   "key": "wpn_qigu_meditate",
+   "n": "冥想奇古獸"
+  },
+  {
+   "key": "wpn_qigu_resonance",
+   "n": "共鳴奇古獸"
+  },
+  {
+   "key": "wpn_rotten_longbow",
+   "n": "腐壞的長弓"
+  },
+  {
+   "key": "wpn_shaha_arrow",
+   "n": "沙哈之箭"
+  },
+  {
+   "key": "wpn_steel_manawand_blue",
+   "n": "藍色鋼鐵瑪那魔杖"
+  },
+  {
+   "key": "wpn_steel_manawand_red",
+   "n": "紅色鋼鐵瑪那魔杖"
+  },
+  {
+   "key": "wpn_uncursed_emperor_blade",
+   "n": "解除詛咒的真死亡騎士．冥皇執行劍"
+  }
+ ]
+}

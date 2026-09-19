@@ -1,0 +1,1 @@
+{"name":"door_1665","group":"anim","trimmed":true,"flattenedShadows":false,"atlas":{"w":75,"h":80,"pad":1,"format":"png8","colors":65},"src":{"files":2,"contentHash":"ed59e5981fb736038be191faaafc630f","bytes":6314},"frames":{"frame":[{"x":0,"y":0,"w":33,"h":79,"dx":0,"dy":4,"cw":73,"ch":83},{"x":34,"y":0,"w":40,"h":71,"dx":33,"dy":0,"cw":73,"ch":83}]}}

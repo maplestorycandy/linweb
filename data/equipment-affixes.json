@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "provenance": "custom",
+  "note": "使用者核准的暗黑式裝備詞綴；怪物掉落與製作裝備適用，L1J-TW 基礎裝備資料不在本檔改寫。",
+  "quality": [
+    { "count": 0, "id": "normal", "name": "普通", "color": "#f2f2f2" },
+    { "count": 1, "id": "fine", "name": "精良", "color": "#7fd08a" },
+    { "count": 2, "id": "magic", "name": "魔法", "color": "#45b4ff" },
+    { "count": 3, "id": "rare", "name": "稀有", "color": "#c07fe8" },
+    { "count": 4, "id": "epic", "name": "史詩", "color": "#ff9d45" }
+  ],
+  "dropCountPercent": {
+    "normal": [72.0, 22.0, 5.0, 0.9, 0.1],
+    "strong": [40.0, 35.0, 18.0, 6.0, 1.0],
+    "boss": [10.0, 25.0, 35.0, 24.0, 6.0]
+  },
+  "tierLevel": [1, 20, 40, 60, 80],
+  "slotMax": {
+    "wpn": 4, "armor": 4, "shield": 4, "helm": 4, "cloak": 4,
+    "gloves": 3, "boots": 3,
+    "tshirt": 2, "ring": 2, "ear": 2, "amulet": 2, "belt": 2
+  },
+  "caps": {
+    "attackSpeedPct": 15, "moveSpeedPct": 8, "damageReduction": 8,
+    "itemDropRatePct": 30, "goldDropAmountPct": 300,
+    "evasionRating": 12, "meleeEvasion": 12,
+    "meleeCritical": 10, "rangedCritical": 10, "magicCritical": 10,
+    "meleeCriticalDamage": 40, "rangedCriticalDamage": 40, "magicCriticalDamage": 40,
+    "resistFire": 60, "resistWater": 60, "resistWind": 60, "resistEarth": 60
+  },
+  "affixes": [
+    { "id": "p_str", "kind": "prefix", "family": "str", "name": "巨力", "stat": "str", "slots": ["wpn","gloves","belt","amulet","ring"], "ranges": [[1,1],[1,1],[1,2],[2,2],[2,3]] },
+    { "id": "p_dex", "kind": "prefix", "family": "dex", "name": "靈巧", "stat": "dex", "slots": ["wpn","gloves","boots","cloak","amulet","ring","ear"], "ranges": [[1,1],[1,1],[1,2],[2,2],[2,3]] },
+    { "id": "p_con", "kind": "prefix", "family": "con", "name": "堅韌", "stat": "con", "slots": ["armor","shield","helm","tshirt","belt","amulet","ring"], "ranges": [[1,1],[1,1],[1,2],[2,2],[2,3]] },
+    { "id": "p_int", "kind": "prefix", "family": "int", "name": "睿智", "stat": "int", "slots": ["wpn","helm","cloak","amulet","ring","ear"], "ranges": [[1,1],[1,1],[1,2],[2,2],[2,3]] },
+    { "id": "p_wis", "kind": "prefix", "family": "wis", "name": "冥思", "stat": "wis", "slots": ["helm","cloak","amulet","ring","ear"], "ranges": [[1,1],[1,1],[1,2],[2,2],[2,3]] },
+    { "id": "p_cha", "kind": "prefix", "family": "cha", "name": "威儀", "stat": "cha", "slots": ["wpn","armor","shield","helm","tshirt","cloak","gloves","boots","belt","amulet","ring","ear"], "ranges": [[1,1],[1,1],[1,2],[2,2],[2,3]] },
+    { "id": "p_hp", "kind": "prefix", "family": "hp", "name": "生命", "stat": "maxHp", "slots": ["armor","shield","helm","tshirt","cloak","belt","amulet","ring","ear"], "ranges": [[10,25],[25,50],[50,80],[80,120],[120,180]] },
+    { "id": "p_mp", "kind": "prefix", "family": "mp", "name": "法力", "stat": "maxMp", "slots": ["helm","tshirt","cloak","belt","amulet","ring","ear"], "ranges": [[5,10],[10,20],[20,35],[35,55],[55,80]] },
+    { "id": "p_melee_dmg", "kind": "prefix", "family": "meleeDamage", "name": "殘暴", "stat": "meleeDamage", "slots": ["wpn","gloves","amulet","ring"], "requires": "melee", "ranges": [[1,1],[1,2],[2,3],[3,4],[4,5]] },
+    { "id": "p_ranged_dmg", "kind": "prefix", "family": "rangedDamage", "name": "鷹眼", "stat": "rangedDamage", "slots": ["wpn","gloves","amulet","ring"], "requires": "ranged", "ranges": [[1,1],[1,2],[2,3],[3,4],[4,5]] },
+    { "id": "p_magic_dmg", "kind": "prefix", "family": "magicDamage", "name": "秘法", "stat": "magicDamage", "slots": ["wpn","helm","cloak","amulet","ring"], "ranges": [[1,1],[1,1],[1,2],[2,3],[3,4]] },
+    { "id": "p_melee_hit", "kind": "prefix", "family": "meleeHit", "name": "精準", "stat": "meleeHit", "slots": ["wpn","gloves","amulet","ring"], "requires": "melee", "ranges": [[1,1],[1,2],[2,2],[2,3],[3,4]] },
+    { "id": "p_ranged_hit", "kind": "prefix", "family": "rangedHit", "name": "穿楊", "stat": "rangedHit", "slots": ["wpn","gloves","amulet","ring"], "requires": "ranged", "ranges": [[1,1],[1,2],[2,2],[2,3],[3,4]] },
+    { "id": "p_magic_hit", "kind": "prefix", "family": "magicHit", "name": "專注", "stat": "magicHit", "slots": ["wpn","helm","amulet","ring"], "ranges": [[1,1],[1,1],[1,2],[2,2],[2,3]] },
+    { "id": "p_ac", "kind": "prefix", "family": "armorClass", "name": "守護", "stat": "armorClass", "slots": ["armor","shield","helm","tshirt","cloak","gloves","boots","belt"], "ranges": [[1,1],[1,1],[1,2],[2,3],[3,4]] },
+    { "id": "p_item_find", "kind": "prefix", "family": "itemDropRate", "name": "尋寶", "stat": "itemDropRatePct", "slots": ["wpn","armor","shield","helm","tshirt","cloak","gloves","boots","belt","amulet","ring","ear"], "ranges": [[1,2],[2,3],[3,5],[5,7],[7,10]] },
+    { "id": "s_mr", "kind": "suffix", "family": "magicResist", "name": "抗魔", "stat": "magicResist", "slots": ["wpn","armor","shield","helm","tshirt","cloak","gloves","boots","belt","amulet","ring","ear"], "ranges": [[2,4],[4,6],[6,9],[9,12],[12,16]] },
+    { "id": "s_carry_capacity", "kind": "suffix", "family": "carryCapacity", "name": "承載", "stat": "carryCapacity", "slots": ["wpn","armor","shield","helm","tshirt","cloak","gloves","boots","belt","amulet","ring","ear"], "ranges": [[100,200],[200,400],[400,600],[600,800],[800,5000]] },
+    { "id": "s_gold_find", "kind": "suffix", "family": "goldDropAmount", "name": "聚財", "stat": "goldDropAmountPct", "slots": ["helm","cloak","gloves","boots","belt","amulet","ring","ear"], "ranges": [[10,20],[20,40],[40,60],[60,90],[90,120]] },
+
+    { "id": "s_dr", "kind": "suffix", "family": "damageReduction", "name": "不屈", "stat": "damageReduction", "slots": ["armor","shield","helm"], "ranges": [[0,0],[0,0],[1,1],[1,2],[2,3]] },
+    { "id": "s_er", "kind": "suffix", "family": "evasionRating", "name": "飛燕", "stat": "evasionRating", "slots": ["shield","cloak","boots"], "ranges": [[0,0],[1,1],[1,2],[2,3],[3,4]] },
+    { "id": "s_melee_evade", "kind": "suffix", "family": "meleeEvasion", "name": "游身", "stat": "meleeEvasion", "slots": ["shield","cloak","boots"], "ranges": [[0,0],[1,1],[1,2],[2,3],[3,4]] },
+    { "id": "s_fire", "kind": "suffix", "family": "resistFire", "name": "耐火", "stat": "resistFire", "slots": ["armor","shield","helm","cloak","boots","amulet","ring","ear"], "ranges": [[3,5],[6,10],[11,15],[16,20],[21,25]] },
+    { "id": "s_water", "kind": "suffix", "family": "resistWater", "name": "避水", "stat": "resistWater", "slots": ["armor","shield","helm","cloak","boots","amulet","ring","ear"], "ranges": [[3,5],[6,10],[11,15],[16,20],[21,25]] },
+    { "id": "s_wind", "kind": "suffix", "family": "resistWind", "name": "御風", "stat": "resistWind", "slots": ["armor","shield","helm","cloak","boots","amulet","ring","ear"], "ranges": [[3,5],[6,10],[11,15],[16,20],[21,25]] },
+    { "id": "s_earth", "kind": "suffix", "family": "resistEarth", "name": "固地", "stat": "resistEarth", "slots": ["armor","shield","helm","cloak","boots","amulet","ring","ear"], "ranges": [[3,5],[6,10],[11,15],[16,20],[21,25]] },
+    { "id": "s_melee_crit", "kind": "suffix", "family": "meleeCritical", "name": "殺意", "stat": "meleeCritical", "slots": ["wpn","gloves","amulet","ring"], "requires": "melee", "ranges": [[0,0],[1,1],[1,2],[2,3],[3,4]] },
+    { "id": "s_ranged_crit", "kind": "suffix", "family": "rangedCritical", "name": "狙殺", "stat": "rangedCritical", "slots": ["wpn","gloves","amulet","ring"], "requires": "ranged", "ranges": [[0,0],[1,1],[1,2],[2,3],[3,4]] },
+    { "id": "s_magic_crit", "kind": "suffix", "family": "magicCritical", "name": "咒爆", "stat": "magicCritical", "slots": ["wpn","helm","cloak","amulet","ring"], "ranges": [[0,0],[1,1],[1,2],[2,3],[3,4]] },
+    { "id": "s_melee_crit_dmg", "kind": "suffix", "family": "meleeCriticalDamage", "name": "粉碎", "stat": "meleeCriticalDamage", "slots": ["wpn","gloves","amulet","ring"], "requires": "melee", "ranges": [[0,0],[5,5],[5,10],[10,15],[15,20]] },
+    { "id": "s_ranged_crit_dmg", "kind": "suffix", "family": "rangedCriticalDamage", "name": "致命", "stat": "rangedCriticalDamage", "slots": ["wpn","gloves","amulet","ring"], "requires": "ranged", "ranges": [[0,0],[5,5],[5,10],[10,15],[15,20]] },
+    { "id": "s_magic_crit_dmg", "kind": "suffix", "family": "magicCriticalDamage", "name": "毀滅", "stat": "magicCriticalDamage", "slots": ["wpn","helm","cloak","amulet","ring"], "ranges": [[0,0],[5,5],[5,10],[10,15],[15,20]] },
+    { "id": "s_attack_speed", "kind": "suffix", "family": "attackSpeedPct", "name": "迅捷", "stat": "attackSpeedPct", "slots": ["wpn","gloves","amulet","ring"], "ranges": [[0,0],[0,0],[2,3],[3,5],[5,7]] },
+    { "id": "s_move_speed", "kind": "suffix", "family": "moveSpeedPct", "name": "疾行", "stat": "moveSpeedPct", "slots": ["boots","cloak","amulet","ring"], "ranges": [[0,0],[0,0],[2,2],[3,4],[5,5]] }
+  ]
+}

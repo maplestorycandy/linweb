@@ -1,0 +1,319 @@
+{
+ "__doc": "創角起始物品（佇列：創角 P0·用戶 2026-08-11）。來源＝L1j-TW-main beginner.sql 35 列＋Beginner.java 的 A+activate 語意；T=戰士為用戶明示新增（只保留 K 組的象牙塔斧頭 147、象牙塔長矛 105；不得讀 99nets）。item key 經 l1j-item-catalog aliases 解析（224→120）。全部只進背包、不自動裝備。重生：python tools/l1j-import/import_l1j_beginner.py",
+ "groups": {
+  "A": [
+   {
+    "l1jItemId": 40005,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "蠟燭",
+    "key": "l1j_item_40005"
+   },
+   {
+    "l1jItemId": 40005,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "蠟燭",
+    "key": "l1j_item_40005"
+   },
+   {
+    "l1jItemId": 40641,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "說話卷軸",
+    "key": "l1j_item_40641"
+   }
+  ],
+  "P": [
+   {
+    "l1jItemId": 35,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔單手劍",
+    "key": "l1j_item_35"
+   },
+   {
+    "l1jItemId": 48,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔雙手劍",
+    "key": "l1j_item_48"
+   },
+   {
+    "l1jItemId": 147,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔斧頭",
+    "key": "l1j_item_147"
+   },
+   {
+    "l1jItemId": 7,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔短劍",
+    "key": "l1j_item_7"
+   }
+  ],
+  "K": [
+   {
+    "l1jItemId": 35,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔單手劍",
+    "key": "l1j_item_35"
+   },
+   {
+    "l1jItemId": 48,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔雙手劍",
+    "key": "l1j_item_48"
+   },
+   {
+    "l1jItemId": 147,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔斧頭",
+    "key": "l1j_item_147"
+   },
+   {
+    "l1jItemId": 105,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔長矛",
+    "key": "l1j_item_105"
+   },
+   {
+    "l1jItemId": 174,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔石弓",
+    "key": "l1j_item_174"
+   },
+   {
+    "l1jItemId": 7,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔短劍",
+    "key": "l1j_item_7"
+   },
+   {
+    "l1jItemId": 49550,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔箭筒",
+    "key": "l1j_item_49550"
+   }
+  ],
+  "E": [
+   {
+    "l1jItemId": 35,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔單手劍",
+    "key": "l1j_item_35"
+   },
+   {
+    "l1jItemId": 175,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔長弓",
+    "key": "l1j_item_175"
+   },
+   {
+    "l1jItemId": 174,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔石弓",
+    "key": "l1j_item_174"
+   },
+   {
+    "l1jItemId": 7,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔短劍",
+    "key": "l1j_item_7"
+   },
+   {
+    "l1jItemId": 49550,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔箭筒",
+    "key": "l1j_item_49550"
+   }
+  ],
+  "W": [
+   {
+    "l1jItemId": 35,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔單手劍",
+    "key": "l1j_item_35"
+   },
+   {
+    "l1jItemId": 224,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔魔杖",
+    "key": "l1j_item_120"
+   },
+   {
+    "l1jItemId": 7,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔短劍",
+    "key": "l1j_item_7"
+   }
+  ],
+  "D": [
+   {
+    "l1jItemId": 35,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔單手劍",
+    "key": "l1j_item_35"
+   },
+   {
+    "l1jItemId": 174,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔石弓",
+    "key": "l1j_item_174"
+   },
+   {
+    "l1jItemId": 73,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔雙刀",
+    "key": "l1j_item_73"
+   },
+   {
+    "l1jItemId": 156,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔鋼爪",
+    "key": "l1j_item_156"
+   },
+   {
+    "l1jItemId": 7,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔短劍",
+    "key": "l1j_item_7"
+   },
+   {
+    "l1jItemId": 49550,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔箭筒",
+    "key": "l1j_item_49550"
+   }
+  ],
+  "R": [
+   {
+    "l1jItemId": 35,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔單手劍",
+    "key": "l1j_item_35"
+   },
+   {
+    "l1jItemId": 48,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔雙手劍",
+    "key": "l1j_item_48"
+   },
+   {
+    "l1jItemId": 147,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔斧頭",
+    "key": "l1j_item_147"
+   }
+  ],
+  "I": [
+   {
+    "l1jItemId": 147,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔斧頭",
+    "key": "l1j_item_147"
+   },
+   {
+    "l1jItemId": 174,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔石弓",
+    "key": "l1j_item_174"
+   },
+   {
+    "l1jItemId": 224,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔魔杖",
+    "key": "l1j_item_120"
+   },
+   {
+    "l1jItemId": 49550,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔箭筒",
+    "key": "l1j_item_49550"
+   }
+  ],
+  "T": [
+   {
+    "l1jItemId": 147,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔斧頭",
+    "key": "l1j_item_147"
+   },
+   {
+    "l1jItemId": 105,
+    "count": 1,
+    "enchant": 0,
+    "charge": 0,
+    "name": "象牙塔長矛",
+    "key": "l1j_item_105"
+   }
+  ]
+ }
+}

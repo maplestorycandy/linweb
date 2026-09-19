@@ -1,0 +1,621 @@
+{
+ "item_unknown_spear": [
+  "矛"
+ ],
+ "l1j_item_105": [
+  "矛"
+ ],
+ "l1j_item_112": [
+  "單手劍"
+ ],
+ "l1j_item_113": [
+  "單手劍"
+ ],
+ "l1j_item_114": [
+  "單手鈍器"
+ ],
+ "l1j_item_147": [
+  "雙手鈍器"
+ ],
+ "l1j_item_15": [
+  "單手劍"
+ ],
+ "l1j_item_150": [
+  "雙手鈍器"
+ ],
+ "l1j_item_156": [
+  "鋼爪"
+ ],
+ "l1j_item_159": [
+  "鋼爪"
+ ],
+ "l1j_item_196": [
+  "雙手劍"
+ ],
+ "l1j_item_197": [
+  "雙手劍"
+ ],
+ "l1j_item_198": [
+  "雙手劍"
+ ],
+ "l1j_item_199": [
+  "雙手劍"
+ ],
+ "l1j_item_200": [
+  "雙手劍"
+ ],
+ "l1j_item_201": [
+  "雙手劍"
+ ],
+ "l1j_item_202": [
+  "雙手劍"
+ ],
+ "l1j_item_203": [
+  "雙手劍"
+ ],
+ "l1j_item_206": [
+  "單手劍"
+ ],
+ "l1j_item_207": [
+  "鋼爪"
+ ],
+ "l1j_item_208": [
+  "單手劍"
+ ],
+ "l1j_item_209": [
+  "單手劍"
+ ],
+ "l1j_item_211": [
+  "矛"
+ ],
+ "l1j_item_212": [
+  "矛"
+ ],
+ "l1j_item_219": [
+  "雙手鈍器"
+ ],
+ "l1j_item_225": [
+  "單手劍"
+ ],
+ "l1j_item_226": [
+  "單手劍"
+ ],
+ "l1j_item_228": [
+  "匕首"
+ ],
+ "l1j_item_231": [
+  "匕首"
+ ],
+ "l1j_item_232": [
+  "單手劍"
+ ],
+ "l1j_item_233": [
+  "雙手劍"
+ ],
+ "l1j_item_234": [
+  "矛"
+ ],
+ "l1j_item_235": [
+  "單手鈍器"
+ ],
+ "l1j_item_236": [
+  "雙刀"
+ ],
+ "l1j_item_237": [
+  "鋼爪"
+ ],
+ "l1j_item_241": [
+  "單手劍"
+ ],
+ "l1j_item_244": [
+  "鋼爪"
+ ],
+ "l1j_item_245": [
+  "單手鈍器"
+ ],
+ "l1j_item_246": [
+  "單手劍"
+ ],
+ "l1j_item_247": [
+  "單手劍"
+ ],
+ "l1j_item_248": [
+  "單手劍"
+ ],
+ "l1j_item_249": [
+  "單手劍"
+ ],
+ "l1j_item_250": [
+  "匕首"
+ ],
+ "l1j_item_251": [
+  "雙手劍"
+ ],
+ "l1j_item_252": [
+  "矛"
+ ],
+ "l1j_item_253": [
+  "單手鈍器"
+ ],
+ "l1j_item_254": [
+  "雙刀"
+ ],
+ "l1j_item_256": [
+  "單手劍"
+ ],
+ "l1j_item_257": [
+  "單手劍"
+ ],
+ "l1j_item_258": [
+  "單手劍"
+ ],
+ "l1j_item_260": [
+  "雙手鈍器"
+ ],
+ "l1j_item_262": [
+  "雙手劍"
+ ],
+ "l1j_item_35": [
+  "單手劍"
+ ],
+ "l1j_item_36": [
+  "單手劍"
+ ],
+ "l1j_item_45": [
+  "單手劍"
+ ],
+ "l1j_item_46": [
+  "單手劍"
+ ],
+ "l1j_item_48": [
+  "雙手劍"
+ ],
+ "l1j_item_500": [
+  "匕首"
+ ],
+ "l1j_item_501": [
+  "單手劍"
+ ],
+ "l1j_item_502": [
+  "雙手劍"
+ ],
+ "l1j_item_504": [
+  "鋼爪"
+ ],
+ "l1j_item_506": [
+  "匕首"
+ ],
+ "l1j_item_511": [
+  "矛"
+ ],
+ "l1j_item_513": [
+  "雙手劍"
+ ],
+ "l1j_item_514": [
+  "單手劍"
+ ],
+ "l1j_item_516": [
+  "雙刀"
+ ],
+ "l1j_item_517": [
+  "矛"
+ ],
+ "l1j_item_520": [
+  "鋼爪"
+ ],
+ "l1j_item_522": [
+  "雙手劍"
+ ],
+ "l1j_item_53": [
+  "雙手劍"
+ ],
+ "l1j_item_60": [
+  "單手劍"
+ ],
+ "l1j_item_65": [
+  "單手劍"
+ ],
+ "l1j_item_7": [
+  "匕首"
+ ],
+ "l1j_item_73": [
+  "雙刀"
+ ],
+ "l1j_item_77": [
+  "雙刀"
+ ],
+ "l1j_item_83": [
+  "雙刀"
+ ],
+ "mat_unknown_axe": [
+  "單手鈍器"
+ ],
+ "wpn_1": [
+  "單手鈍器"
+ ],
+ "wpn_10": [
+  "單手鈍器"
+ ],
+ "wpn_11": [
+  "匕首"
+ ],
+ "wpn_12": [
+  "矛"
+ ],
+ "wpn_13": [
+  "單手鈍器"
+ ],
+ "wpn_14": [
+  "矛"
+ ],
+ "wpn_15": [
+  "矛"
+ ],
+ "wpn_16": [
+  "矛"
+ ],
+ "wpn_17": [
+  "矛"
+ ],
+ "wpn_18": [
+  "矛"
+ ],
+ "wpn_19": [
+  "雙手鈍器"
+ ],
+ "wpn_2": [
+  "單手鈍器"
+ ],
+ "wpn_20": [
+  "單手鈍器"
+ ],
+ "wpn_21": [
+  "矛"
+ ],
+ "wpn_23": [
+  "雙手鈍器"
+ ],
+ "wpn_24": [
+  "矛"
+ ],
+ "wpn_25": [
+  "矛"
+ ],
+ "wpn_26": [
+  "單手劍"
+ ],
+ "wpn_27": [
+  "單手劍"
+ ],
+ "wpn_28": [
+  "矛"
+ ],
+ "wpn_2hsword": [
+  "雙手劍"
+ ],
+ "wpn_33": [
+  "匕首"
+ ],
+ "wpn_34": [
+  "單手劍"
+ ],
+ "wpn_35": [
+  "單手劍"
+ ],
+ "wpn_36": [
+  "單手劍"
+ ],
+ "wpn_37": [
+  "單手劍"
+ ],
+ "wpn_39": [
+  "矛"
+ ],
+ "wpn_4": [
+  "矛"
+ ],
+ "wpn_40": [
+  "矛"
+ ],
+ "wpn_41": [
+  "矛"
+ ],
+ "wpn_6": [
+  "矛"
+ ],
+ "wpn_7": [
+  "矛"
+ ],
+ "wpn_9": [
+  "單手劍"
+ ],
+ "wpn_abyss_dualblade": [
+  "雙刀"
+ ],
+ "wpn_alien": [
+  "單手鈍器"
+ ],
+ "wpn_ancient_darkelf_sword": [
+  "單手劍"
+ ],
+ "wpn_assassin_mark": [
+  "雙刀"
+ ],
+ "wpn_baranka_claw": [
+  "鋼爪"
+ ],
+ "wpn_baranka_steelclaw": [
+  "鋼爪"
+ ],
+ "wpn_battleaxe": [
+  "雙手鈍器"
+ ],
+ "wpn_beastking_claw": [
+  "鋼爪"
+ ],
+ "wpn_berserker": [
+  "雙手鈍器"
+ ],
+ "wpn_blackflame_sword": [
+  "單手劍",
+  "武士刀"
+ ],
+ "wpn_blood_2hsword": [
+  "雙手劍"
+ ],
+ "wpn_chaos_thorn": [
+  "匕首"
+ ],
+ "wpn_claw_abyss": [
+  "鋼爪"
+ ],
+ "wpn_claw_bronze": [
+  "鋼爪"
+ ],
+ "wpn_claw_damascus": [
+  "鋼爪"
+ ],
+ "wpn_claw_dark": [
+  "鋼爪"
+ ],
+ "wpn_claw_gloom": [
+  "鋼爪"
+ ],
+ "wpn_claw_shadow": [
+  "鋼爪"
+ ],
+ "wpn_claw_silver": [
+  "鋼爪"
+ ],
+ "wpn_claw_steel": [
+  "鋼爪"
+ ],
+ "wpn_crimson_spear": [
+  "矛"
+ ],
+ "wpn_crystal_dagger": [
+  "匕首"
+ ],
+ "wpn_cursed_emperor_blade": [
+  "單手劍",
+  "武士刀"
+ ],
+ "wpn_dagger1": [
+  "匕首"
+ ],
+ "wpn_dagger2": [
+  "匕首"
+ ],
+ "wpn_dagger_rasta": [
+  "匕首"
+ ],
+ "wpn_damascus": [
+  "單手劍"
+ ],
+ "wpn_dark_sword": [
+  "單手劍"
+ ],
+ "wpn_death_finger": [
+  "鋼爪"
+ ],
+ "wpn_demon_axe": [
+  "雙手鈍器"
+ ],
+ "wpn_demon_claw": [
+  "鋼爪"
+ ],
+ "wpn_demon_dual": [
+  "雙刀"
+ ],
+ "wpn_demon_sword": [
+  "單手劍"
+ ],
+ "wpn_desire_angas_mace": [
+  "雙手鈍器"
+ ],
+ "wpn_desire_guardian_spear": [
+  "矛"
+ ],
+ "wpn_dk_flameblade": [
+  "單手劍"
+ ],
+ "wpn_dragon_2h": [
+  "雙手劍"
+ ],
+ "wpn_dragonslayer": [
+  "雙手劍"
+ ],
+ "wpn_dual_abyss": [
+  "雙刀"
+ ],
+ "wpn_dual_bronze": [
+  "雙刀"
+ ],
+ "wpn_dual_damascus": [
+  "雙刀"
+ ],
+ "wpn_dual_dark": [
+  "雙刀"
+ ],
+ "wpn_dual_gloom": [
+  "雙刀"
+ ],
+ "wpn_dual_rasta": [
+  "雙刀"
+ ],
+ "wpn_dual_shadow": [
+  "雙刀"
+ ],
+ "wpn_dual_silver": [
+  "雙刀"
+ ],
+ "wpn_dual_spike": [
+  "雙刀"
+ ],
+ "wpn_dual_steel": [
+  "雙刀"
+ ],
+ "wpn_elfsword": [
+  "單手劍"
+ ],
+ "wpn_emperor_blade": [
+  "雙手劍"
+ ],
+ "wpn_frost_spear": [
+  "矛"
+ ],
+ "wpn_giantaxe": [
+  "雙手鈍器"
+ ],
+ "wpn_giltas_sword": [
+  "雙手劍"
+ ],
+ "wpn_glory_sword": [
+  "單手劍"
+ ],
+ "wpn_golden_scepter": [
+  "單手劍",
+  "武士刀"
+ ],
+ "wpn_greatsword": [
+  "雙手劍"
+ ],
+ "wpn_halberd": [
+  "矛"
+ ],
+ "wpn_hate_claw": [
+  "鋼爪"
+ ],
+ "wpn_invader": [
+  "單手劍"
+ ],
+ "wpn_katana": [
+  "單手劍",
+  "武士刀"
+ ],
+ "wpn_kurt_sword": [
+  "單手劍"
+ ],
+ "wpn_longsword": [
+  "單手劍"
+ ],
+ "wpn_mailbreaker": [
+  "單手劍"
+ ],
+ "wpn_manadagger": [
+  "匕首"
+ ],
+ "wpn_mithril_dagger": [
+  "匕首"
+ ],
+ "wpn_official_2h": [
+  "雙手劍"
+ ],
+ "wpn_official_blade": [
+  "單手劍"
+ ],
+ "wpn_old_greatsword": [
+  "雙手劍"
+ ],
+ "wpn_old_sword": [
+  "單手劍",
+  "武士刀"
+ ],
+ "wpn_ori_dagger": [
+  "匕首"
+ ],
+ "wpn_pirate_cutlass": [
+  "單手劍"
+ ],
+ "wpn_pirate_dagger": [
+  "匕首"
+ ],
+ "wpn_pirate_shortblade": [
+  "單手劍"
+ ],
+ "wpn_rapier": [
+  "單手劍"
+ ],
+ "wpn_redflame_sword": [
+  "單手劍",
+  "武士刀"
+ ],
+ "wpn_redknight": [
+  "單手劍"
+ ],
+ "wpn_redshadow_dual": [
+  "雙刀"
+ ],
+ "wpn_rond_dual": [
+  "雙刀"
+ ],
+ "wpn_scimitar": [
+  "單手劍"
+ ],
+ "wpn_shortsword": [
+  "單手劍"
+ ],
+ "wpn_silence_sword": [
+  "單手劍"
+ ],
+ "wpn_silveraxe": [
+  "雙手鈍器"
+ ],
+ "wpn_silversword": [
+  "單手劍"
+ ],
+ "wpn_siruge": [
+  "單手劍",
+  "武士刀"
+ ],
+ "wpn_small_katana": [
+  "匕首"
+ ],
+ "wpn_spear_rasta": [
+  "矛"
+ ],
+ "wpn_sword_rasta": [
+  "單手劍"
+ ],
+ "wpn_taurus_axe": [
+  "雙手鈍器"
+ ],
+ "wpn_thebes_2hsword": [
+  "雙手劍"
+ ],
+ "wpn_thebes_dual": [
+  "雙刀"
+ ],
+ "wpn_thunder_sword": [
+  "單手劍"
+ ],
+ "wpn_vander_sword": [
+  "單手劍"
+ ],
+ "wpn_vengeance": [
+  "雙手劍"
+ ],
+ "wpn_windblade_dagger": [
+  "匕首"
+ ]
+}

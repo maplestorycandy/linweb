@@ -1,0 +1,8 @@
+{
+  "expRate": 20,
+  "dropRate": 5,
+  "adenaRate": 10,
+  "weaponEnchantRate": 1,
+  "armorEnchantRate": 1,
+  "maxLevel": 99
+}

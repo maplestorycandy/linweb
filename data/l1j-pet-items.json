@@ -1,0 +1,271 @@
+{
+ "schemaVersion": 1,
+ "source": "L1j-TW-main/db/InnoDB_TW/petitem.sql + C_UsePetItem.java",
+ "counts": {
+  "rows": 13,
+  "weapons": 7,
+  "armors": 6
+ },
+ "items": [
+  {
+   "itemId": 40749,
+   "itemKey": "pet_fang_hound",
+   "name": "獵犬之牙",
+   "slot": "petwpn",
+   "stats": {
+    "hitModifier": 5,
+    "damageModifier": 0,
+    "armorClass": 0,
+    "strength": 0,
+    "constitution": 0,
+    "dexterity": 0,
+    "intelligence": 0,
+    "wisdom": 0,
+    "maxHp": 0,
+    "maxMp": 0,
+    "spellPower": 0,
+    "magicResist": 0
+   }
+  },
+  {
+   "itemId": 40750,
+   "itemKey": "pet_fang_ruin",
+   "name": "破滅之牙",
+   "slot": "petwpn",
+   "stats": {
+    "hitModifier": -3,
+    "damageModifier": 2,
+    "armorClass": 0,
+    "strength": 0,
+    "constitution": 0,
+    "dexterity": 0,
+    "intelligence": 0,
+    "wisdom": 0,
+    "maxHp": 0,
+    "maxMp": 0,
+    "spellPower": 0,
+    "magicResist": 0
+   }
+  },
+  {
+   "itemId": 40751,
+   "itemKey": "l1j_item_40751",
+   "name": "鬥犬之牙",
+   "slot": "petwpn",
+   "stats": {
+    "hitModifier": 3,
+    "damageModifier": 0,
+    "armorClass": 0,
+    "strength": 0,
+    "constitution": 0,
+    "dexterity": 0,
+    "intelligence": 0,
+    "wisdom": 0,
+    "maxHp": 0,
+    "maxMp": 0,
+    "spellPower": 0,
+    "magicResist": 0
+   }
+  },
+  {
+   "itemId": 40752,
+   "itemKey": "l1j_item_40752",
+   "name": "黃金之牙",
+   "slot": "petwpn",
+   "stats": {
+    "hitModifier": 1,
+    "damageModifier": 1,
+    "armorClass": 0,
+    "strength": 0,
+    "constitution": 0,
+    "dexterity": 0,
+    "intelligence": 0,
+    "wisdom": 0,
+    "maxHp": 0,
+    "maxMp": 0,
+    "spellPower": 1,
+    "magicResist": 0
+   }
+  },
+  {
+   "itemId": 40756,
+   "itemKey": "l1j_item_40756",
+   "name": "神之牙",
+   "slot": "petwpn",
+   "stats": {
+    "hitModifier": 3,
+    "damageModifier": 0,
+    "armorClass": 0,
+    "strength": 0,
+    "constitution": 0,
+    "dexterity": 0,
+    "intelligence": 0,
+    "wisdom": 0,
+    "maxHp": 0,
+    "maxMp": 0,
+    "spellPower": 2,
+    "magicResist": 0
+   }
+  },
+  {
+   "itemId": 40757,
+   "itemKey": "pet_fang_steel",
+   "name": "鋼鐵之牙",
+   "slot": "petwpn",
+   "stats": {
+    "hitModifier": 0,
+    "damageModifier": 1,
+    "armorClass": 0,
+    "strength": 0,
+    "constitution": 0,
+    "dexterity": 0,
+    "intelligence": 0,
+    "wisdom": 0,
+    "maxHp": 0,
+    "maxMp": 0,
+    "spellPower": 0,
+    "magicResist": 0
+   }
+  },
+  {
+   "itemId": 40758,
+   "itemKey": "pet_fang_victory",
+   "name": "勝利之牙",
+   "slot": "petwpn",
+   "stats": {
+    "hitModifier": 2,
+    "damageModifier": 1,
+    "armorClass": 0,
+    "strength": 0,
+    "constitution": 0,
+    "dexterity": 0,
+    "intelligence": 0,
+    "wisdom": 0,
+    "maxHp": 0,
+    "maxMp": 0,
+    "spellPower": 0,
+    "magicResist": 0
+   }
+  },
+  {
+   "itemId": 40761,
+   "itemKey": "pet_arm_leather",
+   "name": "寵物皮盔甲",
+   "slot": "petarm",
+   "stats": {
+    "hitModifier": 0,
+    "damageModifier": 0,
+    "armorClass": -4,
+    "strength": 0,
+    "constitution": 0,
+    "dexterity": 0,
+    "intelligence": 0,
+    "wisdom": 0,
+    "maxHp": 0,
+    "maxMp": 0,
+    "spellPower": 0,
+    "magicResist": 0
+   }
+  },
+  {
+   "itemId": 40762,
+   "itemKey": "pet_arm_bone",
+   "name": "寵物骷髏盔甲",
+   "slot": "petarm",
+   "stats": {
+    "hitModifier": 0,
+    "damageModifier": 0,
+    "armorClass": -7,
+    "strength": 0,
+    "constitution": 0,
+    "dexterity": 0,
+    "intelligence": 0,
+    "wisdom": 0,
+    "maxHp": 0,
+    "maxMp": 0,
+    "spellPower": 0,
+    "magicResist": 0
+   }
+  },
+  {
+   "itemId": 40763,
+   "itemKey": "pet_arm_steel",
+   "name": "寵物鋼鐵盔甲",
+   "slot": "petarm",
+   "stats": {
+    "hitModifier": 0,
+    "damageModifier": 0,
+    "armorClass": -8,
+    "strength": 0,
+    "constitution": 0,
+    "dexterity": 0,
+    "intelligence": 0,
+    "wisdom": 0,
+    "maxHp": 0,
+    "maxMp": 0,
+    "spellPower": 0,
+    "magicResist": 0
+   }
+  },
+  {
+   "itemId": 40764,
+   "itemKey": "pet_arm_mithril",
+   "name": "寵物米索莉盔甲",
+   "slot": "petarm",
+   "stats": {
+    "hitModifier": 0,
+    "damageModifier": 0,
+    "armorClass": -12,
+    "strength": 0,
+    "constitution": 0,
+    "dexterity": 0,
+    "intelligence": 1,
+    "wisdom": 1,
+    "maxHp": 0,
+    "maxMp": 0,
+    "spellPower": 0,
+    "magicResist": 10
+   }
+  },
+  {
+   "itemId": 40765,
+   "itemKey": "pet_arm_cross",
+   "name": "寵物十字盔甲",
+   "slot": "petarm",
+   "stats": {
+    "hitModifier": 0,
+    "damageModifier": 0,
+    "armorClass": -13,
+    "strength": 0,
+    "constitution": 0,
+    "dexterity": 0,
+    "intelligence": 0,
+    "wisdom": 0,
+    "maxHp": 0,
+    "maxMp": 0,
+    "spellPower": 0,
+    "magicResist": 0
+   }
+  },
+  {
+   "itemId": 40766,
+   "itemKey": "pet_arm_chain",
+   "name": "寵物鏈甲",
+   "slot": "petarm",
+   "stats": {
+    "hitModifier": 0,
+    "damageModifier": 0,
+    "armorClass": -20,
+    "strength": 0,
+    "constitution": 0,
+    "dexterity": 0,
+    "intelligence": 0,
+    "wisdom": 0,
+    "maxHp": 0,
+    "maxMp": 0,
+    "spellPower": 0,
+    "magicResist": 0
+   }
+  }
+ ]
+}

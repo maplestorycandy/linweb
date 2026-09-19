@@ -1,0 +1,576 @@
+{
+ "__doc": [
+  "L1J-TW 的召喚設計——由 tools/l1j-import/build_l1j_summons.py 產生（機器產物）。",
+  "⚠️ 名冊與預算公式抄 SkillUse.java（L1J 的召喚寫死在 Java 裡，不是資料驅動）；",
+  "   被召喚體的數值查 npc.sql，換算規則與 import_l1j_mobs.py 完全相同。",
+  "⚠️ 精靈的 `e` 是**陣列位置**決定的（地火水風），不是 l1j-mobs.json 的 `e`",
+  "   ——那一欄是 weakAttr 換算的「弱點」，火之精靈在那裡是 earth。",
+  "⚠️ 三支技能的數量規則完全不同，看 cost 區塊不要套用同一條。"
+ ],
+ "skills": {
+  "sk_summon": {
+   "officialId": 51,
+   "l1jName": "召喚術",
+   "mode": "tiered",
+   "cost": {
+    "unitCost": 8,
+    "chaCap": 34,
+    "chaBonus": 6,
+    "requiresNoPets": false
+   },
+   "tiers": [
+    {
+     "maxLevelExclusive": 32,
+     "unit": {
+      "npcid": 81210,
+      "n": "哈柏哥布林",
+      "gfx": 1206,
+      "lv": 20,
+      "hp": 300,
+      "ac": 1,
+      "mr": 1,
+      "e": "none",
+      "atkSpd": 0.96,
+      "dmg": [
+       1,
+       20
+      ],
+      "db": 6,
+      "hit": 23,
+      "moveSpd": 42
+     }
+    },
+    {
+     "maxLevelExclusive": 36,
+     "unit": {
+      "npcid": 81213,
+      "n": "甘地妖魔",
+      "gfx": 784,
+      "lv": 24,
+      "hp": 350,
+      "ac": 0,
+      "mr": 15,
+      "e": "none",
+      "atkSpd": 1.04,
+      "dmg": [
+       1,
+       24
+      ],
+      "db": 5,
+      "hit": 23,
+      "moveSpd": 42
+     }
+    },
+    {
+     "maxLevelExclusive": 40,
+     "unit": {
+      "npcid": 81216,
+      "n": "狂野毒牙",
+      "gfx": 4207,
+      "lv": 28,
+      "hp": 400,
+      "ac": -6,
+      "mr": 10,
+      "e": "none",
+      "atkSpd": 0.92,
+      "dmg": [
+       1,
+       28
+      ],
+      "db": 8,
+      "hit": 33,
+      "moveSpd": 42
+     }
+    },
+    {
+     "maxLevelExclusive": 44,
+     "unit": {
+      "npcid": 81219,
+      "n": "食人妖精",
+      "gfx": 152,
+      "lv": 32,
+      "hp": 450,
+      "ac": -6,
+      "mr": 10,
+      "e": "none",
+      "atkSpd": 0.84,
+      "dmg": [
+       1,
+       32
+      ],
+      "db": 9,
+      "hit": 37,
+      "moveSpd": 42
+     }
+    },
+    {
+     "maxLevelExclusive": 48,
+     "unit": {
+      "npcid": 81222,
+      "n": "狂暴蜥蜴人",
+      "gfx": 4149,
+      "lv": 36,
+      "hp": 500,
+      "ac": -4,
+      "mr": 10,
+      "e": "none",
+      "atkSpd": 0.96,
+      "dmg": [
+       1,
+       36
+      ],
+      "db": 7,
+      "hit": 40,
+      "moveSpd": 42
+     }
+    },
+    {
+     "maxLevelExclusive": 52,
+     "unit": {
+      "npcid": 81225,
+      "n": "火蜥蜴",
+      "gfx": 1666,
+      "lv": 40,
+      "hp": 550,
+      "ac": -23,
+      "mr": 10,
+      "e": "none",
+      "atkSpd": 1.08,
+      "dmg": [
+       1,
+       40
+      ],
+      "db": 8,
+      "hit": 46,
+      "moveSpd": 42
+     }
+    },
+    {
+     "maxLevelExclusive": null,
+     "unit": {
+      "npcid": 81228,
+      "n": "魔熊",
+      "gfx": 3357,
+      "lv": 44,
+      "hp": 600,
+      "ac": -25,
+      "mr": 5,
+      "e": "none",
+      "atkSpd": 0.84,
+      "dmg": [
+       1,
+       44
+      ],
+      "db": 7,
+      "hit": 46,
+      "moveSpd": 64,
+      "attackRange": 96
+     }
+    }
+   ]
+  },
+  "sk_elf_summon": {
+   "officialId": 154,
+   "l1jName": "召喚屬性精靈",
+   "mode": "elemental",
+   "cost": {
+    "unitCost": null,
+    "chaBonus": 7,
+    "requiresNoPets": true,
+    "fixedCount": 1
+   },
+   "forms": [
+    {
+     "element": "earth",
+     "unit": {
+      "npcid": 45306,
+      "n": "土之精靈",
+      "gfx": 2273,
+      "lv": 30,
+      "hp": 400,
+      "ac": -15,
+      "mr": 35,
+      "e": "earth",
+      "atkSpd": 1.0,
+      "dmg": [
+       1,
+       30
+      ],
+      "db": 8,
+      "hit": 35,
+      "moveSpd": 42
+     }
+    },
+    {
+     "element": "fire",
+     "unit": {
+      "npcid": 45303,
+      "n": "火之精靈",
+      "gfx": 2276,
+      "lv": 30,
+      "hp": 400,
+      "ac": -11,
+      "mr": 35,
+      "e": "fire",
+      "atkSpd": 1.0,
+      "dmg": [
+       1,
+       30
+      ],
+      "db": 8,
+      "hit": 35,
+      "moveSpd": 42
+     }
+    },
+    {
+     "element": "water",
+     "unit": {
+      "npcid": 45304,
+      "n": "水之精靈",
+      "gfx": 2274,
+      "lv": 30,
+      "hp": 400,
+      "ac": -13,
+      "mr": 35,
+      "e": "water",
+      "atkSpd": 1.0,
+      "dmg": [
+       1,
+       30
+      ],
+      "db": 8,
+      "hit": 35,
+      "moveSpd": 42
+     }
+    },
+    {
+     "element": "wind",
+     "unit": {
+      "npcid": 45305,
+      "n": "風之精靈",
+      "gfx": 2275,
+      "lv": 30,
+      "hp": 400,
+      "ac": -13,
+      "mr": 35,
+      "e": "wind",
+      "atkSpd": 1.0,
+      "dmg": [
+       1,
+       30
+      ],
+      "db": 8,
+      "hit": 35,
+      "moveSpd": 42
+     }
+    }
+   ]
+  },
+  "sk_elf_summon2": {
+   "officialId": 162,
+   "l1jName": "召喚強力屬性精靈",
+   "mode": "elemental",
+   "cost": {
+    "unitCost": null,
+    "chaBonus": 7,
+    "requiresNoPets": true,
+    "fixedCount": 1
+   },
+   "forms": [
+    {
+     "element": "earth",
+     "unit": {
+      "npcid": 81053,
+      "n": "強力土之精靈",
+      "gfx": 2267,
+      "lv": 45,
+      "hp": 550,
+      "ac": -18,
+      "mr": 35,
+      "e": "earth",
+      "atkSpd": 0.98,
+      "dmg": [
+       1,
+       45
+      ],
+      "db": 9,
+      "hit": 52,
+      "moveSpd": 42
+     }
+    },
+    {
+     "element": "fire",
+     "unit": {
+      "npcid": 81050,
+      "n": "強力火之精靈",
+      "gfx": 2266,
+      "lv": 45,
+      "hp": 400,
+      "ac": -18,
+      "mr": 35,
+      "e": "fire",
+      "atkSpd": 0.98,
+      "dmg": [
+       1,
+       45
+      ],
+      "db": 10,
+      "hit": 52,
+      "moveSpd": 42
+     }
+    },
+    {
+     "element": "water",
+     "unit": {
+      "npcid": 81051,
+      "n": "強力水之精靈",
+      "gfx": 2268,
+      "lv": 45,
+      "hp": 700,
+      "ac": -18,
+      "mr": 35,
+      "e": "water",
+      "atkSpd": 0.98,
+      "dmg": [
+       1,
+       45
+      ],
+      "db": 9,
+      "hit": 51,
+      "moveSpd": 42
+     }
+    },
+    {
+     "element": "wind",
+     "unit": {
+      "npcid": 81052,
+      "n": "強力風之精靈",
+      "gfx": 2282,
+      "lv": 45,
+      "hp": 350,
+      "ac": -18,
+      "mr": 35,
+      "e": "wind",
+      "atkSpd": 0.98,
+      "dmg": [
+       1,
+       45
+      ],
+      "db": 8,
+      "hit": 51,
+      "moveSpd": 42
+     }
+    }
+   ]
+  },
+  "sk_zombie": {
+   "officialId": 41,
+   "l1jName": "造屍術",
+   "mode": "corpse",
+   "cost": {
+    "byClass": {
+     "elf": {
+      "chaCap": 30,
+      "chaBonus": 12
+     },
+     "mage": {
+      "chaCap": 36,
+      "chaBonus": 6
+     },
+     "default": {
+      "chaCap": 0,
+      "chaBonus": 0
+     }
+    },
+    "minimumBudget": 6,
+    "requiresNoPets": false
+   },
+   "forms": [
+    {
+     "classId": "default",
+     "minLevel": 0,
+     "maxLevelExclusive": null,
+     "unit": {
+      "npcid": 45065,
+      "n": "人形殭屍",
+      "gfx": 52,
+      "lv": 6,
+      "hp": 45,
+      "ac": 8,
+      "mr": 5,
+      "e": "none",
+      "atkSpd": 1.04,
+      "dmg": [
+       1,
+       6
+      ],
+      "db": 7,
+      "hit": 5,
+      "moveSpd": 19
+     }
+    },
+    {
+     "classId": "mage",
+     "minLevel": 24,
+     "maxLevelExclusive": 32,
+     "unit": {
+      "npcid": 81183,
+      "n": "人形殭屍",
+      "gfx": 52,
+      "lv": 10,
+      "hp": 100,
+      "ac": 8,
+      "mr": 5,
+      "e": "none",
+      "atkSpd": 1.04,
+      "dmg": [
+       1,
+       10
+      ],
+      "db": 8,
+      "hit": 10,
+      "moveSpd": 19
+     }
+    },
+    {
+     "classId": "mage",
+     "minLevel": 32,
+     "maxLevelExclusive": 40,
+     "unit": {
+      "npcid": 81184,
+      "n": "人形殭屍",
+      "gfx": 52,
+      "lv": 12,
+      "hp": 200,
+      "ac": 8,
+      "mr": 5,
+      "e": "none",
+      "atkSpd": 1.04,
+      "dmg": [
+       1,
+       12
+      ],
+      "db": 8,
+      "hit": 12,
+      "moveSpd": 19
+     }
+    },
+    {
+     "classId": "mage",
+     "minLevel": 40,
+     "maxLevelExclusive": 44,
+     "unit": {
+      "npcid": 81185,
+      "n": "人形殭屍",
+      "gfx": 52,
+      "lv": 14,
+      "hp": 400,
+      "ac": 8,
+      "mr": 5,
+      "e": "none",
+      "atkSpd": 1.04,
+      "dmg": [
+       1,
+       14
+      ],
+      "db": 8,
+      "hit": 14,
+      "moveSpd": 19
+     }
+    },
+    {
+     "classId": "mage",
+     "minLevel": 44,
+     "maxLevelExclusive": 48,
+     "unit": {
+      "npcid": 81186,
+      "n": "人形殭屍",
+      "gfx": 52,
+      "lv": 16,
+      "hp": 500,
+      "ac": 8,
+      "mr": 5,
+      "e": "none",
+      "atkSpd": 1.04,
+      "dmg": [
+       1,
+       16
+      ],
+      "db": 8,
+      "hit": 16,
+      "moveSpd": 19
+     }
+    },
+    {
+     "classId": "mage",
+     "minLevel": 48,
+     "maxLevelExclusive": 52,
+     "unit": {
+      "npcid": 81187,
+      "n": "人形殭屍",
+      "gfx": 52,
+      "lv": 18,
+      "hp": 600,
+      "ac": 8,
+      "mr": 5,
+      "e": "none",
+      "atkSpd": 1.04,
+      "dmg": [
+       1,
+       18
+      ],
+      "db": 8,
+      "hit": 18,
+      "moveSpd": 19
+     }
+    },
+    {
+     "classId": "mage",
+     "minLevel": 52,
+     "maxLevelExclusive": null,
+     "unit": {
+      "npcid": 81188,
+      "n": "人形殭屍",
+      "gfx": 52,
+      "lv": 20,
+      "hp": 800,
+      "ac": 8,
+      "mr": 5,
+      "e": "none",
+      "atkSpd": 1.04,
+      "dmg": [
+       1,
+       20
+      ],
+      "db": 8,
+      "hit": 20,
+      "moveSpd": 19
+     }
+    },
+    {
+     "classId": "elf",
+     "minLevel": 48,
+     "maxLevelExclusive": null,
+     "unit": {
+      "npcid": 81183,
+      "n": "人形殭屍",
+      "gfx": 52,
+      "lv": 10,
+      "hp": 100,
+      "ac": 8,
+      "mr": 5,
+      "e": "none",
+      "atkSpd": 1.04,
+      "dmg": [
+       1,
+       10
+      ],
+      "db": 8,
+      "hit": 10,
+      "moveSpd": 19
+     }
+    }
+   ]
+  }
+ }
+}

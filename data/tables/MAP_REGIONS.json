@@ -1,0 +1,449 @@
+[
+ {
+  "key": "silverknight",
+  "label": "銀騎士村",
+  "maps": [
+   {
+    "v": "town_silver_knight",
+    "t": "銀騎士村莊"
+   },
+   {
+    "v": "mainland_south",
+    "t": "亞丁大陸"
+   }
+  ]
+ },
+ {
+  "key": "fairyforest",
+  "label": "妖精森林",
+  "maps": [
+   {
+    "v": "town_elf",
+    "t": "妖精森林村莊"
+   },
+   {
+    "v": "zone_15",
+    "t": "眠龍洞穴1樓"
+   },
+   {
+    "v": "zone_16",
+    "t": "眠龍洞穴2樓"
+   },
+   {
+    "v": "zone_17",
+    "t": "眠龍洞穴3樓"
+   }
+  ]
+ },
+ {
+  "key": "talkingisland",
+  "label": "說話之島",
+  "maps": [
+   {
+    "v": "town_talking",
+    "t": "說話之島村莊"
+   },
+   {
+    "v": "talking_island",
+    "t": "說話之島周邊"
+   },
+   {
+    "v": "zone_13",
+    "t": "說話之島地監1樓"
+   },
+   {
+    "v": "zone_14",
+    "t": "說話之島地監2樓"
+   }
+  ]
+ },
+ {
+  "key": "burningwillow",
+  "label": "燃柳村",
+  "maps": [
+   {
+    "v": "town_gludio",
+    "t": "燃柳村莊"
+   },
+   {
+    "v": "hidden_dock",
+    "t": "隱藏之港"
+   },
+   {
+    "v": "town_pirate_village",
+    "t": "海賊島村莊"
+   },
+   {
+    "v": "pirate_wild",
+    "t": "海賊島前半部"
+   },
+   {
+    "v": "pirate_back",
+    "t": "海賊島後半部"
+   },
+   {
+    "v": "pirate_dungeon",
+    "t": "海賊島地監1樓"
+   },
+   {
+    "v": "pirate_dungeon_2f",
+    "t": "海賊島地監2樓"
+   },
+   {
+    "v": "pirate_dungeon_3f",
+    "t": "海賊島地監3樓"
+   },
+   {
+    "v": "pirate_dungeon_4f",
+    "t": "海賊島地監4樓"
+   }
+  ]
+ },
+ {
+  "key": "gludin",
+  "label": "古魯丁",
+  "maps": [
+   {
+    "v": "town_gludin",
+    "t": "古魯丁村莊"
+   },
+   {
+    "v": "zone_06",
+    "t": "古魯丁地監1樓"
+   },
+   {
+    "v": "zone_07",
+    "t": "古魯丁地監2樓"
+   },
+   {
+    "v": "zone_08",
+    "t": "古魯丁地監3樓"
+   },
+   {
+    "v": "zone_09",
+    "t": "古魯丁地監4樓"
+   },
+   {
+    "v": "zone_10",
+    "t": "古魯丁地監5樓"
+   },
+   {
+    "v": "zone_11",
+    "t": "古魯丁地監6樓"
+   },
+   {
+    "v": "zone_12",
+    "t": "古魯丁地監7樓"
+   }
+  ]
+ },
+ {
+  "key": "kent",
+  "label": "肯特",
+  "castleCity": "kent",
+  "castleAt": 0,
+  "maps": []
+ },
+ {
+  "key": "windwood",
+  "label": "風木",
+  "castleCity": "windwood",
+  "castleAt": 0,
+  "maps": [
+   {
+    "v": "zone_22",
+    "t": "沙漠地監1樓"
+   },
+   {
+    "v": "zone_23",
+    "t": "沙漠地監2樓"
+   },
+   {
+    "v": "zone_24",
+    "t": "沙漠地監3樓"
+   },
+   {
+    "v": "zone_25",
+    "t": "沙漠地監4樓"
+   },
+   {
+    "v": "zone_32",
+    "t": "螞蟻洞窟1樓"
+   },
+   {
+    "v": "zone_33",
+    "t": "螞蟻洞窟2樓"
+   }
+  ]
+ },
+ {
+  "key": "heine",
+  "label": "海音",
+  "castleCity": "heine",
+  "castleAt": 1,
+  "maps": [
+   {
+    "v": "town_heine",
+    "t": "海音城鎮"
+   },
+   {
+    "v": "zone_34",
+    "t": "海音地監1樓"
+   },
+   {
+    "v": "zone_35",
+    "t": "海音地監2樓"
+   },
+   {
+    "v": "zone_36",
+    "t": "海音地監3樓"
+   },
+   {
+    "v": "eva_kingdom",
+    "t": "伊娃王國"
+   },
+   {
+    "v": "fafurion_lair",
+    "t": "法利昂巢穴"
+   }
+  ]
+ },
+ {
+  "key": "giran",
+  "label": "奇岩",
+  "maps": [
+   {
+    "v": "town_giran",
+    "t": "奇岩城鎮"
+   },
+   {
+    "v": "zone_18",
+    "t": "奇岩地監1樓"
+   },
+   {
+    "v": "zone_19",
+    "t": "奇岩地監2樓"
+   },
+   {
+    "v": "zone_20",
+    "t": "奇岩地監3樓"
+   },
+   {
+    "v": "zone_21",
+    "t": "奇岩地監4樓"
+   }
+  ]
+ },
+ {
+  "key": "dragonvalley",
+  "label": "龍之谷",
+  "maps": [
+   {
+    "v": "zone_26",
+    "t": "龍之谷地監1樓"
+   },
+   {
+    "v": "zone_27",
+    "t": "龍之谷地監2樓"
+   },
+   {
+    "v": "zone_28",
+    "t": "龍之谷地監3樓"
+   },
+   {
+    "v": "zone_29",
+    "t": "龍之谷地監4樓"
+   },
+   {
+    "v": "zone_30",
+    "t": "龍之谷地監5樓"
+   },
+   {
+    "v": "zone_31",
+    "t": "龍之谷地監6樓"
+   },
+   {
+    "v": "town_silent",
+    "t": "沉默洞穴"
+   },
+   {
+    "v": "silent_outer",
+    "t": "沉默洞穴周邊"
+   }
+  ]
+ },
+ {
+  "key": "witon",
+  "label": "威頓",
+  "maps": [
+   {
+    "v": "town_witon",
+    "t": "威頓村莊"
+   },
+   {
+    "v": "town_behemoth",
+    "t": "貝希摩斯"
+   }
+  ]
+ },
+ {
+  "key": "oren",
+  "label": "歐瑞",
+  "maps": [
+   {
+    "v": "town_oren",
+    "t": "歐瑞村莊"
+   },
+   {
+    "v": "zone_03",
+    "t": "歐瑞雪原"
+   },
+   {
+    "v": "town_ivory_tower",
+    "t": "象牙塔（1~3樓）"
+   },
+   {
+    "v": "zone_37",
+    "t": "象牙塔4樓"
+   },
+   {
+    "v": "zone_38",
+    "t": "象牙塔5樓"
+   },
+   {
+    "v": "zone_39",
+    "t": "象牙塔6樓"
+   },
+   {
+    "v": "zone_40",
+    "t": "象牙塔7樓"
+   },
+   {
+    "v": "zone_41",
+    "t": "象牙塔8樓"
+   },
+   {
+    "v": "crystal_cave1",
+    "t": "水晶洞穴1樓"
+   },
+   {
+    "v": "crystal_cave2",
+    "t": "水晶洞穴2樓"
+   },
+   {
+    "v": "crystal_cave3",
+    "t": "水晶洞穴3樓"
+   },
+   {
+    "v": "shadow_temple",
+    "t": "暗影神殿"
+   },
+   {
+    "v": "town_hyperia",
+    "t": "希培利亞"
+   }
+  ]
+ },
+ {
+  "key": "aden",
+  "label": "亞丁",
+  "maps": [
+   {
+    "v": "town_aden",
+    "t": "亞丁城鎮"
+   },
+   {
+    "v": "aden_sewer",
+    "t": "亞丁下水道"
+   }
+  ]
+ },
+ {
+  "key": "rastabad",
+  "label": "拉斯塔巴德",
+  "maps": [
+   {
+    "v": "rastabad_cave1",
+    "t": "拉斯塔巴德地下洞穴1樓"
+   },
+   {
+    "v": "rastabad_cave2",
+    "t": "拉斯塔巴德地下洞穴2樓"
+   },
+   {
+    "v": "rastabad_cave3",
+    "t": "拉斯塔巴德地下洞穴3樓"
+   },
+   {
+    "v": "giant_tomb",
+    "t": "古代巨人之墓"
+   },
+   {
+    "v": "town_flame_audience",
+    "t": "炎魔謁見所"
+   },
+   {
+    "v": "rastabad_beast",
+    "t": "魔獸訓練場"
+   },
+   {
+    "v": "dark_magic_lab",
+    "t": "黑魔法研究室"
+   },
+   {
+    "v": "necro_training",
+    "t": "冥法軍訓練場"
+   },
+   {
+    "v": "elder_room",
+    "t": "格蘭肯神殿．長老之室"
+   },
+   {
+    "v": "town_elder_council",
+    "t": "長老會議廳"
+   },
+   {
+    "v": "king_baranka_room",
+    "t": "魔獸君王之室"
+   },
+   {
+    "v": "law_king_room",
+    "t": "法令君王之室"
+   },
+   {
+    "v": "necro_king_room",
+    "t": "冥法君王之室"
+   },
+   {
+    "v": "assassin_king_room",
+    "t": "暗殺君王之室"
+   }
+  ]
+ },
+ {
+  "key": "rift",
+  "label": "時空裂痕",
+  "maps": [
+   {
+    "v": "thebes_desert",
+    "t": "底比斯 沙漠"
+   },
+   {
+    "v": "thebes_pyramid",
+    "t": "底比斯 金字塔內部"
+   },
+   {
+    "v": "thebes_temple",
+    "t": "底比斯 歐西里斯祭壇"
+   },
+   {
+    "v": "tikal_area",
+    "t": "提卡爾神廟地區"
+   },
+   {
+    "v": "tikal_altar",
+    "t": "提卡爾 庫庫爾坎祭壇"
+   }
+  ]
+ }
+]

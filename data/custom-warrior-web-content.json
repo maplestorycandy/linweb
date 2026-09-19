@@ -1,0 +1,216 @@
+{
+ "__doc": [
+  "使用者 2026-08-22 明示恢復的 project custom 內容；不是 L1j-TW-main 鏡像。",
+  "戰士四階試煉沿用 Web 的多文流程與獎勵；鈍器只恢復 Web 已有怪物掉落或製作來源者。",
+  "NPC action 的 A 是本作自訂 Warrior class code，main 原始 P/K/E/W/D/R/I 列保持不變。",
+  "Web 原有的 blanket hard-skin、每強化增加觸發率與技能書階級規則不恢復。"
+ ],
+ "items": {
+  "wpn_warrior_trial_axe": {
+   "n": "試煉斧頭", "type": "wpn", "dmgS": 13, "dmgL": 13, "hit": 0,
+   "dmgBonus": 0, "spd": 0.9, "req": "warrior", "safe": 6, "p": 5000,
+   "gachaWeight": 100, "official88ItemId": 15110,
+   "d": "戰士試煉所授的斧頭，沉甸甸地考驗著揮斧者的臂力。單手鈍器（鈍擊）。"
+  },
+  "wpn_master_axe": {
+   "n": "大匠的斧頭", "type": "wpn", "dmgS": 13, "dmgL": 13, "hit": 0,
+   "dmgBonus": 1, "spd": 0.9, "req": "warrior", "safe": 6, "p": 10000,
+   "gachaWeight": 20, "material": "silver", "official88ItemId": 15146,
+   "d": "出自大匠之手的斧頭，刃口閃著銀輝專剋暗夜之物。單手鈍器（鈍擊）、對不死／狼人加成。"
+  },
+  "wpn_demon_axehead": {
+   "n": "魔物的斧頭", "type": "wpn", "dmgS": 18, "dmgL": 18, "hit": -1,
+   "dmgBonus": 0, "spd": 0.9, "req": "warrior", "safe": 0, "p": 55000,
+   "gachaWeight": 10, "official88ItemId": 15147,
+   "d": "由魔物殘骸之力凝鑄的斧頭，揮砍間透著一股戾氣。單手鈍器（鈍擊）。"
+  },
+  "wpn_iron_axehead": {
+   "n": "鐵斧頭", "type": "wpn", "dmgS": 19, "dmgL": 23, "hit": 1,
+   "dmgBonus": 1, "spd": 0.9, "req": "warrior", "safe": 6, "p": 155000,
+   "gachaWeight": 1, "official88ItemId": 15111,
+   "d": "精鐵反覆鍛打而成的斧頭，紮實順手、無懈可擊。單手鈍器（鈍擊）。"
+  },
+  "wpn_giant_axehead": {
+   "n": "巨人的斧頭", "type": "wpn", "legend": true, "dmgS": 28, "dmgL": 36,
+   "hit": 2, "dmgBonus": 5, "spd": 0.9, "req": "warrior", "safe": 6,
+   "p": 355000, "gachaWeight": 1, "official88ItemId": 15113,
+   "d": "昔日巨人揮舞的巨大斧頭，一斧落下足以撼動大地。單手鈍器（鈍擊）。"
+  },
+  "wpn_ancient_axe": {
+   "n": "古代神之斧", "type": "wpn", "legend": true, "dmgS": 25, "dmgL": 28,
+   "hit": 3, "dmgBonus": 8, "spd": 1.0, "req": "warrior", "safe": 6,
+   "p": 465000, "gachaWeight": 0,
+   "d": "古代神祇腰間配掛的單手神斧，劈下時連神明也為之低首。鈍擊。"
+  },
+  "wpn_thor_hammer": {
+   "n": "雷神之鎚", "type": "wpn", "dmgS": 7, "dmgL": 12, "hit": 3,
+   "dmgBonus": 0, "spd": 0.9, "req": "royal,knight,elf,mage,warrior", "safe": 6,
+   "p": 46000, "legend": true, "gachaWeight": 1,
+   "spellProc": { "skn": "電光衝擊", "dice": [5, 5], "flat": 5, "ele": "wind",
+    "status": { "kind": "stun", "pct": 5, "dur": 3 } },
+   "procRateBase": 1,
+   "d": "雷神遺落的戰鎚，鎚頭間纏繞著未平息的雷霆。"
+  },
+  "wpn_mapler_punish": {
+   "n": "馬普勒的懲罰", "type": "wpn", "w2h": true, "dmgS": 14, "dmgL": 15,
+   "hit": 0, "dmgBonus": 11, "spd": 1.0, "req": "royal,knight,elf,warrior",
+   "safe": 6, "p": 46000, "legend": true, "gachaWeight": 1,
+   "spellProc": { "skn": "震裂術", "dice": [6, 11], "ele": "earth", "area": -1 },
+   "procRateBase": 1,
+   "d": "馬普勒降下的懲戒之鎚，每一擊都撼動大地。"
+  },
+  "wpn_osis_hammer": {
+   "n": "歐西斯衝撞錘", "type": "wpn", "dmgS": 8, "dmgL": 9, "hit": 3,
+   "dmgBonus": 0, "spd": 0.9, "req": "royal,knight,warrior", "safe": 6,
+   "p": 66000, "legend": true, "gachaWeight": 1,
+   "spellProc": { "skn": "流星雨", "dice": [10, 11], "ele": "fire", "area": -1 },
+   "procRateBase": 1,
+   "d": "歐西斯鍛造的衝撞之錘，揮動之間天降流火。"
+  },
+  "hlm_warrior_corps": {
+   "n": "戰士團頭盔", "type": "arm", "slot": "helm", "ac": 2, "mhp": 20,
+   "req": "warrior", "safe": 4, "p": 3000, "gachaWeight": 50,
+   "official88ItemId": 15194,
+   "d": "戰士團精銳所配發的鋼盔，內襯著無數場惡戰的痕跡。"
+  },
+  "clk_warrior_corps": {
+   "n": "戰士團斗篷", "type": "arm", "slot": "cloak", "ac": 2, "mhp": 20,
+   "req": "warrior", "safe": 4, "p": 3000, "gachaWeight": 50,
+   "official88ItemId": 15195,
+   "d": "披在戰士團肩上的厚實斗篷，曾為衝鋒者擋下風霜與箭雨。"
+  },
+  "bk_warrior_dualaxe": {
+   "n": "戰士的印記(迅猛雙斧)", "type": "skillbk", "p": 2400,
+   "sk": "sk_warrior_dualaxe", "gachaWeight": 30, "official88ItemId": 15121,
+   "d": "研讀後學會迅猛雙斧。"
+  },
+  "bk_warrior_roar": {
+   "n": "戰士的印記(咆哮)", "type": "skillbk", "p": 7200,
+   "sk": "sk_warrior_roar", "gachaWeight": 30, "official88ItemId": 15129,
+   "d": "研讀後學會咆哮。"
+  },
+  "new_item_225": {
+   "n": "被偷的項鍊", "type": "etc", "p": 1, "gachaWeight": 0,
+   "noTrade": true, "noSell": true, "d": "戰士 30 級試煉任務道具。"
+  },
+  "new_item_226": {
+   "n": "被偷的戒指", "type": "etc", "p": 1, "gachaWeight": 0,
+   "noTrade": true, "noSell": true, "d": "戰士 30 級試煉任務道具。"
+  },
+  "item_cyclops_blood": {
+   "n": "獨眼巨人的血", "type": "etc", "p": 1, "gachaWeight": 0,
+   "noTrade": true, "noSell": true,
+   "d": "自獨眼巨人胸膛湧出的暗紅鮮血，可向多文完成戰士 45 級試煉。"
+  }
+ },
+ "itemWeights": {
+  "試煉斧頭": 100, "大匠的斧頭": 50, "魔物的斧頭": 100, "鐵斧頭": 100,
+  "巨人的斧頭": 100, "古代神之斧": 40, "雷神之鎚": 40,
+  "馬普勒的懲罰": 50, "歐西斯衝撞錘": 50,
+  "戰士團頭盔": 30, "戰士團斗篷": 15,
+  "戰士的印記(迅猛雙斧)": 7, "戰士的印記(咆哮)": 7,
+  "被偷的項鍊": 1, "被偷的戒指": 1, "獨眼巨人的血": 1
+ },
+ "weaponTags": {
+  "wpn_warrior_trial_axe": ["單手鈍器"],
+  "wpn_master_axe": ["單手鈍器"],
+  "wpn_demon_axehead": ["單手鈍器"],
+  "wpn_iron_axehead": ["單手鈍器"],
+  "wpn_giant_axehead": ["單手鈍器"],
+  "wpn_ancient_axe": ["單手鈍器"],
+  "wpn_thor_hammer": ["單手鈍器"],
+  "wpn_mapler_punish": ["雙手鈍器"],
+  "wpn_osis_hammer": ["單手鈍器"]
+ },
+ "drops": {
+  "l1j_45610": [["wpn_giant_axehead", 0.1]],
+  "l1j_45402": [["wpn_iron_axehead", 0.005]],
+  "l1j_45485": [["wpn_iron_axehead", 0.01]],
+  "l1j_45280": [["wpn_iron_axehead", 0.001]],
+  "l1j_45477": [["wpn_iron_axehead", 0.001]],
+  "l1j_45674": [["wpn_iron_axehead", 0.1]],
+  "l1j_45127": [["wpn_osis_hammer", 0.0005]],
+  "l1j_45171": [["wpn_osis_hammer", 0.0005]],
+  "l1j_45143": [["wpn_osis_hammer", 0.0005]],
+  "l1j_45295": [["wpn_thor_hammer", 0.001]],
+  "l1j_45337": [["wpn_thor_hammer", 0.001]],
+  "l1j_45318": [["wpn_thor_hammer", 0.001]],
+  "l1j_45653": [["wpn_mapler_punish", 0.01]],
+  "l1j_45194": [["new_item_225", 10, 1, 1, {"classId": "warrior"}]],
+  "l1j_45370": [["new_item_225", 10, 1, 1, {"classId": "warrior"}]],
+  "l1j_45276": [["new_item_226", 1, 1, 1, {"classId": "warrior"}]],
+  "l1j_45317": [["new_item_226", 1, 1, 1, {"classId": "warrior"}]],
+  "l1j_45324": [["new_item_226", 1, 1, 1, {"classId": "warrior"}]],
+  "l1j_45329": [["new_item_226", 1, 1, 1, {"classId": "warrior"}]],
+  "l1j_81080": [["new_item_226", 1, 1, 1, {"classId": "warrior"}]],
+  "l1j_45420": [["item_cyclops_blood", 1, 1, 1, {"classId": "warrior"}]],
+  "l1j_45538": [["item_cyclops_blood", 1, 1, 1, {"classId": "warrior"}]],
+  "l1j_81098": [["item_cyclops_blood", 1, 1, 1, {"classId": "warrior"}]]
+ },
+ "actions": [
+  {"seq": 200000, "src": "custom-warrior-web-content.json", "kind": "Action",
+   "name": "接受 15 級戰士試煉", "npcIds": [71198], "classes": "A",
+   "levelMin": 15, "levelMax": 99, "questId": "CustomWarrior15", "questStep": 0,
+   "effects": [{"t": "quest", "id": "CustomWarrior15", "step": 1}]},
+  {"seq": 200001, "src": "custom-warrior-web-content.json", "kind": "MakeItem",
+   "name": "完成 15 級戰士試煉", "npcIds": [71198], "classes": "A",
+   "levelMin": 15, "levelMax": 99, "questId": "CustomWarrior15", "questStep": 1,
+   "materials": [{"id": 40564, "count": 1, "key": "new_item_207"}],
+   "outputs": [{"id": 15110, "count": 1, "key": "wpn_warrior_trial_axe"},
+               {"id": 15121, "count": 1, "key": "bk_warrior_dualaxe"}],
+   "succeed": [{"t": "quest", "id": "CustomWarrior15", "step": 255}]},
+  {"seq": 200002, "src": "custom-warrior-web-content.json", "kind": "Action",
+   "name": "接受 30 級戰士試煉", "npcIds": [71198], "classes": "A",
+   "levelMin": 30, "levelMax": 99, "questId": "CustomWarrior30", "questStep": 0,
+   "effects": [{"t": "quest", "id": "CustomWarrior30", "step": 1}]},
+  {"seq": 200003, "src": "custom-warrior-web-content.json", "kind": "MakeItem",
+   "name": "完成 30 級戰士試煉", "npcIds": [71198], "classes": "A",
+   "levelMin": 30, "levelMax": 99, "questId": "CustomWarrior30", "questStep": 1,
+   "materials": [{"id": -900225, "count": 1, "key": "new_item_225"},
+                 {"id": -900226, "count": 1, "key": "new_item_226"}],
+   "outputs": [{"id": 15195, "count": 1, "key": "clk_warrior_corps"},
+               {"id": 15129, "count": 1, "key": "bk_warrior_roar"}],
+   "succeed": [{"t": "quest", "id": "CustomWarrior30", "step": 255}]},
+  {"seq": 200004, "src": "custom-warrior-web-content.json", "kind": "Action",
+   "name": "接受 45 級戰士試煉", "npcIds": [71198], "classes": "A",
+   "levelMin": 45, "levelMax": 99, "questId": "CustomWarrior45", "questStep": 0,
+   "effects": [{"t": "quest", "id": "CustomWarrior45", "step": 1}]},
+  {"seq": 200005, "src": "custom-warrior-web-content.json", "kind": "MakeItem",
+   "name": "完成 45 級戰士試煉", "npcIds": [71198], "classes": "A",
+   "levelMin": 45, "levelMax": 99, "questId": "CustomWarrior45", "questStep": 1,
+   "materials": [{"id": -900227, "count": 1, "key": "item_cyclops_blood"}],
+   "outputs": [{"id": 15194, "count": 1, "key": "hlm_warrior_corps"}],
+   "succeed": [{"t": "quest", "id": "CustomWarrior45", "step": 255}]},
+  {"seq": 200006, "src": "custom-warrior-web-content.json", "kind": "Action",
+   "name": "接受 50 級戰士試煉", "npcIds": [71198], "classes": "A",
+   "levelMin": 50, "levelMax": 99, "questId": "CustomWarrior50", "questStep": 0,
+   "effects": [{"t": "killCount", "id": "CustomWarrior50SuccubusKills", "count": 0},
+               {"t": "quest", "id": "CustomWarrior50", "step": 1}]},
+  {"seq": 200007, "src": "custom-warrior-web-content.json", "kind": "MakeItem",
+   "name": "完成 50 級戰士試煉", "npcIds": [71198], "classes": "A",
+   "levelMin": 50, "levelMax": 99, "questId": "CustomWarrior50", "questStep": 1,
+   "killRequirement": {
+    "id": "CustomWarrior50SuccubusKills", "name": "思克巴", "count": 10,
+    "mobKeys": ["l1j_45393", "l1j_45394", "l1j_45400"]
+   },
+   "outputs": [{"id": 15146, "count": 1, "key": "wpn_master_axe"}],
+   "succeed": [{"t": "quest", "id": "CustomWarrior50", "step": 255},
+               {"t": "killCount", "id": "CustomWarrior50SuccubusKills", "count": 0}]},
+  {"seq": 200008, "src": "custom-warrior-web-content.json", "kind": "MakeItem",
+   "name": "製作魔物的斧頭", "npcIds": [71252], "classes": "A",
+   "levelMin": 1, "levelMax": 99,
+   "materials": [{"id": 151, "count": 1, "key": "wpn_demon_axe"},
+                 {"id": 40445, "count": 5, "key": "mat_blackmithril_plate"}],
+   "outputs": [{"id": 15147, "count": 1, "key": "wpn_demon_axehead"}]},
+  {"seq": 200009, "src": "custom-warrior-web-content.json", "kind": "MakeItem",
+   "name": "製作古代神之斧", "npcIds": [71252], "classes": "A",
+   "levelMin": 1, "levelMax": 99,
+   "materials": [{"id": 135, "count": 1, "key": "mat_unknown_axe"},
+                 {"id": 40076, "count": 10, "key": "item_ancient_scroll"},
+                 {"id": 40053, "count": 10, "key": "new_item_159"},
+                 {"id": 40409, "count": 1, "key": "new_phoenix_heart"},
+                 {"id": 40497, "count": 50, "key": "new_item_177"},
+                 {"id": 40678, "count": 500, "key": "mat_soulstone_shard"}],
+   "outputs": [{"id": -900300, "count": 1, "key": "wpn_ancient_axe"}]}
+ ]
+}

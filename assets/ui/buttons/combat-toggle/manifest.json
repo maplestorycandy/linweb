@@ -1,0 +1,13 @@
+{
+  "authority": [
+    "C:/Users/User/Downloads/MAP/QuickMotionUI.decrypted.xml",
+    "C:/Users/User/Downloads/MAP/LinHelperUI.decrypted.xml"
+  ],
+  "sourceDirectory": "C:/Users/User/Downloads/3,3 UI",
+  "nativeSize": [24, 12],
+  "states": {
+    "enabled": "5208c.png",
+    "disabled": "5209c.png"
+  },
+  "behavior": "Stops player automatic basic attacks, automatic skills, and cast-on-hurt; manual capture remains available."
+}

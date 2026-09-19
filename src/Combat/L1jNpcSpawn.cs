@@ -1,0 +1,3 @@
+namespace IdleLineage.Combat;
+
+public sealed record L1jNpcSpawn(int NpcId, string Name, string Impl, int Gfx, string MapKey, int CellX, int CellY, int Heading, bool HasShop, int Level = 1, int Hp = 1, int Mp = 0, int ArmorClass = 0, int Strength = 0, int Constitution = 0, int Dexterity = 0, int Wisdom = 0, int Intelligence = 0, int MagicResistance = 0, int Experience = 0, int Lawful = 0, string Size = "small", int Ranged = 1, int MoveIntervalMilliseconds = 0, int AttackIntervalMilliseconds = 0, bool Aggressive = false, bool DetectInvisible = false, string Family = "", int DamageReduction = 0);

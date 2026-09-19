@@ -1,0 +1,53 @@
+{
+ "lv": 60,
+ "mrPenBase": 30,
+ "hitLvOff": 25,
+ "dmgMult": 1.3,
+ "aoe": {
+  "p": 0.15,
+  "names": {
+   "water": "冰雪暴",
+   "fire": "火風暴",
+   "wind": "龍捲風",
+   "earth": "震裂術"
+  }
+ },
+ "ele": {
+  "water": {
+   "hp": 1200,
+   "aspd": 18,
+   "dice": [
+    4,
+    54
+   ],
+   "scale": 3.9
+  },
+  "fire": {
+   "hp": 1200,
+   "aspd": 16,
+   "dice": [
+    4,
+    48
+   ],
+   "scale": 4.4
+  },
+  "earth": {
+   "hp": 1300,
+   "aspd": 16,
+   "dice": [
+    4,
+    45
+   ],
+   "scale": 4.6
+  },
+  "wind": {
+   "hp": 1440,
+   "aspd": 18,
+   "dice": [
+    4,
+    48
+   ],
+   "scale": 4.4
+  }
+ }
+}

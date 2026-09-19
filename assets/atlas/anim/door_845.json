@@ -1,0 +1,1 @@
+{"name":"door_845","group":"anim","trimmed":true,"flattenedShadows":false,"atlas":{"w":68,"h":70,"pad":1,"format":"png8","colors":64},"src":{"files":2,"contentHash":"2cbe04ad3a6bea46f180bd886cf61308","bytes":3448},"frames":{"frame":[{"x":37,"y":0,"w":30,"h":69,"dx":0,"dy":11,"cw":62,"ch":80},{"x":0,"y":0,"w":36,"h":69,"dx":26,"dy":0,"cw":62,"ch":80}]}}

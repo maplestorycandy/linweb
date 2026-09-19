@@ -1,0 +1,3 @@
+namespace IdleLineage.Combat;
+
+public sealed record PetDefinition(string Form, PetKind Kind, int Tier, int StartingLevel, double StartingHp, double StartingMp, int HpGrowthMin, int HpGrowthMax, int MpGrowthMin, int MpGrowthMax, double HealthRegen, double ManaRegen, double AttacksPerMinute, double CastsPerMinute, double HitstunSeconds, double CharmCost, string Evolution, bool HasSkills, bool HasMagicSkill, bool HasExtraSkill, bool HasDebuffSkill, double GoldenAttackMultiplier, double GoldenMagicMultiplier, double ArmorClassModifier, double MagicResistBonus, double DamageReductionPierce, int BaseNpcId, string MobKey, int DefyMessageId);

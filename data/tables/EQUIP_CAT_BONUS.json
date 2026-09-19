@@ -1,0 +1,137 @@
+{
+ "dagger": {
+  "stat": "mmp",
+  "val": 5,
+  "label": "MP +5"
+ },
+ "sword1": {
+  "stat": "dr",
+  "val": 1,
+  "label": "傷害減免 +1"
+ },
+ "sword2": {
+  "stat": "mhp",
+  "val": 10,
+  "label": "HP +10"
+ },
+ "katana": {
+  "stat": "mhp",
+  "val": 5,
+  "label": "HP +5"
+ },
+ "blunt1": {
+  "stat": "weight",
+  "val": 10,
+  "label": "負重 +10"
+ },
+ "blunt2": {
+  "stat": "weight",
+  "val": 10,
+  "label": "負重 +10"
+ },
+ "spear": {
+  "stat": "mr",
+  "val": 1,
+  "label": "MR +1"
+ },
+ "claw": {
+  "stat": "hpR",
+  "val": 1,
+  "label": "HP自動恢復 +1"
+ },
+ "dual": {
+  "stat": "dr",
+  "val": 1,
+  "label": "傷害減免 +1"
+ },
+ "chainsword": {
+  "stat": "mhp",
+  "val": 5,
+  "label": "HP +5"
+ },
+ "bow": {
+  "stat": "er",
+  "val": 1,
+  "label": "ER +1"
+ },
+ "xbow": {
+  "stat": "mr",
+  "val": 1,
+  "label": "MR +1"
+ },
+ "wand": {
+  "stat": "mpR",
+  "val": 1,
+  "label": "MP自動恢復量 +1"
+ },
+ "qigu": {
+  "stat": "mmp",
+  "val": 5,
+  "label": "MP +5"
+ },
+ "helm": {
+  "stat": "dr",
+  "val": 1,
+  "label": "傷害減免 +1"
+ },
+ "armor": {
+  "stat": "ac",
+  "val": 1,
+  "label": "AC -1"
+ },
+ "shin": {
+  "stat": "dr",
+  "val": 1,
+  "label": "傷害減免 +1"
+ },
+ "cloak": {
+  "stat": "mr",
+  "val": 1,
+  "label": "MR +1"
+ },
+ "boots": {
+  "stat": "er",
+  "val": 1,
+  "label": "ER +1"
+ },
+ "gloves": {
+  "stat": "dr",
+  "val": 1,
+  "label": "傷害減免 +1"
+ },
+ "shield": {
+  "stat": "mhp",
+  "val": 10,
+  "label": "HP +10"
+ },
+ "armguard": {
+  "stat": "weight",
+  "val": 10,
+  "label": "負重 +10"
+ },
+ "amulet": {
+  "stat": "hpR",
+  "val": 1,
+  "label": "HP自然恢復量 +1"
+ },
+ "ring": {
+  "stat": "mpR",
+  "val": 1,
+  "label": "MP自然恢復量 +1"
+ },
+ "belt": {
+  "stat": "weight",
+  "val": 20,
+  "label": "負重 +20"
+ },
+ "ear": {
+  "stat": "mpR",
+  "val": 1,
+  "label": "MP自然恢復量 +1"
+ },
+ "pet": {
+  "stat": "petHit",
+  "val": 1,
+  "label": "寵物命中率 +1"
+ }
+}

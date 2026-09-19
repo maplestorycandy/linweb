@@ -1,0 +1,22 @@
+[
+ {
+  "key": "pot",
+  "name": "藥水"
+ },
+ {
+  "key": "scroll",
+  "name": "卷軸"
+ },
+ {
+  "key": "skillbk",
+  "name": "技能書"
+ },
+ {
+  "key": "mat",
+  "name": "材料"
+ },
+ {
+  "key": "special",
+  "name": "其他"
+ }
+]

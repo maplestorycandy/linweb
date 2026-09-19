@@ -1,0 +1,45 @@
+{
+ "dk": {
+  "n": "真‧死亡騎士",
+  "ed": 6,
+  "eh": 6,
+  "atk": 15,
+  "wlk": 12,
+  "cast": 10,
+  "stun": 5,
+  "c": "text-yellow-400"
+ },
+ "kurt": {
+  "n": "真‧克特",
+  "ed": 4,
+  "eh": 8,
+  "atk": 16,
+  "wlk": 12,
+  "cast": 9,
+  "stun": 5,
+  "c": "text-yellow-400"
+ },
+ "demon": {
+  "n": "惡魔",
+  "ed": 4,
+  "eh": 4,
+  "mgd": 3,
+  "sp": 3,
+  "mpr": 3,
+  "atk": 18,
+  "wlk": 12,
+  "cast": 9,
+  "stun": 4,
+  "c": "text-red-400"
+ },
+ "darkelf": {
+  "n": "高等黑暗精靈",
+  "rd": 5,
+  "rh": 5,
+  "atk": 19,
+  "wlk": 12,
+  "cast": 10,
+  "stun": 5,
+  "c": "text-violet-300"
+ }
+}

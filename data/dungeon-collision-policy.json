@@ -1,0 +1,2460 @@
+{
+  "schemaVersion": 1,
+  "source": "data/l1j-map-rules.json locationName + explicit custom dungeon/interior movement policy",
+  "rule": "Listed maps block only cells outside the authored L1J data extent; all cells inside that extent are legal movement candidates, including former tile walls. Outdoor maps retain the A' border-flood mask.",
+  "exclusions": "mapId >= 5000 (clan houses, inns and event rooms)",
+  "counts": {
+    "mainRules": 305,
+    "runtimeMapKeys": 308
+  },
+  "mapKeys": [
+    "aden_sewer",
+    "ant_queen_lair",
+    "antharas_lair",
+    "antharas_nest_1",
+    "antharas_nest_2",
+    "antharas_nest_3",
+    "assassin_king_room",
+    "balrog_room",
+    "crystal_cave1",
+    "crystal_cave2",
+    "crystal_cave3",
+    "dark_elf_sanctuary",
+    "dark_magic_lab",
+    "demon_temple",
+    "desire_cave_entrance",
+    "desire_cave_hall",
+    "dragon_valley_dungeon_7f",
+    "elder_room",
+    "elf_grave",
+    "eva_kingdom",
+    "fafurion_lair",
+    "flame_audience_hall",
+    "giant_tomb",
+    "hidden_cave",
+    "ivory_tower_1f",
+    "ivory_tower_2f",
+    "ivory_tower_3f",
+    "jim_dungeon",
+    "king_baranka_room",
+    "l1j_map_1002",
+    "l1j_map_1011",
+    "l1j_map_15",
+    "l1j_map_16",
+    "l1j_map_17",
+    "l1j_map_18",
+    "l1j_map_201",
+    "l1j_map_202",
+    "l1j_map_203",
+    "l1j_map_204",
+    "l1j_map_209",
+    "l1j_map_210",
+    "l1j_map_211",
+    "l1j_map_213",
+    "l1j_map_22",
+    "l1j_map_221",
+    "l1j_map_23",
+    "l1j_map_24",
+    "l1j_map_240",
+    "l1j_map_241",
+    "l1j_map_242",
+    "l1j_map_243",
+    "l1j_map_248",
+    "l1j_map_249",
+    "l1j_map_250",
+    "l1j_map_251",
+    "l1j_map_252",
+    "l1j_map_253",
+    "l1j_map_254",
+    "l1j_map_255",
+    "l1j_map_256",
+    "l1j_map_257",
+    "l1j_map_258",
+    "l1j_map_259",
+    "l1j_map_29",
+    "l1j_map_300",
+    "l1j_map_305",
+    "l1j_map_306",
+    "l1j_map_34",
+    "l1j_map_38",
+    "l1j_map_39",
+    "l1j_map_40",
+    "l1j_map_41",
+    "l1j_map_481",
+    "l1j_map_482",
+    "l1j_map_483",
+    "l1j_map_484",
+    "l1j_map_52",
+    "l1j_map_541",
+    "l1j_map_542",
+    "l1j_map_550",
+    "l1j_map_551",
+    "l1j_map_552",
+    "l1j_map_553",
+    "l1j_map_554",
+    "l1j_map_555",
+    "l1j_map_556",
+    "l1j_map_557",
+    "l1j_map_558",
+    "l1j_map_62",
+    "l1j_map_64",
+    "l1j_map_66",
+    "l1j_map_777",
+    "l1j_map_778",
+    "l1j_map_779",
+    "l1j_map_85",
+    "l1j_map_86",
+    "l1j_map_87",
+    "l1j_map_88",
+    "l1j_map_89",
+    "l1j_map_90",
+    "l1j_map_91",
+    "l1j_map_92",
+    "l1j_map_93",
+    "l1j_map_94",
+    "l1j_map_95",
+    "l1j_map_96",
+    "l1j_map_97",
+    "l1j_map_98",
+    "l1j_map_99",
+    "l1j_map_998",
+    "law_king_room",
+    "mineral_cave",
+    "necro_king_room",
+    "necro_training",
+    "oum_dungeon",
+    "pirate_dungeon",
+    "pirate_dungeon_2f",
+    "pirate_dungeon_3f",
+    "pirate_dungeon_4f",
+    "pride_f1",
+    "pride_f10",
+    "pride_f100",
+    "pride_f11",
+    "pride_f12",
+    "pride_f13",
+    "pride_f14",
+    "pride_f15",
+    "pride_f16",
+    "pride_f17",
+    "pride_f18",
+    "pride_f19",
+    "pride_f2",
+    "pride_f20",
+    "pride_f21",
+    "pride_f22",
+    "pride_f23",
+    "pride_f24",
+    "pride_f25",
+    "pride_f26",
+    "pride_f27",
+    "pride_f28",
+    "pride_f29",
+    "pride_f3",
+    "pride_f30",
+    "pride_f31",
+    "pride_f32",
+    "pride_f33",
+    "pride_f34",
+    "pride_f35",
+    "pride_f36",
+    "pride_f37",
+    "pride_f38",
+    "pride_f39",
+    "pride_f4",
+    "pride_f40",
+    "pride_f41",
+    "pride_f42",
+    "pride_f43",
+    "pride_f44",
+    "pride_f45",
+    "pride_f46",
+    "pride_f47",
+    "pride_f48",
+    "pride_f49",
+    "pride_f5",
+    "pride_f50",
+    "pride_f51",
+    "pride_f52",
+    "pride_f53",
+    "pride_f54",
+    "pride_f55",
+    "pride_f56",
+    "pride_f57",
+    "pride_f58",
+    "pride_f59",
+    "pride_f6",
+    "pride_f60",
+    "pride_f61",
+    "pride_f62",
+    "pride_f63",
+    "pride_f64",
+    "pride_f65",
+    "pride_f66",
+    "pride_f67",
+    "pride_f68",
+    "pride_f69",
+    "pride_f7",
+    "pride_f70",
+    "pride_f71",
+    "pride_f72",
+    "pride_f73",
+    "pride_f74",
+    "pride_f75",
+    "pride_f76",
+    "pride_f77",
+    "pride_f78",
+    "pride_f79",
+    "pride_f8",
+    "pride_f80",
+    "pride_f81",
+    "pride_f82",
+    "pride_f83",
+    "pride_f84",
+    "pride_f85",
+    "pride_f86",
+    "pride_f87",
+    "pride_f88",
+    "pride_f89",
+    "pride_f9",
+    "pride_f90",
+    "pride_f91",
+    "pride_f92",
+    "pride_f93",
+    "pride_f94",
+    "pride_f95",
+    "pride_f96",
+    "pride_f97",
+    "pride_f98",
+    "pride_f99",
+    "rastabad_1f_assault_training",
+    "rastabad_1f_beast_summoning",
+    "rastabad_1f_beast_training_a",
+    "rastabad_1f_dark_barrier",
+    "rastabad_1f_gathering",
+    "rastabad_2f_dark_elf_lab",
+    "rastabad_2f_dark_magic_training",
+    "rastabad_2f_oblivion_a",
+    "rastabad_2f_oblivion_b",
+    "rastabad_2f_spirit_habitat",
+    "rastabad_2f_spirit_king_study",
+    "rastabad_2f_spirit_summoning",
+    "rastabad_3f_central_control",
+    "rastabad_3f_control_area",
+    "rastabad_3f_demon_altar",
+    "rastabad_3f_demon_mercenary",
+    "rastabad_3f_mercenary_training",
+    "rastabad_3f_oblivion_sanctuary",
+    "rastabad_3f_oum_lab",
+    "rastabad_3f_spirit_altar",
+    "rastabad_4f_batas_balos_andis",
+    "rastabad_4f_council_kassandra_dantes",
+    "rastabad_4f_garden_aidil",
+    "rastabad_4f_grankain_kina",
+    "rastabad_4f_taemas_lamans_barud",
+    "rastabad_b1_arena",
+    "rastabad_b1_control",
+    "rastabad_b1_execution",
+    "rastabad_b1_passage",
+    "rastabad_b1_prison",
+    "rastabad_beast",
+    "rastabad_cave1",
+    "rastabad_cave2",
+    "rastabad_cave3",
+    "shadow_temple",
+    "shadow_temple_2f",
+    "shadow_temple_3f",
+    "shadow_temple_4f",
+    "silent_outer",
+    "thebes_pyramid",
+    "thebes_temple",
+    "tikal_altar",
+    "tikal_area",
+    "under_lake",
+    "undersea_passage",
+    "valakas_lair",
+    "zone_06",
+    "zone_07",
+    "zone_08",
+    "zone_09",
+    "zone_10",
+    "zone_11",
+    "zone_12",
+    "zone_13",
+    "zone_14",
+    "zone_15",
+    "zone_16",
+    "zone_17",
+    "zone_18",
+    "zone_19",
+    "zone_20",
+    "zone_21",
+    "zone_22",
+    "zone_23",
+    "zone_24",
+    "zone_25",
+    "zone_26",
+    "zone_27",
+    "zone_28",
+    "zone_29",
+    "zone_30",
+    "zone_31",
+    "zone_32",
+    "zone_32_b",
+    "zone_32_c",
+    "zone_32_d",
+    "zone_32_e",
+    "zone_32_f",
+    "zone_32_g",
+    "zone_32_h",
+    "zone_33",
+    "zone_34",
+    "zone_35",
+    "zone_36",
+    "zone_37",
+    "zone_38",
+    "zone_39",
+    "zone_40",
+    "zone_41"
+  ],
+  "provenance": [
+    {
+      "mapId": 1,
+      "locationName": "冒險洞窟:1樓",
+      "mapKeys": [
+        "zone_13"
+      ]
+    },
+    {
+      "mapId": 2,
+      "locationName": "冒險洞窟:2樓",
+      "mapKeys": [
+        "zone_14"
+      ]
+    },
+    {
+      "mapId": 7,
+      "locationName": "古魯丁地監:1樓",
+      "mapKeys": [
+        "zone_06"
+      ]
+    },
+    {
+      "mapId": 8,
+      "locationName": "古魯丁地監:2樓",
+      "mapKeys": [
+        "zone_07"
+      ]
+    },
+    {
+      "mapId": 9,
+      "locationName": "古魯丁地監:3樓",
+      "mapKeys": [
+        "zone_08"
+      ]
+    },
+    {
+      "mapId": 10,
+      "locationName": "古魯丁地監:4樓",
+      "mapKeys": [
+        "zone_09"
+      ]
+    },
+    {
+      "mapId": 11,
+      "locationName": "古魯丁地監:5樓",
+      "mapKeys": [
+        "zone_10"
+      ]
+    },
+    {
+      "mapId": 12,
+      "locationName": "古魯丁地監:6樓",
+      "mapKeys": [
+        "zone_11"
+      ]
+    },
+    {
+      "mapId": 13,
+      "locationName": "古魯丁地監:7樓",
+      "mapKeys": [
+        "zone_12"
+      ]
+    },
+    {
+      "mapId": 14,
+      "locationName": "海底隧道",
+      "mapKeys": [
+        "undersea_passage"
+      ]
+    },
+    {
+      "mapId": 15,
+      "locationName": "肯特內城",
+      "mapKeys": [
+        "l1j_map_15"
+      ]
+    },
+    {
+      "mapId": 16,
+      "locationName": "哈汀研究所",
+      "mapKeys": [
+        "l1j_map_16"
+      ]
+    },
+    {
+      "mapId": 17,
+      "locationName": "娜魯帕洞穴",
+      "mapKeys": [
+        "l1j_map_17"
+      ]
+    },
+    {
+      "mapId": 18,
+      "locationName": "都佩傑諾地監",
+      "mapKeys": [
+        "l1j_map_18"
+      ]
+    },
+    {
+      "mapId": 19,
+      "locationName": "眠龍洞穴:1樓",
+      "mapKeys": [
+        "zone_15"
+      ]
+    },
+    {
+      "mapId": 20,
+      "locationName": "眠龍洞穴:2樓",
+      "mapKeys": [
+        "zone_16"
+      ]
+    },
+    {
+      "mapId": 21,
+      "locationName": "眠龍洞穴:3樓",
+      "mapKeys": [
+        "zone_17"
+      ]
+    },
+    {
+      "mapId": 22,
+      "locationName": "傑瑞德的試煉地監",
+      "mapKeys": [
+        "l1j_map_22"
+      ]
+    },
+    {
+      "mapId": 23,
+      "locationName": "風木城地監:1樓",
+      "mapKeys": [
+        "l1j_map_23"
+      ]
+    },
+    {
+      "mapId": 24,
+      "locationName": "風木城地監:2樓",
+      "mapKeys": [
+        "l1j_map_24"
+      ]
+    },
+    {
+      "mapId": 25,
+      "locationName": "騎士洞穴:1樓",
+      "mapKeys": [
+        "zone_22"
+      ]
+    },
+    {
+      "mapId": 26,
+      "locationName": "騎士洞穴:2樓",
+      "mapKeys": [
+        "zone_23"
+      ]
+    },
+    {
+      "mapId": 27,
+      "locationName": "騎士洞穴:3樓",
+      "mapKeys": [
+        "zone_24"
+      ]
+    },
+    {
+      "mapId": 28,
+      "locationName": "騎士洞穴:4樓",
+      "mapKeys": [
+        "zone_25"
+      ]
+    },
+    {
+      "mapId": 29,
+      "locationName": "風木城內城",
+      "mapKeys": [
+        "l1j_map_29"
+      ]
+    },
+    {
+      "mapId": 30,
+      "locationName": "龍之谷地監:1樓",
+      "mapKeys": [
+        "zone_26"
+      ]
+    },
+    {
+      "mapId": 31,
+      "locationName": "龍之谷地監:2樓",
+      "mapKeys": [
+        "zone_27"
+      ]
+    },
+    {
+      "mapId": 32,
+      "locationName": "龍之谷地監:3樓",
+      "mapKeys": [
+        "zone_28"
+      ]
+    },
+    {
+      "mapId": 33,
+      "locationName": "龍之谷地監:4樓",
+      "mapKeys": [
+        "zone_29"
+      ]
+    },
+    {
+      "mapId": 34,
+      "locationName": "Hall of Honor",
+      "mapKeys": [
+        "l1j_map_34"
+      ]
+    },
+    {
+      "mapId": 35,
+      "locationName": "龍之谷地監",
+      "mapKeys": [
+        "zone_30"
+      ]
+    },
+    {
+      "mapId": 36,
+      "locationName": "龍之谷地監",
+      "mapKeys": [
+        "zone_31"
+      ]
+    },
+    {
+      "mapId": 37,
+      "locationName": "安塔瑞斯棲息地",
+      "mapKeys": [
+        "dragon_valley_dungeon_7f"
+      ]
+    },
+    {
+      "mapId": 38,
+      "locationName": "Hall of Honor",
+      "mapKeys": [
+        "l1j_map_38"
+      ]
+    },
+    {
+      "mapId": 39,
+      "locationName": "Hall of Honor",
+      "mapKeys": [
+        "l1j_map_39"
+      ]
+    },
+    {
+      "mapId": 40,
+      "locationName": "Hall of Honor",
+      "mapKeys": [
+        "l1j_map_40"
+      ]
+    },
+    {
+      "mapId": 41,
+      "locationName": "Hall of Honor",
+      "mapKeys": [
+        "l1j_map_41"
+      ]
+    },
+    {
+      "mapId": 43,
+      "locationName": "巨蟻洞穴",
+      "mapKeys": [
+        "zone_32_h"
+      ]
+    },
+    {
+      "mapId": 44,
+      "locationName": "巨蟻洞穴",
+      "mapKeys": [
+        "zone_32_b"
+      ]
+    },
+    {
+      "mapId": 45,
+      "locationName": "巨蟻洞穴",
+      "mapKeys": [
+        "zone_32_e"
+      ]
+    },
+    {
+      "mapId": 46,
+      "locationName": "巨蟻洞穴",
+      "mapKeys": [
+        "zone_32_f"
+      ]
+    },
+    {
+      "mapId": 47,
+      "locationName": "巨蟻洞穴",
+      "mapKeys": [
+        "zone_32_c"
+      ]
+    },
+    {
+      "mapId": 48,
+      "locationName": "巨蟻洞穴",
+      "mapKeys": [
+        "zone_32_d"
+      ]
+    },
+    {
+      "mapId": 49,
+      "locationName": "巨蟻洞穴",
+      "mapKeys": [
+        "zone_32"
+      ]
+    },
+    {
+      "mapId": 50,
+      "locationName": "巨蟻洞穴",
+      "mapKeys": [
+        "zone_32_g"
+      ]
+    },
+    {
+      "mapId": 51,
+      "locationName": "巨蟻洞穴",
+      "mapKeys": [
+        "zone_33"
+      ]
+    },
+    {
+      "mapId": 52,
+      "locationName": "奇岩內城",
+      "mapKeys": [
+        "l1j_map_52"
+      ]
+    },
+    {
+      "mapId": 53,
+      "locationName": "奇岩地監:1樓",
+      "mapKeys": [
+        "zone_18"
+      ]
+    },
+    {
+      "mapId": 54,
+      "locationName": "奇岩地監:2樓",
+      "mapKeys": [
+        "zone_19"
+      ]
+    },
+    {
+      "mapId": 55,
+      "locationName": "奇岩地監:3樓",
+      "mapKeys": [
+        "zone_20"
+      ]
+    },
+    {
+      "mapId": 56,
+      "locationName": "奇岩地監:4樓",
+      "mapKeys": [
+        "zone_21"
+      ]
+    },
+    {
+      "mapId": 59,
+      "locationName": "海音地監1樓",
+      "mapKeys": [
+        "zone_34"
+      ]
+    },
+    {
+      "mapId": 60,
+      "locationName": "海音地監2樓",
+      "mapKeys": [
+        "zone_35"
+      ]
+    },
+    {
+      "mapId": 61,
+      "locationName": "海音地監3樓",
+      "mapKeys": [
+        "zone_36"
+      ]
+    },
+    {
+      "mapId": 62,
+      "locationName": "伊娃神殿",
+      "mapKeys": [
+        "l1j_map_62"
+      ]
+    },
+    {
+      "mapId": 63,
+      "locationName": "海音地監4樓",
+      "mapKeys": [
+        "eva_kingdom"
+      ]
+    },
+    {
+      "mapId": 64,
+      "locationName": "海音內城",
+      "mapKeys": [
+        "l1j_map_64"
+      ]
+    },
+    {
+      "mapId": 65,
+      "locationName": "法利昂棲息地",
+      "mapKeys": [
+        "fafurion_lair"
+      ]
+    },
+    {
+      "mapId": 66,
+      "locationName": "侏儒洞穴",
+      "mapKeys": [
+        "l1j_map_66"
+      ]
+    },
+    {
+      "mapId": 67,
+      "locationName": "巴拉卡斯棲息地",
+      "mapKeys": [
+        "valakas_lair"
+      ]
+    },
+    {
+      "mapId": 72,
+      "locationName": "水晶洞穴:1樓",
+      "mapKeys": [
+        "crystal_cave1"
+      ]
+    },
+    {
+      "mapId": 73,
+      "locationName": "水晶洞穴:2樓",
+      "mapKeys": [
+        "crystal_cave2"
+      ]
+    },
+    {
+      "mapId": 74,
+      "locationName": "水晶洞穴:3樓",
+      "mapKeys": [
+        "crystal_cave3"
+      ]
+    },
+    {
+      "mapId": 75,
+      "locationName": "象牙塔:1樓",
+      "mapKeys": [
+        "ivory_tower_1f"
+      ]
+    },
+    {
+      "mapId": 76,
+      "locationName": "象牙塔:2樓",
+      "mapKeys": [
+        "ivory_tower_2f"
+      ]
+    },
+    {
+      "mapId": 77,
+      "locationName": "象牙塔:3樓",
+      "mapKeys": [
+        "ivory_tower_3f"
+      ]
+    },
+    {
+      "mapId": 78,
+      "locationName": "象牙塔:4樓",
+      "mapKeys": [
+        "zone_37"
+      ]
+    },
+    {
+      "mapId": 79,
+      "locationName": "象牙塔:5樓",
+      "mapKeys": [
+        "zone_38"
+      ]
+    },
+    {
+      "mapId": 80,
+      "locationName": "象牙塔:6樓",
+      "mapKeys": [
+        "zone_39"
+      ]
+    },
+    {
+      "mapId": 81,
+      "locationName": "象牙塔:7樓",
+      "mapKeys": [
+        "zone_40"
+      ]
+    },
+    {
+      "mapId": 82,
+      "locationName": "象牙塔:8樓",
+      "mapKeys": [
+        "zone_41"
+      ]
+    },
+    {
+      "mapId": 85,
+      "locationName": "歌唱之島地監（npcココから）",
+      "mapKeys": [
+        "l1j_map_85"
+      ]
+    },
+    {
+      "mapId": 86,
+      "locationName": "歌唱之島地監（npcクンから）",
+      "mapKeys": [
+        "l1j_map_86"
+      ]
+    },
+    {
+      "mapId": 87,
+      "locationName": "帕古洞穴",
+      "mapKeys": [
+        "l1j_map_87"
+      ]
+    },
+    {
+      "mapId": 88,
+      "locationName": "奇岩競技場",
+      "mapKeys": [
+        "l1j_map_88"
+      ]
+    },
+    {
+      "mapId": 89,
+      "locationName": "奇岩競技場",
+      "mapKeys": [
+        "l1j_map_89"
+      ]
+    },
+    {
+      "mapId": 90,
+      "locationName": "奇岩競技場",
+      "mapKeys": [
+        "l1j_map_90"
+      ]
+    },
+    {
+      "mapId": 91,
+      "locationName": "說話之島競技場",
+      "mapKeys": [
+        "l1j_map_91"
+      ]
+    },
+    {
+      "mapId": 92,
+      "locationName": "古魯丁競技場",
+      "mapKeys": [
+        "l1j_map_92"
+      ]
+    },
+    {
+      "mapId": 93,
+      "locationName": "肯特競技場",
+      "mapKeys": [
+        "l1j_map_93"
+      ]
+    },
+    {
+      "mapId": 94,
+      "locationName": "風木競技場",
+      "mapKeys": [
+        "l1j_map_94"
+      ]
+    },
+    {
+      "mapId": 95,
+      "locationName": "銀騎士競技場",
+      "mapKeys": [
+        "l1j_map_95"
+      ]
+    },
+    {
+      "mapId": 96,
+      "locationName": "巴拉卡斯之窟競技場",
+      "mapKeys": [
+        "l1j_map_96"
+      ]
+    },
+    {
+      "mapId": 97,
+      "locationName": "海音競技場",
+      "mapKeys": [
+        "l1j_map_97"
+      ]
+    },
+    {
+      "mapId": 98,
+      "locationName": "威頓競技場",
+      "mapKeys": [
+        "l1j_map_98"
+      ]
+    },
+    {
+      "mapId": 99,
+      "locationName": "管理者房間",
+      "mapKeys": [
+        "l1j_map_99"
+      ]
+    },
+    {
+      "mapId": 101,
+      "locationName": "傲慢之塔:1樓",
+      "mapKeys": [
+        "pride_f1"
+      ]
+    },
+    {
+      "mapId": 102,
+      "locationName": "傲慢之塔:2樓",
+      "mapKeys": [
+        "pride_f2"
+      ]
+    },
+    {
+      "mapId": 103,
+      "locationName": "傲慢之塔:3樓",
+      "mapKeys": [
+        "pride_f3"
+      ]
+    },
+    {
+      "mapId": 104,
+      "locationName": "傲慢之塔:4樓",
+      "mapKeys": [
+        "pride_f4"
+      ]
+    },
+    {
+      "mapId": 105,
+      "locationName": "傲慢之塔:5樓",
+      "mapKeys": [
+        "pride_f5"
+      ]
+    },
+    {
+      "mapId": 106,
+      "locationName": "傲慢之塔:6樓",
+      "mapKeys": [
+        "pride_f6"
+      ]
+    },
+    {
+      "mapId": 107,
+      "locationName": "傲慢之塔:7樓",
+      "mapKeys": [
+        "pride_f7"
+      ]
+    },
+    {
+      "mapId": 108,
+      "locationName": "傲慢之塔:8樓",
+      "mapKeys": [
+        "pride_f8"
+      ]
+    },
+    {
+      "mapId": 109,
+      "locationName": "傲慢之塔:9樓",
+      "mapKeys": [
+        "pride_f9"
+      ]
+    },
+    {
+      "mapId": 110,
+      "locationName": "傲慢之塔:10樓",
+      "mapKeys": [
+        "pride_f10"
+      ]
+    },
+    {
+      "mapId": 111,
+      "locationName": "傲慢之塔:11樓",
+      "mapKeys": [
+        "pride_f11"
+      ]
+    },
+    {
+      "mapId": 112,
+      "locationName": "傲慢之塔:12樓",
+      "mapKeys": [
+        "pride_f12"
+      ]
+    },
+    {
+      "mapId": 113,
+      "locationName": "傲慢之塔:13樓",
+      "mapKeys": [
+        "pride_f13"
+      ]
+    },
+    {
+      "mapId": 114,
+      "locationName": "傲慢之塔:14樓",
+      "mapKeys": [
+        "pride_f14"
+      ]
+    },
+    {
+      "mapId": 115,
+      "locationName": "傲慢之塔:15樓",
+      "mapKeys": [
+        "pride_f15"
+      ]
+    },
+    {
+      "mapId": 116,
+      "locationName": "傲慢之塔:16樓",
+      "mapKeys": [
+        "pride_f16"
+      ]
+    },
+    {
+      "mapId": 117,
+      "locationName": "傲慢之塔:17樓",
+      "mapKeys": [
+        "pride_f17"
+      ]
+    },
+    {
+      "mapId": 118,
+      "locationName": "傲慢之塔:18樓",
+      "mapKeys": [
+        "pride_f18"
+      ]
+    },
+    {
+      "mapId": 119,
+      "locationName": "傲慢之塔:19樓",
+      "mapKeys": [
+        "pride_f19"
+      ]
+    },
+    {
+      "mapId": 120,
+      "locationName": "傲慢之塔:20樓",
+      "mapKeys": [
+        "pride_f20"
+      ]
+    },
+    {
+      "mapId": 121,
+      "locationName": "傲慢之塔:21樓",
+      "mapKeys": [
+        "pride_f21"
+      ]
+    },
+    {
+      "mapId": 122,
+      "locationName": "傲慢之塔:22樓",
+      "mapKeys": [
+        "pride_f22"
+      ]
+    },
+    {
+      "mapId": 123,
+      "locationName": "傲慢之塔:23樓",
+      "mapKeys": [
+        "pride_f23"
+      ]
+    },
+    {
+      "mapId": 124,
+      "locationName": "傲慢之塔:24樓",
+      "mapKeys": [
+        "pride_f24"
+      ]
+    },
+    {
+      "mapId": 125,
+      "locationName": "傲慢之塔:25樓",
+      "mapKeys": [
+        "pride_f25"
+      ]
+    },
+    {
+      "mapId": 126,
+      "locationName": "傲慢之塔:26樓",
+      "mapKeys": [
+        "pride_f26"
+      ]
+    },
+    {
+      "mapId": 127,
+      "locationName": "傲慢之塔:27樓",
+      "mapKeys": [
+        "pride_f27"
+      ]
+    },
+    {
+      "mapId": 128,
+      "locationName": "傲慢之塔:28樓",
+      "mapKeys": [
+        "pride_f28"
+      ]
+    },
+    {
+      "mapId": 129,
+      "locationName": "傲慢之塔:29樓",
+      "mapKeys": [
+        "pride_f29"
+      ]
+    },
+    {
+      "mapId": 130,
+      "locationName": "傲慢之塔:30樓",
+      "mapKeys": [
+        "pride_f30"
+      ]
+    },
+    {
+      "mapId": 131,
+      "locationName": "傲慢之塔:31樓",
+      "mapKeys": [
+        "pride_f31"
+      ]
+    },
+    {
+      "mapId": 132,
+      "locationName": "傲慢之塔:32樓",
+      "mapKeys": [
+        "pride_f32"
+      ]
+    },
+    {
+      "mapId": 133,
+      "locationName": "傲慢之塔:33樓",
+      "mapKeys": [
+        "pride_f33"
+      ]
+    },
+    {
+      "mapId": 134,
+      "locationName": "傲慢之塔:34樓",
+      "mapKeys": [
+        "pride_f34"
+      ]
+    },
+    {
+      "mapId": 135,
+      "locationName": "傲慢之塔:35樓",
+      "mapKeys": [
+        "pride_f35"
+      ]
+    },
+    {
+      "mapId": 136,
+      "locationName": "傲慢之塔:36樓",
+      "mapKeys": [
+        "pride_f36"
+      ]
+    },
+    {
+      "mapId": 137,
+      "locationName": "傲慢之塔:37樓",
+      "mapKeys": [
+        "pride_f37"
+      ]
+    },
+    {
+      "mapId": 138,
+      "locationName": "傲慢之塔:38樓",
+      "mapKeys": [
+        "pride_f38"
+      ]
+    },
+    {
+      "mapId": 139,
+      "locationName": "傲慢之塔:39樓",
+      "mapKeys": [
+        "pride_f39"
+      ]
+    },
+    {
+      "mapId": 140,
+      "locationName": "傲慢之塔:40樓",
+      "mapKeys": [
+        "pride_f40"
+      ]
+    },
+    {
+      "mapId": 141,
+      "locationName": "傲慢之塔:41樓",
+      "mapKeys": [
+        "pride_f41"
+      ]
+    },
+    {
+      "mapId": 142,
+      "locationName": "傲慢之塔:42樓",
+      "mapKeys": [
+        "pride_f42"
+      ]
+    },
+    {
+      "mapId": 143,
+      "locationName": "傲慢之塔:43樓",
+      "mapKeys": [
+        "pride_f43"
+      ]
+    },
+    {
+      "mapId": 144,
+      "locationName": "傲慢之塔:44樓",
+      "mapKeys": [
+        "pride_f44"
+      ]
+    },
+    {
+      "mapId": 145,
+      "locationName": "傲慢之塔:45樓",
+      "mapKeys": [
+        "pride_f45"
+      ]
+    },
+    {
+      "mapId": 146,
+      "locationName": "傲慢之塔:46樓",
+      "mapKeys": [
+        "pride_f46"
+      ]
+    },
+    {
+      "mapId": 147,
+      "locationName": "傲慢之塔:47樓",
+      "mapKeys": [
+        "pride_f47"
+      ]
+    },
+    {
+      "mapId": 148,
+      "locationName": "傲慢之塔:48樓",
+      "mapKeys": [
+        "pride_f48"
+      ]
+    },
+    {
+      "mapId": 149,
+      "locationName": "傲慢之塔:49樓",
+      "mapKeys": [
+        "pride_f49"
+      ]
+    },
+    {
+      "mapId": 150,
+      "locationName": "傲慢之塔:50樓",
+      "mapKeys": [
+        "pride_f50"
+      ]
+    },
+    {
+      "mapId": 151,
+      "locationName": "傲慢之塔:51樓",
+      "mapKeys": [
+        "pride_f51"
+      ]
+    },
+    {
+      "mapId": 152,
+      "locationName": "傲慢之塔:52樓",
+      "mapKeys": [
+        "pride_f52"
+      ]
+    },
+    {
+      "mapId": 153,
+      "locationName": "傲慢之塔:53樓",
+      "mapKeys": [
+        "pride_f53"
+      ]
+    },
+    {
+      "mapId": 154,
+      "locationName": "傲慢之塔:54樓",
+      "mapKeys": [
+        "pride_f54"
+      ]
+    },
+    {
+      "mapId": 155,
+      "locationName": "傲慢之塔:55樓",
+      "mapKeys": [
+        "pride_f55"
+      ]
+    },
+    {
+      "mapId": 156,
+      "locationName": "傲慢之塔:56樓",
+      "mapKeys": [
+        "pride_f56"
+      ]
+    },
+    {
+      "mapId": 157,
+      "locationName": "傲慢之塔:57樓",
+      "mapKeys": [
+        "pride_f57"
+      ]
+    },
+    {
+      "mapId": 158,
+      "locationName": "傲慢之塔:58樓",
+      "mapKeys": [
+        "pride_f58"
+      ]
+    },
+    {
+      "mapId": 159,
+      "locationName": "傲慢之塔:59樓",
+      "mapKeys": [
+        "pride_f59"
+      ]
+    },
+    {
+      "mapId": 160,
+      "locationName": "傲慢之塔:60樓",
+      "mapKeys": [
+        "pride_f60"
+      ]
+    },
+    {
+      "mapId": 161,
+      "locationName": "傲慢之塔:61樓",
+      "mapKeys": [
+        "pride_f61"
+      ]
+    },
+    {
+      "mapId": 162,
+      "locationName": "傲慢之塔:62樓",
+      "mapKeys": [
+        "pride_f62"
+      ]
+    },
+    {
+      "mapId": 163,
+      "locationName": "傲慢之塔:63樓",
+      "mapKeys": [
+        "pride_f63"
+      ]
+    },
+    {
+      "mapId": 164,
+      "locationName": "傲慢之塔:64樓",
+      "mapKeys": [
+        "pride_f64"
+      ]
+    },
+    {
+      "mapId": 165,
+      "locationName": "傲慢之塔:65樓",
+      "mapKeys": [
+        "pride_f65"
+      ]
+    },
+    {
+      "mapId": 166,
+      "locationName": "傲慢之塔:66樓",
+      "mapKeys": [
+        "pride_f66"
+      ]
+    },
+    {
+      "mapId": 167,
+      "locationName": "傲慢之塔:67樓",
+      "mapKeys": [
+        "pride_f67"
+      ]
+    },
+    {
+      "mapId": 168,
+      "locationName": "傲慢之塔:68樓",
+      "mapKeys": [
+        "pride_f68"
+      ]
+    },
+    {
+      "mapId": 169,
+      "locationName": "傲慢之塔:69樓",
+      "mapKeys": [
+        "pride_f69"
+      ]
+    },
+    {
+      "mapId": 170,
+      "locationName": "傲慢之塔:70樓",
+      "mapKeys": [
+        "pride_f70"
+      ]
+    },
+    {
+      "mapId": 171,
+      "locationName": "傲慢之塔:71樓",
+      "mapKeys": [
+        "pride_f71"
+      ]
+    },
+    {
+      "mapId": 172,
+      "locationName": "傲慢之塔:72樓",
+      "mapKeys": [
+        "pride_f72"
+      ]
+    },
+    {
+      "mapId": 173,
+      "locationName": "傲慢之塔:73樓",
+      "mapKeys": [
+        "pride_f73"
+      ]
+    },
+    {
+      "mapId": 174,
+      "locationName": "傲慢之塔:74樓",
+      "mapKeys": [
+        "pride_f74"
+      ]
+    },
+    {
+      "mapId": 175,
+      "locationName": "傲慢之塔:75樓",
+      "mapKeys": [
+        "pride_f75"
+      ]
+    },
+    {
+      "mapId": 176,
+      "locationName": "傲慢之塔:76樓",
+      "mapKeys": [
+        "pride_f76"
+      ]
+    },
+    {
+      "mapId": 177,
+      "locationName": "傲慢之塔:77樓",
+      "mapKeys": [
+        "pride_f77"
+      ]
+    },
+    {
+      "mapId": 178,
+      "locationName": "傲慢之塔:78樓",
+      "mapKeys": [
+        "pride_f78"
+      ]
+    },
+    {
+      "mapId": 179,
+      "locationName": "傲慢之塔:79樓",
+      "mapKeys": [
+        "pride_f79"
+      ]
+    },
+    {
+      "mapId": 180,
+      "locationName": "傲慢之塔:80樓",
+      "mapKeys": [
+        "pride_f80"
+      ]
+    },
+    {
+      "mapId": 181,
+      "locationName": "傲慢之塔:81樓",
+      "mapKeys": [
+        "pride_f81"
+      ]
+    },
+    {
+      "mapId": 182,
+      "locationName": "傲慢之塔:82樓",
+      "mapKeys": [
+        "pride_f82"
+      ]
+    },
+    {
+      "mapId": 183,
+      "locationName": "傲慢之塔:83樓",
+      "mapKeys": [
+        "pride_f83"
+      ]
+    },
+    {
+      "mapId": 184,
+      "locationName": "傲慢之塔:84樓",
+      "mapKeys": [
+        "pride_f84"
+      ]
+    },
+    {
+      "mapId": 185,
+      "locationName": "傲慢之塔:85樓",
+      "mapKeys": [
+        "pride_f85"
+      ]
+    },
+    {
+      "mapId": 186,
+      "locationName": "傲慢之塔:86樓",
+      "mapKeys": [
+        "pride_f86"
+      ]
+    },
+    {
+      "mapId": 187,
+      "locationName": "傲慢之塔:87樓",
+      "mapKeys": [
+        "pride_f87"
+      ]
+    },
+    {
+      "mapId": 188,
+      "locationName": "傲慢之塔:88樓",
+      "mapKeys": [
+        "pride_f88"
+      ]
+    },
+    {
+      "mapId": 189,
+      "locationName": "傲慢之塔:89樓",
+      "mapKeys": [
+        "pride_f89"
+      ]
+    },
+    {
+      "mapId": 190,
+      "locationName": "傲慢之塔:90樓",
+      "mapKeys": [
+        "pride_f90"
+      ]
+    },
+    {
+      "mapId": 191,
+      "locationName": "傲慢之塔:91樓",
+      "mapKeys": [
+        "pride_f91"
+      ]
+    },
+    {
+      "mapId": 192,
+      "locationName": "傲慢之塔:92樓",
+      "mapKeys": [
+        "pride_f92"
+      ]
+    },
+    {
+      "mapId": 193,
+      "locationName": "傲慢之塔:93樓",
+      "mapKeys": [
+        "pride_f93"
+      ]
+    },
+    {
+      "mapId": 194,
+      "locationName": "傲慢之塔:94樓",
+      "mapKeys": [
+        "pride_f94"
+      ]
+    },
+    {
+      "mapId": 195,
+      "locationName": "傲慢之塔:95樓",
+      "mapKeys": [
+        "pride_f95"
+      ]
+    },
+    {
+      "mapId": 196,
+      "locationName": "傲慢之塔:96樓",
+      "mapKeys": [
+        "pride_f96"
+      ]
+    },
+    {
+      "mapId": 197,
+      "locationName": "傲慢之塔:97樓",
+      "mapKeys": [
+        "pride_f97"
+      ]
+    },
+    {
+      "mapId": 198,
+      "locationName": "傲慢之塔:98樓",
+      "mapKeys": [
+        "pride_f98"
+      ]
+    },
+    {
+      "mapId": 199,
+      "locationName": "傲慢之塔:99樓",
+      "mapKeys": [
+        "pride_f99"
+      ]
+    },
+    {
+      "mapId": 200,
+      "locationName": "傲慢之塔:100樓",
+      "mapKeys": [
+        "pride_f100"
+      ]
+    },
+    {
+      "mapId": 201,
+      "locationName": "法師試煉地監",
+      "mapKeys": [
+        "l1j_map_201"
+      ]
+    },
+    {
+      "mapId": 202,
+      "locationName": "法師試練地監",
+      "mapKeys": [
+        "l1j_map_202"
+      ]
+    },
+    {
+      "mapId": 203,
+      "locationName": "法師試練地監",
+      "mapKeys": [
+        "l1j_map_203"
+      ]
+    },
+    {
+      "mapId": 204,
+      "locationName": "法師試練地監",
+      "mapKeys": [
+        "l1j_map_204"
+      ]
+    },
+    {
+      "mapId": 209,
+      "locationName": "黑暗妖精地監",
+      "mapKeys": [
+        "l1j_map_209"
+      ]
+    },
+    {
+      "mapId": 210,
+      "locationName": "黑暗妖精地監",
+      "mapKeys": [
+        "l1j_map_210"
+      ]
+    },
+    {
+      "mapId": 211,
+      "locationName": "黑暗妖精地監",
+      "mapKeys": [
+        "l1j_map_211"
+      ]
+    },
+    {
+      "mapId": 213,
+      "locationName": "黑暗妖精地監",
+      "mapKeys": [
+        "l1j_map_213"
+      ]
+    },
+    {
+      "mapId": 221,
+      "locationName": "傑瑞德的試煉地監",
+      "mapKeys": [
+        "l1j_map_221"
+      ]
+    },
+    {
+      "mapId": 237,
+      "locationName": "吉姆的密室",
+      "mapKeys": [
+        "jim_dungeon"
+      ]
+    },
+    {
+      "mapId": 240,
+      "locationName": "肯特城地監1樓",
+      "mapKeys": [
+        "l1j_map_240"
+      ]
+    },
+    {
+      "mapId": 241,
+      "locationName": "肯特城地監2樓",
+      "mapKeys": [
+        "l1j_map_241"
+      ]
+    },
+    {
+      "mapId": 242,
+      "locationName": "肯特城地監3樓",
+      "mapKeys": [
+        "l1j_map_242"
+      ]
+    },
+    {
+      "mapId": 243,
+      "locationName": "肯特城地監4樓",
+      "mapKeys": [
+        "l1j_map_243"
+      ]
+    },
+    {
+      "mapId": 248,
+      "locationName": "奇岩城地監1樓",
+      "mapKeys": [
+        "l1j_map_248"
+      ]
+    },
+    {
+      "mapId": 249,
+      "locationName": "奇岩城地監2樓",
+      "mapKeys": [
+        "l1j_map_249"
+      ]
+    },
+    {
+      "mapId": 250,
+      "locationName": "奇岩城地監3樓",
+      "mapKeys": [
+        "l1j_map_250"
+      ]
+    },
+    {
+      "mapId": 251,
+      "locationName": "奇岩城地監2樓:伯爵の部屋",
+      "mapKeys": [
+        "l1j_map_251"
+      ]
+    },
+    {
+      "mapId": 252,
+      "locationName": "海音城地監1樓",
+      "mapKeys": [
+        "l1j_map_252"
+      ]
+    },
+    {
+      "mapId": 253,
+      "locationName": "海音城地監2樓",
+      "mapKeys": [
+        "l1j_map_253"
+      ]
+    },
+    {
+      "mapId": 254,
+      "locationName": "海音城地監3樓",
+      "mapKeys": [
+        "l1j_map_254"
+      ]
+    },
+    {
+      "mapId": 255,
+      "locationName": "侏儒城地監礦物坑道:1樓",
+      "mapKeys": [
+        "l1j_map_255"
+      ]
+    },
+    {
+      "mapId": 256,
+      "locationName": "侏儒城地監兇猛之地:2樓",
+      "mapKeys": [
+        "l1j_map_256"
+      ]
+    },
+    {
+      "mapId": 257,
+      "locationName": "亞丁城地監1樓",
+      "mapKeys": [
+        "l1j_map_257"
+      ]
+    },
+    {
+      "mapId": 258,
+      "locationName": "亞丁城地監2樓",
+      "mapKeys": [
+        "l1j_map_258"
+      ]
+    },
+    {
+      "mapId": 259,
+      "locationName": "亞丁城地監3樓",
+      "mapKeys": [
+        "l1j_map_259"
+      ]
+    },
+    {
+      "mapId": 300,
+      "locationName": "亞丁內城",
+      "mapKeys": [
+        "l1j_map_300"
+      ]
+    },
+    {
+      "mapId": 301,
+      "locationName": "傲慢之塔地下水路",
+      "mapKeys": [
+        "aden_sewer"
+      ]
+    },
+    {
+      "mapId": 304,
+      "locationName": "沉默洞穴",
+      "mapKeys": [
+        "silent_outer"
+      ]
+    },
+    {
+      "mapId": 305,
+      "locationName": "布魯迪卡洞穴",
+      "mapKeys": [
+        "l1j_map_305"
+      ]
+    },
+    {
+      "mapId": 306,
+      "locationName": "黑暗妖精試練地監",
+      "mapKeys": [
+        "l1j_map_306"
+      ]
+    },
+    {
+      "mapId": 307,
+      "locationName": "拉斯塔巴德地下洞穴1樓",
+      "mapKeys": [
+        "rastabad_cave1"
+      ]
+    },
+    {
+      "mapId": 308,
+      "locationName": "拉斯塔巴德地下洞穴2樓",
+      "mapKeys": [
+        "rastabad_cave2"
+      ]
+    },
+    {
+      "mapId": 309,
+      "locationName": "拉斯塔巴德地下洞穴3樓",
+      "mapKeys": [
+        "rastabad_cave3"
+      ]
+    },
+    {
+      "mapId": 310,
+      "locationName": "歐姆地監",
+      "mapKeys": [
+        "oum_dungeon"
+      ]
+    },
+    {
+      "mapId": 330,
+      "locationName": "礦物洞穴",
+      "mapKeys": [
+        "mineral_cave"
+      ]
+    },
+    {
+      "mapId": 400,
+      "locationName": "大洞穴隱遁者村莊地區",
+      "mapKeys": [
+        "giant_tomb"
+      ]
+    },
+    {
+      "mapId": 401,
+      "locationName": "Large Cavern route",
+      "mapKeys": [
+        "hidden_cave"
+      ]
+    },
+    {
+      "mapId": 410,
+      "locationName": "魔族神殿",
+      "mapKeys": [
+        "demon_temple"
+      ]
+    },
+    {
+      "mapId": 420,
+      "locationName": "地底湖",
+      "mapKeys": [
+        "under_lake"
+      ]
+    },
+    {
+      "mapId": 430,
+      "locationName": "精靈墓穴",
+      "mapKeys": [
+        "elf_grave"
+      ]
+    },
+    {
+      "mapId": 441,
+      "locationName": "海賊島地監1樓",
+      "mapKeys": [
+        "pirate_dungeon"
+      ]
+    },
+    {
+      "mapId": 442,
+      "locationName": "海賊島地監2樓",
+      "mapKeys": [
+        "pirate_dungeon_2f"
+      ]
+    },
+    {
+      "mapId": 443,
+      "locationName": "海海賊島地監3樓",
+      "mapKeys": [
+        "pirate_dungeon_3f"
+      ]
+    },
+    {
+      "mapId": 444,
+      "locationName": "海賊島地監4樓",
+      "mapKeys": [
+        "pirate_dungeon_4f"
+      ]
+    },
+    {
+      "mapId": 451,
+      "locationName": "拉斯塔巴德:1樓集會場",
+      "mapKeys": [
+        "rastabad_1f_gathering"
+      ]
+    },
+    {
+      "mapId": 452,
+      "locationName": "拉斯塔巴德:突擊隊訓練場",
+      "mapKeys": [
+        "rastabad_1f_assault_training"
+      ]
+    },
+    {
+      "mapId": 453,
+      "locationName": "拉斯塔巴德:魔獸君王之室",
+      "mapKeys": [
+        "king_baranka_room"
+      ]
+    },
+    {
+      "mapId": 454,
+      "locationName": "拉斯塔巴德:魔獸調教場",
+      "mapKeys": [
+        "rastabad_1f_beast_training_a"
+      ]
+    },
+    {
+      "mapId": 455,
+      "locationName": "拉斯塔巴德:魔獸訓練場",
+      "mapKeys": [
+        "rastabad_beast"
+      ]
+    },
+    {
+      "mapId": 456,
+      "locationName": "拉斯塔巴德:魔獸召喚室",
+      "mapKeys": [
+        "rastabad_1f_beast_summoning"
+      ]
+    },
+    {
+      "mapId": 457,
+      "locationName": "拉斯塔巴德:黑暗結界",
+      "mapKeys": [
+        "rastabad_1f_dark_barrier"
+      ]
+    },
+    {
+      "mapId": 460,
+      "locationName": "ラスタバ城:黑魔法訓練場2F",
+      "mapKeys": [
+        "rastabad_2f_dark_magic_training"
+      ]
+    },
+    {
+      "mapId": 461,
+      "locationName": "ラスタバ城:黑魔法研究室2F",
+      "mapKeys": [
+        "dark_magic_lab"
+      ]
+    },
+    {
+      "mapId": 462,
+      "locationName": "ラスタバ城:魔靈軍王の執務室2F",
+      "mapKeys": [
+        "law_king_room"
+      ]
+    },
+    {
+      "mapId": 463,
+      "locationName": "ラスタバ城:魔靈軍王の書齋2F",
+      "mapKeys": [
+        "rastabad_2f_spirit_king_study"
+      ]
+    },
+    {
+      "mapId": 464,
+      "locationName": "ラスタバ城:精靈召喚室2F",
+      "mapKeys": [
+        "rastabad_2f_spirit_summoning"
+      ]
+    },
+    {
+      "mapId": 465,
+      "locationName": "ラスタバ城:精靈の生息地2F",
+      "mapKeys": [
+        "rastabad_2f_spirit_habitat"
+      ]
+    },
+    {
+      "mapId": 466,
+      "locationName": "ラスタバ城:闇の精靈研究室2F",
+      "mapKeys": [
+        "rastabad_2f_dark_elf_lab"
+      ]
+    },
+    {
+      "mapId": 467,
+      "locationName": "ラスタバ城：闇の結界2F",
+      "mapKeys": [
+        "rastabad_2f_oblivion_a"
+      ]
+    },
+    {
+      "mapId": 468,
+      "locationName": "ラスタバ城：闇の結界2F",
+      "mapKeys": [
+        "rastabad_2f_oblivion_b"
+      ]
+    },
+    {
+      "mapId": 470,
+      "locationName": "ラスタバ城:惡靈の祭壇3F",
+      "mapKeys": [
+        "rastabad_3f_spirit_altar"
+      ]
+    },
+    {
+      "mapId": 471,
+      "locationName": "ラスタバ城:デビルロードの祭壇3F",
+      "mapKeys": [
+        "rastabad_3f_demon_altar"
+      ]
+    },
+    {
+      "mapId": 472,
+      "locationName": "ラスタバ城:傭兵訓練場3F",
+      "mapKeys": [
+        "rastabad_3f_mercenary_training"
+      ]
+    },
+    {
+      "mapId": 473,
+      "locationName": "ラスタバ城:冥法軍の訓練場3F",
+      "mapKeys": [
+        "necro_training"
+      ]
+    },
+    {
+      "mapId": 474,
+      "locationName": "ラスタバ城:オーム實驗室3F",
+      "mapKeys": [
+        "rastabad_3f_oum_lab"
+      ]
+    },
+    {
+      "mapId": 475,
+      "locationName": "ラスタバ城:冥法軍王の執務室3F",
+      "mapKeys": [
+        "necro_king_room"
+      ]
+    },
+    {
+      "mapId": 476,
+      "locationName": "ラスタバ城:中央コントロールルーム3F",
+      "mapKeys": [
+        "rastabad_3f_central_control"
+      ]
+    },
+    {
+      "mapId": 477,
+      "locationName": "ラスタバ城:デビルロードの傭兵室3F",
+      "mapKeys": [
+        "rastabad_3f_demon_mercenary"
+      ]
+    },
+    {
+      "mapId": 478,
+      "locationName": "ラスタバ城:立入禁止エリア3F",
+      "mapKeys": [
+        "rastabad_3f_control_area"
+      ]
+    },
+    {
+      "mapId": 481,
+      "locationName": "Kamyla\\'s Room",
+      "mapKeys": [
+        "l1j_map_481"
+      ]
+    },
+    {
+      "mapId": 482,
+      "locationName": "Franco\\'s Labyrinth",
+      "mapKeys": [
+        "l1j_map_482"
+      ]
+    },
+    {
+      "mapId": 483,
+      "locationName": "Closed Jail of Diego",
+      "mapKeys": [
+        "l1j_map_483"
+      ]
+    },
+    {
+      "mapId": 484,
+      "locationName": "Underground Jail of Jose",
+      "mapKeys": [
+        "l1j_map_484"
+      ]
+    },
+    {
+      "mapId": 490,
+      "locationName": "ラスタバド城:地下訓練場",
+      "mapKeys": [
+        "elder_room"
+      ]
+    },
+    {
+      "mapId": 491,
+      "locationName": "ラスタバド城:地下通路",
+      "mapKeys": [
+        "rastabad_b1_passage"
+      ]
+    },
+    {
+      "mapId": 492,
+      "locationName": "ラスタバド城:暗殺軍王の執務室",
+      "mapKeys": [
+        "assassin_king_room"
+      ]
+    },
+    {
+      "mapId": 493,
+      "locationName": "ラスタバド城:地下コントロールルーム",
+      "mapKeys": [
+        "rastabad_b1_control"
+      ]
+    },
+    {
+      "mapId": 494,
+      "locationName": "ラスタバド城:地下處刑場",
+      "mapKeys": [
+        "rastabad_b1_execution"
+      ]
+    },
+    {
+      "mapId": 495,
+      "locationName": "ラスタバド城:地下決鬥場",
+      "mapKeys": [
+        "rastabad_b1_arena"
+      ]
+    },
+    {
+      "mapId": 496,
+      "locationName": "ラスタバド城:地下牢",
+      "mapKeys": [
+        "rastabad_b1_prison"
+      ]
+    },
+    {
+      "mapId": 521,
+      "locationName": "Outer Area of Temple of Shadows",
+      "mapKeys": [
+        "shadow_temple"
+      ]
+    },
+    {
+      "mapId": 522,
+      "locationName": "1st Floor of Temple of Shadows",
+      "mapKeys": [
+        "shadow_temple_2f"
+      ]
+    },
+    {
+      "mapId": 523,
+      "locationName": "2nd Floor of Temple of Shadows",
+      "mapKeys": [
+        "shadow_temple_3f"
+      ]
+    },
+    {
+      "mapId": 524,
+      "locationName": "3rd Floor of Temple of Shadows",
+      "mapKeys": [
+        "shadow_temple_4f"
+      ]
+    },
+    {
+      "mapId": 530,
+      "locationName": "ラスタバ城:グランカインの神殿/ケイナの部屋",
+      "mapKeys": [
+        "rastabad_4f_grankain_kina"
+      ]
+    },
+    {
+      "mapId": 531,
+      "locationName": "ラスタバ城:ビアタス/バロメス/エンディアスの部屋",
+      "mapKeys": [
+        "rastabad_4f_batas_balos_andis"
+      ]
+    },
+    {
+      "mapId": 532,
+      "locationName": "ラスタバ城:庭園/イデアの部屋",
+      "mapKeys": [
+        "rastabad_4f_garden_aidil"
+      ]
+    },
+    {
+      "mapId": 533,
+      "locationName": "ラスタバ城:ティアメス/ラミアス/バロードの部屋",
+      "mapKeys": [
+        "rastabad_4f_taemas_lamans_barud"
+      ]
+    },
+    {
+      "mapId": 534,
+      "locationName": "ラスタバ城:カサンドラ/ダンテスの部屋",
+      "mapKeys": [
+        "rastabad_4f_council_kassandra_dantes"
+      ]
+    },
+    {
+      "mapId": 535,
+      "locationName": "ダークエルフの聖地",
+      "mapKeys": [
+        "dark_elf_sanctuary"
+      ]
+    },
+    {
+      "mapId": 536,
+      "locationName": "ラスタバ城:４階入り口",
+      "mapKeys": [
+        "rastabad_3f_oblivion_sanctuary"
+      ]
+    },
+    {
+      "mapId": 541,
+      "locationName": "巨蟻洞穴卵部屋A",
+      "mapKeys": [
+        "l1j_map_541"
+      ]
+    },
+    {
+      "mapId": 542,
+      "locationName": "巨蟻洞穴卵部屋B",
+      "mapKeys": [
+        "l1j_map_542"
+      ]
+    },
+    {
+      "mapId": 543,
+      "locationName": "巨蟻女皇棲息地",
+      "mapKeys": [
+        "ant_queen_lair"
+      ]
+    },
+    {
+      "mapId": 550,
+      "locationName": "船の墓場:地上層",
+      "mapKeys": [
+        "l1j_map_550"
+      ]
+    },
+    {
+      "mapId": 551,
+      "locationName": "船の墓場:大型船內1F",
+      "mapKeys": [
+        "l1j_map_551"
+      ]
+    },
+    {
+      "mapId": 552,
+      "locationName": "船の墓場:大型船內1F(水中)",
+      "mapKeys": [
+        "l1j_map_552"
+      ]
+    },
+    {
+      "mapId": 553,
+      "locationName": "船の墓場:小型船內1F",
+      "mapKeys": [
+        "l1j_map_553"
+      ]
+    },
+    {
+      "mapId": 554,
+      "locationName": "船の墓場:大型船內2F",
+      "mapKeys": [
+        "l1j_map_554"
+      ]
+    },
+    {
+      "mapId": 555,
+      "locationName": "船の墓場:大型船內2F(水中)",
+      "mapKeys": [
+        "l1j_map_555"
+      ]
+    },
+    {
+      "mapId": 556,
+      "locationName": "船の墓場:小型船內2F",
+      "mapKeys": [
+        "l1j_map_556"
+      ]
+    },
+    {
+      "mapId": 557,
+      "locationName": "船の墓場:大型船內3F(水中)",
+      "mapKeys": [
+        "l1j_map_557"
+      ]
+    },
+    {
+      "mapId": 558,
+      "locationName": "船の墓場:深海層",
+      "mapKeys": [
+        "l1j_map_558"
+      ]
+    },
+    {
+      "mapId": 600,
+      "locationName": "Cave of Desire Outland",
+      "mapKeys": [
+        "desire_cave_entrance"
+      ]
+    },
+    {
+      "mapId": 601,
+      "locationName": "Cave of Desire lobby",
+      "mapKeys": [
+        "desire_cave_hall"
+      ]
+    },
+    {
+      "mapId": 602,
+      "locationName": "Barlog room",
+      "mapKeys": [
+        "flame_audience_hall"
+      ]
+    },
+    {
+      "mapId": 603,
+      "locationName": "Barlog lair",
+      "mapKeys": [
+        "balrog_room"
+      ]
+    },
+    {
+      "mapId": 777,
+      "locationName": "fallen temple",
+      "mapKeys": [
+        "l1j_map_777"
+      ]
+    },
+    {
+      "mapId": 778,
+      "locationName": "fallen cave",
+      "mapKeys": [
+        "l1j_map_778"
+      ]
+    },
+    {
+      "mapId": 779,
+      "locationName": "fallen cave underwater",
+      "mapKeys": [
+        "l1j_map_779"
+      ]
+    },
+    {
+      "mapId": 781,
+      "locationName": "テーベ ピラミッド內部",
+      "mapKeys": [
+        "thebes_pyramid"
+      ]
+    },
+    {
+      "mapId": 782,
+      "locationName": "テーベ オシリス祭壇",
+      "mapKeys": [
+        "thebes_temple"
+      ]
+    },
+    {
+      "mapId": 783,
+      "locationName": "Tikal Temple",
+      "mapKeys": [
+        "tikal_area"
+      ]
+    },
+    {
+      "mapId": 784,
+      "locationName": "Kukulcan altar",
+      "mapKeys": [
+        "tikal_altar"
+      ]
+    },
+    {
+      "mapId": 998,
+      "locationName": "Hall of Honor",
+      "mapKeys": [
+        "l1j_map_998"
+      ]
+    },
+    {
+      "mapId": 1002,
+      "locationName": "龍之墓",
+      "mapKeys": [
+        "l1j_map_1002"
+      ]
+    },
+    {
+      "mapId": 1005,
+      "locationName": "安塔瑞斯洞穴",
+      "mapKeys": [
+        "antharas_lair",
+        "antharas_nest_1",
+        "antharas_nest_2",
+        "antharas_nest_3"
+      ]
+    },
+    {
+      "mapId": 1011,
+      "locationName": "法利昂洞穴",
+      "mapKeys": [
+        "l1j_map_1011"
+      ]
+    }
+  ]
+}

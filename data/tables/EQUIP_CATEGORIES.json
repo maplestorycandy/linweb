@@ -1,0 +1,152 @@
+[
+ {
+  "key": "dagger",
+  "name": "匕首",
+  "group": "武器"
+ },
+ {
+  "key": "sword1",
+  "name": "單手劍",
+  "group": "武器"
+ },
+ {
+  "key": "sword2",
+  "name": "雙手劍",
+  "group": "武器"
+ },
+ {
+  "key": "katana",
+  "name": "武士刀",
+  "group": "武器"
+ },
+ {
+  "key": "blunt1",
+  "name": "單手鈍器",
+  "group": "武器"
+ },
+ {
+  "key": "blunt2",
+  "name": "雙手鈍器",
+  "group": "武器"
+ },
+ {
+  "key": "spear",
+  "name": "矛",
+  "group": "武器"
+ },
+ {
+  "key": "claw",
+  "name": "鋼爪",
+  "group": "武器"
+ },
+ {
+  "key": "dual",
+  "name": "雙刀",
+  "group": "武器"
+ },
+ {
+  "key": "chainsword",
+  "name": "鎖鏈劍",
+  "group": "武器"
+ },
+ {
+  "key": "bow",
+  "name": "弓",
+  "group": "武器"
+ },
+ {
+  "key": "xbow",
+  "name": "十字弓",
+  "group": "武器"
+ },
+ {
+  "key": "quiver",
+  "name": "箭筒",
+  "group": "武器"
+ },
+ {
+  "key": "wand",
+  "name": "魔杖",
+  "group": "武器"
+ },
+ {
+  "key": "qigu",
+  "name": "奇古獸",
+  "group": "武器"
+ },
+ {
+  "key": "wpn_other",
+  "name": "其他武器",
+  "group": "武器"
+ },
+ {
+  "key": "helm",
+  "name": "頭盔",
+  "group": "防具"
+ },
+ {
+  "key": "armor",
+  "name": "盔甲",
+  "group": "防具"
+ },
+ {
+  "key": "shin",
+  "name": "脛甲",
+  "group": "防具"
+ },
+ {
+  "key": "tshirt",
+  "name": "內衣",
+  "group": "防具"
+ },
+ {
+  "key": "cloak",
+  "name": "斗篷",
+  "group": "防具"
+ },
+ {
+  "key": "boots",
+  "name": "長靴",
+  "group": "防具"
+ },
+ {
+  "key": "gloves",
+  "name": "手套",
+  "group": "防具"
+ },
+ {
+  "key": "shield",
+  "name": "盾牌",
+  "group": "防具"
+ },
+ {
+  "key": "armguard",
+  "name": "臂甲",
+  "group": "防具"
+ },
+ {
+  "key": "amulet",
+  "name": "項鍊",
+  "group": "飾品"
+ },
+ {
+  "key": "ring",
+  "name": "戒指",
+  "group": "飾品"
+ },
+ {
+  "key": "belt",
+  "name": "腰帶",
+  "group": "飾品"
+ },
+ {
+  "key": "ear",
+  "name": "耳環",
+  "group": "飾品"
+ },
+ {
+  "key": "pet",
+  "name": "寵物裝備",
+  "group": "飾品"
+ }
+]

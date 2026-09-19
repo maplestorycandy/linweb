@@ -1,0 +1,710 @@
+{
+ "generatedFrom": "C:/Users/User/Downloads/Fable 5",
+ "gameVersion": "v3.8.35",
+ "saveVersion": 2,
+ "sourceFiles": [
+  {
+   "file": "js/anim-manifest.js",
+   "lines": 5,
+   "bytes": 485633
+  },
+  {
+   "file": "js/00-data.js",
+   "lines": 3584,
+   "bytes": 693787
+  },
+  {
+   "file": "js/01-drops-config.js",
+   "lines": 2293,
+   "bytes": 279105
+  },
+  {
+   "file": "js/02-stats-recompute.js",
+   "lines": 1339,
+   "bytes": 113818
+  },
+  {
+   "file": "js/03-combat-core.js",
+   "lines": 2998,
+   "bytes": 211083
+  },
+  {
+   "file": "js/04-combat-attack.js",
+   "lines": 2623,
+   "bytes": 246492
+  },
+  {
+   "file": "js/05-kill-progression.js",
+   "lines": 1484,
+   "bytes": 116370
+  },
+  {
+   "file": "js/06-status-allies.js",
+   "lines": 4146,
+   "bytes": 397398
+  },
+  {
+   "file": "js/07-skills-cast.js",
+   "lines": 1216,
+   "bytes": 107012
+  },
+  {
+   "file": "js/08-items-equip.js",
+   "lines": 1554,
+   "bytes": 119851
+  },
+  {
+   "file": "js/09-vfx-render.js",
+   "lines": 2472,
+   "bytes": 263031
+  },
+  {
+   "file": "js/10-ui-tabs.js",
+   "lines": 2754,
+   "bytes": 234438
+  },
+  {
+   "file": "js/11-world-map.js",
+   "lines": 2349,
+   "bytes": 187956
+  },
+  {
+   "file": "js/12-npc-quests.js",
+   "lines": 1159,
+   "bytes": 100507
+  },
+  {
+   "file": "js/13-shop-save.js",
+   "lines": 2022,
+   "bytes": 157557
+  },
+  {
+   "file": "js/14-craft-pandora.js",
+   "lines": 2049,
+   "bytes": 162240
+  },
+  {
+   "file": "js/15-cards.js",
+   "lines": 822,
+   "bytes": 68084
+  },
+  {
+   "file": "js/16-equip-book.js",
+   "lines": 258,
+   "bytes": 17678
+  },
+  {
+   "file": "js/18-misc-book.js",
+   "lines": 230,
+   "bytes": 16755
+  },
+  {
+   "file": "js/17-audio.js",
+   "lines": 700,
+   "bytes": 70825
+  },
+  {
+   "file": "js/19-equipment-window.js",
+   "lines": 248,
+   "bytes": 14091
+  },
+  {
+   "file": "js/20-warehouse-window.js",
+   "lines": 61,
+   "bytes": 2727
+  },
+  {
+   "file": "js/21-relic-book.js",
+   "lines": 104,
+   "bytes": 7288
+  },
+  {
+   "file": "js/23-summons.js",
+   "lines": 830,
+   "bytes": 62467
+  },
+  {
+   "file": "js/22-pets.js",
+   "lines": 1543,
+   "bytes": 129716
+  },
+  {
+   "file": "js/24-pandora-relic-market.js",
+   "lines": 1988,
+   "bytes": 107161
+  },
+  {
+   "file": "js/25-clan-system.js",
+   "lines": 2094,
+   "bytes": 103311
+  },
+  {
+   "file": "js/26-world-channel.js",
+   "lines": 2953,
+   "bytes": 190871
+  },
+  {
+   "file": "js/28-pvp-arena.js",
+   "lines": 971,
+   "bytes": 62386
+  },
+  {
+   "file": "js/29-siege-v2-data.js",
+   "lines": 17962,
+   "bytes": 569069
+  },
+  {
+   "file": "js/30-siege-v2.js",
+   "lines": 776,
+   "bytes": 44167
+  },
+  {
+   "file": "js/31-castle-guards.js",
+   "lines": 414,
+   "bytes": 26693
+  },
+  {
+   "file": "js/32-threat.js",
+   "lines": 175,
+   "bytes": 10239
+  }
+ ],
+ "tableCount": 76,
+ "tables": [
+  {
+   "name": "ALLY_ACTIVE_MAX",
+   "source": "js/06-status-allies.js",
+   "entries": null,
+   "bytes": 2
+  },
+  {
+   "name": "ANIM_MANIFEST",
+   "source": "js/anim-manifest.js",
+   "entries": 1042,
+   "bytes": 605539
+  },
+  {
+   "name": "ATK_APM",
+   "source": "js/01-drops-config.js",
+   "entries": 16,
+   "bytes": 5153
+  },
+  {
+   "name": "ATK_APM_DEFAULT",
+   "source": "js/01-drops-config.js",
+   "entries": 15,
+   "bytes": 258
+  },
+  {
+   "name": "BEGINNER_KIT",
+   "source": "L1j-TW-main beginner.sql（tools/l1j-import/import_l1j_beginner.py·T=戰士用戶裁決）",
+   "entries": 2,
+   "bytes": 6479
+  },
+  {
+   "name": "CARD_MOB_MAPS",
+   "source": "tools/l1j-import/build_monster_cards.py + canonical DB.maps",
+   "entries": 1046,
+   "bytes": 47715
+  },
+  {
+   "name": "CARD_REGIONS",
+   "source": "tools/l1j-import/build_monster_cards.py + canonical DB.maps",
+   "entries": 15,
+   "bytes": 3104
+  },
+  {
+   "name": "CARD_REGION_MOBS",
+   "source": "tools/l1j-import/build_monster_cards.py + canonical DB.maps",
+   "entries": 15,
+   "bytes": 6374
+  },
+  {
+   "name": "CAST_TICKS",
+   "source": "js/01-drops-config.js",
+   "entries": 16,
+   "bytes": 309
+  },
+  {
+   "name": "CLAN_CREATE_COST",
+   "source": "js/25-clan-system.js",
+   "entries": null,
+   "bytes": 6
+  },
+  {
+   "name": "CLIENT_AUDIO_3_8C",
+   "source": "3.8c client music.def + equipsound.def + envsound.def",
+   "entries": 4388,
+   "bytes": 493824
+  },
+  {
+   "name": "CONTROL_ONLY_POLY_FORMS",
+   "source": "js/02-stats-recompute.js",
+   "entries": 2,
+   "bytes": 375
+  },
+  {
+   "name": "DB",
+   "source": "js/00-data.js",
+   "entries": 6,
+   "bytes": 2042696
+  },
+  {
+   "name": "EQUIP_CATEGORIES",
+   "source": "js/16-equip-book.js",
+   "entries": 31,
+   "bytes": 2067
+  },
+  {
+   "name": "EQUIP_CAT_BONUS",
+   "source": "js/16-equip-book.js",
+   "entries": 28,
+   "bytes": 1974
+  },
+  {
+   "name": "EQUIP_CAT_ITEMS",
+   "source": "js/16-equip-book.js",
+   "entries": 31,
+   "bytes": 12043
+  },
+  {
+   "name": "EXP_REQ_CLASSIC",
+   "source": "js/00-data.js",
+   "entries": 100,
+   "bytes": 1077
+  },
+  {
+   "name": "GODOT_BOSS_CLASSIFICATION",
+   "source": "用戶 2026-08-11 頭目身分拆層裁決（docs/CODEX-INBOX.md）",
+   "entries": 63,
+   "bytes": 982
+  },
+  {
+   "name": "HITSTUN_TICKS",
+   "source": "js/01-drops-config.js",
+   "entries": 16,
+   "bytes": 293
+  },
+  {
+   "name": "ITEM_WEIGHTS",
+   "source": "js/01-drops-config.js",
+   "entries": 1022,
+   "bytes": 26761
+  },
+  {
+   "name": "L1J_ARMOR_SETS",
+   "source": "L1j-TW-main armor_set.sql; tools/l1j-import/import_l1j_armor_sets.py",
+   "entries": 4,
+   "bytes": 32957
+  },
+  {
+   "name": "L1J_DUNGEON_RANDOM",
+   "source": "L1j-TW-main dungeon_random.sql + DungeonRandom.java; tools/l1j-import/import_l1j_dungeon_random.py",
+   "entries": 10,
+   "bytes": 5699
+  },
+  {
+   "name": "L1J_GETBACK",
+   "source": "L1j-TW-main getback.sql + getback_restart.sql + L1TownLocation.java; tools/l1j-import/import_l1j_getback.py",
+   "entries": 589,
+   "bytes": 463406
+  },
+  {
+   "name": "L1J_HOUSES",
+   "source": "L1j-TW-main house/board_auction/npc/spawnlist_npc + L1HouseLocation; tools/l1j-import/import_l1j_houses.py",
+   "entries": 5,
+   "bytes": 77532
+  },
+  {
+   "name": "L1J_MAP_RULES",
+   "source": "L1j-TW-main mapids.sql + explicit custom overrides; tools/l1j-import/import_l1j_map_rules.py",
+   "entries": 555,
+   "bytes": 293234
+  },
+  {
+   "name": "L1J_MOB_GROUPS",
+   "source": "L1j-TW-main mobgroup.sql; tools/l1j-import/import_l1j_mob_groups.py",
+   "entries": 76,
+   "bytes": 42514
+  },
+  {
+   "name": "L1J_MOB_SPRITES",
+   "source": "L1j-TW-main gfx + 3.8c SPR + user-designated exact-name SPR supplements; tools/l1j-import/convert_mob_sprites_3_8c.js",
+   "entries": 1224,
+   "bytes": 3353756
+  },
+  {
+   "name": "L1J_NPC_CHAT",
+   "source": "L1j-TW-main npcchat.sql; tools/l1j-import/import_l1j_npc_chat.py",
+   "entries": 38,
+   "bytes": 20077
+  },
+  {
+   "name": "L1J_NPC_SHOPS",
+   "source": "L1j-TW-main shop.sql/npc.sql/spawnlist_npc.sql（佇列8/9·重生 tools/l1j-import/import_l1j_npc_shops.py）",
+   "entries": 9,
+   "bytes": 994095
+  },
+  {
+   "name": "L1J_NPC_SPRITES",
+   "source": "L1J-TW main NPC identity + supplied 3.8c list.spr/list.spz/raw SPR; tools/import-l1j-npc-sprites.js",
+   "entries": 8,
+   "bytes": 286146
+  },
+  {
+   "name": "L1J_PET_ITEMS",
+   "source": "L1j-TW-main petitem.sql + C_UsePetItem.java; tools/l1j-import/import_l1j_pet_items.py",
+   "entries": 13,
+   "bytes": 5043
+  },
+  {
+   "name": "L1J_PET_TYPES",
+   "source": "L1j-TW-main pettypes.sql + 2 explicit user evolution rulings; tools/l1j-import/import_l1j_pet_types.py",
+   "entries": 37,
+   "bytes": 17297
+  },
+  {
+   "name": "L1J_RESOLVENT",
+   "source": "L1j-TW-main resolvent.sql; tools/l1j-import/import_l1j_resolvent.py",
+   "entries": 5,
+   "bytes": 108783
+  },
+  {
+   "name": "L1J_TRAPS",
+   "source": "L1j-TW-main trap.sql + spawnlist_trap.sql; tools/l1j-import/import_l1j_traps.py",
+   "entries": 368,
+   "bytes": 85070
+  },
+  {
+   "name": "L1J_ULTIMATE_BATTLE",
+   "source": "L1j-TW-main ub_settings/ub_managers/ub_times/spawnlist_ub; tools/l1j-import/import_l1j_ub.py",
+   "entries": 454,
+   "bytes": 95897
+  },
+  {
+   "name": "L1J_WEAPON_TYPE",
+   "source": "L1j-TW-main db/InnoDB_TW/weapon.sql (via data/l1j-item-catalog.json)",
+   "entries": 246,
+   "bytes": 7244
+  },
+  {
+   "name": "MAGIC_DOLLS",
+   "source": "L1j-TW-main MagicDoll.java/TreasureBox.xml/ItemMaking.xml（tools/l1j-import/import_l1j_magic_dolls.py）",
+   "entries": 7,
+   "bytes": 4032
+  },
+  {
+   "name": "MAP_CATEGORIES",
+   "source": "tools/l1j-import/build_world_map_catalog.py (canonical physical map domain)",
+   "entries": 6,
+   "bytes": 5943
+  },
+  {
+   "name": "MAP_REGIONS",
+   "source": "tools/l1j-import/build_world_map_catalog.py (canonical physical map domain)",
+   "entries": 15,
+   "bytes": 6740
+  },
+  {
+   "name": "MISC_BOOK_EXCLUDED",
+   "source": "js/18-misc-book.js",
+   "entries": 3,
+   "bytes": 90
+  },
+  {
+   "name": "MISC_CATEGORIES",
+   "source": "js/18-misc-book.js",
+   "entries": 5,
+   "bytes": 227
+  },
+  {
+   "name": "MISC_CAT_BONUS",
+   "source": "js/18-misc-book.js",
+   "entries": 5,
+   "bytes": 391
+  },
+  {
+   "name": "MISC_CAT_ITEMS",
+   "source": "js/18-misc-book.js",
+   "entries": 5,
+   "bytes": 10300
+  },
+  {
+   "name": "MOB_DROPS",
+   "source": "tools/l1j-import/import_l1j_drops.py (L1j-TW-main + user delta)",
+   "entries": 1014,
+   "bytes": 361604
+  },
+  {
+   "name": "MOB_PARTY_AOE_SKILLS",
+   "source": "js/01-drops-config.js",
+   "entries": 75,
+   "bytes": 1351
+  },
+  {
+   "name": "NECRO_SKELETON_ASPD",
+   "source": "js/23-summons.js",
+   "entries": null,
+   "bytes": 3
+  },
+  {
+   "name": "NECRO_SKELETON_HIT_BONUS",
+   "source": "js/23-summons.js",
+   "entries": null,
+   "bytes": 2
+  },
+  {
+   "name": "NECRO_SKELETON_MAX",
+   "source": "js/23-summons.js",
+   "entries": null,
+   "bytes": 2
+  },
+  {
+   "name": "NECRO_SKELETON_TIERS",
+   "source": "js/23-summons.js",
+   "entries": 6,
+   "bytes": 609
+  },
+  {
+   "name": "NPC_ACTIONS",
+   "source": "L1j-TW-main data/xml/NpcActions（佇列7·重生 tools/l1j-import/import_l1j_npc_actions.py）",
+   "entries": 5,
+   "bytes": 484022
+  },
+  {
+   "name": "PET_STORAGE_MAX",
+   "source": "js/22-pets.js",
+   "entries": null,
+   "bytes": 3
+  },
+  {
+   "name": "POLY_TIERS",
+   "source": "js/02-stats-recompute.js",
+   "entries": 8,
+   "bytes": 9748
+  },
+  {
+   "name": "PVP_ALIGN_EVIL",
+   "source": "js/03-combat-core.js",
+   "entries": null,
+   "bytes": 6
+  },
+  {
+   "name": "PVP_ALIGN_JUSTICE",
+   "source": "js/03-combat-core.js",
+   "entries": null,
+   "bytes": 5
+  },
+  {
+   "name": "PVP_ALIGN_MAX",
+   "source": "js/03-combat-core.js",
+   "entries": null,
+   "bytes": 6
+  },
+  {
+   "name": "PVP_ALIGN_MIN",
+   "source": "js/03-combat-core.js",
+   "entries": null,
+   "bytes": 7
+  },
+  {
+   "name": "RELIC_CAT_ITEMS",
+   "source": "js/21-relic-book.js",
+   "entries": 31,
+   "bytes": 9771
+  },
+  {
+   "name": "ROYAL_ALLY_ACTIVE_MAX",
+   "source": "js/06-status-allies.js",
+   "entries": null,
+   "bytes": 2
+  },
+  {
+   "name": "SELF_FX",
+   "source": "js/09-vfx-render.js",
+   "entries": 73,
+   "bytes": 10467
+  },
+  {
+   "name": "SET_POLY_FORMS",
+   "source": "js/02-stats-recompute.js",
+   "entries": 4,
+   "bytes": 593
+  },
+  {
+   "name": "SHANNA_APM_PROFILES",
+   "source": "js/02-stats-recompute.js",
+   "entries": 6,
+   "bytes": 953
+  },
+  {
+   "name": "SHANNA_DAGGER_LONG_HITSTUN",
+   "source": "js/02-stats-recompute.js",
+   "entries": 6,
+   "bytes": 136
+  },
+  {
+   "name": "SHANNA_PROFILE_BY_AVATAR",
+   "source": "js/02-stats-recompute.js",
+   "entries": 16,
+   "bytes": 379
+  },
+  {
+   "name": "SHIMIZHE_REWARDS",
+   "source": "js/12-npc-quests.js",
+   "entries": 5,
+   "bytes": 128
+  },
+  {
+   "name": "SPELL_FX",
+   "source": "js/09-vfx-render.js",
+   "entries": 53,
+   "bytes": 8697
+  },
+  {
+   "name": "SPELL_FX_REF_MSCALE_K",
+   "source": "js/09-vfx-render.js",
+   "entries": null,
+   "bytes": 21
+  },
+  {
+   "name": "SPELL_FX_REF_W_K",
+   "source": "js/09-vfx-render.js",
+   "entries": null,
+   "bytes": 7
+  },
+  {
+   "name": "SPIRIT_DEF",
+   "source": "js/23-summons.js",
+   "entries": 2,
+   "bytes": 1086
+  },
+  {
+   "name": "SPIRIT_ELE_ZH",
+   "source": "js/23-summons.js",
+   "entries": 4,
+   "bytes": 69
+  },
+  {
+   "name": "SPIRIT_KING",
+   "source": "js/23-summons.js",
+   "entries": 6,
+   "bytes": 606
+  },
+  {
+   "name": "SUMMON_NO_RING_MAX_LV",
+   "source": "js/23-summons.js",
+   "entries": null,
+   "bytes": 3
+  },
+  {
+   "name": "SUMMON_TIERS",
+   "source": "js/23-summons.js",
+   "entries": 13,
+   "bytes": 5493
+  },
+  {
+   "name": "TRUE_SHANNA_APM",
+   "source": "js/02-stats-recompute.js",
+   "entries": 15,
+   "bytes": 271
+  },
+  {
+   "name": "WEAPON_TAGS",
+   "source": "js/10-ui-tabs.js",
+   "entries": 204,
+   "bytes": 8093
+  },
+  {
+   "name": "WH_MAX",
+   "source": "js/12-npc-quests.js",
+   "entries": null,
+   "bytes": 5
+  },
+  {
+   "name": "L1J_MAP_NAMES",
+   "source": "L1j-TW-main mapids.sql; tools/l1j-import/import_l1j_map_names.py",
+   "entries": 234,
+   "bytes": 9358
+  }
+ ],
+ "missing": {
+  "AC50_AVG_REDUCTION": "AC50_AVG_REDUCTION is not defined",
+  "MR100_MULT": "MR100_MULT is not defined",
+  "PARTY_AOE_SKILLS": "PARTY_AOE_SKILLS is not defined",
+  "DRAGON_GILTAS_RATIO": "DRAGON_GILTAS_RATIO is not defined",
+  "SET_CODE": "SET_CODE is not defined",
+  "MAP": "MAP is not defined",
+  "STAT_CN": "STAT_CN is not defined",
+  "DEBUFF_COLORS": "DEBUFF_COLORS is not defined",
+  "WIN": "WIN is not defined",
+  "SLOT_LABEL": "SLOT_LABEL is not defined",
+  "TRACKING_GOLD_COST": "TRACKING_GOLD_COST is not defined",
+  "PAIRS": "PAIRS is not defined",
+  "EXP_MIG_OLD_BASE": "EXP_MIG_OLD_BASE is not defined",
+  "SHOP_SOLD": "SHOP_SOLD is not defined",
+  "TYPE_LABEL": "TYPE_LABEL is not defined",
+  "STAT_LABEL": "STAT_LABEL is not defined",
+  "EFF_LABEL": "EFF_LABEL is not defined",
+  "SK_TYPE": "SK_TYPE is not defined",
+  "SK_ELE": "SK_ELE is not defined",
+  "SK_STAT2": "SK_STAT2 is not defined",
+  "SK_MEFF": "SK_MEFF is not defined",
+  "PAGE_SLOTS": "PAGE_SLOTS is not defined",
+  "EQUIPMENT_TEMPLATE_CLASS": "EQUIPMENT_TEMPLATE_CLASS is not defined",
+  "TEST_BUILD": "TEST_BUILD is not defined",
+  "STORE_KEY": "STORE_KEY is not defined",
+  "LOCK_KEY": "LOCK_KEY is not defined",
+  "STORE_VERSION": "STORE_VERSION is not defined",
+  "CHECK_MS": "CHECK_MS is not defined",
+  "WANDERER_LIFE_MS": "WANDERER_LIFE_MS is not defined",
+  "BROADCAST_MS": "BROADCAST_MS is not defined",
+  "GOLD_BROADCAST_OFFSET_MS": "GOLD_BROADCAST_OFFSET_MS is not defined",
+  "BROADCAST_PIN_MAX": "BROADCAST_PIN_MAX is not defined",
+  "BOARD_COOLDOWN_MS": "BOARD_COOLDOWN_MS is not defined",
+  "RELIC_SEARCH_COST": "RELIC_SEARCH_COST is not defined",
+  "WANDERER_CHANCE": "WANDERER_CHANCE is not defined",
+  "GOLD_WANDERER_CHANCE": "GOLD_WANDERER_CHANCE is not defined",
+  "WANDERER_CARD_CHANCE": "WANDERER_CARD_CHANCE is not defined",
+  "EXCLUDED_TOWNS": "EXCLUDED_TOWNS is not defined",
+  "EXCLUDED_TOWN_NAMES": "EXCLUDED_TOWN_NAMES is not defined",
+  "PLAYER_AVATARS": "PLAYER_AVATARS is not defined",
+  "SILENCE_COMPLAINTS": "SILENCE_COMPLAINTS is not defined",
+  "LOW_PRICE_COMPLAINTS": "LOW_PRICE_COMPLAINTS is not defined",
+  "SILENCE_APOLOGIES": "SILENCE_APOLOGIES is not defined",
+  "SILENCE_SPICY_REPLIES": "SILENCE_SPICY_REPLIES is not defined",
+  "OFFLINE_TAUNT_CHOICES": "OFFLINE_TAUNT_CHOICES is not defined",
+  "OFFLINE_NPC_CHAT": "OFFLINE_NPC_CHAT is not defined",
+  "OFFLINE_NPC_REPLY_CORES": "OFFLINE_NPC_REPLY_CORES is not defined",
+  "OFFLINE_NPC_REPEAT_OPENERS": "OFFLINE_NPC_REPEAT_OPENERS is not defined",
+  "RELIC_CATEGORIES": "RELIC_CATEGORIES is not defined",
+  "PVP_CARD_PREFIX": "PVP_CARD_PREFIX is not defined",
+  "PVP_ARENA_MAP": "PVP_ARENA_MAP is not defined",
+  "PVP_HOME_MAP": "PVP_HOME_MAP is not defined",
+  "PVP_RESULT_DELAY_MS": "PVP_RESULT_DELAY_MS is not defined",
+  "PVP_HISTORY_MAX": "PVP_HISTORY_MAX is not defined",
+  "PVP_ATK_MULT_MIN": "PVP_ATK_MULT_MIN is not defined",
+  "PVP_ATK_MULT_MAX": "PVP_ATK_MULT_MAX is not defined",
+  "PVP_CARD_FIELDS": "PVP_CARD_FIELDS is not defined",
+  "PVP_SNAPSHOT_D_LIMITS": "PVP_SNAPSHOT_D_LIMITS is not defined",
+  "CARD": "CARD is not defined",
+  "HEAD": "HEAD is not defined",
+  "NOTE": "NOTE is not defined",
+  "FIELD": "FIELD is not defined",
+  "FIELD_S": "FIELD_S is not defined",
+  "DATA": "DATA is not defined",
+  "VERSION": "VERSION is not defined",
+  "ENTRY_GOLD": "ENTRY_GOLD is not defined",
+  "MIN_LEVEL": "MIN_LEVEL is not defined",
+  "MIN_MERCS": "MIN_MERCS is not defined",
+  "COOLDOWN_MS": "COOLDOWN_MS is not defined",
+  "DURATION_MS": "DURATION_MS is not defined",
+  "CASTLES": "CASTLES is not defined",
+  "LEGACY_CASTLES": "LEGACY_CASTLES is not defined",
+  "STAGES": "STAGES is not defined",
+  "STAGE_BY_ID": "STAGE_BY_ID is not defined",
+  "STAGE_BY_MAP": "STAGE_BY_MAP is not defined",
+  "UNIT_ASSET": "UNIT_ASSET is not defined",
+  "ANIM": "ANIM is not defined"
+ }
+}

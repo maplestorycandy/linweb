@@ -1,0 +1,10451 @@
+{
+ "__doc": [
+  "L1J-TW `spawnlist_door.sql` 匯入的門——由 tools/l1j-import/import_l1j_doors_teleporters.py 產生。",
+  "⚠️ 機器產物，**不要手改**：重跑整份覆蓋。要改個別筆請走 content-overlay.json。",
+  "`cell` 是**港版本地格**（已扣掉 map.json 的 source.gameOrigin），不是 L1J 遊戲座標。",
+  "`dir` 0/1＝軸向；`span`＝沿軸向多跨幾格（沒有這欄＝單格門）；",
+  "`hp` 0＝打不壞；`keeper` 非 0＝屬於某個血盟／城堡。"
+ ],
+ "doors": [
+  {
+   "id": 1,
+   "map": "l1j_map_69",
+   "cell": [
+    169,
+    139
+   ],
+   "gfx": 2083,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "隱藏之谷"
+  },
+  {
+   "id": 2,
+   "map": "l1j_map_69",
+   "cell": [
+    188,
+    144
+   ],
+   "gfx": 2089,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "隱藏之谷"
+  },
+  {
+   "id": 3,
+   "map": "l1j_map_69",
+   "cell": [
+    137,
+    140
+   ],
+   "gfx": 2114,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "隱藏之谷"
+  },
+  {
+   "id": 4,
+   "map": "l1j_map_69",
+   "cell": [
+    178,
+    181
+   ],
+   "gfx": 2128,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "隱藏之谷"
+  },
+  {
+   "id": 100,
+   "map": "talking_island",
+   "cell": [
+    307,
+    317
+   ],
+   "gfx": 2301,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "說話之島"
+  },
+  {
+   "id": 101,
+   "map": "talking_island",
+   "cell": [
+    341,
+    166
+   ],
+   "gfx": 2346,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "說話之島"
+  },
+  {
+   "id": 102,
+   "map": "talking_island",
+   "cell": [
+    330,
+    151
+   ],
+   "gfx": 2304,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "說話之島"
+  },
+  {
+   "id": 103,
+   "map": "talking_island",
+   "cell": [
+    322,
+    150
+   ],
+   "gfx": 2305,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "說話之島"
+  },
+  {
+   "id": 104,
+   "map": "talking_island",
+   "cell": [
+    306,
+    179
+   ],
+   "gfx": 2303,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "說話之島"
+  },
+  {
+   "id": 105,
+   "map": "talking_island",
+   "cell": [
+    303,
+    200
+   ],
+   "gfx": 2306,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "說話之島"
+  },
+  {
+   "id": 106,
+   "map": "talking_island",
+   "cell": [
+    312,
+    201
+   ],
+   "gfx": 2345,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "說話之島"
+  },
+  {
+   "id": 107,
+   "map": "talking_island",
+   "cell": [
+    335,
+    187
+   ],
+   "gfx": 2344,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "說話之島"
+  },
+  {
+   "id": 200,
+   "map": "mainland_south",
+   "cell": [
+    586,
+    1226
+   ],
+   "gfx": 1010,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "銀騎士村莊"
+  },
+  {
+   "id": 201,
+   "map": "mainland_south",
+   "cell": [
+    565,
+    1291
+   ],
+   "gfx": 447,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "銀騎士村莊"
+  },
+  {
+   "id": 202,
+   "map": "mainland_south",
+   "cell": [
+    540,
+    1272
+   ],
+   "gfx": 446,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "銀騎士村莊"
+  },
+  {
+   "id": 203,
+   "map": "mainland_south",
+   "cell": [
+    583,
+    1260
+   ],
+   "gfx": 448,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "銀騎士村莊"
+  },
+  {
+   "id": 204,
+   "map": "mainland_south",
+   "cell": [
+    596,
+    1255
+   ],
+   "gfx": 845,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "銀騎士村莊"
+  },
+  {
+   "id": 205,
+   "map": "mainland_south",
+   "cell": [
+    583,
+    1279
+   ],
+   "gfx": 444,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "銀騎士村莊"
+  },
+  {
+   "id": 300,
+   "map": "mainland_south",
+   "cell": [
+    118,
+    1069
+   ],
+   "gfx": 447,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "風木"
+  },
+  {
+   "id": 301,
+   "map": "mainland_south",
+   "cell": [
+    111,
+    1094
+   ],
+   "gfx": 448,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "風木"
+  },
+  {
+   "id": 302,
+   "map": "mainland_south",
+   "cell": [
+    79,
+    1063
+   ],
+   "gfx": 446,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "風木"
+  },
+  {
+   "id": 303,
+   "map": "mainland_south",
+   "cell": [
+    108,
+    1043
+   ],
+   "gfx": 845,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "風木"
+  },
+  {
+   "id": 304,
+   "map": "mainland_south",
+   "cell": [
+    130,
+    1057
+   ],
+   "gfx": 446,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "風木"
+  },
+  {
+   "id": 305,
+   "map": "mainland_south",
+   "cell": [
+    557,
+    631
+   ],
+   "gfx": 444,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "風木"
+  },
+  {
+   "id": 306,
+   "map": "mainland_south",
+   "cell": [
+    557,
+    620
+   ],
+   "gfx": 446,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "風木"
+  },
+  {
+   "id": 307,
+   "map": "mainland_south",
+   "cell": [
+    551,
+    608
+   ],
+   "gfx": 447,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "風木"
+  },
+  {
+   "id": 308,
+   "map": "mainland_south",
+   "cell": [
+    538,
+    613
+   ],
+   "gfx": 442,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "風木"
+  },
+  {
+   "id": 309,
+   "map": "mainland_south",
+   "cell": [
+    522,
+    662
+   ],
+   "gfx": 446,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "風木"
+  },
+  {
+   "id": 310,
+   "map": "mainland_south",
+   "cell": [
+    535,
+    674
+   ],
+   "gfx": 447,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "風木"
+  },
+  {
+   "id": 400,
+   "map": "mainland_south",
+   "cell": [
+    213,
+    311
+   ],
+   "gfx": 766,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "妖魔森林"
+  },
+  {
+   "id": 401,
+   "map": "mainland_south",
+   "cell": [
+    242,
+    319
+   ],
+   "gfx": 768,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "妖魔森林"
+  },
+  {
+   "id": 402,
+   "map": "mainland_south",
+   "cell": [
+    246,
+    306
+   ],
+   "gfx": 766,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "妖魔森林"
+  },
+  {
+   "id": 403,
+   "map": "mainland_south",
+   "cell": [
+    232,
+    301
+   ],
+   "gfx": 767,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "妖魔森林"
+  },
+  {
+   "id": 405,
+   "map": "mainland_south",
+   "cell": [
+    218,
+    343
+   ],
+   "gfx": 767,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "妖魔森林"
+  },
+  {
+   "id": 406,
+   "map": "mainland_south",
+   "cell": [
+    226,
+    332
+   ],
+   "gfx": 766,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "妖魔森林"
+  },
+  {
+   "id": 407,
+   "map": "mainland_south",
+   "cell": [
+    919,
+    664
+   ],
+   "gfx": 1341,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "妖魔森林"
+  },
+  {
+   "id": 500,
+   "map": "zone_03",
+   "cell": [
+    13,
+    165
+   ],
+   "gfx": 2161,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "歐瑞"
+  },
+  {
+   "id": 501,
+   "map": "zone_03",
+   "cell": [
+    16,
+    169
+   ],
+   "gfx": 2162,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "歐瑞"
+  },
+  {
+   "id": 502,
+   "map": "zone_03",
+   "cell": [
+    19,
+    171
+   ],
+   "gfx": 2164,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "歐瑞"
+  },
+  {
+   "id": 503,
+   "map": "zone_03",
+   "cell": [
+    18,
+    171
+   ],
+   "gfx": 2163,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "歐瑞"
+  },
+  {
+   "id": 504,
+   "map": "mainland_south",
+   "cell": [
+    1523,
+    136
+   ],
+   "gfx": 2190,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "歐瑞"
+  },
+  {
+   "id": 505,
+   "map": "mainland_south",
+   "cell": [
+    1509,
+    136
+   ],
+   "gfx": 2190,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "歐瑞"
+  },
+  {
+   "id": 506,
+   "map": "zone_03",
+   "cell": [
+    4,
+    102
+   ],
+   "gfx": 2191,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "歐瑞"
+  },
+  {
+   "id": 507,
+   "map": "zone_03",
+   "cell": [
+    19,
+    107
+   ],
+   "gfx": 2191,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "歐瑞"
+  },
+  {
+   "id": 508,
+   "map": "zone_03",
+   "cell": [
+    12,
+    131
+   ],
+   "gfx": 2160,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "歐瑞"
+  },
+  {
+   "id": 509,
+   "map": "zone_03",
+   "cell": [
+    17,
+    135
+   ],
+   "gfx": 2162,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "歐瑞"
+  },
+  {
+   "id": 510,
+   "map": "zone_03",
+   "cell": [
+    29,
+    149
+   ],
+   "gfx": 2191,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "歐瑞"
+  },
+  {
+   "id": 511,
+   "map": "mainland_south",
+   "cell": [
+    1522,
+    129
+   ],
+   "gfx": 2191,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "歐瑞"
+  },
+  {
+   "id": 600,
+   "map": "mainland_south",
+   "cell": [
+    1084,
+    1150
+   ],
+   "gfx": 1689,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "海音"
+  },
+  {
+   "id": 601,
+   "map": "mainland_south",
+   "cell": [
+    1091,
+    1155
+   ],
+   "gfx": 1690,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "海音"
+  },
+  {
+   "id": 602,
+   "map": "mainland_south",
+   "cell": [
+    1079,
+    1147
+   ],
+   "gfx": 1688,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "海音"
+  },
+  {
+   "id": 603,
+   "map": "mainland_south",
+   "cell": [
+    1106,
+    1157
+   ],
+   "gfx": 1744,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "海音"
+  },
+  {
+   "id": 604,
+   "map": "mainland_south",
+   "cell": [
+    1110,
+    1163
+   ],
+   "gfx": 1743,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "海音"
+  },
+  {
+   "id": 605,
+   "map": "mainland_south",
+   "cell": [
+    1118,
+    1159
+   ],
+   "gfx": 1743,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "海音"
+  },
+  {
+   "id": 606,
+   "map": "mainland_south",
+   "cell": [
+    1122,
+    1161
+   ],
+   "gfx": 1750,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "海音"
+  },
+  {
+   "id": 607,
+   "map": "mainland_south",
+   "cell": [
+    1128,
+    1168
+   ],
+   "gfx": 1750,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "海音"
+  },
+  {
+   "id": 608,
+   "map": "mainland_south",
+   "cell": [
+    1071,
+    1178
+   ],
+   "gfx": 1741,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50617,
+   "note": "海音"
+  },
+  {
+   "id": 609,
+   "map": "mainland_south",
+   "cell": [
+    1072,
+    1186
+   ],
+   "gfx": 1740,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50617,
+   "note": "海音"
+  },
+  {
+   "id": 610,
+   "map": "mainland_south",
+   "cell": [
+    1057,
+    1169
+   ],
+   "gfx": 1737,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "海音"
+  },
+  {
+   "id": 611,
+   "map": "mainland_south",
+   "cell": [
+    1069,
+    1211
+   ],
+   "gfx": 1665,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50614,
+   "note": "海音"
+  },
+  {
+   "id": 612,
+   "map": "mainland_south",
+   "cell": [
+    1092,
+    1237
+   ],
+   "gfx": 1691,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "海音"
+  },
+  {
+   "id": 613,
+   "map": "mainland_south",
+   "cell": [
+    1080,
+    1267
+   ],
+   "gfx": 1692,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "海音"
+  },
+  {
+   "id": 614,
+   "map": "mainland_south",
+   "cell": [
+    1083,
+    1282
+   ],
+   "gfx": 1737,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "海音"
+  },
+  {
+   "id": 615,
+   "map": "mainland_south",
+   "cell": [
+    1107,
+    1253
+   ],
+   "gfx": 1664,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50618,
+   "note": "海音"
+  },
+  {
+   "id": 616,
+   "map": "mainland_south",
+   "cell": [
+    1116,
+    1275
+   ],
+   "gfx": 1735,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50616,
+   "note": "海音"
+  },
+  {
+   "id": 617,
+   "map": "mainland_south",
+   "cell": [
+    1122,
+    1284
+   ],
+   "gfx": 1736,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "海音"
+  },
+  {
+   "id": 618,
+   "map": "mainland_south",
+   "cell": [
+    1120,
+    1120
+   ],
+   "gfx": 1664,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50621,
+   "note": "海音"
+  },
+  {
+   "id": 619,
+   "map": "mainland_south",
+   "cell": [
+    1114,
+    1098
+   ],
+   "gfx": 1734,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50619,
+   "note": "海音"
+  },
+  {
+   "id": 620,
+   "map": "mainland_south",
+   "cell": [
+    1118,
+    1103
+   ],
+   "gfx": 1735,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50619,
+   "note": "海音"
+  },
+  {
+   "id": 621,
+   "map": "mainland_south",
+   "cell": [
+    1126,
+    1092
+   ],
+   "gfx": 1736,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "海音"
+  },
+  {
+   "id": 622,
+   "map": "mainland_south",
+   "cell": [
+    1118,
+    1082
+   ],
+   "gfx": 1691,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50623,
+   "note": "海音"
+  },
+  {
+   "id": 623,
+   "map": "mainland_south",
+   "cell": [
+    1104,
+    1085
+   ],
+   "gfx": 1700,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "海音"
+  },
+  {
+   "id": 624,
+   "map": "mainland_south",
+   "cell": [
+    1097,
+    1090
+   ],
+   "gfx": 1738,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50620,
+   "note": "海音"
+  },
+  {
+   "id": 625,
+   "map": "mainland_south",
+   "cell": [
+    1089,
+    1089
+   ],
+   "gfx": 1739,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50620,
+   "note": "海音"
+  },
+  {
+   "id": 626,
+   "map": "mainland_south",
+   "cell": [
+    1072,
+    1086
+   ],
+   "gfx": 1691,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "海音"
+  },
+  {
+   "id": 627,
+   "map": "mainland_south",
+   "cell": [
+    1056,
+    1087
+   ],
+   "gfx": 1692,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "海音"
+  },
+  {
+   "id": 628,
+   "map": "mainland_south",
+   "cell": [
+    1058,
+    1102
+   ],
+   "gfx": 1750,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50624,
+   "note": "海音"
+  },
+  {
+   "id": 629,
+   "map": "mainland_south",
+   "cell": [
+    1063,
+    1106
+   ],
+   "gfx": 1751,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50624,
+   "note": "海音"
+  },
+  {
+   "id": 630,
+   "map": "mainland_south",
+   "cell": [
+    1053,
+    1129
+   ],
+   "gfx": 1737,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "海音"
+  },
+  {
+   "id": 631,
+   "map": "mainland_south",
+   "cell": [
+    1050,
+    1142
+   ],
+   "gfx": 1736,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "海音"
+  },
+  {
+   "id": 632,
+   "map": "mainland_south",
+   "cell": [
+    1049,
+    1151
+   ],
+   "gfx": 1692,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "海音"
+  },
+  {
+   "id": 633,
+   "map": "mainland_south",
+   "cell": [
+    1113,
+    1318
+   ],
+   "gfx": 1665,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50615,
+   "note": "海音"
+  },
+  {
+   "id": 634,
+   "map": "mainland_south",
+   "cell": [
+    1107,
+    1138
+   ],
+   "gfx": 1691,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50622,
+   "note": "海音"
+  },
+  {
+   "id": 635,
+   "map": "mainland_south",
+   "cell": [
+    1112,
+    1270
+   ],
+   "gfx": 1734,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50616,
+   "note": "海音"
+  },
+  {
+   "id": 700,
+   "map": "mainland_south",
+   "cell": [
+    937,
+    694
+   ],
+   "gfx": 1330,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 701,
+   "map": "mainland_south",
+   "cell": [
+    921,
+    632
+   ],
+   "gfx": 1331,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 702,
+   "map": "mainland_south",
+   "cell": [
+    921,
+    621
+   ],
+   "gfx": 1329,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 703,
+   "map": "mainland_south",
+   "cell": [
+    939,
+    677
+   ],
+   "gfx": 1351,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 704,
+   "map": "mainland_south",
+   "cell": [
+    941,
+    680
+   ],
+   "gfx": 1352,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 705,
+   "map": "mainland_south",
+   "cell": [
+    885,
+    695
+   ],
+   "gfx": 1334,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50537,
+   "note": "奇岩"
+  },
+  {
+   "id": 706,
+   "map": "mainland_south",
+   "cell": [
+    886,
+    685
+   ],
+   "gfx": 1332,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50517,
+   "note": "奇岩"
+  },
+  {
+   "id": 707,
+   "map": "mainland_south",
+   "cell": [
+    880,
+    678
+   ],
+   "gfx": 1348,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 708,
+   "map": "mainland_south",
+   "cell": [
+    870,
+    677
+   ],
+   "gfx": 1333,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50535,
+   "note": "奇岩"
+  },
+  {
+   "id": 709,
+   "map": "mainland_south",
+   "cell": [
+    864,
+    701
+   ],
+   "gfx": 1334,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50521,
+   "note": "奇岩"
+  },
+  {
+   "id": 710,
+   "map": "mainland_south",
+   "cell": [
+    887,
+    733
+   ],
+   "gfx": 1334,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50502,
+   "note": "奇岩"
+  },
+  {
+   "id": 711,
+   "map": "mainland_south",
+   "cell": [
+    912,
+    659
+   ],
+   "gfx": 1342,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 1,
+   "note": "奇岩"
+  },
+  {
+   "id": 712,
+   "map": "mainland_south",
+   "cell": [
+    868,
+    607
+   ],
+   "gfx": 1331,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 713,
+   "map": "mainland_south",
+   "cell": [
+    863,
+    746
+   ],
+   "gfx": 1334,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50522,
+   "note": "奇岩"
+  },
+  {
+   "id": 714,
+   "map": "mainland_south",
+   "cell": [
+    846,
+    662
+   ],
+   "gfx": 1333,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50503,
+   "note": "奇岩"
+  },
+  {
+   "id": 715,
+   "map": "mainland_south",
+   "cell": [
+    859,
+    664
+   ],
+   "gfx": 1332,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50508,
+   "note": "奇岩"
+  },
+  {
+   "id": 716,
+   "map": "mainland_south",
+   "cell": [
+    839,
+    648
+   ],
+   "gfx": 1334,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50501,
+   "note": "奇岩"
+  },
+  {
+   "id": 717,
+   "map": "mainland_south",
+   "cell": [
+    854,
+    634
+   ],
+   "gfx": 1334,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50511,
+   "note": "奇岩"
+  },
+  {
+   "id": 718,
+   "map": "mainland_south",
+   "cell": [
+    853,
+    626
+   ],
+   "gfx": 1373,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50511,
+   "note": "奇岩"
+  },
+  {
+   "id": 719,
+   "map": "mainland_south",
+   "cell": [
+    871,
+    648
+   ],
+   "gfx": 1332,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50514,
+   "note": "奇岩"
+  },
+  {
+   "id": 720,
+   "map": "mainland_south",
+   "cell": [
+    878,
+    723
+   ],
+   "gfx": 1332,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50530,
+   "note": "奇岩"
+  },
+  {
+   "id": 721,
+   "map": "mainland_south",
+   "cell": [
+    862,
+    738
+   ],
+   "gfx": 1373,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50522,
+   "note": "奇岩"
+  },
+  {
+   "id": 722,
+   "map": "mainland_south",
+   "cell": [
+    892,
+    612
+   ],
+   "gfx": 1334,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50513,
+   "note": "奇岩"
+  },
+  {
+   "id": 723,
+   "map": "mainland_south",
+   "cell": [
+    891,
+    604
+   ],
+   "gfx": 1373,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50513,
+   "note": "奇岩"
+  },
+  {
+   "id": 724,
+   "map": "mainland_south",
+   "cell": [
+    902,
+    591
+   ],
+   "gfx": 1371,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 725,
+   "map": "mainland_south",
+   "cell": [
+    907,
+    581
+   ],
+   "gfx": 1327,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50520,
+   "note": "奇岩"
+  },
+  {
+   "id": 726,
+   "map": "mainland_south",
+   "cell": [
+    912,
+    591
+   ],
+   "gfx": 1334,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50528,
+   "note": "奇岩"
+  },
+  {
+   "id": 727,
+   "map": "mainland_south",
+   "cell": [
+    863,
+    571
+   ],
+   "gfx": 1334,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50543,
+   "note": "奇岩"
+  },
+  {
+   "id": 728,
+   "map": "mainland_south",
+   "cell": [
+    862,
+    563
+   ],
+   "gfx": 1373,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50543,
+   "note": "奇岩"
+  },
+  {
+   "id": 729,
+   "map": "mainland_south",
+   "cell": [
+    833,
+    547
+   ],
+   "gfx": 1332,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50504,
+   "note": "奇岩"
+  },
+  {
+   "id": 730,
+   "map": "mainland_south",
+   "cell": [
+    829,
+    534
+   ],
+   "gfx": 1334,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50510,
+   "note": "奇岩"
+  },
+  {
+   "id": 731,
+   "map": "mainland_south",
+   "cell": [
+    829,
+    583
+   ],
+   "gfx": 1334,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50525,
+   "note": "奇岩"
+  },
+  {
+   "id": 732,
+   "map": "mainland_south",
+   "cell": [
+    972,
+    666
+   ],
+   "gfx": 1332,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50544,
+   "note": "奇岩"
+  },
+  {
+   "id": 733,
+   "map": "mainland_south",
+   "cell": [
+    986,
+    676
+   ],
+   "gfx": 1332,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50524,
+   "note": "奇岩"
+  },
+  {
+   "id": 734,
+   "map": "mainland_south",
+   "cell": [
+    969,
+    687
+   ],
+   "gfx": 1371,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 735,
+   "map": "mainland_south",
+   "cell": [
+    947,
+    713
+   ],
+   "gfx": 1334,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50507,
+   "note": "奇岩"
+  },
+  {
+   "id": 736,
+   "map": "mainland_south",
+   "cell": [
+    924,
+    716
+   ],
+   "gfx": 1332,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50539,
+   "note": "奇岩"
+  },
+  {
+   "id": 737,
+   "map": "mainland_south",
+   "cell": [
+    902,
+    725
+   ],
+   "gfx": 1332,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50506,
+   "note": "奇岩"
+  },
+  {
+   "id": 738,
+   "map": "mainland_south",
+   "cell": [
+    869,
+    639
+   ],
+   "gfx": 1348,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 739,
+   "map": "mainland_south",
+   "cell": [
+    892,
+    629
+   ],
+   "gfx": 1332,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50542,
+   "note": "奇岩"
+  },
+  {
+   "id": 740,
+   "map": "mainland_south",
+   "cell": [
+    842,
+    606
+   ],
+   "gfx": 1332,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50534,
+   "note": "奇岩"
+  },
+  {
+   "id": 741,
+   "map": "mainland_south",
+   "cell": [
+    828,
+    575
+   ],
+   "gfx": 1373,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50525,
+   "note": "奇岩"
+  },
+  {
+   "id": 742,
+   "map": "mainland_south",
+   "cell": [
+    854,
+    587
+   ],
+   "gfx": 1334,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50540,
+   "note": "奇岩"
+  },
+  {
+   "id": 743,
+   "map": "mainland_south",
+   "cell": [
+    865,
+    602
+   ],
+   "gfx": 1330,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 744,
+   "map": "mainland_south",
+   "cell": [
+    890,
+    666
+   ],
+   "gfx": 1332,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50532,
+   "note": "奇岩"
+  },
+  {
+   "id": 745,
+   "map": "mainland_south",
+   "cell": [
+    904,
+    738
+   ],
+   "gfx": 1347,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 746,
+   "map": "mainland_south",
+   "cell": [
+    915,
+    736
+   ],
+   "gfx": 1373,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50541,
+   "note": "奇岩"
+  },
+  {
+   "id": 747,
+   "map": "mainland_south",
+   "cell": [
+    850,
+    695
+   ],
+   "gfx": 1371,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 748,
+   "map": "mainland_south",
+   "cell": [
+    915,
+    605
+   ],
+   "gfx": 1348,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 749,
+   "map": "mainland_south",
+   "cell": [
+    912,
+    564
+   ],
+   "gfx": 1334,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50509,
+   "note": "奇岩"
+  },
+  {
+   "id": 750,
+   "map": "mainland_south",
+   "cell": [
+    911,
+    556
+   ],
+   "gfx": 1373,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50509,
+   "note": "奇岩"
+  },
+  {
+   "id": 751,
+   "map": "mainland_south",
+   "cell": [
+    899,
+    559
+   ],
+   "gfx": 1371,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 752,
+   "map": "mainland_south",
+   "cell": [
+    897,
+    548
+   ],
+   "gfx": 1334,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50536,
+   "note": "奇岩"
+  },
+  {
+   "id": 753,
+   "map": "mainland_south",
+   "cell": [
+    883,
+    548
+   ],
+   "gfx": 1331,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 754,
+   "map": "mainland_south",
+   "cell": [
+    880,
+    543
+   ],
+   "gfx": 1330,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 755,
+   "map": "mainland_south",
+   "cell": [
+    883,
+    529
+   ],
+   "gfx": 1334,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50519,
+   "note": "奇岩"
+  },
+  {
+   "id": 756,
+   "map": "mainland_south",
+   "cell": [
+    882,
+    521
+   ],
+   "gfx": 1373,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50519,
+   "note": "奇岩"
+  },
+  {
+   "id": 757,
+   "map": "mainland_south",
+   "cell": [
+    872,
+    528
+   ],
+   "gfx": 1333,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50505,
+   "note": "奇岩"
+  },
+  {
+   "id": 758,
+   "map": "mainland_south",
+   "cell": [
+    861,
+    529
+   ],
+   "gfx": 1332,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50527,
+   "note": "奇岩"
+  },
+  {
+   "id": 759,
+   "map": "mainland_south",
+   "cell": [
+    848,
+    543
+   ],
+   "gfx": 1334,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50512,
+   "note": "奇岩"
+  },
+  {
+   "id": 760,
+   "map": "mainland_south",
+   "cell": [
+    850,
+    556
+   ],
+   "gfx": 1332,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50526,
+   "note": "奇岩"
+  },
+  {
+   "id": 761,
+   "map": "mainland_south",
+   "cell": [
+    915,
+    531
+   ],
+   "gfx": 1332,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50545,
+   "note": "奇岩"
+  },
+  {
+   "id": 762,
+   "map": "mainland_south",
+   "cell": [
+    908,
+    524
+   ],
+   "gfx": 1347,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 763,
+   "map": "mainland_south",
+   "cell": [
+    927,
+    539
+   ],
+   "gfx": 1334,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50531,
+   "note": "奇岩"
+  },
+  {
+   "id": 764,
+   "map": "mainland_south",
+   "cell": [
+    945,
+    527
+   ],
+   "gfx": 1334,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50529,
+   "note": "奇岩"
+  },
+  {
+   "id": 765,
+   "map": "mainland_south",
+   "cell": [
+    944,
+    519
+   ],
+   "gfx": 1373,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50529,
+   "note": "奇岩"
+  },
+  {
+   "id": 766,
+   "map": "mainland_south",
+   "cell": [
+    964,
+    540
+   ],
+   "gfx": 1332,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50516,
+   "note": "奇岩"
+  },
+  {
+   "id": 767,
+   "map": "mainland_south",
+   "cell": [
+    960,
+    531
+   ],
+   "gfx": 1347,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 768,
+   "map": "mainland_south",
+   "cell": [
+    959,
+    552
+   ],
+   "gfx": 1334,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50538,
+   "note": "奇岩"
+  },
+  {
+   "id": 769,
+   "map": "mainland_south",
+   "cell": [
+    946,
+    572
+   ],
+   "gfx": 1332,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50518,
+   "note": "奇岩"
+  },
+  {
+   "id": 770,
+   "map": "mainland_south",
+   "cell": [
+    956,
+    594
+   ],
+   "gfx": 1347,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 771,
+   "map": "mainland_south",
+   "cell": [
+    936,
+    604
+   ],
+   "gfx": 1332,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50533,
+   "note": "奇岩"
+  },
+  {
+   "id": 772,
+   "map": "mainland_south",
+   "cell": [
+    946,
+    645
+   ],
+   "gfx": 1347,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 773,
+   "map": "mainland_south",
+   "cell": [
+    957,
+    662
+   ],
+   "gfx": 1371,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 774,
+   "map": "mainland_south",
+   "cell": [
+    940,
+    699
+   ],
+   "gfx": 1331,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 775,
+   "map": "mainland_south",
+   "cell": [
+    960,
+    701
+   ],
+   "gfx": 1350,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 776,
+   "map": "mainland_south",
+   "cell": [
+    918,
+    627
+   ],
+   "gfx": 1330,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 777,
+   "map": "mainland_south",
+   "cell": [
+    863,
+    693
+   ],
+   "gfx": 1373,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50521,
+   "note": "奇岩"
+  },
+  {
+   "id": 778,
+   "map": "mainland_south",
+   "cell": [
+    868,
+    596
+   ],
+   "gfx": 1329,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 779,
+   "map": "mainland_south",
+   "cell": [
+    868,
+    587
+   ],
+   "gfx": 1332,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50515,
+   "note": "奇岩"
+  },
+  {
+   "id": 780,
+   "map": "mainland_south",
+   "cell": [
+    883,
+    537
+   ],
+   "gfx": 1329,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 781,
+   "map": "mainland_south",
+   "cell": [
+    911,
+    542
+   ],
+   "gfx": 1350,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 782,
+   "map": "mainland_south",
+   "cell": [
+    895,
+    578
+   ],
+   "gfx": 1350,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 783,
+   "map": "mainland_south",
+   "cell": [
+    882,
+    567
+   ],
+   "gfx": 1349,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 784,
+   "map": "mainland_south",
+   "cell": [
+    845,
+    584
+   ],
+   "gfx": 1348,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 785,
+   "map": "mainland_south",
+   "cell": [
+    855,
+    602
+   ],
+   "gfx": 1350,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 786,
+   "map": "mainland_south",
+   "cell": [
+    878,
+    610
+   ],
+   "gfx": 1347,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 787,
+   "map": "mainland_south",
+   "cell": [
+    893,
+    641
+   ],
+   "gfx": 1347,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 788,
+   "map": "mainland_south",
+   "cell": [
+    876,
+    660
+   ],
+   "gfx": 1347,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 789,
+   "map": "mainland_south",
+   "cell": [
+    862,
+    719
+   ],
+   "gfx": 1371,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 790,
+   "map": "mainland_south",
+   "cell": [
+    887,
+    724
+   ],
+   "gfx": 1348,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 791,
+   "map": "mainland_south",
+   "cell": [
+    898,
+    716
+   ],
+   "gfx": 1347,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 792,
+   "map": "mainland_south",
+   "cell": [
+    882,
+    567
+   ],
+   "gfx": 1350,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 793,
+   "map": "mainland_south",
+   "cell": [
+    983,
+    688
+   ],
+   "gfx": 1349,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 794,
+   "map": "mainland_south",
+   "cell": [
+    981,
+    668
+   ],
+   "gfx": 1348,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 795,
+   "map": "mainland_south",
+   "cell": [
+    949,
+    666
+   ],
+   "gfx": 1350,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 796,
+   "map": "mainland_south",
+   "cell": [
+    931,
+    743
+   ],
+   "gfx": 1334,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50523,
+   "note": "奇岩"
+  },
+  {
+   "id": 797,
+   "map": "mainland_south",
+   "cell": [
+    916,
+    744
+   ],
+   "gfx": 1334,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50541,
+   "note": "奇岩"
+  },
+  {
+   "id": 798,
+   "map": "mainland_south",
+   "cell": [
+    881,
+    746
+   ],
+   "gfx": 1349,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 799,
+   "map": "mainland_south",
+   "cell": [
+    858,
+    679
+   ],
+   "gfx": 1349,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 800,
+   "map": "mainland_south",
+   "cell": [
+    843,
+    638
+   ],
+   "gfx": 1349,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 801,
+   "map": "mainland_south",
+   "cell": [
+    843,
+    529
+   ],
+   "gfx": 1350,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 802,
+   "map": "mainland_south",
+   "cell": [
+    933,
+    530
+   ],
+   "gfx": 1349,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 803,
+   "map": "mainland_south",
+   "cell": [
+    939,
+    548
+   ],
+   "gfx": 1347,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 804,
+   "map": "mainland_south",
+   "cell": [
+    950,
+    550
+   ],
+   "gfx": 1371,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 805,
+   "map": "mainland_south",
+   "cell": [
+    959,
+    567
+   ],
+   "gfx": 1350,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 806,
+   "map": "mainland_south",
+   "cell": [
+    946,
+    596
+   ],
+   "gfx": 1349,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 807,
+   "map": "mainland_south",
+   "cell": [
+    903,
+    662
+   ],
+   "gfx": 1349,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩"
+  },
+  {
+   "id": 808,
+   "map": "mainland_south",
+   "cell": [
+    1009,
+    733
+   ],
+   "gfx": 1487,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩賽狗場"
+  },
+  {
+   "id": 809,
+   "map": "mainland_south",
+   "cell": [
+    1007,
+    735
+   ],
+   "gfx": 1487,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩賽狗場"
+  },
+  {
+   "id": 810,
+   "map": "mainland_south",
+   "cell": [
+    1005,
+    737
+   ],
+   "gfx": 1487,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩賽狗場"
+  },
+  {
+   "id": 811,
+   "map": "mainland_south",
+   "cell": [
+    1003,
+    739
+   ],
+   "gfx": 1487,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩賽狗場"
+  },
+  {
+   "id": 812,
+   "map": "mainland_south",
+   "cell": [
+    1001,
+    741
+   ],
+   "gfx": 1487,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "奇岩賽狗場"
+  },
+  {
+   "id": 1000,
+   "map": "mainland_south",
+   "cell": [
+    1517,
+    984
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1001,
+   "map": "mainland_south",
+   "cell": [
+    1531,
+    983
+   ],
+   "gfx": 2558,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1002,
+   "map": "mainland_south",
+   "cell": [
+    1529,
+    980
+   ],
+   "gfx": 2556,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1003,
+   "map": "mainland_south",
+   "cell": [
+    1529,
+    978
+   ],
+   "gfx": 2556,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1004,
+   "map": "mainland_south",
+   "cell": [
+    1539,
+    981
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1005,
+   "map": "mainland_south",
+   "cell": [
+    1543,
+    977
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1006,
+   "map": "mainland_south",
+   "cell": [
+    1543,
+    984
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1007,
+   "map": "mainland_south",
+   "cell": [
+    1548,
+    981
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1008,
+   "map": "mainland_south",
+   "cell": [
+    1584,
+    982
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1009,
+   "map": "mainland_south",
+   "cell": [
+    1587,
+    977
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1010,
+   "map": "mainland_south",
+   "cell": [
+    1591,
+    982
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1011,
+   "map": "mainland_south",
+   "cell": [
+    1638,
+    982
+   ],
+   "gfx": 2603,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1012,
+   "map": "mainland_south",
+   "cell": [
+    1392,
+    1190
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1013,
+   "map": "mainland_south",
+   "cell": [
+    1623,
+    1004
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1014,
+   "map": "mainland_south",
+   "cell": [
+    1623,
+    996
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1015,
+   "map": "mainland_south",
+   "cell": [
+    1615,
+    996
+   ],
+   "gfx": 2578,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1016,
+   "map": "mainland_south",
+   "cell": [
+    1615,
+    1004
+   ],
+   "gfx": 2585,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1017,
+   "map": "mainland_south",
+   "cell": [
+    1593,
+    1002
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1018,
+   "map": "mainland_south",
+   "cell": [
+    1601,
+    1002
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1019,
+   "map": "mainland_south",
+   "cell": [
+    1532,
+    1001
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1020,
+   "map": "mainland_south",
+   "cell": [
+    1528,
+    1005
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1021,
+   "map": "mainland_south",
+   "cell": [
+    1518,
+    1005
+   ],
+   "gfx": 2630,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1022,
+   "map": "mainland_south",
+   "cell": [
+    1507,
+    1002
+   ],
+   "gfx": 2558,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1023,
+   "map": "mainland_south",
+   "cell": [
+    1402,
+    1187
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1024,
+   "map": "mainland_south",
+   "cell": [
+    1388,
+    1065
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1025,
+   "map": "mainland_south",
+   "cell": [
+    1392,
+    1061
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1026,
+   "map": "mainland_south",
+   "cell": [
+    1392,
+    1068
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1027,
+   "map": "mainland_south",
+   "cell": [
+    1397,
+    1065
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1028,
+   "map": "mainland_south",
+   "cell": [
+    1404,
+    1068
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1029,
+   "map": "mainland_south",
+   "cell": [
+    1404,
+    1060
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1030,
+   "map": "mainland_south",
+   "cell": [
+    1418,
+    1051
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1031,
+   "map": "mainland_south",
+   "cell": [
+    1422,
+    1054
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1032,
+   "map": "mainland_south",
+   "cell": [
+    1422,
+    1047
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1033,
+   "map": "mainland_south",
+   "cell": [
+    1418,
+    1051
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1034,
+   "map": "mainland_south",
+   "cell": [
+    1427,
+    1051
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1035,
+   "map": "mainland_south",
+   "cell": [
+    1511,
+    1023
+   ],
+   "gfx": 2610,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1036,
+   "map": "mainland_south",
+   "cell": [
+    1508,
+    1024
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1037,
+   "map": "mainland_south",
+   "cell": [
+    1503,
+    1027
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1038,
+   "map": "mainland_south",
+   "cell": [
+    1499,
+    1024
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1039,
+   "map": "mainland_south",
+   "cell": [
+    1503,
+    1020
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1040,
+   "map": "mainland_south",
+   "cell": [
+    1509,
+    1002
+   ],
+   "gfx": 2558,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1041,
+   "map": "mainland_south",
+   "cell": [
+    1399,
+    1102
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1042,
+   "map": "mainland_south",
+   "cell": [
+    1504,
+    1000
+   ],
+   "gfx": 2556,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1043,
+   "map": "mainland_south",
+   "cell": [
+    1526,
+    1021
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1044,
+   "map": "mainland_south",
+   "cell": [
+    1523,
+    1026
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1045,
+   "map": "mainland_south",
+   "cell": [
+    1530,
+    1026
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1046,
+   "map": "mainland_south",
+   "cell": [
+    1383,
+    1091
+   ],
+   "gfx": 2600,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1047,
+   "map": "mainland_south",
+   "cell": [
+    1383,
+    1088
+   ],
+   "gfx": 2600,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1048,
+   "map": "mainland_south",
+   "cell": [
+    1390,
+    1102
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1049,
+   "map": "mainland_south",
+   "cell": [
+    1394,
+    1105
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1050,
+   "map": "mainland_south",
+   "cell": [
+    1394,
+    1098
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1051,
+   "map": "mainland_south",
+   "cell": [
+    1403,
+    1102
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1052,
+   "map": "mainland_south",
+   "cell": [
+    1411,
+    1102
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1053,
+   "map": "mainland_south",
+   "cell": [
+    1399,
+    1081
+   ],
+   "gfx": 2556,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1054,
+   "map": "mainland_south",
+   "cell": [
+    1402,
+    1083
+   ],
+   "gfx": 2558,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1055,
+   "map": "mainland_south",
+   "cell": [
+    1404,
+    1083
+   ],
+   "gfx": 2558,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1056,
+   "map": "mainland_south",
+   "cell": [
+    1420,
+    1086
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1057,
+   "map": "mainland_south",
+   "cell": [
+    1424,
+    1082
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1058,
+   "map": "mainland_south",
+   "cell": [
+    1420,
+    1077
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1059,
+   "map": "mainland_south",
+   "cell": [
+    1428,
+    1079
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1060,
+   "map": "mainland_south",
+   "cell": [
+    1428,
+    1087
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1061,
+   "map": "mainland_south",
+   "cell": [
+    1437,
+    1086
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1062,
+   "map": "mainland_south",
+   "cell": [
+    1437,
+    1078
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1063,
+   "map": "mainland_south",
+   "cell": [
+    1461,
+    1078
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1064,
+   "map": "mainland_south",
+   "cell": [
+    1461,
+    1086
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1065,
+   "map": "mainland_south",
+   "cell": [
+    1462,
+    1096
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1066,
+   "map": "mainland_south",
+   "cell": [
+    1465,
+    1098
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1067,
+   "map": "mainland_south",
+   "cell": [
+    1467,
+    1098
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1068,
+   "map": "mainland_south",
+   "cell": [
+    1398,
+    1163
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1069,
+   "map": "mainland_south",
+   "cell": [
+    1420,
+    1165
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1070,
+   "map": "mainland_south",
+   "cell": [
+    1420,
+    1163
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1071,
+   "map": "mainland_south",
+   "cell": [
+    1422,
+    1168
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1072,
+   "map": "mainland_south",
+   "cell": [
+    1409,
+    1168
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1073,
+   "map": "mainland_south",
+   "cell": [
+    1409,
+    1160
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1074,
+   "map": "mainland_south",
+   "cell": [
+    1406,
+    1190
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1075,
+   "map": "mainland_south",
+   "cell": [
+    1406,
+    1183
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1076,
+   "map": "mainland_south",
+   "cell": [
+    1393,
+    1196
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1077,
+   "map": "mainland_south",
+   "cell": [
+    1393,
+    1204
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1078,
+   "map": "mainland_south",
+   "cell": [
+    1409,
+    1199
+   ],
+   "gfx": 2575,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1079,
+   "map": "mainland_south",
+   "cell": [
+    1398,
+    1212
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1080,
+   "map": "mainland_south",
+   "cell": [
+    1391,
+    1222
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1081,
+   "map": "mainland_south",
+   "cell": [
+    1399,
+    1222
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1082,
+   "map": "mainland_south",
+   "cell": [
+    1383,
+    1226
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1083,
+   "map": "mainland_south",
+   "cell": [
+    1379,
+    1221
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1084,
+   "map": "mainland_south",
+   "cell": [
+    1377,
+    1256
+   ],
+   "gfx": 2605,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1085,
+   "map": "mainland_south",
+   "cell": [
+    1371,
+    1255
+   ],
+   "gfx": 2606,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1086,
+   "map": "mainland_south",
+   "cell": [
+    1371,
+    1253
+   ],
+   "gfx": 2606,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1087,
+   "map": "mainland_south",
+   "cell": [
+    1387,
+    1252
+   ],
+   "gfx": 2556,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1088,
+   "map": "mainland_south",
+   "cell": [
+    1390,
+    1254
+   ],
+   "gfx": 2558,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1089,
+   "map": "mainland_south",
+   "cell": [
+    1382,
+    1268
+   ],
+   "gfx": 2628,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1090,
+   "map": "mainland_south",
+   "cell": [
+    1390,
+    1268
+   ],
+   "gfx": 2629,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1091,
+   "map": "mainland_south",
+   "cell": [
+    1386,
+    1274
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1092,
+   "map": "mainland_south",
+   "cell": [
+    1391,
+    1278
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1093,
+   "map": "mainland_south",
+   "cell": [
+    1411,
+    1283
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1094,
+   "map": "mainland_south",
+   "cell": [
+    1407,
+    1278
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1095,
+   "map": "mainland_south",
+   "cell": [
+    1400,
+    1261
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1096,
+   "map": "mainland_south",
+   "cell": [
+    1405,
+    1245
+   ],
+   "gfx": 2575,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1097,
+   "map": "mainland_south",
+   "cell": [
+    1400,
+    1237
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1098,
+   "map": "mainland_south",
+   "cell": [
+    1407,
+    1237
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1099,
+   "map": "mainland_south",
+   "cell": [
+    1388,
+    1244
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1100,
+   "map": "mainland_south",
+   "cell": [
+    1388,
+    1236
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1101,
+   "map": "mainland_south",
+   "cell": [
+    1408,
+    1261
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1102,
+   "map": "mainland_south",
+   "cell": [
+    1405,
+    1267
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1103,
+   "map": "mainland_south",
+   "cell": [
+    1420,
+    1281
+   ],
+   "gfx": 2630,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1104,
+   "map": "mainland_south",
+   "cell": [
+    1420,
+    1273
+   ],
+   "gfx": 2631,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1105,
+   "map": "mainland_south",
+   "cell": [
+    1428,
+    1277
+   ],
+   "gfx": 2589,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1106,
+   "map": "mainland_south",
+   "cell": [
+    1430,
+    1168
+   ],
+   "gfx": 2628,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1107,
+   "map": "mainland_south",
+   "cell": [
+    1438,
+    1168
+   ],
+   "gfx": 2629,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1108,
+   "map": "mainland_south",
+   "cell": [
+    1435,
+    1181
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1109,
+   "map": "mainland_south",
+   "cell": [
+    1435,
+    1173
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1110,
+   "map": "mainland_south",
+   "cell": [
+    1443,
+    1188
+   ],
+   "gfx": 2591,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1111,
+   "map": "mainland_south",
+   "cell": [
+    1428,
+    1199
+   ],
+   "gfx": 2610,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1112,
+   "map": "mainland_south",
+   "cell": [
+    1428,
+    1196
+   ],
+   "gfx": 2610,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1113,
+   "map": "mainland_south",
+   "cell": [
+    1440,
+    1289
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1114,
+   "map": "mainland_south",
+   "cell": [
+    1446,
+    1286
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1115,
+   "map": "mainland_south",
+   "cell": [
+    1443,
+    1284
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1116,
+   "map": "mainland_south",
+   "cell": [
+    1442,
+    1276
+   ],
+   "gfx": 2574,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1117,
+   "map": "mainland_south",
+   "cell": [
+    1447,
+    1289
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1118,
+   "map": "mainland_south",
+   "cell": [
+    1452,
+    1279
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1119,
+   "map": "mainland_south",
+   "cell": [
+    1455,
+    1285
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1120,
+   "map": "mainland_south",
+   "cell": [
+    1464,
+    1271
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1121,
+   "map": "mainland_south",
+   "cell": [
+    1464,
+    1279
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1122,
+   "map": "mainland_south",
+   "cell": [
+    1475,
+    1272
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1123,
+   "map": "mainland_south",
+   "cell": [
+    1480,
+    1276
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1124,
+   "map": "mainland_south",
+   "cell": [
+    1490,
+    1275
+   ],
+   "gfx": 2628,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1125,
+   "map": "mainland_south",
+   "cell": [
+    1498,
+    1275
+   ],
+   "gfx": 2629,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1126,
+   "map": "mainland_south",
+   "cell": [
+    1500,
+    1263
+   ],
+   "gfx": 2574,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1127,
+   "map": "mainland_south",
+   "cell": [
+    1507,
+    1246
+   ],
+   "gfx": 2629,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1128,
+   "map": "mainland_south",
+   "cell": [
+    1503,
+    1228
+   ],
+   "gfx": 2597,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1129,
+   "map": "mainland_south",
+   "cell": [
+    1507,
+    1224
+   ],
+   "gfx": 2599,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1130,
+   "map": "mainland_south",
+   "cell": [
+    1503,
+    1219
+   ],
+   "gfx": 2598,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1131,
+   "map": "mainland_south",
+   "cell": [
+    1500,
+    1224
+   ],
+   "gfx": 2596,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1132,
+   "map": "mainland_south",
+   "cell": [
+    1499,
+    1212
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1133,
+   "map": "mainland_south",
+   "cell": [
+    1508,
+    1212
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1134,
+   "map": "mainland_south",
+   "cell": [
+    1503,
+    1208
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1135,
+   "map": "mainland_south",
+   "cell": [
+    1463,
+    1132
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1136,
+   "map": "mainland_south",
+   "cell": [
+    1459,
+    1136
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1137,
+   "map": "mainland_south",
+   "cell": [
+    1468,
+    1136
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1138,
+   "map": "mainland_south",
+   "cell": [
+    1460,
+    1146
+   ],
+   "gfx": 2628,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1139,
+   "map": "mainland_south",
+   "cell": [
+    1468,
+    1146
+   ],
+   "gfx": 2629,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1140,
+   "map": "mainland_south",
+   "cell": [
+    1471,
+    1172
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1141,
+   "map": "mainland_south",
+   "cell": [
+    1443,
+    1293
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1142,
+   "map": "mainland_south",
+   "cell": [
+    1499,
+    1246
+   ],
+   "gfx": 2628,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1143,
+   "map": "mainland_south",
+   "cell": [
+    1489,
+    1200
+   ],
+   "gfx": 2579,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1144,
+   "map": "mainland_south",
+   "cell": [
+    1489,
+    1192
+   ],
+   "gfx": 2578,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1145,
+   "map": "mainland_south",
+   "cell": [
+    1486,
+    1181
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1146,
+   "map": "mainland_south",
+   "cell": [
+    1493,
+    1181
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1147,
+   "map": "mainland_south",
+   "cell": [
+    1489,
+    1176
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1148,
+   "map": "mainland_south",
+   "cell": [
+    1484,
+    1172
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1149,
+   "map": "mainland_south",
+   "cell": [
+    1480,
+    1169
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1150,
+   "map": "mainland_south",
+   "cell": [
+    1484,
+    1165
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1151,
+   "map": "mainland_south",
+   "cell": [
+    1471,
+    1172
+   ],
+   "gfx": 2575,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1152,
+   "map": "mainland_south",
+   "cell": [
+    1475,
+    1166
+   ],
+   "gfx": 2630,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1153,
+   "map": "mainland_south",
+   "cell": [
+    1475,
+    1158
+   ],
+   "gfx": 2631,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1154,
+   "map": "mainland_south",
+   "cell": [
+    1469,
+    1086
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1155,
+   "map": "mainland_south",
+   "cell": [
+    1461,
+    1075
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1156,
+   "map": "mainland_south",
+   "cell": [
+    1462,
+    1043
+   ],
+   "gfx": 2558,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1157,
+   "map": "mainland_south",
+   "cell": [
+    1459,
+    1041
+   ],
+   "gfx": 2556,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1158,
+   "map": "mainland_south",
+   "cell": [
+    1510,
+    1254
+   ],
+   "gfx": 2606,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1159,
+   "map": "mainland_south",
+   "cell": [
+    1510,
+    1256
+   ],
+   "gfx": 2606,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1160,
+   "map": "mainland_south",
+   "cell": [
+    1516,
+    1257
+   ],
+   "gfx": 2608,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1161,
+   "map": "mainland_south",
+   "cell": [
+    1548,
+    1269
+   ],
+   "gfx": 2588,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1162,
+   "map": "mainland_south",
+   "cell": [
+    1556,
+    1269
+   ],
+   "gfx": 2589,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1163,
+   "map": "mainland_south",
+   "cell": [
+    1559,
+    1287
+   ],
+   "gfx": 2591,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1164,
+   "map": "mainland_south",
+   "cell": [
+    1559,
+    1279
+   ],
+   "gfx": 2590,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1165,
+   "map": "mainland_south",
+   "cell": [
+    1565,
+    1271
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1166,
+   "map": "mainland_south",
+   "cell": [
+    1565,
+    1264
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1167,
+   "map": "mainland_south",
+   "cell": [
+    1570,
+    1268
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1168,
+   "map": "mainland_south",
+   "cell": [
+    1560,
+    1255
+   ],
+   "gfx": 2610,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1169,
+   "map": "mainland_south",
+   "cell": [
+    1560,
+    1252
+   ],
+   "gfx": 2610,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1170,
+   "map": "mainland_south",
+   "cell": [
+    1549,
+    1252
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1171,
+   "map": "mainland_south",
+   "cell": [
+    1546,
+    1248
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1172,
+   "map": "mainland_south",
+   "cell": [
+    1553,
+    1248
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1173,
+   "map": "mainland_south",
+   "cell": [
+    1549,
+    1243
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1174,
+   "map": "mainland_south",
+   "cell": [
+    1558,
+    1228
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1175,
+   "map": "mainland_south",
+   "cell": [
+    1562,
+    1231
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1176,
+   "map": "mainland_south",
+   "cell": [
+    1567,
+    1228
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1177,
+   "map": "mainland_south",
+   "cell": [
+    1562,
+    1224
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1178,
+   "map": "mainland_south",
+   "cell": [
+    1579,
+    1225
+   ],
+   "gfx": 2591,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1179,
+   "map": "mainland_south",
+   "cell": [
+    1579,
+    1217
+   ],
+   "gfx": 2590,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1180,
+   "map": "mainland_south",
+   "cell": [
+    1588,
+    1226
+   ],
+   "gfx": 2634,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1181,
+   "map": "mainland_south",
+   "cell": [
+    1588,
+    1218
+   ],
+   "gfx": 2635,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1182,
+   "map": "mainland_south",
+   "cell": [
+    1597,
+    1224
+   ],
+   "gfx": 2591,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1183,
+   "map": "mainland_south",
+   "cell": [
+    1597,
+    1216
+   ],
+   "gfx": 2590,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1184,
+   "map": "mainland_south",
+   "cell": [
+    1597,
+    1236
+   ],
+   "gfx": 2590,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1185,
+   "map": "mainland_south",
+   "cell": [
+    1597,
+    1244
+   ],
+   "gfx": 2591,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1186,
+   "map": "mainland_south",
+   "cell": [
+    1586,
+    1245
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1187,
+   "map": "mainland_south",
+   "cell": [
+    1586,
+    1238
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1188,
+   "map": "mainland_south",
+   "cell": [
+    1582,
+    1242
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1189,
+   "map": "mainland_south",
+   "cell": [
+    1583,
+    1259
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1190,
+   "map": "mainland_south",
+   "cell": [
+    1583,
+    1266
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1191,
+   "map": "mainland_south",
+   "cell": [
+    1588,
+    1263
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1192,
+   "map": "mainland_south",
+   "cell": [
+    1579,
+    1263
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1193,
+   "map": "mainland_south",
+   "cell": [
+    1594,
+    1281
+   ],
+   "gfx": 2634,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1194,
+   "map": "mainland_south",
+   "cell": [
+    1594,
+    1273
+   ],
+   "gfx": 2635,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1195,
+   "map": "mainland_south",
+   "cell": [
+    1595,
+    1268
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1196,
+   "map": "mainland_south",
+   "cell": [
+    1599,
+    1264
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1197,
+   "map": "mainland_south",
+   "cell": [
+    1562,
+    1224
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1198,
+   "map": "mainland_south",
+   "cell": [
+    1592,
+    1264
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1199,
+   "map": "mainland_south",
+   "cell": [
+    1595,
+    1259
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1200,
+   "map": "mainland_south",
+   "cell": [
+    1612,
+    1273
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1201,
+   "map": "mainland_south",
+   "cell": [
+    1619,
+    1273
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1202,
+   "map": "mainland_south",
+   "cell": [
+    1616,
+    1266
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1203,
+   "map": "mainland_south",
+   "cell": [
+    1612,
+    1263
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1204,
+   "map": "mainland_south",
+   "cell": [
+    1616,
+    1259
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1205,
+   "map": "mainland_south",
+   "cell": [
+    1615,
+    1244
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1206,
+   "map": "mainland_south",
+   "cell": [
+    1619,
+    1240
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1207,
+   "map": "mainland_south",
+   "cell": [
+    1612,
+    1240
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1208,
+   "map": "mainland_south",
+   "cell": [
+    1615,
+    1235
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1209,
+   "map": "mainland_south",
+   "cell": [
+    1612,
+    1226
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1210,
+   "map": "mainland_south",
+   "cell": [
+    1620,
+    1226
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1211,
+   "map": "mainland_south",
+   "cell": [
+    1624,
+    1236
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1212,
+   "map": "mainland_south",
+   "cell": [
+    1624,
+    1233
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1213,
+   "map": "mainland_south",
+   "cell": [
+    1619,
+    1290
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1214,
+   "map": "mainland_south",
+   "cell": [
+    1627,
+    1290
+   ],
+   "gfx": 2581,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1215,
+   "map": "mainland_south",
+   "cell": [
+    1646,
+    1276
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1216,
+   "map": "mainland_south",
+   "cell": [
+    1643,
+    1272
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1217,
+   "map": "mainland_south",
+   "cell": [
+    1650,
+    1272
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1218,
+   "map": "mainland_south",
+   "cell": [
+    1646,
+    1267
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1219,
+   "map": "mainland_south",
+   "cell": [
+    1631,
+    1270
+   ],
+   "gfx": 2608,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1220,
+   "map": "mainland_south",
+   "cell": [
+    1635,
+    1245
+   ],
+   "gfx": 2591,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1221,
+   "map": "mainland_south",
+   "cell": [
+    1635,
+    1237
+   ],
+   "gfx": 2590,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1222,
+   "map": "mainland_south",
+   "cell": [
+    1643,
+    1043
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1223,
+   "map": "mainland_south",
+   "cell": [
+    1643,
+    1035
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1224,
+   "map": "mainland_south",
+   "cell": [
+    1636,
+    1039
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1225,
+   "map": "mainland_south",
+   "cell": [
+    1628,
+    1039
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1226,
+   "map": "mainland_south",
+   "cell": [
+    1632,
+    1018
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1227,
+   "map": "mainland_south",
+   "cell": [
+    1637,
+    1015
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1228,
+   "map": "mainland_south",
+   "cell": [
+    1632,
+    1011
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1229,
+   "map": "mainland_south",
+   "cell": [
+    1645,
+    1017
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1230,
+   "map": "mainland_south",
+   "cell": [
+    1649,
+    1013
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1231,
+   "map": "mainland_south",
+   "cell": [
+    1645,
+    1008
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1232,
+   "map": "mainland_south",
+   "cell": [
+    1632,
+    1018
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1233,
+   "map": "mainland_south",
+   "cell": [
+    1628,
+    1015
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1234,
+   "map": "mainland_south",
+   "cell": [
+    1632,
+    1011
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1235,
+   "map": "mainland_south",
+   "cell": [
+    1606,
+    1035
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1236,
+   "map": "mainland_south",
+   "cell": [
+    1615,
+    1035
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1237,
+   "map": "mainland_south",
+   "cell": [
+    1610,
+    1031
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1238,
+   "map": "mainland_south",
+   "cell": [
+    1593,
+    1042
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1239,
+   "map": "mainland_south",
+   "cell": [
+    1597,
+    1038
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1240,
+   "map": "mainland_south",
+   "cell": [
+    1593,
+    1033
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1241,
+   "map": "mainland_south",
+   "cell": [
+    1590,
+    1038
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1242,
+   "map": "mainland_south",
+   "cell": [
+    1593,
+    991
+   ],
+   "gfx": 2600,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1243,
+   "map": "mainland_south",
+   "cell": [
+    1587,
+    986
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1244,
+   "map": "mainland_south",
+   "cell": [
+    1517,
+    976
+   ],
+   "gfx": 2578,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1245,
+   "map": "mainland_south",
+   "cell": [
+    1518,
+    997
+   ],
+   "gfx": 2631,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1246,
+   "map": "mainland_south",
+   "cell": [
+    1480,
+    1070
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1247,
+   "map": "mainland_south",
+   "cell": [
+    1478,
+    1070
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1248,
+   "map": "mainland_south",
+   "cell": [
+    1477,
+    1065
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1249,
+   "map": "mainland_south",
+   "cell": [
+    1392,
+    1254
+   ],
+   "gfx": 2558,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1250,
+   "map": "mainland_south",
+   "cell": [
+    1464,
+    1043
+   ],
+   "gfx": 2558,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1251,
+   "map": "mainland_south",
+   "cell": [
+    1634,
+    1270
+   ],
+   "gfx": 2608,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1252,
+   "map": "mainland_south",
+   "cell": [
+    1511,
+    1026
+   ],
+   "gfx": 2610,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1253,
+   "map": "mainland_south",
+   "cell": [
+    1424,
+    1064
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1254,
+   "map": "mainland_south",
+   "cell": [
+    1424,
+    1066
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1255,
+   "map": "mainland_south",
+   "cell": [
+    1430,
+    1067
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1256,
+   "map": "mainland_south",
+   "cell": [
+    1593,
+    994
+   ],
+   "gfx": 2600,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1257,
+   "map": "mainland_south",
+   "cell": [
+    1611,
+    1023
+   ],
+   "gfx": 2558,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1258,
+   "map": "mainland_south",
+   "cell": [
+    1613,
+    1023
+   ],
+   "gfx": 2558,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1259,
+   "map": "mainland_south",
+   "cell": [
+    1608,
+    1021
+   ],
+   "gfx": 2556,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1260,
+   "map": "mainland_south",
+   "cell": [
+    1594,
+    1027
+   ],
+   "gfx": 2603,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1261,
+   "map": "mainland_south",
+   "cell": [
+    1592,
+    1027
+   ],
+   "gfx": 2603,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1262,
+   "map": "mainland_south",
+   "cell": [
+    1617,
+    982
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1263,
+   "map": "mainland_south",
+   "cell": [
+    1384,
+    1190
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1264,
+   "map": "mainland_south",
+   "cell": [
+    1565,
+    1245
+   ],
+   "gfx": 2581,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1265,
+   "map": "mainland_south",
+   "cell": [
+    1565,
+    1237
+   ],
+   "gfx": 2582,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1266,
+   "map": "mainland_south",
+   "cell": [
+    1642,
+    1013
+   ],
+   "gfx": 2580,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1267,
+   "map": "mainland_south",
+   "cell": [
+    1489,
+    1169
+   ],
+   "gfx": 2583,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1268,
+   "map": "mainland_south",
+   "cell": [
+    1444,
+    1196
+   ],
+   "gfx": 2589,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "亞丁"
+  },
+  {
+   "id": 1300,
+   "map": "mainland_south",
+   "cell": [
+    85,
+    619
+   ],
+   "gfx": 6026,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "古魯丁"
+  },
+  {
+   "id": 1301,
+   "map": "mainland_south",
+   "cell": [
+    122,
+    648
+   ],
+   "gfx": 6027,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "古魯丁"
+  },
+  {
+   "id": 1302,
+   "map": "mainland_south",
+   "cell": [
+    122,
+    659
+   ],
+   "gfx": 6028,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "古魯丁"
+  },
+  {
+   "id": 1303,
+   "map": "mainland_south",
+   "cell": [
+    79,
+    604
+   ],
+   "gfx": 6028,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "古魯丁"
+  },
+  {
+   "id": 1304,
+   "map": "mainland_south",
+   "cell": [
+    119,
+    629
+   ],
+   "gfx": 6029,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "span": 1,
+   "note": "古魯丁"
+  },
+  {
+   "id": 1305,
+   "map": "mainland_south",
+   "cell": [
+    114,
+    637
+   ],
+   "gfx": 6030,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "span": 1,
+   "note": "古魯丁"
+  },
+  {
+   "id": 1306,
+   "map": "mainland_south",
+   "cell": [
+    83,
+    647
+   ],
+   "gfx": 6031,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "古魯丁"
+  },
+  {
+   "id": 1307,
+   "map": "mainland_south",
+   "cell": [
+    95,
+    618
+   ],
+   "gfx": 6032,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "古魯丁"
+  },
+  {
+   "id": 1308,
+   "map": "mainland_south",
+   "cell": [
+    92,
+    641
+   ],
+   "gfx": 6032,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "古魯丁"
+  },
+  {
+   "id": 1309,
+   "map": "mainland_south",
+   "cell": [
+    81,
+    657
+   ],
+   "gfx": 6033,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "古魯丁"
+  },
+  {
+   "id": 1310,
+   "map": "mainland_south",
+   "cell": [
+    47,
+    543
+   ],
+   "gfx": 6028,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50626,
+   "note": "古魯丁"
+  },
+  {
+   "id": 1311,
+   "map": "mainland_south",
+   "cell": [
+    48,
+    544
+   ],
+   "gfx": 6026,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50626,
+   "note": "古魯丁"
+  },
+  {
+   "id": 1312,
+   "map": "mainland_south",
+   "cell": [
+    52,
+    548
+   ],
+   "gfx": 6026,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50626,
+   "note": "古魯丁"
+  },
+  {
+   "id": 1313,
+   "map": "mainland_south",
+   "cell": [
+    36,
+    579
+   ],
+   "gfx": 6028,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50627,
+   "note": "古魯丁"
+  },
+  {
+   "id": 1314,
+   "map": "mainland_south",
+   "cell": [
+    39,
+    586
+   ],
+   "gfx": 6028,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50627,
+   "note": "古魯丁"
+  },
+  {
+   "id": 1315,
+   "map": "mainland_south",
+   "cell": [
+    37,
+    580
+   ],
+   "gfx": 6026,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50627,
+   "note": "古魯丁"
+  },
+  {
+   "id": 1316,
+   "map": "mainland_south",
+   "cell": [
+    41,
+    587
+   ],
+   "gfx": 6026,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50627,
+   "note": "古魯丁"
+  },
+  {
+   "id": 1317,
+   "map": "mainland_south",
+   "cell": [
+    25,
+    654
+   ],
+   "gfx": 6028,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50628,
+   "note": "古魯丁"
+  },
+  {
+   "id": 1318,
+   "map": "mainland_south",
+   "cell": [
+    26,
+    655
+   ],
+   "gfx": 6026,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50628,
+   "note": "古魯丁"
+  },
+  {
+   "id": 1319,
+   "map": "mainland_south",
+   "cell": [
+    30,
+    659
+   ],
+   "gfx": 6026,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50628,
+   "note": "古魯丁"
+  },
+  {
+   "id": 1320,
+   "map": "mainland_south",
+   "cell": [
+    46,
+    659
+   ],
+   "gfx": 6026,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50629,
+   "note": "古魯丁"
+  },
+  {
+   "id": 1321,
+   "map": "mainland_south",
+   "cell": [
+    42,
+    655
+   ],
+   "gfx": 6026,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50629,
+   "note": "古魯丁"
+  },
+  {
+   "id": 1322,
+   "map": "mainland_south",
+   "cell": [
+    41,
+    654
+   ],
+   "gfx": 6028,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50629,
+   "note": "古魯丁"
+  },
+  {
+   "id": 1323,
+   "map": "mainland_south",
+   "cell": [
+    23,
+    681
+   ],
+   "gfx": 6028,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50630,
+   "note": "古魯丁"
+  },
+  {
+   "id": 1324,
+   "map": "mainland_south",
+   "cell": [
+    26,
+    688
+   ],
+   "gfx": 6028,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50630,
+   "note": "古魯丁"
+  },
+  {
+   "id": 1325,
+   "map": "mainland_south",
+   "cell": [
+    24,
+    682
+   ],
+   "gfx": 6026,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50630,
+   "note": "古魯丁"
+  },
+  {
+   "id": 1326,
+   "map": "mainland_south",
+   "cell": [
+    28,
+    689
+   ],
+   "gfx": 6026,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50630,
+   "note": "古魯丁"
+  },
+  {
+   "id": 1327,
+   "map": "mainland_south",
+   "cell": [
+    41,
+    691
+   ],
+   "gfx": 6028,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50631,
+   "note": "古魯丁"
+  },
+  {
+   "id": 1328,
+   "map": "mainland_south",
+   "cell": [
+    45,
+    687
+   ],
+   "gfx": 6028,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "keeper": 50631,
+   "note": "古魯丁"
+  },
+  {
+   "id": 2000,
+   "map": "mainland_south",
+   "cell": [
+    659,
+    631
+   ],
+   "gfx": 339,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "span": 1,
+   "keeper": 70656,
+   "note": "肯特城堡"
+  },
+  {
+   "id": 2001,
+   "map": "mainland_south",
+   "cell": [
+    600,
+    643
+   ],
+   "gfx": 2736,
+   "dir": 1,
+   "hp": 10000,
+   "src": "l1j",
+   "span": 3,
+   "keeper": 70549,
+   "note": "肯特城堡"
+  },
+  {
+   "id": 2002,
+   "map": "mainland_south",
+   "cell": [
+    640,
+    679
+   ],
+   "gfx": 3234,
+   "dir": 0,
+   "hp": 10000,
+   "src": "l1j",
+   "span": 3,
+   "keeper": 70985,
+   "note": "肯特城堡"
+  },
+  {
+   "id": 2010,
+   "map": "mainland_south",
+   "cell": [
+    273,
+    195
+   ],
+   "gfx": 2732,
+   "dir": 0,
+   "hp": 10000,
+   "src": "l1j",
+   "span": 3,
+   "keeper": 70600,
+   "note": "妖魔城堡"
+  },
+  {
+   "id": 2020,
+   "map": "mainland_south",
+   "cell": [
+    166,
+    1264
+   ],
+   "gfx": 339,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "span": 1,
+   "keeper": 70778,
+   "note": "風木城堡"
+  },
+  {
+   "id": 2021,
+   "map": "mainland_south",
+   "cell": [
+    78,
+    1281
+   ],
+   "gfx": 2736,
+   "dir": 1,
+   "hp": 10000,
+   "src": "l1j",
+   "span": 3,
+   "keeper": 70987,
+   "note": "風木城堡"
+  },
+  {
+   "id": 2022,
+   "map": "mainland_south",
+   "cell": [
+    113,
+    1308
+   ],
+   "gfx": 3234,
+   "dir": 0,
+   "hp": 10000,
+   "src": "l1j",
+   "span": 3,
+   "keeper": 70687,
+   "note": "風木城堡"
+  },
+  {
+   "id": 2030,
+   "map": "mainland_south",
+   "cell": [
+    1120,
+    532
+   ],
+   "gfx": 1336,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "span": 1,
+   "keeper": 70817,
+   "note": "奇岩城堡"
+  },
+  {
+   "id": 2031,
+   "map": "mainland_south",
+   "cell": [
+    1119,
+    606
+   ],
+   "gfx": 2745,
+   "dir": 0,
+   "hp": 10000,
+   "src": "l1j",
+   "span": 3,
+   "keeper": 70800,
+   "note": "奇岩城堡"
+  },
+  {
+   "id": 2032,
+   "map": "mainland_south",
+   "cell": [
+    1068,
+    550
+   ],
+   "gfx": 2746,
+   "dir": 1,
+   "hp": 10000,
+   "src": "l1j",
+   "span": 3,
+   "keeper": 70988,
+   "note": "奇岩城堡"
+  },
+  {
+   "id": 2033,
+   "map": "mainland_south",
+   "cell": [
+    1119,
+    574
+   ],
+   "gfx": 2744,
+   "dir": 0,
+   "hp": 10000,
+   "src": "l1j",
+   "span": 3,
+   "keeper": 70990,
+   "note": "奇岩城堡"
+  },
+  {
+   "id": 2034,
+   "map": "mainland_south",
+   "cell": [
+    1097,
+    549
+   ],
+   "gfx": 1338,
+   "dir": 1,
+   "hp": 3000,
+   "src": "l1j",
+   "span": 1,
+   "keeper": 70989,
+   "note": "奇岩城堡"
+  },
+  {
+   "id": 2035,
+   "map": "mainland_south",
+   "cell": [
+    1144,
+    549
+   ],
+   "gfx": 1338,
+   "dir": 1,
+   "hp": 3000,
+   "src": "l1j",
+   "span": 1,
+   "keeper": 70991,
+   "note": "奇岩城堡"
+  },
+  {
+   "id": 2040,
+   "map": "mainland_south",
+   "cell": [
+    1011,
+    1257
+   ],
+   "gfx": 1336,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "span": 1,
+   "keeper": 70863,
+   "note": "海音城堡"
+  },
+  {
+   "id": 2041,
+   "map": "mainland_south",
+   "cell": [
+    1012,
+    1342
+   ],
+   "gfx": 1745,
+   "dir": 0,
+   "hp": 10000,
+   "src": "l1j",
+   "span": 2,
+   "keeper": 70992,
+   "note": "海音城堡"
+  },
+  {
+   "id": 2042,
+   "map": "mainland_south",
+   "cell": [
+    1013,
+    1216
+   ],
+   "gfx": 1336,
+   "dir": 0,
+   "hp": 3000,
+   "src": "l1j",
+   "span": 1,
+   "keeper": 70862,
+   "note": "海音城堡"
+  },
+  {
+   "id": 2050,
+   "map": "l1j_map_66",
+   "cell": [
+    141,
+    44
+   ],
+   "gfx": 443,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 1,
+   "keeper": 70995,
+   "note": "鐵門公會"
+  },
+  {
+   "id": 2051,
+   "map": "l1j_map_66",
+   "cell": [
+    76,
+    91
+   ],
+   "gfx": 1826,
+   "dir": 1,
+   "hp": 10000,
+   "src": "l1j",
+   "span": 3,
+   "keeper": 70994,
+   "note": "鐵門公會"
+  },
+  {
+   "id": 2052,
+   "map": "l1j_map_66",
+   "cell": [
+    107,
+    119
+   ],
+   "gfx": 1827,
+   "dir": 0,
+   "hp": 10000,
+   "src": "l1j",
+   "span": 3,
+   "keeper": 70993,
+   "note": "鐵門公會"
+  },
+  {
+   "id": 2060,
+   "map": "mainland_south",
+   "cell": [
+    1579,
+    1075
+   ],
+   "gfx": 1336,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "span": 1,
+   "keeper": 70996,
+   "note": "亞丁城堡"
+  },
+  {
+   "id": 3001,
+   "map": "l1j_map_5140",
+   "cell": [
+    86,
+    126
+   ],
+   "gfx": 6351,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 6,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3002,
+   "map": "l1j_map_5140",
+   "cell": [
+    126,
+    84
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3003,
+   "map": "l1j_map_5140",
+   "cell": [
+    121,
+    93
+   ],
+   "gfx": 6336,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3004,
+   "map": "l1j_map_5140",
+   "cell": [
+    123,
+    103
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3005,
+   "map": "l1j_map_5140",
+   "cell": [
+    122,
+    115
+   ],
+   "gfx": 6336,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3006,
+   "map": "l1j_map_5140",
+   "cell": [
+    128,
+    123
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3007,
+   "map": "l1j_map_5140",
+   "cell": [
+    120,
+    137
+   ],
+   "gfx": 6336,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3008,
+   "map": "l1j_map_5140",
+   "cell": [
+    126,
+    144
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3009,
+   "map": "l1j_map_5140",
+   "cell": [
+    119,
+    156
+   ],
+   "gfx": 6336,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3010,
+   "map": "l1j_map_5140",
+   "cell": [
+    123,
+    163
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3011,
+   "map": "l1j_map_5140",
+   "cell": [
+    138,
+    92
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3012,
+   "map": "l1j_map_5140",
+   "cell": [
+    148,
+    83
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3013,
+   "map": "l1j_map_5140",
+   "cell": [
+    153,
+    98
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3014,
+   "map": "l1j_map_5140",
+   "cell": [
+    138,
+    111
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3015,
+   "map": "l1j_map_5140",
+   "cell": [
+    151,
+    112
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3016,
+   "map": "l1j_map_5140",
+   "cell": [
+    160,
+    106
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3017,
+   "map": "l1j_map_5140",
+   "cell": [
+    150,
+    126
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3018,
+   "map": "l1j_map_5140",
+   "cell": [
+    145,
+    149
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3019,
+   "map": "l1j_map_5140",
+   "cell": [
+    163,
+    145
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3020,
+   "map": "l1j_map_5140",
+   "cell": [
+    149,
+    167
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3021,
+   "map": "l1j_map_5140",
+   "cell": [
+    161,
+    163
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3022,
+   "map": "l1j_map_5140",
+   "cell": [
+    177,
+    86
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3023,
+   "map": "l1j_map_5140",
+   "cell": [
+    167,
+    99
+   ],
+   "gfx": 6336,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3024,
+   "map": "l1j_map_5140",
+   "cell": [
+    177,
+    114
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3025,
+   "map": "l1j_map_5140",
+   "cell": [
+    172,
+    127
+   ],
+   "gfx": 6336,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3026,
+   "map": "l1j_map_5140",
+   "cell": [
+    177,
+    134
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3027,
+   "map": "l1j_map_5140",
+   "cell": [
+    171,
+    154
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3028,
+   "map": "l1j_map_5140",
+   "cell": [
+    169,
+    169
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3029,
+   "map": "l1j_map_5140",
+   "cell": [
+    201,
+    83
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3030,
+   "map": "l1j_map_5140",
+   "cell": [
+    224,
+    82
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3031,
+   "map": "l1j_map_5140",
+   "cell": [
+    206,
+    93
+   ],
+   "gfx": 6336,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3032,
+   "map": "l1j_map_5140",
+   "cell": [
+    200,
+    102
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3033,
+   "map": "l1j_map_5140",
+   "cell": [
+    201,
+    115
+   ],
+   "gfx": 6336,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3034,
+   "map": "l1j_map_5140",
+   "cell": [
+    216,
+    112
+   ],
+   "gfx": 6336,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3035,
+   "map": "l1j_map_5140",
+   "cell": [
+    229,
+    112
+   ],
+   "gfx": 6336,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3036,
+   "map": "l1j_map_5140",
+   "cell": [
+    193,
+    123
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3037,
+   "map": "l1j_map_5140",
+   "cell": [
+    190,
+    141
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3038,
+   "map": "l1j_map_5140",
+   "cell": [
+    208,
+    128
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3039,
+   "map": "l1j_map_5140",
+   "cell": [
+    218,
+    124
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3040,
+   "map": "l1j_map_5140",
+   "cell": [
+    230,
+    140
+   ],
+   "gfx": 6336,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3041,
+   "map": "l1j_map_5140",
+   "cell": [
+    221,
+    148
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3042,
+   "map": "l1j_map_5140",
+   "cell": [
+    216,
+    140
+   ],
+   "gfx": 6336,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3043,
+   "map": "l1j_map_5140",
+   "cell": [
+    201,
+    161
+   ],
+   "gfx": 6336,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3044,
+   "map": "l1j_map_5140",
+   "cell": [
+    195,
+    170
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 3045,
+   "map": "l1j_map_5140",
+   "cell": [
+    212,
+    168
+   ],
+   "gfx": 6379,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 2,
+   "note": "幽靈之家"
+  },
+  {
+   "id": 4001,
+   "map": "l1j_map_87",
+   "cell": [
+    38,
+    37
+   ],
+   "gfx": 93,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "帕古洞穴"
+  },
+  {
+   "id": 4002,
+   "map": "l1j_map_87",
+   "cell": [
+    38,
+    41
+   ],
+   "gfx": 93,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "帕古洞穴"
+  },
+  {
+   "id": 4003,
+   "map": "l1j_map_87",
+   "cell": [
+    25,
+    25
+   ],
+   "gfx": 92,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "span": 1,
+   "note": "帕古洞穴"
+  },
+  {
+   "id": 4004,
+   "map": "l1j_map_87",
+   "cell": [
+    21,
+    25
+   ],
+   "gfx": 92,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "span": 1,
+   "note": "帕古洞穴"
+  },
+  {
+   "id": 5001,
+   "map": "crystal_cave1",
+   "cell": [
+    155,
+    67
+   ],
+   "gfx": 6640,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 4,
+   "note": "水晶洞穴1樓"
+  },
+  {
+   "id": 5002,
+   "map": "crystal_cave2",
+   "cell": [
+    158,
+    60
+   ],
+   "gfx": 6640,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 4,
+   "note": "水晶洞穴2樓"
+  },
+  {
+   "id": 5003,
+   "map": "crystal_cave2",
+   "cell": [
+    141,
+    105
+   ],
+   "gfx": 6640,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 4,
+   "note": "水晶洞穴2樓"
+  },
+  {
+   "id": 5004,
+   "map": "crystal_cave2",
+   "cell": [
+    121,
+    158
+   ],
+   "gfx": 6642,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "span": 4,
+   "note": "水晶洞穴2樓"
+  },
+  {
+   "id": 5005,
+   "map": "crystal_cave2",
+   "cell": [
+    63,
+    133
+   ],
+   "gfx": 6642,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "span": 4,
+   "note": "水晶洞穴2樓"
+  },
+  {
+   "id": 5006,
+   "map": "crystal_cave2",
+   "cell": [
+    48,
+    49
+   ],
+   "gfx": 6642,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "span": 4,
+   "note": "水晶洞穴2樓"
+  },
+  {
+   "id": 5007,
+   "map": "crystal_cave3",
+   "cell": [
+    80,
+    50
+   ],
+   "gfx": 6640,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 4,
+   "note": "水晶洞穴3樓"
+  },
+  {
+   "id": 5008,
+   "map": "crystal_cave3",
+   "cell": [
+    148,
+    38
+   ],
+   "gfx": 6640,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 4,
+   "note": "水晶洞穴3樓"
+  },
+  {
+   "id": 5009,
+   "map": "crystal_cave3",
+   "cell": [
+    118,
+    87
+   ],
+   "gfx": 6640,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 4,
+   "note": "水晶洞穴3樓"
+  },
+  {
+   "id": 5010,
+   "map": "crystal_cave3",
+   "cell": [
+    58,
+    148
+   ],
+   "gfx": 6642,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "span": 4,
+   "note": "水晶洞穴3樓"
+  },
+  {
+   "id": 6001,
+   "map": "zone_14",
+   "cell": [
+    88,
+    103
+   ],
+   "gfx": 92,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6002,
+   "map": "zone_14",
+   "cell": [
+    97,
+    116
+   ],
+   "gfx": 93,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6003,
+   "map": "zone_14",
+   "cell": [
+    92,
+    129
+   ],
+   "gfx": 92,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6004,
+   "map": "zone_14",
+   "cell": [
+    85,
+    119
+   ],
+   "gfx": 88,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6005,
+   "map": "zone_14",
+   "cell": [
+    96,
+    154
+   ],
+   "gfx": 89,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6006,
+   "map": "zone_14",
+   "cell": [
+    108,
+    146
+   ],
+   "gfx": 93,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6007,
+   "map": "zone_14",
+   "cell": [
+    147,
+    144
+   ],
+   "gfx": 93,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6008,
+   "map": "zone_14",
+   "cell": [
+    102,
+    173
+   ],
+   "gfx": 89,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6009,
+   "map": "zone_14",
+   "cell": [
+    156,
+    168
+   ],
+   "gfx": 89,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6010,
+   "map": "zone_14",
+   "cell": [
+    160,
+    168
+   ],
+   "gfx": 89,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6011,
+   "map": "zone_14",
+   "cell": [
+    164,
+    168
+   ],
+   "gfx": 89,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6012,
+   "map": "zone_14",
+   "cell": [
+    219,
+    166
+   ],
+   "gfx": 89,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6013,
+   "map": "zone_14",
+   "cell": [
+    227,
+    158
+   ],
+   "gfx": 88,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6014,
+   "map": "zone_14",
+   "cell": [
+    230,
+    120
+   ],
+   "gfx": 89,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6015,
+   "map": "zone_14",
+   "cell": [
+    227,
+    128
+   ],
+   "gfx": 88,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6016,
+   "map": "zone_14",
+   "cell": [
+    222,
+    140
+   ],
+   "gfx": 92,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6017,
+   "map": "zone_14",
+   "cell": [
+    183,
+    143
+   ],
+   "gfx": 93,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6018,
+   "map": "zone_14",
+   "cell": [
+    232,
+    88
+   ],
+   "gfx": 88,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6019,
+   "map": "zone_14",
+   "cell": [
+    200,
+    102
+   ],
+   "gfx": 93,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6020,
+   "map": "zone_14",
+   "cell": [
+    199,
+    114
+   ],
+   "gfx": 93,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6021,
+   "map": "zone_14",
+   "cell": [
+    165,
+    100
+   ],
+   "gfx": 88,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6022,
+   "map": "zone_14",
+   "cell": [
+    164,
+    84
+   ],
+   "gfx": 89,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6023,
+   "map": "zone_14",
+   "cell": [
+    174,
+    89
+   ],
+   "gfx": 89,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6024,
+   "map": "zone_14",
+   "cell": [
+    190,
+    87
+   ],
+   "gfx": 89,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6025,
+   "map": "zone_14",
+   "cell": [
+    179,
+    114
+   ],
+   "gfx": 93,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6026,
+   "map": "zone_14",
+   "cell": [
+    150,
+    108
+   ],
+   "gfx": 93,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6027,
+   "map": "zone_14",
+   "cell": [
+    129,
+    112
+   ],
+   "gfx": 93,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6028,
+   "map": "zone_14",
+   "cell": [
+    122,
+    99
+   ],
+   "gfx": 92,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6029,
+   "map": "zone_14",
+   "cell": [
+    104,
+    93
+   ],
+   "gfx": 92,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6030,
+   "map": "zone_14",
+   "cell": [
+    131,
+    85
+   ],
+   "gfx": 93,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6031,
+   "map": "zone_14",
+   "cell": [
+    149,
+    91
+   ],
+   "gfx": 92,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6032,
+   "map": "zone_14",
+   "cell": [
+    91,
+    167
+   ],
+   "gfx": 92,
+   "dir": 0,
+   "hp": 0,
+   "src": "l1j",
+   "note": "冒險洞窟2樓"
+  },
+  {
+   "id": 6100,
+   "map": "antharas_nest_2",
+   "cell": [
+    54,
+    32
+   ],
+   "gfx": 7556,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 4,
+   "note": "安塔瑞斯攻略第一門"
+  },
+  {
+   "id": 6101,
+   "map": "antharas_nest_2",
+   "cell": [
+    82,
+    81
+   ],
+   "gfx": 7556,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 4,
+   "note": "安塔瑞斯攻略第二門"
+  },
+  {
+   "id": 6102,
+   "map": "antharas_nest_2",
+   "cell": [
+    76,
+    152
+   ],
+   "gfx": 7556,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 4,
+   "note": "安塔瑞斯攻略第三門"
+  },
+  {
+   "id": 9000,
+   "map": "l1j_map_5143",
+   "cell": [
+    58,
+    80
+   ],
+   "gfx": 6677,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 7,
+   "keeper": 5143,
+   "note": "race"
+  },
+  {
+   "id": 9001,
+   "map": "l1j_map_5143",
+   "cell": [
+    68,
+    80
+   ],
+   "gfx": 2510,
+   "dir": 1,
+   "hp": 0,
+   "src": "l1j",
+   "span": 7,
+   "keeper": 5143,
+   "note": "race"
+  }
+ ],
+ "sprites": {
+  "88": {
+   "canvas": {
+    "w": 39,
+    "h": 87
+   },
+   "latticeOrigin": {
+    "x": -1,
+    "y": 70
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "89": {
+   "canvas": {
+    "w": 77,
+    "h": 67
+   },
+   "latticeOrigin": {
+    "x": -10,
+    "y": 50
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "92": {
+   "canvas": {
+    "w": 65,
+    "h": 64
+   },
+   "latticeOrigin": {
+    "x": -30,
+    "y": 57
+   },
+   "frames": 3,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close",
+    "lock"
+   ]
+  },
+  "93": {
+   "canvas": {
+    "w": 54,
+    "h": 86
+   },
+   "latticeOrigin": {
+    "x": -6,
+    "y": 43
+   },
+   "frames": 3,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close",
+    "lock"
+   ]
+  },
+  "339": {
+   "canvas": {
+    "w": 59,
+    "h": 97
+   },
+   "latticeOrigin": {
+    "x": 1,
+    "y": 71
+   },
+   "frames": 5,
+   "openFrame": 0,
+   "openFrameFrom": "gate-intact",
+   "actions": [
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "open",
+    "close"
+   ]
+  },
+  "442": {
+   "canvas": {
+    "w": 43,
+    "h": 93
+   },
+   "latticeOrigin": {
+    "x": -8,
+    "y": 57
+   },
+   "frames": 2,
+   "openFrame": 1,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "close",
+    "open"
+   ]
+  },
+  "443": {
+   "canvas": {
+    "w": 120,
+    "h": 102
+   },
+   "latticeOrigin": {
+    "x": 10,
+    "y": 77
+   },
+   "frames": 5,
+   "openFrame": 0,
+   "openFrameFrom": "gate-intact",
+   "actions": [
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "open",
+    "close"
+   ]
+  },
+  "444": {
+   "canvas": {
+    "w": 31,
+    "h": 81
+   },
+   "latticeOrigin": {
+    "x": 0,
+    "y": 58
+   },
+   "frames": 2,
+   "openFrame": 1,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "close",
+    "open"
+   ]
+  },
+  "446": {
+   "canvas": {
+    "w": 48,
+    "h": 67
+   },
+   "latticeOrigin": {
+    "x": 22,
+    "y": 56
+   },
+   "frames": 2,
+   "openFrame": 1,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "close",
+    "open"
+   ]
+  },
+  "447": {
+   "canvas": {
+    "w": 32,
+    "h": 79
+   },
+   "latticeOrigin": {
+    "x": -16,
+    "y": 56
+   },
+   "frames": 2,
+   "openFrame": 1,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "close",
+    "open"
+   ]
+  },
+  "448": {
+   "canvas": {
+    "w": 34,
+    "h": 82
+   },
+   "latticeOrigin": {
+    "x": -15,
+    "y": 55
+   },
+   "frames": 2,
+   "openFrame": 1,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "close",
+    "open"
+   ]
+  },
+  "766": {
+   "canvas": {
+    "w": 70,
+    "h": 81
+   },
+   "latticeOrigin": {
+    "x": 43,
+    "y": 71
+   },
+   "frames": 2,
+   "openFrame": 1,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "close",
+    "open"
+   ]
+  },
+  "767": {
+   "canvas": {
+    "w": 71,
+    "h": 81
+   },
+   "latticeOrigin": {
+    "x": -16,
+    "y": 75
+   },
+   "frames": 2,
+   "openFrame": 1,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "close",
+    "open"
+   ]
+  },
+  "768": {
+   "canvas": {
+    "w": 48,
+    "h": 95
+   },
+   "latticeOrigin": {
+    "x": 3,
+    "y": 67
+   },
+   "frames": 2,
+   "openFrame": 1,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "close",
+    "open"
+   ]
+  },
+  "845": {
+   "canvas": {
+    "w": 62,
+    "h": 80
+   },
+   "latticeOrigin": {
+    "x": -16,
+    "y": 68
+   },
+   "frames": 2,
+   "openFrame": 1,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "close",
+    "open"
+   ]
+  },
+  "1010": {
+   "canvas": {
+    "w": 22,
+    "h": 72
+   },
+   "latticeOrigin": {
+    "x": -23,
+    "y": 61
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1327": {
+   "canvas": {
+    "w": 51,
+    "h": 73
+   },
+   "latticeOrigin": {
+    "x": 28,
+    "y": 60
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1329": {
+   "canvas": {
+    "w": 20,
+    "h": 63
+   },
+   "latticeOrigin": {
+    "x": -29,
+    "y": 54
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1330": {
+   "canvas": {
+    "w": 51,
+    "h": 73
+   },
+   "latticeOrigin": {
+    "x": 28,
+    "y": 60
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1331": {
+   "canvas": {
+    "w": 45,
+    "h": 71
+   },
+   "latticeOrigin": {
+    "x": -27,
+    "y": 60
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1332": {
+   "canvas": {
+    "w": 58,
+    "h": 72
+   },
+   "latticeOrigin": {
+    "x": 32,
+    "y": 60
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1333": {
+   "canvas": {
+    "w": 59,
+    "h": 72
+   },
+   "latticeOrigin": {
+    "x": -21,
+    "y": 60
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1334": {
+   "canvas": {
+    "w": 56,
+    "h": 73
+   },
+   "latticeOrigin": {
+    "x": -25,
+    "y": 62
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1336": {
+   "canvas": {
+    "w": 73,
+    "h": 96
+   },
+   "latticeOrigin": {
+    "x": 25,
+    "y": 71
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "gate-intact",
+   "actions": [
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "open",
+    "close"
+   ]
+  },
+  "1338": {
+   "canvas": {
+    "w": 75,
+    "h": 109
+   },
+   "latticeOrigin": {
+    "x": 27,
+    "y": 72
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "gate-intact",
+   "actions": [
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "open",
+    "close"
+   ]
+  },
+  "1341": {
+   "canvas": {
+    "w": 68,
+    "h": 77
+   },
+   "latticeOrigin": {
+    "x": -18,
+    "y": 63
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1342": {
+   "canvas": {
+    "w": 91,
+    "h": 73
+   },
+   "latticeOrigin": {
+    "x": 30,
+    "y": 45
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1347": {
+   "canvas": {
+    "w": 33,
+    "h": 74
+   },
+   "latticeOrigin": {
+    "x": -29,
+    "y": 48
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1348": {
+   "canvas": {
+    "w": 33,
+    "h": 75
+   },
+   "latticeOrigin": {
+    "x": -29,
+    "y": 49
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1349": {
+   "canvas": {
+    "w": 28,
+    "h": 65
+   },
+   "latticeOrigin": {
+    "x": -41,
+    "y": 39
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1350": {
+   "canvas": {
+    "w": 28,
+    "h": 65
+   },
+   "latticeOrigin": {
+    "x": -41,
+    "y": 39
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1351": {
+   "canvas": {
+    "w": 39,
+    "h": 77
+   },
+   "latticeOrigin": {
+    "x": 23,
+    "y": 63
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1352": {
+   "canvas": {
+    "w": 39,
+    "h": 70
+   },
+   "latticeOrigin": {
+    "x": -32,
+    "y": 56
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1371": {
+   "canvas": {
+    "w": 32,
+    "h": 96
+   },
+   "latticeOrigin": {
+    "x": 9,
+    "y": 62
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1373": {
+   "canvas": {
+    "w": 25,
+    "h": 67
+   },
+   "latticeOrigin": {
+    "x": -14,
+    "y": 50
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1487": {
+   "canvas": {
+    "w": 66,
+    "h": 42
+   },
+   "latticeOrigin": {
+    "x": 40,
+    "y": 36
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1664": {
+   "canvas": {
+    "w": 74,
+    "h": 82
+   },
+   "latticeOrigin": {
+    "x": 45,
+    "y": 68
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1665": {
+   "canvas": {
+    "w": 73,
+    "h": 83
+   },
+   "latticeOrigin": {
+    "x": -19,
+    "y": 68
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1688": {
+   "canvas": {
+    "w": 71,
+    "h": 84
+   },
+   "latticeOrigin": {
+    "x": 38,
+    "y": 70
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1689": {
+   "canvas": {
+    "w": 34,
+    "h": 106
+   },
+   "latticeOrigin": {
+    "x": -19,
+    "y": 70
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1690": {
+   "canvas": {
+    "w": 72,
+    "h": 73
+   },
+   "latticeOrigin": {
+    "x": -3,
+    "y": 50
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1691": {
+   "canvas": {
+    "w": 43,
+    "h": 104
+   },
+   "latticeOrigin": {
+    "x": -3,
+    "y": 70
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1692": {
+   "canvas": {
+    "w": 78,
+    "h": 87
+   },
+   "latticeOrigin": {
+    "x": 53,
+    "y": 69
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1700": {
+   "canvas": {
+    "w": 78,
+    "h": 87
+   },
+   "latticeOrigin": {
+    "x": -15,
+    "y": 68
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1734": {
+   "canvas": {
+    "w": 65,
+    "h": 79
+   },
+   "latticeOrigin": {
+    "x": 34,
+    "y": 68
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1735": {
+   "canvas": {
+    "w": 65,
+    "h": 82
+   },
+   "latticeOrigin": {
+    "x": -12,
+    "y": 67
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1736": {
+   "canvas": {
+    "w": 78,
+    "h": 87
+   },
+   "latticeOrigin": {
+    "x": -15,
+    "y": 68
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1737": {
+   "canvas": {
+    "w": 78,
+    "h": 86
+   },
+   "latticeOrigin": {
+    "x": 50,
+    "y": 69
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1738": {
+   "canvas": {
+    "w": 67,
+    "h": 79
+   },
+   "latticeOrigin": {
+    "x": -25,
+    "y": 64
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1739": {
+   "canvas": {
+    "w": 70,
+    "h": 81
+   },
+   "latticeOrigin": {
+    "x": 34,
+    "y": 71
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1740": {
+   "canvas": {
+    "w": 70,
+    "h": 81
+   },
+   "latticeOrigin": {
+    "x": -16,
+    "y": 67
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1741": {
+   "canvas": {
+    "w": 66,
+    "h": 80
+   },
+   "latticeOrigin": {
+    "x": 37,
+    "y": 60
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1743": {
+   "canvas": {
+    "w": 64,
+    "h": 81
+   },
+   "latticeOrigin": {
+    "x": -26,
+    "y": 64
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1744": {
+   "canvas": {
+    "w": 70,
+    "h": 83
+   },
+   "latticeOrigin": {
+    "x": 51,
+    "y": 64
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1745": {
+   "canvas": {
+    "w": 169,
+    "h": 187
+   },
+   "latticeOrigin": {
+    "x": 61,
+    "y": 131
+   },
+   "frames": 40,
+   "openFrame": 6,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "open",
+    "close"
+   ]
+  },
+  "1750": {
+   "canvas": {
+    "w": 65,
+    "h": 79
+   },
+   "latticeOrigin": {
+    "x": 30,
+    "y": 67
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1751": {
+   "canvas": {
+    "w": 65,
+    "h": 82
+   },
+   "latticeOrigin": {
+    "x": -16,
+    "y": 66
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1826": {
+   "canvas": {
+    "w": 154,
+    "h": 231
+   },
+   "latticeOrigin": {
+    "x": 90,
+    "y": 162
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "gate-intact",
+   "actions": [
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "open",
+    "close"
+   ]
+  },
+  "1827": {
+   "canvas": {
+    "w": 158,
+    "h": 225
+   },
+   "latticeOrigin": {
+    "x": 19,
+    "y": 158
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "gate-intact",
+   "actions": [
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "open",
+    "close"
+   ]
+  },
+  "2083": {
+   "canvas": {
+    "w": 63,
+    "h": 70
+   },
+   "latticeOrigin": {
+    "x": -20,
+    "y": 56
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2089": {
+   "canvas": {
+    "w": 62,
+    "h": 70
+   },
+   "latticeOrigin": {
+    "x": 35,
+    "y": 56
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2114": {
+   "canvas": {
+    "w": 71,
+    "h": 71
+   },
+   "latticeOrigin": {
+    "x": -20,
+    "y": 57
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2128": {
+   "canvas": {
+    "w": 71,
+    "h": 70
+   },
+   "latticeOrigin": {
+    "x": 44,
+    "y": 56
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2160": {
+   "canvas": {
+    "w": 50,
+    "h": 70
+   },
+   "latticeOrigin": {
+    "x": -23,
+    "y": 57
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2161": {
+   "canvas": {
+    "w": 50,
+    "h": 70
+   },
+   "latticeOrigin": {
+    "x": -26,
+    "y": 57
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2162": {
+   "canvas": {
+    "w": 50,
+    "h": 70
+   },
+   "latticeOrigin": {
+    "x": 27,
+    "y": 56
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2163": {
+   "canvas": {
+    "w": 28,
+    "h": 79
+   },
+   "latticeOrigin": {
+    "x": -26,
+    "y": 55
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2164": {
+   "canvas": {
+    "w": 50,
+    "h": 69
+   },
+   "latticeOrigin": {
+    "x": -26,
+    "y": 56
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2190": {
+   "canvas": {
+    "w": 51,
+    "h": 70
+   },
+   "latticeOrigin": {
+    "x": -13,
+    "y": 63
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2191": {
+   "canvas": {
+    "w": 53,
+    "h": 71
+   },
+   "latticeOrigin": {
+    "x": 17,
+    "y": 63
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2301": {
+   "canvas": {
+    "w": 51,
+    "h": 72
+   },
+   "latticeOrigin": {
+    "x": -22,
+    "y": 59
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2303": {
+   "canvas": {
+    "w": 51,
+    "h": 66
+   },
+   "latticeOrigin": {
+    "x": -21,
+    "y": 54
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2304": {
+   "canvas": {
+    "w": 48,
+    "h": 74
+   },
+   "latticeOrigin": {
+    "x": -19,
+    "y": 57
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2305": {
+   "canvas": {
+    "w": 49,
+    "h": 73
+   },
+   "latticeOrigin": {
+    "x": -24,
+    "y": 61
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2306": {
+   "canvas": {
+    "w": 54,
+    "h": 73
+   },
+   "latticeOrigin": {
+    "x": -22,
+    "y": 61
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2344": {
+   "canvas": {
+    "w": 58,
+    "h": 73
+   },
+   "latticeOrigin": {
+    "x": 32,
+    "y": 60
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2345": {
+   "canvas": {
+    "w": 57,
+    "h": 72
+   },
+   "latticeOrigin": {
+    "x": -22,
+    "y": 59
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2346": {
+   "canvas": {
+    "w": 69,
+    "h": 80
+   },
+   "latticeOrigin": {
+    "x": -20,
+    "y": 66
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2510": {
+   "missingClientSpr": true,
+   "searched": [
+    "2510-0.spr",
+    "2510-0.SPR"
+   ]
+  },
+  "2556": {
+   "canvas": {
+    "w": 45,
+    "h": 62
+   },
+   "latticeOrigin": {
+    "x": 27,
+    "y": 48
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2558": {
+   "canvas": {
+    "w": 46,
+    "h": 62
+   },
+   "latticeOrigin": {
+    "x": -29,
+    "y": 48
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2574": {
+   "canvas": {
+    "w": 50,
+    "h": 71
+   },
+   "latticeOrigin": {
+    "x": 26,
+    "y": 59
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2575": {
+   "canvas": {
+    "w": 51,
+    "h": 65
+   },
+   "latticeOrigin": {
+    "x": -22,
+    "y": 53
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2578": {
+   "canvas": {
+    "w": 51,
+    "h": 60
+   },
+   "latticeOrigin": {
+    "x": 10,
+    "y": 54
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2579": {
+   "canvas": {
+    "w": 50,
+    "h": 60
+   },
+   "latticeOrigin": {
+    "x": -23,
+    "y": 48
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2580": {
+   "canvas": {
+    "w": 29,
+    "h": 72
+   },
+   "latticeOrigin": {
+    "x": 1,
+    "y": 49
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2581": {
+   "canvas": {
+    "w": 52,
+    "h": 62
+   },
+   "latticeOrigin": {
+    "x": -19,
+    "y": 50
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2582": {
+   "canvas": {
+    "w": 52,
+    "h": 60
+   },
+   "latticeOrigin": {
+    "x": 2,
+    "y": 48
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2583": {
+   "canvas": {
+    "w": 27,
+    "h": 71
+   },
+   "latticeOrigin": {
+    "x": 4,
+    "y": 57
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2585": {
+   "canvas": {
+    "w": 52,
+    "h": 61
+   },
+   "latticeOrigin": {
+    "x": -20,
+    "y": 48
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2588": {
+   "canvas": {
+    "w": 31,
+    "h": 70
+   },
+   "latticeOrigin": {
+    "x": 4,
+    "y": 47
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2589": {
+   "canvas": {
+    "w": 29,
+    "h": 69
+   },
+   "latticeOrigin": {
+    "x": 6,
+    "y": 56
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2590": {
+   "canvas": {
+    "w": 52,
+    "h": 58
+   },
+   "latticeOrigin": {
+    "x": -10,
+    "y": 51
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2591": {
+   "canvas": {
+    "w": 52,
+    "h": 60
+   },
+   "latticeOrigin": {
+    "x": -30,
+    "y": 47
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2596": {
+   "canvas": {
+    "w": 31,
+    "h": 72
+   },
+   "latticeOrigin": {
+    "x": 2,
+    "y": 49
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2597": {
+   "canvas": {
+    "w": 53,
+    "h": 61
+   },
+   "latticeOrigin": {
+    "x": -18,
+    "y": 48
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2598": {
+   "canvas": {
+    "w": 54,
+    "h": 60
+   },
+   "latticeOrigin": {
+    "x": 0,
+    "y": 46
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2599": {
+   "canvas": {
+    "w": 30,
+    "h": 71
+   },
+   "latticeOrigin": {
+    "x": 4,
+    "y": 57
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2600": {
+   "canvas": {
+    "w": 59,
+    "h": 73
+   },
+   "latticeOrigin": {
+    "x": 30,
+    "y": 61
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2603": {
+   "canvas": {
+    "w": 31,
+    "h": 85
+   },
+   "latticeOrigin": {
+    "x": -27,
+    "y": 54
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2605": {
+   "canvas": {
+    "w": 32,
+    "h": 84
+   },
+   "latticeOrigin": {
+    "x": -16,
+    "y": 51
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2606": {
+   "canvas": {
+    "w": 58,
+    "h": 72
+   },
+   "latticeOrigin": {
+    "x": 36,
+    "y": 59
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2608": {
+   "canvas": {
+    "w": 33,
+    "h": 80
+   },
+   "latticeOrigin": {
+    "x": -18,
+    "y": 57
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2610": {
+   "canvas": {
+    "w": 59,
+    "h": 73
+   },
+   "latticeOrigin": {
+    "x": 30,
+    "y": 61
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2628": {
+   "canvas": {
+    "w": 46,
+    "h": 67
+   },
+   "latticeOrigin": {
+    "x": 24,
+    "y": 57
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2629": {
+   "canvas": {
+    "w": 27,
+    "h": 77
+   },
+   "latticeOrigin": {
+    "x": 1,
+    "y": 69
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2630": {
+   "canvas": {
+    "w": 47,
+    "h": 67
+   },
+   "latticeOrigin": {
+    "x": -25,
+    "y": 57
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2631": {
+   "canvas": {
+    "w": 27,
+    "h": 77
+   },
+   "latticeOrigin": {
+    "x": -22,
+    "y": 68
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2634": {
+   "canvas": {
+    "w": 45,
+    "h": 66
+   },
+   "latticeOrigin": {
+    "x": -26,
+    "y": 57
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2635": {
+   "canvas": {
+    "w": 28,
+    "h": 75
+   },
+   "latticeOrigin": {
+    "x": -21,
+    "y": 67
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2732": {
+   "canvas": {
+    "w": 156,
+    "h": 134
+   },
+   "latticeOrigin": {
+    "x": 4,
+    "y": 65
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "gate-intact",
+   "actions": [
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "open",
+    "close"
+   ]
+  },
+  "2736": {
+   "canvas": {
+    "w": 144,
+    "h": 149
+   },
+   "latticeOrigin": {
+    "x": 51,
+    "y": 124
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "gate-intact",
+   "actions": [
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "open",
+    "close"
+   ]
+  },
+  "2744": {
+   "canvas": {
+    "w": 145,
+    "h": 114
+   },
+   "latticeOrigin": {
+    "x": 24,
+    "y": 102
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "gate-intact",
+   "actions": [
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "open",
+    "close"
+   ]
+  },
+  "2745": {
+   "canvas": {
+    "w": 145,
+    "h": 114
+   },
+   "latticeOrigin": {
+    "x": 48,
+    "y": 90
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "gate-intact",
+   "actions": [
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "open",
+    "close"
+   ]
+  },
+  "2746": {
+   "canvas": {
+    "w": 144,
+    "h": 112
+   },
+   "latticeOrigin": {
+    "x": 49,
+    "y": 88
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "gate-intact",
+   "actions": [
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "open",
+    "close"
+   ]
+  },
+  "3234": {
+   "canvas": {
+    "w": 143,
+    "h": 148
+   },
+   "latticeOrigin": {
+    "x": 69,
+    "y": 116
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "gate-intact",
+   "actions": [
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "open",
+    "close"
+   ]
+  },
+  "6026": {
+   "canvas": {
+    "w": 67,
+    "h": 75
+   },
+   "latticeOrigin": {
+    "x": -22,
+    "y": 63
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "6027": {
+   "canvas": {
+    "w": 38,
+    "h": 68
+   },
+   "latticeOrigin": {
+    "x": 26,
+    "y": 57
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "6028": {
+   "canvas": {
+    "w": 67,
+    "h": 74
+   },
+   "latticeOrigin": {
+    "x": 42,
+    "y": 63
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "6029": {
+   "canvas": {
+    "w": 95,
+    "h": 119
+   },
+   "latticeOrigin": {
+    "x": 16,
+    "y": 101
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "6030": {
+   "canvas": {
+    "w": 91,
+    "h": 114
+   },
+   "latticeOrigin": {
+    "x": -23,
+    "y": 82
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "6031": {
+   "canvas": {
+    "w": 47,
+    "h": 91
+   },
+   "latticeOrigin": {
+    "x": 27,
+    "y": 80
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "6032": {
+   "canvas": {
+    "w": 40,
+    "h": 90
+   },
+   "latticeOrigin": {
+    "x": -31,
+    "y": 79
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "6033": {
+   "canvas": {
+    "w": 58,
+    "h": 75
+   },
+   "latticeOrigin": {
+    "x": 38,
+    "y": 65
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "6336": {
+   "canvas": {
+    "w": 99,
+    "h": 174
+   },
+   "latticeOrigin": {
+    "x": 25,
+    "y": 147
+   },
+   "frames": 10,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "6351": {
+   "canvas": {
+    "w": 362,
+    "h": 248
+   },
+   "latticeOrigin": {
+    "x": 150,
+    "y": 143
+   },
+   "frames": 11,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "6379": {
+   "canvas": {
+    "w": 100,
+    "h": 174
+   },
+   "latticeOrigin": {
+    "x": 2,
+    "y": 135
+   },
+   "frames": 10,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "6640": {
+   "canvas": {
+    "w": 172,
+    "h": 165
+   },
+   "latticeOrigin": {
+    "x": 36,
+    "y": 151
+   },
+   "frames": 6,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "6642": {
+   "canvas": {
+    "w": 172,
+    "h": 170
+   },
+   "latticeOrigin": {
+    "x": 81,
+    "y": 160
+   },
+   "frames": 6,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "6677": {
+   "canvas": {
+    "w": 183,
+    "h": 166
+   },
+   "latticeOrigin": {
+    "x": 40,
+    "y": 105
+   },
+   "frames": 17,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close",
+    "loop"
+   ]
+  },
+  "7556": {
+   "canvas": {
+    "w": 160,
+    "h": 150
+   },
+   "latticeOrigin": {
+    "x": 50,
+    "y": 111
+   },
+   "frames": 9,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  }
+ }
+}

@@ -1,0 +1,1011 @@
+{
+ "schemaVersion": 1,
+ "source": "L1j-TW-main/db/InnoDB_TW/pettypes.sql",
+ "counts": {
+  "rows": 37,
+  "tameable": 16,
+  "evolvable": 27,
+  "userEvolutionRulings": 2
+ },
+ "byForm": {
+  "牧羊犬": {
+   "baseNpcId": 45034,
+   "sourceName": "牧羊犬",
+   "tamingItemId": 40057,
+   "tamingItemKey": "item_eye_meat",
+   "hpGrowth": [
+    5,
+    8
+   ],
+   "mpGrowth": [
+    1,
+    2
+   ],
+   "evolutionItemId": 40070,
+   "evolutionItemKey": "item_evo_fruit",
+   "evolutionNpcId": 45687,
+   "evolutionForm": "高等牧羊犬",
+   "messageIds": [
+    1088,
+    1089,
+    1090,
+    1091,
+    1092
+   ],
+   "defyMessageId": 1074,
+   "userEvolutionRuling": false
+  },
+  "貓": {
+   "baseNpcId": 45039,
+   "sourceName": "貓",
+   "tamingItemId": 40057,
+   "tamingItemKey": "item_eye_meat",
+   "hpGrowth": [
+    3,
+    6
+   ],
+   "mpGrowth": [
+    3,
+    5
+   ],
+   "evolutionItemId": 40070,
+   "evolutionItemKey": "item_evo_fruit",
+   "evolutionNpcId": 45696,
+   "evolutionForm": "高等貓",
+   "messageIds": [
+    2728,
+    2729,
+    2730,
+    2731,
+    2731
+   ],
+   "defyMessageId": 2732,
+   "userEvolutionRuling": false
+  },
+  "熊": {
+   "baseNpcId": 45040,
+   "sourceName": "熊",
+   "tamingItemId": 40057,
+   "tamingItemKey": "item_eye_meat",
+   "hpGrowth": [
+    8,
+    14
+   ],
+   "mpGrowth": [
+    1,
+    2
+   ],
+   "evolutionItemId": 40070,
+   "evolutionItemKey": "item_evo_fruit",
+   "evolutionNpcId": 45690,
+   "evolutionForm": "高等熊",
+   "messageIds": [
+    2738,
+    2739,
+    2740,
+    2741,
+    2741
+   ],
+   "defyMessageId": 2742,
+   "userEvolutionRuling": false
+  },
+  "杜賓狗": {
+   "baseNpcId": 45042,
+   "sourceName": "杜賓狗",
+   "tamingItemId": 40057,
+   "tamingItemKey": "item_eye_meat",
+   "hpGrowth": [
+    3,
+    6
+   ],
+   "mpGrowth": [
+    1,
+    2
+   ],
+   "evolutionItemId": 40070,
+   "evolutionItemKey": "item_evo_fruit",
+   "evolutionNpcId": 45688,
+   "evolutionForm": "高等杜賓狗",
+   "messageIds": [
+    1088,
+    1089,
+    1090,
+    1091,
+    1092
+   ],
+   "defyMessageId": 1074,
+   "userEvolutionRuling": false
+  },
+  "狼": {
+   "baseNpcId": 45043,
+   "sourceName": "狼",
+   "tamingItemId": 40057,
+   "tamingItemKey": "item_eye_meat",
+   "hpGrowth": [
+    3,
+    9
+   ],
+   "mpGrowth": [
+    1,
+    2
+   ],
+   "evolutionItemId": 40070,
+   "evolutionItemKey": "item_evo_fruit",
+   "evolutionNpcId": 45686,
+   "evolutionForm": "高等狼",
+   "messageIds": [
+    1088,
+    1089,
+    1090,
+    1091,
+    1092
+   ],
+   "defyMessageId": 1074,
+   "userEvolutionRuling": false
+  },
+  "浣熊": {
+   "baseNpcId": 45044,
+   "sourceName": "浣熊",
+   "tamingItemId": 40057,
+   "tamingItemKey": "item_eye_meat",
+   "hpGrowth": [
+    3,
+    9
+   ],
+   "mpGrowth": [
+    2,
+    4
+   ],
+   "evolutionItemId": 40070,
+   "evolutionItemKey": "item_evo_fruit",
+   "evolutionNpcId": 45697,
+   "evolutionForm": "高等浣熊",
+   "messageIds": [
+    3578,
+    3579,
+    3580,
+    3581,
+    3581
+   ],
+   "defyMessageId": 3582,
+   "userEvolutionRuling": false
+  },
+  "小獵犬": {
+   "baseNpcId": 45046,
+   "sourceName": "小獵犬",
+   "tamingItemId": 40057,
+   "tamingItemKey": "item_eye_meat",
+   "hpGrowth": [
+    4,
+    8
+   ],
+   "mpGrowth": [
+    2,
+    4
+   ],
+   "evolutionItemId": 40070,
+   "evolutionItemKey": "item_evo_fruit",
+   "evolutionNpcId": 45692,
+   "evolutionForm": "高等小獵犬",
+   "messageIds": [
+    1088,
+    1089,
+    1090,
+    1091,
+    1092
+   ],
+   "defyMessageId": 1074,
+   "userEvolutionRuling": false
+  },
+  "聖伯納犬": {
+   "baseNpcId": 45047,
+   "sourceName": "聖伯納犬",
+   "tamingItemId": 40057,
+   "tamingItemKey": "item_eye_meat",
+   "hpGrowth": [
+    6,
+    10
+   ],
+   "mpGrowth": [
+    2,
+    4
+   ],
+   "evolutionItemId": 40070,
+   "evolutionItemKey": "item_evo_fruit",
+   "evolutionNpcId": 45693,
+   "evolutionForm": "高等聖伯納犬",
+   "messageIds": [
+    1088,
+    1089,
+    1090,
+    1091,
+    1092
+   ],
+   "defyMessageId": 1074,
+   "userEvolutionRuling": false
+  },
+  "狐狸": {
+   "baseNpcId": 45048,
+   "sourceName": "狐狸",
+   "tamingItemId": 40057,
+   "tamingItemKey": "item_eye_meat",
+   "hpGrowth": [
+    3,
+    9
+   ],
+   "mpGrowth": [
+    2,
+    3
+   ],
+   "evolutionItemId": 40070,
+   "evolutionItemKey": "item_evo_fruit",
+   "evolutionNpcId": 45694,
+   "evolutionForm": "高等狐狸",
+   "messageIds": [
+    2733,
+    2734,
+    2735,
+    2736,
+    2736
+   ],
+   "defyMessageId": 2737,
+   "userEvolutionRuling": false
+  },
+  "暴走兔": {
+   "baseNpcId": 45049,
+   "sourceName": "暴走兔",
+   "tamingItemId": 40060,
+   "tamingItemKey": "item_carrot",
+   "hpGrowth": [
+    3,
+    8
+   ],
+   "mpGrowth": [
+    3,
+    5
+   ],
+   "evolutionItemId": 40070,
+   "evolutionItemKey": "item_evo_fruit",
+   "evolutionNpcId": 45695,
+   "evolutionForm": "高等暴走兔",
+   "messageIds": [
+    2723,
+    2724,
+    2725,
+    2726,
+    2726
+   ],
+   "defyMessageId": 2727,
+   "userEvolutionRuling": false
+  },
+  "哈士奇": {
+   "baseNpcId": 45053,
+   "sourceName": "哈士奇",
+   "tamingItemId": 40057,
+   "tamingItemKey": "item_eye_meat",
+   "hpGrowth": [
+    8,
+    13
+   ],
+   "mpGrowth": [
+    1,
+    2
+   ],
+   "evolutionItemId": 40070,
+   "evolutionItemKey": "item_evo_fruit",
+   "evolutionNpcId": 45689,
+   "evolutionForm": "高等哈士奇",
+   "messageIds": [
+    1088,
+    1089,
+    1090,
+    1091,
+    1092
+   ],
+   "defyMessageId": 1074,
+   "userEvolutionRuling": false
+  },
+  "柯利": {
+   "baseNpcId": 45054,
+   "sourceName": "柯利",
+   "tamingItemId": 40057,
+   "tamingItemKey": "item_eye_meat",
+   "hpGrowth": [
+    8,
+    11
+   ],
+   "mpGrowth": [
+    3,
+    4
+   ],
+   "evolutionItemId": 40070,
+   "evolutionItemKey": "item_evo_fruit",
+   "evolutionNpcId": 45691,
+   "evolutionForm": "高等柯利",
+   "messageIds": [
+    1088,
+    1089,
+    1090,
+    1091,
+    1092
+   ],
+   "defyMessageId": 1074,
+   "userEvolutionRuling": false
+  },
+  "虎男": {
+   "baseNpcId": 45313,
+   "sourceName": "虎男",
+   "tamingItemId": 40057,
+   "tamingItemKey": "item_eye_meat",
+   "hpGrowth": [
+    8,
+    14
+   ],
+   "mpGrowth": [
+    3,
+    5
+   ],
+   "evolutionItemId": 40070,
+   "evolutionItemKey": "item_evo_fruit",
+   "evolutionNpcId": 45710,
+   "evolutionForm": "真．虎男",
+   "messageIds": [
+    4135,
+    4136,
+    4137,
+    4138,
+    4138
+   ],
+   "defyMessageId": 4134,
+   "userEvolutionRuling": false
+  },
+  "高等狼": {
+   "baseNpcId": 45686,
+   "sourceName": "高等狼",
+   "tamingItemId": 0,
+   "tamingItemKey": null,
+   "hpGrowth": [
+    3,
+    9
+   ],
+   "mpGrowth": [
+    1,
+    2
+   ],
+   "evolutionItemId": 41310,
+   "evolutionItemKey": "item_victory_fruit",
+   "evolutionNpcId": 46046,
+   "evolutionForm": "黃金龍",
+   "messageIds": [
+    2823,
+    2824,
+    2825,
+    2826,
+    2826
+   ],
+   "defyMessageId": 1074,
+   "userEvolutionRuling": false
+  },
+  "高等牧羊犬": {
+   "baseNpcId": 45687,
+   "sourceName": "高等牧羊犬",
+   "tamingItemId": 0,
+   "tamingItemKey": null,
+   "hpGrowth": [
+    5,
+    8
+   ],
+   "mpGrowth": [
+    1,
+    2
+   ],
+   "evolutionItemId": 41310,
+   "evolutionItemKey": "item_victory_fruit",
+   "evolutionNpcId": 46046,
+   "evolutionForm": "黃金龍",
+   "messageIds": [
+    2819,
+    2820,
+    2821,
+    2822,
+    2822
+   ],
+   "defyMessageId": 1074,
+   "userEvolutionRuling": false
+  },
+  "高等杜賓狗": {
+   "baseNpcId": 45688,
+   "sourceName": "高等杜賓狗",
+   "tamingItemId": 0,
+   "tamingItemKey": null,
+   "hpGrowth": [
+    4,
+    6
+   ],
+   "mpGrowth": [
+    1,
+    2
+   ],
+   "evolutionItemId": 41310,
+   "evolutionItemKey": "item_victory_fruit",
+   "evolutionNpcId": 46046,
+   "evolutionForm": "黃金龍",
+   "messageIds": [
+    2811,
+    2812,
+    2813,
+    2814,
+    2814
+   ],
+   "defyMessageId": 1074,
+   "userEvolutionRuling": false
+  },
+  "高等哈士奇": {
+   "baseNpcId": 45689,
+   "sourceName": "高等哈士奇",
+   "tamingItemId": 0,
+   "tamingItemKey": null,
+   "hpGrowth": [
+    10,
+    15
+   ],
+   "mpGrowth": [
+    1,
+    2
+   ],
+   "evolutionItemId": 41310,
+   "evolutionItemKey": "item_victory_fruit",
+   "evolutionNpcId": 46046,
+   "evolutionForm": "黃金龍",
+   "messageIds": [
+    2815,
+    2816,
+    2817,
+    2818,
+    2818
+   ],
+   "defyMessageId": 1074,
+   "userEvolutionRuling": false
+  },
+  "高等熊": {
+   "baseNpcId": 45690,
+   "sourceName": "高等熊",
+   "tamingItemId": 0,
+   "tamingItemKey": null,
+   "hpGrowth": [
+    8,
+    14
+   ],
+   "mpGrowth": [
+    1,
+    2
+   ],
+   "evolutionItemId": 41310,
+   "evolutionItemKey": "item_victory_fruit",
+   "evolutionNpcId": 46046,
+   "evolutionForm": "黃金龍",
+   "messageIds": [
+    2831,
+    2832,
+    2833,
+    2834,
+    2834
+   ],
+   "defyMessageId": 2742,
+   "userEvolutionRuling": false
+  },
+  "高等柯利": {
+   "baseNpcId": 45691,
+   "sourceName": "高等柯利",
+   "tamingItemId": 0,
+   "tamingItemKey": null,
+   "hpGrowth": [
+    10,
+    14
+   ],
+   "mpGrowth": [
+    3,
+    4
+   ],
+   "evolutionItemId": 41310,
+   "evolutionItemKey": "item_victory_fruit",
+   "evolutionNpcId": 46046,
+   "evolutionForm": "黃金龍",
+   "messageIds": [
+    2827,
+    2828,
+    2829,
+    2830,
+    2830
+   ],
+   "defyMessageId": 1074,
+   "userEvolutionRuling": false
+  },
+  "高等小獵犬": {
+   "baseNpcId": 45692,
+   "sourceName": "高等小獵犬",
+   "tamingItemId": 0,
+   "tamingItemKey": null,
+   "hpGrowth": [
+    4,
+    8
+   ],
+   "mpGrowth": [
+    2,
+    4
+   ],
+   "evolutionItemId": 41310,
+   "evolutionItemKey": "item_victory_fruit",
+   "evolutionNpcId": 46046,
+   "evolutionForm": "黃金龍",
+   "messageIds": [
+    2847,
+    2848,
+    2849,
+    2850,
+    2850
+   ],
+   "defyMessageId": 1074,
+   "userEvolutionRuling": false
+  },
+  "高等聖伯納犬": {
+   "baseNpcId": 45693,
+   "sourceName": "高等聖伯納犬",
+   "tamingItemId": 0,
+   "tamingItemKey": null,
+   "hpGrowth": [
+    6,
+    9
+   ],
+   "mpGrowth": [
+    2,
+    4
+   ],
+   "evolutionItemId": 41310,
+   "evolutionItemKey": "item_victory_fruit",
+   "evolutionNpcId": 46046,
+   "evolutionForm": "黃金龍",
+   "messageIds": [
+    2851,
+    2852,
+    2853,
+    2854,
+    2854
+   ],
+   "defyMessageId": 1074,
+   "userEvolutionRuling": false
+  },
+  "高等狐狸": {
+   "baseNpcId": 45694,
+   "sourceName": "高等狐狸",
+   "tamingItemId": 0,
+   "tamingItemKey": null,
+   "hpGrowth": [
+    3,
+    9
+   ],
+   "mpGrowth": [
+    2,
+    4
+   ],
+   "evolutionItemId": 41310,
+   "evolutionItemKey": "item_victory_fruit",
+   "evolutionNpcId": 46046,
+   "evolutionForm": "黃金龍",
+   "messageIds": [
+    2835,
+    2836,
+    2837,
+    2838,
+    2838
+   ],
+   "defyMessageId": 2737,
+   "userEvolutionRuling": false
+  },
+  "高等暴走兔": {
+   "baseNpcId": 45695,
+   "sourceName": "高等暴走兔",
+   "tamingItemId": 0,
+   "tamingItemKey": null,
+   "hpGrowth": [
+    3,
+    8
+   ],
+   "mpGrowth": [
+    3,
+    5
+   ],
+   "evolutionItemId": 0,
+   "evolutionItemKey": null,
+   "evolutionNpcId": 0,
+   "evolutionForm": null,
+   "messageIds": [
+    2843,
+    2844,
+    2845,
+    2846,
+    2846
+   ],
+   "defyMessageId": 2727,
+   "userEvolutionRuling": false
+  },
+  "高等貓": {
+   "baseNpcId": 45696,
+   "sourceName": "高等貓",
+   "tamingItemId": 0,
+   "tamingItemKey": null,
+   "hpGrowth": [
+    3,
+    6
+   ],
+   "mpGrowth": [
+    3,
+    5
+   ],
+   "evolutionItemId": 0,
+   "evolutionItemKey": null,
+   "evolutionNpcId": 0,
+   "evolutionForm": null,
+   "messageIds": [
+    2839,
+    2840,
+    2841,
+    2842,
+    2842
+   ],
+   "defyMessageId": 2732,
+   "userEvolutionRuling": false
+  },
+  "高等浣熊": {
+   "baseNpcId": 45697,
+   "sourceName": "高等浣熊",
+   "tamingItemId": 0,
+   "tamingItemKey": null,
+   "hpGrowth": [
+    5,
+    9
+   ],
+   "mpGrowth": [
+    3,
+    5
+   ],
+   "evolutionItemId": 0,
+   "evolutionItemKey": null,
+   "evolutionNpcId": 0,
+   "evolutionForm": null,
+   "messageIds": [
+    3583,
+    3584,
+    3585,
+    3586,
+    3586
+   ],
+   "defyMessageId": 3582,
+   "userEvolutionRuling": false
+  },
+  "真．虎男": {
+   "baseNpcId": 45710,
+   "sourceName": "真．虎男",
+   "tamingItemId": 0,
+   "tamingItemKey": null,
+   "hpGrowth": [
+    10,
+    15
+   ],
+   "mpGrowth": [
+    3,
+    5
+   ],
+   "evolutionItemId": 0,
+   "evolutionItemKey": null,
+   "evolutionNpcId": 0,
+   "evolutionForm": null,
+   "messageIds": [
+    4140,
+    4141,
+    4142,
+    4143,
+    4143
+   ],
+   "defyMessageId": 4134,
+   "userEvolutionRuling": false
+  },
+  "高麗幼犬": {
+   "baseNpcId": 45711,
+   "sourceName": "高麗幼犬",
+   "tamingItemId": 40057,
+   "tamingItemKey": "item_eye_meat",
+   "hpGrowth": [
+    3,
+    6
+   ],
+   "mpGrowth": [
+    3,
+    5
+   ],
+   "evolutionItemId": 40070,
+   "evolutionItemKey": "item_evo_fruit",
+   "evolutionNpcId": 45712,
+   "evolutionForm": "高麗犬",
+   "messageIds": [
+    4125,
+    4126,
+    4127,
+    4128,
+    4128
+   ],
+   "defyMessageId": 4124,
+   "userEvolutionRuling": true
+  },
+  "高麗犬": {
+   "baseNpcId": 45712,
+   "sourceName": "高麗犬",
+   "tamingItemId": 0,
+   "tamingItemKey": null,
+   "hpGrowth": [
+    5,
+    8
+   ],
+   "mpGrowth": [
+    3,
+    5
+   ],
+   "evolutionItemId": 0,
+   "evolutionItemKey": null,
+   "evolutionNpcId": 0,
+   "evolutionForm": null,
+   "messageIds": [
+    4130,
+    4131,
+    4132,
+    4133,
+    4133
+   ],
+   "defyMessageId": 4124,
+   "userEvolutionRuling": false
+  },
+  "袋鼠": {
+   "baseNpcId": 46042,
+   "sourceName": "袋鼠",
+   "tamingItemId": 40057,
+   "tamingItemKey": "item_eye_meat",
+   "hpGrowth": [
+    3,
+    6
+   ],
+   "mpGrowth": [
+    3,
+    5
+   ],
+   "evolutionItemId": 40070,
+   "evolutionItemKey": "item_evo_fruit",
+   "evolutionNpcId": 46043,
+   "evolutionForm": "高等袋鼠",
+   "messageIds": [
+    4125,
+    4126,
+    4127,
+    4128,
+    4128
+   ],
+   "defyMessageId": 4124,
+   "userEvolutionRuling": true
+  },
+  "高等袋鼠": {
+   "baseNpcId": 46043,
+   "sourceName": "高等袋鼠",
+   "tamingItemId": 0,
+   "tamingItemKey": null,
+   "hpGrowth": [
+    5,
+    8
+   ],
+   "mpGrowth": [
+    3,
+    5
+   ],
+   "evolutionItemId": 0,
+   "evolutionItemKey": null,
+   "evolutionNpcId": 0,
+   "evolutionForm": null,
+   "messageIds": [
+    4130,
+    4131,
+    4132,
+    4133,
+    4133
+   ],
+   "defyMessageId": 4124,
+   "userEvolutionRuling": false
+  },
+  "黃金龍": {
+   "baseNpcId": 46046,
+   "sourceName": "黃金龍",
+   "tamingItemId": 0,
+   "tamingItemKey": null,
+   "hpGrowth": [
+    8,
+    11
+   ],
+   "mpGrowth": [
+    3,
+    5
+   ],
+   "evolutionItemId": 0,
+   "evolutionItemKey": null,
+   "evolutionNpcId": 0,
+   "evolutionForm": null,
+   "messageIds": [
+    1088,
+    1089,
+    1090,
+    1091,
+    1092
+   ],
+   "defyMessageId": 1074,
+   "userEvolutionRuling": false
+  },
+  "猴子": {
+   "baseNpcId": 90500,
+   "sourceName": "猴子",
+   "tamingItemId": 40062,
+   "tamingItemKey": "l1j_item_40062",
+   "hpGrowth": [
+    3,
+    6
+   ],
+   "mpGrowth": [
+    3,
+    5
+   ],
+   "evolutionItemId": 40070,
+   "evolutionItemKey": "item_evo_fruit",
+   "evolutionNpcId": 91154,
+   "evolutionForm": "超級猴子",
+   "messageIds": [
+    4125,
+    4126,
+    4127,
+    4128,
+    4128
+   ],
+   "defyMessageId": 4124,
+   "userEvolutionRuling": false
+  },
+  "淘氣龍": {
+   "baseNpcId": 91150,
+   "sourceName": "淘氣龍",
+   "tamingItemId": 0,
+   "tamingItemKey": null,
+   "hpGrowth": [
+    3,
+    6
+   ],
+   "mpGrowth": [
+    3,
+    5
+   ],
+   "evolutionItemId": 40070,
+   "evolutionItemKey": "item_evo_fruit",
+   "evolutionNpcId": 91152,
+   "evolutionForm": "高級淘氣龍",
+   "messageIds": [
+    4125,
+    4126,
+    4127,
+    4128,
+    4128
+   ],
+   "defyMessageId": 4124,
+   "userEvolutionRuling": false
+  },
+  "頑皮龍": {
+   "baseNpcId": 91151,
+   "sourceName": "頑皮龍",
+   "tamingItemId": 0,
+   "tamingItemKey": null,
+   "hpGrowth": [
+    5,
+    8
+   ],
+   "mpGrowth": [
+    3,
+    5
+   ],
+   "evolutionItemId": 40070,
+   "evolutionItemKey": "item_evo_fruit",
+   "evolutionNpcId": 91153,
+   "evolutionForm": "高級頑皮龍",
+   "messageIds": [
+    4130,
+    4131,
+    4132,
+    4133,
+    4133
+   ],
+   "defyMessageId": 4124,
+   "userEvolutionRuling": false
+  },
+  "高級淘氣龍": {
+   "baseNpcId": 91152,
+   "sourceName": "高級淘氣龍",
+   "tamingItemId": 0,
+   "tamingItemKey": null,
+   "hpGrowth": [
+    3,
+    6
+   ],
+   "mpGrowth": [
+    3,
+    5
+   ],
+   "evolutionItemId": 0,
+   "evolutionItemKey": null,
+   "evolutionNpcId": 0,
+   "evolutionForm": null,
+   "messageIds": [
+    4125,
+    4126,
+    4127,
+    4128,
+    4128
+   ],
+   "defyMessageId": 4124,
+   "userEvolutionRuling": false
+  },
+  "高級頑皮龍": {
+   "baseNpcId": 91153,
+   "sourceName": "高級頑皮龍",
+   "tamingItemId": 0,
+   "tamingItemKey": null,
+   "hpGrowth": [
+    5,
+    8
+   ],
+   "mpGrowth": [
+    3,
+    5
+   ],
+   "evolutionItemId": 0,
+   "evolutionItemKey": null,
+   "evolutionNpcId": 0,
+   "evolutionForm": null,
+   "messageIds": [
+    4130,
+    4131,
+    4132,
+    4133,
+    4133
+   ],
+   "defyMessageId": 4124,
+   "userEvolutionRuling": false
+  },
+  "超級猴子": {
+   "baseNpcId": 91154,
+   "sourceName": "超級猴子",
+   "tamingItemId": 0,
+   "tamingItemKey": null,
+   "hpGrowth": [
+    5,
+    8
+   ],
+   "mpGrowth": [
+    3,
+    5
+   ],
+   "evolutionItemId": 0,
+   "evolutionItemKey": null,
+   "evolutionNpcId": 0,
+   "evolutionForm": null,
+   "messageIds": [
+    4130,
+    4131,
+    4132,
+    4133,
+    4133
+   ],
+   "defyMessageId": 4124,
+   "userEvolutionRuling": false
+  }
+ }
+}

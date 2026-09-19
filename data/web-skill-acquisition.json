@@ -1,0 +1,159 @@
+{
+ "__doc": [
+  "使用者 2026-08-18 裁決：仍可正常運作、但目前沒有學習管道的職業技能，依 Web 版既有怪物掉落恢復技能書。",
+  "技能書定義逐欄取自 C:/Users/User/Downloads/Fable 5/js/00-data.js；掉落怪名與機率取自 js/01-drops-config.js。",
+  "Web 怪名只用於離線稽核；runtime 一律使用已核對的 canonical L1J npcid，不做中文名稱 fallback。",
+  "只接 Godot 目前仍存在的 main 怪物。赤鬼、青鬼、牛鬼、白面金毛九尾狐・殺生石、巨大骷髏沒有 canonical main 怪物，因此不復活。",
+  "迅猛雙斧、咆哮在 Web 走戰士任務；勇猛意志、王者加護走製作。這 4 支沒有 Web 怪物掉落，故本批不發明掉落。寒冰尖刺與降低負重仍非現行 Web 掉落，但使用者於 2026-08-19 明確恢復其歷史取得鏈，另由 user-restored-skill-acquisition.json 管理。",
+  "來源 SHA-256：00-data.js 57687EE5CFBFC70EB26E2C169EC82AB142BC4FD6E13D74C3EF0F8C3C8794B46A；01-drops-config.js 20C8A87FE76288EB4CBD866C44F70745EE215CA0A827A365527045E3DCF45001。"
+ ],
+ "books": {
+  "bk_warrior_crush": {
+   "type": "skillbk",
+   "n": "戰士的印記(粉碎)",
+   "p": 7200,
+   "sk": "sk_warrior_crush",
+   "gachaWeight": 10,
+   "d": "記載著「粉碎」術式的古老魔法書，研讀後可將咒文銘刻於記憶。"
+  },
+  "bk_warrior_armorbody": {
+   "type": "skillbk",
+   "n": "戰士的印記(護甲身軀)",
+   "p": 21600,
+   "sk": "sk_warrior_armorbody",
+   "gachaWeight": 1,
+   "d": "記載著「護甲身軀」術式的古老魔法書，研讀後可將咒文銘刻於記憶。"
+  },
+  "bk_warrior_berserk": {
+   "type": "skillbk",
+   "n": "戰士的印記(狂暴)",
+   "p": 43200,
+   "sk": "sk_warrior_berserk",
+   "gachaWeight": 1,
+   "d": "記載著「狂暴」術式的古老魔法書，研讀後可將咒文銘刻於記憶。"
+  },
+  "bk_warrior_titan_rock": {
+   "type": "skillbk",
+   "n": "戰士的印記(泰坦：岩石)",
+   "p": 43200,
+   "sk": "sk_warrior_titan_rock",
+   "gachaWeight": 1,
+   "d": "記載著「泰坦：岩石」術式的古老魔法書，研讀後可將咒文銘刻於記憶。"
+  },
+  "bk_warrior_titan_magic": {
+   "type": "skillbk",
+   "n": "戰士的印記(泰坦：魔法)",
+   "p": 43200,
+   "sk": "sk_warrior_titan_magic",
+   "gachaWeight": 1,
+   "d": "記載著「泰坦：魔法」術式的古老魔法書，研讀後可將咒文銘刻於記憶。"
+  },
+  "bk_warrior_titan_bullet": {
+   "type": "skillbk",
+   "n": "戰士的印記(泰坦：子彈)",
+   "p": 43200,
+   "sk": "sk_warrior_titan_bullet",
+   "gachaWeight": 1,
+   "d": "記載著「泰坦：子彈」術式的古老魔法書，研讀後可將咒文銘刻於記憶。"
+  },
+  "bk_warrior_throwaxe": {
+   "type": "skillbk",
+   "n": "戰士的印記(戰斧投擲)",
+   "p": 2400,
+   "sk": "sk_warrior_throwaxe",
+   "gachaWeight": 50,
+   "d": "記載著「戰斧投擲」術式的古老魔法書，研讀後可將咒文銘刻於記憶。"
+  },
+  "bk_warrior_endurance": {
+   "type": "skillbk",
+   "n": "戰士的印記(體能強化)",
+   "p": 43200,
+   "sk": "sk_warrior_endurance",
+   "gachaWeight": 1,
+   "d": "記載著「體能強化」術式的古老魔法書，研讀後可將咒文銘刻於記憶。"
+  },
+  "bk_warrior_outlaw": {
+   "type": "skillbk",
+   "n": "戰士的印記(亡命之徒)",
+   "p": 43200,
+   "sk": "sk_warrior_outlaw",
+   "gachaWeight": 1,
+   "d": "記載著「亡命之徒」術式的古老魔法書，研讀後可將咒文銘刻於記憶。"
+  },
+  "bk_royal_burnweapon": {
+   "type": "skillbk",
+   "n": "魔法書(灼熱武器)",
+   "p": 12400,
+   "sk": "sk_royal_burnweapon",
+   "gachaWeight": 0,
+   "d": "可學等級 40。"
+  },
+  "bk_elf_dancefire": {
+   "type": "skillbk",
+   "n": "精靈水晶(舞躍之火)",
+   "p": 30000,
+   "sk": "sk_elf_dancefire",
+   "gachaWeight": 10
+  },
+  "bk_dark_armorbreak": {
+   "type": "skillbk",
+   "n": "黑暗精靈水晶(破壞盔甲)",
+   "p": 12500,
+   "sk": "sk_dark_armorbreak",
+   "gachaWeight": 1
+  }
+ },
+ "itemWeights": {
+  "戰士的印記(粉碎)": 7,
+  "戰士的印記(護甲身軀)": 7,
+  "戰士的印記(狂暴)": 7,
+  "戰士的印記(泰坦：岩石)": 7,
+  "戰士的印記(泰坦：魔法)": 7,
+  "戰士的印記(泰坦：子彈)": 7,
+  "戰士的印記(戰斧投擲)": 7,
+  "戰士的印記(體能強化)": 7,
+  "戰士的印記(亡命之徒)": 7,
+  "魔法書(灼熱武器)": 7,
+  "精靈水晶(舞躍之火)": 7,
+  "黑暗精靈水晶(破壞盔甲)": 7
+ },
+ "drops": [
+  { "item": "bk_warrior_crush", "chancePercent": 0.01, "npcids": [45259, 45890], "webMonsters": ["毒蠍", "歐姆"] },
+  { "item": "bk_warrior_crush", "chancePercent": 0.05, "npcids": [45373, 45892], "webMonsters": ["阿魯巴", "歐姆裝甲兵"] },
+  { "item": "bk_warrior_crush", "chancePercent": 0.1, "npcids": [45530], "webMonsters": ["墳墓守護者"] },
+  { "item": "bk_warrior_crush", "chancePercent": 0.3, "npcids": [45537], "webMonsters": ["墳墓守護者騎士"] },
+  { "item": "bk_warrior_crush", "chancePercent": 0.5, "npcids": [45685], "webMonsters": ["墮落"] },
+
+  { "item": "bk_warrior_armorbody", "chancePercent": 0.001, "npcids": [45182], "webMonsters": ["冰石高崙"] },
+  { "item": "bk_warrior_armorbody", "chancePercent": 0.01, "npcids": [45372, 45365], "webMonsters": ["鋼鐵高崙", "熔岩高崙"] },
+  { "item": "bk_warrior_armorbody", "chancePercent": 0.05, "npcids": [45479], "webMonsters": ["恐怖的鋼鐵高崙"] },
+  { "item": "bk_warrior_armorbody", "chancePercent": 0.0001, "npcids": [45126], "webMonsters": ["石頭高崙"] },
+
+  { "item": "bk_warrior_berserk", "chancePercent": 0.001, "npcids": [45481], "webMonsters": ["小惡魔"] },
+  { "item": "bk_warrior_berserk", "chancePercent": 0.01, "npcids": [45402, 45455], "webMonsters": ["殘暴的骷髏斧兵", "殘暴的史巴托"] },
+  { "item": "bk_warrior_berserk", "chancePercent": 0.5, "npcids": [45652], "webMonsters": ["地獄的黑豹"] },
+
+  { "item": "bk_warrior_titan_rock", "chancePercent": 0.5, "npcids": [45651, 45844, 45610], "webMonsters": ["魔獸軍王巴蘭卡", "古代巨人"] },
+  { "item": "bk_warrior_titan_rock", "chancePercent": 0.001, "npcids": [45295], "webMonsters": ["巨人戰士"] },
+  { "item": "bk_warrior_titan_magic", "chancePercent": 0.001, "npcids": [45899], "webMonsters": ["黑暗妖精殘兵(法師)"] },
+  { "item": "bk_warrior_titan_magic", "chancePercent": 0.5, "npcids": [45863], "webMonsters": ["法令軍王蕾雅"] },
+  { "item": "bk_warrior_titan_bullet", "chancePercent": 0.5, "npcids": [45648], "webMonsters": ["暗殺軍王史雷佛"] },
+  { "item": "bk_warrior_titan_bullet", "chancePercent": 0.001, "npcids": [45898], "webMonsters": ["黑暗妖精殘兵(十字弓)"] },
+
+  { "item": "bk_warrior_throwaxe", "chancePercent": 0.001, "npcids": [45122], "webMonsters": ["骷髏弓箭手"] },
+  { "item": "bk_warrior_throwaxe", "chancePercent": 0.01, "npcids": [45190, 45165], "webMonsters": ["巨大兵蟻", "黑騎士"] },
+  { "item": "bk_warrior_throwaxe", "chancePercent": 0.1, "npcids": [45286], "webMonsters": ["骷髏鬥士"] },
+  { "item": "bk_warrior_throwaxe", "chancePercent": 0.3, "npcids": [45359], "webMonsters": ["阿西塔基奧"] },
+
+  { "item": "bk_warrior_endurance", "chancePercent": 0.01, "npcids": [45420, 45337], "webMonsters": ["獨眼巨人", "巨人"] },
+  { "item": "bk_warrior_endurance", "chancePercent": 0.05, "npcids": [45318], "webMonsters": ["巨人長老"] },
+  { "item": "bk_warrior_endurance", "chancePercent": 0.5, "npcids": [45610], "webMonsters": ["古代巨人"] },
+  { "item": "bk_warrior_outlaw", "chancePercent": 1.0, "npcids": [45590], "webMonsters": ["邪惡的鐮刀死神"] },
+  { "item": "bk_warrior_outlaw", "chancePercent": 0.01, "npcids": [45386], "webMonsters": ["死亡之劍"] },
+
+  { "item": "bk_royal_burnweapon", "chancePercent": 15.0, "npcids": [81163], "webMonsters": ["吉爾塔斯"] },
+  { "item": "bk_elf_dancefire", "chancePercent": 1.0, "npcids": [45617, 45488, 45573, 45515], "webMonsters": ["不死鳥", "卡士柏", "巴風特", "恐怖的伊弗利特"] },
+  { "item": "bk_dark_armorbreak", "chancePercent": 1.0, "npcids": [45681, 45601, 45573], "webMonsters": ["林德拜爾", "死亡騎士", "巴風特"] },
+  { "item": "bk_dark_armorbreak", "chancePercent": 5.0, "npcids": [45682], "webMonsters": ["安塔瑞斯"] }
+ ]
+}

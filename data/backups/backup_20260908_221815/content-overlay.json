@@ -1,0 +1,3679 @@
+{
+  "__doc": [
+    "移植版限定內容的資料覆蓋層——由 src/Data/DataOverlay.cs 於 GameData 載表時合併。",
+    "⚠️ 為什麼在這裡而不是 data/tables/：那裡是 tools/export-data.js 的產物，重匯會整份覆蓋。",
+    "   2026-07-30 就踩過：codex 手動加進 DB.json 的磨刀石被一次重匯洗掉（git 也看不到，",
+    "   因為那筆手改沒進 commit）。放這裡＝重匯不會碰（export-data 只清 data/tables/），",
+    "   verify-data.js 的保真比對也不會判 drift。",
+    "⚠️ 與 src/App/ContentAdditions.cs 的分工：那層在 App 啟動時注入、Sim.Tests 看不到，",
+    "   所以只適合純呈現用的新內容；**核心規則會碰到的內容**（此檔）要走這裡，",
+    "   核心測試才驗得到（磨刀石的 eff 是 ConsumableRules 在讀）。",
+    "合併規則（DataOverlay·只補不蓋）：物件遞迴合併／陣列附加缺少的值／已存在的鍵一律不動。",
+    "既有資料的明確數值修改放在 DB_OVERRIDES；只能覆寫已存在路徑，拼錯 key 會直接報錯。",
+    "鍵名以 __ 開頭者略過。",
+    "2026-08-06 官方 8.8C item-common.bin 的具名能力回填：DB.items 補 69 件（欄位原本不存在）、DB_OVERRIDES.items 覆寫 0 件（原本是 0）。來源與欄位語意見 tools/export-official-item-table.py。⚠️ 只補『專案空著』的，兩邊都有值的 30 筆刻意不動。",
+    "2026-08-06 官方 8.8C 能力值對齊第二批（用戶拍板「30 筆全改官方」）：DB_OVERRIDES.items 覆寫 25 件 / 30 個欄位，兩邊都有值但與官方不同者一律採官方。⚠️ 含 weightCap 三倍化（多羅皮帶 160→500、歐吉皮帶 320→1000、泰坦皮帶 500→1500、巨型骷髏之指環 150→1080），負重改制的 82%／50% 門檻要重新檢視。",
+    "2026-08-06 官方 MAP/ItemDesc-c.tbl 說明回填：DB.items 補 124 件的 `d`（**只補專案原本沒有說明的**·已有說明的一律不動）。另有 6 件因為官方說明描述了港版沒有的能力而擱置——港版規則是『裝備說明只寫現行能力』，不能寫假承諾。來源與檢查規則見 tools/export-official-item-table.py 檔頭。",
+    "2026-08-06 用戶調整古老系列武器：古老的劍 dmgS/dmgL 35/20→25/10、古老的巨劍 27/45→17/35（`DB_OVERRIDES.items`）。⚠️ 這兩把是 safe:0＋noEnhance 的低階可得裝備，原值高過武官雙手劍(19/23)。",
+    "2026-08-07 技能數值對齊官方（用戶「技能套用 L1J-TW」）：DB_OVERRIDES.skills 覆寫 74 支、DB.skills 補欄位 14 支。來源＝L1J-TW 3.8 skills.sql ＋ 3.81c 客戶端 spelldesc-c／SpellExDesc-c，**兩份官方來源一致才套用**，不一致的一律不動只寫進報告（分歧集中在黑暗妖精／王族／龍騎士／幻術師，那正是港版有自己設計的區段）。產生器與完整取捨規則見 tools/l1j-skill-import.py 檔頭，逐筆差異見 tools/l1j-source/skill-audit.json。"
+  ],
+  "DB": {
+    "mobs": {},
+    "items": {
+      "__doc_status_resist_points_2026_08_04": [
+        "狀態耐性數據化（用戶 2026-08-04）：耐性 +1 點 ＝ 3% 抵抗機率，免疫仍是絕對免疫。",
+        "這一區是「匯出資料裡沒有的欄位」——DB_OVERRIDES 只能覆寫既有路徑，新欄位必須走這裡。",
+        "已存在的欄位改值／改說明在 DB_OVERRIDES.items（同一批·兩邊要一起看）。",
+        "⚠️ stoneResist 是 2026-08-04 新增的種類：石化在此之前只有 immStone 旗標、沒有耐性欄，",
+        "   讀取端在 StatusRules.ResistanceField（\"stone\" => \"stoneResist\"）。"
+      ],
+      "__doc_desire_material_icons_2026_08_05": [
+        "2026-08-04 這十件用的是佔位圖（img 指向既有同語意素材）。用戶 2026-08-05 補上",
+        "《新素材》之後，九件已改用自己的正式圖：PNG 放 assets/icons/items/<顯示名>.png、",
+        "img 欄位整個刪掉（沒有 img 就走顯示名慣例，見 ItemIcons.ResolvePath）。",
+        "⚠️ 血石碎片是唯一還沒有正式素材的一件——《新素材》裡沒有 血石碎片.png，",
+        "   所以它的 img 仍指著 靈魂石碎片.png。補上素材後照樣「放檔＋刪 img」。"
+      ],
+      "__doc_l1j_material": [
+        "立方（幻術師）與覺醒（龍騎士）用的兩樣材料——港版原本沒有這兩件，所以那 7 支技能",
+        "的材料欄一直指著不存在的東西（build_skill_fields.py 的 MATERIAL_ITEM_KEYS 標 None）。",
+        "⚠️ 數字全部來自 L1J-TW 3.80c，沒有一個是編的：",
+        "   etcitem 49156 屬性石 material/gemstone weight 1000；49157 刻印的骨頭碎片 material/bone weight 1000。",
+        "   shop 49156 → NPC 80141 史菲爾 售價 250；49157 → NPC 80137 森帕爾 售價 500。",
+        "   droplist 兩件都是 0 列 ⇒ 原版就是**只能買**，不是我沒查到掉落來源。",
+        "⚠️ 重量 1：港版的重量是手訂的（L1J 4500→5、5000→4、8000→7·比值 900~2000 不固定），",
+        "   這裡取 L1J 1000 / 1000 ＝ 1，也是材料裡最輕的一階，與一顆小石頭/骨片相稱。",
+        "⚠️ 圖示走顯示名慣例（assets/icons/items/屬性石.png），所以沒有 img 欄。"
+      ],
+      "__doc_desire_placeholder_icons": [
+        "⚠️ 慾望洞穴這 10 件材料的 `img` 是**佔位圖示**（用戶 2026-08-04 提供的《新素材》沒有附）：",
+        "血石碎片→靈魂石碎片／守護者之牙→安加斯之牙／四屬性守護者的尾巴→安加斯的尾巴／",
+        "四屬性守護者的皮→詛咒的皮革(地/水/火/風)。",
+        "⚠️ 用戶補上正式素材後：把 PNG 放到 assets/icons/items/<顯示名>.png 並**移除 `img` 欄位**",
+        "（`ItemIcons.ResolvePath` 沒有 `img` 就走顯示名慣例）。守門員 EveryItemIconExists 會逼人補。"
+      ],
+      "__doc_flameshadow_2026_08_05": [
+        "火焰之影套裝（用戶《暗影神殿.md》2026-08-05）：真火焰之影掉 6 種素材，",
+        "炎魔鐵匠（npc_flame_smith）拿去打成 8 件裝備。",
+        "⚠️ 8 件全 AC 0、全職業、重量 1、潘朵拉權重 0、價 50000——規格書逐項給的，別自己補數值。",
+        "⚠️ 套裝加成寫在 SetRules（set: \"flameshadow\"·8 件齊）：六維各 +1 走 ApplyEarlyAttributes",
+        "   （要吃進 HP／近傷等衍生值），AC−66／HP・MP+100／HP・MP 自然恢復 +15 走 ApplyDerivedBonuses。",
+        "⚠️ 圖示走顯示名慣例（assets/icons/{armors|accessories|items}/<顯示名>.png·不寫 img 欄位）。"
+      ]
+    },
+    "skills": {
+      "sk_illu_loaddown": {
+        "n": "降低負重",
+        "type": "buff",
+        "tier": 4,
+        "reqI": 40,
+        "mp": 40,
+        "dur": 1800,
+        "label": "增益",
+        "msg": "身上的負擔頓時減輕了。",
+        "desc": "幻術師四階幻術。以幻覺欺瞞軀體對重量的感知，1800 秒內負重容量增加 240。只對自己生效。"
+      },
+      "__doc_cleanse_2026_08_05": "淨化技三支（用戶 2026-08-05 規格）：`cleanse` 陣列＝這支技能能解的狀態 kind，也是 `CleanseRules` 認得淨化技的唯一依據（C# 不寫死技能 id）。半徑統一 15 格、我方單體、自己優先。⚠️ 上游把這三支寫成 `type:\"heal\"` 卻沒有任何治療欄位，所以在 `TryCastSkillCore` 必須攔在 `CombatSkill.TryRead` 之前，否則會走治療路徑補 0 血。⚠️ 「自己麻痺/冰凍/石化/睡眠無法施放」不需要另外寫閘——`Combatant.CanCast` 的硬控判定本來就擋住了（而且連暈眩也擋），用戶列的限制是它的子集。",
+      "sk_antidote": {
+        "desc": "解除我方一名單位的中毒（main officialId 9＝SKILL_CURE_POISON·只做 curePoison）。"
+      },
+      "sk_holy_light": {
+        "desc": "解除我方一名單位的中毒與麻痺（main officialId 37＝SKILL_REMOVE_CURSE·curePoison 後視麻痺狀態再 cureParalaysis）。"
+      },
+      "sk_cancel": {
+        "desc": "解除**敵人**身上的增益（main officialId 44＝SKILL_CANCEL_MAGIC·dispel，不是淨化技；實作在 CombatEngine.L1jDedicatedSkills 的 case 44）。"
+      },
+      "sk_load_up": {
+        "hpCost": 50
+      },
+      "sk_charm": {
+        "hpCost": 0,
+        "resourceModel": "charm_cards",
+        "reqK": 1,
+        "reqD": 1,
+        "reqDk": 1,
+        "reqW": 1,
+        "reqI": 1,
+        "reqRoy": 1,
+        "desc": "手動點選一隻可捕捉怪物。不消耗 HP／MP；每次有效施放依目標分類消耗未封印卡×1：一般怪物使用普卡、強力怪物使用銀卡、頭目怪物使用金卡。"
+      },
+      "sk_mana_drain": {
+        "mp": 1
+      },
+      "sk_zombie": {
+        "hpCost": 80
+      },
+      "sk_regen": {
+        "hpCost": 30
+      },
+      "sk_summon": {
+        "hpCost": 30
+      },
+      "sk_blizzard": {
+        "hpCost": 10
+      },
+      "sk_reduction_armor": {
+        "hpCost": 50
+      },
+      "sk_counter_barrier": {
+        "hpCost": 100
+      },
+      "sk_elf_worldtree": {
+        "mp": 10
+      },
+      "sk_dark_poison": {
+        "hpCost": 1
+      },
+      "sk_dark_refine": {
+        "mp": 5
+      },
+      "sk_dark_crit": {
+        "mp": 1,
+        "hpCost": 1
+      },
+      "sk_illu_mindbreak": {
+        "mp": 20,
+        "hpCost": 15
+      }
+    },
+    "towns": {}
+  },
+  "DB_REMOVALS": {
+    "__doc": "移植版明確退役的舊定義（現僅 mobs 分區）。items 分區已於 Phase II-3 實體化——見 data/l1j-item-retirements.json 與 retire_port_items.py。"
+  },
+  "TABLE_REMOVALS": {
+    "__doc": "移除匯出資料中的舊索引項；由 DataOverlay 驗證目標存在，重匯 data/tables 後仍會生效。",
+    "MISC_CAT_ITEMS": []
+  },
+  "DB_OVERRIDES": {
+    "items": {
+      "__doc_shadow_temple_key": "暗影神殿的持有鑰匙閘與性向閘已於 2026-08-04 由用戶指定移除（見 MapEntryRequirementRetirement）——說明只寫現行能力，不再宣稱是進場條件。",
+      "wpn_blackflame_sword": {
+        "d": "以炎魔之力鍛成的漆黑長劍，劍刃燃著看不見的黑色火焰。"
+      },
+      "wpn_chaos_thorn": {
+        "d": "自混沌中誕生的匕首，刃身扭曲難辨、所傷必裂血不止。"
+      },
+      "wpn_crystal_dagger": {
+        "d": "以整塊水晶細細打磨而成的鋒利匕首，刃緣割裂血肉。"
+      },
+      "wpn_cursed_emperor_blade": {
+        "d": "冥皇的詛咒滲入劍身的漆黑執行劍，握柄傳來刺骨的死寂。小型傷害19、大型傷害22、命中+4、HP自然恢復量-30，安定值6。"
+      },
+      "wpn_demon_axe": {
+        "d": "惡魔揮舞過的猙獰巨斧，每一擊都帶著地獄的沉重。"
+      },
+      "wpn_demon_sword": {
+        "d": "惡魔親手淬煉的單手劍，揮舞間迅疾如魔影掠過。加速（與自我加速藥水/加速術無法重疊）。"
+      },
+      "wpn_giltas_sword": {
+        "d": "吉爾塔斯魔力凝成的雙手魔劍，劍身纏繞著異界的沙塵與血氣。貫穿、力量+2、體質+1、魅力+2；擊殺敵人後，依邪惡值提高額外傷害，滿邪惡時額外傷害+10，持續10秒。"
+      },
+      "wpn_giltas_wand": {
+        "d": "吉爾塔斯魔力凝成的雙手魔杖，杖端迴盪著異界的低語。貫穿、智力+2、精神+2、MP自然恢復量+15；擊殺敵人後，依邪惡值提高額外魔法點數，滿邪惡時額外魔法點數+20，持續10秒。"
+      },
+      "wpn_greatsword": {
+        "d": "沉重而厚實的雙手巨劍，一揮便能將成排敵人一同斬開。"
+      },
+      "wpn_mithril_dagger": {
+        "d": "以稀有米索莉鍛成的鋒銳匕首，寒光所及邪物退避。"
+      },
+      "__doc_equip_restore_2026_08_10": [
+        "⚠️ 用戶 2026-08-10「裝備數值一律還原 L1J 原生版」：本區原有的 17 筆手調數值欄",
+        "（amr_old_* 的 ac、wpn_old_* 的骰面、rng_* 的屬抗、武官護鎧 mhp、銀翅膀 mmp/mpR、",
+        "古代巨人戒指 str、提卡爾杰弗雷庫之眼 mmp、黑法師／喚獸師長袍與保護者手套…）已刪除——",
+        "那些物品主樹 weapon.sql／armor.sql 都有同一件，數值改由 data/l1j-equip-stats.json",
+        "（DataOverlay.ApplyL1jEquipStats·整組取代）供應，雙寫入者只留一個。",
+        "描述欄 `d` 不屬於數值，保留在這裡。"
+      ],
+      "wpn_old_greatsword": {
+        "d": "古老戰場上遺落的雙手巨劍，沉甸甸的劍身仍能一掃千軍。無法強化。"
+      },
+      "wpn_old_sword": {
+        "d": "塵封已久的古代單手劍，劍身雖舊，鋒芒卻不減當年。無法強化。"
+      },
+      "wpn_ori_dagger": {
+        "d": "以傳說金屬奧里哈魯根鍛成的匕首，刃身流轉著聖潔的微光。"
+      },
+      "wpn_redflame_sword": {
+        "d": "灌注炎魔之力的烈焰之劍，揮砍時帶起灼人的赤光。"
+      },
+      "wpn_taurus_axe": {
+        "d": "牛人族戰士慣用的雙手鈍器，蠻力一砸足以震碎骨骼。"
+      },
+      "wpn_thebes_2hsword": {
+        "d": "沉睡於歐西里斯祭壇的巨劍，承載著冥府之主的威壓。"
+      },
+      "wpn_thebes_wand": {
+        "d": "底比斯祭司執掌的魔杖，引動黃沙與亡魂之力。"
+      },
+      "wpn_vengeance": {
+        "d": "凝結著不散怨念的雙手劍，劍鋒所向皆為宿仇而斬。"
+      },
+      "__doc_procOnHit": [
+        "⚠️ 用戶 2026-08-03：所有武器的機率觸發一律改成「一般攻擊命中時」才判定。",
+        "核心閘門在 CombatEngine.TryApplyRelicAttackProcs（守門員 WeaponAttackProcsRequireANormalAttackHit）；",
+        "這裡只是把說明文字跟行為對齊——原本寫「攻擊時…機率觸發」的五把武器。",
+        "relic_elder_thunder 的「未命中時不會觸發」已成贅語（現在每把武器都這樣）故刪去。",
+        "⚠️ 用戶 2026-08-03 另外指示：說明不可以寫沒實作的能力——疾風拳刃的『風刃』",
+        "（windbladeProc）在 C# 完全沒有讀取端，整句已刪。思克巴熱情魔杖（procFireSkillRate）",
+        "與毒鵺的黑尾（procPoisonPct）同樣沒實作，但它們的說明本來就只有風味敘述、沒寫能力，故無需改。"
+      ],
+      "item_pride_pass_11": {
+        "n": "傲慢之塔傳送符(11F)",
+        "noUse": false,
+        "prideTier": 11,
+        "d": "使用後立即傳送至傲慢之塔11F，不會消耗。"
+      },
+      "item_pride_sealed_11": {
+        "n": "封印的傲慢之塔傳送符(11F)",
+        "prideTier": 11,
+        "d": "使用後解除封印，獲得傲慢之塔傳送符(11F)。"
+      },
+      "item_pride_pass_21": {
+        "n": "傲慢之塔傳送符(21F)",
+        "noUse": false,
+        "prideTier": 21,
+        "d": "使用後立即傳送至傲慢之塔21F，不會消耗。"
+      },
+      "item_pride_sealed_21": {
+        "n": "封印的傲慢之塔傳送符(21F)",
+        "prideTier": 21,
+        "d": "使用後解除封印，獲得傲慢之塔傳送符(21F)。"
+      },
+      "item_pride_pass_31": {
+        "n": "傲慢之塔傳送符(31F)",
+        "noUse": false,
+        "prideTier": 31,
+        "d": "使用後立即傳送至傲慢之塔31F，不會消耗。"
+      },
+      "item_pride_sealed_31": {
+        "n": "封印的傲慢之塔傳送符(31F)",
+        "prideTier": 31,
+        "d": "使用後解除封印，獲得傲慢之塔傳送符(31F)。"
+      },
+      "item_pride_pass_41": {
+        "n": "傲慢之塔傳送符(41F)",
+        "noUse": false,
+        "prideTier": 41,
+        "d": "使用後立即傳送至傲慢之塔41F，不會消耗。"
+      },
+      "item_pride_sealed_41": {
+        "n": "封印的傲慢之塔傳送符(41F)",
+        "prideTier": 41,
+        "d": "使用後解除封印，獲得傲慢之塔傳送符(41F)。"
+      },
+      "item_pride_pass_51": {
+        "n": "傲慢之塔傳送符(51F)",
+        "noUse": false,
+        "prideTier": 51,
+        "d": "使用後立即傳送至傲慢之塔51F，不會消耗。"
+      },
+      "item_pride_sealed_51": {
+        "n": "封印的傲慢之塔傳送符(51F)",
+        "prideTier": 51,
+        "d": "使用後解除封印，獲得傲慢之塔傳送符(51F)。"
+      },
+      "item_pride_pass_61": {
+        "n": "傲慢之塔傳送符(61F)",
+        "noUse": false,
+        "prideTier": 61,
+        "d": "使用後立即傳送至傲慢之塔61F，不會消耗。"
+      },
+      "item_pride_sealed_61": {
+        "n": "封印的傲慢之塔傳送符(61F)",
+        "prideTier": 61,
+        "d": "使用後解除封印，獲得傲慢之塔傳送符(61F)。"
+      },
+      "item_pride_pass_71": {
+        "n": "傲慢之塔傳送符(71F)",
+        "noUse": false,
+        "prideTier": 71,
+        "d": "使用後立即傳送至傲慢之塔71F，不會消耗。"
+      },
+      "item_pride_sealed_71": {
+        "n": "封印的傲慢之塔傳送符(71F)",
+        "prideTier": 71,
+        "d": "使用後解除封印，獲得傲慢之塔傳送符(71F)。"
+      },
+      "item_pride_pass_81": {
+        "n": "傲慢之塔傳送符(81F)",
+        "noUse": false,
+        "prideTier": 81,
+        "d": "使用後立即傳送至傲慢之塔81F，不會消耗。"
+      },
+      "item_pride_sealed_81": {
+        "n": "封印的傲慢之塔傳送符(81F)",
+        "prideTier": 81,
+        "d": "使用後解除封印，獲得傲慢之塔傳送符(81F)。"
+      },
+      "item_pride_pass_91": {
+        "n": "傲慢之塔傳送符(91F)",
+        "noUse": false,
+        "prideTier": 91,
+        "d": "使用後立即傳送至傲慢之塔91F，不會消耗。"
+      },
+      "item_pride_sealed_91": {
+        "n": "封印的傲慢之塔傳送符(91F)",
+        "prideTier": 91,
+        "d": "使用後解除封印，獲得傲慢之塔傳送符(91F)。"
+      },
+      "wpn_qigu_obsidian": {
+        "d": "幻術師豢養的奇古獸，化作以心念支配的兵器。幻術師專屬·奇古獸。一般攻擊化為必中的魔法傷害（受魔抗減免）。"
+      },
+      "wpn_qigu_sapphire": {
+        "d": "通體湛藍如海的奇古獸，魔力在其中緩緩流轉不息。幻術師專屬·奇古獸。"
+      },
+      "wpn_illu_wand": {
+        "n": "幻術師魔杖",
+        "d": "幻術師入門的法杖，杖頭水晶迴盪著淡淡共鳴之音。幻術師專屬魔杖。"
+      },
+      "shd_illu_book": {
+        "n": "幻術師法書",
+        "d": "記載幻術奧義的副手法書，翻動間護住持書者周身。幻術師專屬副手法書。"
+      },
+      "clk_illu": {
+        "n": "幻術師斗篷",
+        "d": "織入幻術絲線的斗篷，披上便覺魔力綿綿不絕。幻術師專屬斗篷。"
+      },
+      "__doc_status_resist_l1j_2026_08_10": [
+        "⚠️ 六種異常耐性改回 L1J 主樹語意（用戶 2026-08-10 裁決·codex C-1）：",
+        "  · 資料源＝armor.sql regist_stun/stone/sleep/freeze/sustain/blind 原始整數，",
+        "    由目錄以 registStun 等六欄實體發出（build_l1j_item_catalog.py）。",
+        "  · 語意＝對應技能的成功率**直接扣這麼多個百分點**（L1Magic.java:459-482），",
+        "    暈眩是唯一 ×2（regist_stun 5 ＝ 成功率 −10）。沒有點數×3%、沒有第二顆抵抗擲骰。",
+        "  · 2026-08-04 的點數制（*Resist 點數＋*Hit 命中點數＋imm* 物品免疫旗標）整套退役：",
+        "    孤兒欄（acc_laia_ring stunResist、immPoison/immStone/immParalyze/resNone）隨批刪除。",
+        "  · 這裡只剩 `d` 文案策展；耐性數值一律由目錄發出，不准在 overlay 蓋。",
+        "⚠️ doll_雪怪 的 freezeResist 是娃娃建模（PORT_MODELING），留待娃娃主樹對帳。"
+      ],
+      "acc_laia_ring": {
+        "d": "冰之女王蕾雅指間的戒指，冷冽之氣繞指不散。"
+      },
+      "acc_thebes_anubis": {
+        "d": "鐫刻胡狼神阿努比斯印記的戒指，冥界審判者的紋樣沉甸甸地壓在指間。力量 +1；最大 HP +15；睡眠耐性 5。"
+      },
+      "amu_pain": {
+        "d": "凝聚苦痛意志的項鍊。暈眩耐性 5（衝擊之暈成功率 −10%）；HP 自然恢復量 −5。"
+      },
+      "shd_death": {
+        "d": "由死亡本身鑄成的傳說之盾，寒意順著盾緣爬上持盾的手臂。暈眩耐性 3（衝擊之暈成功率 −6%）。"
+      },
+      "hlm_chaos": {
+        "d": "由混沌之力塑成的頭盔，戴上後心神不易為昏聵所動。暈眩耐性 9（衝擊之暈成功率 −18%）。"
+      },
+      "hlm_mambo": {
+        "d": "綴著奇異羽飾的輕巧帽子，戴上時心神格外清明安定。冰凍耐性 8（冰凍魔法成功率 −8%）。"
+      },
+      "acc_abyss_ring": {
+        "d": "凝望深淵時，深淵也凝望著你；戴上它，睡意難以侵入。睡眠耐性 8（沉睡之霧成功率 −8%）。"
+      },
+      "arm_106": {
+        "d": "盾面如鏡，映得住梅杜莎的凝視。石化耐性 20（石化詛咒成功率 −20%）。"
+      },
+      "arm_pride_medusa_shield": {
+        "d": "盾面鑲嵌著梅杜莎之眼的圓盾，那凝視至今仍令觸者心生寒意。石化耐性 30（石化詛咒成功率 −30%）。"
+      },
+      "acc_curse_sapphire_ring": {
+        "d": "受詛咒的藍寶石戒指，稍能推開石化的侵蝕，代價是失去所有屬性抗性。石化耐性 5（石化詛咒成功率 −5%）；火／水／地／風屬性抗性 −10。"
+      },
+      "new_item_uncurse": {
+        "noUse": false,
+        "d": "解除目前已裝備物品的詛咒；即使沒有可解除的裝備，卷軸仍會依 main 規則消耗。"
+      },
+      "item_osiris_box_basic": {
+        "noUse": true,
+        "d": "已依內容裁決退役；不再提供已移除的開箱面板。"
+      },
+      "item_osiris_box_high": {
+        "noUse": true,
+        "d": "已依內容裁決退役；不再提供已移除的開箱面板。"
+      },
+      "item_kukulkan_box_basic": {
+        "noUse": true,
+        "d": "已依內容裁決退役；不再提供已移除的開箱面板。"
+      },
+      "item_kukulkan_box_high": {
+        "noUse": true,
+        "d": "已依內容裁決退役；不再提供已移除的開箱面板。"
+      },
+      "scroll_magicbarrier": {
+        "noUse": true,
+        "d": "港版原創且 main 無對應效果；目前零取得來源，保留為不可用資料列以避免誤供給。"
+      },
+      "new_item_218": {
+        "noUse": true,
+        "d": "main 的休眠任務物品；目前沒有已實裝的消費流程，不應由商店販售。"
+      }
+    },
+    "towns": {
+      "town_hyperia": {
+        "n": "希培利亞"
+      },
+      "town_behemoth": {
+        "n": "貝希摩斯"
+      }
+    },
+    "skills": {
+      "sk_charm": {
+        "mp": 0,
+        "reqM": 1,
+        "reqE": 1
+      },
+      "sk_warrior_throwaxe": {
+        "type": "atk",
+        "dur": 0,
+        "noRefresh": false
+      },
+      "__doc_muddywater_2026_08_09": "污濁之水的說明文字：官方技能第二類（機率控制）2026-08-09 交接給 L1J 之後，`status.force` 不再被讀——L1J 的 SKILL_POLLUTE_WATER(173) 走 calcProbability 的元素控制分支、基本成功率 33%（上限 90%），不是必中。舊敘述寫「必定命中」會直接騙到玩家，所以一起改掉。⚠️ `force: true` 這個欄位刻意留著不刪：它是港版原創技能仍在用的機制，只是這一支不再走那條路。",
+      "sk_elf_muddywater": {
+        "desc": "只能對頭目施放；成功時使其HP自然恢復量減半"
+      },
+      "__doc_l1j": "技能數值對齊官方（用戶 2026-08-07「技能套用 L1J-TW」）。由 tools/l1j-skill-import.py apply 寫入，來源＝L1J-TW 3.8 skills.sql ＋ 3.81c 客戶端 spelldesc-c／SpellExDesc-c。⚠️ 規則是**兩份官方來源一致才套用**，不一致的一律不動（只寫進報告）。⚠️ 對照是用 skill_id 不是名字——L1J 的 name 欄有 8 個槽跟客戶端不同（火箭↔地獄之牙整組對調），而港版的技能名字跟客戶端一致。逐筆差異與所有未套用的分歧見 tools/l1j-source/skill-audit.json。",
+      "sk_sunlight": {
+        "dur": 3600
+      },
+      "sk_shield": {
+        "mp": 8,
+        "dur": 1800
+      },
+      "sk_teleport": {
+        "mp": 10
+      },
+      "sk_icearrow": {
+        "mp": 4
+      },
+      "sk_windblade": {
+        "mp": 4
+      },
+      "sk_antidote": {
+        "mp": 15
+      },
+      "sk_cold_shiver": {
+        "mp": 8
+      },
+      "sk_poison_curse": {
+        "status": {
+          "dur": 30
+        }
+      },
+      "sk_reveal": {
+        "mp": 15
+      },
+      "sk_firearrow": {
+        "mp": 6
+      },
+      "sk_hell_fang": {
+        "mp": 6
+      },
+      "sk_aurora": {
+        "mp": 20
+      },
+      "sk_undead_bane": {
+        "mp": 20
+      },
+      "sk_chill": {
+        "mp": 20,
+        "dmgBase": 0,
+        "dmgDice": [
+          8,
+          4
+        ]
+      },
+      "sk_fireball": {
+        "mp": 20
+      },
+      "sk_dex_up": {
+        "mp": 50
+      },
+      "sk_break": {
+        "mp": 32
+      },
+      "sk_vampire": {
+        "mp": 12
+      },
+      "sk_slow": {
+        "status": {
+          "dur": 64
+        }
+      },
+      "sk_rock_prison": {
+        "mp": 24
+      },
+      "sk_magic_shield": {
+        "mp": 20
+      },
+      "sk_meditation": {
+        "mp": 5,
+        "hpCost": 30,
+        "dur": 640
+      },
+      "sk_mummy_curse": {
+        "mp": 80
+      },
+      "sk_thunder": {
+        "mp": 18
+      },
+      "sk_holy_light": {
+        "mp": 20
+      },
+      "sk_ice_spike": {
+        "mp": 18
+      },
+      "sk_dark_shadow": {
+        "mp": 15,
+        "status": {
+          "dur": 32
+        }
+      },
+      "sk_zombie": {
+        "mp": 5
+      },
+      "sk_earthquake": {
+        "mp": 20
+      },
+      "sk_blaze": {
+        "mp": 20
+      },
+      "sk_weaken": {
+        "mp": 10,
+        "status": {
+          "dur": 64
+        }
+      },
+      "sk_regen": {
+        "mp": 50
+      },
+      "sk_ice_lance": {
+        "mp": 36,
+        "dmgBase": 50,
+        "dmgDice": [
+          6,
+          5
+        ]
+      },
+      "sk_tornado": {
+        "mp": 40
+      },
+      "sk_berserk": {
+        "dur": 320
+      },
+      "sk_summon": {
+        "mp": 30
+      },
+      "sk_holy_dash": {
+        "mp": 15
+      },
+      "sk_disease": {
+        "mp": 10,
+        "status": {
+          "dur": 64
+        }
+      },
+      "sk_full_heal": {
+        "mp": 48
+      },
+      "sk_blizzard_storm": {
+        "dmgDice": [
+          3,
+          10
+        ]
+      },
+      "sk_quake": {
+        "dmgBase": 40,
+        "dmgDice": [
+          6,
+          10
+        ]
+      },
+      "sk_invisible": {
+        "mp": 15,
+        "hpCost": 0
+      },
+      "sk_seal": {
+        "mp": 20
+      },
+      "sk_sleep_mist": {
+        "status": {
+          "dur": 32
+        }
+      },
+      "sk_abs_barrier": {
+        "dur": 12
+      },
+      "sk_disintegrate": {
+        "dmgDice": [
+          8,
+          15
+        ]
+      },
+      "sk_solid_shield": {
+        "mp": 10,
+        "hpCost": 100,
+        "dur": 64
+      },
+      "sk_shock_stun": {
+        "mp": 15
+      },
+      "sk_spike_armor": {
+        "dur": 64
+      },
+      "sk_elf_mr": {
+        "mp": 5
+      },
+      "sk_elf_singleres": {
+        "mp": 6
+      },
+      "sk_elf_firewpn": {
+        "mp": 15,
+        "dur": 960
+      },
+      "sk_elf_windshot": {
+        "dur": 960
+      },
+      "sk_elf_winddash": {
+        "mp": 15,
+        "dur": 960
+      },
+      "sk_elf_earthguard": {
+        "dur": 960
+      },
+      "sk_elf_groundtrap": {
+        "status": {
+          "dur": 64
+        }
+      },
+      "sk_elf_magicerase": {
+        "status": {
+          "dur": 32
+        }
+      },
+      "sk_elf_summon": {
+        "mp": 20
+      },
+      "sk_elf_stormeye": {
+        "dur": 960
+      },
+      "sk_elf_lifespring": {
+        "mp": 20
+      },
+      "sk_elf_earthbless": {
+        "mp": 40,
+        "dur": 960
+      },
+      "sk_elf_summon2": {
+        "mp": 20
+      },
+      "sk_elf_seal": {
+        "status": {
+          "dur": 16
+        }
+      },
+      "sk_elf_blazewpn": {
+        "dur": 960
+      },
+      "sk_elf_flamesoul": {
+        "dur": 64
+      },
+      "sk_elf_stormshot": {
+        "dur": 960
+      },
+      "sk_elf_steelguard": {
+        "dur": 960
+      },
+      "sk_dark_dodge": {
+        "dur": 192
+      },
+      "sk_dark_erup": {
+        "dur": 32
+      },
+      "sk_illu_fantasy": {
+        "status": {
+          "dur": 5
+        }
+      },
+      "sk_illu_golem": {
+        "hpCost": 0
+      },
+      "sk_illu_cube_harmony": {
+        "mp": 55,
+        "hpCost": 0
+      },
+      "sk_illu_pain": {
+        "mp": 40,
+        "hpCost": 0
+      },
+      "sk_royal_precise": {
+        "mp": 1
+      }
+    },
+    "mobs": {}
+  },
+  "MISC_CAT_ITEMS": {
+    "scroll": [],
+    "special": [],
+    "mat": [
+      "mat_attr_stone",
+      "mat_engraved_bone",
+      "mat_desire_bloodstone",
+      "mat_desire_guard_fang",
+      "mat_desire_guard_tail_water",
+      "mat_desire_guard_tail_fire",
+      "mat_desire_guard_tail_wind",
+      "mat_desire_guard_hide_water",
+      "mat_desire_guard_hide_fire",
+      "mat_desire_guard_hide_wind",
+      "mat_desire_sign_water",
+      "mat_desire_sign_fire",
+      "mat_desire_sign_wind",
+      "mat_desire_sign_earth",
+      "mat_desire_sand",
+      "mat_desire_bloody_sand",
+      "mat_desire_digo_blood",
+      "mat_desire_digo_fin",
+      "mat_desire_angas_tail",
+      "mat_desire_angas_fang",
+      "mat_desire_basas_breath",
+      "mat_desire_basas_wing",
+      "mat_desire_balrog_wing",
+      "mat_desire_balrog_head",
+      "mat_desire_balrog_horn",
+      "mat_desire_balrog_flesh",
+      "mat_desire_balrog_finger",
+      "mat_desire_balrog_heart",
+      "mat_desire_balrog_fang",
+      "mat_desire_balrog_lung",
+      "mat_desire_balrog_sword",
+      "mat_desire_element_ruler",
+      "mat_flameshadow_rib",
+      "mat_flameshadow_tail",
+      "mat_flameshadow_wing",
+      "mat_flameshadow_spine",
+      "mat_flameshadow_head",
+      "mat_flameshadow_nail"
+    ]
+  },
+  "SPELL_FX": {
+    "__doc": "自訂技能與 3.8c 客戶端專用技能特效註冊。三職業素材由 tools/fx-deploy-class.js 生成；舊版四龍獨立外掛 SPR 由 tools/fx-deploy-old-dragons.js 生成。⚠️ 放覆蓋層而非 data/tables/SPELL_FX.json：後者是匯出產物，重匯會洗掉；DataOverlay 只補不蓋，新鍵直接進表。",
+    "l1j_45681:mag3": {
+      "dir": "dragon-old/4155",
+      "ax": 0.4308,
+      "ay": 0.6438,
+      "blend": "screen",
+      "n": 22,
+      "fps": 14,
+      "dirPrefix": "4155-",
+      "dirs": 8,
+      "h": 2.4768
+    },
+    "l1j_45681:mag4": {
+      "dir": "dragon-old/4166",
+      "ax": 0.4247,
+      "ay": 0.6854,
+      "blend": "screen",
+      "n": 4,
+      "fps": 14,
+      "dirPrefix": "4166-",
+      "dirs": 8,
+      "proj": true,
+      "projScale": 0.8676,
+      "impact": {
+        "dir": "dragon-old/4167",
+        "n": 32,
+        "h": 1.3147,
+        "ax": 0.4428,
+        "ay": 0.8129,
+        "prefix": "4167-0",
+        "sparseFrames": true
+      }
+    },
+    "l1j_45682:mag4": {
+      "dir": "dragon-old/4158",
+      "ax": 0.4744,
+      "ay": 0.6751,
+      "blend": "screen",
+      "n": 25,
+      "fps": 14,
+      "dirPrefix": "4158-",
+      "dirs": 8,
+      "sparseFrames": true,
+      "h": 3.6812
+    },
+    "l1j_45682:mag5": {
+      "dir": "dragon-old/4156",
+      "ax": 0.437,
+      "ay": 0.7706,
+      "blend": "screen",
+      "n": 4,
+      "fps": 14,
+      "dirPrefix": "4156-",
+      "dirs": 8,
+      "proj": true,
+      "projScale": 0.8676,
+      "impact": {
+        "dir": "dragon-old/4159",
+        "n": 17,
+        "h": 2.4683,
+        "ax": 0.3636,
+        "ay": 0.6632,
+        "dirPrefix": "4159-",
+        "dirs": 8
+      }
+    },
+    "l1j_45683:mag": {
+      "dir": "dragon-old/4164",
+      "ax": 0.4281,
+      "ay": 0.8221,
+      "blend": "screen",
+      "n": 15,
+      "fps": 14,
+      "dirPrefix": "4164-",
+      "dirs": 8,
+      "h": 2.5277
+    },
+    "l1j_45683:mag2": {
+      "dir": "dragon-old/4163",
+      "ax": 0.4226,
+      "ay": 0.7486,
+      "blend": "screen",
+      "n": 4,
+      "fps": 14,
+      "dirPrefix": "4163-",
+      "dirs": 8,
+      "proj": true,
+      "projScale": 0.8676,
+      "impact": {
+        "dir": "dragon-old/4165",
+        "n": 12,
+        "h": 1.8406,
+        "ax": 0.4113,
+        "ay": 0.8525,
+        "dirPrefix": "4165-",
+        "dirs": 8
+      }
+    },
+    "l1j_45683:mag3": {
+      "dir": "dragon-old/1594",
+      "ax": 0.4228,
+      "ay": 0.5484,
+      "blend": "screen",
+      "n": 16,
+      "fps": 14,
+      "prefix": "1594-0",
+      "h": 3.4183
+    },
+    "l1j_45684:mag": {
+      "dir": "dragon-old/4160",
+      "ax": 0.4373,
+      "ay": 0.7421,
+      "blend": "screen",
+      "n": 4,
+      "fps": 14,
+      "dirPrefix": "4160-",
+      "dirs": 8,
+      "proj": true,
+      "projScale": 0.8676,
+      "impact": {
+        "dir": "dragon-old/4162",
+        "n": 13,
+        "h": 2.0442,
+        "ax": 0.3348,
+        "ay": 0.61,
+        "dirPrefix": "4162-",
+        "dirs": 8
+      }
+    },
+    "l1j_45684:mag2": {
+      "dir": "dragon-old/4161",
+      "ax": 0.457,
+      "ay": 0.6483,
+      "blend": "screen",
+      "n": 22,
+      "fps": 14,
+      "dirPrefix": "4161-",
+      "dirs": 8,
+      "h": 2.7737
+    },
+    "幻覺：歐吉": {
+      "dir": "幻覺：歐吉",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "6578-0",
+      "n": 14,
+      "fps": 14,
+      "h": 0.9
+    },
+    "幻覺：巫妖": {
+      "dir": "幻覺：巫妖",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "6577-0",
+      "n": 14,
+      "fps": 14,
+      "h": 0.9
+    },
+    "幻覺：鑽石高崙": {
+      "dir": "幻覺：鑽石高崙",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "6576-0",
+      "n": 14,
+      "fps": 14,
+      "h": 0.9
+    },
+    "幻覺：化身": {
+      "dir": "幻覺：化身",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "6575-0",
+      "n": 14,
+      "fps": 14,
+      "h": 0.9
+    },
+    "立方：燃燒": {
+      "dir": "立方：燃燒",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "6675-0",
+      "n": 9,
+      "fps": 14,
+      "h": 0.9
+    },
+    "立方：地裂": {
+      "dir": "立方：地裂",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "6674-0",
+      "n": 9,
+      "fps": 14,
+      "h": 0.9
+    },
+    "立方：衝擊": {
+      "dir": "立方：衝擊",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "6676-0",
+      "n": 9,
+      "fps": 14,
+      "h": 0.9
+    },
+    "立方：和諧": {
+      "dir": "立方：和諧",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "6554-0",
+      "n": 13,
+      "fps": 14,
+      "h": 0.9
+    },
+    "混亂": {
+      "dir": "混亂",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "6525-0",
+      "n": 10,
+      "fps": 14,
+      "h": 1
+    },
+    "粉碎能量": {
+      "dir": "粉碎能量",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "6526-0",
+      "n": 9,
+      "fps": 14,
+      "h": 1
+    },
+    "心靈破壞": {
+      "dir": "心靈破壞",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "6553-0",
+      "n": 13,
+      "fps": 14,
+      "h": 1
+    },
+    "骷髏毀壞": {
+      "dir": "骷髏毀壞",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "6552-0",
+      "n": 13,
+      "fps": 14,
+      "h": 1
+    },
+    "幻想": {
+      "dir": "幻想",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "6530-0",
+      "n": 12,
+      "fps": 14,
+      "h": 1
+    },
+    "恐慌": {
+      "dir": "恐慌",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "6506-0",
+      "n": 13,
+      "fps": 14,
+      "h": 1
+    },
+    "鏡像": {
+      "dir": "鏡像",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "6551-0",
+      "n": 13,
+      "fps": 14,
+      "h": 0.9
+    },
+    "專注": {
+      "dir": "專注",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "6527-0",
+      "n": 10,
+      "fps": 14,
+      "h": 0.9
+    },
+    "耐力": {
+      "dir": "耐力",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "6507-0",
+      "n": 11,
+      "fps": 14,
+      "h": 0.9
+    },
+    "洞察": {
+      "dir": "洞察",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "6505-0",
+      "n": 9,
+      "fps": 14,
+      "h": 0.9
+    },
+    "龍之護鎧": {
+      "dir": "龍之護鎧",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "6531-0",
+      "n": 15,
+      "fps": 14,
+      "h": 0.9
+    },
+    "血之渴望": {
+      "dir": "血之渴望",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "6523-0",
+      "layers": [
+        "6524-0"
+      ],
+      "n": 12,
+      "fps": 14,
+      "h": 0.9
+    },
+    "致命身軀": {
+      "dir": "致命身軀",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "6513-0",
+      "layers": [
+        "6514-0",
+        "6515-0"
+      ],
+      "n": 11,
+      "fps": 14,
+      "h": 0.9
+    },
+    "護衛毀滅": {
+      "dir": "護衛毀滅",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "6508-0",
+      "n": 9,
+      "fps": 14,
+      "h": 1
+    },
+    "屠宰者": {
+      "dir": "屠宰者",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "6509-0",
+      "n": 16,
+      "fps": 14,
+      "h": 1
+    },
+    "恐懼無助": {
+      "dir": "恐懼無助",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "6529-0",
+      "n": 12,
+      "fps": 14,
+      "h": 1
+    },
+    "岩漿噴吐": {
+      "dir": "岩漿噴吐",
+      "ax": 0.5,
+      "ay": 0.5,
+      "blend": "screen",
+      "dirPrefix": "6516-",
+      "dirs": 8,
+      "n": 3,
+      "fps": 12,
+      "proj": true,
+      "nw": 72,
+      "nh": 40
+    },
+    "岩漿之箭": {
+      "dir": "岩漿之箭",
+      "ax": 0.5,
+      "ay": 0.5,
+      "blend": "screen",
+      "prefix": "6532-0",
+      "n": 9,
+      "fps": 12,
+      "proj": true,
+      "nw": 212,
+      "nh": 120
+    },
+    "奪命之雷": {
+      "dir": "奪命之雷",
+      "ax": 0.5,
+      "ay": 0.9,
+      "blend": "screen",
+      "prefix": "6510-0",
+      "layers": [
+        "6511-0",
+        "6512-0"
+      ],
+      "n": 10,
+      "fps": 14,
+      "h": 1.6
+    },
+    "驚悚死神": {
+      "dir": "驚悚死神",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "6588-0",
+      "layers": [
+        "6589-0"
+      ],
+      "n": 17,
+      "fps": 14,
+      "h": 1.3
+    },
+    "咆哮": {
+      "dir": "咆哮",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "12529-0",
+      "layers": [
+        "12530-0"
+      ],
+      "n": 20,
+      "fps": 16,
+      "h": 1
+    },
+    "體能強化": {
+      "dir": "體能強化",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "12536-0",
+      "layers": [
+        "12537-0"
+      ],
+      "n": 12,
+      "fps": 14,
+      "h": 0.9
+    },
+    "降低負重": {
+      "dir": "降低負重",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "6528-0",
+      "n": 13,
+      "fps": 14,
+      "h": 0.9
+    },
+    "治癒能量風暴": {
+      "dir": "治癒能量風暴",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "2231-0",
+      "n": 19,
+      "fps": 16,
+      "h": 0.9
+    },
+    "水之矛": {
+      "dir": "水之矛",
+      "ax": 0.5,
+      "ay": 0.5,
+      "blend": "screen",
+      "dirPrefix": "2740-",
+      "dirs": 8,
+      "n": 3,
+      "fps": 12,
+      "proj": true,
+      "nw": 73,
+      "nh": 45
+    },
+    "漩渦": {
+      "dir": "漩渦",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "dirPrefix": "1608-",
+      "dirs": 8,
+      "n": 4,
+      "fps": 14,
+      "h": 1
+    },
+    "劇毒漩渦": {
+      "dir": "劇毒漩渦",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "dirPrefix": "4022-",
+      "dirs": 8,
+      "n": 4,
+      "fps": 14,
+      "h": 1
+    },
+    "烈焰落雷": {
+      "dir": "烈焰落雷",
+      "ax": 0.5,
+      "ay": 0.9,
+      "blend": "screen",
+      "prefix": "13850-0",
+      "n": 7,
+      "fps": 14,
+      "h": 1.6
+    },
+    "拘束移動": {
+      "dir": "拘束移動",
+      "ax": 0.5,
+      "ay": 0.55,
+      "blend": "screen",
+      "prefix": "12531-0",
+      "layers": [
+        "12532-0"
+      ],
+      "n": 13,
+      "fps": 14,
+      "h": 1
+    },
+    "追蹤者": {
+      "__doc": "L1j-TW-main L1Chaser effect 7025 aliases client gfx 6985; rebuilt from 3.8c SPR with luma alpha so black/grey effect backing is transparent.",
+      "dir": "追蹤者",
+      "prefix": "6985-0",
+      "n": 35,
+      "sparseFrames": true,
+      "fps": 24,
+      "ax": 0.219,
+      "ay": 0.8,
+      "h": 1.25,
+      "blend": "screen"
+    },
+    "地裂術": {
+      "__doc": "地裂術的原版四層（用戶 2026-08-09「進行地裂術的命中層與殘骸」·tools/fx-deploy-quake.js 量測·--check 守同步）。list.spr #129 crust：4 方向、101.shadow(130) 影子層、109.effect(7 123) 命中層、0.9:240 殘骸幀(9.6 秒)。⚠️ data/tables 那列留著的 prefix:129-1 已被 dirPrefix 蓋掉(SpellFx 有 dirPrefix 就不看 prefix)——覆蓋層只補不蓋，刪不掉它。",
+      "dirPrefix": "129-",
+      "shadowDirPrefix": "130-",
+      "dirs": 4,
+      "impact": {
+        "prefix": "123-0",
+        "shadowPrefix": "124-0",
+        "n": 8,
+        "w": 1.4265,
+        "ax": 0.4093,
+        "ay": 0.6639
+      }
+    },
+    "l1j_45601:mag": {
+      "dir": "死亡騎士-地面震裂",
+      "ax": 0.5,
+      "ay": 0.7,
+      "blend": "screen",
+      "n": 14,
+      "fps": 12,
+      "h": 2.0
+    },
+    "l1j_45601:mag2": {
+      "dir": "死亡騎士-吸血鬼之吻",
+      "ax": 0.5,
+      "ay": 0.6,
+      "blend": "screen",
+      "n": 14,
+      "fps": 12,
+      "h": 2.0
+    },
+    "l1j_45601:mag3": {
+      "dir": "死亡騎士-集體衝暈",
+      "ax": 0.5,
+      "ay": 0.7,
+      "blend": "screen",
+      "n": 14,
+      "fps": 12,
+      "h": 2.0
+    },
+    "沙蟲-毒氣風暴": {
+      "dir": "沙蟲-毒氣風暴",
+      "prefix": "fx",
+      "n": 14,
+      "fps": 14,
+      "blend": "screen",
+      "ground": true,
+      "h": 3.2,
+      "ax": 0.5,
+      "ay": 0.5
+    },
+    "沙蟲-集體毒霧": {
+      "dir": "沙蟲-集體毒霧",
+      "prefix": "fx",
+      "n": 12,
+      "fps": 14,
+      "blend": "screen",
+      "ground": true,
+      "h": 3.0,
+      "ax": 0.5,
+      "ay": 0.5
+    },
+    "l1j_97259:mag": {
+      "dir": "沙蟲-毒氣風暴",
+      "prefix": "fx",
+      "n": 14,
+      "fps": 14,
+      "blend": "screen",
+      "ground": true,
+      "h": 3.2,
+      "ax": 0.5,
+      "ay": 0.5
+    },
+    "l1j_97259:mag2": {
+      "dir": "沙蟲-集體毒霧",
+      "prefix": "fx",
+      "n": 12,
+      "fps": 14,
+      "blend": "screen",
+      "ground": true,
+      "h": 3.0,
+      "ax": 0.5,
+      "ay": 0.5
+    },
+    "sandworm:mag": {
+      "dir": "沙蟲-毒氣風暴",
+      "prefix": "fx",
+      "n": 14,
+      "fps": 14,
+      "blend": "screen",
+      "ground": true,
+      "h": 3.2,
+      "ax": 0.5,
+      "ay": 0.5
+    },
+    "sandworm:mag2": {
+      "dir": "沙蟲-集體毒霧",
+      "prefix": "fx",
+      "n": 12,
+      "fps": 14,
+      "blend": "screen",
+      "ground": true,
+      "h": 3.0,
+      "ax": 0.5,
+      "ay": 0.5
+    }
+  },
+  "SPELL_FX_OVERRIDES": {
+    "__doc": "⚠️ 只准改 data/tables/SPELL_FX.json 既有的欄位（拼錯會大聲失敗）。地裂術三個數字由 tools/fx-deploy-quake.js 從 SPR 的格線原點量出來：ax 原本寫 0.5 是錯的(單檔畫布的原點在 34/115=0.2957·裂縫一直畫在目標右邊約 18px)；ay/w 是換成主層＋影子層共畫布(120×144)之後的等值換算，視覺大小與舊版相同。",
+    "地裂術": {
+      "ax": 0.2833,
+      "ay": 0.8125,
+      "w": 0.887
+    }
+  },
+  "WEAPON_TAGS": {
+    "__doc": "⚠️ WEAPON_TAGS 是武器家族(進而攻速)的唯一真相——新武器沒登記就會退回名稱/旗標猜測。",
+    "wpn_silence_sword": [
+      "單手劍"
+    ],
+    "wpn_greatsword": [
+      "雙手劍"
+    ],
+    "wpn_old_greatsword": [
+      "雙手劍"
+    ],
+    "wpn_vander_sword": [
+      "雙手劍"
+    ],
+    "wpn_thebes_2hsword": [
+      "雙手劍"
+    ],
+    "wpn_giltas_sword": [
+      "雙手劍"
+    ],
+    "wpn_dragon_2h": [
+      "雙手劍"
+    ],
+    "wpn_desire_guardian_spear": [
+      "矛"
+    ],
+    "wpn_desire_angas_mace": [
+      "雙手鈍器"
+    ]
+  },
+  "EQUIP_CAT_ITEMS": {
+    "__doc": "裝備收藏冊的反向索引（分類→物品清單·陣列合併只附加）。CollectionCatalog 讀的是這張。",
+    "sword1": [
+      "wpn_silence_sword"
+    ],
+    "ring": [
+      "acc_death_oath",
+      "acc_flameshadow_ring"
+    ],
+    "xbow": [
+      "wpn_xbow_diad"
+    ],
+    "armor": [
+      "arm_rasta_studded_leather",
+      "amr_flameshadow"
+    ],
+    "spear": [
+      "wpn_desire_guardian_spear"
+    ],
+    "shield": [
+      "shd_desire_guardian"
+    ],
+    "blunt2": [
+      "wpn_desire_angas_mace"
+    ],
+    "sword2": [],
+    "amulet": [
+      "acc_desire_amulet_slave",
+      "acc_desire_amulet_pact",
+      "acc_desire_amulet_freedom",
+      "acc_desire_amulet_hound",
+      "acc_desire_amulet_demon",
+      "acc_desire_amulet_brave",
+      "acc_desire_amulet_general",
+      "acc_desire_amulet_grand_general",
+      "acc_flameshadow_amulet"
+    ],
+    "tshirt": [
+      "tsh_flameshadow"
+    ],
+    "helm": [
+      "hlm_flameshadow"
+    ],
+    "cloak": [
+      "clk_flameshadow"
+    ],
+    "boots": [
+      "bot_flameshadow"
+    ],
+    "gloves": [
+      "glv_flameshadow"
+    ]
+  },
+  "MOB_PARTY_AOE_SKILLS": [
+    "極光雷電",
+    "火焰噴吐",
+    "龍捲風",
+    "火焰之圈",
+    "火焰放射",
+    "熔岩噴吐",
+    "黑暗氣息",
+    "沙蟲-毒氣風暴",
+    "沙蟲-集體毒霧"
+  ],
+  "RELIC_CAT_ITEMS_OVERRIDES": {
+    "__doc": "遺物整組退役 → 遺物收藏冊整本清空（每一個分類都變空陣列）。",
+    "dagger": [],
+    "sword1": [],
+    "sword2": [],
+    "katana": [],
+    "blunt1": [],
+    "blunt2": [],
+    "spear": [],
+    "claw": [],
+    "dual": [],
+    "chainsword": [],
+    "bow": [],
+    "xbow": [],
+    "quiver": [],
+    "wand": [],
+    "qigu": [],
+    "wpn_other": [],
+    "helm": [],
+    "armor": [],
+    "shin": [],
+    "tshirt": [],
+    "cloak": [],
+    "boots": [],
+    "gloves": [],
+    "shield": [],
+    "armguard": [],
+    "amulet": [],
+    "ring": [],
+    "belt": [],
+    "ear": [],
+    "pet": []
+  },
+  "ATK_APM_OVERRIDES": {
+    "__doc": "由 tools/export-player-speed.py 從官方 list.spr 產生（1 幀＝40ms）。⚠️ 執行期權威是 C# `WeaponCombatProfile` 寫死的列，這裡只是資料表側的同一份；兩邊要一起改，`CombatConstantTablesMatchTheExportedData` 會擋住只改一邊。",
+    "王子": {
+      "單手劍": 60,
+      "鎖鏈劍": 60,
+      "單手鈍器": 68.18,
+      "雙斧": 68.18,
+      "弓": 39.47,
+      "十字弓": 39.47,
+      "單手矛": 68.18,
+      "雙手矛": 68.18,
+      "魔杖": 34.09,
+      "奇古獸": 34.09,
+      "匕首": 75,
+      "雙刀": 60,
+      "鋼爪": 65.22,
+      "雙手劍": 44.12,
+      "雙手鈍器": 44.12
+    },
+    "公主": {
+      "單手劍": 62.5,
+      "鎖鏈劍": 62.5,
+      "單手鈍器": 62.5,
+      "雙斧": 62.5,
+      "弓": 39.47,
+      "十字弓": 39.47,
+      "單手矛": 62.5,
+      "雙手矛": 62.5,
+      "魔杖": 34.09,
+      "奇古獸": 34.09,
+      "匕首": 78.95,
+      "雙刀": 60,
+      "鋼爪": 65.22,
+      "雙手劍": 41.67,
+      "雙手鈍器": 41.67
+    },
+    "男騎士": {
+      "單手劍": 68.18,
+      "鎖鏈劍": 68.18,
+      "單手鈍器": 68.18,
+      "雙斧": 68.18,
+      "弓": 32.61,
+      "十字弓": 32.61,
+      "單手矛": 62.5,
+      "雙手矛": 62.5,
+      "魔杖": 26.79,
+      "奇古獸": 26.79,
+      "匕首": 83.33,
+      "雙刀": 60,
+      "鋼爪": 65.22,
+      "雙手劍": 50,
+      "雙手鈍器": 50
+    },
+    "女騎士": {
+      "單手劍": 68.18,
+      "鎖鏈劍": 68.18,
+      "單手鈍器": 65.22,
+      "雙斧": 65.22,
+      "弓": 32.61,
+      "十字弓": 32.61,
+      "單手矛": 65.22,
+      "雙手矛": 65.22,
+      "魔杖": 26.79,
+      "奇古獸": 26.79,
+      "匕首": 88.24,
+      "雙刀": 60,
+      "鋼爪": 65.22,
+      "雙手劍": 53.57,
+      "雙手鈍器": 53.57
+    },
+    "男妖精": {
+      "單手劍": 78.95,
+      "鎖鏈劍": 78.95,
+      "單手鈍器": 57.69,
+      "雙斧": 57.69,
+      "弓": 62.5,
+      "十字弓": 62.5,
+      "單手矛": 53.57,
+      "雙手矛": 53.57,
+      "魔杖": 39.47,
+      "奇古獸": 39.47,
+      "匕首": 93.75,
+      "雙刀": 65.22,
+      "鋼爪": 71.43,
+      "雙手劍": 62.5,
+      "雙手鈍器": 62.5
+    },
+    "女妖精": {
+      "單手劍": 75,
+      "鎖鏈劍": 75,
+      "單手鈍器": 53.57,
+      "雙斧": 53.57,
+      "弓": 65.22,
+      "十字弓": 65.22,
+      "單手矛": 57.69,
+      "雙手矛": 57.69,
+      "魔杖": 39.47,
+      "奇古獸": 39.47,
+      "匕首": 100,
+      "雙刀": 65.22,
+      "鋼爪": 71.43,
+      "雙手劍": 62.5,
+      "雙手鈍器": 62.5
+    },
+    "男法師": {
+      "單手劍": 50,
+      "鎖鏈劍": 50,
+      "單手鈍器": 57.69,
+      "雙斧": 57.69,
+      "弓": 26.79,
+      "十字弓": 26.79,
+      "單手矛": 51.72,
+      "雙手矛": 51.72,
+      "魔杖": 50,
+      "奇古獸": 50,
+      "匕首": 68.18,
+      "雙刀": 55.56,
+      "鋼爪": 60,
+      "雙手劍": 53.57,
+      "雙手鈍器": 53.57
+    },
+    "女法師": {
+      "單手劍": 50,
+      "鎖鏈劍": 50,
+      "單手鈍器": 57.69,
+      "雙斧": 57.69,
+      "弓": 26.79,
+      "十字弓": 26.79,
+      "單手矛": 51.72,
+      "雙手矛": 51.72,
+      "魔杖": 50,
+      "奇古獸": 50,
+      "匕首": 68.18,
+      "雙刀": 55.56,
+      "鋼爪": 60,
+      "雙手劍": 53.57,
+      "雙手鈍器": 53.57
+    },
+    "男黑暗妖精": {
+      "單手劍": 68.18,
+      "鎖鏈劍": 68.18,
+      "單手鈍器": 62.5,
+      "雙斧": 62.5,
+      "弓": 53.57,
+      "十字弓": 53.57,
+      "單手矛": 62.5,
+      "雙手矛": 57.69,
+      "魔杖": 51.72,
+      "奇古獸": 51.72,
+      "匕首": 88.24,
+      "雙刀": 57.69,
+      "鋼爪": 75,
+      "雙手劍": 60,
+      "雙手鈍器": 60
+    },
+    "女黑暗妖精": {
+      "單手劍": 68.18,
+      "鎖鏈劍": 68.18,
+      "單手鈍器": 62.5,
+      "雙斧": 62.5,
+      "弓": 53.57,
+      "十字弓": 53.57,
+      "單手矛": 62.5,
+      "雙手矛": 57.69,
+      "魔杖": 53.57,
+      "奇古獸": 53.57,
+      "匕首": 88.24,
+      "雙刀": 57.69,
+      "鋼爪": 75,
+      "雙手劍": 60,
+      "雙手鈍器": 60
+    },
+    "男龍騎士": {
+      "單手劍": 68.18,
+      "鎖鏈劍": 68.18,
+      "單手鈍器": 68.18,
+      "雙斧": 68.18,
+      "弓": 32.61,
+      "十字弓": 32.61,
+      "單手矛": 62.5,
+      "雙手矛": 62.5,
+      "魔杖": 26.79,
+      "奇古獸": 26.79,
+      "匕首": 83.33,
+      "雙刀": 60,
+      "鋼爪": 65.22,
+      "雙手劍": 50,
+      "雙手鈍器": 50
+    },
+    "女龍騎士": {
+      "單手劍": 68.18,
+      "鎖鏈劍": 68.18,
+      "單手鈍器": 65.22,
+      "雙斧": 65.22,
+      "弓": 32.61,
+      "十字弓": 32.61,
+      "單手矛": 65.22,
+      "雙手矛": 65.22,
+      "魔杖": 26.79,
+      "奇古獸": 26.79,
+      "匕首": 88.24,
+      "雙刀": 60,
+      "鋼爪": 65.22,
+      "雙手劍": 53.57,
+      "雙手鈍器": 53.57
+    },
+    "男戰士": {
+      "單手劍": 60,
+      "鎖鏈劍": 60,
+      "單手鈍器": 68.18,
+      "雙斧": 68.18,
+      "弓": 39.47,
+      "十字弓": 39.47,
+      "單手矛": 68.18,
+      "雙手矛": 68.18,
+      "魔杖": 34.09,
+      "奇古獸": 34.09,
+      "匕首": 75,
+      "雙刀": 60,
+      "鋼爪": 65.22,
+      "雙手劍": 44.12,
+      "雙手鈍器": 44.12
+    },
+    "女戰士": {
+      "單手劍": 62.5,
+      "鎖鏈劍": 62.5,
+      "單手鈍器": 62.5,
+      "雙斧": 62.5,
+      "弓": 39.47,
+      "十字弓": 39.47,
+      "單手矛": 62.5,
+      "雙手矛": 62.5,
+      "魔杖": 34.09,
+      "奇古獸": 34.09,
+      "匕首": 78.95,
+      "雙刀": 60,
+      "鋼爪": 65.22,
+      "雙手劍": 41.67,
+      "雙手鈍器": 41.67
+    },
+    "男幻術士": {
+      "單手劍": 50,
+      "鎖鏈劍": 50,
+      "單手鈍器": 57.69,
+      "雙斧": 57.69,
+      "弓": 26.79,
+      "十字弓": 26.79,
+      "單手矛": 51.72,
+      "雙手矛": 51.72,
+      "魔杖": 50,
+      "奇古獸": 50,
+      "匕首": 68.18,
+      "雙刀": 55.56,
+      "鋼爪": 60,
+      "雙手劍": 53.57,
+      "雙手鈍器": 53.57
+    },
+    "女幻術士": {
+      "單手劍": 50,
+      "鎖鏈劍": 50,
+      "單手鈍器": 57.69,
+      "雙斧": 57.69,
+      "弓": 26.79,
+      "十字弓": 26.79,
+      "單手矛": 51.72,
+      "雙手矛": 51.72,
+      "魔杖": 50,
+      "奇古獸": 50,
+      "匕首": 68.18,
+      "雙刀": 55.56,
+      "鋼爪": 60,
+      "雙手劍": 53.57,
+      "雙手鈍器": 53.57
+    }
+  },
+  "CAST_TICKS_OVERRIDES": {
+    "__doc": "由 tools/export-player-speed.py 從官方 list.spr 產生（1 幀＝40ms）。⚠️ 執行期權威是 C# `WeaponCombatProfile` 寫死的列，這裡只是資料表側的同一份；兩邊要一起改，`CombatConstantTablesMatchTheExportedData` 會擋住只改一邊。",
+    "王子": 16,
+    "公主": 16,
+    "男騎士": 20,
+    "女騎士": 20,
+    "男妖精": 14,
+    "女妖精": 14,
+    "男法師": 10,
+    "女法師": 10,
+    "男黑暗妖精": 14,
+    "女黑暗妖精": 14,
+    "男龍騎士": 20,
+    "女龍騎士": 20,
+    "男戰士": 16,
+    "女戰士": 16,
+    "男幻術士": 10,
+    "女幻術士": 10
+  },
+  "POLY_TIERS_OVERRIDES": {
+    "0": {
+      "forms": [
+        {
+          "n": "南瓜怪",
+          "lv": 1,
+          "gfx": 2501,
+          "minLv": 1,
+          "wlk": 12,
+          "wep": 751,
+          "arm": 417,
+          "atk": 29,
+          "stun": 5.6
+        },
+        {
+          "n": "和服",
+          "lv": 1,
+          "gfx": 3750,
+          "minLv": 1,
+          "wlk": 16,
+          "wep": 0,
+          "arm": 4095,
+          "cast": 22.4,
+          "castNoDir": 22.4,
+          "stun": 5.6
+        },
+        {
+          "n": "小獵犬",
+          "lv": 1,
+          "gfx": 938,
+          "minLv": 1,
+          "wlk": 18,
+          "wep": 0,
+          "arm": 2,
+          "atk": 24,
+          "stun": 5.6
+        },
+        {
+          "n": "巨大兵蟻",
+          "lv": 1,
+          "gfx": 1039,
+          "minLv": 1,
+          "wlk": 16,
+          "wep": 0,
+          "arm": 136,
+          "atk": 19,
+          "stun": 4.4
+        },
+        {
+          "n": "巨蟻",
+          "lv": 1,
+          "gfx": 1037,
+          "minLv": 1,
+          "wlk": 16,
+          "wep": 0,
+          "arm": 136,
+          "atk": 22,
+          "stun": 5.2
+        },
+        {
+          "n": "漂浮之眼",
+          "lv": 1,
+          "gfx": 29,
+          "minLv": 1,
+          "wlk": 24,
+          "wep": 0,
+          "arm": 0,
+          "atk": 43,
+          "castNoDir": 17.2,
+          "stun": 6.4
+        },
+        {
+          "n": "紅色妖魔",
+          "lv": 1,
+          "gfx": 6010,
+          "minLv": 1,
+          "wlk": 13.3333,
+          "wep": 0,
+          "arm": 1,
+          "atk": 22,
+          "cast": 8.8,
+          "stun": 3.2
+        },
+        {
+          "n": "袴",
+          "lv": 1,
+          "gfx": 4227,
+          "minLv": 1,
+          "wlk": 16,
+          "wep": 0,
+          "arm": 4095,
+          "atk": 34,
+          "cast": 13.6,
+          "castNoDir": 13.6,
+          "stun": 5.6
+        },
+        {
+          "n": "雪人",
+          "lv": 1,
+          "gfx": 2064,
+          "minLv": 1,
+          "wlk": 32,
+          "wep": 0,
+          "arm": 1027,
+          "atk": 27,
+          "stun": 4.8
+        },
+        {
+          "n": "飛龍",
+          "lv": 1,
+          "gfx": 6089,
+          "minLv": 1,
+          "wlk": 16,
+          "wep": 1791,
+          "arm": 4095,
+          "atk": 16,
+          "atkW": {
+            "雙手劍": 20
+          },
+          "cast": 10.4,
+          "castNoDir": 9.6,
+          "stun": 4.8
+        },
+        {
+          "n": "高等柯利",
+          "lv": 1,
+          "gfx": 4928,
+          "minLv": 1,
+          "wlk": 16,
+          "wep": 0,
+          "arm": 2,
+          "atk": 24,
+          "cast": 11.2,
+          "castNoDir": 11.2,
+          "stun": 5.6
+        },
+        {
+          "n": "高等浣熊",
+          "lv": 1,
+          "gfx": 4929,
+          "minLv": 1,
+          "wlk": 18,
+          "wep": 0,
+          "arm": 2,
+          "atk": 29,
+          "cast": 8,
+          "castNoDir": 8,
+          "stun": 5.6
+        },
+        {
+          "n": "高等熊",
+          "lv": 1,
+          "gfx": 5976,
+          "minLv": 1,
+          "wlk": 18,
+          "wep": 751,
+          "arm": 2,
+          "atk": 32,
+          "stun": 5.6
+        },
+        {
+          "n": "魔獸軍王．巴蘭卡",
+          "lv": 1,
+          "gfx": 3664,
+          "minLv": 1,
+          "wlk": 12,
+          "wep": 704,
+          "arm": 4095,
+          "atk": 25,
+          "castNoDir": 17.2,
+          "stun": 5.6
+        },
+        {
+          "n": "哥布林",
+          "lv": 2,
+          "gfx": 3861,
+          "minLv": 1,
+          "wlk": 19,
+          "wep": 751,
+          "arm": 913,
+          "atk": 23,
+          "atkW": {
+            "雙手劍": 36
+          },
+          "cast": 10,
+          "castNoDir": 10,
+          "stun": 4.8
+        },
+        {
+          "n": "妖魔",
+          "lv": 2,
+          "gfx": 3906,
+          "minLv": 1,
+          "wlk": 20,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 33,
+          "atkW": {
+            "雙手劍": 35
+          },
+          "cast": 14.4,
+          "castNoDir": 14.4,
+          "stun": 4.8
+        },
+        {
+          "n": "地靈",
+          "lv": 3,
+          "gfx": 3862,
+          "minLv": 1,
+          "wlk": 32,
+          "wep": 751,
+          "arm": 913,
+          "atk": 27,
+          "atkW": {
+            "雙手劍": 36
+          },
+          "cast": 10.8,
+          "castNoDir": 10.8,
+          "stun": 5.6
+        },
+        {
+          "n": "妖魔弓箭手",
+          "lv": 3,
+          "gfx": 3860,
+          "minLv": 1,
+          "wlk": 20,
+          "wep": 256,
+          "arm": 4095,
+          "atk": 47,
+          "cast": 14.4,
+          "castNoDir": 17.6,
+          "stun": 5.6
+        },
+        {
+          "n": "侏儒",
+          "lv": 5,
+          "gfx": 3863,
+          "minLv": 1,
+          "wlk": 15,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 37,
+          "atkW": {
+            "雙手劍": 34
+          },
+          "cast": 14.8,
+          "castNoDir": 14.8,
+          "stun": 4.8
+        },
+        {
+          "n": "人形殭屍",
+          "lv": 6,
+          "gfx": 3872,
+          "minLv": 10,
+          "wlk": 50,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 26,
+          "atkW": {
+            "雙手劍": 30
+          },
+          "cast": 16,
+          "castNoDir": 16,
+          "stun": 2
+        },
+        {
+          "n": "妖魔鬥士",
+          "lv": 8,
+          "gfx": 3864,
+          "minLv": 1,
+          "wlk": 16,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 23,
+          "atkW": {
+            "雙手劍": 32
+          },
+          "cast": 14,
+          "castNoDir": 14,
+          "stun": 4
+        },
+        {
+          "n": "狼人",
+          "lv": 9,
+          "gfx": 3865,
+          "minLv": 1,
+          "wlk": 16,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 21,
+          "atkW": {
+            "雙手劍": 26
+          },
+          "cast": 17.6,
+          "castNoDir": 17.6,
+          "stun": 5.2
+        }
+      ]
+    },
+    "1": {
+      "forms": [
+        {
+          "n": "夏洛伯",
+          "lv": 10,
+          "gfx": 95,
+          "minLv": 10,
+          "wlk": 12,
+          "wep": 0,
+          "arm": 0,
+          "atk": 22,
+          "cast": 16.8,
+          "castNoDir": 16.8,
+          "stun": 4
+        },
+        {
+          "n": "楊果里恩",
+          "lv": 10,
+          "gfx": 146,
+          "minLv": 10,
+          "wlk": 12,
+          "wep": 0,
+          "arm": 0,
+          "atk": 21,
+          "cast": 16.8,
+          "castNoDir": 16.8,
+          "stun": 4
+        },
+        {
+          "n": "甘地妖魔",
+          "lv": 10,
+          "gfx": 3866,
+          "minLv": 10,
+          "wlk": 16,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 26,
+          "atkW": {
+            "雙手劍": 30
+          },
+          "cast": 10.4,
+          "castNoDir": 10.4,
+          "stun": 5.2
+        },
+        {
+          "n": "骷髏",
+          "lv": 10,
+          "gfx": 2374,
+          "minLv": 10,
+          "wlk": 16,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 23,
+          "atkW": {
+            "雙手劍": 28
+          },
+          "cast": 14.4,
+          "castNoDir": 14.4,
+          "stun": 4
+        },
+        {
+          "n": "果凍怪",
+          "lv": 12,
+          "gfx": 3945,
+          "minLv": 15,
+          "wlk": 36,
+          "wep": 751,
+          "arm": 0,
+          "atk": 32,
+          "cast": 12.8,
+          "castNoDir": 12.8,
+          "stun": 5.6
+        },
+        {
+          "n": "骷髏弓箭手",
+          "lv": 12,
+          "gfx": 3871,
+          "minLv": 10,
+          "wlk": 20,
+          "wep": 256,
+          "arm": 4095,
+          "atk": 28,
+          "cast": 18.4,
+          "castNoDir": 18.4,
+          "stun": 4.8
+        },
+        {
+          "n": "石頭高崙",
+          "lv": 13,
+          "gfx": 3904,
+          "minLv": 1,
+          "wlk": 32,
+          "wep": 751,
+          "arm": 145,
+          "atk": 66,
+          "cast": 26.4,
+          "castNoDir": 26.4,
+          "stun": 1.2
+        },
+        {
+          "n": "羅孚妖魔",
+          "lv": 13,
+          "gfx": 3867,
+          "minLv": 10,
+          "wlk": 16,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 26,
+          "atkW": {
+            "雙手劍": 30
+          },
+          "cast": 10.4,
+          "castNoDir": 10.4,
+          "stun": 5.2
+        },
+        {
+          "n": "骷髏斧手",
+          "lv": 13,
+          "gfx": 2376,
+          "minLv": 10,
+          "wlk": 15,
+          "wep": 1791,
+          "arm": 4095,
+          "atk": 25,
+          "atkW": {
+            "雙手劍": 26
+          },
+          "cast": 16.8,
+          "castNoDir": 16.8,
+          "stun": 5.6
+        },
+        {
+          "n": "骷髏槍兵",
+          "lv": 13,
+          "gfx": 2377,
+          "minLv": 10,
+          "wlk": 17,
+          "wep": 1791,
+          "arm": 4095,
+          "atk": 22,
+          "atkW": {
+            "雙手劍": 26,
+            "單手矛": 21,
+            "雙手矛": 21,
+            "鎖鏈劍": 21
+          },
+          "cast": 16.8,
+          "castNoDir": 16.8,
+          "stun": 4.4
+        },
+        {
+          "n": "妖魔巡守",
+          "lv": 14,
+          "gfx": 2323,
+          "minLv": 15,
+          "wlk": 16,
+          "wep": 256,
+          "arm": 4095,
+          "atk": 24,
+          "cast": 10,
+          "castNoDir": 12,
+          "stun": 5.6
+        },
+        {
+          "n": "地獄犬",
+          "lv": 15,
+          "gfx": 951,
+          "minLv": 15,
+          "wlk": 16,
+          "wep": 0,
+          "arm": 0,
+          "atk": 26,
+          "stun": 4.8
+        },
+        {
+          "n": "巨斧牛人",
+          "lv": 15,
+          "gfx": 2386,
+          "minLv": 15,
+          "wlk": 17,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 21,
+          "atkW": {
+            "雙手劍": 20,
+            "單手鈍器": 20,
+            "雙手鈍器": 20,
+            "雙斧": 20,
+            "魔杖": 20
+          },
+          "cast": 11.2,
+          "castNoDir": 12.8,
+          "stun": 5.6
+        },
+        {
+          "n": "毒蠍",
+          "lv": 15,
+          "gfx": 1047,
+          "minLv": 15,
+          "wlk": 16,
+          "wep": 0,
+          "arm": 0,
+          "atk": 20,
+          "stun": 5.6
+        },
+        {
+          "n": "都達瑪拉妖魔",
+          "lv": 15,
+          "gfx": 3869,
+          "minLv": 10,
+          "wlk": 16,
+          "wep": 1791,
+          "arm": 4095,
+          "atk": 29,
+          "atkW": {
+            "雙手劍": 30,
+            "單手矛": 22,
+            "雙手矛": 22,
+            "鎖鏈劍": 22
+          },
+          "cast": 11.6,
+          "castNoDir": 11.6,
+          "stun": 5.2
+        },
+        {
+          "n": "阿吐巴妖魔",
+          "lv": 15,
+          "gfx": 3868,
+          "minLv": 10,
+          "wlk": 16,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 26,
+          "atkW": {
+            "雙手劍": 30
+          },
+          "cast": 10.4,
+          "castNoDir": 10.4,
+          "stun": 5.2
+        },
+        {
+          "n": "史巴托",
+          "lv": 16,
+          "gfx": 2378,
+          "minLv": 10,
+          "wlk": 18,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 21,
+          "atkW": {
+            "雙手劍": 28
+          },
+          "cast": 14.4,
+          "castNoDir": 14.4,
+          "stun": 4
+        },
+        {
+          "n": "食屍鬼",
+          "lv": 16,
+          "gfx": 3873,
+          "minLv": 10,
+          "wlk": 50,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 26,
+          "atkW": {
+            "雙手劍": 30
+          },
+          "cast": 16,
+          "castNoDir": 16,
+          "stun": 2
+        },
+        {
+          "n": "黑騎士",
+          "lv": 16,
+          "gfx": 4923,
+          "minLv": 51,
+          "wlk": 12,
+          "wep": 1080,
+          "arm": 4095,
+          "atk": 20,
+          "atkW": {
+            "單手鈍器": 22,
+            "雙手鈍器": 22,
+            "雙斧": 22,
+            "魔杖": 22
+          },
+          "cast": 14.4,
+          "castNoDir": 11.2,
+          "stun": 4.8
+        },
+        {
+          "n": "萊肯",
+          "lv": 17,
+          "gfx": 3874,
+          "minLv": 10,
+          "wlk": 16,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 20,
+          "atkW": {
+            "雙手劍": 24
+          },
+          "cast": 14.4,
+          "castNoDir": 14.4,
+          "stun": 4.8
+        },
+        {
+          "n": "那魯加妖魔",
+          "lv": 17,
+          "gfx": 3870,
+          "minLv": 10,
+          "wlk": 16,
+          "wep": 1791,
+          "arm": 4095,
+          "atk": 29,
+          "atkW": {
+            "雙手劍": 30,
+            "單手矛": 22,
+            "雙手矛": 22,
+            "鎖鏈劍": 22
+          },
+          "cast": 11.6,
+          "castNoDir": 11.6,
+          "stun": 5.2
+        }
+      ]
+    },
+    "2": {
+      "forms": [
+        {
+          "n": "長老",
+          "lv": 21,
+          "gfx": 3879,
+          "minLv": 15,
+          "wlk": 20,
+          "wep": 751,
+          "arm": 0,
+          "atk": 45,
+          "cast": 7.2,
+          "castNoDir": 9.6,
+          "stun": 6.4
+        },
+        {
+          "n": "食人妖精",
+          "lv": 22,
+          "gfx": 3876,
+          "minLv": 10,
+          "wlk": 16,
+          "wep": 751,
+          "arm": 945,
+          "atk": 21,
+          "cast": 16.4,
+          "castNoDir": 16.4,
+          "stun": 4.4
+        },
+        {
+          "n": "歐姆民兵",
+          "lv": 26,
+          "gfx": 3950,
+          "minLv": 15,
+          "wlk": 21.3333,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 38,
+          "stun": 5.6
+        },
+        {
+          "n": "多羅",
+          "lv": 28,
+          "gfx": 3878,
+          "minLv": 15,
+          "wlk": 24,
+          "wep": 751,
+          "arm": 545,
+          "atk": 30,
+          "atkW": {
+            "雙手劍": 20,
+            "單手鈍器": 25,
+            "雙手鈍器": 25,
+            "雙斧": 25,
+            "魔杖": 25
+          },
+          "cast": 15.2,
+          "castNoDir": 15.2,
+          "stun": 3.2
+        },
+        {
+          "n": "歐吉",
+          "lv": 28,
+          "gfx": 3877,
+          "minLv": 15,
+          "wlk": 24,
+          "wep": 1791,
+          "arm": 913,
+          "atk": 30,
+          "atkW": {
+            "雙手劍": 25,
+            "單手矛": 20,
+            "雙手矛": 20,
+            "鎖鏈劍": 20
+          },
+          "cast": 14,
+          "castNoDir": 14,
+          "stun": 3.2
+        },
+        {
+          "n": "紙人",
+          "lv": 28,
+          "gfx": 4002,
+          "minLv": 1,
+          "wlk": 24,
+          "wep": 1791,
+          "arm": 4095,
+          "stun": 5.6
+        },
+        {
+          "n": "黑暗妖精運送員",
+          "lv": 28,
+          "gfx": 3887,
+          "minLv": 45,
+          "wlk": 16,
+          "wep": 1791,
+          "arm": 4095,
+          "atk": 38,
+          "atkW": {
+            "雙手劍": 30,
+            "單手矛": 18,
+            "雙手矛": 18,
+            "鎖鏈劍": 18
+          },
+          "cast": 15.2,
+          "castNoDir": 15.2,
+          "stun": 5.6
+        }
+      ]
+    },
+    "3": {
+      "forms": [
+        {
+          "n": "巨人",
+          "lv": 30,
+          "gfx": 2387,
+          "minLv": 15,
+          "wlk": 22,
+          "wep": 1791,
+          "arm": 4095,
+          "atk": 20,
+          "atkW": {
+            "單手劍": 25,
+            "雙手劍": 22,
+            "匕首": 25,
+            "雙刀": 22,
+            "單手鈍器": 25,
+            "雙手鈍器": 25,
+            "雙斧": 25,
+            "單手矛": 18,
+            "雙手矛": 18,
+            "鎖鏈劍": 18,
+            "魔杖": 25,
+            "鋼爪": 22,
+            "奇古獸": 22
+          },
+          "cast": 15.2,
+          "castNoDir": 15.2,
+          "stun": 3.2
+        },
+        {
+          "n": "食人妖精王",
+          "lv": 30,
+          "gfx": 3880,
+          "minLv": 15,
+          "wlk": 16,
+          "wep": 751,
+          "arm": 945,
+          "atk": 18,
+          "atkW": {
+            "單手劍": 21,
+            "雙手劍": 21,
+            "匕首": 21,
+            "雙刀": 21,
+            "單手鈍器": 20,
+            "雙手鈍器": 20,
+            "雙斧": 20,
+            "魔杖": 21,
+            "鋼爪": 21,
+            "奇古獸": 21
+          },
+          "cast": 12.8,
+          "castNoDir": 12.8,
+          "stun": 4
+        },
+        {
+          "n": "格利芬",
+          "lv": 31,
+          "gfx": 3631,
+          "minLv": 40,
+          "wlk": 14,
+          "wep": 0,
+          "arm": 32,
+          "atk": 24,
+          "cast": 8,
+          "castNoDir": 9.6,
+          "stun": 6.4
+        },
+        {
+          "n": "卡司特王",
+          "lv": 33,
+          "gfx": 3875,
+          "minLv": 10,
+          "wlk": 25,
+          "wep": 751,
+          "arm": 945,
+          "atk": 16,
+          "cast": 7.6,
+          "castNoDir": 7.6,
+          "stun": 3.2
+        },
+        {
+          "n": "雪怪",
+          "lv": 33,
+          "gfx": 2385,
+          "minLv": 15,
+          "wlk": 19,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 24,
+          "atkW": {
+            "雙手劍": 23,
+            "雙刀": 23,
+            "單手鈍器": 20,
+            "雙手鈍器": 20,
+            "雙斧": 20,
+            "魔杖": 20,
+            "鋼爪": 23,
+            "奇古獸": 23
+          },
+          "cast": 14,
+          "castNoDir": 14,
+          "stun": 2.8
+        },
+        {
+          "n": "黑暗妖精刺客",
+          "lv": 33,
+          "gfx": 3634,
+          "minLv": 45,
+          "wlk": 18,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 17,
+          "atkW": {
+            "單手劍": 20,
+            "雙手劍": 30,
+            "雙刀": 18,
+            "鋼爪": 18,
+            "奇古獸": 18
+          },
+          "cast": 14.4,
+          "castNoDir": 16,
+          "stun": 4.8
+        },
+        {
+          "n": "亞力安",
+          "lv": 34,
+          "gfx": 3632,
+          "minLv": 40,
+          "wlk": 13,
+          "wep": 0,
+          "arm": 4095,
+          "atk": 24,
+          "cast": 9.6,
+          "castNoDir": 11.2,
+          "stun": 4.8
+        },
+        {
+          "n": "巨大牛人",
+          "lv": 35,
+          "gfx": 3102,
+          "minLv": 50,
+          "wlk": 18,
+          "wep": 1791,
+          "arm": 4095,
+          "atk": 24,
+          "atkW": {
+            "雙手劍": 22,
+            "單手鈍器": 16,
+            "雙手鈍器": 16,
+            "雙斧": 16,
+            "單手矛": 19,
+            "雙手矛": 19,
+            "鎖鏈劍": 19
+          },
+          "cast": 8.8,
+          "castNoDir": 9.6,
+          "stun": 3.2
+        },
+        {
+          "n": "阿魯巴",
+          "lv": 35,
+          "gfx": 3633,
+          "minLv": 40,
+          "wlk": 16,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 24,
+          "atkW": {
+            "雙手劍": 25,
+            "單手鈍器": 17,
+            "雙手鈍器": 17,
+            "雙斧": 17
+          },
+          "cast": 12,
+          "castNoDir": 12.8,
+          "stun": 4
+        },
+        {
+          "n": "思克巴",
+          "lv": 37,
+          "gfx": 2384,
+          "minLv": 40,
+          "wlk": 16,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 20,
+          "atkW": {
+            "雙手劍": 28
+          },
+          "cast": 9.6,
+          "castNoDir": 10.4,
+          "stun": 5.6
+        }
+      ]
+    },
+    "4": {
+      "forms": [
+        {
+          "n": "強盜(弓)",
+          "lv": 40,
+          "gfx": 4918,
+          "minLv": 40,
+          "wlk": 16,
+          "wep": 256,
+          "arm": 4095,
+          "atk": 24,
+          "cast": 11.2,
+          "castNoDir": 11.2,
+          "stun": 5.6
+        },
+        {
+          "n": "獨眼巨人",
+          "lv": 40,
+          "gfx": 3630,
+          "minLv": 40,
+          "wlk": 20,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 22,
+          "atkW": {
+            "雙手劍": 19
+          },
+          "cast": 11.2,
+          "castNoDir": 12.8,
+          "stun": 4
+        },
+        {
+          "n": "艾爾摩士兵",
+          "lv": 40,
+          "gfx": 4925,
+          "minLv": 40,
+          "wlk": 18,
+          "wep": 1080,
+          "arm": 4095,
+          "atk": 22,
+          "cast": 14,
+          "castNoDir": 14,
+          "stun": 4.8
+        },
+        {
+          "n": "思克巴女皇",
+          "lv": 41,
+          "gfx": 4004,
+          "minLv": 1,
+          "wlk": 16,
+          "wep": 1791,
+          "arm": 4095,
+          "atk": 16,
+          "atkW": {
+            "雙手劍": 20
+          },
+          "cast": 8.8,
+          "castNoDir": 9.6,
+          "stun": 4.8
+        },
+        {
+          "n": "西瑪",
+          "lv": 42,
+          "gfx": 3882,
+          "minLv": 45,
+          "wlk": 16,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 37,
+          "atkW": {
+            "雙手劍": 34
+          },
+          "cast": 8,
+          "castNoDir": 8,
+          "stun": 5.6
+        },
+        {
+          "n": "巴土瑟",
+          "lv": 43,
+          "gfx": 3883,
+          "minLv": 45,
+          "wlk": 16,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 37,
+          "atkW": {
+            "雙手劍": 34
+          },
+          "cast": 8,
+          "castNoDir": 8,
+          "stun": 5.6
+        },
+        {
+          "n": "卡士柏",
+          "lv": 44,
+          "gfx": 3884,
+          "minLv": 45,
+          "wlk": 16,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 37,
+          "atkW": {
+            "雙手劍": 34
+          },
+          "cast": 8,
+          "castNoDir": 8,
+          "stun": 5.6
+        },
+        {
+          "n": "小惡魔",
+          "lv": 44,
+          "gfx": 3886,
+          "minLv": 45,
+          "wlk": 18,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 18,
+          "atkW": {
+            "雙手劍": 22
+          },
+          "cast": 10.4,
+          "castNoDir": 12,
+          "stun": 4
+        },
+        {
+          "n": "墮落的司祭",
+          "lv": 45,
+          "gfx": 6034,
+          "minLv": 45,
+          "wlk": 24,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 20,
+          "atkW": {
+            "雙手劍": 24,
+            "弓": 26,
+            "十字弓": 26
+          },
+          "cast": 9.6,
+          "castNoDir": 9.6,
+          "stun": 5.6
+        },
+        {
+          "n": "艾爾摩將軍",
+          "lv": 45,
+          "gfx": 4920,
+          "minLv": 45,
+          "wlk": 18,
+          "wep": 1791,
+          "arm": 4095,
+          "atk": 26,
+          "atkW": {
+            "雙手劍": 18
+          },
+          "cast": 12.8,
+          "castNoDir": 12.8,
+          "stun": 5.6
+        },
+        {
+          "n": "馬庫爾",
+          "lv": 45,
+          "gfx": 3885,
+          "minLv": 45,
+          "wlk": 16,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 22,
+          "atkW": {
+            "雙手劍": 34
+          },
+          "cast": 8,
+          "castNoDir": 8,
+          "stun": 5.6
+        },
+        {
+          "n": "黑暗妖精巡守",
+          "lv": 45,
+          "gfx": 4917,
+          "minLv": 45,
+          "wlk": 18,
+          "wep": 256,
+          "arm": 4095,
+          "atk": 22,
+          "cast": 10.4,
+          "castNoDir": 10.4,
+          "stun": 4.8
+        }
+      ]
+    },
+    "5": {
+      "forms": [
+        {
+          "n": "巴風特",
+          "lv": 50,
+          "gfx": 3888,
+          "minLv": 50,
+          "wlk": 12,
+          "wep": 751,
+          "arm": 954,
+          "atk": 19,
+          "atkW": {
+            "雙手劍": 25
+          },
+          "cast": 8,
+          "castNoDir": 10.4,
+          "stun": 4.8
+        },
+        {
+          "n": "賽尼斯",
+          "lv": 50,
+          "gfx": 3902,
+          "minLv": 1,
+          "wlk": 18,
+          "wep": 43,
+          "arm": 4095,
+          "atk": 20,
+          "atkW": {
+            "單手劍": 27,
+            "匕首": 27,
+            "單手鈍器": 27,
+            "雙手鈍器": 27,
+            "雙斧": 27,
+            "魔杖": 27
+          },
+          "cast": 7.6,
+          "stun": 5.6
+        },
+        {
+          "n": "鎧甲守護神",
+          "lv": 50,
+          "gfx": 4922,
+          "minLv": 50,
+          "wlk": 18,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 28,
+          "atkW": {
+            "雙手劍": 17
+          },
+          "cast": 17.2,
+          "castNoDir": 17.2,
+          "stun": 5.6
+        },
+        {
+          "n": "黑暗妖精殘兵(矛)",
+          "lv": 50,
+          "gfx": 4924,
+          "minLv": 50,
+          "wlk": 18,
+          "wep": 1080,
+          "arm": 4095,
+          "atk": 20,
+          "cast": 12.8,
+          "castNoDir": 12.8,
+          "stun": 5.6
+        },
+        {
+          "n": "黑暗妖精法師",
+          "lv": 50,
+          "gfx": 4926,
+          "minLv": 50,
+          "wlk": 16,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 20,
+          "atkW": {
+            "雙手劍": 26
+          },
+          "cast": 7.2,
+          "castNoDir": 8,
+          "stun": 5.6
+        },
+        {
+          "n": "黑暗妖精警衛",
+          "lv": 50,
+          "gfx": 4919,
+          "minLv": 50,
+          "wlk": 16,
+          "wep": 256,
+          "arm": 4095,
+          "atk": 22,
+          "cast": 10.4,
+          "castNoDir": 10.4,
+          "stun": 5.6
+        },
+        {
+          "n": "黑長者",
+          "lv": 50,
+          "gfx": 3881,
+          "minLv": 45,
+          "wlk": 16,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 22,
+          "atkW": {
+            "雙手劍": 34
+          },
+          "cast": 8,
+          "castNoDir": 8,
+          "stun": 5.6
+        },
+        {
+          "n": "克特",
+          "lv": 51,
+          "gfx": 3101,
+          "minLv": 51,
+          "wlk": 16,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 17,
+          "atkW": {
+            "雙手劍": 20,
+            "雙刀": 20,
+            "鋼爪": 20,
+            "奇古獸": 20
+          },
+          "cast": 9.6,
+          "castNoDir": 10.4,
+          "stun": 4
+        },
+        {
+          "n": "火焰弓箭手",
+          "lv": 51,
+          "gfx": 3126,
+          "minLv": 51,
+          "wlk": 16,
+          "wep": 256,
+          "arm": 4095,
+          "atk": 21,
+          "cast": 9.6,
+          "castNoDir": 11.2,
+          "stun": 4.8
+        },
+        {
+          "n": "暗殺軍王‧史雷佛",
+          "lv": 52,
+          "gfx": 4932,
+          "minLv": 52,
+          "wlk": 18,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 20,
+          "atkW": {
+            "雙手劍": 26,
+            "雙刀": 15,
+            "鋼爪": 15,
+            "奇古獸": 15
+          },
+          "cast": 13.2,
+          "castNoDir": 14,
+          "stun": 4.8
+        },
+        {
+          "n": "死亡騎士",
+          "lv": 52,
+          "gfx": 3784,
+          "minLv": 52,
+          "wlk": 12,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 15,
+          "atkW": {
+            "雙手劍": 23,
+            "雙刀": 19,
+            "鋼爪": 19,
+            "奇古獸": 19
+          },
+          "cast": 8.8,
+          "castNoDir": 9.6,
+          "stun": 4.8
+        },
+        {
+          "n": "黑暗妖精將軍",
+          "lv": 52,
+          "gfx": 4921,
+          "minLv": 52,
+          "wlk": 18,
+          "wep": 1791,
+          "arm": 4095,
+          "atk": 22,
+          "atkW": {
+            "雙手劍": 20
+          },
+          "cast": 14,
+          "castNoDir": 14,
+          "stun": 5.6
+        },
+        {
+          "n": "巴列斯",
+          "lv": 53,
+          "gfx": 3905,
+          "minLv": 50,
+          "wlk": 12,
+          "wep": 751,
+          "arm": 954,
+          "atk": 19,
+          "atkW": {
+            "雙手劍": 28
+          },
+          "cast": 8,
+          "castNoDir": 10.4,
+          "stun": 4.8
+        },
+        {
+          "n": "艾莉絲",
+          "lv": 55,
+          "gfx": 4001,
+          "minLv": 1,
+          "wlk": 16,
+          "wep": 1791,
+          "arm": 4095,
+          "atk": 16,
+          "atkW": {
+            "雙手劍": 20
+          },
+          "cast": 8.8,
+          "castNoDir": 9.6,
+          "stun": 4.8
+        },
+        {
+          "n": "黑暗刺客",
+          "lv": 55,
+          "gfx": 5727,
+          "minLv": 55,
+          "wlk": 12,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 14,
+          "atkW": {
+            "單手劍": 20,
+            "雙手劍": 20,
+            "匕首": 20,
+            "單手鈍器": 20,
+            "雙手鈍器": 20,
+            "雙斧": 20,
+            "魔杖": 20
+          },
+          "cast": 10.4,
+          "castNoDir": 11.2,
+          "stun": 4.8
+        },
+        {
+          "n": "吸血鬼",
+          "lv": 56,
+          "gfx": 3952,
+          "minLv": 1,
+          "wlk": 24,
+          "wep": 0,
+          "arm": 32,
+          "stun": 5.6
+        },
+        {
+          "n": "炎魔",
+          "lv": 56,
+          "gfx": 3103,
+          "minLv": 52,
+          "wlk": 18,
+          "wep": 1791,
+          "arm": 4095,
+          "atk": 17,
+          "atkW": {
+            "雙手劍": 20,
+            "單手矛": 18,
+            "雙手矛": 18,
+            "鎖鏈劍": 18
+          },
+          "cast": 7.6,
+          "castNoDir": 8.8,
+          "stun": 3.2
+        },
+        {
+          "n": "黑暗巡守",
+          "lv": 57,
+          "gfx": 3892,
+          "minLv": 55,
+          "wlk": 16,
+          "wep": 256,
+          "arm": 4095,
+          "atk": 19,
+          "cast": 9.6,
+          "castNoDir": 11.2,
+          "stun": 5.2
+        },
+        {
+          "n": "黑暗法師",
+          "lv": 58,
+          "gfx": 3891,
+          "minLv": 55,
+          "wlk": 16,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 17,
+          "atkW": {
+            "雙手劍": 26
+          },
+          "cast": 6.8,
+          "castNoDir": 8.4,
+          "stun": 5.6
+        },
+        {
+          "n": "黑暗騎士",
+          "lv": 58,
+          "gfx": 3890,
+          "minLv": 55,
+          "wlk": 12,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 14,
+          "atkW": {
+            "雙手劍": 20,
+            "雙刀": 20,
+            "鋼爪": 20,
+            "奇古獸": 20
+          },
+          "cast": 10.8,
+          "castNoDir": 14,
+          "stun": 4.8
+        },
+        {
+          "n": "銀光巡守",
+          "lv": 59,
+          "gfx": 3895,
+          "minLv": 60,
+          "wlk": 16,
+          "wep": 256,
+          "arm": 4095,
+          "atk": 19,
+          "cast": 9.6,
+          "castNoDir": 10.8,
+          "stun": 5.2
+        }
+      ]
+    },
+    "6": {
+      "forms": [
+        {
+          "n": "銀光刺客",
+          "lv": 60,
+          "gfx": 5730,
+          "minLv": 60,
+          "wlk": 12,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 14,
+          "atkW": {
+            "單手劍": 20,
+            "雙手劍": 20,
+            "匕首": 20,
+            "單手鈍器": 20,
+            "雙手鈍器": 20,
+            "雙斧": 20,
+            "魔杖": 20
+          },
+          "cast": 10.4,
+          "castNoDir": 10.4,
+          "stun": 4.4
+        },
+        {
+          "n": "銀光法師",
+          "lv": 60,
+          "gfx": 3894,
+          "minLv": 60,
+          "wlk": 16,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 17,
+          "atkW": {
+            "雙手劍": 26
+          },
+          "cast": 6.8,
+          "castNoDir": 8,
+          "stun": 5.6
+        },
+        {
+          "n": "銀光騎士",
+          "lv": 60,
+          "gfx": 3893,
+          "minLv": 60,
+          "wlk": 12,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 14,
+          "atkW": {
+            "雙手劍": 19,
+            "雙刀": 20,
+            "鋼爪": 20,
+            "奇古獸": 20
+          },
+          "cast": 10.8,
+          "castNoDir": 14,
+          "stun": 4.4
+        },
+        {
+          "n": "騎士范德",
+          "lv": 60,
+          "gfx": 4000,
+          "minLv": 1,
+          "wlk": 12,
+          "wep": 1791,
+          "arm": 4095,
+          "atk": 16,
+          "atkW": {
+            "雙手劍": 20
+          },
+          "cast": 8.8,
+          "castNoDir": 9.6,
+          "stun": 4.8
+        },
+        {
+          "n": "惡魔",
+          "lv": 61,
+          "gfx": 3889,
+          "minLv": 51,
+          "wlk": 16,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 18,
+          "atkW": {
+            "雙刀": 17,
+            "鋼爪": 17,
+            "奇古獸": 17
+          },
+          "cast": 8.8,
+          "castNoDir": 9.6,
+          "stun": 4
+        },
+        {
+          "n": "黃金巡守",
+          "lv": 61,
+          "gfx": 3898,
+          "minLv": 65,
+          "wlk": 16,
+          "wep": 256,
+          "arm": 4095,
+          "atk": 19,
+          "cast": 9.6,
+          "castNoDir": 10.4,
+          "stun": 5.2
+        },
+        {
+          "n": "黃金法師",
+          "lv": 62,
+          "gfx": 3897,
+          "minLv": 65,
+          "wlk": 16,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 17,
+          "atkW": {
+            "雙手劍": 26
+          },
+          "cast": 6.4,
+          "castNoDir": 8,
+          "stun": 5.6
+        },
+        {
+          "n": "黃金騎士",
+          "lv": 62,
+          "gfx": 3896,
+          "minLv": 65,
+          "wlk": 12,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 14,
+          "atkW": {
+            "雙手劍": 18,
+            "雙刀": 20,
+            "鋼爪": 20,
+            "奇古獸": 20
+          },
+          "cast": 10.8,
+          "castNoDir": 14,
+          "stun": 4
+        },
+        {
+          "n": "白金巡守",
+          "lv": 63,
+          "gfx": 3901,
+          "minLv": 70,
+          "wlk": 16,
+          "wep": 256,
+          "arm": 4095,
+          "atk": 19,
+          "cast": 9.6,
+          "castNoDir": 10,
+          "stun": 5.2
+        },
+        {
+          "n": "白金法師",
+          "lv": 64,
+          "gfx": 3900,
+          "minLv": 70,
+          "wlk": 16,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 17,
+          "atkW": {
+            "雙手劍": 26
+          },
+          "cast": 6.4,
+          "castNoDir": 7.2,
+          "stun": 5.2
+        },
+        {
+          "n": "白金騎士",
+          "lv": 64,
+          "gfx": 3899,
+          "minLv": 70,
+          "wlk": 12,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 14,
+          "atkW": {
+            "雙手劍": 17,
+            "雙刀": 20,
+            "鋼爪": 20,
+            "奇古獸": 20
+          },
+          "cast": 10.8,
+          "castNoDir": 14,
+          "stun": 3.6
+        },
+        {
+          "n": "黃金刺客",
+          "lv": 65,
+          "gfx": 5733,
+          "minLv": 65,
+          "wlk": 12,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 14,
+          "atkW": {
+            "單手劍": 20,
+            "雙手劍": 20,
+            "匕首": 20,
+            "單手鈍器": 20,
+            "雙手鈍器": 20,
+            "雙斧": 20,
+            "魔杖": 20
+          },
+          "cast": 10.4,
+          "castNoDir": 10,
+          "stun": 4
+        }
+      ]
+    },
+    "7": {
+      "forms": [
+        {
+          "n": "死亡",
+          "lv": 70,
+          "gfx": 2388,
+          "minLv": 1,
+          "wlk": 16,
+          "wep": 0,
+          "arm": 32,
+          "stun": 6.4
+        },
+        {
+          "n": "白金刺客",
+          "lv": 70,
+          "gfx": 5736,
+          "minLv": 70,
+          "wlk": 12,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 14,
+          "atkW": {
+            "單手劍": 20,
+            "雙手劍": 20,
+            "匕首": 20,
+            "單手鈍器": 20,
+            "雙手鈍器": 20,
+            "雙斧": 20,
+            "魔杖": 20
+          },
+          "cast": 10.4,
+          "castNoDir": 9.2,
+          "stun": 3.6
+        },
+        {
+          "n": "反王肯恩",
+          "lv": 75,
+          "gfx": 3903,
+          "minLv": 1,
+          "wlk": 12,
+          "wep": 751,
+          "arm": 4095,
+          "atk": 20,
+          "atkW": {
+            "單手劍": 22,
+            "雙手劍": 23,
+            "匕首": 21,
+            "雙刀": 26,
+            "單手鈍器": 24,
+            "雙手鈍器": 24,
+            "雙斧": 24,
+            "魔杖": 31
+          },
+          "cast": 11.6,
+          "stun": 5.6
+        }
+      ]
+    },
+    "__doc": "變身形態全面改用 L1J-TW 模型（用戶 2026-08-08）：形態不再給固定戰鬥數值，速度＝SprTable[gfx][武器動作]，玩家保留自己的能力所以等級越高變身越強。名冊＝tools/poly-l1j-roster.csv（用戶逐列標的，寫「移除」的不實裝），由 tools/build-poly-table.py 從 polymorphs.sql＋spr_action.sql 產生，勿手改。`lv` 是港版原有的隨機池階梯（新形態沒有就用 minLv），`minLv` 是 L1J 的硬門檻，兩者都要過。`wep`/`arm` 是 L1J 的裝備位元遮罩——不合規的武器／防具在變身期間效果全失。`atk`/`atkW` 是等效 24fps 幀數，`cast`/`castNoDir`/`stun` 是 tick。"
+  },
+  "HITSTUN_TICKS_OVERRIDES": {
+    "__doc": "由 tools/export-player-speed.py 從官方 list.spr 產生（1 幀＝40ms）。⚠️ 執行期權威是 C# `WeaponCombatProfile` 寫死的列，這裡只是資料表側的同一份；兩邊要一起改，`CombatConstantTablesMatchTheExportedData` 會擋住只改一邊。",
+    "王子": 6,
+    "公主": 6,
+    "男騎士": 6,
+    "女騎士": 6,
+    "男妖精": 6,
+    "女妖精": 6,
+    "男法師": 6,
+    "女法師": 6,
+    "男黑暗妖精": 4,
+    "女黑暗妖精": 4,
+    "男龍騎士": 6,
+    "女龍騎士": 6,
+    "男戰士": 6,
+    "女戰士": 6,
+    "男幻術士": 6,
+    "女幻術士": 6
+  },
+  "SET_POLY_FORMS_OVERRIDES": {
+    "dk": {
+      "wlk": 16,
+      "atk": 15,
+      "cast": 8.8,
+      "stun": 4.8
+    },
+    "kurt": {
+      "wlk": 16,
+      "atk": 17,
+      "cast": 9.6,
+      "stun": 4
+    },
+    "demon": {
+      "wlk": 16,
+      "atk": 18,
+      "cast": 8.8,
+      "stun": 4
+    },
+    "darkelf": {
+      "wlk": 16,
+      "atk": 19,
+      "cast": 9.6,
+      "stun": 5.2
+    }
+  },
+  "SET_POLY_FORMS": {
+    "dk": {
+      "gfx": 3784,
+      "minLv": 52,
+      "wep": 751,
+      "arm": 4095,
+      "atkW": {
+        "雙手劍": 23,
+        "雙刀": 19,
+        "鋼爪": 19,
+        "奇古獸": 19
+      },
+      "castNoDir": 9.6
+    },
+    "kurt": {
+      "gfx": 3101,
+      "minLv": 51,
+      "wep": 751,
+      "arm": 4095,
+      "atkW": {
+        "雙手劍": 20,
+        "雙刀": 20,
+        "鋼爪": 20,
+        "奇古獸": 20
+      },
+      "castNoDir": 10.4
+    },
+    "demon": {
+      "gfx": 3889,
+      "minLv": 51,
+      "wep": 751,
+      "arm": 4095,
+      "atkW": {
+        "雙刀": 17,
+        "鋼爪": 17,
+        "奇古獸": 17
+      },
+      "castNoDir": 9.6
+    },
+    "darkelf": {
+      "gfx": 2284,
+      "minLv": 52,
+      "wep": 256,
+      "arm": 4095,
+      "castNoDir": 11.2
+    }
+  }
+}

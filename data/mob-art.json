@@ -1,0 +1,18 @@
+{
+  "__doc": [
+    "無法由指定 3.8c raw SPR 產生 atlas 的 canonical main 怪物。",
+    "由 tools/l1j-import/build_mob_art_coverage.py 產生；不讀 Web 動畫或名稱 fallback。",
+    "noArt 只控制招募與生成可用性，不借其他怪物圖片補洞。"
+  ],
+  "counts": {
+    "mobs": 1221,
+    "noArt": 1
+  },
+  "noArt": [
+    "l1j_81175"
+  ],
+  "13394": "mob_13394",
+  "13399": "mob_13399",
+  "93394": "mob_13394",
+  "93395": "mob_13399"
+}

@@ -1,0 +1,27 @@
+{
+ "pot": {
+  "stat": "weight",
+  "val": 10,
+  "label": "負重 +10"
+ },
+ "scroll": {
+  "stat": "weight",
+  "val": 10,
+  "label": "負重 +10"
+ },
+ "skillbk": {
+  "stat": "mpR",
+  "val": 3,
+  "label": "MP自然恢復量 +3"
+ },
+ "mat": {
+  "stat": "potion",
+  "val": 3,
+  "label": "藥水恢復量 +3%"
+ },
+ "special": {
+  "stat": "potion",
+  "val": 2,
+  "label": "藥水恢復量 +2%"
+ }
+}

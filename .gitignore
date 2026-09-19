@@ -1,0 +1,24 @@
+# Godot 4 忽略檔案
+.godot/
+.import/
+export_credentials.cfg
+
+# .NET / C# 忽略檔案
+bin/
+obj/
+*.user
+*.userprefs
+*.pidb
+*.suo
+*.booproj
+*.sln.docstates
+
+# 輸出檔案
+dist/
+build/
+*.tmp
+*.log
+
+# 系統快取
+.DS_Store
+Thumbs.db

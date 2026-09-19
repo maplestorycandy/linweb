@@ -1,0 +1,24 @@
+[
+ {
+  "n": "夏納",
+  "lv": 52,
+  "shanna": true,
+  "controlOnly": true,
+  "keepClassAppearance": true,
+  "wlk": 12,
+  "castApm": 85,
+  "supportCastApm": 75,
+  "c": "text-yellow-400"
+ },
+ {
+  "n": "真夏納",
+  "lv": 85,
+  "trueShanna": true,
+  "controlOnly": true,
+  "classMorph": true,
+  "wlk": 11,
+  "castApm": 100,
+  "supportCastApm": 90,
+  "c": "text-yellow-400"
+ }
+]

@@ -1,0 +1,42 @@
+{
+  "version": 3,
+  "mapKey": "town_talking_island",
+  "mapId": 0,
+  "displayName": "說話之島村莊",
+  "category": "Town",
+  "focusX": 332,
+  "focusY": 185,
+  "source": {
+    "format": "Lineage classic S32/TIL",
+    "chunkGrid": [
+      8,
+      8
+    ],
+    "cellsPerChunk": 64,
+    "gameOrigin": [
+      32256,
+      32768
+    ],
+    "gridCells": [
+      512,
+      512
+    ]
+  },
+  "paging": {
+    "fullNativePixels": [
+      24576,
+      12288
+    ]
+  },
+  "preview": {
+    "file": "l1j-map-0-preview.png",
+    "size": [
+      2048,
+      1024
+    ]
+  },
+  "isIsometricTown": false,
+  "originNativeX": 0,
+  "originNativeY": 0,
+  "canvasScale": 1.0
+}

@@ -1,0 +1,1 @@
+{"name":"door_2603","group":"anim","trimmed":true,"flattenedShadows":false,"atlas":{"w":63,"h":70,"pad":1,"format":"rgba32","colors":null},"src":{"files":2,"contentHash":"be8217cdd0501343798a4ff3546aca5a","bytes":5333},"frames":{"frame":[{"x":32,"y":0,"w":30,"h":69,"dx":0,"dy":0,"cw":31,"ch":85},{"x":0,"y":0,"w":31,"h":69,"dx":0,"dy":16,"cw":31,"ch":85}]}}

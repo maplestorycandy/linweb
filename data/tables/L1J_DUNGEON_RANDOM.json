@@ -1,0 +1,373 @@
+{
+ "schemaVersion": 1,
+ "source": "L1j-TW-main/db/InnoDB_TW/dungeon_random.sql",
+ "barrierDurationMs": 2000,
+ "counts": {
+  "rows": 10,
+  "destinations": 50,
+  "sourceMaps": 1,
+  "destinationMaps": 1
+ },
+ "rows": [
+  {
+   "source": {
+    "mapId": 5140,
+    "gameX": 32769,
+    "gameY": 32869
+   },
+   "destinations": [
+    {
+     "mapId": 5140,
+     "gameX": 32774,
+     "gameY": 32797
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32773,
+     "gameY": 32817
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32784,
+     "gameY": 32831
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32776,
+     "gameY": 32857
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32783,
+     "gameY": 32874
+    }
+   ],
+   "heading": 2,
+   "note": "幽靈之家:開始區->中間區"
+  },
+  {
+   "source": {
+    "mapId": 5140,
+    "gameX": 32770,
+    "gameY": 32788
+   },
+   "destinations": [
+    {
+     "mapId": 5140,
+     "gameX": 32774,
+     "gameY": 32797
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32773,
+     "gameY": 32817
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32784,
+     "gameY": 32831
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32776,
+     "gameY": 32857
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32783,
+     "gameY": 32874
+    }
+   ],
+   "heading": 2,
+   "note": "幽靈之家:開始區->中間區"
+  },
+  {
+   "source": {
+    "mapId": 5140,
+    "gameX": 32770,
+    "gameY": 32807
+   },
+   "destinations": [
+    {
+     "mapId": 5140,
+     "gameX": 32774,
+     "gameY": 32797
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32773,
+     "gameY": 32817
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32784,
+     "gameY": 32831
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32776,
+     "gameY": 32857
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32783,
+     "gameY": 32874
+    }
+   ],
+   "heading": 2,
+   "note": "幽靈之家:開始區->中間區"
+  },
+  {
+   "source": {
+    "mapId": 5140,
+    "gameX": 32772,
+    "gameY": 32846
+   },
+   "destinations": [
+    {
+     "mapId": 5140,
+     "gameX": 32774,
+     "gameY": 32797
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32773,
+     "gameY": 32817
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32784,
+     "gameY": 32831
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32776,
+     "gameY": 32857
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32783,
+     "gameY": 32874
+    }
+   ],
+   "heading": 2,
+   "note": "幽靈之家:開始區->中間區"
+  },
+  {
+   "source": {
+    "mapId": 5140,
+    "gameX": 32774,
+    "gameY": 32830
+   },
+   "destinations": [
+    {
+     "mapId": 5140,
+     "gameX": 32774,
+     "gameY": 32797
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32773,
+     "gameY": 32817
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32784,
+     "gameY": 32831
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32776,
+     "gameY": 32857
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32783,
+     "gameY": 32874
+    }
+   ],
+   "heading": 2,
+   "note": "幽靈之家:開始區->中間區"
+  },
+  {
+   "source": {
+    "mapId": 5140,
+    "gameX": 32815,
+    "gameY": 32873
+   },
+   "destinations": [
+    {
+     "mapId": 5140,
+     "gameX": 32835,
+     "gameY": 32788
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32834,
+     "gameY": 32807
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32827,
+     "gameY": 32828
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32823,
+     "gameY": 32849
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32828,
+     "gameY": 32875
+    }
+   ],
+   "heading": 2,
+   "note": "幽靈之家:中間區->終點區"
+  },
+  {
+   "source": {
+    "mapId": 5140,
+    "gameX": 32816,
+    "gameY": 32859
+   },
+   "destinations": [
+    {
+     "mapId": 5140,
+     "gameX": 32835,
+     "gameY": 32788
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32834,
+     "gameY": 32807
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32827,
+     "gameY": 32828
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32823,
+     "gameY": 32849
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32828,
+     "gameY": 32875
+    }
+   ],
+   "heading": 2,
+   "note": "幽靈之家:中間區->終點區"
+  },
+  {
+   "source": {
+    "mapId": 5140,
+    "gameX": 32821,
+    "gameY": 32819
+   },
+   "destinations": [
+    {
+     "mapId": 5140,
+     "gameX": 32835,
+     "gameY": 32788
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32834,
+     "gameY": 32807
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32827,
+     "gameY": 32828
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32823,
+     "gameY": 32849
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32828,
+     "gameY": 32875
+    }
+   ],
+   "heading": 2,
+   "note": "幽靈之家:中間區->終點區"
+  },
+  {
+   "source": {
+    "mapId": 5140,
+    "gameX": 32822,
+    "gameY": 32840
+   },
+   "destinations": [
+    {
+     "mapId": 5140,
+     "gameX": 32835,
+     "gameY": 32788
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32834,
+     "gameY": 32807
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32827,
+     "gameY": 32828
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32823,
+     "gameY": 32849
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32828,
+     "gameY": 32875
+    }
+   ],
+   "heading": 2,
+   "note": "幽靈之家:中間區->終點區"
+  },
+  {
+   "source": {
+    "mapId": 5140,
+    "gameX": 32824,
+    "gameY": 32796
+   },
+   "destinations": [
+    {
+     "mapId": 5140,
+     "gameX": 32835,
+     "gameY": 32788
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32834,
+     "gameY": 32807
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32827,
+     "gameY": 32828
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32823,
+     "gameY": 32849
+    },
+    {
+     "mapId": 5140,
+     "gameX": 32828,
+     "gameY": 32875
+    }
+   ],
+   "heading": 2,
+   "note": "幽靈之家:中間區->終點區"
+  }
+ ]
+}

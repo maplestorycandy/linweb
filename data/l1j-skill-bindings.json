@@ -1,0 +1,1620 @@
+{
+ "__doc": [
+  "官方技能 ID ↔ 穩定港版 key 的綁定表——由 tools/l1j-import/build_skill_bindings.py 產生。",
+  "⚠️ 機器產物，重跑整份覆蓋。對應 codex 2026-08-09 規格第八節第 2 步。",
+  "⚠️ **port key 一個都沒改**（codex 兩個選項裡選「保留舊 key」）⇒ 存檔、快捷列、",
+  "   裝備授予技能全部照舊，這一步在存檔層零風險。後面替換數值時也不准改 key：",
+  "   要改顯示名就只改 `n`，key 是存檔契約。",
+  "⚠️ `portOnly` 那批是**港版原創**（戰士／遺物／裝備授予…），標 source=port，",
+  "   **不准套 L1J 數值**（codex 拍板 4）。",
+  "⚠️ 自動綁定只信 **3.8c 客戶端名**：港版技能名跟客戶端一致、跟 L1J SQL 不一致",
+  "   （8 個衝突槽已由 manifest 獨立證實）。拿 SQL name 對會把火箭接到地獄之牙。"
+ ],
+ "counts": {
+  "official": 180,
+  "port": 211,
+  "bound": 180,
+  "portOnly": 31,
+  "officialOnly": 0
+ },
+ "bindings": [
+  {
+   "officialId": 1,
+   "portKey": "sk_heal1",
+   "portName": "初級治癒術",
+   "clientName": "初級治癒術",
+   "sqlName": "初級治癒術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 2,
+   "portKey": "sk_sunlight",
+   "portName": "日光術",
+   "clientName": "日光術",
+   "sqlName": "日光術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 3,
+   "portKey": "sk_shield",
+   "portName": "保護罩",
+   "clientName": "保護罩",
+   "sqlName": "保護罩",
+   "via": "client-name"
+  },
+  {
+   "officialId": 4,
+   "portKey": "sk_lightarrow",
+   "portName": "光箭",
+   "clientName": "光箭",
+   "sqlName": "光箭",
+   "via": "client-name"
+  },
+  {
+   "officialId": 5,
+   "portKey": "sk_teleport",
+   "portName": "傳送術",
+   "clientName": "指定傳送",
+   "sqlName": "指定傳送",
+   "via": "manual"
+  },
+  {
+   "officialId": 6,
+   "portKey": "sk_icearrow",
+   "portName": "冰箭",
+   "clientName": "冰箭",
+   "sqlName": "冰箭",
+   "via": "client-name"
+  },
+  {
+   "officialId": 7,
+   "portKey": "sk_windblade",
+   "portName": "風刃",
+   "clientName": "風刃",
+   "sqlName": "風刃",
+   "via": "client-name"
+  },
+  {
+   "officialId": 8,
+   "portKey": "sk_holy_wpn",
+   "portName": "神聖武器",
+   "clientName": "神聖武器",
+   "sqlName": "神聖武器",
+   "via": "client-name"
+  },
+  {
+   "officialId": 9,
+   "portKey": "sk_antidote",
+   "portName": "解毒術",
+   "clientName": "解毒術",
+   "sqlName": "解毒術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 10,
+   "portKey": "sk_cold_shiver",
+   "portName": "寒冷戰慄",
+   "clientName": "寒冷戰慄",
+   "sqlName": "寒冷戰慄",
+   "via": "client-name"
+  },
+  {
+   "officialId": 11,
+   "portKey": "sk_poison_curse",
+   "portName": "毒咒",
+   "clientName": "毒咒",
+   "sqlName": "毒咒",
+   "via": "client-name"
+  },
+  {
+   "officialId": 12,
+   "portKey": "sk_ench_wpn",
+   "portName": "擬似魔法武器",
+   "clientName": "擬似魔法武器",
+   "sqlName": "擬似魔法武器",
+   "via": "client-name"
+  },
+  {
+   "officialId": 13,
+   "portKey": "sk_reveal",
+   "portName": "無所遁形術",
+   "clientName": "無所遁形術",
+   "sqlName": "無所遁形術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 14,
+   "portKey": "sk_load_up",
+   "portName": "負重強化",
+   "clientName": "負重強化",
+   "sqlName": "負重強化",
+   "via": "client-name"
+  },
+  {
+   "officialId": 15,
+   "portKey": "sk_firearrow",
+   "portName": "火箭",
+   "clientName": "火箭",
+   "sqlName": "地獄之牙",
+   "via": "client-name"
+  },
+  {
+   "officialId": 16,
+   "portKey": "sk_hell_fang",
+   "portName": "地獄之牙",
+   "clientName": "地獄之牙",
+   "sqlName": "火箭",
+   "via": "client-name"
+  },
+  {
+   "officialId": 17,
+   "portKey": "sk_aurora",
+   "portName": "極光雷電",
+   "clientName": "極光雷電",
+   "sqlName": "極光雷電",
+   "via": "client-name"
+  },
+  {
+   "officialId": 18,
+   "portKey": "sk_undead_bane",
+   "portName": "起死回生術",
+   "clientName": "起死回生術",
+   "sqlName": "起死回生術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 19,
+   "portKey": "sk_heal_mid",
+   "portName": "中級治癒術",
+   "clientName": "中級治癒術",
+   "sqlName": "中級治癒術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 20,
+   "portKey": "sk_dark_blind",
+   "portName": "闇盲咒術",
+   "clientName": "闇盲咒術",
+   "sqlName": "闇盲咒術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 21,
+   "portKey": "sk_shield2",
+   "portName": "鎧甲護持",
+   "clientName": "鎧甲護持",
+   "sqlName": "鎧甲護持",
+   "via": "client-name"
+  },
+  {
+   "officialId": 22,
+   "portKey": "sk_chill",
+   "portName": "寒冰氣息",
+   "clientName": "寒冰氣息",
+   "sqlName": "寒冰氣息",
+   "via": "client-name"
+  },
+  {
+   "officialId": 23,
+   "portKey": "sk_energy_sense",
+   "portName": "能量感測",
+   "clientName": "能量感測",
+   "sqlName": "能量感測",
+   "via": "client-name"
+  },
+  {
+   "officialId": 25,
+   "portKey": "sk_fireball",
+   "portName": "燃燒的火球",
+   "clientName": "燃燒的火球",
+   "sqlName": "燃燒的火球",
+   "via": "client-name"
+  },
+  {
+   "officialId": 26,
+   "portKey": "sk_dex_up",
+   "portName": "通暢氣脈術",
+   "clientName": "通暢氣脈術",
+   "sqlName": "通暢氣脈術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 27,
+   "portKey": "sk_break",
+   "portName": "壞物術",
+   "clientName": "壞物術",
+   "sqlName": "壞物術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 28,
+   "portKey": "sk_vampire",
+   "portName": "吸血鬼之吻",
+   "clientName": "吸血鬼之吻",
+   "sqlName": "吸血鬼之吻",
+   "via": "client-name"
+  },
+  {
+   "officialId": 29,
+   "portKey": "sk_slow",
+   "portName": "緩速術",
+   "clientName": "緩速術",
+   "sqlName": "緩速術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 30,
+   "portKey": "sk_rock_prison",
+   "portName": "岩牢",
+   "clientName": "岩牢",
+   "sqlName": "岩牢",
+   "via": "client-name"
+  },
+  {
+   "officialId": 31,
+   "portKey": "sk_magic_shield",
+   "portName": "魔法屏障",
+   "clientName": "魔法屏障",
+   "sqlName": "魔法屏障",
+   "via": "client-name"
+  },
+  {
+   "officialId": 32,
+   "portKey": "sk_meditation",
+   "portName": "冥想術",
+   "clientName": "冥想術",
+   "sqlName": "冥想術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 33,
+   "portKey": "sk_mummy_curse",
+   "portName": "木乃伊的詛咒",
+   "clientName": "木乃伊的詛咒",
+   "sqlName": "木乃伊的詛咒",
+   "via": "client-name"
+  },
+  {
+   "officialId": 34,
+   "portKey": "sk_thunder",
+   "portName": "極道落雷",
+   "clientName": "極道落雷",
+   "sqlName": "極道落雷",
+   "via": "client-name"
+  },
+  {
+   "officialId": 35,
+   "portKey": "sk_heal2",
+   "portName": "高級治癒術",
+   "clientName": "高級治癒術",
+   "sqlName": "高級治癒術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 36,
+   "portKey": "sk_charm",
+   "portName": "迷魅術",
+   "clientName": "迷魅術",
+   "sqlName": "迷魅術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 37,
+   "portKey": "sk_holy_light",
+   "portName": "聖潔之光",
+   "clientName": "聖潔之光",
+   "sqlName": "聖潔之光",
+   "via": "client-name"
+  },
+  {
+   "officialId": 38,
+   "portKey": "sk_ice_spike",
+   "portName": "冰錐",
+   "clientName": "冰錐",
+   "sqlName": "冰錐",
+   "via": "client-name"
+  },
+  {
+   "officialId": 39,
+   "portKey": "sk_mana_drain",
+   "portName": "魔力奪取",
+   "clientName": "魔力奪取",
+   "sqlName": "魔力奪取",
+   "via": "client-name"
+  },
+  {
+   "officialId": 40,
+   "portKey": "sk_dark_shadow",
+   "portName": "黑闇之影",
+   "clientName": "黑闇之影",
+   "sqlName": "黑闇之影",
+   "via": "client-name"
+  },
+  {
+   "officialId": 41,
+   "portKey": "sk_zombie",
+   "portName": "造屍術",
+   "clientName": "造屍術",
+   "sqlName": "造屍術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 42,
+   "portKey": "sk_str_up",
+   "portName": "體魄強健術",
+   "clientName": "體魄強健術",
+   "sqlName": "體魄強健術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 43,
+   "portKey": "sk_haste_spell",
+   "portName": "加速術",
+   "clientName": "加速術",
+   "sqlName": "加速術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 44,
+   "portKey": "sk_cancel",
+   "portName": "魔法相消術",
+   "clientName": "魔法相消術",
+   "sqlName": "魔法相消術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 45,
+   "portKey": "sk_earthquake",
+   "portName": "地裂術",
+   "clientName": "地裂術",
+   "sqlName": "地裂術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 46,
+   "portKey": "sk_blaze",
+   "portName": "烈炎術",
+   "clientName": "烈炎術",
+   "sqlName": "烈炎術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 47,
+   "portKey": "sk_weaken",
+   "portName": "弱化術",
+   "clientName": "弱化術",
+   "sqlName": "弱化術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 48,
+   "portKey": "sk_bless_wpn",
+   "portName": "祝福魔法武器",
+   "clientName": "祝福魔法武器",
+   "sqlName": "祝福魔法武器",
+   "via": "client-name"
+  },
+  {
+   "officialId": 49,
+   "portKey": "sk_regen",
+   "portName": "體力回復術",
+   "clientName": "體力回復術",
+   "sqlName": "體力回復術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 50,
+   "portKey": "sk_ice_lance",
+   "portName": "冰矛圍籬",
+   "clientName": "冰矛圍籬",
+   "sqlName": "冰矛圍籬",
+   "via": "client-name"
+  },
+  {
+   "officialId": 51,
+   "portKey": "sk_summon",
+   "portName": "召喚術",
+   "clientName": "召喚術",
+   "sqlName": "召喚術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 52,
+   "portKey": "sk_holy_dash",
+   "portName": "神聖疾走",
+   "clientName": "神聖疾走",
+   "sqlName": "神聖疾走",
+   "via": "client-name"
+  },
+  {
+   "officialId": 53,
+   "portKey": "sk_tornado",
+   "portName": "龍捲風",
+   "clientName": "龍捲風",
+   "sqlName": "龍捲風",
+   "via": "client-name"
+  },
+  {
+   "officialId": 54,
+   "portKey": "sk_greater_haste",
+   "portName": "強力加速術",
+   "clientName": "強力加速術",
+   "sqlName": "強力加速術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 55,
+   "portKey": "sk_berserk",
+   "portName": "狂暴術",
+   "clientName": "狂暴術",
+   "sqlName": "狂暴術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 56,
+   "portKey": "sk_disease",
+   "portName": "疾病術",
+   "clientName": "疾病術",
+   "sqlName": "疾病術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 57,
+   "portKey": "sk_full_heal",
+   "portName": "全部治癒術",
+   "clientName": "全部治癒術",
+   "sqlName": "全部治癒術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 58,
+   "portKey": "sk_fire_prison",
+   "portName": "火牢",
+   "clientName": "火牢",
+   "sqlName": "火牢",
+   "via": "client-name"
+  },
+  {
+   "officialId": 59,
+   "portKey": "sk_blizzard",
+   "portName": "冰雪暴",
+   "clientName": "冰雪暴",
+   "sqlName": "冰雪暴",
+   "via": "client-name"
+  },
+  {
+   "officialId": 60,
+   "portKey": "sk_invisible",
+   "portName": "隱身術",
+   "clientName": "隱身術",
+   "sqlName": "隱身術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 61,
+   "portKey": "sk_resurrection",
+   "portName": "返生術",
+   "clientName": "返生術",
+   "sqlName": "返生術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 62,
+   "portKey": "sk_quake",
+   "portName": "震裂術",
+   "clientName": "震裂術",
+   "sqlName": "震裂術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 63,
+   "portKey": "sk_heal_energy_storm",
+   "portName": "治癒能量風暴",
+   "clientName": "治癒能量風暴",
+   "sqlName": "治癒能量風暴",
+   "via": "client-name"
+  },
+  {
+   "officialId": 64,
+   "portKey": "sk_seal",
+   "portName": "魔法封印",
+   "clientName": "魔法封印",
+   "sqlName": "魔法封印",
+   "via": "client-name"
+  },
+  {
+   "officialId": 65,
+   "portKey": "sk_thunder_storm",
+   "portName": "雷霆風暴",
+   "clientName": "雷霆風暴",
+   "sqlName": "雷霆風暴",
+   "via": "client-name"
+  },
+  {
+   "officialId": 66,
+   "portKey": "sk_sleep_mist",
+   "portName": "沉睡之霧",
+   "clientName": "沉睡之霧",
+   "sqlName": "沉睡之霧",
+   "via": "client-name"
+  },
+  {
+   "officialId": 67,
+   "portKey": "sk_polymorph",
+   "portName": "變形術",
+   "clientName": "變形術",
+   "sqlName": "變形術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 68,
+   "portKey": "sk_holy_barrier",
+   "portName": "聖結界",
+   "clientName": "聖結界",
+   "sqlName": "聖結界",
+   "via": "client-name"
+  },
+  {
+   "officialId": 69,
+   "portKey": "sk_mass_teleport",
+   "portName": "集體傳送術",
+   "clientName": "集體傳送術",
+   "sqlName": "集體傳送術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 70,
+   "portKey": "sk_fire_storm",
+   "portName": "火風暴",
+   "clientName": "火風暴",
+   "sqlName": "火風暴",
+   "via": "client-name"
+  },
+  {
+   "officialId": 71,
+   "portKey": "sk_decay_potion",
+   "portName": "藥水霜化術",
+   "clientName": "藥水霜化術",
+   "sqlName": "藥水霜化術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 72,
+   "portKey": "sk_greater_reveal",
+   "portName": "強力無所遁形術",
+   "clientName": "強力無所遁形術",
+   "sqlName": "強力無所遁形術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 73,
+   "portKey": "sk_create_magic_weapon",
+   "portName": "創造魔法武器",
+   "clientName": "創造魔法武器",
+   "sqlName": "創造魔法武器",
+   "via": "client-name"
+  },
+  {
+   "officialId": 74,
+   "portKey": "sk_meteor",
+   "portName": "流星雨",
+   "clientName": "流星雨",
+   "sqlName": "流星雨",
+   "via": "client-name"
+  },
+  {
+   "officialId": 75,
+   "portKey": "sk_ultimate_resurrection",
+   "portName": "終極返生術",
+   "clientName": "終極返生術",
+   "sqlName": "終極返生術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 76,
+   "portKey": "sk_mass_slow",
+   "portName": "集體緩速術",
+   "clientName": "集體緩速術",
+   "sqlName": "集體緩速術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 77,
+   "portKey": "sk_disintegrate",
+   "portName": "究極光裂術",
+   "clientName": "究極光裂術",
+   "sqlName": "究極光裂術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 78,
+   "portKey": "sk_abs_barrier",
+   "portName": "絕對屏障",
+   "clientName": "絕對屏障",
+   "sqlName": "絕對屏障",
+   "via": "client-name"
+  },
+  {
+   "officialId": 79,
+   "portKey": "sk_soul_up",
+   "portName": "靈魂昇華",
+   "clientName": "靈魂昇華",
+   "sqlName": "靈魂昇華",
+   "via": "client-name"
+  },
+  {
+   "officialId": 80,
+   "portKey": "sk_blizzard_storm",
+   "portName": "冰雪颶風",
+   "clientName": "冰雪颶風",
+   "sqlName": "冰雪颶風",
+   "via": "client-name"
+  },
+  {
+   "officialId": 87,
+   "portKey": "sk_shock_stun",
+   "portName": "衝擊之暈",
+   "clientName": "衝擊之暈",
+   "sqlName": "衝擊之暈",
+   "via": "client-name"
+  },
+  {
+   "officialId": 88,
+   "portKey": "sk_reduction_armor",
+   "portName": "增幅防禦",
+   "clientName": "增幅防禦",
+   "sqlName": "增幅防禦",
+   "via": "client-name"
+  },
+  {
+   "officialId": 89,
+   "portKey": "sk_spike_armor",
+   "portName": "尖刺盔甲",
+   "clientName": "尖刺盔甲",
+   "sqlName": "尖刺盔甲",
+   "via": "client-name"
+  },
+  {
+   "officialId": 90,
+   "portKey": "sk_solid_shield",
+   "portName": "堅固防護",
+   "clientName": "堅固防護",
+   "sqlName": "堅固防護",
+   "via": "client-name"
+  },
+  {
+   "officialId": 91,
+   "portKey": "sk_counter_barrier",
+   "portName": "反擊屏障",
+   "clientName": "反擊屏障",
+   "sqlName": "反擊屏障",
+   "via": "client-name"
+  },
+  {
+   "officialId": 97,
+   "portKey": "sk_dark_stealth",
+   "portName": "暗隱術",
+   "clientName": "暗隱術",
+   "sqlName": "暗隱術",
+   "via": "client-name"
+  },
+  {
+   "officialId": 98,
+   "portKey": "sk_dark_poison",
+   "portName": "附加劇毒",
+   "clientName": "附加劇毒",
+   "sqlName": "附加劇毒",
+   "via": "client-name"
+  },
+  {
+   "officialId": 99,
+   "portKey": "sk_dark_mrup",
+   "portName": "影之防護",
+   "clientName": "影之防護",
+   "sqlName": "影之防護",
+   "via": "client-name"
+  },
+  {
+   "officialId": 100,
+   "portKey": "sk_dark_refine",
+   "portName": "提煉魔石",
+   "clientName": "提煉魔石",
+   "sqlName": "提煉魔石",
+   "via": "client-name"
+  },
+  {
+   "officialId": 101,
+   "portKey": "sk_dark_walkhaste",
+   "portName": "行走加速",
+   "clientName": "行走加速",
+   "sqlName": "行走加速",
+   "via": "client-name"
+  },
+  {
+   "officialId": 102,
+   "portKey": "sk_dark_burn",
+   "portName": "燃燒鬥志",
+   "clientName": "燃燒鬥志",
+   "sqlName": "燃燒鬥志",
+   "via": "client-name"
+  },
+  {
+   "officialId": 103,
+   "portKey": "sk_dark_blind_curse",
+   "portName": "暗黑盲咒",
+   "clientName": "暗黑盲咒",
+   "sqlName": "暗黑盲咒",
+   "via": "client-name"
+  },
+  {
+   "officialId": 104,
+   "portKey": "sk_dark_poisonres",
+   "portName": "毒性抵抗",
+   "clientName": "毒性抵抗",
+   "sqlName": "毒性抵抗",
+   "via": "client-name"
+  },
+  {
+   "officialId": 105,
+   "portKey": "sk_dark_double",
+   "portName": "雙重破壞",
+   "clientName": "雙重破壞",
+   "sqlName": "雙重破壞",
+   "via": "client-name"
+  },
+  {
+   "officialId": 106,
+   "portKey": "sk_dark_dodge",
+   "portName": "暗影閃避",
+   "clientName": "暗影閃避",
+   "sqlName": "暗影閃避",
+   "via": "client-name"
+  },
+  {
+   "officialId": 107,
+   "portKey": "sk_dark_fang",
+   "portName": "暗影之牙",
+   "clientName": "暗影之牙",
+   "sqlName": "暗影之牙",
+   "via": "client-name"
+  },
+  {
+   "officialId": 108,
+   "portKey": "sk_dark_crit",
+   "portName": "會心一擊",
+   "clientName": "會心一擊",
+   "sqlName": "會心一擊",
+   "via": "client-name"
+  },
+  {
+   "officialId": 109,
+   "portKey": "sk_dark_str",
+   "portName": "力量提升",
+   "clientName": "力量提升",
+   "sqlName": "力量提升",
+   "via": "client-name"
+  },
+  {
+   "officialId": 110,
+   "portKey": "sk_dark_dex",
+   "portName": "敏捷提升",
+   "clientName": "敏捷提升",
+   "sqlName": "敏捷提升",
+   "via": "client-name"
+  },
+  {
+   "officialId": 111,
+   "portKey": "sk_dark_erup",
+   "portName": "迴避提升",
+   "clientName": "迴避提升",
+   "sqlName": "閃避提升",
+   "via": "client-name"
+  },
+  {
+   "officialId": 113,
+   "portKey": "sk_royal_precise",
+   "portName": "精準目標",
+   "clientName": "精準目標",
+   "sqlName": "精準目標",
+   "via": "client-name"
+  },
+  {
+   "officialId": 114,
+   "portKey": "sk_royal_brave_aura",
+   "portName": "激勵士氣",
+   "clientName": "激勵士氣",
+   "sqlName": "激勵士氣",
+   "via": "client-name"
+  },
+  {
+   "officialId": 115,
+   "portKey": "sk_royal_shield",
+   "portName": "閃亮之盾",
+   "clientName": "閃亮之盾",
+   "sqlName": "鋼鐵士氣",
+   "via": "client-name"
+  },
+  {
+   "officialId": 116,
+   "portKey": "sk_royal_callally",
+   "portName": "呼喚盟友",
+   "clientName": "呼喚盟友",
+   "sqlName": "呼喚盟友",
+   "via": "client-name"
+  },
+  {
+   "officialId": 117,
+   "portKey": "sk_royal_shock_aura",
+   "portName": "衝擊士氣",
+   "clientName": "衝擊士氣",
+   "sqlName": "衝擊士氣",
+   "via": "client-name"
+  },
+  {
+   "officialId": 118,
+   "portKey": "sk_royal_aid_ally",
+   "portName": "援護盟友",
+   "clientName": "援護盟友",
+   "sqlName": "援護盟友",
+   "via": "client-name"
+  },
+  {
+   "officialId": 129,
+   "portKey": "sk_elf_mr",
+   "portName": "魔法防禦",
+   "clientName": "魔法防禦",
+   "sqlName": "魔法防禦",
+   "via": "client-name"
+  },
+  {
+   "officialId": 130,
+   "portKey": "sk_elf_mind",
+   "portName": "心靈轉換",
+   "clientName": "心靈轉換",
+   "sqlName": "心靈轉換",
+   "via": "client-name"
+  },
+  {
+   "officialId": 131,
+   "portKey": "sk_elf_worldtree",
+   "portName": "世界樹的呼喚",
+   "clientName": "世界樹的呼喚",
+   "sqlName": "世界樹的呼喚",
+   "via": "client-name"
+  },
+  {
+   "officialId": 132,
+   "portKey": "sk_elf_triple",
+   "portName": "三重矢",
+   "clientName": "三重矢",
+   "sqlName": "三重矢",
+   "via": "client-name"
+  },
+  {
+   "officialId": 133,
+   "portKey": "sk_elf_elemental_falldown",
+   "portName": "弱化屬性",
+   "clientName": "弱化屬性",
+   "sqlName": "弱化屬性",
+   "via": "client-name"
+  },
+  {
+   "officialId": 134,
+   "portKey": "sk_elf_mirror",
+   "portName": "鏡反射",
+   "clientName": "鏡反射",
+   "sqlName": "鏡反射",
+   "via": "client-name"
+  },
+  {
+   "officialId": 137,
+   "portKey": "sk_elf_purify",
+   "portName": "淨化精神",
+   "clientName": "淨化精神",
+   "sqlName": "淨化精神",
+   "via": "client-name"
+  },
+  {
+   "officialId": 138,
+   "portKey": "sk_elf_eleres",
+   "portName": "屬性防禦",
+   "clientName": "屬性防禦",
+   "sqlName": "屬性防禦",
+   "via": "client-name"
+  },
+  {
+   "officialId": 145,
+   "portKey": "sk_elf_release",
+   "portName": "釋放元素",
+   "clientName": "釋放元素",
+   "sqlName": "釋放元素",
+   "via": "client-name"
+  },
+  {
+   "officialId": 146,
+   "portKey": "sk_elf_soul",
+   "portName": "魂體轉換",
+   "clientName": "魂體轉換",
+   "sqlName": "魂體轉換",
+   "via": "client-name"
+  },
+  {
+   "officialId": 147,
+   "portKey": "sk_elf_singleres",
+   "portName": "單屬性防禦",
+   "clientName": "單屬性防禦",
+   "sqlName": "單屬性防禦",
+   "via": "client-name"
+  },
+  {
+   "officialId": 148,
+   "portKey": "sk_elf_firewpn",
+   "portName": "火焰武器",
+   "clientName": "火焰武器",
+   "sqlName": "火焰武器",
+   "via": "client-name"
+  },
+  {
+   "officialId": 149,
+   "portKey": "sk_elf_windshot",
+   "portName": "風之神射",
+   "clientName": "風之神射",
+   "sqlName": "風之神射",
+   "via": "client-name"
+  },
+  {
+   "officialId": 150,
+   "portKey": "sk_elf_winddash",
+   "portName": "風之疾走",
+   "clientName": "風之疾走",
+   "sqlName": "風之疾走",
+   "via": "client-name"
+  },
+  {
+   "officialId": 151,
+   "portKey": "sk_elf_earthguard",
+   "portName": "大地防護",
+   "clientName": "大地防護",
+   "sqlName": "大地防護",
+   "via": "client-name"
+  },
+  {
+   "officialId": 152,
+   "portKey": "sk_elf_groundtrap",
+   "portName": "地面障礙",
+   "clientName": "地面障礙",
+   "sqlName": "地面障礙",
+   "via": "client-name"
+  },
+  {
+   "officialId": 153,
+   "portKey": "sk_elf_magicerase",
+   "portName": "魔法消除",
+   "clientName": "魔法消除",
+   "sqlName": "魔法消除",
+   "via": "client-name"
+  },
+  {
+   "officialId": 154,
+   "portKey": "sk_elf_summon",
+   "portName": "召喚屬性精靈",
+   "clientName": "召喚屬性精靈",
+   "sqlName": "召喚屬性精靈",
+   "via": "client-name"
+  },
+  {
+   "officialId": 155,
+   "portKey": "sk_elf_flame_breath",
+   "portName": "烈炎氣息",
+   "clientName": "烈炎氣息",
+   "sqlName": "烈炎氣息",
+   "via": "client-name"
+  },
+  {
+   "officialId": 156,
+   "portKey": "sk_elf_stormeye",
+   "portName": "暴風之眼",
+   "clientName": "暴風之眼",
+   "sqlName": "暴風之眼",
+   "via": "client-name"
+  },
+  {
+   "officialId": 157,
+   "portKey": "sk_elf_earthshield",
+   "portName": "大地屏障",
+   "clientName": "大地屏障",
+   "sqlName": "大地屏障",
+   "via": "client-name"
+  },
+  {
+   "officialId": 158,
+   "portKey": "sk_elf_lifespring",
+   "portName": "生命之泉",
+   "clientName": "生命之泉",
+   "sqlName": "生命之泉",
+   "via": "client-name"
+  },
+  {
+   "officialId": 159,
+   "portKey": "sk_elf_earthbless",
+   "portName": "大地的祝福",
+   "clientName": "大地的祝福",
+   "sqlName": "大地的祝福",
+   "via": "client-name"
+  },
+  {
+   "officialId": 160,
+   "portKey": "sk_elf_water_guard",
+   "portName": "水之防護",
+   "clientName": "水之防護",
+   "sqlName": "水之防護",
+   "via": "client-name"
+  },
+  {
+   "officialId": 161,
+   "portKey": "sk_elf_seal",
+   "portName": "封印禁地",
+   "clientName": "封印禁地",
+   "sqlName": "封印禁地",
+   "via": "client-name"
+  },
+  {
+   "officialId": 162,
+   "portKey": "sk_elf_summon2",
+   "portName": "召喚強力屬性精靈",
+   "clientName": "召喚強力屬性精靈",
+   "sqlName": "召喚強力屬性精靈",
+   "via": "client-name"
+  },
+  {
+   "officialId": 163,
+   "portKey": "sk_elf_blazewpn",
+   "portName": "烈炎武器",
+   "clientName": "烈炎武器",
+   "sqlName": "烈炎武器",
+   "via": "client-name"
+  },
+  {
+   "officialId": 164,
+   "portKey": "sk_elf_lifebless",
+   "portName": "生命的祝福",
+   "clientName": "生命的祝福",
+   "sqlName": "生命的祝福",
+   "via": "client-name"
+  },
+  {
+   "officialId": 165,
+   "portKey": "sk_elf_life_call",
+   "portName": "生命呼喚",
+   "clientName": "生命呼喚",
+   "sqlName": "生命呼喚",
+   "via": "client-name"
+  },
+  {
+   "officialId": 166,
+   "portKey": "sk_elf_stormshot",
+   "portName": "暴風神射",
+   "clientName": "暴風神射",
+   "sqlName": "暴風神射",
+   "via": "client-name"
+  },
+  {
+   "officialId": 167,
+   "portKey": "sk_elf_wind_shackle",
+   "portName": "風之枷鎖",
+   "clientName": "風之枷鎖",
+   "sqlName": "風之枷鎖",
+   "via": "client-name"
+  },
+  {
+   "officialId": 168,
+   "portKey": "sk_elf_steelguard",
+   "portName": "鋼鐵防護",
+   "clientName": "鋼鐵防護",
+   "sqlName": "鋼鐵防護",
+   "via": "client-name"
+  },
+  {
+   "officialId": 169,
+   "portKey": "sk_elf_physboost",
+   "portName": "體能激發",
+   "clientName": "體能激發",
+   "sqlName": "體能激發",
+   "via": "client-name"
+  },
+  {
+   "officialId": 170,
+   "portKey": "sk_elf_watervital",
+   "portName": "水之元氣",
+   "clientName": "水之元氣",
+   "sqlName": "水之元氣",
+   "via": "client-name"
+  },
+  {
+   "officialId": 171,
+   "portKey": "sk_elf_attrfire",
+   "portName": "屬性之火",
+   "clientName": "屬性之火",
+   "sqlName": "屬性之火",
+   "via": "client-name"
+  },
+  {
+   "officialId": 172,
+   "portKey": "sk_elf_storm_walk",
+   "portName": "暴風疾走",
+   "clientName": "暴風疾走",
+   "sqlName": "暴風疾走",
+   "via": "client-name"
+  },
+  {
+   "officialId": 173,
+   "portKey": "sk_elf_muddywater",
+   "portName": "污濁之水",
+   "clientName": "污濁之水",
+   "sqlName": "污濁之水",
+   "via": "client-name"
+  },
+  {
+   "officialId": 174,
+   "portKey": "sk_elf_preciseshot",
+   "portName": "精準射擊",
+   "clientName": "精準射擊",
+   "sqlName": "精準射擊",
+   "via": "client-name"
+  },
+  {
+   "officialId": 175,
+   "portKey": "sk_elf_flamesoul",
+   "portName": "烈焰之魂",
+   "clientName": "烈焰之魂",
+   "sqlName": "烈焰之魂",
+   "via": "client-name"
+  },
+  {
+   "officialId": 176,
+   "portKey": "sk_elf_energyboost",
+   "portName": "能量激發",
+   "clientName": "能量激發",
+   "sqlName": "能量激發",
+   "via": "client-name"
+  },
+  {
+   "officialId": 181,
+   "portKey": "sk_dragon_armor",
+   "portName": "龍之護鎧",
+   "clientName": "龍之護鎧",
+   "sqlName": "龍之護鎧",
+   "via": "client-name"
+  },
+  {
+   "officialId": 182,
+   "portKey": "sk_dragon_flameslash",
+   "portName": "燃燒擊砍",
+   "clientName": "燃燒擊砍",
+   "sqlName": "燃燒擊砍",
+   "via": "client-name"
+  },
+  {
+   "officialId": 183,
+   "portKey": "sk_dragon_guardbreak",
+   "portName": "護衛毀滅",
+   "clientName": "護衛毀滅",
+   "sqlName": "護衛毀滅",
+   "via": "client-name"
+  },
+  {
+   "officialId": 184,
+   "portKey": "sk_dragon_lavaspit",
+   "portName": "岩漿噴吐",
+   "clientName": "岩漿噴吐",
+   "sqlName": "岩漿噴吐",
+   "via": "client-name"
+  },
+  {
+   "officialId": 185,
+   "portKey": "sk_dragon_awaken_antares",
+   "portName": "覺醒：安塔瑞斯",
+   "clientName": "覺醒：安塔瑞斯",
+   "sqlName": "覺醒：安塔瑞斯",
+   "via": "client-name"
+  },
+  {
+   "officialId": 186,
+   "portKey": "sk_dragon_bloodlust",
+   "portName": "血之渴望",
+   "clientName": "血之渴望",
+   "sqlName": "血之渴望",
+   "via": "client-name"
+  },
+  {
+   "officialId": 187,
+   "portKey": "sk_dragon_slaughter",
+   "portName": "屠宰者",
+   "clientName": "屠宰者",
+   "sqlName": "屠宰者",
+   "via": "client-name"
+  },
+  {
+   "officialId": 188,
+   "portKey": "sk_dragon_terror",
+   "portName": "恐懼無助",
+   "clientName": "恐懼無助",
+   "sqlName": "恐懼無助",
+   "via": "client-name"
+  },
+  {
+   "officialId": 189,
+   "portKey": "sk_dragon_lavabolt",
+   "portName": "岩漿之箭",
+   "clientName": "岩漿之箭",
+   "sqlName": "衝擊之膚",
+   "via": "client-name"
+  },
+  {
+   "officialId": 190,
+   "portKey": "sk_dragon_awaken_falion",
+   "portName": "覺醒：法利昂",
+   "clientName": "覺醒：法利昂",
+   "sqlName": "覺醒：法利昂",
+   "via": "client-name"
+  },
+  {
+   "officialId": 191,
+   "portKey": "sk_dragon_deadlybody",
+   "portName": "致命身軀",
+   "clientName": "致命身軀",
+   "sqlName": "致命身軀",
+   "via": "client-name"
+  },
+  {
+   "officialId": 192,
+   "portKey": "sk_dragon_deathlightning",
+   "portName": "奪命之雷",
+   "clientName": "奪命之雷",
+   "sqlName": "奪命之雷",
+   "via": "client-name"
+  },
+  {
+   "officialId": 193,
+   "portKey": "sk_dragon_reaper",
+   "portName": "驚悚死神",
+   "clientName": "驚悚死神",
+   "sqlName": "驚悚死神",
+   "via": "client-name"
+  },
+  {
+   "officialId": 194,
+   "portKey": "sk_dragon_eye",
+   "portName": "暴龍之眼",
+   "clientName": "暴龍之眼",
+   "sqlName": "寒冰噴吐",
+   "via": "client-name"
+  },
+  {
+   "officialId": 195,
+   "portKey": "sk_dragon_awaken_baraka",
+   "portName": "覺醒：巴拉卡斯",
+   "clientName": "覺醒：巴拉卡斯",
+   "sqlName": "覺醒：巴拉卡斯",
+   "via": "client-name"
+  },
+  {
+   "officialId": 201,
+   "portKey": "sk_illu_mirror",
+   "portName": "鏡像",
+   "clientName": "鏡像",
+   "sqlName": "鏡像",
+   "via": "client-name"
+  },
+  {
+   "officialId": 202,
+   "portKey": "sk_illu_confuse",
+   "portName": "混亂",
+   "clientName": "混亂",
+   "sqlName": "混亂",
+   "via": "client-name"
+  },
+  {
+   "officialId": 203,
+   "portKey": "sk_illu_crush",
+   "portName": "粉碎能量",
+   "clientName": "粉碎能量",
+   "sqlName": "暴擊",
+   "via": "client-name"
+  },
+  {
+   "officialId": 204,
+   "portKey": "sk_illu_ogre",
+   "portName": "幻覺：歐吉",
+   "clientName": "幻覺：歐吉",
+   "sqlName": "幻覺：歐吉",
+   "via": "client-name"
+  },
+  {
+   "officialId": 205,
+   "portKey": "sk_illu_cube_burn",
+   "portName": "立方：燃燒",
+   "clientName": "立方：燃燒",
+   "sqlName": "立方：燃燒",
+   "via": "client-name"
+  },
+  {
+   "officialId": 206,
+   "portKey": "sk_illu_focus",
+   "portName": "專注",
+   "clientName": "專注",
+   "sqlName": "專注",
+   "via": "client-name"
+  },
+  {
+   "officialId": 207,
+   "portKey": "sk_illu_mindbreak",
+   "portName": "心靈破壞",
+   "clientName": "心靈破壞",
+   "sqlName": "心靈破壞",
+   "via": "client-name"
+  },
+  {
+   "officialId": 208,
+   "portKey": "sk_illu_skullbreak",
+   "portName": "骷髏毀壞",
+   "clientName": "骷髏毀壞",
+   "sqlName": "骷髏毀壞",
+   "via": "client-name"
+  },
+  {
+   "officialId": 209,
+   "portKey": "sk_illu_lich",
+   "portName": "幻覺：巫妖",
+   "clientName": "幻覺：巫妖",
+   "sqlName": "幻覺：巫妖",
+   "via": "client-name"
+  },
+  {
+   "officialId": 210,
+   "portKey": "sk_illu_cube_quake",
+   "portName": "立方：地裂",
+   "clientName": "立方：地裂",
+   "sqlName": "立方：地裂",
+   "via": "client-name"
+  },
+  {
+   "officialId": 211,
+   "portKey": "sk_illu_endure",
+   "portName": "耐力",
+   "clientName": "耐力",
+   "sqlName": "耐力",
+   "via": "client-name"
+  },
+  {
+   "officialId": 212,
+   "portKey": "sk_illu_fantasy",
+   "portName": "幻想",
+   "clientName": "幻想",
+   "sqlName": "幻想",
+   "via": "client-name"
+  },
+  {
+   "officialId": 213,
+   "portKey": "sk_illu_stealth_breaker",
+   "portName": "隱身破壞者",
+   "clientName": "隱身破壞者",
+   "sqlName": "武器破壞者",
+   "via": "client-name"
+  },
+  {
+   "officialId": 214,
+   "portKey": "sk_illu_golem",
+   "portName": "幻覺：鑽石高崙",
+   "clientName": "幻覺：鑽石高崙",
+   "sqlName": "幻覺：鑽石高崙",
+   "via": "client-name"
+  },
+  {
+   "officialId": 215,
+   "portKey": "sk_illu_cube_shock",
+   "portName": "立方：衝擊",
+   "clientName": "立方：衝擊",
+   "sqlName": "立方：衝擊",
+   "via": "client-name"
+  },
+  {
+   "officialId": 216,
+   "portKey": "sk_illu_insight",
+   "portName": "洞察",
+   "clientName": "洞察",
+   "sqlName": "洞察",
+   "via": "client-name"
+  },
+  {
+   "officialId": 217,
+   "portKey": "sk_illu_panic",
+   "portName": "恐慌",
+   "clientName": "恐慌",
+   "sqlName": "恐慌",
+   "via": "client-name"
+  },
+  {
+   "officialId": 218,
+   "portKey": "sk_illu_pain",
+   "portName": "疼痛的歡愉",
+   "clientName": "疼痛的歡愉",
+   "sqlName": "疼痛的歡愉",
+   "via": "client-name"
+  },
+  {
+   "officialId": 219,
+   "portKey": "sk_illu_avatar",
+   "portName": "幻覺：化身",
+   "clientName": "幻覺：化身",
+   "sqlName": "幻覺：化身",
+   "via": "client-name"
+  },
+  {
+   "officialId": 220,
+   "portKey": "sk_illu_cube_harmony",
+   "portName": "立方：和諧",
+   "clientName": "立方：和諧",
+   "sqlName": "立方：和諧",
+   "via": "client-name"
+  }
+ ],
+ "portOnly": [
+  {
+   "key": "sk_dark_armorbreak",
+   "n": "破壞盔甲",
+   "source": "port"
+  },
+  {
+   "key": "sk_darkwave",
+   "n": "闇黑波動",
+   "source": "port"
+  },
+  {
+   "key": "sk_demon_kiss",
+   "n": "惡魔之吻",
+   "source": "port"
+  },
+  {
+   "key": "sk_earth_collapse",
+   "n": "大地崩裂",
+   "source": "port"
+  },
+  {
+   "key": "sk_elf_dancefire",
+   "n": "舞躍之火",
+   "source": "port"
+  },
+  {
+   "key": "sk_fireball_burst",
+   "n": "爆裂的火球",
+   "source": "port"
+  },
+  {
+   "key": "sk_frost_spike",
+   "n": "寒冰尖刺",
+   "source": "port"
+  },
+  {
+   "key": "sk_holy_lightning",
+   "n": "致命落雷",
+   "source": "port"
+  },
+  {
+   "key": "sk_illu_loaddown",
+   "n": "降低負重",
+   "source": "port"
+  },
+  {
+   "key": "sk_relic_broken",
+   "n": "損壞",
+   "source": "port"
+  },
+  {
+   "key": "sk_relic_freeze",
+   "n": "冰凍",
+   "source": "port"
+  },
+  {
+   "key": "sk_relic_paralyze",
+   "n": "麻痺",
+   "source": "port"
+  },
+  {
+   "key": "sk_relic_silence",
+   "n": "沉默",
+   "source": "port"
+  },
+  {
+   "key": "sk_relic_slow",
+   "n": "緩速",
+   "source": "port"
+  },
+  {
+   "key": "sk_relic_stone",
+   "n": "石化",
+   "source": "port"
+  },
+  {
+   "key": "sk_relic_stun",
+   "n": "暈眩",
+   "source": "port"
+  },
+  {
+   "key": "sk_revenge_spike",
+   "n": "復仇尖石",
+   "source": "port"
+  },
+  {
+   "key": "sk_royal_bravewill",
+   "n": "勇猛意志",
+   "source": "port"
+  },
+  {
+   "key": "sk_royal_burnweapon",
+   "n": "灼熱武器",
+   "source": "port"
+  },
+  {
+   "key": "sk_royal_kingguard",
+   "n": "王者加護",
+   "source": "port"
+  },
+  {
+   "key": "sk_warrior_armorbody",
+   "n": "護甲身軀",
+   "source": "port"
+  },
+  {
+   "key": "sk_warrior_berserk",
+   "n": "狂暴",
+   "source": "port"
+  },
+  {
+   "key": "sk_warrior_crush",
+   "n": "粉碎",
+   "source": "port"
+  },
+  {
+   "key": "sk_warrior_dualaxe",
+   "n": "迅猛雙斧",
+   "source": "port"
+  },
+  {
+   "key": "sk_warrior_endurance",
+   "n": "體能強化",
+   "source": "port"
+  },
+  {
+   "key": "sk_warrior_outlaw",
+   "n": "亡命之徒",
+   "source": "port"
+  },
+  {
+   "key": "sk_warrior_roar",
+   "n": "咆哮",
+   "source": "port"
+  },
+  {
+   "key": "sk_warrior_throwaxe",
+   "n": "戰斧投擲",
+   "source": "port"
+  },
+  {
+   "key": "sk_warrior_titan_bullet",
+   "n": "泰坦：子彈",
+   "source": "port"
+  },
+  {
+   "key": "sk_warrior_titan_magic",
+   "n": "泰坦：魔法",
+   "source": "port"
+  },
+  {
+   "key": "sk_warrior_titan_rock",
+   "n": "泰坦：岩石",
+   "source": "port"
+  }
+ ],
+ "officialOnly": []
+}

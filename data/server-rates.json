@@ -1,0 +1,18 @@
+{
+  "expRate": 20,
+  "dropRate": 5,
+  "adenaRate": 10,
+  "weaponEnchantRate": 1,
+  "armorEnchantRate": 1,
+  "maxLevel": 99,
+  "thirdHasteAttackFactor": 1.15,
+  "thirdHasteCastFactor": 1.15,
+  "thirdHasteMoveFactor": 1.15,
+  "guardianSoulEnabled": true,
+  "guardianSoulDropChance": 30,
+  "guardianSoulDurationMinutes": 60,
+  "guardianSoulDurationSeconds": 3600,
+  "guardianSoulHpBonus": 500,
+  "guardianSoulMpBonus": 200,
+  "guardianSoulDamageReductionPercent": 5
+}

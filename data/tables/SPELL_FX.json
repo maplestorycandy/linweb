@@ -1,0 +1,853 @@
+{
+  "光箭": {
+    "dir": "光箭",
+    "dirPrefix": "167-",
+    "dirs": 4,
+    "n": 4,
+    "fps": 12,
+    "blend": "screen",
+    "proj": true,
+    "nw": 32,
+    "nh": 40,
+    "ax": 0.5,
+    "ay": 0.5
+  },
+  "冰矛圍籬": {
+    "dir": "冰矛圍籬",
+    "dirPrefix": "756-",
+    "dirs": 8,
+    "n": 4,
+    "fps": 12,
+    "blend": "screen",
+    "proj": true,
+    "nw": 49,
+    "nh": 44,
+    "ax": 0.5,
+    "ay": 0.5
+  },
+  "冰箭": {
+    "dir": "冰箭",
+    "dirPrefix": "1797-",
+    "dirs": 8,
+    "n": 4,
+    "fps": 12,
+    "blend": "screen",
+    "proj": true,
+    "nw": 15,
+    "nh": 21,
+    "ax": 0.5,
+    "ay": 0.5
+  },
+  "冰錐": {
+    "dir": "冰錐",
+    "dirPrefix": "1809-",
+    "dirs": 8,
+    "n": 3,
+    "fps": 12,
+    "blend": "screen",
+    "proj": true,
+    "nw": 35,
+    "nh": 59,
+    "ax": 0.5,
+    "ay": 0.5
+  },
+  "冰裂術": {
+    "dir": "冰裂術",
+    "dirPrefix": "3685-",
+    "shadowDirPrefix": "3686-",
+    "dirs": 8,
+    "n": 13,
+    "fps": 16,
+    "w": 0.85,
+    "ax": 0.255,
+    "ay": 0.74,
+    "targetVc": 0.9
+  },
+  "冰雪暴": {
+    "dir": "冰雪暴",
+    "prefix": "757-0",
+    "n": 23,
+    "fps": 16,
+    "blend": "screen",
+    "h": 1.35,
+    "ax": 0.5,
+    "ay": 0.55
+  },
+  "吸血鬼之吻": {
+    "dir": "吸血鬼之吻",
+    "dirPrefix": "236-",
+    "dirs": 8,
+    "n": 6,
+    "fps": 12,
+    "blend": "screen",
+    "proj": true,
+    "nw": 63,
+    "nh": 96,
+    "ax": 0.5,
+    "ay": 0.5
+  },
+  "呼喚盟友": {
+    "dir": "呼喚盟友",
+    "prefix": "2281-0",
+    "n": 7,
+    "fps": 14,
+    "blend": "screen",
+    "h": 1,
+    "ax": 0.5,
+    "ay": 0.55
+  },
+  "地獄之牙": {
+    "dir": "地獄之牙",
+    "prefix": "1801-0",
+    "n": 9,
+    "fps": 14,
+    "blend": "screen",
+    "h": 0.7,
+    "ax": 0.5,
+    "ay": 0.55
+  },
+  "地獄火": {
+    "dir": "大地崩裂",
+    "prefix": "dk",
+    "n": 9,
+    "fps": 14,
+    "w": 0.95,
+    "ax": 0.5,
+    "ay": 0.68,
+    "targetVc": 0.85,
+    "blend": "screen"
+  },
+  "地裂術": {
+    "dir": "地裂術",
+    "prefix": "129-1",
+    "n": 10,
+    "fps": 14,
+    "w": 0.85,
+    "ax": 0.5,
+    "ay": 0.82,
+    "targetVc": 0.92
+  },
+  "污濁之水": {
+    "dir": "污濁之水",
+    "prefix": "mw",
+    "n": 10,
+    "fps": 12,
+    "h": 1.1,
+    "ax": 0.5,
+    "ay": 0.55
+  },
+  "復仇尖石": {
+    "dir": "地裂術",
+    "prefix": "129-1",
+    "n": 10,
+    "fps": 14,
+    "w": 0.85,
+    "ax": 0.5,
+    "ay": 0.82,
+    "targetVc": 0.92
+  },
+  "大地崩裂": {
+    "dir": "大地崩裂",
+    "prefix": "dk",
+    "n": 9,
+    "fps": 14,
+    "w": 0.95,
+    "ax": 0.5,
+    "ay": 0.68,
+    "targetVc": 0.85,
+    "blend": "screen"
+  },
+  "煉獄火": {
+    "dir": "大地崩裂",
+    "prefix": "dk",
+    "n": 9,
+    "fps": 14,
+    "w": 0.95,
+    "ax": 0.5,
+    "ay": 0.68,
+    "targetVc": 0.85,
+    "blend": "screen"
+  },
+  "地面障礙": {
+    "dir": "地面障礙",
+    "prefix": "2250-0",
+    "n": 13,
+    "fps": 14,
+    "blend": "screen",
+    "w": 0.9,
+    "ax": 0.5,
+    "ay": 0.82,
+    "targetVc": 0.9
+  },
+  "壞物術": {
+    "dir": "壞物術",
+    "prefix": "172-0",
+    "n": 15,
+    "fps": 14,
+    "blend": "screen",
+    "h": 1,
+    "ax": 0.5,
+    "ay": 0.55
+  },
+  "寒冰氣息": {
+    "dir": "寒冰氣息",
+    "prefix": "1804-0",
+    "n": 21,
+    "fps": 16,
+    "blend": "screen",
+    "h": 1.2,
+    "ax": 0.5,
+    "ay": 0.55
+  },
+  "寒冰尖刺": {
+    "dir": "寒冰尖刺",
+    "prefix": "3687-0",
+    "shadowPrefix": "3688-0",
+    "n": 12,
+    "fps": 14,
+    "w": 0.95,
+    "ax": 0.366,
+    "ay": 0.651,
+    "targetVc": 0.9
+  },
+  "寒冷戰慄": {
+    "dir": "寒冷戰慄",
+    "dirPrefix": "252-",
+    "dirs": 8,
+    "n": 6,
+    "fps": 12,
+    "blend": "screen",
+    "proj": true,
+    "nw": 63,
+    "nh": 96,
+    "ax": 0.5,
+    "ay": 0.5
+  },
+  "封印禁地": {
+    "dir": "封印禁地",
+    "prefix": "2241-0",
+    "n": 13,
+    "fps": 14,
+    "blend": "screen",
+    "h": 1,
+    "ax": 0.5,
+    "ay": 0.55
+  },
+  "岩牢": {
+    "dir": "岩牢",
+    "prefix": "1805-0",
+    "n": 17,
+    "fps": 14,
+    "blend": "screen",
+    "h": 1.2,
+    "ax": 0.5,
+    "ay": 0.55
+  },
+  "弱化術": {
+    "dir": "弱化術",
+    "prefix": "2228-0",
+    "n": 9,
+    "fps": 14,
+    "blend": "screen",
+    "h": 1,
+    "ax": 0.5,
+    "ay": 0.55
+  },
+  "會心一擊": {
+    "dir": "會心一擊",
+    "prefix": "2952-0",
+    "n": 16,
+    "fps": 14,
+    "blend": "screen",
+    "h": 1,
+    "ax": 0.5,
+    "ay": 0.55
+  },
+  "木乃伊的詛咒": {
+    "dir": "木乃伊的詛咒",
+    "prefix": "746-0",
+    "n": 8,
+    "fps": 14,
+    "blend": "screen",
+    "h": 1,
+    "ax": 0.5,
+    "ay": 0.55
+  },
+  "極光雷電": {
+    "dir": "極光雷電",
+    "dirPrefix": "170-",
+    "dirs": 8,
+    "sparseFrames": true,
+    "n": 6,
+    "fps": 12,
+    "blend": "screen",
+    "proj": true,
+    "nw": 122,
+    "nh": 255,
+    "projScale": 0.5,
+    "ax": 0.5,
+    "ay": 0.5
+  },
+  "極道落雷": {
+    "dir": "極道落雷",
+    "prefix": "10-0",
+    "n": 6,
+    "fps": 14,
+    "blend": "screen",
+    "h": 2,
+    "ax": 0.5,
+    "ay": 0.98
+  },
+  "審判落雷": {
+    "dir": "審判落雷",
+    "prefix": "jl",
+    "n": 12,
+    "fps": 14,
+    "blend": "screen",
+    "h": 2,
+    "ax": 0.413,
+    "ay": 0.762
+  },
+  "致命落雷": {
+    "dir": "審判落雷",
+    "prefix": "jl",
+    "n": 12,
+    "fps": 14,
+    "blend": "screen",
+    "h": 2,
+    "ax": 0.413,
+    "ay": 0.762
+  },
+  "毒咒": {
+    "dir": "毒咒",
+    "prefix": "745-0",
+    "n": 8,
+    "fps": 14,
+    "blend": "screen",
+    "h": 0.8,
+    "ax": 0.5,
+    "ay": 0.55
+  },
+  "沉睡之霧": {
+    "dir": "沉睡之霧",
+    "prefix": "760-0",
+    "n": 21,
+    "fps": 16,
+    "blend": "screen",
+    "h": 0.9,
+    "ax": 0.5,
+    "ay": 0.55
+  },
+  "流星雨": {
+    "dir": "流星雨",
+    "prefix": "762-0",
+    "n": 20,
+    "fps": 16,
+    "blend": "screen",
+    "h": 1.9,
+    "ax": 0.5,
+    "ay": 0.88
+  },
+  "火箭": {
+    "dir": "火箭",
+    "dirPrefix": "1583-",
+    "dirs": 4,
+    "n": 4,
+    "fps": 12,
+    "blend": "screen",
+    "proj": true,
+    "nw": 31,
+    "nh": 40,
+    "ax": 0.5,
+    "ay": 0.5
+  },
+  "火風暴": {
+    "dir": "火風暴",
+    "prefix": "1819-0",
+    "n": 14,
+    "fps": 14,
+    "blend": "screen",
+    "h": 1.3,
+    "ax": 0.5,
+    "ay": 0.55
+  },
+  "烈炎術": {
+    "dir": "烈炎術",
+    "prefix": "1811-0",
+    "n": 19,
+    "fps": 16,
+    "blend": "screen",
+    "h": 1.2,
+    "ax": 0.5,
+    "ay": 0.55
+  },
+  "熾焰地裂術": {
+    "dir": "熾焰地裂術",
+    "dirPrefix": "1783-",
+    "dirs": 8,
+    "n": 9,
+    "fps": 14,
+    "blend": "screen",
+    "w": 1,
+    "ax": 0.5,
+    "ay": 0.8,
+    "targetVc": 0.88
+  },
+  "燃燒的火球": {
+    "dir": "燃燒的火球",
+    "dirPrefix": "171-",
+    "dirs": 8,
+    "n": 5,
+    "fps": 12,
+    "blend": "screen",
+    "proj": true,
+    "nw": 43,
+    "nh": 49,
+    "ax": 0.5,
+    "ay": 0.5
+  },
+  "爆裂的火球": {
+    "dir": "燃燒的火球",
+    "dirPrefix": "171-",
+    "dirs": 8,
+    "n": 5,
+    "fps": 12,
+    "blend": "screen",
+    "proj": true,
+    "nw": 43,
+    "nh": 49,
+    "ax": 0.5,
+    "ay": 0.5
+  },
+  "疾病術": {
+    "dir": "疾病術",
+    "prefix": "2230-0",
+    "n": 11,
+    "fps": 14,
+    "blend": "screen",
+    "h": 1,
+    "ax": 0.5,
+    "ay": 0.55
+  },
+  "究極光裂術": {
+    "dir": "究極光裂術",
+    "prefix": "1815-0",
+    "layers": [
+      "1816-0",
+      "1817-0"
+    ],
+    "n": 21,
+    "fps": 16,
+    "blend": "screen",
+    "h": 1.9,
+    "ax": 0.5,
+    "ay": 0.85
+  },
+  "緩速術": {
+    "dir": "緩速術",
+    "prefix": "752-0",
+    "n": 8,
+    "fps": 14,
+    "blend": "screen",
+    "h": 0.85,
+    "ax": 0.5,
+    "ay": 0.55
+  },
+  "衝擊之暈": {
+    "dir": "衝擊之暈",
+    "prefix": "4434-0",
+    "n": 6,
+    "fps": 14,
+    "blend": "screen",
+    "h": 1,
+    "ax": 0.5,
+    "ay": 0.55
+  },
+  "起死回生術": {
+    "dir": "起死回生術",
+    "prefix": "754-0",
+    "n": 21,
+    "fps": 16,
+    "blend": "screen",
+    "h": 1.3,
+    "ax": 0.5,
+    "ay": 0.55
+  },
+  "迷魅術": {
+    "dir": "迷魅術",
+    "prefix": "228-0",
+    "n": 7,
+    "fps": 14,
+    "blend": "screen",
+    "h": 1,
+    "ax": 0.5,
+    "ay": 0.55
+  },
+  "闇盲咒術": {
+    "dir": "闇盲咒術",
+    "prefix": "746-0",
+    "n": 8,
+    "fps": 14,
+    "blend": "screen",
+    "h": 1,
+    "ax": 0.5,
+    "ay": 0.55
+  },
+  "雷霆風暴": {
+    "dir": "雷霆風暴",
+    "prefix": "3924-0",
+    "n": 13,
+    "fps": 14,
+    "blend": "screen",
+    "h": 1.3,
+    "ax": 0.5,
+    "ay": 0.55
+  },
+  "震裂術": {
+    "dir": "震裂術",
+    "prefix": "1812-0",
+    "n": 16,
+    "fps": 14,
+    "blend": "screen",
+    "h": 1.25,
+    "ax": 0.5,
+    "ay": 0.6
+  },
+  "風刃": {
+    "dir": "風刃",
+    "prefix": "1799-0",
+    "n": 5,
+    "fps": 14,
+    "blend": "screen",
+    "h": 1,
+    "ax": 0.5,
+    "ay": 0.55
+  },
+  "魔法封印": {
+    "dir": "魔法封印",
+    "prefix": "2177-0",
+    "n": 17,
+    "fps": 14,
+    "blend": "screen",
+    "h": 1,
+    "ax": 0.5,
+    "ay": 0.55
+  },
+  "魔法消除": {
+    "dir": "魔法消除",
+    "prefix": "2181-0",
+    "n": 19,
+    "fps": 16,
+    "blend": "screen",
+    "h": 1,
+    "ax": 0.5,
+    "ay": 0.55
+  },
+  "黑闇之影": {
+    "dir": "黑闇之影",
+    "prefix": "2175-0",
+    "n": 8,
+    "fps": 14,
+    "blend": "screen",
+    "h": 1,
+    "ax": 0.5,
+    "ay": 0.55
+  },
+  "龍捲風": {
+    "dir": "龍捲風",
+    "prefix": "758-0",
+    "n": 20,
+    "fps": 16,
+    "h": 1.5,
+    "ax": 0.5,
+    "ay": 0.82,
+    "targetVc": 0.9
+  },
+  "能量感測": {
+    "dir": "能量感測",
+    "n": 8,
+    "fps": 12,
+    "blend": "screen",
+    "h": 0.85,
+    "ax": 0.5,
+    "ay": 0.55,
+    "byEle": {
+      "fire": {
+        "prefix": "火"
+      },
+      "water": {
+        "prefix": "水"
+      },
+      "earth": {
+        "prefix": "地"
+      },
+      "wind": {
+        "prefix": "風"
+      }
+    }
+  },
+  "沙蟲-毒氣風暴": {
+    "dir": "沙蟲-毒氣風暴",
+    "prefix": "fx",
+    "n": 14,
+    "fps": 14,
+    "blend": "screen",
+    "ground": true,
+    "h": 3.2,
+    "ax": 0.5,
+    "ay": 0.5
+  },
+  "沙蟲-集體毒霧": {
+    "dir": "沙蟲-集體毒霧",
+    "prefix": "fx",
+    "n": 12,
+    "fps": 14,
+    "blend": "screen",
+    "ground": true,
+    "h": 3.0,
+    "ax": 0.5,
+    "ay": 0.5
+  },
+  "l1j_97259:mag": {
+    "dir": "沙蟲-毒氣風暴",
+    "prefix": "fx",
+    "n": 14,
+    "fps": 14,
+    "blend": "screen",
+    "ground": true,
+    "h": 3.2,
+    "ax": 0.5,
+    "ay": 0.5
+  },
+  "l1j_97259:mag2": {
+    "dir": "沙蟲-集體毒霧",
+    "prefix": "fx",
+    "n": 12,
+    "fps": 14,
+    "blend": "screen",
+    "ground": true,
+    "h": 3.0,
+    "ax": 0.5,
+    "ay": 0.5
+  },
+  "sandworm:mag": {
+    "dir": "沙蟲-毒氣風暴",
+    "prefix": "fx",
+    "n": 14,
+    "fps": 14,
+    "blend": "screen",
+    "ground": true,
+    "h": 3.2,
+    "ax": 0.5,
+    "ay": 0.5
+  },
+  "sandworm:mag2": {
+    "dir": "沙蟲-集體毒霧",
+    "prefix": "fx",
+    "n": 12,
+    "fps": 14,
+    "blend": "screen",
+    "ground": true,
+    "h": 3.0,
+    "ax": 0.5,
+    "ay": 0.5
+  },
+  "死神之怒": {
+    "dir": "死神之怒",
+    "prefix": "13395-0",
+    "n": 16,
+    "fps": 14,
+    "blend": "screen",
+    "targetVc": true,
+    "h": 2.6,
+    "ax": 0.5,
+    "ay": 0.75
+  },
+  "l1j_93393:mag": {
+    "dir": "死神之怒",
+    "prefix": "13395-0",
+    "n": 16,
+    "fps": 14,
+    "blend": "screen",
+    "targetVc": true,
+    "h": 2.6,
+    "ax": 0.5,
+    "ay": 0.75
+  },
+  "13395": {
+    "dir": "死神之怒",
+    "prefix": "13395-0",
+    "n": 16,
+    "fps": 14,
+    "blend": "screen",
+    "targetVc": true,
+    "h": 2.6,
+    "ax": 0.5,
+    "ay": 0.75
+  },
+  "死亡收割": {
+    "dir": "死亡收割",
+    "prefix": "13396-0",
+    "n": 14,
+    "fps": 14,
+    "blend": "screen",
+    "targetVc": true,
+    "h": 2.4,
+    "ax": 0.5,
+    "ay": 0.65
+  },
+  "l1j_93393:mag2": {
+    "dir": "死亡收割",
+    "prefix": "13396-0",
+    "n": 14,
+    "fps": 14,
+    "blend": "screen",
+    "targetVc": true,
+    "h": 2.4,
+    "ax": 0.5,
+    "ay": 0.65
+  },
+  "13396": {
+    "dir": "死亡收割",
+    "prefix": "13396-0",
+    "n": 14,
+    "fps": 14,
+    "blend": "screen",
+    "targetVc": true,
+    "h": 2.4,
+    "ax": 0.5,
+    "ay": 0.65
+  },
+  "雷霆審判": {
+    "dir": "雷霆審判",
+    "prefix": "13397-0",
+    "n": 16,
+    "fps": 14,
+    "blend": "screen",
+    "targetVc": true,
+    "h": 2.8,
+    "ax": 0.5,
+    "ay": 0.85
+  },
+  "l1j_93394:mag": {
+    "dir": "雷霆審判",
+    "prefix": "13397-0",
+    "n": 16,
+    "fps": 14,
+    "blend": "screen",
+    "targetVc": true,
+    "h": 2.8,
+    "ax": 0.5,
+    "ay": 0.85
+  },
+  "13397": {
+    "dir": "雷霆審判",
+    "prefix": "13397-0",
+    "n": 16,
+    "fps": 14,
+    "blend": "screen",
+    "targetVc": true,
+    "h": 2.8,
+    "ax": 0.5,
+    "ay": 0.85
+  },
+  "萬雷天引": {
+    "dir": "萬雷天引",
+    "prefix": "13398-0",
+    "n": 14,
+    "fps": 14,
+    "blend": "screen",
+    "targetVc": true,
+    "h": 2.5,
+    "ax": 0.5,
+    "ay": 0.6
+  },
+  "l1j_93394:mag2": {
+    "dir": "萬雷天引",
+    "prefix": "13398-0",
+    "n": 14,
+    "fps": 14,
+    "blend": "screen",
+    "targetVc": true,
+    "h": 2.5,
+    "ax": 0.5,
+    "ay": 0.6
+  },
+  "13398": {
+    "dir": "萬雷天引",
+    "prefix": "13398-0",
+    "n": 14,
+    "fps": 14,
+    "blend": "screen",
+    "targetVc": true,
+    "h": 2.5,
+    "ax": 0.5,
+    "ay": 0.6
+  },
+  "獄火煉獄": {
+    "dir": "獄火煉獄",
+    "prefix": "13400-0",
+    "n": 16,
+    "fps": 14,
+    "blend": "screen",
+    "targetVc": true,
+    "h": 2.8,
+    "ax": 0.5,
+    "ay": 0.85
+  },
+  "l1j_93395:mag": {
+    "dir": "獄火煉獄",
+    "prefix": "13400-0",
+    "n": 16,
+    "fps": 14,
+    "blend": "screen",
+    "targetVc": true,
+    "h": 2.8,
+    "ax": 0.5,
+    "ay": 0.85
+  },
+  "13400": {
+    "dir": "獄火煉獄",
+    "prefix": "13400-0",
+    "n": 16,
+    "fps": 14,
+    "blend": "screen",
+    "targetVc": true,
+    "h": 2.8,
+    "ax": 0.5,
+    "ay": 0.85
+  },
+  "惡魔滅絕": {
+    "dir": "惡魔滅絕",
+    "prefix": "13401-0",
+    "n": 14,
+    "fps": 14,
+    "blend": "screen",
+    "targetVc": true,
+    "h": 2.8,
+    "ax": 0.5,
+    "ay": 0.85
+  },
+  "l1j_93395:mag2": {
+    "dir": "惡魔滅絕",
+    "prefix": "13401-0",
+    "n": 14,
+    "fps": 14,
+    "blend": "screen",
+    "targetVc": true,
+    "h": 2.8,
+    "ax": 0.5,
+    "ay": 0.85
+  },
+  "13401": {
+    "dir": "惡魔滅絕",
+    "prefix": "13401-0",
+    "n": 14,
+    "fps": 14,
+    "blend": "screen",
+    "targetVc": true,
+    "h": 2.8,
+    "ax": 0.5,
+    "ay": 0.85
+  }
+}

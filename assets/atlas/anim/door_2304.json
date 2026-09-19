@@ -1,0 +1,1 @@
+{"name":"door_2304","group":"anim","trimmed":true,"flattenedShadows":false,"atlas":{"w":56,"h":75,"pad":1,"format":"rgba32","colors":null},"src":{"files":2,"contentHash":"ed0e9b59c085843f8aaf2699f4c5834e","bytes":5257},"frames":{"frame":[{"x":23,"y":0,"w":32,"h":70,"dx":0,"dy":0,"cw":48,"ch":74},{"x":0,"y":0,"w":22,"h":74,"dx":26,"dy":0,"cw":48,"ch":74}]}}

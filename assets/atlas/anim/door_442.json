@@ -1,0 +1,1 @@
+{"name":"door_442","group":"anim","trimmed":true,"flattenedShadows":false,"atlas":{"w":49,"h":79,"pad":1,"format":"png8","colors":95},"src":{"files":2,"contentHash":"5fd7c149bc5279d36b8951e67085b860","bytes":3420},"frames":{"frame":[{"x":17,"y":0,"w":31,"h":72,"dx":12,"dy":0,"cw":43,"ch":93},{"x":0,"y":0,"w":16,"h":78,"dx":0,"dy":15,"cw":43,"ch":93}]}}

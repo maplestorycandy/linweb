@@ -1,0 +1,415 @@
+[
+ {
+  "reqLv": 28,
+  "div": 8,
+  "cap": 5,
+  "ringCap": 6,
+  "mobs": [
+   {
+    "n": "哈柏哥布林",
+    "lv": 20,
+    "hp": 300,
+    "aspd": 16
+   },
+   {
+    "n": "艾多倫",
+    "lv": 20,
+    "hp": 180,
+    "aspd": 17,
+    "ring": true
+   },
+   {
+    "n": "安普",
+    "lv": 20,
+    "hp": 120,
+    "aspd": 12,
+    "ring": true
+   }
+  ]
+ },
+ {
+  "reqLv": 32,
+  "div": 8,
+  "cap": 5,
+  "ringCap": 6,
+  "mobs": [
+   {
+    "n": "甘地妖魔",
+    "lv": 24,
+    "hp": 350,
+    "aspd": 12
+   },
+   {
+    "n": "都達瑪拉妖魔",
+    "lv": 24,
+    "hp": 210,
+    "aspd": 15,
+    "ring": true
+   },
+   {
+    "n": "妖魔巡守",
+    "lv": 24,
+    "hp": 140,
+    "aspd": 12,
+    "ring": true
+   }
+  ]
+ },
+ {
+  "reqLv": 36,
+  "div": 8,
+  "cap": 5,
+  "ringCap": 6,
+  "mobs": [
+   {
+    "n": "狂野毒牙",
+    "lv": 28,
+    "hp": 400,
+    "aspd": 16
+   },
+   {
+    "n": "狂野之毒",
+    "lv": 28,
+    "hp": 240,
+    "aspd": 16,
+    "ring": true,
+    "proc": [
+     {
+      "kind": "poison",
+      "p": 0.1,
+      "name": "劇毒撕咬"
+     }
+    ]
+   },
+   {
+    "n": "狂野之魔",
+    "lv": 28,
+    "hp": 160,
+    "aspd": 16,
+    "ring": true,
+    "proc": [
+     {
+      "kind": "magic",
+      "p": 0.1,
+      "name": "水泡",
+      "ele": "water"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "reqLv": 40,
+  "div": 8,
+  "cap": 5,
+  "ringCap": 6,
+  "mobs": [
+   {
+    "n": "食人妖精",
+    "lv": 32,
+    "hp": 450,
+    "aspd": 13
+   },
+   {
+    "n": "食人妖精王",
+    "lv": 32,
+    "hp": 400,
+    "aspd": 13,
+    "ring": true
+   },
+   {
+    "n": "冰人",
+    "lv": 32,
+    "hp": 180,
+    "aspd": 17,
+    "ring": true,
+    "proc": [
+     {
+      "kind": "magic",
+      "p": 0.1,
+      "name": "冰錐",
+      "ele": "water"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "reqLv": 44,
+  "div": 8,
+  "cap": 5,
+  "ringCap": 6,
+  "mobs": [
+   {
+    "n": "狂暴蜥蜴人",
+    "lv": 36,
+    "hp": 500,
+    "aspd": 17
+   },
+   {
+    "n": "重裝蜥蜴人",
+    "lv": 36,
+    "hp": 300,
+    "aspd": 18,
+    "ring": true
+   },
+   {
+    "n": "高等蜥蜴人",
+    "lv": 36,
+    "hp": 200,
+    "aspd": 17,
+    "ring": true,
+    "proc": [
+     {
+      "kind": "magic",
+      "p": 0.1,
+      "name": "水泡",
+      "ele": "water"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "reqLv": 48,
+  "div": 8,
+  "cap": 5,
+  "ringCap": 6,
+  "mobs": [
+   {
+    "n": "火蜥蜴",
+    "lv": 40,
+    "hp": 550,
+    "aspd": 16
+   },
+   {
+    "n": "火焰戰士",
+    "lv": 40,
+    "hp": 330,
+    "aspd": 17,
+    "ring": true
+   },
+   {
+    "n": "火焰弓箭手",
+    "lv": 40,
+    "hp": 220,
+    "aspd": 21,
+    "ring": true
+   }
+  ]
+ },
+ {
+  "reqLv": 52,
+  "div": 8,
+  "cap": 5,
+  "ringCap": 5,
+  "mobs": [
+   {
+    "n": "魔熊",
+    "lv": 44,
+    "hp": 600,
+    "aspd": 15
+   },
+   {
+    "n": "魔狼",
+    "lv": 44,
+    "hp": 360,
+    "aspd": 17,
+    "ring": true
+   },
+   {
+    "n": "魔蝙蝠",
+    "lv": 44,
+    "hp": 240,
+    "aspd": 22,
+    "ring": true,
+    "proc": [
+     {
+      "kind": "magic",
+      "p": 0.1,
+      "name": "超音波",
+      "ele": "none"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "reqLv": 56,
+  "div": 10,
+  "cap": 4,
+  "ringCap": 4,
+  "mobs": [
+   {
+    "n": "巨大守護螞蟻",
+    "lv": 48,
+    "hp": 650,
+    "aspd": 13,
+    "ring": true
+   },
+   {
+    "n": "強化白螞蟻群",
+    "lv": 48,
+    "hp": 390,
+    "aspd": 17,
+    "ring": true
+   },
+   {
+    "n": "巨大強化白螞蟻",
+    "lv": 48,
+    "hp": 260,
+    "aspd": 15,
+    "ring": true,
+    "proc": [
+     {
+      "kind": "poisonAll",
+      "p": 0.1,
+      "name": "噴射毒液"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "reqLv": 60,
+  "div": 12,
+  "cap": 4,
+  "ringCap": 4,
+  "mobs": [
+   {
+    "n": "地獄奴隸",
+    "lv": 52,
+    "hp": 700,
+    "aspd": 13,
+    "ring": true
+   },
+   {
+    "n": "闇精靈王",
+    "lv": 52,
+    "hp": 420,
+    "aspd": 18,
+    "ring": true
+   },
+   {
+    "n": "食腐獸",
+    "lv": 52,
+    "hp": 280,
+    "aspd": 15,
+    "ring": true,
+    "proc": [
+     {
+      "kind": "poisonAll",
+      "p": 0.1,
+      "name": "噴射毒液"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "reqLv": 64,
+  "div": 20,
+  "cap": 2,
+  "ringCap": 2,
+  "mobs": [
+   {
+    "n": "地獄束縛犬",
+    "lv": 50,
+    "hp": 750,
+    "aspd": 15,
+    "ring": true,
+    "proc": [
+     {
+      "kind": "magicAll",
+      "p": 0.1,
+      "name": "火焰噴吐",
+      "ele": "fire"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "reqLv": 68,
+  "reqCha": 36,
+  "fixedCount": 1,
+  "cap": 1,
+  "ringCap": 1,
+  "mobs": [
+   {
+    "n": "變形怪首領",
+    "lv": 53,
+    "hp": 800,
+    "aspd": 17,
+    "ring": true,
+    "proc": [
+     {
+      "kind": "magic",
+      "p": 0.15,
+      "name": "冰裂術",
+      "ele": "water"
+     },
+     {
+      "kind": "magic",
+      "p": 0.15,
+      "name": "烈炎術",
+      "ele": "fire"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "reqLv": 72,
+  "reqCha": 36,
+  "fixedCount": 1,
+  "cap": 1,
+  "ringCap": 1,
+  "mobs": [
+   {
+    "n": "巨大牛人",
+    "lv": 53,
+    "hp": 1000,
+    "aspd": 15,
+    "ring": true,
+    "proc": [
+     {
+      "kind": "magic",
+      "p": 0.2,
+      "name": "寒冰鎚",
+      "ele": "water",
+      "heavy": 1.6,
+      "slow": true
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "reqLv": 72,
+  "reqCha": 44,
+  "fixedCount": 1,
+  "cap": 1,
+  "ringCap": 1,
+  "premium": 1.15,
+  "mobs": [
+   {
+    "n": "黑豹",
+    "lv": 63,
+    "hp": 2000,
+    "aspd": 22,
+    "ring": true,
+    "proc": [
+     {
+      "kind": "magic",
+      "p": 0.2,
+      "name": "地面震裂",
+      "ele": "earth",
+      "heavy": 1.6,
+      "stun": true
+     }
+    ]
+   }
+  ]
+ }
+]

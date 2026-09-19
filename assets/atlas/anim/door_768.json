@@ -1,0 +1,1 @@
+{"name":"door_768","group":"anim","trimmed":true,"flattenedShadows":false,"atlas":{"w":57,"h":84,"pad":1,"format":"png8","colors":58},"src":{"files":2,"contentHash":"50d46ebd17d6d80b28eee8dac3e89ac9","bytes":3575},"frames":{"frame":[{"x":25,"y":0,"w":31,"h":76,"dx":0,"dy":0,"cw":48,"ch":95},{"x":0,"y":0,"w":24,"h":83,"dx":24,"dy":12,"cw":48,"ch":95}]}}

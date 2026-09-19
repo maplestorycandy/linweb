@@ -1,0 +1,2303 @@
+{
+ "generatedFrom": "3.8c SPR via convert_door_sprites.py",
+ "sprites": {
+  "88": {
+   "canvas": {
+    "w": 39,
+    "h": 87
+   },
+   "latticeOrigin": {
+    "x": -1,
+    "y": 70
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "89": {
+   "canvas": {
+    "w": 77,
+    "h": 67
+   },
+   "latticeOrigin": {
+    "x": -10,
+    "y": 50
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "92": {
+   "canvas": {
+    "w": 65,
+    "h": 64
+   },
+   "latticeOrigin": {
+    "x": -30,
+    "y": 57
+   },
+   "frames": 3,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close",
+    "lock"
+   ]
+  },
+  "93": {
+   "canvas": {
+    "w": 54,
+    "h": 86
+   },
+   "latticeOrigin": {
+    "x": -6,
+    "y": 43
+   },
+   "frames": 3,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close",
+    "lock"
+   ]
+  },
+  "339": {
+   "canvas": {
+    "w": 59,
+    "h": 97
+   },
+   "latticeOrigin": {
+    "x": 1,
+    "y": 71
+   },
+   "frames": 5,
+   "openFrame": 0,
+   "openFrameFrom": "gate-intact",
+   "actions": [
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "open",
+    "close"
+   ]
+  },
+  "442": {
+   "canvas": {
+    "w": 43,
+    "h": 93
+   },
+   "latticeOrigin": {
+    "x": -8,
+    "y": 57
+   },
+   "frames": 2,
+   "openFrame": 1,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "close",
+    "open"
+   ]
+  },
+  "443": {
+   "canvas": {
+    "w": 120,
+    "h": 102
+   },
+   "latticeOrigin": {
+    "x": 10,
+    "y": 77
+   },
+   "frames": 5,
+   "openFrame": 0,
+   "openFrameFrom": "gate-intact",
+   "actions": [
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "open",
+    "close"
+   ]
+  },
+  "444": {
+   "canvas": {
+    "w": 31,
+    "h": 81
+   },
+   "latticeOrigin": {
+    "x": 0,
+    "y": 58
+   },
+   "frames": 2,
+   "openFrame": 1,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "close",
+    "open"
+   ]
+  },
+  "446": {
+   "canvas": {
+    "w": 48,
+    "h": 67
+   },
+   "latticeOrigin": {
+    "x": 22,
+    "y": 56
+   },
+   "frames": 2,
+   "openFrame": 1,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "close",
+    "open"
+   ]
+  },
+  "447": {
+   "canvas": {
+    "w": 32,
+    "h": 79
+   },
+   "latticeOrigin": {
+    "x": -16,
+    "y": 56
+   },
+   "frames": 2,
+   "openFrame": 1,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "close",
+    "open"
+   ]
+  },
+  "448": {
+   "canvas": {
+    "w": 34,
+    "h": 82
+   },
+   "latticeOrigin": {
+    "x": -15,
+    "y": 55
+   },
+   "frames": 2,
+   "openFrame": 1,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "close",
+    "open"
+   ]
+  },
+  "766": {
+   "canvas": {
+    "w": 70,
+    "h": 81
+   },
+   "latticeOrigin": {
+    "x": 43,
+    "y": 71
+   },
+   "frames": 2,
+   "openFrame": 1,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "close",
+    "open"
+   ]
+  },
+  "767": {
+   "canvas": {
+    "w": 71,
+    "h": 81
+   },
+   "latticeOrigin": {
+    "x": -16,
+    "y": 75
+   },
+   "frames": 2,
+   "openFrame": 1,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "close",
+    "open"
+   ]
+  },
+  "768": {
+   "canvas": {
+    "w": 48,
+    "h": 95
+   },
+   "latticeOrigin": {
+    "x": 3,
+    "y": 67
+   },
+   "frames": 2,
+   "openFrame": 1,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "close",
+    "open"
+   ]
+  },
+  "845": {
+   "canvas": {
+    "w": 62,
+    "h": 80
+   },
+   "latticeOrigin": {
+    "x": -16,
+    "y": 68
+   },
+   "frames": 2,
+   "openFrame": 1,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "close",
+    "open"
+   ]
+  },
+  "1010": {
+   "canvas": {
+    "w": 22,
+    "h": 72
+   },
+   "latticeOrigin": {
+    "x": -23,
+    "y": 61
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1327": {
+   "canvas": {
+    "w": 51,
+    "h": 73
+   },
+   "latticeOrigin": {
+    "x": 28,
+    "y": 60
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1329": {
+   "canvas": {
+    "w": 20,
+    "h": 63
+   },
+   "latticeOrigin": {
+    "x": -29,
+    "y": 54
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1330": {
+   "canvas": {
+    "w": 51,
+    "h": 73
+   },
+   "latticeOrigin": {
+    "x": 28,
+    "y": 60
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1331": {
+   "canvas": {
+    "w": 45,
+    "h": 71
+   },
+   "latticeOrigin": {
+    "x": -27,
+    "y": 60
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1332": {
+   "canvas": {
+    "w": 58,
+    "h": 72
+   },
+   "latticeOrigin": {
+    "x": 32,
+    "y": 60
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1333": {
+   "canvas": {
+    "w": 59,
+    "h": 72
+   },
+   "latticeOrigin": {
+    "x": -21,
+    "y": 60
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1334": {
+   "canvas": {
+    "w": 56,
+    "h": 73
+   },
+   "latticeOrigin": {
+    "x": -25,
+    "y": 62
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1336": {
+   "canvas": {
+    "w": 73,
+    "h": 96
+   },
+   "latticeOrigin": {
+    "x": 25,
+    "y": 71
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "gate-intact",
+   "actions": [
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "open",
+    "close"
+   ]
+  },
+  "1338": {
+   "canvas": {
+    "w": 75,
+    "h": 109
+   },
+   "latticeOrigin": {
+    "x": 27,
+    "y": 72
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "gate-intact",
+   "actions": [
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "open",
+    "close"
+   ]
+  },
+  "1341": {
+   "canvas": {
+    "w": 68,
+    "h": 77
+   },
+   "latticeOrigin": {
+    "x": -18,
+    "y": 63
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1342": {
+   "canvas": {
+    "w": 91,
+    "h": 73
+   },
+   "latticeOrigin": {
+    "x": 30,
+    "y": 45
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1347": {
+   "canvas": {
+    "w": 33,
+    "h": 74
+   },
+   "latticeOrigin": {
+    "x": -29,
+    "y": 48
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1348": {
+   "canvas": {
+    "w": 33,
+    "h": 75
+   },
+   "latticeOrigin": {
+    "x": -29,
+    "y": 49
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1349": {
+   "canvas": {
+    "w": 28,
+    "h": 65
+   },
+   "latticeOrigin": {
+    "x": -41,
+    "y": 39
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1350": {
+   "canvas": {
+    "w": 28,
+    "h": 65
+   },
+   "latticeOrigin": {
+    "x": -41,
+    "y": 39
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1351": {
+   "canvas": {
+    "w": 39,
+    "h": 77
+   },
+   "latticeOrigin": {
+    "x": 23,
+    "y": 63
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1352": {
+   "canvas": {
+    "w": 39,
+    "h": 70
+   },
+   "latticeOrigin": {
+    "x": -32,
+    "y": 56
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1371": {
+   "canvas": {
+    "w": 32,
+    "h": 96
+   },
+   "latticeOrigin": {
+    "x": 9,
+    "y": 62
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1373": {
+   "canvas": {
+    "w": 25,
+    "h": 67
+   },
+   "latticeOrigin": {
+    "x": -14,
+    "y": 50
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1487": {
+   "canvas": {
+    "w": 66,
+    "h": 42
+   },
+   "latticeOrigin": {
+    "x": 40,
+    "y": 36
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1664": {
+   "canvas": {
+    "w": 74,
+    "h": 82
+   },
+   "latticeOrigin": {
+    "x": 45,
+    "y": 68
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1665": {
+   "canvas": {
+    "w": 73,
+    "h": 83
+   },
+   "latticeOrigin": {
+    "x": -19,
+    "y": 68
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1688": {
+   "canvas": {
+    "w": 71,
+    "h": 84
+   },
+   "latticeOrigin": {
+    "x": 38,
+    "y": 70
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1689": {
+   "canvas": {
+    "w": 34,
+    "h": 106
+   },
+   "latticeOrigin": {
+    "x": -19,
+    "y": 70
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1690": {
+   "canvas": {
+    "w": 72,
+    "h": 73
+   },
+   "latticeOrigin": {
+    "x": -3,
+    "y": 50
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1691": {
+   "canvas": {
+    "w": 43,
+    "h": 104
+   },
+   "latticeOrigin": {
+    "x": -3,
+    "y": 70
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1692": {
+   "canvas": {
+    "w": 78,
+    "h": 87
+   },
+   "latticeOrigin": {
+    "x": 53,
+    "y": 69
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1700": {
+   "canvas": {
+    "w": 78,
+    "h": 87
+   },
+   "latticeOrigin": {
+    "x": -15,
+    "y": 68
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1734": {
+   "canvas": {
+    "w": 65,
+    "h": 79
+   },
+   "latticeOrigin": {
+    "x": 34,
+    "y": 68
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1735": {
+   "canvas": {
+    "w": 65,
+    "h": 82
+   },
+   "latticeOrigin": {
+    "x": -12,
+    "y": 67
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1736": {
+   "canvas": {
+    "w": 78,
+    "h": 87
+   },
+   "latticeOrigin": {
+    "x": -15,
+    "y": 68
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1737": {
+   "canvas": {
+    "w": 78,
+    "h": 86
+   },
+   "latticeOrigin": {
+    "x": 50,
+    "y": 69
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1738": {
+   "canvas": {
+    "w": 67,
+    "h": 79
+   },
+   "latticeOrigin": {
+    "x": -25,
+    "y": 64
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1739": {
+   "canvas": {
+    "w": 70,
+    "h": 81
+   },
+   "latticeOrigin": {
+    "x": 34,
+    "y": 71
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1740": {
+   "canvas": {
+    "w": 70,
+    "h": 81
+   },
+   "latticeOrigin": {
+    "x": -16,
+    "y": 67
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1741": {
+   "canvas": {
+    "w": 66,
+    "h": 80
+   },
+   "latticeOrigin": {
+    "x": 37,
+    "y": 60
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1743": {
+   "canvas": {
+    "w": 64,
+    "h": 81
+   },
+   "latticeOrigin": {
+    "x": -26,
+    "y": 64
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1744": {
+   "canvas": {
+    "w": 70,
+    "h": 83
+   },
+   "latticeOrigin": {
+    "x": 51,
+    "y": 64
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1745": {
+   "canvas": {
+    "w": 169,
+    "h": 187
+   },
+   "latticeOrigin": {
+    "x": 61,
+    "y": 131
+   },
+   "frames": 40,
+   "openFrame": 6,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "open",
+    "close"
+   ]
+  },
+  "1750": {
+   "canvas": {
+    "w": 65,
+    "h": 79
+   },
+   "latticeOrigin": {
+    "x": 30,
+    "y": 67
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1751": {
+   "canvas": {
+    "w": 65,
+    "h": 82
+   },
+   "latticeOrigin": {
+    "x": -16,
+    "y": 66
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "1826": {
+   "canvas": {
+    "w": 154,
+    "h": 231
+   },
+   "latticeOrigin": {
+    "x": 90,
+    "y": 162
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "gate-intact",
+   "actions": [
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "open",
+    "close"
+   ]
+  },
+  "1827": {
+   "canvas": {
+    "w": 158,
+    "h": 225
+   },
+   "latticeOrigin": {
+    "x": 19,
+    "y": 158
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "gate-intact",
+   "actions": [
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "open",
+    "close"
+   ]
+  },
+  "2083": {
+   "canvas": {
+    "w": 63,
+    "h": 70
+   },
+   "latticeOrigin": {
+    "x": -20,
+    "y": 56
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2089": {
+   "canvas": {
+    "w": 62,
+    "h": 70
+   },
+   "latticeOrigin": {
+    "x": 35,
+    "y": 56
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2114": {
+   "canvas": {
+    "w": 71,
+    "h": 71
+   },
+   "latticeOrigin": {
+    "x": -20,
+    "y": 57
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2128": {
+   "canvas": {
+    "w": 71,
+    "h": 70
+   },
+   "latticeOrigin": {
+    "x": 44,
+    "y": 56
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2160": {
+   "canvas": {
+    "w": 50,
+    "h": 70
+   },
+   "latticeOrigin": {
+    "x": -23,
+    "y": 57
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2161": {
+   "canvas": {
+    "w": 50,
+    "h": 70
+   },
+   "latticeOrigin": {
+    "x": -26,
+    "y": 57
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2162": {
+   "canvas": {
+    "w": 50,
+    "h": 70
+   },
+   "latticeOrigin": {
+    "x": 27,
+    "y": 56
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2163": {
+   "canvas": {
+    "w": 28,
+    "h": 79
+   },
+   "latticeOrigin": {
+    "x": -26,
+    "y": 55
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2164": {
+   "canvas": {
+    "w": 50,
+    "h": 69
+   },
+   "latticeOrigin": {
+    "x": -26,
+    "y": 56
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2190": {
+   "canvas": {
+    "w": 51,
+    "h": 70
+   },
+   "latticeOrigin": {
+    "x": -13,
+    "y": 63
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2191": {
+   "canvas": {
+    "w": 53,
+    "h": 71
+   },
+   "latticeOrigin": {
+    "x": 17,
+    "y": 63
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2301": {
+   "canvas": {
+    "w": 51,
+    "h": 72
+   },
+   "latticeOrigin": {
+    "x": -22,
+    "y": 59
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2303": {
+   "canvas": {
+    "w": 51,
+    "h": 66
+   },
+   "latticeOrigin": {
+    "x": -21,
+    "y": 54
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2304": {
+   "canvas": {
+    "w": 48,
+    "h": 74
+   },
+   "latticeOrigin": {
+    "x": -19,
+    "y": 57
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2305": {
+   "canvas": {
+    "w": 49,
+    "h": 73
+   },
+   "latticeOrigin": {
+    "x": -24,
+    "y": 61
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2306": {
+   "canvas": {
+    "w": 54,
+    "h": 73
+   },
+   "latticeOrigin": {
+    "x": -22,
+    "y": 61
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2344": {
+   "canvas": {
+    "w": 58,
+    "h": 73
+   },
+   "latticeOrigin": {
+    "x": 32,
+    "y": 60
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2345": {
+   "canvas": {
+    "w": 57,
+    "h": 72
+   },
+   "latticeOrigin": {
+    "x": -22,
+    "y": 59
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2346": {
+   "canvas": {
+    "w": 69,
+    "h": 80
+   },
+   "latticeOrigin": {
+    "x": -20,
+    "y": 66
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2510": {
+   "missingClientSpr": true,
+   "searched": [
+    "2510-0.spr",
+    "2510-0.SPR"
+   ]
+  },
+  "2556": {
+   "canvas": {
+    "w": 45,
+    "h": 62
+   },
+   "latticeOrigin": {
+    "x": 27,
+    "y": 48
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2558": {
+   "canvas": {
+    "w": 46,
+    "h": 62
+   },
+   "latticeOrigin": {
+    "x": -29,
+    "y": 48
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2574": {
+   "canvas": {
+    "w": 50,
+    "h": 71
+   },
+   "latticeOrigin": {
+    "x": 26,
+    "y": 59
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2575": {
+   "canvas": {
+    "w": 51,
+    "h": 65
+   },
+   "latticeOrigin": {
+    "x": -22,
+    "y": 53
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2578": {
+   "canvas": {
+    "w": 51,
+    "h": 60
+   },
+   "latticeOrigin": {
+    "x": 10,
+    "y": 54
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2579": {
+   "canvas": {
+    "w": 50,
+    "h": 60
+   },
+   "latticeOrigin": {
+    "x": -23,
+    "y": 48
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2580": {
+   "canvas": {
+    "w": 29,
+    "h": 72
+   },
+   "latticeOrigin": {
+    "x": 1,
+    "y": 49
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2581": {
+   "canvas": {
+    "w": 52,
+    "h": 62
+   },
+   "latticeOrigin": {
+    "x": -19,
+    "y": 50
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2582": {
+   "canvas": {
+    "w": 52,
+    "h": 60
+   },
+   "latticeOrigin": {
+    "x": 2,
+    "y": 48
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2583": {
+   "canvas": {
+    "w": 27,
+    "h": 71
+   },
+   "latticeOrigin": {
+    "x": 4,
+    "y": 57
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2585": {
+   "canvas": {
+    "w": 52,
+    "h": 61
+   },
+   "latticeOrigin": {
+    "x": -20,
+    "y": 48
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2588": {
+   "canvas": {
+    "w": 31,
+    "h": 70
+   },
+   "latticeOrigin": {
+    "x": 4,
+    "y": 47
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2589": {
+   "canvas": {
+    "w": 29,
+    "h": 69
+   },
+   "latticeOrigin": {
+    "x": 6,
+    "y": 56
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2590": {
+   "canvas": {
+    "w": 52,
+    "h": 58
+   },
+   "latticeOrigin": {
+    "x": -10,
+    "y": 51
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2591": {
+   "canvas": {
+    "w": 52,
+    "h": 60
+   },
+   "latticeOrigin": {
+    "x": -30,
+    "y": 47
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2596": {
+   "canvas": {
+    "w": 31,
+    "h": 72
+   },
+   "latticeOrigin": {
+    "x": 2,
+    "y": 49
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2597": {
+   "canvas": {
+    "w": 53,
+    "h": 61
+   },
+   "latticeOrigin": {
+    "x": -18,
+    "y": 48
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2598": {
+   "canvas": {
+    "w": 54,
+    "h": 60
+   },
+   "latticeOrigin": {
+    "x": 0,
+    "y": 46
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2599": {
+   "canvas": {
+    "w": 30,
+    "h": 71
+   },
+   "latticeOrigin": {
+    "x": 4,
+    "y": 57
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2600": {
+   "canvas": {
+    "w": 59,
+    "h": 73
+   },
+   "latticeOrigin": {
+    "x": 30,
+    "y": 61
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2603": {
+   "canvas": {
+    "w": 31,
+    "h": 85
+   },
+   "latticeOrigin": {
+    "x": -27,
+    "y": 54
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2605": {
+   "canvas": {
+    "w": 32,
+    "h": 84
+   },
+   "latticeOrigin": {
+    "x": -16,
+    "y": 51
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2606": {
+   "canvas": {
+    "w": 58,
+    "h": 72
+   },
+   "latticeOrigin": {
+    "x": 36,
+    "y": 59
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2608": {
+   "canvas": {
+    "w": 33,
+    "h": 80
+   },
+   "latticeOrigin": {
+    "x": -18,
+    "y": 57
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2610": {
+   "canvas": {
+    "w": 59,
+    "h": 73
+   },
+   "latticeOrigin": {
+    "x": 30,
+    "y": 61
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2628": {
+   "canvas": {
+    "w": 46,
+    "h": 67
+   },
+   "latticeOrigin": {
+    "x": 24,
+    "y": 57
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2629": {
+   "canvas": {
+    "w": 27,
+    "h": 77
+   },
+   "latticeOrigin": {
+    "x": 1,
+    "y": 69
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2630": {
+   "canvas": {
+    "w": 47,
+    "h": 67
+   },
+   "latticeOrigin": {
+    "x": -25,
+    "y": 57
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2631": {
+   "canvas": {
+    "w": 27,
+    "h": 77
+   },
+   "latticeOrigin": {
+    "x": -22,
+    "y": 68
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2634": {
+   "canvas": {
+    "w": 45,
+    "h": 66
+   },
+   "latticeOrigin": {
+    "x": -26,
+    "y": 57
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2635": {
+   "canvas": {
+    "w": 28,
+    "h": 75
+   },
+   "latticeOrigin": {
+    "x": -21,
+    "y": 67
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "2732": {
+   "canvas": {
+    "w": 156,
+    "h": 134
+   },
+   "latticeOrigin": {
+    "x": 4,
+    "y": 65
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "gate-intact",
+   "actions": [
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "open",
+    "close"
+   ]
+  },
+  "2736": {
+   "canvas": {
+    "w": 144,
+    "h": 149
+   },
+   "latticeOrigin": {
+    "x": 51,
+    "y": 124
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "gate-intact",
+   "actions": [
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "open",
+    "close"
+   ]
+  },
+  "2744": {
+   "canvas": {
+    "w": 145,
+    "h": 114
+   },
+   "latticeOrigin": {
+    "x": 24,
+    "y": 102
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "gate-intact",
+   "actions": [
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "open",
+    "close"
+   ]
+  },
+  "2745": {
+   "canvas": {
+    "w": 145,
+    "h": 114
+   },
+   "latticeOrigin": {
+    "x": 48,
+    "y": 90
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "gate-intact",
+   "actions": [
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "open",
+    "close"
+   ]
+  },
+  "2746": {
+   "canvas": {
+    "w": 144,
+    "h": 112
+   },
+   "latticeOrigin": {
+    "x": 49,
+    "y": 88
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "gate-intact",
+   "actions": [
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "open",
+    "close"
+   ]
+  },
+  "3234": {
+   "canvas": {
+    "w": 143,
+    "h": 148
+   },
+   "latticeOrigin": {
+    "x": 69,
+    "y": 116
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "gate-intact",
+   "actions": [
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "dooraction",
+    "open",
+    "close"
+   ]
+  },
+  "6026": {
+   "canvas": {
+    "w": 67,
+    "h": 75
+   },
+   "latticeOrigin": {
+    "x": -22,
+    "y": 63
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "6027": {
+   "canvas": {
+    "w": 38,
+    "h": 68
+   },
+   "latticeOrigin": {
+    "x": 26,
+    "y": 57
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "6028": {
+   "canvas": {
+    "w": 67,
+    "h": 74
+   },
+   "latticeOrigin": {
+    "x": 42,
+    "y": 63
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "6029": {
+   "canvas": {
+    "w": 95,
+    "h": 119
+   },
+   "latticeOrigin": {
+    "x": 16,
+    "y": 101
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "6030": {
+   "canvas": {
+    "w": 91,
+    "h": 114
+   },
+   "latticeOrigin": {
+    "x": -23,
+    "y": 82
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "6031": {
+   "canvas": {
+    "w": 47,
+    "h": 91
+   },
+   "latticeOrigin": {
+    "x": 27,
+    "y": 80
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "6032": {
+   "canvas": {
+    "w": 40,
+    "h": 90
+   },
+   "latticeOrigin": {
+    "x": -31,
+    "y": 79
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "6033": {
+   "canvas": {
+    "w": 58,
+    "h": 75
+   },
+   "latticeOrigin": {
+    "x": 38,
+    "y": 65
+   },
+   "frames": 2,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "6336": {
+   "canvas": {
+    "w": 99,
+    "h": 174
+   },
+   "latticeOrigin": {
+    "x": 25,
+    "y": 147
+   },
+   "frames": 10,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "6351": {
+   "canvas": {
+    "w": 362,
+    "h": 248
+   },
+   "latticeOrigin": {
+    "x": 150,
+    "y": 143
+   },
+   "frames": 11,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "6379": {
+   "canvas": {
+    "w": 100,
+    "h": 174
+   },
+   "latticeOrigin": {
+    "x": 2,
+    "y": 135
+   },
+   "frames": 10,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "6640": {
+   "canvas": {
+    "w": 172,
+    "h": 165
+   },
+   "latticeOrigin": {
+    "x": 36,
+    "y": 151
+   },
+   "frames": 6,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "6642": {
+   "canvas": {
+    "w": 172,
+    "h": 170
+   },
+   "latticeOrigin": {
+    "x": 81,
+    "y": 160
+   },
+   "frames": 6,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  },
+  "6677": {
+   "canvas": {
+    "w": 183,
+    "h": 166
+   },
+   "latticeOrigin": {
+    "x": 40,
+    "y": 105
+   },
+   "frames": 17,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close",
+    "loop"
+   ]
+  },
+  "7556": {
+   "canvas": {
+    "w": 160,
+    "h": 150
+   },
+   "latticeOrigin": {
+    "x": 50,
+    "y": 111
+   },
+   "frames": 9,
+   "openFrame": 0,
+   "openFrameFrom": "action-table",
+   "actions": [
+    "open",
+    "close"
+   ]
+  }
+ }
+}

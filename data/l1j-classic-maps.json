@@ -1,0 +1,461 @@
+{
+  "__doc": "L1J-TW/3.8c maps plus main reachability transit floors; no 99nets.",
+  "maps": [
+    {
+      "mapId": 14,
+      "mapKey": "undersea_passage",
+      "displayName": "海底隧道",
+      "musicSourceMapId": 14
+    },
+    {
+      "mapId": 15,
+      "mapKey": "l1j_map_15",
+      "displayName": "肯特內城",
+      "musicSourceMapId": 15
+    },
+    {
+      "mapId": 22,
+      "mapKey": "l1j_map_22",
+      "displayName": "傑瑞德的試煉地監",
+      "musicSourceMapId": 22
+    },
+    {
+      "mapId": 23,
+      "mapKey": "l1j_map_23",
+      "displayName": "風木城地監:1樓",
+      "musicSourceMapId": 23
+    },
+    {
+      "mapId": 24,
+      "mapKey": "l1j_map_24",
+      "displayName": "風木城地監:2樓",
+      "musicSourceMapId": 24
+    },
+    {
+      "mapId": 29,
+      "mapKey": "l1j_map_29",
+      "displayName": "風木城內城",
+      "musicSourceMapId": 29
+    },
+    {
+      "mapId": 52,
+      "mapKey": "l1j_map_52",
+      "displayName": "奇岩內城",
+      "musicSourceMapId": 52
+    },
+    {
+      "mapId": 64,
+      "mapKey": "l1j_map_64",
+      "displayName": "海音內城",
+      "musicSourceMapId": 64
+    },
+    {
+      "mapId": 66,
+      "mapKey": "l1j_map_66",
+      "displayName": "侏儒洞穴",
+      "musicSourceMapId": 66
+    },
+    {
+      "mapId": 67,
+      "mapKey": "valakas_lair",
+      "displayName": "巴拉卡斯棲息地",
+      "musicSourceMapId": 67
+    },
+    {
+      "mapId": 68,
+      "mapKey": "l1j_map_68",
+      "displayName": "歌唱之島",
+      "musicSourceMapId": 68
+    },
+    {
+      "mapId": 69,
+      "mapKey": "l1j_map_69",
+      "displayName": "隱藏之谷",
+      "musicSourceMapId": 69
+    },
+    {
+      "mapId": 85,
+      "mapKey": "l1j_map_85",
+      "displayName": "歌唱之島地監（npcココから）",
+      "musicSourceMapId": 85
+    },
+    {
+      "mapId": 86,
+      "mapKey": "l1j_map_86",
+      "displayName": "歌唱之島地監（npcクンから）",
+      "musicSourceMapId": 86
+    },
+    {
+      "mapId": 88,
+      "mapKey": "l1j_map_88",
+      "displayName": "奇岩競技場",
+      "musicSourceMapId": 88
+    },
+    {
+      "mapId": 91,
+      "mapKey": "l1j_map_91",
+      "displayName": "說話之島競技場",
+      "musicSourceMapId": 91
+    },
+    {
+      "mapId": 92,
+      "mapKey": "l1j_map_92",
+      "displayName": "古魯丁競技場",
+      "musicSourceMapId": 92
+    },
+    {
+      "mapId": 95,
+      "mapKey": "l1j_map_95",
+      "displayName": "銀騎士競技場",
+      "musicSourceMapId": 95
+    },
+    {
+      "mapId": 98,
+      "mapKey": "l1j_map_98",
+      "displayName": "威頓競技場",
+      "musicSourceMapId": 98
+    },
+    {
+      "mapId": 201,
+      "mapKey": "l1j_map_201",
+      "displayName": "法師試煉地監",
+      "musicSourceMapId": 201
+    },
+    {
+      "mapId": 213,
+      "mapKey": "l1j_map_213",
+      "displayName": "黑暗妖精地監",
+      "musicSourceMapId": 213
+    },
+    {
+      "mapId": 237,
+      "mapKey": "jim_dungeon",
+      "displayName": "吉姆的密室",
+      "musicSourceMapId": 237
+    },
+    {
+      "mapId": 240,
+      "mapKey": "l1j_map_240",
+      "displayName": "肯特城地監1樓",
+      "musicSourceMapId": 240
+    },
+    {
+      "mapId": 241,
+      "mapKey": "l1j_map_241",
+      "displayName": "肯特城地監2樓",
+      "musicSourceMapId": 241
+    },
+    {
+      "mapId": 242,
+      "mapKey": "l1j_map_242",
+      "displayName": "肯特城地監3樓",
+      "musicSourceMapId": 242
+    },
+    {
+      "mapId": 243,
+      "mapKey": "l1j_map_243",
+      "displayName": "肯特城地監4樓",
+      "musicSourceMapId": 243
+    },
+    {
+      "mapId": 244,
+      "mapKey": "l1j_map_244",
+      "displayName": "污濁之地",
+      "musicSourceMapId": 244
+    },
+    {
+      "mapId": 248,
+      "mapKey": "l1j_map_248",
+      "displayName": "奇岩城地監1樓",
+      "musicSourceMapId": 248
+    },
+    {
+      "mapId": 249,
+      "mapKey": "l1j_map_249",
+      "displayName": "奇岩城地監2樓",
+      "musicSourceMapId": 249
+    },
+    {
+      "mapId": 250,
+      "mapKey": "l1j_map_250",
+      "displayName": "奇岩城地監3樓",
+      "musicSourceMapId": 250
+    },
+    {
+      "mapId": 251,
+      "mapKey": "l1j_map_251",
+      "displayName": "奇岩城地監2樓:伯爵の部屋",
+      "musicSourceMapId": 251
+    },
+    {
+      "mapId": 252,
+      "mapKey": "l1j_map_252",
+      "displayName": "海音城地監1樓",
+      "musicSourceMapId": 252
+    },
+    {
+      "mapId": 253,
+      "mapKey": "l1j_map_253",
+      "displayName": "海音城地監2樓",
+      "musicSourceMapId": 253
+    },
+    {
+      "mapId": 254,
+      "mapKey": "l1j_map_254",
+      "displayName": "海音城地監3樓",
+      "musicSourceMapId": 254
+    },
+    {
+      "mapId": 255,
+      "mapKey": "l1j_map_255",
+      "displayName": "侏儒城地監礦物坑道:1樓",
+      "musicSourceMapId": 255
+    },
+    {
+      "mapId": 256,
+      "mapKey": "l1j_map_256",
+      "displayName": "侏儒城地監兇猛之地:2樓",
+      "musicSourceMapId": 256
+    },
+    {
+      "mapId": 257,
+      "mapKey": "l1j_map_257",
+      "displayName": "亞丁城地監1樓",
+      "musicSourceMapId": 257
+    },
+    {
+      "mapId": 258,
+      "mapKey": "l1j_map_258",
+      "displayName": "亞丁城地監2樓",
+      "musicSourceMapId": 258
+    },
+    {
+      "mapId": 259,
+      "mapKey": "l1j_map_259",
+      "displayName": "亞丁城地監3樓",
+      "musicSourceMapId": 259
+    },
+    {
+      "mapId": 300,
+      "mapKey": "l1j_map_300",
+      "displayName": "亞丁內城",
+      "musicSourceMapId": 300
+    },
+    {
+      "mapId": 330,
+      "mapKey": "mineral_cave",
+      "displayName": "礦物洞穴",
+      "musicSourceMapId": 320
+    },
+    {
+      "mapId": 340,
+      "mapKey": "l1j_map_340",
+      "displayName": "古魯丁商店村",
+      "musicSourceMapId": 340
+    },
+    {
+      "mapId": 350,
+      "mapKey": "l1j_map_350",
+      "displayName": "奇岩商店村",
+      "musicSourceMapId": 350
+    },
+    {
+      "mapId": 360,
+      "mapKey": "l1j_map_360",
+      "displayName": "歐瑞商店村",
+      "musicSourceMapId": 360
+    },
+    {
+      "mapId": 370,
+      "mapKey": "l1j_map_370",
+      "displayName": "銀騎士商店村",
+      "musicSourceMapId": 370
+    },
+    {
+      "mapId": 481,
+      "mapKey": "l1j_map_481",
+      "displayName": "Kamyla\\'s Room",
+      "musicSourceMapId": 482
+    },
+    {
+      "mapId": 482,
+      "mapKey": "l1j_map_482",
+      "displayName": "Franco\\'s Labyrinth",
+      "musicSourceMapId": 482
+    },
+    {
+      "mapId": 483,
+      "mapKey": "l1j_map_483",
+      "displayName": "Closed Jail of Diego",
+      "musicSourceMapId": 483
+    },
+    {
+      "mapId": 484,
+      "mapKey": "l1j_map_484",
+      "displayName": "Underground Jail of Jose",
+      "musicSourceMapId": 484
+    },
+    {
+      "mapId": 541,
+      "mapKey": "l1j_map_541",
+      "displayName": "巨蟻洞穴卵部屋A",
+      "musicSourceMapId": 541
+    },
+    {
+      "mapId": 542,
+      "mapKey": "l1j_map_542",
+      "displayName": "巨蟻洞穴卵部屋B",
+      "musicSourceMapId": 542
+    },
+    {
+      "mapId": 550,
+      "mapKey": "l1j_map_550",
+      "displayName": "船の墓場:地上層",
+      "musicSourceMapId": 550
+    },
+    {
+      "mapId": 551,
+      "mapKey": "l1j_map_551",
+      "displayName": "船の墓場:大型船內1F",
+      "musicSourceMapId": 550
+    },
+    {
+      "mapId": 552,
+      "mapKey": "l1j_map_552",
+      "displayName": "船の墓場:大型船內1F(水中)",
+      "musicSourceMapId": 552
+    },
+    {
+      "mapId": 554,
+      "mapKey": "l1j_map_554",
+      "displayName": "船の墓場:大型船內2F",
+      "musicSourceMapId": 554
+    },
+    {
+      "mapId": 555,
+      "mapKey": "l1j_map_555",
+      "displayName": "船の墓場:大型船內2F(水中)",
+      "musicSourceMapId": 555
+    },
+    {
+      "mapId": 557,
+      "mapKey": "l1j_map_557",
+      "displayName": "船の墓場:大型船內3F(水中)",
+      "musicSourceMapId": 557
+    },
+    {
+      "mapId": 558,
+      "mapKey": "l1j_map_558",
+      "displayName": "船の墓場:深海層",
+      "musicSourceMapId": 558
+    },
+    {
+      "mapId": 777,
+      "mapKey": "l1j_map_777",
+      "displayName": "fallen temple",
+      "musicSourceMapId": 777
+    },
+    {
+      "mapId": 778,
+      "mapKey": "l1j_map_778",
+      "displayName": "fallen cave",
+      "musicSourceMapId": 778
+    },
+    {
+      "mapId": 779,
+      "mapKey": "l1j_map_779",
+      "displayName": "fallen cave underwater",
+      "musicSourceMapId": 779
+    },
+    {
+      "mapId": 2005,
+      "mapKey": "l1j_map_2005",
+      "displayName": "隱藏之谷",
+      "musicSourceMapId": 2005
+    },
+    {
+      "mapId": 9645,
+      "mapKey": "custom_map_09051936",
+      "displayName": "毀滅的說話之島",
+      "musicSourceMapId": 2005
+    },
+    {
+      "mapId": 9646,
+      "mapKey": "custom_map_09061348",
+      "displayName": "海戰",
+      "musicSourceMapId": 2005
+    },
+    {
+      "mapId": 9647,
+      "mapKey": "custom_map_09071836",
+      "displayName": "測試地圖",
+      "musicSourceMapId": 2005,
+      "focusX": 174,
+      "focusY": 173
+    },
+    {
+      "mapId": 9648,
+      "mapKey": "custom_map_09072227",
+      "displayName": "全新冒險地圖",
+      "musicSourceMapId": 2005,
+      "focusX": 343,
+      "focusY": 344
+    },
+    {
+      "mapId": 9649,
+      "mapKey": "custom_map_09072247",
+      "displayName": "被襲擊的成長之島",
+      "musicSourceMapId": 2005,
+      "focusX": 266,
+      "focusY": 258
+    },
+    {
+      "mapId": 9650,
+      "mapKey": "custom_map_09072259",
+      "displayName": "測試古魯丁",
+      "musicSourceMapId": 2005,
+      "focusX": 45,
+      "focusY": 45
+    },
+    {
+      "mapId": 9651,
+      "mapKey": "custom_map_09072313",
+      "displayName": "失落的亞丁",
+      "musicSourceMapId": 2005,
+      "focusX": 302,
+      "focusY": 301
+    },
+    {
+      "mapId": 10153,
+      "mapKey": "custom_map_09172042",
+      "displayName": "新亞丁",
+      "musicSourceMapId": 0,
+      "focusX": 32,
+      "focusY": 32
+    },
+    {
+      "mapId": 9654,
+      "mapKey": "custom_map_09172129",
+      "displayName": "摩登",
+      "musicSourceMapId": 2005,
+      "focusX": 123,
+      "focusY": 123
+    },
+    {
+      "mapId": 9655,
+      "mapKey": "custom_map_09181830",
+      "displayName": "全新摩登",
+      "musicSourceMapId": 2005,
+      "focusX": 123,
+      "focusY": 123
+    },
+    {
+      "mapId": 9656,
+      "mapKey": "custom_map_09181941",
+      "displayName": "野外地監",
+      "musicSourceMapId": 2005,
+      "focusX": 123,
+      "focusY": 123
+    }
+  ]
+}

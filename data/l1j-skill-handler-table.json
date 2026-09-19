@@ -1,0 +1,1815 @@
+{
+ "__doc": [
+  "180 支官方技能逐支 handler 表——由 tools/l1j-import/build_skill_handler_table.py 產生（不要手改）。",
+  "狀態：L1J-handler（通用 IsLive 或逐支專用流程）／port-fallback（走港版實作）／",
+  "unsupported（港版沒有機制）／unreleased（L1J 自己標未開放）。",
+  "⚠️ 路由判斷鏡射 L1jSkillHandover；Sim.Tests 的守門員用 runtime 逐支重算驗一致。"
+ ],
+ "counts": {
+  "L1J-handler": 171,
+  "unsupported": 8,
+  "unreleased": 1
+ },
+ "skills": [
+  {
+   "officialId": 1,
+   "portKey": "sk_heal1",
+   "name": "初級治癒術",
+   "category": "heal",
+   "portType": "heal",
+   "status": "L1J-handler",
+   "reason": "`heal` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 2,
+   "portKey": "sk_sunlight",
+   "name": "日光術",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 3,
+   "portKey": "sk_shield",
+   "name": "保護罩",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 4,
+   "portKey": "sk_lightarrow",
+   "name": "光箭",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 5,
+   "portKey": "sk_teleport",
+   "name": "指定傳送",
+   "category": "other",
+   "portType": "manual",
+   "status": "L1J-handler",
+   "reason": "指定傳送：main 地圖傳送流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 6,
+   "portKey": "sk_icearrow",
+   "name": "冰箭",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 7,
+   "portKey": "sk_windblade",
+   "name": "風刃",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 8,
+   "portKey": "sk_holy_wpn",
+   "name": "神聖武器",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 9,
+   "portKey": "sk_antidote",
+   "name": "解毒術",
+   "category": "change",
+   "portType": "heal",
+   "status": "L1J-handler",
+   "reason": "解毒術：main curePoison 專用流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 10,
+   "portKey": "sk_cold_shiver",
+   "name": "寒冷戰慄",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 11,
+   "portKey": "sk_poison_curse",
+   "name": "毒咒",
+   "category": "curse",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`curse` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 12,
+   "portKey": "sk_ench_wpn",
+   "name": "擬似魔法武器",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 13,
+   "portKey": "sk_reveal",
+   "name": "無所遁形術",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 14,
+   "portKey": "sk_load_up",
+   "name": "負重強化",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 15,
+   "portKey": "sk_firearrow",
+   "name": "火箭",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 16,
+   "portKey": "sk_hell_fang",
+   "name": "地獄之牙",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 17,
+   "portKey": "sk_aurora",
+   "name": "極光雷電",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 18,
+   "portKey": "sk_undead_bane",
+   "name": "起死回生術",
+   "category": "curse",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "起死回生術：main 不死系機率即死流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 19,
+   "portKey": "sk_heal_mid",
+   "name": "中級治癒術",
+   "category": "heal",
+   "portType": "heal",
+   "status": "L1J-handler",
+   "reason": "`heal` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 20,
+   "portKey": "sk_dark_blind",
+   "name": "闇盲咒術",
+   "category": "curse",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`curse` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 21,
+   "portKey": "sk_shield2",
+   "name": "鎧甲護持",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 22,
+   "portKey": "sk_chill",
+   "name": "寒冰氣息",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 23,
+   "portKey": "sk_energy_sense",
+   "name": "能量感測",
+   "category": "other",
+   "portType": "manual",
+   "status": "L1J-handler",
+   "reason": "能量感測：main 屬性感測流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 25,
+   "portKey": "sk_fireball",
+   "name": "燃燒的火球",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 26,
+   "portKey": "sk_dex_up",
+   "name": "通暢氣脈術",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 27,
+   "portKey": "sk_break",
+   "name": "壞物術",
+   "category": "curse",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`curse` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 28,
+   "portKey": "sk_vampire",
+   "name": "吸血鬼之吻",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 29,
+   "portKey": "sk_slow",
+   "name": "緩速術",
+   "category": "probability",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`probability` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 30,
+   "portKey": "sk_rock_prison",
+   "name": "岩牢",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 31,
+   "portKey": "sk_magic_shield",
+   "name": "魔法屏障",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 32,
+   "portKey": "sk_meditation",
+   "name": "冥想術",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 33,
+   "portKey": "sk_mummy_curse",
+   "name": "木乃伊的詛咒",
+   "category": "curse",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`curse` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 34,
+   "portKey": "sk_thunder",
+   "name": "極道落雷",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 35,
+   "portKey": "sk_heal2",
+   "name": "高級治癒術",
+   "category": "heal",
+   "portType": "heal",
+   "status": "L1J-handler",
+   "reason": "`heal` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 36,
+   "portKey": "sk_charm",
+   "name": "迷魅術",
+   "category": "probability",
+   "portType": "manual",
+   "status": "L1J-handler",
+   "reason": "迷魅術：main 馴服怪物流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 37,
+   "portKey": "sk_holy_light",
+   "name": "聖潔之光",
+   "category": "change",
+   "portType": "heal",
+   "status": "L1J-handler",
+   "reason": "聖潔之光：main 解毒／解麻痺流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 38,
+   "portKey": "sk_ice_spike",
+   "name": "冰錐",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 39,
+   "portKey": "sk_mana_drain",
+   "name": "魔力奪取",
+   "category": "probability",
+   "portType": "convert",
+   "status": "L1J-handler",
+   "reason": "魔力奪取：main 機率與吸魔量流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 40,
+   "portKey": "sk_dark_shadow",
+   "name": "黑闇之影",
+   "category": "probability",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`probability` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 41,
+   "portKey": "sk_zombie",
+   "name": "造屍術",
+   "category": "restore",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "造屍術：main 屍體召喚流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 42,
+   "portKey": "sk_str_up",
+   "name": "體魄強健術",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 43,
+   "portKey": "sk_haste_spell",
+   "name": "加速術",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 44,
+   "portKey": "sk_cancel",
+   "name": "魔法相消術",
+   "category": "probability",
+   "portType": "heal",
+   "status": "L1J-handler",
+   "reason": "魔法相消術：main 可取消增益清除流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 45,
+   "portKey": "sk_earthquake",
+   "name": "地裂術",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 46,
+   "portKey": "sk_blaze",
+   "name": "烈炎術",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 47,
+   "portKey": "sk_weaken",
+   "name": "弱化術",
+   "category": "curse",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`curse` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 48,
+   "portKey": "sk_bless_wpn",
+   "name": "祝福魔法武器",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 49,
+   "portKey": "sk_regen",
+   "name": "體力回復術",
+   "category": "heal",
+   "portType": "heal",
+   "status": "L1J-handler",
+   "reason": "`heal` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 50,
+   "portKey": "sk_ice_lance",
+   "name": "冰矛圍籬",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 51,
+   "portKey": "sk_summon",
+   "name": "召喚術",
+   "category": "other",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "召喚術：main 等級名冊與魅力預算流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 52,
+   "portKey": "sk_holy_dash",
+   "name": "神聖疾走",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 53,
+   "portKey": "sk_tornado",
+   "name": "龍捲風",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 54,
+   "portKey": "sk_greater_haste",
+   "name": "強力加速術",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 55,
+   "portKey": "sk_berserk",
+   "name": "狂暴術",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 56,
+   "portKey": "sk_disease",
+   "name": "疾病術",
+   "category": "curse",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`curse` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 57,
+   "portKey": "sk_full_heal",
+   "name": "全部治癒術",
+   "category": "heal",
+   "portType": "heal",
+   "status": "L1J-handler",
+   "reason": "`heal` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 58,
+   "portKey": "sk_fire_prison",
+   "name": "火牢",
+   "category": "attack-dice",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "火牢：main 地面火牆流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 59,
+   "portKey": "sk_blizzard",
+   "name": "冰雪暴",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 60,
+   "portKey": "sk_invisible",
+   "name": "隱身術",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 61,
+   "portKey": "sk_resurrection",
+   "name": "返生術",
+   "category": "restore",
+   "portType": "passive",
+   "status": "L1J-handler",
+   "reason": "返生術：main 死亡目標復活流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 62,
+   "portKey": "sk_quake",
+   "name": "震裂術",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 63,
+   "portKey": "sk_heal_energy_storm",
+   "name": "治癒能量風暴",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 64,
+   "portKey": "sk_seal",
+   "name": "魔法封印",
+   "category": "probability",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`probability` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 65,
+   "portKey": "sk_thunder_storm",
+   "name": "雷霆風暴",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 66,
+   "portKey": "sk_sleep_mist",
+   "name": "沉睡之霧",
+   "category": "curse",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`curse` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 67,
+   "portKey": "sk_polymorph",
+   "name": "變形術",
+   "category": "change",
+   "portType": "buff",
+   "status": "unsupported",
+   "reason": "變身系統：L1J 有變身清單與 poly 表，港版的 PolymorphRules 沒有對應的形態來源",
+   "obtainable": "無管道（用戶 2026-08-09 裁決）"
+  },
+  {
+   "officialId": 68,
+   "portKey": "sk_holy_barrier",
+   "name": "聖結界",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 69,
+   "portKey": "sk_mass_teleport",
+   "name": "集體傳送術",
+   "category": "other",
+   "portType": "manual",
+   "status": "unsupported",
+   "reason": "集體傳送：港版的傳送是單體 mEff，沒有「整隊一起送」的流程",
+   "obtainable": "無管道（用戶 2026-08-09 裁決）"
+  },
+  {
+   "officialId": 70,
+   "portKey": "sk_fire_storm",
+   "name": "火風暴",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 71,
+   "portKey": "sk_decay_potion",
+   "name": "藥水霜化術",
+   "category": "probability",
+   "portType": "atk",
+   "status": "unsupported",
+   "reason": "藥水霜化：港版沒有「破壞對方藥水」這種對物品的效果",
+   "obtainable": "無管道（用戶 2026-08-09 裁決）"
+  },
+  {
+   "officialId": 72,
+   "portKey": "sk_greater_reveal",
+   "name": "強力無所遁形術",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": "無管道（用戶 2026-08-09 裁決）"
+  },
+  {
+   "officialId": 73,
+   "portKey": "sk_create_magic_weapon",
+   "name": "創造魔法武器",
+   "category": "none",
+   "portType": "manual",
+   "status": "unsupported",
+   "reason": "創造魔法武器：港版沒有「技能產出物品」的流程",
+   "obtainable": "無管道（用戶 2026-08-09 裁決）"
+  },
+  {
+   "officialId": 74,
+   "portKey": "sk_meteor",
+   "name": "流星雨",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 75,
+   "portKey": "sk_ultimate_resurrection",
+   "name": "終極返生術",
+   "category": "restore",
+   "portType": "manual",
+   "status": "unsupported",
+   "reason": "終極返生術：復活流程要先有死亡後可被復活的狀態機",
+   "obtainable": "無管道（用戶 2026-08-09 裁決）"
+  },
+  {
+   "officialId": 76,
+   "portKey": "sk_mass_slow",
+   "name": "集體緩速術",
+   "category": "probability",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`probability` 已接管",
+   "obtainable": "無管道（用戶 2026-08-09 裁決）"
+  },
+  {
+   "officialId": 77,
+   "portKey": "sk_disintegrate",
+   "name": "究極光裂術",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 78,
+   "portKey": "sk_abs_barrier",
+   "name": "絕對屏障",
+   "category": "change",
+   "portType": "manual",
+   "status": "L1J-handler",
+   "reason": "絕對屏障：main 12 秒隔絕與 reuse delay 流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 79,
+   "portKey": "sk_soul_up",
+   "name": "靈魂昇華",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 80,
+   "portKey": "sk_blizzard_storm",
+   "name": "冰雪颶風",
+   "category": "attack-dice",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "冰雪颶風：main 範圍傷害與冰凍流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 87,
+   "portKey": "sk_shock_stun",
+   "name": "衝擊之暈",
+   "category": "probability",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "衝擊之暈：main 成功率與 1~6 秒暈眩流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 88,
+   "portKey": "sk_reduction_armor",
+   "name": "增幅防禦",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 89,
+   "portKey": "sk_spike_armor",
+   "name": "尖刺盔甲",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 90,
+   "portKey": "sk_solid_shield",
+   "name": "堅固防護",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 91,
+   "portKey": "sk_counter_barrier",
+   "name": "反擊屏障",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 97,
+   "portKey": "sk_dark_stealth",
+   "name": "暗隱術",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 98,
+   "portKey": "sk_dark_poison",
+   "name": "附加劇毒",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 99,
+   "portKey": "sk_dark_mrup",
+   "name": "影之防護",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 100,
+   "portKey": "sk_dark_refine",
+   "name": "提煉魔石",
+   "category": "change",
+   "portType": "passive",
+   "status": "L1J-handler",
+   "reason": "提煉魔石：main 黑魔石提煉流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 101,
+   "portKey": "sk_dark_walkhaste",
+   "name": "行走加速",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 102,
+   "portKey": "sk_dark_burn",
+   "name": "燃燒鬥志",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 103,
+   "portKey": "sk_dark_blind_curse",
+   "name": "暗黑盲咒",
+   "category": "curse",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`curse` 已接管",
+   "obtainable": "`bk_dark_blind_curse`"
+  },
+  {
+   "officialId": 104,
+   "portKey": "sk_dark_poisonres",
+   "name": "毒性抵抗",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 105,
+   "portKey": "sk_dark_double",
+   "name": "雙重破壞",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 106,
+   "portKey": "sk_dark_dodge",
+   "name": "暗影閃避",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 107,
+   "portKey": "sk_dark_fang",
+   "name": "暗影之牙",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 108,
+   "portKey": "sk_dark_crit",
+   "name": "會心一擊",
+   "category": "attack-hardcoded",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "會心一擊：main MP 傷害與 HP/MP 歸零流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 109,
+   "portKey": "sk_dark_str",
+   "name": "力量提升",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 110,
+   "portKey": "sk_dark_dex",
+   "name": "敏捷提升",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 111,
+   "portKey": "sk_dark_erup",
+   "name": "迴避提升",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 113,
+   "portKey": "sk_royal_precise",
+   "name": "精準目標",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 114,
+   "portKey": "sk_royal_brave_aura",
+   "name": "激勵士氣",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": "無管道（用戶 2026-08-09 裁決）"
+  },
+  {
+   "officialId": 115,
+   "portKey": "sk_royal_shield",
+   "name": "閃亮之盾",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 116,
+   "portKey": "sk_royal_callally",
+   "name": "呼喚盟友",
+   "category": "change",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "呼喚盟友：main 同盟召回流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 117,
+   "portKey": "sk_royal_shock_aura",
+   "name": "衝擊士氣",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": "無管道（用戶 2026-08-09 裁決）"
+  },
+  {
+   "officialId": 118,
+   "portKey": "sk_royal_aid_ally",
+   "name": "援護盟友",
+   "category": "change",
+   "portType": "buff",
+   "status": "unsupported",
+   "reason": "援護盟友：持續 0 秒＝效果寫在 Java，港版沒有對應機制",
+   "obtainable": "無管道（用戶 2026-08-09 裁決）"
+  },
+  {
+   "officialId": 129,
+   "portKey": "sk_elf_mr",
+   "name": "魔法防禦",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 130,
+   "portKey": "sk_elf_mind",
+   "name": "心靈轉換",
+   "category": "change",
+   "portType": "convert",
+   "status": "L1J-handler",
+   "reason": "心靈轉換：main HP 8 → MP 2 流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 131,
+   "portKey": "sk_elf_worldtree",
+   "name": "世界樹的呼喚",
+   "category": "other",
+   "portType": "passive",
+   "status": "L1J-handler",
+   "reason": "世界樹的呼喚：main 母樹傳送流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 132,
+   "portKey": "sk_elf_triple",
+   "name": "三重矢",
+   "category": "attack-hardcoded",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "三重矢：main 三次弓攻擊與箭矢消耗流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 133,
+   "portKey": "sk_elf_elemental_falldown",
+   "name": "弱化屬性",
+   "category": "probability",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`probability` 已接管",
+   "obtainable": "`bk_elf_elemental_falldown`"
+  },
+  {
+   "officialId": 134,
+   "portKey": "sk_elf_mirror",
+   "name": "鏡反射",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 137,
+   "portKey": "sk_elf_purify",
+   "name": "淨化精神",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 138,
+   "portKey": "sk_elf_eleres",
+   "name": "屬性防禦",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 145,
+   "portKey": "sk_elf_release",
+   "name": "釋放元素",
+   "category": "probability",
+   "portType": "manual",
+   "status": "L1J-handler",
+   "reason": "釋放元素：ReturnToNature 專用召喚物解除流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 146,
+   "portKey": "sk_elf_soul",
+   "name": "魂體轉換",
+   "category": "change",
+   "portType": "convert",
+   "status": "L1J-handler",
+   "reason": "魂體轉換：main HP 40 → MP 80 流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 147,
+   "portKey": "sk_elf_singleres",
+   "name": "單屬性防禦",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 148,
+   "portKey": "sk_elf_firewpn",
+   "name": "火焰武器",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 149,
+   "portKey": "sk_elf_windshot",
+   "name": "風之神射",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 150,
+   "portKey": "sk_elf_winddash",
+   "name": "風之疾走",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 151,
+   "portKey": "sk_elf_earthguard",
+   "name": "大地防護",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 152,
+   "portKey": "sk_elf_groundtrap",
+   "name": "地面障礙",
+   "category": "probability",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`probability` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 153,
+   "portKey": "sk_elf_magicerase",
+   "name": "魔法消除",
+   "category": "probability",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`probability` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 154,
+   "portKey": "sk_elf_summon",
+   "name": "召喚屬性精靈",
+   "category": "other",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "召喚屬性精靈：main 屬性名冊流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 155,
+   "portKey": "sk_elf_flame_breath",
+   "name": "烈炎氣息",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": "無管道（用戶 2026-08-09 裁決）"
+  },
+  {
+   "officialId": 156,
+   "portKey": "sk_elf_stormeye",
+   "name": "暴風之眼",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 157,
+   "portKey": "sk_elf_earthshield",
+   "name": "大地屏障",
+   "category": "probability",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "大地屏障：main 機率、無敵與定身流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 158,
+   "portKey": "sk_elf_lifespring",
+   "name": "生命之泉",
+   "category": "change",
+   "portType": "heal",
+   "status": "L1J-handler",
+   "reason": "生命之泉：main 320 秒 HPR +15 流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 159,
+   "portKey": "sk_elf_earthbless",
+   "name": "大地的祝福",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 160,
+   "portKey": "sk_elf_water_guard",
+   "name": "水之防護",
+   "category": "change",
+   "portType": "buff",
+   "status": "unsupported",
+   "reason": "L1J 沒有寫死的能力值，效果在 Java 的專用分支裡",
+   "obtainable": "無管道（用戶 2026-08-09 裁決）"
+  },
+  {
+   "officialId": 161,
+   "portKey": "sk_elf_seal",
+   "name": "封印禁地",
+   "category": "probability",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`probability` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 162,
+   "portKey": "sk_elf_summon2",
+   "name": "召喚強力屬性精靈",
+   "category": "other",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "召喚強力屬性精靈：main 屬性名冊流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 163,
+   "portKey": "sk_elf_blazewpn",
+   "name": "烈炎武器",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 164,
+   "portKey": "sk_elf_lifebless",
+   "name": "生命的祝福",
+   "category": "heal",
+   "portType": "heal",
+   "status": "L1J-handler",
+   "reason": "`heal` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 165,
+   "portKey": "sk_elf_life_call",
+   "name": "生命呼喚",
+   "category": "restore",
+   "portType": "manual",
+   "status": "unreleased",
+   "reason": "L1J 自己在 SkillId.java 標「未開放」",
+   "obtainable": "無管道（用戶 2026-08-09 裁決）"
+  },
+  {
+   "officialId": 166,
+   "portKey": "sk_elf_stormshot",
+   "name": "暴風神射",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 167,
+   "portKey": "sk_elf_wind_shackle",
+   "name": "風之枷鎖",
+   "category": "probability",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`probability` 已接管",
+   "obtainable": "`bk_elf_wind_shackle`"
+  },
+  {
+   "officialId": 168,
+   "portKey": "sk_elf_steelguard",
+   "name": "鋼鐵防護",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 169,
+   "portKey": "sk_elf_physboost",
+   "name": "體能激發",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 170,
+   "portKey": "sk_elf_watervital",
+   "name": "水之元氣",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 171,
+   "portKey": "sk_elf_attrfire",
+   "name": "屬性之火",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 172,
+   "portKey": "sk_elf_storm_walk",
+   "name": "暴風疾走",
+   "category": "other",
+   "portType": "manual",
+   "status": "unsupported",
+   "reason": "暴風疾走：castgfx 0＋持續 0 秒，main 全庫零使用點＝無效果（C54-3 本機覆核），無可移植的掛點",
+   "obtainable": "無管道（用戶 2026-08-09 裁決）"
+  },
+  {
+   "officialId": 173,
+   "portKey": "sk_elf_muddywater",
+   "name": "污濁之水",
+   "category": "probability",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`probability` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 174,
+   "portKey": "sk_elf_preciseshot",
+   "name": "精準射擊",
+   "category": "probability",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`probability` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 175,
+   "portKey": "sk_elf_flamesoul",
+   "name": "烈焰之魂",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 176,
+   "portKey": "sk_elf_energyboost",
+   "name": "能量激發",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 181,
+   "portKey": "sk_dragon_armor",
+   "name": "龍之護鎧",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 182,
+   "portKey": "sk_dragon_flameslash",
+   "name": "燃燒擊砍",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 183,
+   "portKey": "sk_dragon_guardbreak",
+   "name": "護衛毀滅",
+   "category": "probability",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`probability` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 184,
+   "portKey": "sk_dragon_lavaspit",
+   "name": "岩漿噴吐",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 185,
+   "portKey": "sk_dragon_awaken_antares",
+   "name": "覺醒：安塔瑞斯",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 186,
+   "portKey": "sk_dragon_bloodlust",
+   "name": "血之渴望",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 187,
+   "portKey": "sk_dragon_slaughter",
+   "name": "屠宰者",
+   "category": "attack-hardcoded",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "屠宰者：main 三次物理攻擊流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 188,
+   "portKey": "sk_dragon_terror",
+   "name": "恐懼無助",
+   "category": "probability",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`probability` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 189,
+   "portKey": "sk_dragon_lavabolt",
+   "name": "岩漿之箭",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 190,
+   "portKey": "sk_dragon_awaken_falion",
+   "name": "覺醒：法利昂",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 191,
+   "portKey": "sk_dragon_deadlybody",
+   "name": "致命身軀",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 192,
+   "portKey": "sk_dragon_deathlightning",
+   "name": "奪命之雷",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 193,
+   "portKey": "sk_dragon_reaper",
+   "name": "驚悚死神",
+   "category": "probability",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`probability` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 194,
+   "portKey": "sk_dragon_eye",
+   "name": "暴龍之眼",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": "無管道（用戶 2026-08-09 裁決）"
+  },
+  {
+   "officialId": 195,
+   "portKey": "sk_dragon_awaken_baraka",
+   "name": "覺醒：巴拉卡斯",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 201,
+   "portKey": "sk_illu_mirror",
+   "name": "鏡像",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 202,
+   "portKey": "sk_illu_confuse",
+   "name": "混亂",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 203,
+   "portKey": "sk_illu_crush",
+   "name": "粉碎能量",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "暴擊：main 2D10+50 魔法傷害流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 204,
+   "portKey": "sk_illu_ogre",
+   "name": "幻覺：歐吉",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 205,
+   "portKey": "sk_illu_cube_burn",
+   "name": "立方：燃燒",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 206,
+   "portKey": "sk_illu_focus",
+   "name": "專注",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 207,
+   "portKey": "sk_illu_mindbreak",
+   "name": "心靈破壞",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 208,
+   "portKey": "sk_illu_skullbreak",
+   "name": "骷髏毀壞",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "骷髏毀壞：main 傷害與暈眩流程",
+   "obtainable": ""
+  },
+  {
+   "officialId": 209,
+   "portKey": "sk_illu_lich",
+   "name": "幻覺：巫妖",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 210,
+   "portKey": "sk_illu_cube_quake",
+   "name": "立方：地裂",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 211,
+   "portKey": "sk_illu_endure",
+   "name": "耐力",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 212,
+   "portKey": "sk_illu_fantasy",
+   "name": "幻想",
+   "category": "curse",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`curse` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 213,
+   "portKey": "sk_illu_stealth_breaker",
+   "name": "隱身破壞者",
+   "category": "attack-dice",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`attack-dice` 已接管",
+   "obtainable": "無管道（用戶 2026-08-09 裁決）"
+  },
+  {
+   "officialId": 214,
+   "portKey": "sk_illu_golem",
+   "name": "幻覺：鑽石高崙",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 215,
+   "portKey": "sk_illu_cube_shock",
+   "name": "立方：衝擊",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 216,
+   "portKey": "sk_illu_insight",
+   "name": "洞察",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 217,
+   "portKey": "sk_illu_panic",
+   "name": "恐慌",
+   "category": "curse",
+   "portType": "atk",
+   "status": "L1J-handler",
+   "reason": "`curse` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 218,
+   "portKey": "sk_illu_pain",
+   "name": "疼痛的歡愉",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 219,
+   "portKey": "sk_illu_avatar",
+   "name": "幻覺：化身",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  },
+  {
+   "officialId": 220,
+   "portKey": "sk_illu_cube_harmony",
+   "name": "立方：和諧",
+   "category": "change",
+   "portType": "buff",
+   "status": "L1J-handler",
+   "reason": "`change` 已接管",
+   "obtainable": ""
+  }
+ ]
+}

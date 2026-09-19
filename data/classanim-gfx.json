@@ -1,0 +1,105 @@
+{
+  "_meta": {
+    "doc": "造型 → 3.8c/8.8c 客戶端 gfx 的權威對照；tools/convert-classanim-get.js 產生，tools/export-anim-ticks.js 用它釘住要讀哪一列動作定義（不要再用幀數猜）",
+    "avatars": 16,
+    "missing": "真夏納* 為港版原創素材，無客戶端 gfx，不在本表"
+  },
+  "avatars": {
+    "男黑暗妖精": {
+      "source": 2786,
+      "logical": 4806,
+      "shadow": 2787,
+      "sourceList": "3.8c list.spr"
+    },
+    "女黑暗妖精": {
+      "source": 2796,
+      "logical": 4807,
+      "shadow": 2797,
+      "sourceList": "3.8c list.spr"
+    },
+    "男騎士": {
+      "source": 3213,
+      "logical": 61,
+      "shadow": 3214,
+      "sourceList": "3.8c list.spr"
+    },
+    "女騎士": {
+      "source": 3215,
+      "logical": 48,
+      "shadow": 3216,
+      "sourceList": "3.8c list.spr"
+    },
+    "男妖精": {
+      "source": 3217,
+      "logical": 138,
+      "shadow": 3218,
+      "sourceList": "3.8c list.spr"
+    },
+    "女法師": {
+      "source": 3221,
+      "logical": 1186,
+      "shadow": 3222,
+      "sourceList": "3.8c list.spr"
+    },
+    "王子": {
+      "source": 3225,
+      "logical": 0,
+      "shadow": 3226,
+      "sourceList": "3.8c list.spr"
+    },
+    "公主": {
+      "source": 3227,
+      "logical": 1,
+      "shadow": 3228,
+      "sourceList": "3.8c list.spr"
+    },
+    "女妖精": {
+      "source": 3474,
+      "logical": 37,
+      "shadow": 3475,
+      "sourceList": "3.8c list.spr"
+    },
+    "男法師": {
+      "source": 3476,
+      "logical": 734,
+      "shadow": 3477,
+      "sourceList": "3.8c list.spr"
+    },
+    "女幻術士": {
+      "source": 6650,
+      "logical": 7142,
+      "shadow": 6651,
+      "sourceList": "3.8c list.spr"
+    },
+    "男龍騎士": {
+      "source": 6658,
+      "logical": 7139,
+      "shadow": 6659,
+      "sourceList": "3.8c list.spr"
+    },
+    "女龍騎士": {
+      "source": 6661,
+      "logical": 7140,
+      "shadow": 6662,
+      "sourceList": "3.8c list.spr"
+    },
+    "男幻術士": {
+      "source": 6671,
+      "logical": 7141,
+      "shadow": 6672,
+      "sourceList": "3.8c list.spr"
+    },
+    "男戰士": {
+      "source": 12490,
+      "logical": 12490,
+      "shadow": 12491,
+      "sourceList": "8.8c list.spr"
+    },
+    "女戰士": {
+      "source": 12494,
+      "logical": 12494,
+      "shadow": 12495,
+      "sourceList": "8.8c list.spr"
+    }
+  }
+}

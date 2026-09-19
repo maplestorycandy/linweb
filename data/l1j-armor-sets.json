@@ -1,0 +1,2085 @@
+{
+ "schemaVersion": 1,
+ "source": "L1j-TW-main/db/InnoDB_TW/armor_set.sql",
+ "counts": {
+  "rows": 69,
+  "pieceReferences": 140,
+  "numericBonusRows": 28,
+  "polymorphRows": 46,
+  "runtimeMorphRows": 3
+ },
+ "sets": [
+  {
+   "setId": 1,
+   "code": "demon",
+   "name": "惡魔套裝",
+   "itemIds": [
+    20009,
+    20099,
+    20165,
+    20197
+   ],
+   "polyId": 3889,
+   "morphName": "惡魔",
+   "bonuses": {
+    "ac": -2,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 5,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "ac=-2; hpr=+5"
+  },
+  {
+   "setId": 2,
+   "code": "dk",
+   "name": "死亡騎士套裝",
+   "itemIds": [
+    20010,
+    20100,
+    20166,
+    20198
+   ],
+   "polyId": 6137,
+   "morphName": "真‧死亡騎士",
+   "bonuses": {
+    "ac": -4,
+    "hp": 0,
+    "mp": 0,
+    "hpr": -7,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "ac=-4; hpr=-7"
+  },
+  {
+   "setId": 3,
+   "code": "l1j_set_3",
+   "name": "反王套裝",
+   "itemIds": [
+    20024,
+    20118,
+    20170,
+    20203
+   ],
+   "polyId": 3903,
+   "morphName": null,
+   "bonuses": {
+    "ac": -3,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 12,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "ac=-3; hpr=+12"
+  },
+  {
+   "setId": 4,
+   "code": "kurt",
+   "name": "克特套裝",
+   "itemIds": [
+    20041,
+    20150,
+    20184,
+    20214
+   ],
+   "polyId": 3101,
+   "morphName": "真‧克特",
+   "bonuses": {
+    "ac": -4,
+    "hp": 0,
+    "mp": 0,
+    "hpr": -7,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "ac=-4; hpr=-7"
+  },
+  {
+   "setId": 5,
+   "code": "l1j_set_5",
+   "name": "賽尼斯套裝",
+   "itemIds": [
+    20042,
+    20151,
+    20185,
+    20215
+   ],
+   "polyId": 3902,
+   "morphName": null,
+   "bonuses": {
+    "ac": -2,
+    "hp": 0,
+    "mp": 100,
+    "hpr": 0,
+    "mpr": 12,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "ac=-2; mp=+100; mpr=+12"
+  },
+  {
+   "setId": 6,
+   "code": "l1j_set_6",
+   "name": "南瓜頭套",
+   "itemIds": [
+    20047
+   ],
+   "polyId": 2501,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 7,
+   "code": "l1j_set_7",
+   "name": "吸血鬼斗篷",
+   "itemIds": [
+    20079
+   ],
+   "polyId": 3952,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 8,
+   "code": "l1j_set_8",
+   "name": "死神披肩",
+   "itemIds": [
+    20342
+   ],
+   "polyId": 2388,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 9,
+   "code": "l1j_set_9",
+   "name": "曼波兔帽(海盜)",
+   "itemIds": [
+    20343
+   ],
+   "polyId": 4767,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 10,
+   "code": "l1j_set_10",
+   "name": "曼波兔帽(蘿蔔)",
+   "itemIds": [
+    20344
+   ],
+   "polyId": 4769,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 11,
+   "code": "l1j_set_11",
+   "name": "變形怪首領之戒(左)",
+   "itemIds": [
+    20278
+   ],
+   "polyId": 2374,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 12,
+   "code": "l1j_set_12",
+   "name": "變形怪首領之戒(右)",
+   "itemIds": [
+    20277
+   ],
+   "polyId": 3864,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 13,
+   "code": "l1j_set_13",
+   "name": "變形怪首領項鍊",
+   "itemIds": [
+    20250
+   ],
+   "polyId": 3865,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 14,
+   "code": "l1j_set_14",
+   "name": "柯利的項鍊",
+   "itemIds": [
+    20345
+   ],
+   "polyId": 4928,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 15,
+   "code": "l1j_set_15",
+   "name": "浣熊的項鍊",
+   "itemIds": [
+    20346
+   ],
+   "polyId": 4929,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 16,
+   "code": "l1j_set_16",
+   "name": "韓服",
+   "itemIds": [
+    20347
+   ],
+   "polyId": 4227,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 17,
+   "code": "l1j_set_17",
+   "name": "和服",
+   "itemIds": [
+    20348
+   ],
+   "polyId": 3750,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 18,
+   "code": "l1j_set_18",
+   "name": "獵犬項鍊",
+   "itemIds": [
+    20349
+   ],
+   "polyId": 938,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 19,
+   "code": "l1j_set_19",
+   "name": "雪人的項鍊",
+   "itemIds": [
+    20350
+   ],
+   "polyId": 2064,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 20,
+   "code": "l1j_set_20",
+   "name": "雪人套裝",
+   "itemIds": [
+    20351,
+    20352
+   ],
+   "polyId": 2064,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 21,
+   "code": "l1j_set_21",
+   "name": "招財貓頭巾",
+   "itemIds": [
+    20420
+   ],
+   "polyId": 5719,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 22,
+   "code": "l1j_set_22",
+   "name": "紅色面具",
+   "itemIds": [
+    20382
+   ],
+   "polyId": 6010,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 23,
+   "code": "l1j_set_23",
+   "name": "德雷克頭巾",
+   "itemIds": [
+    20452
+   ],
+   "polyId": 6089,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 24,
+   "code": "l1j_set_24",
+   "name": "艾莉斯變身頭巾",
+   "itemIds": [
+    20453
+   ],
+   "polyId": 4001,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 25,
+   "code": "l1j_set_25",
+   "name": "騎士范德頭巾",
+   "itemIds": [
+    20454
+   ],
+   "polyId": 4000,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 26,
+   "code": "l1j_set_26",
+   "name": "思克巴女皇變身頭巾",
+   "itemIds": [
+    20455
+   ],
+   "polyId": 4004,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 27,
+   "code": "l1j_set_27",
+   "name": "紅色足球衣",
+   "itemIds": [
+    20456
+   ],
+   "polyId": 5184,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 28,
+   "code": "l1j_set_28",
+   "name": "藍色足球衣",
+   "itemIds": [
+    20457
+   ],
+   "polyId": 5186,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 29,
+   "code": "l1j_set_29",
+   "name": "紅色妖魔面具",
+   "itemIds": [
+    20458
+   ],
+   "polyId": 6010,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 30,
+   "code": "l1j_set_30",
+   "name": "軍馬頭盔",
+   "itemIds": [
+    20383
+   ],
+   "polyId": 6080,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 31,
+   "code": "l1j_set_31",
+   "name": "南瓜魔法帽",
+   "itemIds": [
+    20380
+   ],
+   "polyId": 6400,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 32,
+   "code": "l1j_set_32",
+   "name": "高等熊項鍊",
+   "itemIds": [
+    20419
+   ],
+   "polyId": 5976,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 33,
+   "code": "leather",
+   "name": "皮製套裝",
+   "itemIds": [
+    20001,
+    20090,
+    20193,
+    20219
+   ],
+   "polyId": -1,
+   "morphName": null,
+   "bonuses": {
+    "ac": -3,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "ac=-3"
+  },
+  {
+   "setId": 34,
+   "code": "oasis",
+   "name": "歐西斯套裝",
+   "itemIds": [
+    20034,
+    20072,
+    20135,
+    20237
+   ],
+   "polyId": -1,
+   "morphName": null,
+   "bonuses": {
+    "ac": -3,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "ac=-3"
+  },
+  {
+   "setId": 35,
+   "code": "gnome",
+   "name": "侏儒套裝",
+   "itemIds": [
+    20007,
+    20052,
+    20223
+   ],
+   "polyId": -1,
+   "morphName": null,
+   "bonuses": {
+    "ac": -1,
+    "hp": 5,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "ac=-1; hp=+5"
+  },
+  {
+   "setId": 36,
+   "code": "silver",
+   "name": "銀釘皮製套裝",
+   "itemIds": [
+    20038,
+    20148,
+    20241,
+    20212
+   ],
+   "polyId": -1,
+   "morphName": null,
+   "bonuses": {
+    "ac": -3,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "ac=-3"
+  },
+  {
+   "setId": 37,
+   "code": "bone",
+   "name": "骷髏套裝",
+   "itemIds": [
+    20045,
+    20124,
+    20221
+   ],
+   "polyId": -1,
+   "morphName": null,
+   "bonuses": {
+    "ac": -2,
+    "hp": 10,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "ac=-2; hp=+10"
+  },
+  {
+   "setId": 38,
+   "code": "l1j_set_38",
+   "name": "妖精套裝",
+   "itemIds": [
+    20389,
+    20393,
+    20401,
+    20409,
+    20406
+   ],
+   "polyId": -1,
+   "morphName": null,
+   "bonuses": {
+    "ac": -2,
+    "hp": 15,
+    "mp": 10,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 10,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "ac=-2; hp=+15; mp=+10; mr=+10"
+  },
+  {
+   "setId": 39,
+   "code": "mage",
+   "name": "法師套裝",
+   "itemIds": [
+    20012,
+    20111
+   ],
+   "polyId": -1,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 50,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "mp=+50"
+  },
+  {
+   "setId": 40,
+   "code": "steel",
+   "name": "鋼鐵套裝",
+   "itemIds": [
+    20003,
+    20091,
+    20163,
+    20194,
+    20220
+   ],
+   "polyId": -1,
+   "morphName": null,
+   "bonuses": {
+    "ac": -3,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "ac=-3"
+  },
+  {
+   "setId": 41,
+   "code": "bluepirate",
+   "name": "藍海賊套裝",
+   "itemIds": [
+    20044,
+    20155,
+    20188,
+    20217
+   ],
+   "polyId": -1,
+   "morphName": null,
+   "bonuses": {
+    "ac": -1,
+    "hp": 10,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 1,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "ac=-1; hp=+10; int=+1"
+  },
+  {
+   "setId": 42,
+   "code": "flameshadow",
+   "name": "火焰之影套裝",
+   "itemIds": [
+    20031,
+    20069,
+    20083,
+    20131,
+    20179,
+    20209,
+    20290,
+    20261
+   ],
+   "polyId": -1,
+   "morphName": null,
+   "bonuses": {
+    "ac": -88,
+    "hp": 100,
+    "mp": 100,
+    "hpr": 15,
+    "mpr": 15,
+    "mr": 0,
+    "str": 1,
+    "dex": 1,
+    "con": 1,
+    "wis": 1,
+    "cha": 1,
+    "int": 1,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "ac=-88; hp=+100; mp=+100; hpr=+15; mpr=+15; str=+1; dex=+1; con=+1; wis=+1; cha=+1; int=+1"
+  },
+  {
+   "setId": 43,
+   "code": "kinglord",
+   "name": "四大軍王套裝",
+   "itemIds": [
+    20057,
+    20109,
+    20178,
+    20200
+   ],
+   "polyId": -1,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 30,
+    "mp": 30,
+    "hpr": 10,
+    "mpr": 10,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 3,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "hp=+30; mp=+30; hpr=+10; mpr=+10; cha=+3"
+  },
+  {
+   "setId": 44,
+   "code": "emperor",
+   "name": "真．冥皇套裝",
+   "itemIds": [
+    20390,
+    20395,
+    20402,
+    20410,
+    20408
+   ],
+   "polyId": -1,
+   "morphName": null,
+   "bonuses": {
+    "ac": -20,
+    "hp": 100,
+    "mp": 20,
+    "hpr": 10,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "ac=-20; hp=+100; mp=+20; hpr=+10"
+  },
+  {
+   "setId": 45,
+   "code": "l1j_set_45",
+   "name": "泡水套裝",
+   "itemIds": [
+    21051,
+    21052,
+    21053,
+    21054,
+    21055,
+    21056
+   ],
+   "polyId": -1,
+   "morphName": null,
+   "bonuses": {
+    "ac": -10,
+    "hp": 100,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 10,
+    "resistEarth": 0
+   },
+   "description": "ac=-10; hp=+100; resistFire=+10"
+  },
+  {
+   "setId": 46,
+   "code": "l1j_set_46",
+   "name": "希望套裝",
+   "itemIds": [
+    20413,
+    20428
+   ],
+   "polyId": -1,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 5,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "mp=+5"
+  },
+  {
+   "setId": 47,
+   "code": "l1j_set_47",
+   "name": "幸運套裝",
+   "itemIds": [
+    20414,
+    20430
+   ],
+   "polyId": -1,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 10,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "mp=+10"
+  },
+  {
+   "setId": 48,
+   "code": "l1j_set_48",
+   "name": "熱情套裝",
+   "itemIds": [
+    20415,
+    20429
+   ],
+   "polyId": -1,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 10,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "hp=+10"
+  },
+  {
+   "setId": 49,
+   "code": "l1j_set_49",
+   "name": "真實套裝",
+   "itemIds": [
+    20416,
+    20431
+   ],
+   "polyId": -1,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 15,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "hp=+15"
+  },
+  {
+   "setId": 50,
+   "code": "l1j_set_50",
+   "name": "奇蹟套裝",
+   "itemIds": [
+    20417,
+    20432
+   ],
+   "polyId": -1,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 15,
+    "mp": 10,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "hp=+15; mp=+10"
+  },
+  {
+   "setId": 51,
+   "code": "l1j_set_51",
+   "name": "慈愛．勇敢套裝",
+   "itemIds": [
+    20418,
+    20433
+   ],
+   "polyId": -1,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 2,
+    "mpr": 2,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "hpr=+2; mpr=+2"
+  },
+  {
+   "setId": 52,
+   "code": "l1j_set_52",
+   "name": "詛咒的紅色耳環．淨化之耳環",
+   "itemIds": [
+    20423,
+    21019
+   ],
+   "polyId": -1,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 2,
+    "dex": 0,
+    "con": -2,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "str=+2; con=-2"
+  },
+  {
+   "setId": 53,
+   "code": "l1j_set_53",
+   "name": "詛咒的藍色耳環．淨化之耳環",
+   "itemIds": [
+    20424,
+    21019
+   ],
+   "polyId": -1,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": -2,
+    "cha": 0,
+    "int": 2,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "wis=-2; int=+2"
+  },
+  {
+   "setId": 54,
+   "code": "l1j_set_54",
+   "name": "詛咒的綠色耳環．淨化之耳環",
+   "itemIds": [
+    20425,
+    21019
+   ],
+   "polyId": -1,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 2,
+    "con": 0,
+    "wis": 0,
+    "cha": -2,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "dex=+2; cha=-2"
+  },
+  {
+   "setId": 55,
+   "code": "l1j_set_55",
+   "name": "男幽靈變身服裝",
+   "itemIds": [
+    21061
+   ],
+   "polyId": 5484,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 56,
+   "code": "l1j_set_56",
+   "name": "女幽靈變身服裝",
+   "itemIds": [
+    21062
+   ],
+   "polyId": 5412,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 57,
+   "code": "l1j_set_57",
+   "name": "男性泳衣︰三角褲",
+   "itemIds": [
+    21063
+   ],
+   "polyId": 6746,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 58,
+   "code": "l1j_set_58",
+   "name": "男性泳衣︰運動短褲",
+   "itemIds": [
+    21064
+   ],
+   "polyId": 6747,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 59,
+   "code": "l1j_set_59",
+   "name": "女性泳衣︰連身裙",
+   "itemIds": [
+    21065
+   ],
+   "polyId": 6749,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 60,
+   "code": "l1j_set_60",
+   "name": "女性泳衣︰比基尼",
+   "itemIds": [
+    21066
+   ],
+   "polyId": 6750,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 61,
+   "code": "l1j_set_61",
+   "name": "營養滿分套裝",
+   "itemIds": [
+    20262,
+    20291,
+    20315
+   ],
+   "polyId": -1,
+   "morphName": null,
+   "bonuses": {
+    "ac": -3,
+    "hp": 20,
+    "mp": 10,
+    "hpr": 5,
+    "mpr": 3,
+    "mr": 10,
+    "str": 0,
+    "dex": 0,
+    "con": 1,
+    "wis": 1,
+    "cha": 1,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "ac=-3; hp=+20; mp=+10; hpr=+5; mpr=+3; mr=+10; con=+1; wis=+1; cha=+1"
+  },
+  {
+   "setId": 62,
+   "code": "l1j_set_62",
+   "name": "奧拉奇里亞的頭盔",
+   "itemIds": [
+    21544
+   ],
+   "polyId": 7017,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 63,
+   "code": "l1j_set_63",
+   "name": "堅固的奧拉奇里亞頭盔",
+   "itemIds": [
+    21545
+   ],
+   "polyId": 7008,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 64,
+   "code": "l1j_set_64",
+   "name": "席琳樹葉冠冕",
+   "itemIds": [
+    21549
+   ],
+   "polyId": 7019,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 65,
+   "code": "l1j_set_65",
+   "name": "光輝席琳樹葉冠冕",
+   "itemIds": [
+    21550
+   ],
+   "polyId": 7016,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 66,
+   "code": "l1j_set_66",
+   "name": "喵小編領巾",
+   "itemIds": [
+    21556
+   ],
+   "polyId": 6503,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 67,
+   "code": "l1j_set_67",
+   "name": "哈維變身頭巾",
+   "itemIds": [
+    21552
+   ],
+   "polyId": 1024,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 68,
+   "code": "l1j_set_68",
+   "name": "黑法師變身頭巾",
+   "itemIds": [
+    21553
+   ],
+   "polyId": 3698,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  },
+  {
+   "setId": 69,
+   "code": "l1j_set_69",
+   "name": "聖誕老人帽",
+   "itemIds": [
+    21554
+   ],
+   "polyId": 7061,
+   "morphName": null,
+   "bonuses": {
+    "ac": 0,
+    "hp": 0,
+    "mp": 0,
+    "hpr": 0,
+    "mpr": 0,
+    "mr": 0,
+    "str": 0,
+    "dex": 0,
+    "con": 0,
+    "wis": 0,
+    "cha": 0,
+    "int": 0,
+    "resistWater": 0,
+    "resistWind": 0,
+    "resistFire": 0,
+    "resistEarth": 0
+   },
+   "description": "polymorph only"
+  }
+ ]
+}

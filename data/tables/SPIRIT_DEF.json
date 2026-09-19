@@ -1,0 +1,92 @@
+{
+ "sk_elf_summon": {
+  "lv": 40,
+  "strong": false,
+  "mrPenBase": 10,
+  "hitLvOff": 10,
+  "dmgMult": 1,
+  "ele": {
+   "water": {
+    "hp": 400,
+    "aspd": 18,
+    "dice": [
+     2,
+     38
+    ],
+    "scale": 11
+   },
+   "wind": {
+    "hp": 400,
+    "aspd": 18,
+    "dice": [
+     2,
+     38
+    ],
+    "scale": 11
+   },
+   "fire": {
+    "hp": 400,
+    "aspd": 16,
+    "dice": [
+     2,
+     33
+    ],
+    "scale": 12.5
+   },
+   "earth": {
+    "hp": 400,
+    "aspd": 16,
+    "dice": [
+     2,
+     33
+    ],
+    "scale": 12.5
+   }
+  }
+ },
+ "sk_elf_summon2": {
+  "lv": 50,
+  "strong": true,
+  "mrPenBase": 20,
+  "hitLvOff": 20,
+  "dmgMult": 1.18,
+  "ele": {
+   "water": {
+    "hp": 600,
+    "aspd": 18,
+    "dice": [
+     3,
+     48
+    ],
+    "scale": 5.5
+   },
+   "fire": {
+    "hp": 600,
+    "aspd": 16,
+    "dice": [
+     3,
+     43
+    ],
+    "scale": 6.2
+   },
+   "earth": {
+    "hp": 650,
+    "aspd": 16,
+    "dice": [
+     3,
+     40
+    ],
+    "scale": 6.6
+   },
+   "wind": {
+    "hp": 720,
+    "aspd": 18,
+    "dice": [
+     3,
+     42
+    ],
+    "scale": 6.3
+   }
+  }
+ }
+}

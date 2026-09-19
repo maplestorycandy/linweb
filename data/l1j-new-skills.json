@@ -1,0 +1,300 @@
+{
+ "__doc": [
+  "L1J 有、港版還沒做的官方技能——由 tools/l1j-import/build_new_official_skills.py 產生。",
+  "⚠️ 需求等級／書名／書價都是從既有 170 支技能量出來的規律，不是憑空定的。",
+  "⚠️ 其他學派的 tier 是「同學派同 skill_level 取眾數」**推導**出來的（tierDerived），",
+  "   不是權威值；要重調是正常的。",
+  "⚠️ 沒有 handler 的技能會標 `playerAvailable=false`：保留 reference 定義，",
+  "   但不進玩家名冊、學習、施放或快捷欄；理由逐支在 blocker 欄。",
+  "⚠️ 這份檔改過之後要依序重跑 build_skill_bindings.py → build_skill_fields.py。"
+ ],
+ "counts": {
+  "skills": 19,
+  "implemented": 10,
+  "blocked": 9,
+  "playerAvailable": 8,
+  "books": 3
+ },
+ "skills": {
+  "sk_create_magic_weapon": {
+   "n": "創造魔法武器",
+   "type": "manual",
+   "tier": 10,
+   "reqM": 40,
+   "mp": 200,
+   "source": "l1j-new",
+   "officialId": 73,
+   "playerAvailable": false
+  },
+  "sk_dark_blind_curse": {
+   "n": "暗黑盲咒",
+   "type": "atk",
+   "tier": 1,
+   "reqD": 15,
+   "mp": 20,
+   "source": "l1j-new",
+   "officialId": 103,
+   "dmgType": "magic",
+   "ele": "none",
+   "status": {
+    "kind": "blind",
+    "dur": 64
+   },
+   "playerAvailable": true
+  },
+  "sk_decay_potion": {
+   "n": "藥水霜化術",
+   "type": "atk",
+   "tier": 9,
+   "reqM": 36,
+   "mp": 20,
+   "source": "l1j-new",
+   "officialId": 71,
+   "dur": 16,
+   "dmgType": "magic",
+   "ele": "none",
+   "playerAvailable": false
+  },
+  "sk_dragon_eye": {
+   "n": "暴龍之眼",
+   "type": "atk",
+   "tier": 3,
+   "reqDk": 45,
+   "mp": 0,
+   "source": "l1j-new",
+   "officialId": 194,
+   "hpCost": 50,
+   "dur": 3,
+   "dmgBase": 45,
+   "dmgType": "magic",
+   "ele": "water",
+   "playerAvailable": true
+  },
+  "sk_elf_elemental_falldown": {
+   "n": "弱化屬性",
+   "type": "atk",
+   "tier": 1,
+   "reqE": 10,
+   "mp": 10,
+   "source": "l1j-new",
+   "officialId": 133,
+   "dmgType": "magic",
+   "ele": "none",
+   "status": {
+    "kind": "elemfall",
+    "dur": 32
+   },
+   "playerAvailable": true
+  },
+  "sk_elf_flame_breath": {
+   "n": "烈炎氣息",
+   "type": "buff",
+   "tier": 4,
+   "reqE": 40,
+   "mp": 40,
+   "source": "l1j-new",
+   "officialId": 155,
+   "dur": 960,
+   "d": {
+    "meleeDmg": 4
+   },
+   "target": "all",
+   "playerAvailable": true
+  },
+  "sk_elf_life_call": {
+   "n": "生命呼喚",
+   "type": "manual",
+   "tier": 5,
+   "reqE": 50,
+   "mp": 50,
+   "source": "l1j-new",
+   "officialId": 165,
+   "playerAvailable": false
+  },
+  "sk_elf_storm_walk": {
+   "n": "暴風疾走",
+   "type": "manual",
+   "tier": 5,
+   "reqE": 50,
+   "mp": 10,
+   "source": "l1j-new",
+   "officialId": 172,
+   "playerAvailable": false
+  },
+  "sk_elf_water_guard": {
+   "n": "水之防護",
+   "type": "buff",
+   "tier": 4,
+   "reqE": 40,
+   "mp": 30,
+   "source": "l1j-new",
+   "officialId": 160,
+   "dur": 960,
+   "playerAvailable": false
+  },
+  "sk_elf_wind_shackle": {
+   "n": "風之枷鎖",
+   "type": "atk",
+   "tier": 5,
+   "reqE": 50,
+   "mp": 15,
+   "source": "l1j-new",
+   "officialId": 167,
+   "dmgType": "magic",
+   "ele": "wind",
+   "status": {
+    "kind": "windshackle",
+    "dur": 16
+   },
+   "playerAvailable": true
+  },
+  "sk_greater_reveal": {
+   "n": "強力無所遁形術",
+   "type": "atk",
+   "tier": 9,
+   "reqM": 36,
+   "mp": 30,
+   "source": "l1j-new",
+   "officialId": 72,
+   "dmgDice": [
+    4,
+    10
+   ],
+   "dmgBase": 30,
+   "dmgType": "magic",
+   "ele": "none",
+   "target": "all",
+   "playerAvailable": false
+  },
+  "sk_illu_stealth_breaker": {
+   "n": "隱身破壞者",
+   "type": "atk",
+   "tier": 3,
+   "reqI": 30,
+   "mp": 25,
+   "source": "l1j-new",
+   "officialId": 213,
+   "dur": 12,
+   "dmgBase": 15,
+   "dmgType": "magic",
+   "ele": "none",
+   "playerAvailable": true
+  },
+  "sk_mass_slow": {
+   "n": "集體緩速術",
+   "type": "atk",
+   "tier": 10,
+   "reqM": 40,
+   "mp": 20,
+   "source": "l1j-new",
+   "officialId": 76,
+   "dmgType": "magic",
+   "ele": "earth",
+   "target": "all",
+   "status": {
+    "kind": "slow",
+    "dur": 64
+   },
+   "playerAvailable": false
+  },
+  "sk_mass_teleport": {
+   "n": "集體傳送術",
+   "type": "manual",
+   "tier": 9,
+   "reqM": 36,
+   "mp": 60,
+   "source": "l1j-new",
+   "officialId": 69,
+   "target": "all",
+   "playerAvailable": false
+  },
+  "sk_polymorph": {
+   "n": "變形術",
+   "type": "buff",
+   "tier": 9,
+   "reqM": 36,
+   "mp": 80,
+   "source": "l1j-new",
+   "officialId": 67,
+   "dur": 7200,
+   "playerAvailable": false
+  },
+  "sk_royal_aid_ally": {
+   "n": "援護盟友",
+   "type": "buff",
+   "tier": 1,
+   "reqRoy": 15,
+   "mp": 30,
+   "source": "l1j-new",
+   "officialId": 118,
+   "playerAvailable": false
+  },
+  "sk_royal_brave_aura": {
+   "n": "激勵士氣",
+   "type": "buff",
+   "tier": 1,
+   "reqRoy": 15,
+   "mp": 40,
+   "source": "l1j-new",
+   "officialId": 114,
+   "dur": 640,
+   "d": {
+    "mr": 20,
+    "extraHit": 5
+   },
+   "target": "all",
+   "playerAvailable": true
+  },
+  "sk_royal_shock_aura": {
+   "n": "衝擊士氣",
+   "type": "buff",
+   "tier": 1,
+   "reqRoy": 15,
+   "mp": 40,
+   "source": "l1j-new",
+   "officialId": 117,
+   "dur": 640,
+   "d": {
+    "meleeDmg": 5
+   },
+   "target": "all",
+   "playerAvailable": true
+  },
+  "sk_ultimate_resurrection": {
+   "n": "終極返生術",
+   "type": "manual",
+   "tier": 10,
+   "reqM": 40,
+   "mp": 100,
+   "source": "l1j-new",
+   "officialId": 75,
+   "playerAvailable": false
+  }
+ },
+ "books": {
+  "bk_dark_blind_curse": {
+   "type": "skillbk",
+   "n": "黑暗精靈水晶(暗黑盲咒)",
+   "p": 500,
+   "sk": "sk_dark_blind_curse",
+   "gachaWeight": 0,
+   "d": "記載著「暗黑盲咒」術式的古老魔法書，研讀後可將咒文銘刻於記憶。"
+  },
+  "bk_elf_elemental_falldown": {
+   "type": "skillbk",
+   "n": "精靈水晶(弱化屬性)",
+   "p": 3000,
+   "sk": "sk_elf_elemental_falldown",
+   "gachaWeight": 0,
+   "d": "記載著「弱化屬性」術式的古老魔法書，研讀後可將咒文銘刻於記憶。"
+  },
+  "bk_elf_wind_shackle": {
+   "type": "skillbk",
+   "n": "精靈水晶(風之枷鎖)",
+   "p": 60000,
+   "sk": "sk_elf_wind_shackle",
+   "gachaWeight": 0,
+   "d": "記載著「風之枷鎖」術式的古老魔法書，研讀後可將咒文銘刻於記憶。"
+  }
+ }
+}

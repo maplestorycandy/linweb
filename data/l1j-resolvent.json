@@ -1,0 +1,4635 @@
+{
+ "schemaVersion": 1,
+ "source": "L1j-TW-main/db/InnoDB_TW/resolvent.sql",
+ "rules": {
+  "solventItemId": 41245,
+  "solventItemKey": "l1j_item_41245",
+  "crystalItemId": 41246,
+  "crystalItemKey": "l1j_item_41246",
+  "roll": "1-50:0; 51-90:1x; 91-100:1.5x (single award, integer truncation)",
+  "consumeOnValidAttempt": true,
+  "enhancementChangesYield": false,
+  "enhancedGearRequiresConfirmation": true
+ },
+ "counts": {
+  "sourceRows": 511,
+  "resolvedRows": 497,
+  "unresolvedRows": 14,
+  "runtimeRules": 497
+ },
+ "rows": [
+  {
+   "itemId": 1,
+   "normalizedItemId": 1,
+   "note": "歐西斯匕首",
+   "crystalCount": 2,
+   "runtimeItemKey": "wpn_dagger1",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 2,
+   "normalizedItemId": 2,
+   "note": "骰子匕首",
+   "crystalCount": 2,
+   "runtimeItemKey": "wpn_33",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 8,
+   "normalizedItemId": 8,
+   "note": "米索莉短劍",
+   "crystalCount": 10000,
+   "runtimeItemKey": "wpn_mithril_dagger",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 9,
+   "normalizedItemId": 9,
+   "note": "奧裡哈魯根短劍",
+   "crystalCount": 10000,
+   "runtimeItemKey": "wpn_ori_dagger",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 14,
+   "normalizedItemId": 14,
+   "note": "混沌之刺",
+   "crystalCount": 10000,
+   "runtimeItemKey": "wpn_chaos_thorn",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 15,
+   "normalizedItemId": 15,
+   "note": "失去魔力的克特之劍",
+   "crystalCount": 3,
+   "runtimeItemKey": "l1j_item_15",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 16,
+   "normalizedItemId": 16,
+   "note": "復仇之劍",
+   "crystalCount": 10000,
+   "runtimeItemKey": "wpn_vengeance",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 18,
+   "normalizedItemId": 18,
+   "note": "受封印 被遺忘的劍",
+   "crystalCount": 2000,
+   "runtimeItemKey": null,
+   "runtimeBlessing": "normal",
+   "runtimeResolved": false,
+   "unresolvedReason": "not present in the authoritative item catalog"
+  },
+  {
+   "itemId": 21,
+   "normalizedItemId": 21,
+   "note": "歐西斯短劍",
+   "crystalCount": 2,
+   "runtimeItemKey": "wpn_27",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 23,
+   "normalizedItemId": 23,
+   "note": "闊劍",
+   "crystalCount": 2,
+   "runtimeItemKey": "wpn_9",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 25,
+   "normalizedItemId": 25,
+   "note": "銀劍",
+   "crystalCount": 180,
+   "runtimeItemKey": "wpn_37",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 26,
+   "normalizedItemId": 26,
+   "note": "小侏儒短劍",
+   "crystalCount": 25,
+   "runtimeItemKey": "wpn_26",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 27,
+   "normalizedItemId": 27,
+   "note": "彎刀",
+   "crystalCount": 100,
+   "runtimeItemKey": "wpn_scimitar",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 31,
+   "normalizedItemId": 31,
+   "note": "長劍",
+   "crystalCount": 300,
+   "runtimeItemKey": "wpn_longsword",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 32,
+   "normalizedItemId": 32,
+   "note": "侵略者之劍",
+   "crystalCount": 250,
+   "runtimeItemKey": "wpn_invader",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 39,
+   "normalizedItemId": 39,
+   "note": "短刀",
+   "crystalCount": 2800,
+   "runtimeItemKey": "wpn_pirate_shortblade",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 41,
+   "normalizedItemId": 41,
+   "note": "武士刀",
+   "crystalCount": 2000,
+   "runtimeItemKey": "wpn_katana",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 43,
+   "normalizedItemId": 43,
+   "note": "海賊彎刀",
+   "crystalCount": 3000,
+   "runtimeItemKey": "wpn_pirate_cutlass",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 49,
+   "normalizedItemId": 49,
+   "note": "武官之刃",
+   "crystalCount": 4000,
+   "runtimeItemKey": "wpn_official_blade",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 52,
+   "normalizedItemId": 52,
+   "note": "雙手劍",
+   "crystalCount": 1800,
+   "runtimeItemKey": "wpn_2hsword",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 53,
+   "normalizedItemId": 53,
+   "note": "蜥蜴王勇士之劍",
+   "crystalCount": 3000,
+   "runtimeItemKey": "l1j_item_53",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 55,
+   "normalizedItemId": 55,
+   "note": "黑暗之劍",
+   "crystalCount": 4000,
+   "runtimeItemKey": "wpn_dark_sword",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 57,
+   "normalizedItemId": 57,
+   "note": "瑟魯基之劍",
+   "crystalCount": 3500,
+   "runtimeItemKey": "wpn_siruge",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 58,
+   "normalizedItemId": 58,
+   "note": "死亡騎士的烈炎之劍",
+   "crystalCount": 10000,
+   "runtimeItemKey": "wpn_dk_flameblade",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 64,
+   "normalizedItemId": 64,
+   "note": "巨劍",
+   "crystalCount": 8500,
+   "runtimeItemKey": "wpn_greatsword",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 70,
+   "normalizedItemId": 70,
+   "note": "尖刺雙刀",
+   "crystalCount": 600,
+   "runtimeItemKey": "wpn_dual_spike",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 76,
+   "normalizedItemId": 76,
+   "note": "倫得雙刀",
+   "crystalCount": 800,
+   "runtimeItemKey": "wpn_rond_dual",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 78,
+   "normalizedItemId": 78,
+   "note": "暗殺軍王之痕",
+   "crystalCount": 3000,
+   "runtimeItemKey": "wpn_assassin_mark",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 84,
+   "normalizedItemId": 84,
+   "note": "暗黑雙刀",
+   "crystalCount": 4000,
+   "runtimeItemKey": "wpn_dual_abyss",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 91,
+   "normalizedItemId": 91,
+   "note": "歐西斯之矛",
+   "crystalCount": 5,
+   "runtimeItemKey": "wpn_25",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 93,
+   "normalizedItemId": 93,
+   "note": "三叉戟",
+   "crystalCount": 2,
+   "runtimeItemKey": "wpn_28",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 94,
+   "normalizedItemId": 94,
+   "note": "帕提森",
+   "crystalCount": 50,
+   "runtimeItemKey": "wpn_21",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 95,
+   "normalizedItemId": 95,
+   "note": "槍",
+   "crystalCount": 6,
+   "runtimeItemKey": "wpn_17",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 96,
+   "normalizedItemId": 96,
+   "note": "矛",
+   "crystalCount": 8,
+   "runtimeItemKey": "wpn_4",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 98,
+   "normalizedItemId": 98,
+   "note": "闊矛",
+   "crystalCount": 35,
+   "runtimeItemKey": "wpn_14",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 101,
+   "normalizedItemId": 101,
+   "note": "拉斯塔巴德矛",
+   "crystalCount": 150,
+   "runtimeItemKey": "wpn_spear_rasta",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 102,
+   "normalizedItemId": 102,
+   "note": "露西錘",
+   "crystalCount": 900,
+   "runtimeItemKey": "wpn_18",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 104,
+   "normalizedItemId": 104,
+   "note": "法丘",
+   "crystalCount": 800,
+   "runtimeItemKey": "wpn_halberd",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 107,
+   "normalizedItemId": 107,
+   "note": "深紅長矛",
+   "crystalCount": 20000,
+   "runtimeItemKey": "wpn_crimson_spear",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 108,
+   "normalizedItemId": 108,
+   "note": "失去魔力的惡魔鐮刀",
+   "crystalCount": 3,
+   "runtimeItemKey": "l1j_item_108",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 109,
+   "normalizedItemId": 109,
+   "note": "失去魔力的巴風特魔杖",
+   "crystalCount": 3,
+   "runtimeItemKey": "wpn_powerless_baphomet",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 110,
+   "normalizedItemId": 110,
+   "note": "失去魔力的巴列斯魔杖",
+   "crystalCount": 3,
+   "runtimeItemKey": "wpn_powerless_baless",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 111,
+   "normalizedItemId": 111,
+   "note": "失去魔力的冰之女王魔杖",
+   "crystalCount": 250,
+   "runtimeItemKey": "l1j_item_111",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 117,
+   "normalizedItemId": 117,
+   "note": "蕾雅魔杖",
+   "crystalCount": 250,
+   "runtimeItemKey": "wpn_laia_wand",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 122,
+   "normalizedItemId": 122,
+   "note": "拉斯塔巴德魔杖",
+   "crystalCount": 1000,
+   "runtimeItemKey": "wpn_wand_rasta",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 125,
+   "normalizedItemId": 125,
+   "note": "巫術魔法杖",
+   "crystalCount": 900,
+   "runtimeItemKey": "wpn_witchwand",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 128,
+   "normalizedItemId": 128,
+   "note": "橡木魔法杖",
+   "crystalCount": 30,
+   "runtimeItemKey": "wpn_oakwand",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 129,
+   "normalizedItemId": 129,
+   "note": "美基魔法杖",
+   "crystalCount": 250,
+   "runtimeItemKey": "wpn_38",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 130,
+   "normalizedItemId": 130,
+   "note": "紅水晶魔杖",
+   "crystalCount": 10000,
+   "runtimeItemKey": "wpn_red_crystalwand",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 131,
+   "normalizedItemId": 131,
+   "note": "力量魔法杖",
+   "crystalCount": 600,
+   "runtimeItemKey": "wpn_strwand",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 132,
+   "normalizedItemId": 132,
+   "note": "神官魔杖",
+   "crystalCount": 10000,
+   "runtimeItemKey": "wpn_priest_wand",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 136,
+   "normalizedItemId": 136,
+   "note": "斧",
+   "crystalCount": 2,
+   "runtimeItemKey": "wpn_1",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 137,
+   "normalizedItemId": 137,
+   "note": "亞連",
+   "crystalCount": 1,
+   "runtimeItemKey": "wpn_alien",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 138,
+   "normalizedItemId": 138,
+   "note": "木棒",
+   "crystalCount": 3,
+   "runtimeItemKey": "wpn_10",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 139,
+   "normalizedItemId": 139,
+   "note": "弗萊爾",
+   "crystalCount": 4,
+   "runtimeItemKey": "wpn_13",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 140,
+   "normalizedItemId": 140,
+   "note": "釘錘",
+   "crystalCount": 9,
+   "runtimeItemKey": "wpn_2",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 142,
+   "normalizedItemId": 142,
+   "note": "銀斧",
+   "crystalCount": 800,
+   "runtimeItemKey": "wpn_silveraxe",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 143,
+   "normalizedItemId": 143,
+   "note": "戰斧",
+   "crystalCount": 70,
+   "runtimeItemKey": "wpn_battleaxe",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 145,
+   "normalizedItemId": 145,
+   "note": "狂戰士斧",
+   "crystalCount": 100,
+   "runtimeItemKey": "wpn_berserker",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 146,
+   "normalizedItemId": 146,
+   "note": "流星錘",
+   "crystalCount": 350,
+   "runtimeItemKey": "wpn_20",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 148,
+   "normalizedItemId": 148,
+   "note": "巨斧",
+   "crystalCount": 1200,
+   "runtimeItemKey": "wpn_giantaxe",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 149,
+   "normalizedItemId": 149,
+   "note": "牛人斧頭",
+   "crystalCount": 1200,
+   "runtimeItemKey": "wpn_taurus_axe",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 151,
+   "normalizedItemId": 151,
+   "note": "惡魔斧頭",
+   "crystalCount": 20000,
+   "runtimeItemKey": "wpn_demon_axe",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 153,
+   "normalizedItemId": 153,
+   "note": "鋼鐵 鋼爪",
+   "crystalCount": 200,
+   "runtimeItemKey": "wpn_claw_steel",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 155,
+   "normalizedItemId": 155,
+   "note": "魔獸軍王之爪",
+   "crystalCount": 1500,
+   "runtimeItemKey": "wpn_baranka_claw",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 163,
+   "normalizedItemId": 163,
+   "note": "巴蘭卡鋼爪",
+   "crystalCount": 10000,
+   "runtimeItemKey": "wpn_baranka_steelclaw",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 164,
+   "normalizedItemId": 164,
+   "note": "暗黑鋼爪",
+   "crystalCount": 4500,
+   "runtimeItemKey": "wpn_claw_abyss",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 166,
+   "normalizedItemId": 166,
+   "note": "恨之鋼爪",
+   "crystalCount": 2500,
+   "runtimeItemKey": "wpn_hate_claw",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 167,
+   "normalizedItemId": 167,
+   "note": "受封印 被遺忘的弩槍",
+   "crystalCount": 500,
+   "runtimeItemKey": null,
+   "runtimeBlessing": "normal",
+   "runtimeResolved": false,
+   "unresolvedReason": "not present in the authoritative item catalog"
+  },
+  {
+   "itemId": 169,
+   "normalizedItemId": 169,
+   "note": "獵人之弓",
+   "crystalCount": 500,
+   "runtimeItemKey": "wpn_32",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 171,
+   "normalizedItemId": 171,
+   "note": "歐西斯弓",
+   "crystalCount": 3,
+   "runtimeItemKey": "wpn_8",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 172,
+   "normalizedItemId": 172,
+   "note": "弓",
+   "crystalCount": 5,
+   "runtimeItemKey": "wpn_3",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 179,
+   "normalizedItemId": 179,
+   "note": "古代妖精弩槍",
+   "crystalCount": 500,
+   "runtimeItemKey": "wpn_ancient_elf_xbow",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 187,
+   "normalizedItemId": 187,
+   "note": "拉斯塔巴德十字弓",
+   "crystalCount": 1000,
+   "runtimeItemKey": "wpn_xbow_rasta",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 188,
+   "normalizedItemId": 188,
+   "note": "拉斯塔巴德重十字弓",
+   "crystalCount": 2000,
+   "runtimeItemKey": "wpn_xbow_heavy_rasta",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 189,
+   "normalizedItemId": 189,
+   "note": "暗黑十字弓",
+   "crystalCount": 5000,
+   "runtimeItemKey": "wpn_xbow_abyss",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 212,
+   "normalizedItemId": 212,
+   "note": "海神三叉戟",
+   "crystalCount": 5000,
+   "runtimeItemKey": "l1j_item_212",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20007,
+   "normalizedItemId": 20007,
+   "note": "侏儒鐵盔",
+   "crystalCount": 60,
+   "runtimeItemKey": "hlm_gnome",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20011,
+   "normalizedItemId": 20011,
+   "note": "抗魔法頭盔",
+   "crystalCount": 1,
+   "runtimeItemKey": "hlm_mr",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20013,
+   "normalizedItemId": 20013,
+   "note": "敏捷魔法頭盔",
+   "crystalCount": 2200,
+   "runtimeItemKey": "arm_46",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20014,
+   "normalizedItemId": 20014,
+   "note": "治癒魔法頭盔",
+   "crystalCount": 1500,
+   "runtimeItemKey": "arm_45",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20015,
+   "normalizedItemId": 20015,
+   "note": "力量魔法頭盔",
+   "crystalCount": 1800,
+   "runtimeItemKey": "arm_47",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20034,
+   "normalizedItemId": 20034,
+   "note": "歐西斯頭盔",
+   "crystalCount": 15,
+   "runtimeItemKey": "hlm_oasis",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20043,
+   "normalizedItemId": 20043,
+   "note": "鋼盔",
+   "crystalCount": 20,
+   "runtimeItemKey": "l1j_item_20043",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20052,
+   "normalizedItemId": 20052,
+   "note": "侏儒斗篷",
+   "crystalCount": 10,
+   "runtimeItemKey": "arm_86",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20056,
+   "normalizedItemId": 20056,
+   "note": "抗魔法斗篷",
+   "crystalCount": 20,
+   "runtimeItemKey": "clk_mr",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20060,
+   "normalizedItemId": 20060,
+   "note": "藍海賊斗篷",
+   "crystalCount": 80,
+   "runtimeItemKey": "arm_bluepirate_cloak",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20072,
+   "normalizedItemId": 20072,
+   "note": "歐西斯斗篷",
+   "crystalCount": 5,
+   "runtimeItemKey": "clk_oasis",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20073,
+   "normalizedItemId": 20073,
+   "note": "精靈斗篷",
+   "crystalCount": 120,
+   "runtimeItemKey": "clk_elf",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20089,
+   "normalizedItemId": 20089,
+   "note": "小籐甲",
+   "crystalCount": 10,
+   "runtimeItemKey": "arm_68",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20096,
+   "normalizedItemId": 20096,
+   "note": "環甲",
+   "crystalCount": 50,
+   "runtimeItemKey": "arm_67",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20098,
+   "normalizedItemId": 20098,
+   "note": "黑暗棲林者盔甲",
+   "crystalCount": 100,
+   "runtimeItemKey": "amr_darkdweller",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20099,
+   "normalizedItemId": 20099,
+   "note": "惡魔盔甲",
+   "crystalCount": 4200,
+   "runtimeItemKey": "amr_demon",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20101,
+   "normalizedItemId": 20101,
+   "note": "皮甲",
+   "crystalCount": 2500,
+   "runtimeItemKey": "arm_62",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20103,
+   "normalizedItemId": 20103,
+   "note": "拉斯塔巴德長袍",
+   "crystalCount": 1500,
+   "runtimeItemKey": "amr_rasta_robe",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20105,
+   "normalizedItemId": 20105,
+   "note": "拉斯塔巴德鏈甲",
+   "crystalCount": 500,
+   "runtimeItemKey": "l1j_item_20105",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20106,
+   "normalizedItemId": 20106,
+   "note": "蕾雅長袍",
+   "crystalCount": 1000,
+   "runtimeItemKey": "amr_laia_robe",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20107,
+   "normalizedItemId": 20107,
+   "note": "巫妖斗篷",
+   "crystalCount": 3700,
+   "runtimeItemKey": "clk_lich",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20109,
+   "normalizedItemId": 20109,
+   "note": "法令軍王長袍",
+   "crystalCount": 2000,
+   "runtimeItemKey": "amr_kinglaw",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20112,
+   "normalizedItemId": 20112,
+   "note": "曼波外套",
+   "crystalCount": 10000,
+   "runtimeItemKey": "amr_mambo",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20113,
+   "normalizedItemId": 20113,
+   "note": "武官護鎧",
+   "crystalCount": 2000,
+   "runtimeItemKey": "amr_official",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20114,
+   "normalizedItemId": 20114,
+   "note": "綿質長袍",
+   "crystalCount": 100,
+   "runtimeItemKey": "amr_robe",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20115,
+   "normalizedItemId": 20115,
+   "note": "籐甲",
+   "crystalCount": 2000,
+   "runtimeItemKey": "arm_61",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20116,
+   "normalizedItemId": 20116,
+   "note": "巴蘭卡盔甲",
+   "crystalCount": 10000,
+   "runtimeItemKey": "amr_baranka",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20117,
+   "normalizedItemId": 20117,
+   "note": "巴風特盔甲",
+   "crystalCount": 1000,
+   "runtimeItemKey": "amr_baphomet",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20118,
+   "normalizedItemId": 20118,
+   "note": "反王盔甲",
+   "crystalCount": 30000,
+   "runtimeItemKey": "l1j_item_20118",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20122,
+   "normalizedItemId": 20122,
+   "note": "鱗甲",
+   "crystalCount": 200,
+   "runtimeItemKey": "arm_65",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20123,
+   "normalizedItemId": 20123,
+   "note": "喚獸師長袍",
+   "crystalCount": 100,
+   "runtimeItemKey": "amr_summoner_robe",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20124,
+   "normalizedItemId": 20124,
+   "note": "骷髏盔甲",
+   "crystalCount": 200,
+   "runtimeItemKey": "amr_bone",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20128,
+   "normalizedItemId": 20128,
+   "note": "水晶盔甲",
+   "crystalCount": 8000,
+   "runtimeItemKey": "arm_59",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20129,
+   "normalizedItemId": 20129,
+   "note": "神官法袍",
+   "crystalCount": 2000,
+   "runtimeItemKey": "amr_priest",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20132,
+   "normalizedItemId": 20132,
+   "note": "黑暗披肩",
+   "crystalCount": 1000,
+   "runtimeItemKey": "amr_dark_cape",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20134,
+   "normalizedItemId": 20134,
+   "note": "冰之女王魅力禮服",
+   "crystalCount": 1000,
+   "runtimeItemKey": "amr_icequeen_charm",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20135,
+   "normalizedItemId": 20135,
+   "note": "歐西斯環甲",
+   "crystalCount": 20,
+   "runtimeItemKey": "amr_oasis",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20136,
+   "normalizedItemId": 20136,
+   "note": "歐西斯鏈甲",
+   "crystalCount": 80,
+   "runtimeItemKey": "arm_64",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20139,
+   "normalizedItemId": 20139,
+   "note": "精靈護胸金屬板",
+   "crystalCount": 100,
+   "runtimeItemKey": "arm_71",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20140,
+   "normalizedItemId": 20140,
+   "note": "被遺忘的皮盔甲",
+   "crystalCount": 3700,
+   "runtimeItemKey": null,
+   "runtimeBlessing": "normal",
+   "runtimeResolved": false,
+   "unresolvedReason": "not present in the authoritative item catalog"
+  },
+  {
+   "itemId": 20141,
+   "normalizedItemId": 20141,
+   "note": "被遺忘的長袍",
+   "crystalCount": 3700,
+   "runtimeItemKey": null,
+   "runtimeBlessing": "normal",
+   "runtimeResolved": false,
+   "unresolvedReason": "not present in the authoritative item catalog"
+  },
+  {
+   "itemId": 20142,
+   "normalizedItemId": 20142,
+   "note": "被遺忘的鱗甲",
+   "crystalCount": 3700,
+   "runtimeItemKey": null,
+   "runtimeBlessing": "normal",
+   "runtimeResolved": false,
+   "unresolvedReason": "not present in the authoritative item catalog"
+  },
+  {
+   "itemId": 20143,
+   "normalizedItemId": 20143,
+   "note": "被遺忘的金屬盔甲",
+   "crystalCount": 3700,
+   "runtimeItemKey": null,
+   "runtimeBlessing": "normal",
+   "runtimeResolved": false,
+   "unresolvedReason": "not present in the authoritative item catalog"
+  },
+  {
+   "itemId": 20144,
+   "normalizedItemId": 20144,
+   "note": "死亡盔甲",
+   "crystalCount": 4200,
+   "runtimeItemKey": "amr_death",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20147,
+   "normalizedItemId": 20147,
+   "note": "銀釘皮甲",
+   "crystalCount": 30,
+   "runtimeItemKey": "arm_66",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20149,
+   "normalizedItemId": 20149,
+   "note": "青銅盔甲",
+   "crystalCount": 1600,
+   "runtimeItemKey": "arm_60",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20150,
+   "normalizedItemId": 20150,
+   "note": "克特盔甲",
+   "crystalCount": 4200,
+   "runtimeItemKey": "amr_kurt",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20151,
+   "normalizedItemId": 20151,
+   "note": "賽尼斯斗篷",
+   "crystalCount": 40000,
+   "runtimeItemKey": "l1j_item_20151",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20152,
+   "normalizedItemId": 20152,
+   "note": "墮落長袍",
+   "crystalCount": 3700,
+   "runtimeItemKey": "amr_fallen",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20154,
+   "normalizedItemId": 20154,
+   "note": "金屬盔甲",
+   "crystalCount": 1200,
+   "runtimeItemKey": "amr_plate",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20155,
+   "normalizedItemId": 20155,
+   "note": "藍海賊皮盔甲",
+   "crystalCount": 50,
+   "runtimeItemKey": "arm_bluepirate_armor",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20158,
+   "normalizedItemId": 20158,
+   "note": "混沌法袍",
+   "crystalCount": 2200,
+   "runtimeItemKey": "amr_chaos",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20160,
+   "normalizedItemId": 20160,
+   "note": "黑長者長袍",
+   "crystalCount": 2200,
+   "runtimeItemKey": "arm_84",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20162,
+   "normalizedItemId": 20162,
+   "note": "皮手套",
+   "crystalCount": 1200,
+   "runtimeItemKey": "l1j_item_20162",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20172,
+   "normalizedItemId": 20172,
+   "note": "水靈手套",
+   "crystalCount": 10000,
+   "runtimeItemKey": "glv_water_spirit",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20177,
+   "normalizedItemId": 20177,
+   "note": "地靈手套",
+   "crystalCount": 10000,
+   "runtimeItemKey": "glv_earth_spirit",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20181,
+   "normalizedItemId": 20181,
+   "note": "火靈手套",
+   "crystalCount": 10000,
+   "runtimeItemKey": "glv_fire_spirit",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20182,
+   "normalizedItemId": 20182,
+   "note": "手套",
+   "crystalCount": 800,
+   "runtimeItemKey": "glv_glove",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20188,
+   "normalizedItemId": 20188,
+   "note": "藍海賊手套",
+   "crystalCount": 20,
+   "runtimeItemKey": "arm_bluepirate_gloves",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20189,
+   "normalizedItemId": 20189,
+   "note": "風靈手套",
+   "crystalCount": 10000,
+   "runtimeItemKey": "glv_wind_spirit",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20192,
+   "normalizedItemId": 20192,
+   "note": "皮長靴",
+   "crystalCount": 30,
+   "runtimeItemKey": "arm_93",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20205,
+   "normalizedItemId": 20205,
+   "note": "長靴",
+   "crystalCount": 200,
+   "runtimeItemKey": "arm_90",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20213,
+   "normalizedItemId": 20213,
+   "note": "短統靴",
+   "crystalCount": 30,
+   "runtimeItemKey": "bot_short",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20217,
+   "normalizedItemId": 20217,
+   "note": "藍海賊長靴",
+   "crystalCount": 30,
+   "runtimeItemKey": "arm_bluepirate_boots",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20227,
+   "normalizedItemId": 20227,
+   "note": "梅杜莎盾牌",
+   "crystalCount": 2000,
+   "runtimeItemKey": "arm_pride_medusa_shield",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20229,
+   "normalizedItemId": 20229,
+   "note": "反射之盾",
+   "crystalCount": 2000,
+   "runtimeItemKey": "arm_106",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20231,
+   "normalizedItemId": 20231,
+   "note": "塔盾",
+   "crystalCount": 1050,
+   "runtimeItemKey": "arm_108",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20239,
+   "normalizedItemId": 20239,
+   "note": "小盾牌",
+   "crystalCount": 6,
+   "runtimeItemKey": "arm_103",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20242,
+   "normalizedItemId": 20242,
+   "note": "大盾牌",
+   "crystalCount": 120,
+   "runtimeItemKey": "arm_105",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20244,
+   "normalizedItemId": 20244,
+   "note": "小型魅力項鏈",
+   "crystalCount": 1000,
+   "runtimeItemKey": "l1j_item_20244",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20245,
+   "normalizedItemId": 20245,
+   "note": "小型敏捷項鏈",
+   "crystalCount": 1000,
+   "runtimeItemKey": "l1j_item_20245",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20246,
+   "normalizedItemId": 20246,
+   "note": "小型力量項鏈",
+   "crystalCount": 1000,
+   "runtimeItemKey": "l1j_item_20246",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20247,
+   "normalizedItemId": 20247,
+   "note": "小型智力項鏈",
+   "crystalCount": 1000,
+   "runtimeItemKey": "l1j_item_20247",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20248,
+   "normalizedItemId": 20248,
+   "note": "小型精神項鏈",
+   "crystalCount": 1000,
+   "runtimeItemKey": "l1j_item_20248",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20249,
+   "normalizedItemId": 20249,
+   "note": "小型體質項鏈",
+   "crystalCount": 1000,
+   "runtimeItemKey": "l1j_item_20249",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20250,
+   "normalizedItemId": 20250,
+   "note": "變形怪首領項鏈",
+   "crystalCount": 1000,
+   "runtimeItemKey": "l1j_item_20250",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20252,
+   "normalizedItemId": 20252,
+   "note": "蕾雅項鏈",
+   "crystalCount": 1000,
+   "runtimeItemKey": "acc_laia_amulet",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20253,
+   "normalizedItemId": 20253,
+   "note": "法令軍王之煉",
+   "crystalCount": 10000,
+   "runtimeItemKey": "acc_law_king_chain",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20254,
+   "normalizedItemId": 20254,
+   "note": "魅力項鏈",
+   "crystalCount": 1000,
+   "runtimeItemKey": "amu_cha",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20257,
+   "normalizedItemId": 20257,
+   "note": "黑法師項鏈",
+   "crystalCount": 1000,
+   "runtimeItemKey": "acc_darkmage_amulet",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20258,
+   "normalizedItemId": 20258,
+   "note": "喚獸師項鏈",
+   "crystalCount": 1000,
+   "runtimeItemKey": "acc_summoner_amulet",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20263,
+   "normalizedItemId": 20263,
+   "note": "妖魔戰士護身符",
+   "crystalCount": 6500,
+   "runtimeItemKey": "item_orc_amulet",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20264,
+   "normalizedItemId": 20264,
+   "note": "力量項鏈",
+   "crystalCount": 1000,
+   "runtimeItemKey": "amu_str",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20266,
+   "normalizedItemId": 20266,
+   "note": "智力項鏈",
+   "crystalCount": 1000,
+   "runtimeItemKey": "amu_int",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20267,
+   "normalizedItemId": 20267,
+   "note": "精神項鏈",
+   "crystalCount": 1000,
+   "runtimeItemKey": "acc_122",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20277,
+   "normalizedItemId": 20277,
+   "note": "變形怪首領之戒(右)",
+   "crystalCount": 4200,
+   "runtimeItemKey": "l1j_item_20277",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20278,
+   "normalizedItemId": 20278,
+   "note": "變形怪首領之戒(左)",
+   "crystalCount": 4200,
+   "runtimeItemKey": "l1j_item_20278",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20279,
+   "normalizedItemId": 20279,
+   "note": "蕾雅戒指",
+   "crystalCount": 3000,
+   "runtimeItemKey": "acc_laia_ring",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20280,
+   "normalizedItemId": 20280,
+   "note": "滅魔戒指",
+   "crystalCount": 300,
+   "runtimeItemKey": "acc_demonbane",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20281,
+   "normalizedItemId": 20281,
+   "note": "變形控制戒指",
+   "crystalCount": 200000,
+   "runtimeItemKey": "acc_117",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20284,
+   "normalizedItemId": 20284,
+   "note": "召喚控制戒指",
+   "crystalCount": 200000,
+   "runtimeItemKey": "acc_summon_ctrl",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20285,
+   "normalizedItemId": 20285,
+   "note": "水靈戒指",
+   "crystalCount": 250,
+   "runtimeItemKey": "rng_water",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20288,
+   "normalizedItemId": 20288,
+   "note": "傳送控制戒指",
+   "crystalCount": 400000,
+   "runtimeItemKey": "acc_116",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20289,
+   "normalizedItemId": 20289,
+   "note": "深淵戒指",
+   "crystalCount": 10000,
+   "runtimeItemKey": "acc_abyss_ring",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20293,
+   "normalizedItemId": 20293,
+   "note": "受詛咒的鑽石戒指",
+   "crystalCount": 2000,
+   "runtimeItemKey": "acc_curse_diamond_ring",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20294,
+   "normalizedItemId": 20294,
+   "note": "受詛咒的紅寶石戒指",
+   "crystalCount": 2000,
+   "runtimeItemKey": "acc_curse_ruby_ring",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20295,
+   "normalizedItemId": 20295,
+   "note": "受詛咒的藍寶石戒指",
+   "crystalCount": 2000,
+   "runtimeItemKey": "acc_curse_sapphire_ring",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20296,
+   "normalizedItemId": 20296,
+   "note": "受詛咒的綠寶石戒指",
+   "crystalCount": 2000,
+   "runtimeItemKey": "acc_curse_emerald_ring",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20298,
+   "normalizedItemId": 20298,
+   "note": "潔尼斯戒指",
+   "crystalCount": 3,
+   "runtimeItemKey": "acc_jenis_ring",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20300,
+   "normalizedItemId": 20300,
+   "note": "地靈戒指",
+   "crystalCount": 250,
+   "runtimeItemKey": "rng_earth",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20302,
+   "normalizedItemId": 20302,
+   "note": "風靈戒指",
+   "crystalCount": 250,
+   "runtimeItemKey": "rng_wind",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20303,
+   "normalizedItemId": 20303,
+   "note": "抗魔戒指",
+   "crystalCount": 200,
+   "runtimeItemKey": "rng_mr",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20304,
+   "normalizedItemId": 20304,
+   "note": "火靈戒指",
+   "crystalCount": 250,
+   "runtimeItemKey": "rng_fire",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20306,
+   "normalizedItemId": 20306,
+   "note": "小型身體腰帶",
+   "crystalCount": 1500,
+   "runtimeItemKey": "l1j_item_20306",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20307,
+   "normalizedItemId": 20307,
+   "note": "小型靈魂腰帶",
+   "crystalCount": 1500,
+   "runtimeItemKey": "l1j_item_20307",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20308,
+   "normalizedItemId": 20308,
+   "note": "小型精神腰帶",
+   "crystalCount": 1500,
+   "runtimeItemKey": "l1j_item_20308",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20309,
+   "normalizedItemId": 20309,
+   "note": "光明身體腰帶",
+   "crystalCount": 1000,
+   "runtimeItemKey": "acc_135",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20310,
+   "normalizedItemId": 20310,
+   "note": "光明靈魂腰帶",
+   "crystalCount": 1000,
+   "runtimeItemKey": "acc_137",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20311,
+   "normalizedItemId": 20311,
+   "note": "光明精神腰帶",
+   "crystalCount": 1000,
+   "runtimeItemKey": "acc_136",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20312,
+   "normalizedItemId": 20312,
+   "note": "身體腰帶",
+   "crystalCount": 1600,
+   "runtimeItemKey": "blt_body",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20316,
+   "normalizedItemId": 20316,
+   "note": "靈魂腰帶",
+   "crystalCount": 1600,
+   "runtimeItemKey": "acc_131",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20319,
+   "normalizedItemId": 20319,
+   "note": "精神腰帶",
+   "crystalCount": 1600,
+   "runtimeItemKey": "acc_130",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20321,
+   "normalizedItemId": 20321,
+   "note": "多羅皮帶",
+   "crystalCount": 3000,
+   "runtimeItemKey": "acc_132",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20423,
+   "normalizedItemId": 20423,
+   "note": "詛咒的紅色耳環",
+   "crystalCount": 2000,
+   "runtimeItemKey": "acc_curse_red",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20424,
+   "normalizedItemId": 20424,
+   "note": "詛咒的藍色耳環",
+   "crystalCount": 2000,
+   "runtimeItemKey": "acc_curse_blue",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 20425,
+   "normalizedItemId": 20425,
+   "note": "詛咒的綠色耳環",
+   "crystalCount": 2000,
+   "runtimeItemKey": "acc_curse_green",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 21052,
+   "normalizedItemId": 21052,
+   "note": "泡水的斗篷",
+   "crystalCount": 18,
+   "runtimeItemKey": "l1j_item_21052",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 21053,
+   "normalizedItemId": 21053,
+   "note": "泡水的盔甲",
+   "crystalCount": 18,
+   "runtimeItemKey": "l1j_item_21053",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 21054,
+   "normalizedItemId": 21054,
+   "note": "泡水的手套",
+   "crystalCount": 20,
+   "runtimeItemKey": "l1j_item_21054",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 21056,
+   "normalizedItemId": 21056,
+   "note": "泡水的盾牌",
+   "crystalCount": 24,
+   "runtimeItemKey": "l1j_item_21056",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40006,
+   "normalizedItemId": 40006,
+   "note": "創造怪物魔杖",
+   "crystalCount": 2,
+   "runtimeItemKey": "l1j_item_40006",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40007,
+   "normalizedItemId": 40007,
+   "note": "閃電魔杖",
+   "crystalCount": 2,
+   "runtimeItemKey": "l1j_item_40007",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40008,
+   "normalizedItemId": 40008,
+   "note": "變形魔杖",
+   "crystalCount": 2,
+   "runtimeItemKey": null,
+   "runtimeBlessing": "normal",
+   "runtimeResolved": false,
+   "unresolvedReason": "變形魔杖（含 140008）——用戶指名移除（2026-08-12）"
+  },
+  {
+   "itemId": 40010,
+   "normalizedItemId": 40010,
+   "note": "治癒藥水",
+   "crystalCount": 3,
+   "runtimeItemKey": "potion_heal",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40011,
+   "normalizedItemId": 40011,
+   "note": "橙色藥水",
+   "crystalCount": 25,
+   "runtimeItemKey": "potion_strong",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40012,
+   "normalizedItemId": 40012,
+   "note": "白色藥水",
+   "crystalCount": 37,
+   "runtimeItemKey": "potion_ult",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40013,
+   "normalizedItemId": 40013,
+   "note": "自我加速藥水",
+   "crystalCount": 20,
+   "runtimeItemKey": "potion_haste",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40014,
+   "normalizedItemId": 40014,
+   "note": "勇敢藥水",
+   "crystalCount": 80,
+   "runtimeItemKey": "potion_brave",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40015,
+   "normalizedItemId": 40015,
+   "note": "加速魔力回復藥水",
+   "crystalCount": 100,
+   "runtimeItemKey": "l1j_item_40015",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40016,
+   "normalizedItemId": 40016,
+   "note": "慎重藥水",
+   "crystalCount": 60,
+   "runtimeItemKey": "new_item_140",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40017,
+   "normalizedItemId": 40017,
+   "note": "翡翠藥水",
+   "crystalCount": 7,
+   "runtimeItemKey": "potion_emerald",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40018,
+   "normalizedItemId": 40018,
+   "note": "強化 自我加速藥水",
+   "crystalCount": 150,
+   "runtimeItemKey": "l1j_item_40018",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40019,
+   "normalizedItemId": 40019,
+   "note": "濃縮體力恢復劑",
+   "crystalCount": 4,
+   "runtimeItemKey": "l1j_item_40019",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40020,
+   "normalizedItemId": 40020,
+   "note": "濃縮強力體力恢復劑",
+   "crystalCount": 25,
+   "runtimeItemKey": "l1j_item_40020",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40021,
+   "normalizedItemId": 40021,
+   "note": "濃縮終極體力恢復劑",
+   "crystalCount": 56,
+   "runtimeItemKey": "l1j_item_40021",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40022,
+   "normalizedItemId": 40022,
+   "note": "古代體力恢復劑",
+   "crystalCount": 5,
+   "runtimeItemKey": "l1j_item_40022",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40023,
+   "normalizedItemId": 40023,
+   "note": "古代強力體力恢復劑",
+   "crystalCount": 31,
+   "runtimeItemKey": "l1j_item_40023",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40024,
+   "normalizedItemId": 40024,
+   "note": "古代終極體力恢復劑",
+   "crystalCount": 62,
+   "runtimeItemKey": "l1j_item_40024",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40041,
+   "normalizedItemId": 40041,
+   "note": "人魚之鱗",
+   "crystalCount": 20,
+   "runtimeItemKey": "new_item_mermaid_scale",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40045,
+   "normalizedItemId": 40045,
+   "note": "紅寶石",
+   "crystalCount": 50,
+   "runtimeItemKey": "new_item_157",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40047,
+   "normalizedItemId": 40047,
+   "note": "綠寶石",
+   "crystalCount": 50,
+   "runtimeItemKey": "new_item_154",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40049,
+   "normalizedItemId": 40049,
+   "note": "品質紅寶石",
+   "crystalCount": 90,
+   "runtimeItemKey": "new_item_158",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40051,
+   "normalizedItemId": 40051,
+   "note": "品質綠寶石",
+   "crystalCount": 82,
+   "runtimeItemKey": "new_item_155",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40053,
+   "normalizedItemId": 40053,
+   "note": "高品質紅寶石",
+   "crystalCount": 160,
+   "runtimeItemKey": "new_item_159",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40055,
+   "normalizedItemId": 40055,
+   "note": "高品質綠寶石",
+   "crystalCount": 160,
+   "runtimeItemKey": "new_item_156",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40068,
+   "normalizedItemId": 40068,
+   "note": "精靈餅乾",
+   "crystalCount": 50,
+   "runtimeItemKey": "new_item_139",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40074,
+   "normalizedItemId": 40074,
+   "note": "對盔甲施法的卷軸",
+   "crystalCount": 3100,
+   "runtimeItemKey": null,
+   "runtimeBlessing": "normal",
+   "runtimeResolved": false,
+   "unresolvedReason": "對盔甲施法的卷軸——強化卷軸機制取消（2026-07-28）"
+  },
+  {
+   "itemId": 40079,
+   "normalizedItemId": 40079,
+   "note": "傳送回家的卷軸",
+   "crystalCount": 12,
+   "runtimeItemKey": "l1j_item_40079",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40087,
+   "normalizedItemId": 40087,
+   "note": "對武器施法的卷軸",
+   "crystalCount": 7500,
+   "runtimeItemKey": null,
+   "runtimeBlessing": "normal",
+   "runtimeResolved": false,
+   "unresolvedReason": "對武器施法的卷軸——同上"
+  },
+  {
+   "itemId": 40088,
+   "normalizedItemId": 40088,
+   "note": "變形卷軸",
+   "crystalCount": 130,
+   "runtimeItemKey": "scroll_poly",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40089,
+   "normalizedItemId": 40089,
+   "note": "復活卷軸",
+   "crystalCount": 100,
+   "runtimeItemKey": "scroll_revive",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40090,
+   "normalizedItemId": 40090,
+   "note": "空的魔法卷軸(等級1)",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_40090",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40091,
+   "normalizedItemId": 40091,
+   "note": "空的魔法卷軸(等級2)",
+   "crystalCount": 40,
+   "runtimeItemKey": "l1j_item_40091",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40092,
+   "normalizedItemId": 40092,
+   "note": "空的魔法卷軸(等級3)",
+   "crystalCount": 100,
+   "runtimeItemKey": "l1j_item_40092",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40093,
+   "normalizedItemId": 40093,
+   "note": "空的魔法卷軸(等級4)",
+   "crystalCount": 250,
+   "runtimeItemKey": "l1j_item_40093",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40094,
+   "normalizedItemId": 40094,
+   "note": "空的魔法卷軸(等級5)",
+   "crystalCount": 500,
+   "runtimeItemKey": "l1j_item_40094",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40100,
+   "normalizedItemId": 40100,
+   "note": "瞬間移動卷軸",
+   "crystalCount": 7,
+   "runtimeItemKey": "scroll_teleport",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40104,
+   "normalizedItemId": 40104,
+   "note": "傲慢之塔移動卷軸11F",
+   "crystalCount": 20,
+   "runtimeItemKey": "l1j_item_40104",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40119,
+   "normalizedItemId": 40119,
+   "note": "解除咀咒的卷軸",
+   "crystalCount": 10,
+   "runtimeItemKey": "new_item_uncurse",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40126,
+   "normalizedItemId": 40126,
+   "note": "鑒定卷軸",
+   "crystalCount": 5,
+   "runtimeItemKey": "l1j_item_40126",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40163,
+   "normalizedItemId": 40163,
+   "note": "黃金鑰匙",
+   "crystalCount": 1,
+   "runtimeItemKey": "l1j_item_40163",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40164,
+   "normalizedItemId": 40164,
+   "note": "技術書(衝擊之暈)",
+   "crystalCount": 1000,
+   "runtimeItemKey": "bk_shock_stun",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40165,
+   "normalizedItemId": 40165,
+   "note": "技術書(增幅防禦)",
+   "crystalCount": 1000,
+   "runtimeItemKey": "bk_reduction_armor",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40166,
+   "normalizedItemId": 40166,
+   "note": "技術書(尖刺盔甲)",
+   "crystalCount": 1000,
+   "runtimeItemKey": "bk_spike_armor",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40170,
+   "normalizedItemId": 40170,
+   "note": "魔法書 (燃燒的火球)",
+   "crystalCount": 160,
+   "runtimeItemKey": "bk_fireball",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40171,
+   "normalizedItemId": 40171,
+   "note": "魔法書(通暢氣脈術)",
+   "crystalCount": 160,
+   "runtimeItemKey": "bk_dex_up",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40172,
+   "normalizedItemId": 40172,
+   "note": "魔法書 (壞物術)",
+   "crystalCount": 160,
+   "runtimeItemKey": "bk_break",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40173,
+   "normalizedItemId": 40173,
+   "note": "魔法書(吸血鬼之吻)",
+   "crystalCount": 160,
+   "runtimeItemKey": "bk_vampire",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40174,
+   "normalizedItemId": 40174,
+   "note": "魔法書(緩速術)",
+   "crystalCount": 160,
+   "runtimeItemKey": "bk_slow",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40175,
+   "normalizedItemId": 40175,
+   "note": "魔法書(魔法屏障)",
+   "crystalCount": 160,
+   "runtimeItemKey": "bk_magic_shield",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40176,
+   "normalizedItemId": 40176,
+   "note": "魔法書(冥想術)",
+   "crystalCount": 160,
+   "runtimeItemKey": "bk_meditation",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40177,
+   "normalizedItemId": 40177,
+   "note": "魔法書(巖牢)",
+   "crystalCount": 160,
+   "runtimeItemKey": "bk_rock_prison",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40178,
+   "normalizedItemId": 40178,
+   "note": "魔法書(木乃伊的詛咒)",
+   "crystalCount": 180,
+   "runtimeItemKey": "bk_mummy_curse",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40179,
+   "normalizedItemId": 40179,
+   "note": "魔法書 (極道落雷)",
+   "crystalCount": 180,
+   "runtimeItemKey": "bk_thunder",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40180,
+   "normalizedItemId": 40180,
+   "note": "魔法書 (高級治癒術)",
+   "crystalCount": 180,
+   "runtimeItemKey": "bk_heal2",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40181,
+   "normalizedItemId": 40181,
+   "note": "魔法書 (迷魅術)",
+   "crystalCount": 180,
+   "runtimeItemKey": "bk_charm",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40182,
+   "normalizedItemId": 40182,
+   "note": "魔法書(聖潔之光)",
+   "crystalCount": 180,
+   "runtimeItemKey": "bk_holy_light",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40183,
+   "normalizedItemId": 40183,
+   "note": "魔法書(冰錐)",
+   "crystalCount": 180,
+   "runtimeItemKey": "bk_ice_spike",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40184,
+   "normalizedItemId": 40184,
+   "note": "魔法書 (魔力奪取)",
+   "crystalCount": 270,
+   "runtimeItemKey": "bk_mana_drain",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40185,
+   "normalizedItemId": 40185,
+   "note": "魔法書(黑闇之影)",
+   "crystalCount": 180,
+   "runtimeItemKey": "bk_dark_shadow",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40186,
+   "normalizedItemId": 40186,
+   "note": "魔法書(造屍術)",
+   "crystalCount": 200,
+   "runtimeItemKey": "bk_zombie",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40187,
+   "normalizedItemId": 40187,
+   "note": "魔法書(體魄強健術)",
+   "crystalCount": 200,
+   "runtimeItemKey": "bk_str_up",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40188,
+   "normalizedItemId": 40188,
+   "note": "魔法書(加速術)",
+   "crystalCount": 200,
+   "runtimeItemKey": "bk_haste_spell",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40189,
+   "normalizedItemId": 40189,
+   "note": "魔法書 (魔法相消術)",
+   "crystalCount": 200,
+   "runtimeItemKey": "bk_cancel",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40190,
+   "normalizedItemId": 40190,
+   "note": "魔法書(地裂術)",
+   "crystalCount": 200,
+   "runtimeItemKey": "bk_earthquake",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40191,
+   "normalizedItemId": 40191,
+   "note": "魔法書(烈炎術)",
+   "crystalCount": 200,
+   "runtimeItemKey": "bk_blaze",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40192,
+   "normalizedItemId": 40192,
+   "note": "魔法書(弱化術)",
+   "crystalCount": 200,
+   "runtimeItemKey": "bk_weaken",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40193,
+   "normalizedItemId": 40193,
+   "note": "魔法書(祝福魔法武器)",
+   "crystalCount": 200,
+   "runtimeItemKey": "bk_bless_wpn",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40194,
+   "normalizedItemId": 40194,
+   "note": "魔法書 (體力回復術)",
+   "crystalCount": 220,
+   "runtimeItemKey": "bk_regen",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40195,
+   "normalizedItemId": 40195,
+   "note": "魔法書 (冰矛圍籬)",
+   "crystalCount": 220,
+   "runtimeItemKey": "bk_ice_lance",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40196,
+   "normalizedItemId": 40196,
+   "note": "魔法書 (召喚術)",
+   "crystalCount": 330,
+   "runtimeItemKey": "bk_summon",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40197,
+   "normalizedItemId": 40197,
+   "note": "魔法書(神聖疾走)",
+   "crystalCount": 220,
+   "runtimeItemKey": "bk_holy_dash",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40198,
+   "normalizedItemId": 40198,
+   "note": "魔法書(龍捲風)",
+   "crystalCount": 220,
+   "runtimeItemKey": "bk_tornado",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40199,
+   "normalizedItemId": 40199,
+   "note": "魔法書(強力加速術)",
+   "crystalCount": 220,
+   "runtimeItemKey": "bk_greater_haste",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40200,
+   "normalizedItemId": 40200,
+   "note": "魔法書 (狂暴術)",
+   "crystalCount": 220,
+   "runtimeItemKey": "bk_berserk",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40201,
+   "normalizedItemId": 40201,
+   "note": "魔法書 (疾病術)",
+   "crystalCount": 220,
+   "runtimeItemKey": "bk_disease",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40202,
+   "normalizedItemId": 40202,
+   "note": "魔法書(全部治癒術)",
+   "crystalCount": 240,
+   "runtimeItemKey": "bk_full_heal",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40203,
+   "normalizedItemId": 40203,
+   "note": "魔法書(火牢)",
+   "crystalCount": 240,
+   "runtimeItemKey": "bk_fire_prison",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40204,
+   "normalizedItemId": 40204,
+   "note": "魔法書(冰雪暴)",
+   "crystalCount": 240,
+   "runtimeItemKey": "bk_blizzard",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40205,
+   "normalizedItemId": 40205,
+   "note": "魔法書(隱身術)",
+   "crystalCount": 240,
+   "runtimeItemKey": "bk_invisible",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40206,
+   "normalizedItemId": 40206,
+   "note": "魔法書 (返生術)",
+   "crystalCount": 240,
+   "runtimeItemKey": "bk_resurrection",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40207,
+   "normalizedItemId": 40207,
+   "note": "魔法書(震裂術)",
+   "crystalCount": 240,
+   "runtimeItemKey": "bk_quake",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40208,
+   "normalizedItemId": 40208,
+   "note": "魔法書(治癒能量風暴)",
+   "crystalCount": 240,
+   "runtimeItemKey": "bk_heal_energy_storm",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40209,
+   "normalizedItemId": 40209,
+   "note": "魔法書(魔法封印)",
+   "crystalCount": 240,
+   "runtimeItemKey": "bk_seal",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40210,
+   "normalizedItemId": 40210,
+   "note": "魔法書(雷霆風暴)",
+   "crystalCount": 280,
+   "runtimeItemKey": "bk_thunder_storm",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40211,
+   "normalizedItemId": 40211,
+   "note": "魔法書(沉睡之霧)",
+   "crystalCount": 280,
+   "runtimeItemKey": "bk_sleep_mist",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40212,
+   "normalizedItemId": 40212,
+   "note": "魔法書(變形術)",
+   "crystalCount": 280,
+   "runtimeItemKey": "l1j_item_40212",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40213,
+   "normalizedItemId": 40213,
+   "note": "魔法書(聖結界)",
+   "crystalCount": 280,
+   "runtimeItemKey": "bk_holy_barrier",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40214,
+   "normalizedItemId": 40214,
+   "note": "魔法書(集體傳送術)",
+   "crystalCount": 280,
+   "runtimeItemKey": "l1j_item_40214",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40215,
+   "normalizedItemId": 40215,
+   "note": "魔法書 (火風暴)",
+   "crystalCount": 280,
+   "runtimeItemKey": "bk_fire_storm",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40216,
+   "normalizedItemId": 40216,
+   "note": "魔法書(藥水霜化術)",
+   "crystalCount": 280,
+   "runtimeItemKey": "l1j_item_40216",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40217,
+   "normalizedItemId": 40217,
+   "note": "魔法書 (強力無所遁形術)",
+   "crystalCount": 260,
+   "runtimeItemKey": "l1j_item_40217",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40218,
+   "normalizedItemId": 40218,
+   "note": "魔法書(創造魔法武器)",
+   "crystalCount": 280,
+   "runtimeItemKey": "l1j_item_40218",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40219,
+   "normalizedItemId": 40219,
+   "note": "魔法書(流星雨)",
+   "crystalCount": 280,
+   "runtimeItemKey": "bk_meteor",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40220,
+   "normalizedItemId": 40220,
+   "note": "魔法書(終極返生術)",
+   "crystalCount": 280,
+   "runtimeItemKey": "l1j_item_40220",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40221,
+   "normalizedItemId": 40221,
+   "note": "魔法書 (集體緩速術)",
+   "crystalCount": 280,
+   "runtimeItemKey": "l1j_item_40221",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40222,
+   "normalizedItemId": 40222,
+   "note": "魔法書(究極光裂術)",
+   "crystalCount": 280,
+   "runtimeItemKey": "bk_disintegrate",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40223,
+   "normalizedItemId": 40223,
+   "note": "魔法書(絕對屏障)",
+   "crystalCount": 280,
+   "runtimeItemKey": "bk_abs_barrier",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40224,
+   "normalizedItemId": 40224,
+   "note": "魔法書(靈魂昇華)",
+   "crystalCount": 280,
+   "runtimeItemKey": "bk_soul_up",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40225,
+   "normalizedItemId": 40225,
+   "note": "魔法書(冰雪颶風)",
+   "crystalCount": 280,
+   "runtimeItemKey": "bk_blizzard_storm",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40232,
+   "normalizedItemId": 40232,
+   "note": "精靈水晶(魔法防禦)",
+   "crystalCount": 20,
+   "runtimeItemKey": "bk_elf_mr",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40240,
+   "normalizedItemId": 40240,
+   "note": "精靈水晶(三重矢)",
+   "crystalCount": 400,
+   "runtimeItemKey": "bk_elf_triple",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40241,
+   "normalizedItemId": 40241,
+   "note": "精靈水晶(弱化屬性)",
+   "crystalCount": 400,
+   "runtimeItemKey": "bk_elf_elemental_falldown",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40254,
+   "normalizedItemId": 40254,
+   "note": "精靈水晶(生命之泉)",
+   "crystalCount": 200,
+   "runtimeItemKey": "bk_elf_lifespring",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40256,
+   "normalizedItemId": 40256,
+   "note": "精靈水晶(火焰武器)",
+   "crystalCount": 100,
+   "runtimeItemKey": "bk_elf_firewpn",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40257,
+   "normalizedItemId": 40257,
+   "note": "精靈水晶(烈炎氣息)",
+   "crystalCount": 200,
+   "runtimeItemKey": "l1j_item_40257",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40265,
+   "normalizedItemId": 40265,
+   "note": "黑暗精靈水晶(暗隱術)",
+   "crystalCount": 50,
+   "runtimeItemKey": "bk_dark_stealth",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40266,
+   "normalizedItemId": 40266,
+   "note": "黑暗精靈水晶(附加劇毒)",
+   "crystalCount": 50,
+   "runtimeItemKey": "bk_dark_poison",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40267,
+   "normalizedItemId": 40267,
+   "note": "黑暗精靈水晶(影之防護)",
+   "crystalCount": 50,
+   "runtimeItemKey": "bk_dark_mrup",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40268,
+   "normalizedItemId": 40268,
+   "note": "黑暗精靈水晶(提煉魔石)",
+   "crystalCount": 50,
+   "runtimeItemKey": "bk_dark_refine",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40269,
+   "normalizedItemId": 40269,
+   "note": "黑暗精靈水晶(力量提升)",
+   "crystalCount": 50,
+   "runtimeItemKey": "bk_dark_str",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40270,
+   "normalizedItemId": 40270,
+   "note": "黑暗精靈水晶(行走加速)",
+   "crystalCount": 200,
+   "runtimeItemKey": "bk_dark_walkhaste",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40271,
+   "normalizedItemId": 40271,
+   "note": "黑暗精靈水晶(燃燒鬥志)",
+   "crystalCount": 200,
+   "runtimeItemKey": "bk_dark_burn",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40272,
+   "normalizedItemId": 40272,
+   "note": "黑暗精靈水晶(暗黑盲咒)",
+   "crystalCount": 200,
+   "runtimeItemKey": "bk_dark_blind_curse",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40273,
+   "normalizedItemId": 40273,
+   "note": "黑暗精靈水晶(毒性抵抗)",
+   "crystalCount": 200,
+   "runtimeItemKey": "bk_dark_poisonres",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40274,
+   "normalizedItemId": 40274,
+   "note": "黑暗精靈水晶(敏捷提升)",
+   "crystalCount": 200,
+   "runtimeItemKey": "bk_dark_dex",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40275,
+   "normalizedItemId": 40275,
+   "note": "黑暗精靈水晶(雙重破壞)",
+   "crystalCount": 500,
+   "runtimeItemKey": "bk_dark_double",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40276,
+   "normalizedItemId": 40276,
+   "note": "黑暗精靈水晶(暗影閃避)",
+   "crystalCount": 500,
+   "runtimeItemKey": "bk_dark_dodge",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40277,
+   "normalizedItemId": 40277,
+   "note": "黑暗精靈水晶(暗影之牙)",
+   "crystalCount": 500,
+   "runtimeItemKey": "bk_dark_fang",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40278,
+   "normalizedItemId": 40278,
+   "note": "黑暗精靈水晶(會心一擊)",
+   "crystalCount": 500,
+   "runtimeItemKey": "bk_dark_crit",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40279,
+   "normalizedItemId": 40279,
+   "note": "黑暗精靈水晶(閃避提升)",
+   "crystalCount": 500,
+   "runtimeItemKey": "l1j_item_40279",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40317,
+   "normalizedItemId": 40317,
+   "note": "磨刀石",
+   "crystalCount": 15,
+   "runtimeItemKey": "item_whetstone",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40329,
+   "normalizedItemId": 40329,
+   "note": "原住民圖騰",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_40329",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40330,
+   "normalizedItemId": 40330,
+   "note": "無限箭筒",
+   "crystalCount": 20,
+   "runtimeItemKey": "l1j_item_40330",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40397,
+   "normalizedItemId": 40397,
+   "note": "奇美拉之皮(龍)",
+   "crystalCount": 2,
+   "runtimeItemKey": "mat_chimera_dragon",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40398,
+   "normalizedItemId": 40398,
+   "note": "奇美拉之皮(山羊)",
+   "crystalCount": 2,
+   "runtimeItemKey": "mat_chimera_goat",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40399,
+   "normalizedItemId": 40399,
+   "note": "奇美拉之皮(獅子)",
+   "crystalCount": 2,
+   "runtimeItemKey": "mat_chimera_lion",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40400,
+   "normalizedItemId": 40400,
+   "note": "奇美拉之皮(蛇)",
+   "crystalCount": 2,
+   "runtimeItemKey": "mat_chimera_snake",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40407,
+   "normalizedItemId": 40407,
+   "note": "骨頭碎片",
+   "crystalCount": 2,
+   "runtimeItemKey": "new_item_183",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40408,
+   "normalizedItemId": 40408,
+   "note": "金屬塊",
+   "crystalCount": 2,
+   "runtimeItemKey": "new_item_180",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40410,
+   "normalizedItemId": 40410,
+   "note": "黑暗安特的樹皮",
+   "crystalCount": 130,
+   "runtimeItemKey": "l1j_item_40410",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40424,
+   "normalizedItemId": 40424,
+   "note": "狼皮",
+   "crystalCount": 5,
+   "runtimeItemKey": "l1j_item_40424",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40426,
+   "normalizedItemId": 40426,
+   "note": "黑暗棲林者戒指",
+   "crystalCount": 3,
+   "runtimeItemKey": "quest_ring_darkdweller",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40427,
+   "normalizedItemId": 40427,
+   "note": "黑暗妖精袋子",
+   "crystalCount": 100,
+   "runtimeItemKey": "l1j_item_40427",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40429,
+   "normalizedItemId": 40429,
+   "note": "大洞穴卷軸碎片",
+   "crystalCount": 5,
+   "runtimeItemKey": "l1j_item_40429",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40431,
+   "normalizedItemId": 40431,
+   "note": "鼴鼠的皮",
+   "crystalCount": 3,
+   "runtimeItemKey": "l1j_item_40431",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40432,
+   "normalizedItemId": 40432,
+   "note": "狄亞得卷軸碎片",
+   "crystalCount": 5,
+   "runtimeItemKey": "l1j_item_40432",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40434,
+   "normalizedItemId": 40434,
+   "note": "犰狳的尾巴",
+   "crystalCount": 3,
+   "runtimeItemKey": "l1j_item_40434",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40436,
+   "normalizedItemId": 40436,
+   "note": "深淵之花的根",
+   "crystalCount": 2,
+   "runtimeItemKey": "l1j_item_40436",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40437,
+   "normalizedItemId": 40437,
+   "note": "深淵花枝條",
+   "crystalCount": 2,
+   "runtimeItemKey": "l1j_item_40437",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40438,
+   "normalizedItemId": 40438,
+   "note": "蝙蝠之牙",
+   "crystalCount": 2,
+   "runtimeItemKey": "l1j_item_40438",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40442,
+   "normalizedItemId": 40442,
+   "note": "布拉伯的胃液",
+   "crystalCount": 2,
+   "runtimeItemKey": "l1j_item_40442",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40443,
+   "normalizedItemId": 40443,
+   "note": "黑色米索莉",
+   "crystalCount": 8,
+   "runtimeItemKey": "mat_black_mithril",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40444,
+   "normalizedItemId": 40444,
+   "note": "黑色米索莉原石",
+   "crystalCount": 100,
+   "runtimeItemKey": "l1j_item_40444",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40446,
+   "normalizedItemId": 40446,
+   "note": "黑法師戒指",
+   "crystalCount": 3,
+   "runtimeItemKey": "quest_ring_darkmage",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40451,
+   "normalizedItemId": 40451,
+   "note": "黑虎之心",
+   "crystalCount": 20,
+   "runtimeItemKey": "l1j_item_40451",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40452,
+   "normalizedItemId": 40452,
+   "note": "喚獸師戒指",
+   "crystalCount": 3,
+   "runtimeItemKey": "quest_ring_summoner",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40454,
+   "normalizedItemId": 40454,
+   "note": "馴獸師戒指",
+   "crystalCount": 3,
+   "runtimeItemKey": "quest_ring_beasttamer",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40458,
+   "normalizedItemId": 40458,
+   "note": "光明的鱗片",
+   "crystalCount": 2,
+   "runtimeItemKey": "new_item_221",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40459,
+   "normalizedItemId": 40459,
+   "note": "毒蠍之皮",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_40459",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40470,
+   "normalizedItemId": 40470,
+   "note": "原石碎片",
+   "crystalCount": 200,
+   "runtimeItemKey": "mat_rough_stone",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40471,
+   "normalizedItemId": 40471,
+   "note": "精靈碎片",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_40471",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40472,
+   "normalizedItemId": 40472,
+   "note": "地獄犬之皮",
+   "crystalCount": 120,
+   "runtimeItemKey": "l1j_item_40472",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40486,
+   "normalizedItemId": 40486,
+   "note": "火山灰",
+   "crystalCount": 2,
+   "runtimeItemKey": "l1j_item_40486",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40490,
+   "normalizedItemId": 40490,
+   "note": "黑暗元素石",
+   "crystalCount": 8,
+   "runtimeItemKey": "l1j_item_40490",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40496,
+   "normalizedItemId": 40496,
+   "note": "粗糙的米索莉塊",
+   "crystalCount": 6,
+   "runtimeItemKey": "new_item_164",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40497,
+   "normalizedItemId": 40497,
+   "note": "米索莉金屬板",
+   "crystalCount": 40,
+   "runtimeItemKey": "new_item_177",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40499,
+   "normalizedItemId": 40499,
+   "note": "蘑菇汁",
+   "crystalCount": 2,
+   "runtimeItemKey": "new_item_166",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40510,
+   "normalizedItemId": 40510,
+   "note": "污濁安特的樹皮",
+   "crystalCount": 10,
+   "runtimeItemKey": "item_ant_bark",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40511,
+   "normalizedItemId": 40511,
+   "note": "污濁安特的水果",
+   "crystalCount": 10,
+   "runtimeItemKey": "item_ant_fruit",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40512,
+   "normalizedItemId": 40512,
+   "note": "污濁安特的樹枝",
+   "crystalCount": 10,
+   "runtimeItemKey": "item_ant_branch",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40514,
+   "normalizedItemId": 40514,
+   "note": "精靈之淚",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_40514",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40521,
+   "normalizedItemId": 40521,
+   "note": "精靈羽翼",
+   "crystalCount": 10,
+   "runtimeItemKey": "new_item_elfwing",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40524,
+   "normalizedItemId": 40524,
+   "note": "黑色血痕",
+   "crystalCount": 2,
+   "runtimeItemKey": "mat_black_blood",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40581,
+   "normalizedItemId": 40581,
+   "note": "不死族的鑰匙",
+   "crystalCount": 2,
+   "runtimeItemKey": "new_item_214",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40605,
+   "normalizedItemId": 40605,
+   "note": "骷髏頭",
+   "crystalCount": 2,
+   "runtimeItemKey": "new_item_203",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40609,
+   "normalizedItemId": 40609,
+   "note": "甘地妖魔魔法書",
+   "crystalCount": 2,
+   "runtimeItemKey": "new_item_201",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40610,
+   "normalizedItemId": 40610,
+   "note": "那魯加妖魔魔法書",
+   "crystalCount": 2,
+   "runtimeItemKey": "new_item_200",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40611,
+   "normalizedItemId": 40611,
+   "note": "都達瑪拉妖魔魔法書",
+   "crystalCount": 2,
+   "runtimeItemKey": "new_item_199",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40612,
+   "normalizedItemId": 40612,
+   "note": "阿吐巴妖魔魔法書",
+   "crystalCount": 2,
+   "runtimeItemKey": "new_item_202",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40678,
+   "normalizedItemId": 40678,
+   "note": "靈魂石碎片",
+   "crystalCount": 1000,
+   "runtimeItemKey": "mat_soulstone_shard",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40679,
+   "normalizedItemId": 40679,
+   "note": "污濁的金甲",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_40679",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40680,
+   "normalizedItemId": 40680,
+   "note": "污濁斗篷",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_40680",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40681,
+   "normalizedItemId": 40681,
+   "note": "污濁的鋼靴",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_40681",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40682,
+   "normalizedItemId": 40682,
+   "note": "污濁的腕甲",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_40682",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40683,
+   "normalizedItemId": 40683,
+   "note": "污濁的頭盔",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_40683",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40684,
+   "normalizedItemId": 40684,
+   "note": "污濁的弓",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_40684",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40718,
+   "normalizedItemId": 40718,
+   "note": "血石碎片",
+   "crystalCount": 1000,
+   "runtimeItemKey": "mat_desire_bloodstone",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40899,
+   "normalizedItemId": 40899,
+   "note": "鋼鐵原石",
+   "crystalCount": 2,
+   "runtimeItemKey": "l1j_item_40899",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40907,
+   "normalizedItemId": 40907,
+   "note": "西瑪戒指",
+   "crystalCount": 100000,
+   "runtimeItemKey": "l1j_item_40907",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40908,
+   "normalizedItemId": 40908,
+   "note": "歐林戒指",
+   "crystalCount": 100000,
+   "runtimeItemKey": "l1j_item_40908",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 40999,
+   "normalizedItemId": 40999,
+   "note": "黑暗妖精士兵的徽章",
+   "crystalCount": 2,
+   "runtimeItemKey": "l1j_item_40999",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 41038,
+   "normalizedItemId": 41038,
+   "note": "航海日誌第1頁",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_41038",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 41039,
+   "normalizedItemId": 41039,
+   "note": "航海日誌第2頁",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_41039",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 41040,
+   "normalizedItemId": 41040,
+   "note": "航海日誌第3頁",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_41040",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 41041,
+   "normalizedItemId": 41041,
+   "note": "航海日誌第4頁",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_41041",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 41042,
+   "normalizedItemId": 41042,
+   "note": "航海日誌第5頁",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_41042",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 41043,
+   "normalizedItemId": 41043,
+   "note": "航海日誌第6頁",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_41043",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 41044,
+   "normalizedItemId": 41044,
+   "note": "航海日誌第7頁",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_41044",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 41045,
+   "normalizedItemId": 41045,
+   "note": "航海日誌第8頁",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_41045",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 41046,
+   "normalizedItemId": 41046,
+   "note": "航海日誌第9頁",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_41046",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 41047,
+   "normalizedItemId": 41047,
+   "note": "航海日誌第10頁",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_41047",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 41066,
+   "normalizedItemId": 41066,
+   "note": "污濁的根",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_41066",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 41067,
+   "normalizedItemId": 41067,
+   "note": "污濁的樹枝",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_41067",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 41068,
+   "normalizedItemId": 41068,
+   "note": "污濁的皮",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_41068",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 41069,
+   "normalizedItemId": 41069,
+   "note": "污濁的鬃毛",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_41069",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 41070,
+   "normalizedItemId": 41070,
+   "note": "污濁的精靈羽翼",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_41070",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 41072,
+   "normalizedItemId": 41072,
+   "note": "銀燭台",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_41072",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 41074,
+   "normalizedItemId": 41074,
+   "note": "強盜的袋子",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_41074",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 41075,
+   "normalizedItemId": 41075,
+   "note": "污濁的頭髮",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_41075",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 41080,
+   "normalizedItemId": 41080,
+   "note": "精靈核晶",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_41080",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 41147,
+   "normalizedItemId": 41147,
+   "note": "技術書(堅固防護)",
+   "crystalCount": 1000,
+   "runtimeItemKey": "bk_solid_shield",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 41148,
+   "normalizedItemId": 41148,
+   "note": "技術書(反擊屏障)",
+   "crystalCount": 1000,
+   "runtimeItemKey": "bk_counter_barrier",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 41155,
+   "normalizedItemId": 41155,
+   "note": "火之鱗",
+   "crystalCount": 75,
+   "runtimeItemKey": "l1j_item_41155",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 41206,
+   "normalizedItemId": 41206,
+   "note": "少了刀刃的武器",
+   "crystalCount": 600,
+   "runtimeItemKey": "l1j_item_41206",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 41305,
+   "normalizedItemId": 41305,
+   "note": "破碎的耳環",
+   "crystalCount": 45,
+   "runtimeItemKey": "l1j_item_41305",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 41306,
+   "normalizedItemId": 41306,
+   "note": "破碎的戒指",
+   "crystalCount": 42,
+   "runtimeItemKey": "l1j_item_41306",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 41307,
+   "normalizedItemId": 41307,
+   "note": "破碎的項鏈",
+   "crystalCount": 45,
+   "runtimeItemKey": "l1j_item_41307",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 41342,
+   "normalizedItemId": 41342,
+   "note": "梅杜莎之血",
+   "crystalCount": 200,
+   "runtimeItemKey": "l1j_item_41342",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 41343,
+   "normalizedItemId": 41343,
+   "note": "法利昂的血痕",
+   "crystalCount": 2,
+   "runtimeItemKey": "l1j_item_41343",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 49169,
+   "normalizedItemId": 49169,
+   "note": "污濁妖魔之心",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_49169",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 49170,
+   "normalizedItemId": 49170,
+   "note": "污濁精靈核晶",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_49170",
+   "runtimeBlessing": "normal",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 100008,
+   "normalizedItemId": 8,
+   "note": "米索莉短劍",
+   "crystalCount": 10000,
+   "runtimeItemKey": "wpn_mithril_dagger",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 100009,
+   "normalizedItemId": 9,
+   "note": "奧裡哈魯根短劍",
+   "crystalCount": 10000,
+   "runtimeItemKey": "wpn_ori_dagger",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 100025,
+   "normalizedItemId": 25,
+   "note": "銀劍",
+   "crystalCount": 180,
+   "runtimeItemKey": "wpn_37",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 100027,
+   "normalizedItemId": 27,
+   "note": "彎刀",
+   "crystalCount": 100,
+   "runtimeItemKey": "wpn_scimitar",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 100041,
+   "normalizedItemId": 41,
+   "note": "武士刀",
+   "crystalCount": 2000,
+   "runtimeItemKey": "wpn_katana",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 100049,
+   "normalizedItemId": 49,
+   "note": "武官之刃",
+   "crystalCount": 4000,
+   "runtimeItemKey": "wpn_official_blade",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 100052,
+   "normalizedItemId": 52,
+   "note": "雙手劍",
+   "crystalCount": 1800,
+   "runtimeItemKey": "wpn_2hsword",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 100057,
+   "normalizedItemId": 57,
+   "note": "瑟魯基之劍",
+   "crystalCount": 3500,
+   "runtimeItemKey": "wpn_siruge",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 100064,
+   "normalizedItemId": 64,
+   "note": "巨劍",
+   "crystalCount": 8500,
+   "runtimeItemKey": "wpn_greatsword",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 100084,
+   "normalizedItemId": 84,
+   "note": "暗黑雙刀",
+   "crystalCount": 4000,
+   "runtimeItemKey": "wpn_dual_abyss",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 100095,
+   "normalizedItemId": 95,
+   "note": "槍",
+   "crystalCount": 6,
+   "runtimeItemKey": "wpn_17",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 100098,
+   "normalizedItemId": 98,
+   "note": "闊矛",
+   "crystalCount": 35,
+   "runtimeItemKey": "wpn_14",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 100102,
+   "normalizedItemId": 102,
+   "note": "露西錘",
+   "crystalCount": 900,
+   "runtimeItemKey": "wpn_18",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 100107,
+   "normalizedItemId": 107,
+   "note": "深紅長矛",
+   "crystalCount": 20000,
+   "runtimeItemKey": "wpn_crimson_spear",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 100132,
+   "normalizedItemId": 132,
+   "note": "神官魔杖",
+   "crystalCount": 10000,
+   "runtimeItemKey": "wpn_priest_wand",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 100143,
+   "normalizedItemId": 143,
+   "note": "戰斧",
+   "crystalCount": 70,
+   "runtimeItemKey": "wpn_battleaxe",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 100146,
+   "normalizedItemId": 146,
+   "note": "流星錘",
+   "crystalCount": 350,
+   "runtimeItemKey": "wpn_20",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 100151,
+   "normalizedItemId": 151,
+   "note": "惡魔斧頭",
+   "crystalCount": 20000,
+   "runtimeItemKey": "wpn_demon_axe",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 100164,
+   "normalizedItemId": 164,
+   "note": "暗黑鋼爪",
+   "crystalCount": 4500,
+   "runtimeItemKey": "wpn_claw_abyss",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 100169,
+   "normalizedItemId": 169,
+   "note": "獵人之弓",
+   "crystalCount": 500,
+   "runtimeItemKey": "wpn_32",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 100172,
+   "normalizedItemId": 172,
+   "note": "弓",
+   "crystalCount": 5,
+   "runtimeItemKey": "wpn_3",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 100212,
+   "normalizedItemId": 212,
+   "note": "海神三叉戟",
+   "crystalCount": 5000,
+   "runtimeItemKey": "l1j_item_212",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120011,
+   "normalizedItemId": 20011,
+   "note": "抗魔法頭盔",
+   "crystalCount": 1,
+   "runtimeItemKey": "hlm_mr",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120043,
+   "normalizedItemId": 20043,
+   "note": "鋼盔",
+   "crystalCount": 20,
+   "runtimeItemKey": "l1j_item_20043",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120056,
+   "normalizedItemId": 20056,
+   "note": "抗魔法斗篷",
+   "crystalCount": 20,
+   "runtimeItemKey": "clk_mr",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120101,
+   "normalizedItemId": 20101,
+   "note": "皮甲",
+   "crystalCount": 2500,
+   "runtimeItemKey": "arm_62",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120112,
+   "normalizedItemId": 20112,
+   "note": "曼波外套",
+   "crystalCount": 10000,
+   "runtimeItemKey": "amr_mambo",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120128,
+   "normalizedItemId": 20128,
+   "note": "水晶盔甲",
+   "crystalCount": 8000,
+   "runtimeItemKey": "arm_59",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120149,
+   "normalizedItemId": 20149,
+   "note": "青銅盔甲",
+   "crystalCount": 1600,
+   "runtimeItemKey": "arm_60",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120154,
+   "normalizedItemId": 20154,
+   "note": "金屬盔甲",
+   "crystalCount": 1200,
+   "runtimeItemKey": "amr_plate",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120182,
+   "normalizedItemId": 20182,
+   "note": "手套",
+   "crystalCount": 800,
+   "runtimeItemKey": "glv_glove",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120242,
+   "normalizedItemId": 20242,
+   "note": "大盾牌",
+   "crystalCount": 120,
+   "runtimeItemKey": "arm_105",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120244,
+   "normalizedItemId": 20244,
+   "note": "小型魅力項鏈",
+   "crystalCount": 1000,
+   "runtimeItemKey": "l1j_item_20244",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120245,
+   "normalizedItemId": 20245,
+   "note": "小型敏捷項鏈",
+   "crystalCount": 1000,
+   "runtimeItemKey": "l1j_item_20245",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120246,
+   "normalizedItemId": 20246,
+   "note": "小型力量項鏈",
+   "crystalCount": 1000,
+   "runtimeItemKey": "l1j_item_20246",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120247,
+   "normalizedItemId": 20247,
+   "note": "小型智力項鏈",
+   "crystalCount": 1000,
+   "runtimeItemKey": "l1j_item_20247",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120248,
+   "normalizedItemId": 20248,
+   "note": "小型精神項鏈",
+   "crystalCount": 1000,
+   "runtimeItemKey": "l1j_item_20248",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120249,
+   "normalizedItemId": 20249,
+   "note": "小型體質項鏈",
+   "crystalCount": 1000,
+   "runtimeItemKey": "l1j_item_20249",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120254,
+   "normalizedItemId": 20254,
+   "note": "魅力項鏈",
+   "crystalCount": 1000,
+   "runtimeItemKey": "amu_cha",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120264,
+   "normalizedItemId": 20264,
+   "note": "力量項鏈",
+   "crystalCount": 1000,
+   "runtimeItemKey": "amu_str",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120266,
+   "normalizedItemId": 20266,
+   "note": "智力項鏈",
+   "crystalCount": 1000,
+   "runtimeItemKey": "amu_int",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120267,
+   "normalizedItemId": 20267,
+   "note": "精神項鏈",
+   "crystalCount": 1000,
+   "runtimeItemKey": "acc_122",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120280,
+   "normalizedItemId": 20280,
+   "note": "滅魔戒指",
+   "crystalCount": 300,
+   "runtimeItemKey": "acc_demonbane",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120285,
+   "normalizedItemId": 20285,
+   "note": "水靈戒指",
+   "crystalCount": 250,
+   "runtimeItemKey": "rng_water",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120289,
+   "normalizedItemId": 20289,
+   "note": "深淵戒指",
+   "crystalCount": 10000,
+   "runtimeItemKey": "acc_abyss_ring",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120300,
+   "normalizedItemId": 20300,
+   "note": "地靈戒指",
+   "crystalCount": 250,
+   "runtimeItemKey": "rng_earth",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120302,
+   "normalizedItemId": 20302,
+   "note": "風靈戒指",
+   "crystalCount": 250,
+   "runtimeItemKey": "rng_wind",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120304,
+   "normalizedItemId": 20304,
+   "note": "火靈戒指",
+   "crystalCount": 250,
+   "runtimeItemKey": "rng_fire",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120306,
+   "normalizedItemId": 20306,
+   "note": "小型身體腰帶",
+   "crystalCount": 1500,
+   "runtimeItemKey": "l1j_item_20306",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120307,
+   "normalizedItemId": 20307,
+   "note": "小型靈魂腰帶",
+   "crystalCount": 1500,
+   "runtimeItemKey": "l1j_item_20307",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120308,
+   "normalizedItemId": 20308,
+   "note": "小型精神腰帶",
+   "crystalCount": 1500,
+   "runtimeItemKey": "l1j_item_20308",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120309,
+   "normalizedItemId": 20309,
+   "note": "光明身體腰帶",
+   "crystalCount": 1000,
+   "runtimeItemKey": "acc_135",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120310,
+   "normalizedItemId": 20310,
+   "note": "光明靈魂腰帶",
+   "crystalCount": 1000,
+   "runtimeItemKey": "acc_137",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120311,
+   "normalizedItemId": 20311,
+   "note": "光明精神腰帶",
+   "crystalCount": 1000,
+   "runtimeItemKey": "acc_136",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120312,
+   "normalizedItemId": 20312,
+   "note": "身體腰帶",
+   "crystalCount": 1600,
+   "runtimeItemKey": "blt_body",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120316,
+   "normalizedItemId": 20316,
+   "note": "靈魂腰帶",
+   "crystalCount": 1600,
+   "runtimeItemKey": "acc_131",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120319,
+   "normalizedItemId": 20319,
+   "note": "精神腰帶",
+   "crystalCount": 1600,
+   "runtimeItemKey": "acc_130",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 120321,
+   "normalizedItemId": 20321,
+   "note": "多羅皮帶",
+   "crystalCount": 3000,
+   "runtimeItemKey": "acc_132",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 140006,
+   "normalizedItemId": 40006,
+   "note": "創造怪物魔杖",
+   "crystalCount": 2,
+   "runtimeItemKey": "l1j_item_40006",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 140008,
+   "normalizedItemId": 140008,
+   "note": "變形魔杖",
+   "crystalCount": 2,
+   "runtimeItemKey": null,
+   "runtimeBlessing": "normal",
+   "runtimeResolved": false,
+   "unresolvedReason": "not present in the authoritative item catalog"
+  },
+  {
+   "itemId": 140010,
+   "normalizedItemId": 40010,
+   "note": "治癒藥水",
+   "crystalCount": 3,
+   "runtimeItemKey": "potion_heal",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 140011,
+   "normalizedItemId": 40011,
+   "note": "橙色藥水",
+   "crystalCount": 25,
+   "runtimeItemKey": "potion_strong",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 140012,
+   "normalizedItemId": 40012,
+   "note": "白色藥水",
+   "crystalCount": 37,
+   "runtimeItemKey": "potion_ult",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 140013,
+   "normalizedItemId": 40013,
+   "note": "自我加速藥水",
+   "crystalCount": 20,
+   "runtimeItemKey": "potion_haste",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 140014,
+   "normalizedItemId": 40014,
+   "note": "勇敢藥水",
+   "crystalCount": 80,
+   "runtimeItemKey": "potion_brave",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 140015,
+   "normalizedItemId": 40015,
+   "note": "加速魔力回復藥水",
+   "crystalCount": 100,
+   "runtimeItemKey": "l1j_item_40015",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 140016,
+   "normalizedItemId": 40016,
+   "note": "慎重藥水",
+   "crystalCount": 60,
+   "runtimeItemKey": "new_item_140",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 140018,
+   "normalizedItemId": 40018,
+   "note": "強化 自我加速藥水",
+   "crystalCount": 150,
+   "runtimeItemKey": "l1j_item_40018",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 140068,
+   "normalizedItemId": 40068,
+   "note": "精靈餅乾",
+   "crystalCount": 50,
+   "runtimeItemKey": "new_item_139",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 140074,
+   "normalizedItemId": 140074,
+   "note": "對盔甲施法的卷軸",
+   "crystalCount": 3100,
+   "runtimeItemKey": null,
+   "runtimeBlessing": "normal",
+   "runtimeResolved": false,
+   "unresolvedReason": "not present in the authoritative item catalog"
+  },
+  {
+   "itemId": 140087,
+   "normalizedItemId": 140087,
+   "note": "對武器施法的卷軸",
+   "crystalCount": 7500,
+   "runtimeItemKey": null,
+   "runtimeBlessing": "normal",
+   "runtimeResolved": false,
+   "unresolvedReason": "not present in the authoritative item catalog"
+  },
+  {
+   "itemId": 140088,
+   "normalizedItemId": 40088,
+   "note": "變形卷軸",
+   "crystalCount": 130,
+   "runtimeItemKey": "scroll_poly",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 140089,
+   "normalizedItemId": 40089,
+   "note": "復活卷軸",
+   "crystalCount": 100,
+   "runtimeItemKey": "scroll_revive",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 140100,
+   "normalizedItemId": 40100,
+   "note": "瞬間移動卷軸",
+   "crystalCount": 7,
+   "runtimeItemKey": "scroll_teleport",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 140119,
+   "normalizedItemId": 40119,
+   "note": "解除咀咒的卷軸",
+   "crystalCount": 10,
+   "runtimeItemKey": "new_item_uncurse",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 140329,
+   "normalizedItemId": 40329,
+   "note": "原住民圖騰",
+   "crystalCount": 10,
+   "runtimeItemKey": "l1j_item_40329",
+   "runtimeBlessing": "blessed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 200001,
+   "normalizedItemId": 1,
+   "note": "歐西斯匕首",
+   "crystalCount": 2,
+   "runtimeItemKey": "wpn_dagger1",
+   "runtimeBlessing": "cursed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 200002,
+   "normalizedItemId": 2,
+   "note": "骰子匕首",
+   "crystalCount": 2,
+   "runtimeItemKey": "wpn_33",
+   "runtimeBlessing": "cursed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 200027,
+   "normalizedItemId": 27,
+   "note": "彎刀",
+   "crystalCount": 100,
+   "runtimeItemKey": "wpn_scimitar",
+   "runtimeBlessing": "cursed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 200032,
+   "normalizedItemId": 32,
+   "note": "侵略者之劍",
+   "crystalCount": 250,
+   "runtimeItemKey": "wpn_invader",
+   "runtimeBlessing": "cursed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 200041,
+   "normalizedItemId": 41,
+   "note": "武士刀",
+   "crystalCount": 2000,
+   "runtimeItemKey": "wpn_katana",
+   "runtimeBlessing": "cursed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 200052,
+   "normalizedItemId": 52,
+   "note": "雙手劍",
+   "crystalCount": 1800,
+   "runtimeItemKey": "wpn_2hsword",
+   "runtimeBlessing": "cursed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 200171,
+   "normalizedItemId": 171,
+   "note": "歐西斯弓",
+   "crystalCount": 3,
+   "runtimeItemKey": "wpn_8",
+   "runtimeBlessing": "cursed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 220034,
+   "normalizedItemId": 20034,
+   "note": "歐西斯頭盔",
+   "crystalCount": 15,
+   "runtimeItemKey": "hlm_oasis",
+   "runtimeBlessing": "cursed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 220043,
+   "normalizedItemId": 20043,
+   "note": "鋼盔",
+   "crystalCount": 20,
+   "runtimeItemKey": "l1j_item_20043",
+   "runtimeBlessing": "cursed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 220056,
+   "normalizedItemId": 20056,
+   "note": "抗魔法斗篷",
+   "crystalCount": 20,
+   "runtimeItemKey": "clk_mr",
+   "runtimeBlessing": "cursed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 220101,
+   "normalizedItemId": 20101,
+   "note": "皮甲",
+   "crystalCount": 2500,
+   "runtimeItemKey": "arm_62",
+   "runtimeBlessing": "cursed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 220115,
+   "normalizedItemId": 20115,
+   "note": "籐甲",
+   "crystalCount": 2000,
+   "runtimeItemKey": "arm_61",
+   "runtimeBlessing": "cursed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 220122,
+   "normalizedItemId": 20122,
+   "note": "鱗甲",
+   "crystalCount": 200,
+   "runtimeItemKey": "arm_65",
+   "runtimeBlessing": "cursed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 220135,
+   "normalizedItemId": 20135,
+   "note": "歐西斯環甲",
+   "crystalCount": 20,
+   "runtimeItemKey": "amr_oasis",
+   "runtimeBlessing": "cursed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 220136,
+   "normalizedItemId": 20136,
+   "note": "歐西斯鏈甲",
+   "crystalCount": 80,
+   "runtimeItemKey": "arm_64",
+   "runtimeBlessing": "cursed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 220147,
+   "normalizedItemId": 20147,
+   "note": "銀釘皮甲",
+   "crystalCount": 30,
+   "runtimeItemKey": "arm_66",
+   "runtimeBlessing": "cursed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 220154,
+   "normalizedItemId": 20154,
+   "note": "金屬盔甲",
+   "crystalCount": 1200,
+   "runtimeItemKey": "amr_plate",
+   "runtimeBlessing": "cursed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 220213,
+   "normalizedItemId": 20213,
+   "note": "短統靴",
+   "crystalCount": 30,
+   "runtimeItemKey": "bot_short",
+   "runtimeBlessing": "cursed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 220293,
+   "normalizedItemId": 20293,
+   "note": "受詛咒的鑽石戒指",
+   "crystalCount": 2000,
+   "runtimeItemKey": "acc_curse_diamond_ring",
+   "runtimeBlessing": "cursed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 220294,
+   "normalizedItemId": 20294,
+   "note": "受詛咒的紅寶石戒指",
+   "crystalCount": 2000,
+   "runtimeItemKey": "acc_curse_ruby_ring",
+   "runtimeBlessing": "cursed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 220295,
+   "normalizedItemId": 20295,
+   "note": "受詛咒的藍寶石戒指",
+   "crystalCount": 2000,
+   "runtimeItemKey": "acc_curse_sapphire_ring",
+   "runtimeBlessing": "cursed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 220296,
+   "normalizedItemId": 20296,
+   "note": "受詛咒的綠寶石戒指",
+   "crystalCount": 2000,
+   "runtimeItemKey": "acc_curse_emerald_ring",
+   "runtimeBlessing": "cursed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 240010,
+   "normalizedItemId": 40010,
+   "note": "治癒藥水",
+   "crystalCount": 3,
+   "runtimeItemKey": "potion_heal",
+   "runtimeBlessing": "cursed",
+   "runtimeResolved": true
+  },
+  {
+   "itemId": 240074,
+   "normalizedItemId": 240074,
+   "note": "對盔甲施法的卷軸",
+   "crystalCount": 3100,
+   "runtimeItemKey": null,
+   "runtimeBlessing": "normal",
+   "runtimeResolved": false,
+   "unresolvedReason": "not present in the authoritative item catalog"
+  },
+  {
+   "itemId": 240087,
+   "normalizedItemId": 240087,
+   "note": "對武器施法的卷軸",
+   "crystalCount": 7500,
+   "runtimeItemKey": null,
+   "runtimeBlessing": "normal",
+   "runtimeResolved": false,
+   "unresolvedReason": "not present in the authoritative item catalog"
+  },
+  {
+   "itemId": 240100,
+   "normalizedItemId": 40100,
+   "note": "瞬間移動卷軸",
+   "crystalCount": 7,
+   "runtimeItemKey": "scroll_teleport",
+   "runtimeBlessing": "cursed",
+   "runtimeResolved": true
+  }
+ ]
+}

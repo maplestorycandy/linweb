@@ -1,0 +1,59 @@
+{
+ "meta": {
+  "gameVersion": "v3.8.5",
+  "note": "法術傷害 golden：在瀏覽器實機呼叫**真的 castSkillInner()**（不是自己重組公式）錄製，因此連『組合順序』也一起驗到。Math.random 由 _seededFloat(seed#i) 串流取代。",
+  "harness": "合成 mage 玩家（cls=mage lv60、無裝備/精通/遺物/套裝/buff、alignmentValue=32767 以通過 reqJustice）＋單一合成標靶；stub 掉 logCombat/renderMobs/updateUI/playSpellFx/saveGame 等副作用。",
+  "gotcha": "⚠️ player.cds 必須含 atkSk/healSk/purifySk 且為 0——castSkillInner 的攻擊分支條件是 `player.cds.atkSk <= 0`，undefined<=0 為 false → 整段被跳過、傷害 0、randUsed 0，而且**不會拋錯**。第一版就是這樣拿到 360 筆全 0 的假資料。"
+ },
+ "casters": {
+  "int12_sp0":  {"int": 12, "magicDmg": 0,  "magicCrit": 0,   "magicCritDmg": 50,  "extraMp": 2},
+  "int42_mid":  {"int": 42, "magicDmg": 8,  "magicCrit": 0,   "magicCritDmg": 50,  "extraMp": 10},
+  "int80_crit": {"int": 80, "magicDmg": 25, "magicCrit": 100, "magicCritDmg": 120, "extraMp": 25}
+ },
+ "targets": {
+  "plain":  {"lv": 50, "mr": 0,   "e": "none",  "resFire": 0,  "resWater": 0,  "resWind": 0, "resEarth": 0, "resNone": 0},
+  "mr150":  {"lv": 60, "mr": 150, "e": "none",  "resFire": 0,  "resWater": 0,  "resWind": 0, "resEarth": 0, "resNone": 0},
+  "earth":  {"lv": 40, "mr": 0,   "e": "earth", "resFire": 0,  "resWater": 0,  "resWind": 0, "resEarth": 0, "resNone": 0},
+  "resist": {"lv": 70, "mr": 80,  "e": "water", "resFire": 60, "resWater": 30, "resWind": 0, "resEarth": 0, "resNone": 0}
+ },
+ "skills": ["sk_lightarrow","sk_firearrow","sk_fireball","sk_ice_spike","sk_thunder","sk_earthquake","sk_ice_lance","sk_quake","sk_disintegrate","sk_blizzard"],
+ "seeds": ["m0","m1","m2"],
+ "outOfSlice": {
+  "sk_ice_lance": "附帶 freeze:200 狀態 → 多消耗 1 個亂數（randUsed 12 而非 11）。切片不含異常狀態，GDScript 端明確跳過並印出理由，不可默默略過。"
+ },
+ "cases": [
+  {"skill":"sk_lightarrow","caster":"int42_mid","target":"plain","seed":"m0","dmg":51,"randUsed":2},
+  {"skill":"sk_firearrow","caster":"int42_mid","target":"plain","seed":"m0","dmg":69,"randUsed":3},
+  {"skill":"sk_fireball","caster":"int42_mid","target":"plain","seed":"m0","dmg":89,"randUsed":6},
+  {"skill":"sk_ice_spike","caster":"int42_mid","target":"plain","seed":"m0","dmg":191,"randUsed":6},
+  {"skill":"sk_thunder","caster":"int42_mid","target":"plain","seed":"m0","dmg":206,"randUsed":6},
+  {"skill":"sk_earthquake","caster":"int42_mid","target":"plain","seed":"m0","dmg":210,"randUsed":6},
+  {"skill":"sk_quake","caster":"int42_mid","target":"plain","seed":"m0","dmg":285,"randUsed":9},
+  {"skill":"sk_disintegrate","caster":"int42_mid","target":"plain","seed":"m0","dmg":778,"randUsed":11},
+  {"skill":"sk_blizzard","caster":"int42_mid","target":"plain","seed":"m0","dmg":263,"randUsed":17},
+  {"skill":"sk_fireball","caster":"int12_sp0","target":"mr150","seed":"m1","dmg":25,"randUsed":6},
+  {"skill":"sk_fireball","caster":"int80_crit","target":"earth","seed":"m2","dmg":634,"randUsed":6},
+  {"skill":"sk_fireball","caster":"int42_mid","target":"resist","seed":"m0","dmg":23,"randUsed":6},
+  {"skill":"sk_earthquake","caster":"int80_crit","target":"earth","seed":"m1","dmg":1035,"randUsed":6},
+  {"skill":"sk_blizzard","caster":"int80_crit","target":"resist","seed":"m2","dmg":778,"randUsed":17}
+ ],
+ "sweep": {
+  "note": "10 技能 × 3 施法者 × 4 目標 × 3 種子 ＝ 360。digest 蓋全部（含 sk_ice_lance）；perSkill 是逐技能校驗和，digest 不符時可指出是哪個技能走偏。",
+  "n": 360,
+  "lineFormat": "skill|caster|target|seed|dmg|randUsed，以 \\n 串接",
+  "digest": "e2b8e98c",
+  "firstLine": "sk_lightarrow|int12_sp0|plain|m0|22|2",
+  "perSkill": {
+   "sk_lightarrow":   {"n": 36, "dmgSum": 3518,  "rand": 72},
+   "sk_firearrow":    {"n": 36, "dmgSum": 4821,  "rand": 108},
+   "sk_fireball":     {"n": 36, "dmgSum": 6096,  "rand": 216},
+   "sk_ice_spike":    {"n": 36, "dmgSum": 10842, "rand": 216},
+   "sk_thunder":      {"n": 36, "dmgSum": 11139, "rand": 216},
+   "sk_earthquake":   {"n": 36, "dmgSum": 12194, "rand": 216},
+   "sk_ice_lance":    {"n": 36, "dmgSum": 15768, "rand": 432},
+   "sk_quake":        {"n": 36, "dmgSum": 16327, "rand": 324},
+   "sk_disintegrate": {"n": 36, "dmgSum": 42337, "rand": 396},
+   "sk_blizzard":     {"n": 36, "dmgSum": 17134, "rand": 612}
+  }
+ }
+}

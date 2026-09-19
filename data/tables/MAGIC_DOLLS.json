@@ -1,0 +1,217 @@
+{
+ "__doc": "魔法娃娃（P0·用戶 2026-08-11）：main 唯一來源重建。15 組 item→npc→type＝MagicDoll.java；召喚=背包使用·消耗魔法結晶體×50·上限 1 隻·1800 秒；隨機袋 41247 池（總權重 100）＝TreasureBox.xml；阿羅卡配方（80078）＝ItemMaking.xml。能力照 L1DollInstance 的 type 鉤（含用戶核准修復：希爾黛絲/蛇女 64 秒 +40 HP·cap MaxHP）。重生：python tools/l1j-import/import_l1j_magic_dolls.py",
+ "crystal": {
+  "key": "l1j_item_41246",
+  "l1jItemId": 41246,
+  "count": 50
+ },
+ "maxDollCount": 1,
+ "durationSeconds": 1800,
+ "dolls": [
+  {
+   "key": "doll_肥肥",
+   "n": "魔法娃娃：肥肥",
+   "l1jItemId": 41248,
+   "npcId": 80106,
+   "type": 0,
+   "gfx": 6100
+  },
+  {
+   "key": "doll_小思克巴",
+   "n": "魔法娃娃：小思克巴",
+   "l1jItemId": 41249,
+   "npcId": 80107,
+   "type": 1,
+   "gfx": 5919
+  },
+  {
+   "key": "doll_野狼寶寶",
+   "n": "魔法娃娃：野狼寶寶",
+   "l1jItemId": 41250,
+   "npcId": 80108,
+   "type": 2,
+   "gfx": 6096
+  },
+  {
+   "key": "doll_長老",
+   "n": "魔法娃娃：長老",
+   "l1jItemId": 49037,
+   "npcId": 80129,
+   "type": 3,
+   "gfx": 6443
+  },
+  {
+   "key": "doll_奎斯坦修",
+   "n": "魔法娃娃：奎斯坦修",
+   "l1jItemId": 49038,
+   "npcId": 80130,
+   "type": 4,
+   "gfx": 6449
+  },
+  {
+   "key": "doll_石頭高崙",
+   "n": "魔法娃娃：石頭高崙",
+   "l1jItemId": 49039,
+   "npcId": 80131,
+   "type": 5,
+   "gfx": 6452
+  },
+  {
+   "key": "l1j_item_31001",
+   "n": "魔法娃娃：希爾黛絲",
+   "l1jItemId": 31001,
+   "npcId": 90001,
+   "type": 6,
+   "gfx": 6477
+  },
+  {
+   "key": "doll_雪怪",
+   "n": "魔法娃娃：雪怪",
+   "l1jItemId": 31002,
+   "npcId": 90002,
+   "type": 7,
+   "gfx": 6480
+  },
+  {
+   "key": "doll_蛇女",
+   "n": "魔法娃娃：蛇女",
+   "l1jItemId": 31003,
+   "npcId": 90003,
+   "type": 8,
+   "gfx": 6483
+  },
+  {
+   "key": "doll_亞力安",
+   "n": "魔法娃娃：亞力安",
+   "l1jItemId": 31004,
+   "npcId": 90004,
+   "type": 9,
+   "gfx": 7047
+  },
+  {
+   "key": "l1j_item_31005",
+   "n": "魔法娃娃：木人",
+   "l1jItemId": 31005,
+   "npcId": 90005,
+   "type": 10,
+   "gfx": 7050
+  },
+  {
+   "key": "doll_史巴托",
+   "n": "魔法娃娃：史巴托",
+   "l1jItemId": 31006,
+   "npcId": 90006,
+   "type": 11,
+   "gfx": 7257
+  },
+  {
+   "key": "doll_巫妖",
+   "n": "魔法娃娃：巫妖",
+   "l1jItemId": 31007,
+   "npcId": 90007,
+   "type": 12,
+   "gfx": 7053
+  },
+  {
+   "key": "l1j_item_31008",
+   "n": "鐵門公會 魔法娃娃：雪怪",
+   "l1jItemId": 31008,
+   "npcId": 90008,
+   "type": 13,
+   "gfx": 6480
+  },
+  {
+   "key": "doll_公主",
+   "n": "魔法娃娃：公主",
+   "l1jItemId": 31009,
+   "npcId": 90009,
+   "type": 14,
+   "gfx": 5933
+  }
+ ],
+ "bagPool": [
+  {
+   "key": "doll_肥肥",
+   "n": "魔法娃娃：肥肥",
+   "l1jItemId": 41248,
+   "count": 1,
+   "weight": 28
+  },
+  {
+   "key": "doll_小思克巴",
+   "n": "魔法娃娃：小思克巴",
+   "l1jItemId": 41249,
+   "count": 1,
+   "weight": 8
+  },
+  {
+   "key": "doll_野狼寶寶",
+   "n": "魔法娃娃：野狼寶寶",
+   "l1jItemId": 41250,
+   "count": 1,
+   "weight": 8
+  },
+  {
+   "key": "doll_長老",
+   "n": "魔法娃娃：長老",
+   "l1jItemId": 49037,
+   "count": 1,
+   "weight": 8
+  },
+  {
+   "key": "doll_奎斯坦修",
+   "n": "魔法娃娃：奎斯坦修",
+   "l1jItemId": 49038,
+   "count": 1,
+   "weight": 21
+  },
+  {
+   "key": "doll_石頭高崙",
+   "n": "魔法娃娃：石頭高崙",
+   "l1jItemId": 49039,
+   "count": 1,
+   "weight": 19
+  },
+  {
+   "key": "doll_亞力安",
+   "n": "魔法娃娃：亞力安",
+   "l1jItemId": 31004,
+   "count": 1,
+   "weight": 8
+  }
+ ],
+ "arkaRecipe": {
+  "npcId": 80078,
+  "output": {
+   "key": "doll_bag",
+   "l1jItemId": 41247,
+   "count": 1
+  },
+  "materials": [
+   {
+    "key": "l1j_item_41251",
+    "n": "骷髏聖盃",
+    "l1jItemId": 41251,
+    "count": 1
+   },
+   {
+    "key": "l1j_item_41252",
+    "n": "珍奇的烏龜",
+    "l1jItemId": 41252,
+    "count": 1
+   },
+   {
+    "key": "l1j_item_41253",
+    "n": "王宮料理師的調味料",
+    "l1jItemId": 41253,
+    "count": 1
+   },
+   {
+    "key": "l1j_item_41254",
+    "n": "勝利的徽章",
+    "l1jItemId": 41254,
+    "count": 1
+   }
+  ]
+ }
+}

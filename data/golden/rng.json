@@ -1,0 +1,338 @@
+{
+ "meta": {
+  "note": "由 tools/export-golden.js 從網頁版 js/00-data.js 原地抽出函式產生；Godot 移植必須逐筆命中",
+  "gameVersion": "v3.7.95",
+  "saveVersion": 2,
+  "saltLength": 51,
+  "saltHash": 1661544914
+ },
+ "seedHash": [
+  {
+   "in": "",
+   "utf16Len": 0,
+   "codepointLen": 0,
+   "out": 167010153
+  },
+  {
+   "in": "a",
+   "utf16Len": 1,
+   "codepointLen": 1,
+   "out": 519299066
+  },
+  {
+   "in": "abc",
+   "utf16Len": 3,
+   "codepointLen": 3,
+   "out": 1792905582
+  },
+  {
+   "in": "0123456789",
+   "utf16Len": 10,
+   "codepointLen": 10,
+   "out": 3278503389
+  },
+  {
+   "in": "es1a2b3c4d",
+   "utf16Len": 10,
+   "codepointLen": 10,
+   "out": 1175154614
+  },
+  {
+   "in": "騎士",
+   "utf16Len": 2,
+   "codepointLen": 2,
+   "out": 4233937015
+  },
+  {
+   "in": "被侵蝕的安塔瑞斯",
+   "utf16Len": 8,
+   "codepointLen": 8,
+   "out": 2933898285
+  },
+  {
+   "in": "火焰之靈魂(紅)",
+   "utf16Len": 8,
+   "codepointLen": 8,
+   "out": 3912394960
+  },
+  {
+   "in": "🐉",
+   "utf16Len": 2,
+   "codepointLen": 1,
+   "out": 2703553734
+  },
+  {
+   "in": "🐉龍騎士🔥",
+   "utf16Len": 7,
+   "codepointLen": 5,
+   "out": 3531055381
+  },
+  {
+   "in": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+   "utf16Len": 200,
+   "codepointLen": 200,
+   "out": 3766160329
+  },
+  {
+   "in": "x|loot|0|",
+   "utf16Len": 9,
+   "codepointLen": 9,
+   "out": 1017594672
+  },
+  {
+   "in": "\t\n\r ",
+   "utf16Len": 4,
+   "codepointLen": 4,
+   "out": 4213204743
+  },
+  {
+   "in": "ÀÉÎÕÜ",
+   "utf16Len": 5,
+   "codepointLen": 5,
+   "out": 1497782205
+  },
+  {
+   "in": "（全形）　空白",
+   "utf16Len": 7,
+   "codepointLen": 7,
+   "out": 2683638147
+  }
+ ],
+ "seededFloat": [
+  {
+   "in": "",
+   "out": 0.9757088038604707
+  },
+  {
+   "in": "a",
+   "out": 0.11000576918013394
+  },
+  {
+   "in": "abc",
+   "out": 0.8865935776848346
+  },
+  {
+   "in": "0123456789",
+   "out": 0.9777216361835599
+  },
+  {
+   "in": "es1a2b3c4d",
+   "out": 0.34346359712071717
+  },
+  {
+   "in": "騎士",
+   "out": 0.6391559184994549
+  },
+  {
+   "in": "被侵蝕的安塔瑞斯",
+   "out": 0.14491458423435688
+  },
+  {
+   "in": "火焰之靈魂(紅)",
+   "out": 0.39500873116776347
+  },
+  {
+   "in": "🐉",
+   "out": 0.08419445529580116
+  },
+  {
+   "in": "🐉龍騎士🔥",
+   "out": 0.6722326010931283
+  },
+  {
+   "in": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+   "out": 0.38876595930196345
+  },
+  {
+   "in": "x|loot|0|",
+   "out": 0.7806652204599231
+  },
+  {
+   "in": "\t\n\r ",
+   "out": 0.06659454014152288
+  },
+  {
+   "in": "ÀÉÎÕÜ",
+   "out": 0.28484754473902285
+  },
+  {
+   "in": "（全形）　空白",
+   "out": 0.8275307875592262
+  }
+ ],
+ "lootRng": [
+  {
+   "enSeed": "es1a2b3c4d",
+   "tags": [
+    "",
+    "tag1",
+    "tag2",
+    "",
+    "tag4",
+    "tag5",
+    "",
+    "tag7",
+    "tag8",
+    "",
+    "tag10",
+    "tag11"
+   ],
+   "out": [
+    0.700024587335065,
+    0.7140210941433907,
+    0.27176989638246596,
+    0.9314934744033962,
+    0.7571632349863648,
+    0.7708089640364051,
+    0.17126681772060692,
+    0.06884443364106119,
+    0.9380868966691196,
+    0.9790331949479878,
+    0.8597905323840678,
+    0.15084757911972702
+   ],
+   "finalSeq": 12
+  },
+  {
+   "enSeed": "🐉seed",
+   "tags": [
+    "",
+    "tag1",
+    "tag2",
+    "",
+    "tag4",
+    "tag5",
+    "",
+    "tag7",
+    "tag8",
+    "",
+    "tag10",
+    "tag11"
+   ],
+   "out": [
+    0.8225533664226532,
+    0.551377788418904,
+    0.2944182956125587,
+    0.9822855016682297,
+    0.8345384048298001,
+    0.7119449453894049,
+    0.14312757132574916,
+    0.40193170378915966,
+    0.39907213067635894,
+    0.10871484270319343,
+    0.31807060190476477,
+    0.17997676390223205
+   ],
+   "finalSeq": 12
+  },
+  {
+   "enSeed": "",
+   "tags": [
+    "",
+    "tag1",
+    "tag2",
+    "",
+    "tag4",
+    "tag5",
+    "",
+    "tag7",
+    "tag8",
+    "",
+    "tag10",
+    "tag11"
+   ],
+   "out": [
+    0.0011478494852781296,
+    0.7575809233821929,
+    0.8405177553649992,
+    0.31999033060856164,
+    0.7789053104352206,
+    0.3226463394239545,
+    0.6179382565896958,
+    0.2088703759945929,
+    0.793008298613131,
+    0.8833215348422527,
+    0.1253830143250525,
+    0.29482422210276127
+   ],
+   "finalSeq": 12
+  }
+ ],
+ "signSave": [
+  {
+   "in": "",
+   "sig": "d1f5s.1nknvc3.0",
+   "wrapped": "SIG1:d1f5s.1nknvc3.0:"
+  },
+  {
+   "in": "a",
+   "sig": "15lt4ys.1l1oia.1",
+   "wrapped": "SIG1:15lt4ys.1l1oia.1:a"
+  },
+  {
+   "in": "abc",
+   "sig": "1y6ykce.coy9kn.3",
+   "wrapped": "SIG1:1y6ykce.coy9kn.3:abc"
+  },
+  {
+   "in": "0123456789",
+   "sig": "7mb7ui.b66zw.a",
+   "wrapped": "SIG1:7mb7ui.b66zw.a:0123456789"
+  },
+  {
+   "in": "es1a2b3c4d",
+   "sig": "tsk77r.1p7v81m.a",
+   "wrapped": "SIG1:tsk77r.1p7v81m.a:es1a2b3c4d"
+  },
+  {
+   "in": "騎士",
+   "sig": "mf0h6l.q6ldyl.2",
+   "wrapped": "SIG1:mf0h6l.q6ldyl.2:騎士"
+  },
+  {
+   "in": "被侵蝕的安塔瑞斯",
+   "sig": "1ru4jov.a3a9xy.8",
+   "wrapped": "SIG1:1ru4jov.a3a9xy.8:被侵蝕的安塔瑞斯"
+  },
+  {
+   "in": "火焰之靈魂(紅)",
+   "sig": "fe77nb.smldtw.8",
+   "wrapped": "SIG1:fe77nb.smldtw.8:火焰之靈魂(紅)"
+  },
+  {
+   "in": "🐉",
+   "sig": "z5c88z.dveokk.2",
+   "wrapped": "SIG1:z5c88z.dveokk.2:🐉"
+  },
+  {
+   "in": "🐉龍騎士🔥",
+   "sig": "726bth.13uwqjs.7",
+   "wrapped": "SIG1:726bth.13uwqjs.7:🐉龍騎士🔥"
+  },
+  {
+   "in": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+   "sig": "1ec93oq.n5azm5.5k",
+   "wrapped": "SIG1:1ec93oq.n5azm5.5k:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  {
+   "in": "x|loot|0|",
+   "sig": "qmweny.1is0r7g.9",
+   "wrapped": "SIG1:qmweny.1is0r7g.9:x|loot|0|"
+  },
+  {
+   "in": "\t\n\r ",
+   "sig": "68r7ie.jvvjtn.4",
+   "wrapped": "SIG1:68r7ie.jvvjtn.4:\t\n\r "
+  },
+  {
+   "in": "ÀÉÎÕÜ",
+   "sig": "7pdyix.1wv79nf.5",
+   "wrapped": "SIG1:7pdyix.1wv79nf.5:ÀÉÎÕÜ"
+  },
+  {
+   "in": "（全形）　空白",
+   "sig": "oavso1.ukl8kr.7",
+   "wrapped": "SIG1:oavso1.ukl8kr.7:（全形）　空白"
+  }
+ ]
+}

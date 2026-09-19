@@ -1,0 +1,395 @@
+{
+ "__doc": [
+  "Canonical skill targeting and range data imported from the user CSV on 2026-08-01.",
+  "Distances are expressed in cells and converted through CombatRangeRules.CellWidth.",
+  "Relic-only internal trigger rows are intentionally excluded because relics were removed."
+ ],
+ "skills": {
+  "sk_firearrow": {
+   "targetMode": "single",
+   "castCells": 10,
+   "radiusCells": 0
+  },
+  "sk_lightarrow": {
+   "targetMode": "single",
+   "castCells": 10,
+   "radiusCells": 0
+  },
+  "sk_ice_lance": {
+   "targetMode": "single",
+   "castCells": 10,
+   "radiusCells": 0
+  },
+  "sk_icearrow": {
+   "targetMode": "single",
+   "castCells": 10,
+   "radiusCells": 0
+  },
+  "sk_ice_spike": {
+   "targetMode": "single",
+   "castCells": 10,
+   "radiusCells": 0
+  },
+  "sk_earthquake": {
+   "targetMode": "single",
+   "castCells": 9,
+   "radiusCells": 0
+  },
+  "sk_hell_fang": {
+   "targetMode": "single",
+   "castCells": 10,
+   "radiusCells": 0
+  },
+  "sk_windblade": {
+   "targetMode": "single",
+   "castCells": 10,
+   "radiusCells": 0
+  },
+  "sk_blaze": {
+   "targetMode": "single",
+   "castCells": 3.5,
+   "radiusCells": 0
+  },
+  "sk_thunder": {
+   "targetMode": "single",
+   "castCells": 6,
+   "radiusCells": 0
+  },
+  "sk_rock_prison": {
+   "targetMode": "target_area",
+   "castCells": 7,
+   "radiusCells": 2.5
+  },
+  "sk_meteor": {
+   "targetMode": "target_area",
+   "castCells": 10,
+   "radiusCells": 3
+  },
+  "sk_chill": {
+   "targetMode": "target_area",
+   "castCells": 6,
+   "radiusCells": 3
+  },
+  "sk_aurora": {
+   "targetMode": "target_area",
+   "castCells": 6,
+   "radiusCells": 3
+  },
+  "sk_thunder_storm": {
+   "targetMode": "target_area",
+   "castCells": 10,
+   "radiusCells": 3
+  },
+  "sk_fireball": {
+   "targetMode": "target_area",
+   "castCells": 6,
+   "radiusCells": 3
+  },
+  "sk_tornado": {
+   "targetMode": "self_area",
+   "castCells": 0,
+   "radiusCells": 4
+  },
+  "sk_fireball_burst": {
+   "targetMode": "target_area",
+   "castCells": 6,
+   "radiusCells": 3
+  },
+  "sk_fire_prison": {
+   "targetMode": "target_area",
+   "castCells": 8,
+   "radiusCells": 2
+  },
+  "sk_blizzard_storm": {
+   "targetMode": "self_area",
+   "castCells": 0,
+   "radiusCells": 10
+  },
+  "sk_earth_collapse": {
+   "targetMode": "target_area",
+   "castCells": 10,
+   "radiusCells": 3
+  },
+  "sk_fire_storm": {
+   "targetMode": "self_area",
+   "castCells": 0,
+   "radiusCells": 3
+  },
+  "sk_blizzard": {
+   "targetMode": "target_area",
+   "castCells": 10,
+   "radiusCells": 3
+  },
+  "sk_elf_groundtrap": {
+   "targetMode": "target_area",
+   "castCells": 10,
+   "radiusCells": 3
+  },
+  "sk_sleep_mist": {
+   "targetMode": "target_area",
+   "castCells": 10,
+   "radiusCells": 3
+  },
+  "sk_warrior_roar": {
+   "targetMode": "self_area",
+   "castCells": 0,
+   "radiusCells": 4
+  },
+  "sk_dragon_lavaspit": {
+   "targetMode": "single",
+   "castCells": 5,
+   "radiusCells": 0
+  },
+  "sk_dragon_deathlightning": {
+   "targetMode": "single",
+   "castCells": 5,
+   "radiusCells": 0
+  },
+  "sk_quake": {
+   "targetMode": "self_area",
+   "castCells": 0,
+   "radiusCells": 3
+  },
+  "sk_darkwave": {
+   "targetMode": "self_area",
+   "castCells": 0,
+   "radiusCells": 3
+  },
+  "sk_elf_lifebless": {
+   "targetMode": "party_all",
+   "castCells": 0
+  },
+  "sk_regen": {
+   "targetMode": "party_all",
+   "castCells": 0
+  },
+  "sk_heal_mid": {
+   "targetMode": "single",
+   "castCells": 10,
+   "radiusCells": 0
+  },
+  "sk_elf_lifespring": {
+   "targetMode": "single",
+   "castCells": 10,
+   "radiusCells": 0
+  },
+  "sk_full_heal": {
+   "targetMode": "single",
+   "castCells": 10,
+   "radiusCells": 0
+  },
+  "sk_heal1": {
+   "targetMode": "single",
+   "castCells": 10,
+   "radiusCells": 0
+  },
+  "sk_heal2": {
+   "targetMode": "single",
+   "castCells": 10,
+   "radiusCells": 0
+  },
+  "sk_holy_light": {
+   "targetMode": "single",
+   "castCells": 15,
+   "radiusCells": 0
+  },
+  "sk_antidote": {
+   "targetMode": "single",
+   "castCells": 15,
+   "radiusCells": 0
+  },
+  "sk_cancel": {
+   "targetMode": "single",
+   "castCells": 15,
+   "radiusCells": 0
+  },
+  "sk_illu_fantasy": {
+   "targetMode": "single",
+   "castCells": 4,
+   "radiusCells": 0
+  },
+  "sk_illu_mindbreak": {
+   "targetMode": "single",
+   "castCells": 5,
+   "radiusCells": 0
+  },
+  "sk_mummy_curse": {
+   "targetMode": "single",
+   "castCells": 10,
+   "radiusCells": 0
+  },
+  "sk_elf_muddywater": {
+   "targetMode": "single",
+   "castCells": 10,
+   "radiusCells": 0
+  },
+  "sk_vampire": {
+   "targetMode": "single",
+   "castCells": 4,
+   "radiusCells": 0
+  },
+  "sk_disintegrate": {
+   "targetMode": "single",
+   "castCells": 10,
+   "radiusCells": 0
+  },
+  "sk_dragon_lavabolt": {
+   "targetMode": "single",
+   "castCells": 5,
+   "radiusCells": 0
+  },
+  "sk_elf_seal": {
+   "targetMode": "self_area",
+   "castCells": 0,
+   "radiusCells": 3
+  },
+  "sk_poison_curse": {
+   "targetMode": "single",
+   "castCells": 3,
+   "radiusCells": 0
+  },
+  "sk_holy_lightning": {
+   "targetMode": "single",
+   "castCells": 10,
+   "radiusCells": 0
+  },
+  "sk_weaken": {
+   "targetMode": "single",
+   "castCells": 3,
+   "radiusCells": 0
+  },
+  "sk_illu_panic": {
+   "targetMode": "single",
+   "castCells": 5,
+   "radiusCells": 0
+  },
+  "sk_disease": {
+   "targetMode": "single",
+   "castCells": 3,
+   "radiusCells": 0
+  },
+  "sk_dark_armorbreak": {
+   "targetMode": "single",
+   "castCells": 1,
+   "radiusCells": 0
+  },
+  "sk_undead_bane": {
+   "targetMode": "single",
+   "castCells": 10,
+   "radiusCells": 0
+  },
+  "sk_illu_confuse": {
+   "targetMode": "single",
+   "castCells": 4,
+   "radiusCells": 0
+  },
+  "sk_frost_spike": {
+   "targetMode": "single",
+   "castCells": 8,
+   "radiusCells": 0
+  },
+  "sk_cold_shiver": {
+   "targetMode": "single",
+   "castCells": 3,
+   "radiusCells": 0
+  },
+  "sk_revenge_spike": {
+   "targetMode": "single",
+   "castCells": 10,
+   "radiusCells": 0
+  },
+  "sk_demon_kiss": {
+   "targetMode": "single",
+   "castCells": 10,
+   "radiusCells": 0
+  },
+  "sk_dark_shadow": {
+   "targetMode": "single",
+   "castCells": 3,
+   "radiusCells": 0
+  },
+  "sk_slow": {
+   "targetMode": "single",
+   "castCells": 10,
+   "radiusCells": 0
+  },
+  "sk_dark_blind": {
+   "targetMode": "single",
+   "castCells": 3,
+   "radiusCells": 0
+  },
+  "sk_break": {
+   "targetMode": "single",
+   "castCells": 4,
+   "radiusCells": 0
+  },
+  "sk_elf_release": {
+   "targetMode": "single",
+   "castCells": 10,
+   "radiusCells": 0
+  },
+  "sk_seal": {
+   "targetMode": "single",
+   "castCells": 10,
+   "radiusCells": 0
+  },
+  "sk_elf_magicerase": {
+   "targetMode": "single",
+   "castCells": 10,
+   "radiusCells": 0
+  },
+  "sk_elf_triple": {
+   "targetMode": "single",
+   "castCells": 10,
+   "radiusCells": 0
+  },
+  "sk_illu_crush": {
+   "targetMode": "single",
+   "castCells": 10,
+   "radiusCells": 0
+  },
+  "sk_dragon_slaughter": {
+   "targetMode": "single",
+   "castCells": 1,
+   "radiusCells": 0
+  },
+  "sk_dark_crit": {
+   "targetMode": "single",
+   "castCells": 1,
+   "radiusCells": 0
+  },
+  "sk_shock_stun": {
+   "targetMode": "single",
+   "castCells": 1,
+   "radiusCells": 0
+  },
+  "sk_illu_skullbreak": {
+   "targetMode": "single",
+   "castCells": 1,
+   "radiusCells": 0
+  },
+  "sk_dragon_terror": {
+   "targetMode": "single",
+   "castCells": 5,
+   "radiusCells": 0
+  },
+  "sk_dragon_guardbreak": {
+   "targetMode": "single",
+   "castCells": 5,
+   "radiusCells": 0
+  },
+  "sk_dragon_reaper": {
+   "targetMode": "single",
+   "castCells": 5,
+   "radiusCells": 0
+  },
+  "sk_royal_callally": {
+   "targetMode": "party_all"
+  },
+  "sk_warrior_throwaxe": {
+   "targetMode": "single",
+   "castCells": 10,
+   "radiusCells": 0
+  }
+ }
+}

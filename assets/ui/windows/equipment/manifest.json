@@ -1,0 +1,27 @@
+{
+  "authority": "user-authored character equipment window",
+  "source": "Fable 5 web custom",
+  "sourceDirectory": "C:/Users/User/Downloads/Fable 5/public/assets/login/EQ UI",
+  "width": 183,
+  "height": 408,
+  "singlePage": true,
+  "files": {
+    "女幻術.png": { "bytes": 114103, "sha256": "43c9397c071ecfba85fa15e8ccef03129e0b59dc5948b7b9ec10103856aa0ba0" },
+    "女王族.png": { "bytes": 112560, "sha256": "cddf454c50c4d76fa4df19cfc798eb7024f919e18a280b757b80a74d3d14fbbb" },
+    "女妖精.png": { "bytes": 112958, "sha256": "46c4ecd7af9773afdba77f785e7828132a563f7efaf0d8ef71be6daeeff3d024" },
+    "女法師.png": { "bytes": 113936, "sha256": "71939f9049587a9c67665df203575555999061f027eebe0fec46f916415717f6" },
+    "女黑妖.png": { "bytes": 114920, "sha256": "b34c1aaf4d8ec7f3c665d49714d5c9180eafeacafb36892b75ff2f1853869974" },
+    "女戰士.png": { "bytes": 117314, "sha256": "57f8192e0032625e05a3903abeae4b80d4987873dcd0a3f4c6baad5f3fab8bda" },
+    "女龍騎.png": { "bytes": 114273, "sha256": "af023283404660a32cad5909196dd9f1e3c81eef0d9dc50fed2ec8d519e02c25" },
+    "女騎士.png": { "bytes": 115589, "sha256": "792f19d09bd0711ba77669cfdda1f436a7d4ed5ff0f5a7feded95b45f4ef2e0e" },
+    "男幻術.png": { "bytes": 114867, "sha256": "4972d1b7dd87c17f643764854e41f6a2abc3319583903bb633fad0574c019668" },
+    "男王族.png": { "bytes": 113960, "sha256": "447f3ea69c735ca872a5b9179d94c124c10a9fd0ffddbbc1507455fa3b6532e3" },
+    "男妖精.png": { "bytes": 113445, "sha256": "75351cc212d18752bcf38352dc1113f836e3a898d95fec4d03720eaf55b479c8" },
+    "男法師.png": { "bytes": 113552, "sha256": "79e79c89dff126d6621711a8010c002e57e8a1ea4f508bbb3a70c60e81609b5c" },
+    "男黑妖.png": { "bytes": 115691, "sha256": "0f1fa345038023d20068317d4fec11cef03520582bd02d7b9c84211ab9eb31aa" },
+    "男戰士.png": { "bytes": 116400, "sha256": "8e7b66f9894798b7e3005b53fb229f300508d7f8c0a50c38b621bfb0e610ed5a" },
+    "男龍騎.png": { "bytes": 115394, "sha256": "557f6a49681d78f381509bd1caaf8f5cd4f0f96124e46b6e5dc6f455660fe4de" },
+    "男騎士.png": { "bytes": 116420, "sha256": "c2f1bf50968ae3ae47e375588d598c53d679a518bf5b9be47341ff69c26c4bae" },
+    "原圖.png": { "bytes": 113287, "sha256": "d94a34dc339cc19da8ac6d9da476bb546941218ff063f990541c712c96199a1a" }
+  }
+}

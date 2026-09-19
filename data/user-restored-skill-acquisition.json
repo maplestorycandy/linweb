@@ -1,0 +1,41 @@
+{
+ "__doc": [
+  "使用者 2026-08-19 裁決：恢復魔法書(寒冰尖刺)與記憶水晶(降低負重)原先的怪物掉落及既有技能效果。",
+  "這兩條取得鏈不是現行 L1J-TW main 或 Web 掉落；資料獨立保存，不冒充上游來源。",
+  "掉落機率沿用本專案退役前規格；舊中文怪名已逐筆解析為目前唯一允許的 canonical L1J npcid。",
+  "技能本體仍由 DB.skills／content-overlay.json 與 C# 規則管理；本檔只補學習道具、重量及掉落。"
+ ],
+ "books": {
+  "bk_frost_spike": {
+   "type": "skillbk",
+   "n": "魔法書(寒冰尖刺)",
+   "p": 2800,
+   "sk": "sk_frost_spike",
+   "gachaWeight": 0,
+   "d": "記載著寒冰尖刺術式的魔法書，研讀後可學會寒冰尖刺。"
+  },
+  "mem_loaddown": {
+   "type": "skillbk",
+   "n": "記憶水晶(降低負重)",
+   "p": 43200,
+   "sk": "sk_illu_loaddown",
+   "gachaWeight": 10,
+   "d": "封存降低負重幻術的記憶水晶，研讀後可學會降低負重。"
+  }
+ },
+ "itemWeights": {
+  "魔法書(寒冰尖刺)": 7,
+  "記憶水晶(降低負重)": 7
+ },
+ "drops": [
+  { "item": "bk_frost_spike", "chancePercent": 0.001, "npcids": [45294], "historicalMonster": "雪怪" },
+  { "item": "bk_frost_spike", "chancePercent": 0.0001, "npcids": [45155], "historicalMonster": "穴居人" },
+  { "item": "bk_frost_spike", "chancePercent": 0.001, "npcids": [45297], "historicalMonster": "地底蟹人" },
+  { "item": "bk_frost_spike", "chancePercent": 0.01, "npcids": [45654], "historicalMonster": "冷酷的艾莉絲" },
+  { "item": "bk_frost_spike", "chancePercent": 0.1, "npcids": [45609], "historicalMonster": "冰之女王" },
+  { "item": "mem_loaddown", "chancePercent": 0.1, "npcids": [45409], "historicalMonster": "魔狼" },
+  { "item": "mem_loaddown", "chancePercent": 0.1, "npcids": [45471], "historicalMonster": "恐怖的地獄犬" },
+  { "item": "mem_loaddown", "chancePercent": 1.0, "npcids": [45529], "historicalMonster": "飛龍" },
+  { "item": "mem_loaddown", "chancePercent": 10.0, "npcids": [81163], "historicalMonster": "吉爾塔斯" }
+ ]
+}

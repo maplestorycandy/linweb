@@ -1,0 +1,1 @@
+{"name":"door_446","group":"anim","trimmed":true,"flattenedShadows":false,"atlas":{"w":55,"h":68,"pad":1,"format":"png8","colors":84},"src":{"files":2,"contentHash":"2618db6a939c4ff4923e617afe3900f9","bytes":2908},"frames":{"frame":[{"x":0,"y":0,"w":23,"h":67,"dx":25,"dy":0,"cw":48,"ch":67},{"x":24,"y":0,"w":30,"h":62,"dx":0,"dy":1,"cw":48,"ch":67}]}}

@@ -1,0 +1,978 @@
+{
+ "schemaVersion": 1,
+ "source": "L1j-TW-main/db/InnoDB_TW/npcchat.sql",
+ "textResolution": {
+  "mode": "clientDescTable",
+  "source": "C:/Users/User/Downloads/desc-c.tbl",
+  "encoding": "cp950",
+  "sha256": "500d726d55fa8c85b60fa9f5df344a95316cb657ee8c1cd42732413c59a72352",
+  "resolvedTokens": 42,
+  "unresolvedTokens": 0
+ },
+ "textByToken": {
+  "$275": "這裡就是 '說話之島'嗎",
+  "$279": "閉嘴。以你的身分怎麼可以質問所下的命令。",
+  "$281": "...那，我們先巡視一下島的情況吧。記住，除非必要不許隨便殺人。",
+  "$285": "甘特和領主的關係並不是處的很好，為什麼你覺得他會協助我們？",
+  "$287": "我難道沒有告訴你們說話小心一點？我保證，殺害無辜的人將會遭受到更大的報復。",
+  "$302": "你或許打敗了我，但是我已經通知領主這個島上有背叛者。新的遠征軍很快就會到來。",
+  "$339": "歐林，你這背叛者！你躲在哪?",
+  "$340": "歐林，你不可能躲得過我們！",
+  "$341": "出來並向偉大的魔法師乞求饒你的狗命吧！",
+  "$342": "他是寬容之神…也許會原諒你，趕快出來啊！",
+  "$825": "愚蠢的人類！將我關在這裡也無法控制我的！",
+  "$993": "殺死打擾龍休息的入侵者！",
+  "$994": "是食物！食物！",
+  "$995": "一旦進來此峽谷，還想活回去?哈哈哈！…",
+  "$3603": "寶物都是我的! 任何人不准動手...",
+  "$3888": "呃喝...有敵軍攻擊! 快守住拉斯塔巴德!",
+  "$3892": "雖然我闇黑劍士被擊倒，但你絕對不是魔獸軍王的對手!",
+  "$3895": "喀呃喝...擁有這種實力，你勉強可以當作法令軍團的對手了!",
+  "$3900": "呼呼...拉斯塔巴德魔獸軍團真的被消滅了嗎?",
+  "$3901": "我的飛龍啊...快阻擋他們前進!",
+  "$3903": "魔法研究室的門被開啟了，入侵者抵達前趕快抵擋!",
+  "$3908": "真不甘心...沒想到我們法令軍團的力量僅只於此...",
+  "$3912": "法令軍團竟被擊倒...怎麼可能!!",
+  "$3917": "厲害！算是夠像樣的勇士…但是有冥法軍王‧海露拜在，你絕對是無法打贏得了的。",
+  "$3923": "哈哈哈...那裡已被結界阻檔起來，黑暗將會再度復活的!!",
+  "$3930": "什麼是劍？回答我什麼是劍？我無法相信...無法相信...好快的劍!",
+  "$3938": "背對暗殺軍王‧史雷佛的下場就是死...",
+  "$3939": "我竟然死在這裡...",
+  "$3940": "呃...竟然贏過我這個當今最厲害的刺客，難道你是酷拉皮卡?...我想我血流太多了應該是布魯迪卡...?",
+  "$3943": "拉拉嗚...寶物...拜託",
+  "$4030": "寶...物...我的...卡蜜...",
+  "$4625": "格蘭肯啊！請賜給他們無盡的恐怖的吧！",
+  "$4626": "不可能！不可能的！拉斯塔巴德不會這麼容易就倒下去的！嗚嗚啊啊啊！",
+  "$5014": "哈哈哈！剛好很無聊來熱身一下好了？",
+  "$5016": "你又是甚麼東西！為什麼讓我困擾？",
+  "$5165": "哇...哇...終於...可以從血的咒詛...中逃出來了...",
+  "$5166": "一...定...要...阻...擋...法...利...昂...的...陰...謀...才...行...啊...",
+  "$5167": "伊娃的氣息變弱了...",
+  "$5169": "這是你自己送上門來的...呼呼呼...我已經很久沒吃過這麼好的了?...呼呼呼...",
+  "$5170": "這裡怎麼會有這些蟲...",
+  "$5325": "這些沒大沒小的傢伙! 就憑你們想要抓到我!",
+  "$5327": "哼哼! 我...我的收藏品..."
+ },
+ "counts": {
+  "rows": 38,
+  "npcIds": 35,
+  "chatTokens": 42,
+  "chatLines": 42,
+  "timings": {
+   "appearance": 12,
+   "death": 25,
+   "hide": 1,
+   "gameTime": 0
+  },
+  "repeatRows": 6,
+  "shoutRows": 11,
+  "worldChatRows": 0,
+  "spawnBackedRows": 32
+ },
+ "rows": [
+  {
+   "npcId": 45473,
+   "mobKey": "l1j_45473",
+   "timing": 0,
+   "timingName": "appearance",
+   "note": "巴土瑟(出現時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$339"
+   ],
+   "chatIntervalMs": 0,
+   "shout": true,
+   "worldChat": false,
+   "repeat": true,
+   "repeatIntervalMs": 20000,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 0,
+    "slots": 0,
+    "mapKeys": []
+   }
+  },
+  {
+   "npcId": 45488,
+   "mobKey": "l1j_45488",
+   "timing": 0,
+   "timingName": "appearance",
+   "note": "卡士伯(出現時)",
+   "startDelayMs": 5000,
+   "chatTokens": [
+    "$340"
+   ],
+   "chatIntervalMs": 0,
+   "shout": true,
+   "worldChat": false,
+   "repeat": true,
+   "repeatIntervalMs": 20000,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 1,
+    "slots": 1,
+    "mapKeys": [
+     "zone_08"
+    ]
+   }
+  },
+  {
+   "npcId": 45497,
+   "mobKey": "l1j_45497",
+   "timing": 0,
+   "timingName": "appearance",
+   "note": "馬庫爾(出現時)",
+   "startDelayMs": 10000,
+   "chatTokens": [
+    "$341"
+   ],
+   "chatIntervalMs": 0,
+   "shout": true,
+   "worldChat": false,
+   "repeat": true,
+   "repeatIntervalMs": 20000,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 0,
+    "slots": 0,
+    "mapKeys": []
+   }
+  },
+  {
+   "npcId": 45464,
+   "mobKey": "l1j_45464",
+   "timing": 0,
+   "timingName": "appearance",
+   "note": "西瑪(出現時)",
+   "startDelayMs": 15000,
+   "chatTokens": [
+    "$342"
+   ],
+   "chatIntervalMs": 0,
+   "shout": true,
+   "worldChat": false,
+   "repeat": true,
+   "repeatIntervalMs": 20000,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 0,
+    "slots": 0,
+    "mapKeys": []
+   }
+  },
+  {
+   "npcId": 45545,
+   "mobKey": "l1j_45545",
+   "timing": 0,
+   "timingName": "appearance",
+   "note": "黑長者(出現時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$993"
+   ],
+   "chatIntervalMs": 0,
+   "shout": true,
+   "worldChat": false,
+   "repeat": true,
+   "repeatIntervalMs": 10000,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 2,
+    "slots": 2,
+    "mapKeys": [
+     "mainland_south"
+    ]
+   }
+  },
+  {
+   "npcId": 45545,
+   "mobKey": "l1j_45545",
+   "timing": 1,
+   "timingName": "death",
+   "note": "黑長者(死亡時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$995"
+   ],
+   "chatIntervalMs": 0,
+   "shout": false,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 2,
+    "slots": 2,
+    "mapKeys": [
+     "mainland_south"
+    ]
+   }
+  },
+  {
+   "npcId": 45600,
+   "mobKey": "l1j_45600",
+   "timing": 0,
+   "timingName": "appearance",
+   "note": "克特(出現時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$275",
+    "$279",
+    "$281",
+    "$285",
+    "$287"
+   ],
+   "chatIntervalMs": 5000,
+   "shout": false,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 1,
+    "slots": 1,
+    "mapKeys": [
+     "talking_island"
+    ]
+   }
+  },
+  {
+   "npcId": 45600,
+   "mobKey": "l1j_45600",
+   "timing": 1,
+   "timingName": "death",
+   "note": "克特(死亡時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$302"
+   ],
+   "chatIntervalMs": 0,
+   "shout": false,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 1,
+    "slots": 1,
+    "mapKeys": [
+     "talking_island"
+    ]
+   }
+  },
+  {
+   "npcId": 45264,
+   "mobKey": "l1j_45264",
+   "timing": 2,
+   "timingName": "hide",
+   "note": "哈維(從天空下來的時候)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$994"
+   ],
+   "chatIntervalMs": 0,
+   "shout": false,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 30,
+    "slots": 15,
+    "mapKeys": [
+     "mainland_south"
+    ]
+   }
+  },
+  {
+   "npcId": 45573,
+   "mobKey": "l1j_45573",
+   "timing": 0,
+   "timingName": "appearance",
+   "note": "巴風特(出現時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$825"
+   ],
+   "chatIntervalMs": 0,
+   "shout": true,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 1,
+    "slots": 1,
+    "mapKeys": [
+     "zone_14"
+    ]
+   }
+  },
+  {
+   "npcId": 45931,
+   "mobKey": "l1j_45931",
+   "timing": 1,
+   "timingName": "death",
+   "note": "水之精靈(HC)(死亡時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$5167"
+   ],
+   "chatIntervalMs": 0,
+   "shout": false,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 11,
+    "slots": 11,
+    "mapKeys": [
+     "eva_kingdom"
+    ]
+   }
+  },
+  {
+   "npcId": 45935,
+   "mobKey": "l1j_45935",
+   "timing": 0,
+   "timingName": "appearance",
+   "note": "受詛咒的梅杜莎(HC)(出現時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$5169"
+   ],
+   "chatIntervalMs": 0,
+   "shout": false,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 10000,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 1,
+    "slots": 1,
+    "mapKeys": [
+     "zone_35"
+    ]
+   }
+  },
+  {
+   "npcId": 45941,
+   "mobKey": "l1j_45941",
+   "timing": 1,
+   "timingName": "death",
+   "note": "受詛咒的巫女莎爾(HC)(死亡時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$5166"
+   ],
+   "chatIntervalMs": 0,
+   "shout": true,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 1,
+    "slots": 1,
+    "mapKeys": [
+     "eva_kingdom"
+    ]
+   }
+  },
+  {
+   "npcId": 45942,
+   "mobKey": "l1j_45942",
+   "timing": 0,
+   "timingName": "appearance",
+   "note": "受詛咒的水精靈王(HC)(出現時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$5170"
+   ],
+   "chatIntervalMs": 0,
+   "shout": true,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 10000,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 1,
+    "slots": 1,
+    "mapKeys": [
+     "zone_36"
+    ]
+   }
+  },
+  {
+   "npcId": 45943,
+   "mobKey": "l1j_45943",
+   "timing": 1,
+   "timingName": "death",
+   "note": "卡普(HC)(死亡時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$5165"
+   ],
+   "chatIntervalMs": 0,
+   "shout": false,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 1,
+    "slots": 2,
+    "mapKeys": [
+     "eva_kingdom"
+    ]
+   }
+  },
+  {
+   "npcId": 46083,
+   "mobKey": "l1j_46083",
+   "timing": 0,
+   "timingName": "appearance",
+   "note": "哨兵(小惡魔)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$5016"
+   ],
+   "chatIntervalMs": 0,
+   "shout": true,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 0,
+    "slots": 0,
+    "mapKeys": []
+   }
+  },
+  {
+   "npcId": 46098,
+   "mobKey": "l1j_46098",
+   "timing": 0,
+   "timingName": "appearance",
+   "note": "哨兵(司祭　槍)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$5014"
+   ],
+   "chatIntervalMs": 0,
+   "shout": true,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 1,
+    "slots": 1,
+    "mapKeys": [
+     "l1j_map_777"
+    ]
+   }
+  },
+  {
+   "npcId": 45577,
+   "mobKey": "l1j_45577",
+   "timing": 1,
+   "timingName": "death",
+   "note": "突擊旅長．闇黑劍士(死亡時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$3892"
+   ],
+   "chatIntervalMs": 0,
+   "shout": false,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 1,
+    "slots": 1,
+    "mapKeys": [
+     "rastabad_1f_assault_training"
+    ]
+   }
+  },
+  {
+   "npcId": 45607,
+   "mobKey": "l1j_45607",
+   "timing": 1,
+   "timingName": "death",
+   "note": "魔獸團長．凱巴勒(死亡時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$3900"
+   ],
+   "chatIntervalMs": 0,
+   "shout": false,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 1,
+    "slots": 1,
+    "mapKeys": [
+     "rastabad_beast"
+    ]
+   }
+  },
+  {
+   "npcId": 45863,
+   "mobKey": "l1j_45863",
+   "timing": 1,
+   "timingName": "death",
+   "note": "法令軍王．蕾雅(死亡時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$3908"
+   ],
+   "chatIntervalMs": 0,
+   "shout": false,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 1,
+    "slots": 1,
+    "mapKeys": [
+     "law_king_room"
+    ]
+   }
+  },
+  {
+   "npcId": 45676,
+   "mobKey": "l1j_45676",
+   "timing": 1,
+   "timingName": "death",
+   "note": "冥法軍王．海露拜(死亡時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$3923"
+   ],
+   "chatIntervalMs": 0,
+   "shout": false,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 1,
+    "slots": 1,
+    "mapKeys": [
+     "necro_king_room"
+    ]
+   }
+  },
+  {
+   "npcId": 45648,
+   "mobKey": "l1j_45648",
+   "timing": 1,
+   "timingName": "death",
+   "note": "暗殺軍王．史雷佛(死亡時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$3940"
+   ],
+   "chatIntervalMs": 0,
+   "shout": false,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 1,
+    "slots": 1,
+    "mapKeys": [
+     "assassin_king_room"
+    ]
+   }
+  },
+  {
+   "npcId": 45588,
+   "mobKey": "l1j_45588",
+   "timing": 1,
+   "timingName": "death",
+   "note": "魔獸師長．辛克萊(死亡時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$3901"
+   ],
+   "chatIntervalMs": 0,
+   "shout": false,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 1,
+    "slots": 1,
+    "mapKeys": [
+     "rastabad_1f_beast_summoning"
+    ]
+   }
+  },
+  {
+   "npcId": 45602,
+   "mobKey": "l1j_45602",
+   "timing": 1,
+   "timingName": "death",
+   "note": "魔法團長．卡勒米爾(死亡時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$3903"
+   ],
+   "chatIntervalMs": 0,
+   "shout": false,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 1,
+    "slots": 1,
+    "mapKeys": [
+     "dark_magic_lab"
+    ]
+   }
+  },
+  {
+   "npcId": 45608,
+   "mobKey": "l1j_45608",
+   "timing": 1,
+   "timingName": "death",
+   "note": "傭兵隊長．麥帕斯托(死亡時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$3930"
+   ],
+   "chatIntervalMs": 0,
+   "shout": false,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 1,
+    "slots": 1,
+    "mapKeys": [
+     "rastabad_3f_demon_altar"
+    ]
+   }
+  },
+  {
+   "npcId": 45612,
+   "mobKey": "l1j_45612",
+   "timing": 1,
+   "timingName": "death",
+   "note": "神官長．邦妮(死亡時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$3912"
+   ],
+   "chatIntervalMs": 0,
+   "shout": false,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 1,
+    "slots": 1,
+    "mapKeys": [
+     "rastabad_2f_dark_elf_lab"
+    ]
+   }
+  },
+  {
+   "npcId": 45844,
+   "mobKey": "l1j_45844",
+   "timing": 1,
+   "timingName": "death",
+   "note": "魔獸軍王．巴蘭卡(死亡時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$3895"
+   ],
+   "chatIntervalMs": 0,
+   "shout": false,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 1,
+    "slots": 1,
+    "mapKeys": [
+     "king_baranka_room"
+    ]
+   }
+  },
+  {
+   "npcId": 45615,
+   "mobKey": "l1j_45615",
+   "timing": 1,
+   "timingName": "death",
+   "note": "冥法團長．可利波斯(死亡時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$3917"
+   ],
+   "chatIntervalMs": 0,
+   "shout": false,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 1,
+    "slots": 1,
+    "mapKeys": [
+     "necro_training"
+    ]
+   }
+  },
+  {
+   "npcId": 45585,
+   "mobKey": "l1j_45585",
+   "timing": 1,
+   "timingName": "death",
+   "note": "暗殺團長．布雷哲(死亡時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$3939"
+   ],
+   "chatIntervalMs": 0,
+   "shout": false,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 1,
+    "slots": 1,
+    "mapKeys": [
+     "rastabad_b1_arena"
+    ]
+   }
+  },
+  {
+   "npcId": 45574,
+   "mobKey": "l1j_45574",
+   "timing": 1,
+   "timingName": "death",
+   "note": "親衛隊長．凱特(死亡時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$3938"
+   ],
+   "chatIntervalMs": 0,
+   "shout": false,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 1,
+    "slots": 1,
+    "mapKeys": [
+     "rastabad_b1_execution"
+    ]
+   }
+  },
+  {
+   "npcId": 45492,
+   "mobKey": "l1j_45492",
+   "timing": 1,
+   "timingName": "death",
+   "note": "庫曼(死亡時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$3943"
+   ],
+   "chatIntervalMs": 0,
+   "shout": false,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 1,
+    "slots": 1,
+    "mapKeys": [
+     "pirate_back"
+    ]
+   }
+  },
+  {
+   "npcId": 45548,
+   "mobKey": "l1j_45548",
+   "timing": 1,
+   "timingName": "death",
+   "note": "豪勢(死亡時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$4030"
+   ],
+   "chatIntervalMs": 0,
+   "shout": false,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 1,
+    "slots": 1,
+    "mapKeys": [
+     "l1j_map_484"
+    ]
+   }
+  },
+  {
+   "npcId": 45955,
+   "mobKey": "l1j_45955",
+   "timing": 1,
+   "timingName": "death",
+   "note": "長老．琪娜(死亡時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$4625"
+   ],
+   "chatIntervalMs": 0,
+   "shout": false,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 1,
+    "slots": 1,
+    "mapKeys": [
+     "rastabad_4f_grankain_kina"
+    ]
+   }
+  },
+  {
+   "npcId": 45959,
+   "mobKey": "l1j_45959",
+   "timing": 1,
+   "timingName": "death",
+   "note": "長老．艾迪爾(死亡時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$4626"
+   ],
+   "chatIntervalMs": 0,
+   "shout": false,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 1,
+    "slots": 1,
+    "mapKeys": [
+     "rastabad_4f_garden_aidil"
+    ]
+   }
+  },
+  {
+   "npcId": 45963,
+   "mobKey": "l1j_45963",
+   "timing": 1,
+   "timingName": "death",
+   "note": "副神官．卡山德拉(死亡時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$3888"
+   ],
+   "chatIntervalMs": 0,
+   "shout": false,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 1,
+    "slots": 1,
+    "mapKeys": [
+     "rastabad_4f_council_kassandra_dantes"
+    ]
+   }
+  },
+  {
+   "npcId": 81175,
+   "mobKey": "l1j_81175",
+   "timing": 0,
+   "timingName": "appearance",
+   "note": "通緝犯庫傑(出現時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$5325"
+   ],
+   "chatIntervalMs": 0,
+   "shout": true,
+   "worldChat": false,
+   "repeat": true,
+   "repeatIntervalMs": 15000,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 0,
+    "slots": 0,
+    "mapKeys": []
+   }
+  },
+  {
+   "npcId": 81175,
+   "mobKey": "l1j_81175",
+   "timing": 1,
+   "timingName": "death",
+   "note": "通緝犯庫傑(死亡時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$5327"
+   ],
+   "chatIntervalMs": 0,
+   "shout": false,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 0,
+    "slots": 0,
+    "mapKeys": []
+   }
+  },
+  {
+   "npcId": 45458,
+   "mobKey": "l1j_45458",
+   "timing": 1,
+   "timingName": "death",
+   "note": "德雷克(死亡時)",
+   "startDelayMs": 0,
+   "chatTokens": [
+    "$3603"
+   ],
+   "chatIntervalMs": 0,
+   "shout": false,
+   "worldChat": false,
+   "repeat": false,
+   "repeatIntervalMs": 0,
+   "gameTime": 0,
+   "spawnUsage": {
+    "rows": 1,
+    "slots": 1,
+    "mapKeys": [
+     "pirate_dungeon_3f"
+    ]
+   }
+  }
+ ]
+}

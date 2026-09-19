@@ -1,0 +1,1 @@
+{"name":"door_444","group":"anim","trimmed":true,"flattenedShadows":false,"atlas":{"w":39,"h":71,"pad":1,"format":"png8","colors":46},"src":{"files":2,"contentHash":"73c8634a93e75caeb99ea696f927c9b9","bytes":2116},"frames":{"frame":[{"x":15,"y":0,"w":23,"h":66,"dx":0,"dy":0,"cw":31,"ch":81},{"x":0,"y":0,"w":14,"h":70,"dx":17,"dy":11,"cw":31,"ch":81}]}}

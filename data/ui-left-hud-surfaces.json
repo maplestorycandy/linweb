@@ -1,0 +1,278 @@
+{
+ "__doc": [
+  "3.81c 左側 renewal HUD（uistatus86.xml 的 LEFT_WINDOW）素材 → surf ID 對照。",
+  "由 tools/import-left-hud-surfaces.js 產生（機器產物·不要手改）。",
+  "⚠️ 專案舊的 704~713 命名是**猜出來的**，其中 daynight_day/night（708/709）",
+  "   根本不屬於 LEFT_WINDOW——原版第二列是 Adena / Karma。",
+  "⚠️ wired:false ＝ 這個遊戲沒有那個機能（明確不畫），不是待辦清單。",
+  "   codex 的規格：可以隱藏，但不得放一張不可點的按鈕圖假裝已支援。",
+  "⚠️ 3164 與 3174 位元完全相同（sha256 一樣），但語意是兩格——別合併。"
+ ],
+ "source": "uistatus86.xml (Tile.pak) / 3,3 UI",
+ "counts": {
+  "surfaces": 27,
+  "wired": 11,
+  "unsupported": 16
+ },
+ "surfaces": [
+  {
+   "surf": 3164,
+   "file": "rn_food_max_shout.png",
+   "xml": "FOOD_MAX_BAR_SHOUT",
+   "w": 38,
+   "h": 16,
+   "sha256": "98fe30d78cbafb5c14d1d51f0005ab7ee84c3d880984a121835459b8e1f86467",
+   "wired": false,
+   "why": "本作沒有「喊話」機能。⚠️ 3164 與 3174 位元完全相同，但語意是兩格——別合併。"
+  },
+  {
+   "surf": 3165,
+   "file": "rn_food_shout.png",
+   "xml": "FOOD_GUAGE_BAR_SHOUT / SHOUT_BTN(a)",
+   "w": 38,
+   "h": 16,
+   "sha256": "58fa97d2287b12f82c6a671503c727a9cf801138a99928c2d6c4c73c9d25e127",
+   "wired": false,
+   "why": "同上。"
+  },
+  {
+   "surf": 3166,
+   "file": "rn_food_shout_b.png",
+   "xml": "SHOUT_BTN(b)",
+   "w": 38,
+   "h": 16,
+   "sha256": "58fa97d2287b12f82c6a671503c727a9cf801138a99928c2d6c4c73c9d25e127",
+   "wired": false,
+   "why": "同上。"
+  },
+  {
+   "surf": 3168,
+   "file": "rn_left_panel.png",
+   "xml": "MAIN_FRAME",
+   "w": 138,
+   "h": 127,
+   "sha256": "28706a90656e26d3ab0b841a403a1a4d2a0628b956577dbc277ddc52ef358fd8",
+   "wired": true
+  },
+  {
+   "surf": 3169,
+   "file": "rn_level_bar.png",
+   "xml": "LEVEL_BAR",
+   "w": 98,
+   "h": 16,
+   "sha256": "5572e4a17c873fa97fa347206cc857fa4ff99638fc64a9edbf993aa139a25b5a",
+   "wired": true
+  },
+  {
+   "surf": 3170,
+   "file": "rn_align_chaotic.png",
+   "xml": "CHAOTIC_ICON",
+   "w": 18,
+   "h": 18,
+   "sha256": "8dcc9859f279db99d883c20a0cc43a03a6ec9d38c879fb4f21dd5276a22bf551",
+   "wired": true
+  },
+  {
+   "surf": 3171,
+   "file": "rn_align_lawful.png",
+   "xml": "LAWFUL_ICON",
+   "w": 18,
+   "h": 18,
+   "sha256": "3885dcf2d13cc83c81cd60963558e4b2051d77a6a6f8b3d8e9787abce59eaf3b",
+   "wired": true
+  },
+  {
+   "surf": 3172,
+   "file": "rn_align_neutral.png",
+   "xml": "NEUTRAL_ICON",
+   "w": 18,
+   "h": 18,
+   "sha256": "9dfc57a419d579a6f2b1a474bb0c29f17afc6a535d3b8c860f4a3b242799046c",
+   "wired": true
+  },
+  {
+   "surf": 3173,
+   "file": "rn_gauge_low.png",
+   "xml": "LOW_GAUGE_BAR / FOOD_GUAGE_BAR",
+   "w": 38,
+   "h": 16,
+   "sha256": "8ced67ca55e31828b708f9f40a978cdb3c3dfde80b5f3331918384ddb1366c6f",
+   "wired": true
+  },
+  {
+   "surf": 3174,
+   "file": "rn_gauge_mid.png",
+   "xml": "MID_GAUGE_BAR / FOOD_MAX_BAR",
+   "w": 38,
+   "h": 16,
+   "sha256": "98fe30d78cbafb5c14d1d51f0005ab7ee84c3d880984a121835459b8e1f86467",
+   "wired": true
+  },
+  {
+   "surf": 3175,
+   "file": "rn_gauge_high.png",
+   "xml": "HIGH_GAUGE_BAR / FOOD_LOW_GAUGE_BAR",
+   "w": 38,
+   "h": 16,
+   "sha256": "e98491ed3d5065a7fbe44db852b517fd3009e7ca3b24087954d8b8b42d7968e1",
+   "wired": true
+  },
+  {
+   "surf": 3701,
+   "file": "rn_adena_btn.png",
+   "xml": "ADENA_BTN(normal)",
+   "w": 18,
+   "h": 18,
+   "sha256": "b7abee58322cb2d4e26f0fd7f44f823d8f741b42a5ec52577a1130c7b939a1f2",
+   "wired": true
+  },
+  {
+   "surf": 3702,
+   "file": "rn_adena_btn_hover.png",
+   "xml": "ADENA_BTN(hover)",
+   "w": 18,
+   "h": 18,
+   "sha256": "d3c7907594cb7aa2b240fee3f37fe2db8ad2e01f210fcab368fd09beddef1182",
+   "wired": false,
+   "why": "本作左面板沒有滑鼠三態按鈕行為，只畫 normal。"
+  },
+  {
+   "surf": 3703,
+   "file": "rn_adena_btn_pressed.png",
+   "xml": "ADENA_BTN(pressed)",
+   "w": 16,
+   "h": 16,
+   "sha256": "25b24ca1b25a63d85eeb1cf5f4de9111482db515cfd1d54a3945c80dbfc096a2",
+   "wired": false,
+   "why": "同上。"
+  },
+  {
+   "surf": 3704,
+   "file": "rn_karma_btn.png",
+   "xml": "BALOG_BTN(normal)",
+   "w": 18,
+   "h": 18,
+   "sha256": "dc371f5804658a161fd581f8f2568adc26b417d3012107f987a514977f6da6c9",
+   "wired": false,
+   "why": "Karma／Balog 是原版的血盟戰系統，本作**沒有這份資料**——不捏造數值也不佔位。"
+  },
+  {
+   "surf": 3705,
+   "file": "rn_karma_btn_hover.png",
+   "xml": "BALOG_BTN(hover)",
+   "w": 18,
+   "h": 18,
+   "sha256": "05b9ac4f6c47a3fbb06ac99098f2be2ea9e59d2cc15c9a30272e999b65555bd9",
+   "wired": false,
+   "why": "同上。"
+  },
+  {
+   "surf": 3706,
+   "file": "rn_karma_btn_pressed.png",
+   "xml": "BALOG_BTN(pressed)",
+   "w": 16,
+   "h": 16,
+   "sha256": "16f16deaef5e55415cdee4d96f7abce385ca9cdc0b20915731dd3adfeb79db57",
+   "wired": false,
+   "why": "同上。"
+  },
+  {
+   "surf": 3707,
+   "file": "rn_karma_base.png",
+   "xml": "BALOG_BASE",
+   "w": 122,
+   "h": 19,
+   "sha256": "af3915dbb503f1199f8ba94e8d0132f84c078257e1be97ce9b64d5ce4774b76a",
+   "wired": false,
+   "why": "同上。"
+  },
+  {
+   "surf": 3708,
+   "file": "rn_karma_bar_left.png",
+   "xml": "BALOG_BAR",
+   "w": 44,
+   "h": 9,
+   "sha256": "0cf487f05a7d4c159f3a0556708cc36b7c3f8a52e062be5ba7a662d6b5efe43a",
+   "wired": false,
+   "why": "同上。"
+  },
+  {
+   "surf": 3709,
+   "file": "rn_karma_bar_right.png",
+   "xml": "YAHEE_BAR",
+   "w": 44,
+   "h": 9,
+   "sha256": "300a6d35ff67ecbdead14d3f3962b9fe2b91d0fd8ce036d0b6b63e47d9788648",
+   "wired": false,
+   "why": "同上。"
+  },
+  {
+   "surf": 5160,
+   "file": "rn_food_warn.png",
+   "xml": "FOOD_WARN_BTN(a)",
+   "w": 18,
+   "h": 18,
+   "sha256": "534278905b2623981005ed12e5a498427cbd7c691becb1f342b8d880675c4c4d",
+   "wired": true
+  },
+  {
+   "surf": 5161,
+   "file": "rn_food_warn_b.png",
+   "xml": "FOOD_WARN_BTN(b)",
+   "w": 17,
+   "h": 17,
+   "sha256": "fe7bcda21f7e8be0eaba8c9496091196096d27d64e2c61eb6110a08f1b591724",
+   "wired": false,
+   "why": "第二態是原版的按鈕 pressed；本作只用常態那張當警告圖示。"
+  },
+  {
+   "surf": 5162,
+   "file": "rn_carry_warn.png",
+   "xml": "CARRY_WARN_BTN(a)",
+   "w": 18,
+   "h": 18,
+   "sha256": "cb980641a1a8f7ad566a16dfc40e40d72b7ff56b4154387534dc82a6cca2c45a",
+   "wired": true
+  },
+  {
+   "surf": 5163,
+   "file": "rn_carry_warn_b.png",
+   "xml": "CARRY_WARN_BTN(b)",
+   "w": 17,
+   "h": 17,
+   "sha256": "c521c8fd2bcc61ce045dbd8a741cb8c616f6b816fc2d80038678f55b79d5f995",
+   "wired": false,
+   "why": "同上。"
+  },
+  {
+   "surf": 5726,
+   "file": "rn_level_btn.png",
+   "xml": "LEVEL_BTN(normal)",
+   "w": 18,
+   "h": 18,
+   "sha256": "1f28ce1d3ff9e28061af94e0cbfc77749c076b8af566aefd074d01ec144d0406",
+   "wired": false,
+   "why": "原版按下去開能力值視窗；本作的六維在角色頁，左面板不另開入口。"
+  },
+  {
+   "surf": 5727,
+   "file": "rn_level_btn_hover.png",
+   "xml": "LEVEL_BTN(hover)",
+   "w": 18,
+   "h": 18,
+   "sha256": "0be35b42da2accb37b98b7285c5a76fd3536f337edbf73578f4ea863e4cc34ef",
+   "wired": false,
+   "why": "同上。"
+  },
+  {
+   "surf": 5728,
+   "file": "rn_level_btn_pressed.png",
+   "xml": "LEVEL_BTN(pressed)",
+   "w": 18,
+   "h": 18,
+   "sha256": "b2bc5216c507ccc746d043cbde50156884bc59e0c6dc6a612be98cdc1e456682",
+   "wired": false,
+   "why": "同上。"
+  }
+ ]
+}

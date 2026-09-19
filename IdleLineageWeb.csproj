@@ -1,0 +1,25 @@
+<Project Sdk="Godot.NET.Sdk/4.7.2">
+  <PropertyGroup>
+    <AssemblyName>IdleLineage</AssemblyName>
+    <EnableDynamicLoading>True</EnableDynamicLoading>
+    <Nullable>enable</Nullable>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <!--The following references were not added to the project file because they are automatically added by the Godot SDK.-->
+    <!--
+<Reference Include="GodotSharp">
+  <HintPath>..\LIN\data_IdleLineage_windows_x86_64\GodotSharp.dll</HintPath>
+</Reference>
+-->
+  </ItemGroup>
+</Project>

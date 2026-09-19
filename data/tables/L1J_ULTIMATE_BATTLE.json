@@ -1,0 +1,4553 @@
+{
+ "__doc": [
+  "無限大賽（Ultimate Battle）——由 tools/l1j-import/import_l1j_ub.py 產生（不要手改）。",
+  "來源：L1j-TW-main 的 ub_settings／ub_managers／ub_times／spawnlist_ub 四張表。",
+  "group 欄＝回合（1~4）；location 欄是怪物中文名不是座標，落點在 area 矩形內隨機。",
+  "roundWaitSeconds 與 supplies 抄自 L1UltimateBattle.java（WAIT_TIME_TABLE／spawnSupplies）。",
+  "⚠️ 第 4 回合原版沒有補給；exit 是原版結束後把人送去的 map 4 定點。"
+ ],
+ "source": {
+  "root": "C:/Users/User/Downloads/L1j-TW-main/L1j-TW-main",
+  "tables": [
+   "ub_settings",
+   "ub_managers",
+   "ub_times",
+   "spawnlist_ub"
+  ],
+  "java": "src/net/l1j/server/model/L1UltimateBattle.java"
+ },
+ "counts": {
+  "arenas": 5,
+  "managers": 10,
+  "openTimes": 38,
+  "waveRows": 454,
+  "distinctMobs": 96
+ },
+ "roundWaitSeconds": [
+  60,
+  60,
+  20,
+  180
+ ],
+ "supplies": {
+  "1": [
+   {
+    "itemId": 40308,
+    "stackCount": 1000,
+    "piles": 60
+   },
+   {
+    "itemId": 40017,
+    "stackCount": 3,
+    "piles": 20
+   },
+   {
+    "itemId": 40010,
+    "stackCount": 5,
+    "piles": 20
+   },
+   {
+    "itemId": 40015,
+    "stackCount": 3,
+    "piles": 20
+   },
+   {
+    "itemId": 40317,
+    "stackCount": 1,
+    "piles": 5
+   },
+   {
+    "itemId": 40079,
+    "stackCount": 1,
+    "piles": 20
+   }
+  ],
+  "2": [
+   {
+    "itemId": 40308,
+    "stackCount": 5000,
+    "piles": 50
+   },
+   {
+    "itemId": 40017,
+    "stackCount": 5,
+    "piles": 20
+   },
+   {
+    "itemId": 40010,
+    "stackCount": 10,
+    "piles": 20
+   },
+   {
+    "itemId": 40015,
+    "stackCount": 5,
+    "piles": 20
+   },
+   {
+    "itemId": 40317,
+    "stackCount": 1,
+    "piles": 7
+   },
+   {
+    "itemId": 40093,
+    "stackCount": 1,
+    "piles": 10
+   },
+   {
+    "itemId": 40079,
+    "stackCount": 1,
+    "piles": 5
+   }
+  ],
+  "3": [
+   {
+    "itemId": 40308,
+    "stackCount": 10000,
+    "piles": 30
+   },
+   {
+    "itemId": 40017,
+    "stackCount": 7,
+    "piles": 20
+   },
+   {
+    "itemId": 40010,
+    "stackCount": 20,
+    "piles": 20
+   },
+   {
+    "itemId": 40015,
+    "stackCount": 10,
+    "piles": 20
+   },
+   {
+    "itemId": 40317,
+    "stackCount": 1,
+    "piles": 10
+   },
+   {
+    "itemId": 40094,
+    "stackCount": 1,
+    "piles": 10
+   }
+  ]
+ },
+ "exit": {
+  "mapId": 4,
+  "mapKey": "mainland_south",
+  "x": 33503,
+  "y": 32764,
+  "spread": 4
+ },
+ "arenas": [
+  {
+   "ubId": 1,
+   "name": "奇岩競技場",
+   "mapId": 88,
+   "mapKey": "l1j_map_88",
+   "area": {
+    "x1": 33494,
+    "y1": 32724,
+    "x2": 33516,
+    "y2": 32746
+   },
+   "minLevel": 52,
+   "maxLevel": 99,
+   "maxPlayer": 20,
+   "classes": {
+    "royal": true,
+    "knight": true,
+    "mage": true,
+    "elf": true,
+    "darkElf": true,
+    "dragonKnight": true,
+    "illusionist": true
+   },
+   "male": true,
+   "female": true,
+   "usePotion": false,
+   "managerNpcIds": [
+    50037,
+    50038
+   ],
+   "openTimes": [
+    100,
+    300,
+    900,
+    1500,
+    2100,
+    2300
+   ],
+   "patterns": {
+    "1": {
+     "1": [
+      {
+       "sourceId": 1,
+       "note": "雪人",
+       "npcId": 45115,
+       "mobKey": "l1j_45115",
+       "count": 25,
+       "spawnDelaySeconds": 30,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 2,
+       "note": "妖魔法師",
+       "npcId": 45121,
+       "mobKey": "l1j_45121",
+       "count": 10,
+       "spawnDelaySeconds": 30,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 3,
+       "note": "蟑螂人",
+       "npcId": 45116,
+       "mobKey": "l1j_45116",
+       "count": 25,
+       "spawnDelaySeconds": 30,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 4,
+       "note": "石頭高崙",
+       "npcId": 45126,
+       "mobKey": "l1j_45126",
+       "count": 10,
+       "spawnDelaySeconds": 30,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 5,
+       "note": "骷髏弓箭手",
+       "npcId": 45129,
+       "mobKey": "l1j_45129",
+       "count": 15,
+       "spawnDelaySeconds": 30,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 6,
+       "note": "骷髏斧手",
+       "npcId": 45130,
+       "mobKey": "l1j_45130",
+       "count": 30,
+       "spawnDelaySeconds": 26,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 7,
+       "note": "骷髏槍兵",
+       "npcId": 45131,
+       "mobKey": "l1j_45131",
+       "count": 30,
+       "spawnDelaySeconds": 26,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 8,
+       "note": "夏洛伯",
+       "npcId": 45136,
+       "mobKey": "l1j_45136",
+       "count": 15,
+       "spawnDelaySeconds": 26,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 9,
+       "note": "妖魔巡守",
+       "npcId": 45138,
+       "mobKey": "l1j_45138",
+       "count": 15,
+       "spawnDelaySeconds": 24,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 10,
+       "note": "蜥蜴人",
+       "npcId": 45144,
+       "mobKey": "l1j_45144",
+       "count": 20,
+       "spawnDelaySeconds": 24,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 11,
+       "note": "食屍鬼",
+       "npcId": 45157,
+       "mobKey": "l1j_45157",
+       "count": 10,
+       "spawnDelaySeconds": 24,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 12,
+       "note": "史巴托",
+       "npcId": 45161,
+       "mobKey": "l1j_45161",
+       "count": 20,
+       "spawnDelaySeconds": 24,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 13,
+       "note": "蟹人",
+       "npcId": 45164,
+       "mobKey": "l1j_45164",
+       "count": 10,
+       "spawnDelaySeconds": 20,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 14,
+       "note": "萊肯",
+       "npcId": 45173,
+       "mobKey": "l1j_45173",
+       "count": 15,
+       "spawnDelaySeconds": 20,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 15,
+       "note": "楊果里恩",
+       "npcId": 45184,
+       "mobKey": "l1j_45184",
+       "count": 10,
+       "spawnDelaySeconds": 20,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 16,
+       "note": "巨大兵蟻",
+       "npcId": 45190,
+       "mobKey": "l1j_45190",
+       "count": 20,
+       "spawnDelaySeconds": 20,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 17,
+       "note": "鼠人",
+       "npcId": 45192,
+       "mobKey": "l1j_45192",
+       "count": 20,
+       "spawnDelaySeconds": 18,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 18,
+       "note": "長者",
+       "npcId": 45215,
+       "mobKey": "l1j_45215",
+       "count": 10,
+       "spawnDelaySeconds": 18,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 19,
+       "note": "卡司特",
+       "npcId": 45213,
+       "mobKey": "l1j_45213",
+       "count": 10,
+       "spawnDelaySeconds": 18,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 20,
+       "note": "食人妖精",
+       "npcId": 45223,
+       "mobKey": "l1j_45223",
+       "count": 10,
+       "spawnDelaySeconds": 18,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 21,
+       "note": "艾爾摩士兵",
+       "npcId": 45216,
+       "mobKey": "l1j_45216",
+       "count": 20,
+       "spawnDelaySeconds": 18,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 22,
+       "note": "艾爾摩法師",
+       "npcId": 45224,
+       "mobKey": "l1j_45224",
+       "count": 10,
+       "spawnDelaySeconds": 14,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 23,
+       "note": "艾爾摩將軍",
+       "npcId": 45248,
+       "mobKey": "l1j_45248",
+       "count": 10,
+       "spawnDelaySeconds": 14,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 24,
+       "note": "地獄犬",
+       "npcId": 45241,
+       "mobKey": "l1j_45241",
+       "count": 10,
+       "spawnDelaySeconds": 0,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 25,
+       "note": "毒蠍",
+       "npcId": 45259,
+       "mobKey": "l1j_45259",
+       "count": 10,
+       "spawnDelaySeconds": 14,
+       "sealCount": 0
+      }
+     ],
+     "2": [
+      {
+       "sourceId": 26,
+       "note": "骷髏警衛",
+       "npcId": 45269,
+       "mobKey": "l1j_45269",
+       "count": 10,
+       "spawnDelaySeconds": 0,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 27,
+       "note": "骷髏神射手",
+       "npcId": 45270,
+       "mobKey": "l1j_45270",
+       "count": 15,
+       "spawnDelaySeconds": 0,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 28,
+       "note": "骷髏鬥士",
+       "npcId": 45286,
+       "mobKey": "l1j_45286",
+       "count": 10,
+       "spawnDelaySeconds": 30,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 29,
+       "note": "爆彈花",
+       "npcId": 45267,
+       "mobKey": "l1j_45267",
+       "count": 10,
+       "spawnDelaySeconds": 14,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 30,
+       "note": "冰原老虎",
+       "npcId": 45174,
+       "mobKey": "l1j_45174",
+       "count": 10,
+       "spawnDelaySeconds": 4,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 31,
+       "note": "歐吉",
+       "npcId": 45278,
+       "mobKey": "l1j_45278",
+       "count": 10,
+       "spawnDelaySeconds": 14,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 32,
+       "note": "多羅",
+       "npcId": 45280,
+       "mobKey": "l1j_45280",
+       "count": 10,
+       "spawnDelaySeconds": 14,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 33,
+       "note": "黑暗精靈",
+       "npcId": 45364,
+       "mobKey": "l1j_45364",
+       "count": 15,
+       "spawnDelaySeconds": 14,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 34,
+       "note": "火焰戰士",
+       "npcId": 45284,
+       "mobKey": "l1j_45284",
+       "count": 15,
+       "spawnDelaySeconds": 0,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 35,
+       "note": "火焰弓箭手",
+       "npcId": 45291,
+       "mobKey": "l1j_45291",
+       "count": 10,
+       "spawnDelaySeconds": 4,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 36,
+       "note": "食人妖精王",
+       "npcId": 45162,
+       "mobKey": "l1j_45162",
+       "count": 10,
+       "spawnDelaySeconds": 4,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 37,
+       "note": "莫妮亞",
+       "npcId": 45298,
+       "mobKey": "l1j_45298",
+       "count": 10,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 38,
+       "note": "雪怪",
+       "npcId": 45289,
+       "mobKey": "l1j_45289",
+       "count": 20,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 39,
+       "note": "活鎧甲",
+       "npcId": 45294,
+       "mobKey": "l1j_45294",
+       "count": 10,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 40,
+       "note": "火蜥蜴",
+       "npcId": 45322,
+       "mobKey": "l1j_45322",
+       "count": 10,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 41,
+       "note": "卡司特王",
+       "npcId": 45203,
+       "mobKey": "l1j_45203",
+       "count": 10,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 42,
+       "note": "黑長者",
+       "npcId": 45341,
+       "mobKey": "l1j_45341",
+       "count": 10,
+       "spawnDelaySeconds": 60,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 43,
+       "note": "阿西塔基奧",
+       "npcId": 45609,
+       "mobKey": "l1j_45609",
+       "count": 1,
+       "spawnDelaySeconds": 14,
+       "sealCount": 4
+      }
+     ],
+     "3": [
+      {
+       "sourceId": 44,
+       "note": "阿魯巴",
+       "npcId": 45346,
+       "mobKey": "l1j_45346",
+       "count": 10,
+       "spawnDelaySeconds": 4,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 45,
+       "note": "熔岩高崙",
+       "npcId": 45550,
+       "mobKey": "l1j_45550",
+       "count": 10,
+       "spawnDelaySeconds": 4,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 46,
+       "note": "鋼鐵高崙",
+       "npcId": 45359,
+       "mobKey": "l1j_45359",
+       "count": 10,
+       "spawnDelaySeconds": 4,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 47,
+       "note": "思克巴",
+       "npcId": 45578,
+       "mobKey": "l1j_45578",
+       "count": 5,
+       "spawnDelaySeconds": 4,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 48,
+       "note": "烈炎獸",
+       "npcId": 45162,
+       "mobKey": "l1j_45162",
+       "count": 10,
+       "spawnDelaySeconds": 4,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 49,
+       "note": "獨眼巨人",
+       "npcId": 45373,
+       "mobKey": "l1j_45373",
+       "count": 10,
+       "spawnDelaySeconds": 4,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 50,
+       "note": "惡魔",
+       "npcId": 45365,
+       "mobKey": "l1j_45365",
+       "count": 5,
+       "spawnDelaySeconds": 0,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 51,
+       "note": "紙人",
+       "npcId": 45372,
+       "mobKey": "l1j_45372",
+       "count": 5,
+       "spawnDelaySeconds": 4,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 52,
+       "note": "妖魔法師",
+       "npcId": 45174,
+       "mobKey": "l1j_45174",
+       "count": 10,
+       "spawnDelaySeconds": 4,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 53,
+       "note": "熊",
+       "npcId": 45393,
+       "mobKey": "l1j_45393",
+       "count": 10,
+       "spawnDelaySeconds": 4,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 54,
+       "note": "石頭高崙",
+       "npcId": 45341,
+       "mobKey": "l1j_45341",
+       "count": 10,
+       "spawnDelaySeconds": 4,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 55,
+       "note": "骷髏弓箭手",
+       "npcId": 45420,
+       "mobKey": "l1j_45420",
+       "count": 10,
+       "spawnDelaySeconds": 90,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 56,
+       "note": "骷髏斧手",
+       "npcId": 45649,
+       "mobKey": "l1j_45649",
+       "count": 1,
+       "spawnDelaySeconds": 4,
+       "sealCount": 6
+      }
+     ],
+     "4": [
+      {
+       "sourceId": 57,
+       "note": "骷髏槍兵",
+       "npcId": 46156,
+       "mobKey": "l1j_46156",
+       "count": 4,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 58,
+       "note": "夏洛伯",
+       "npcId": 46156,
+       "mobKey": "l1j_46156",
+       "count": 1,
+       "spawnDelaySeconds": 0,
+       "sealCount": 15
+      }
+     ]
+    }
+   }
+  },
+  {
+   "ubId": 2,
+   "name": "威頓競技場",
+   "mapId": 98,
+   "mapKey": "l1j_map_98",
+   "area": {
+    "x1": 32682,
+    "y1": 32878,
+    "x2": 32717,
+    "y2": 32913
+   },
+   "minLevel": 45,
+   "maxLevel": 60,
+   "maxPlayer": 20,
+   "classes": {
+    "royal": true,
+    "knight": true,
+    "mage": true,
+    "elf": true,
+    "darkElf": true,
+    "dragonKnight": true,
+    "illusionist": true
+   },
+   "male": true,
+   "female": true,
+   "usePotion": false,
+   "managerNpcIds": [
+    50041,
+    50042
+   ],
+   "openTimes": [
+    100,
+    400,
+    700,
+    1000,
+    1300,
+    1600,
+    1900,
+    2200
+   ],
+   "patterns": {
+    "1": {
+     "1": [
+      {
+       "sourceId": 59,
+       "note": "妖魔巡守",
+       "npcId": 45115,
+       "mobKey": "l1j_45115",
+       "count": 15,
+       "spawnDelaySeconds": 0,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 60,
+       "note": "蜥蜴人",
+       "npcId": 45140,
+       "mobKey": "l1j_45140",
+       "count": 10,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 61,
+       "note": "食屍鬼",
+       "npcId": 45157,
+       "mobKey": "l1j_45157",
+       "count": 15,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 62,
+       "note": "史巴托",
+       "npcId": 45190,
+       "mobKey": "l1j_45190",
+       "count": 20,
+       "spawnDelaySeconds": 20,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 63,
+       "note": "蟹人",
+       "npcId": 45373,
+       "mobKey": "l1j_45373",
+       "count": 10,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 64,
+       "note": "萊肯",
+       "npcId": 45107,
+       "mobKey": "l1j_45107",
+       "count": 15,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 65,
+       "note": "楊果里恩",
+       "npcId": 45387,
+       "mobKey": "l1j_45387",
+       "count": 15,
+       "spawnDelaySeconds": 0,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 66,
+       "note": "巨大兵蟻",
+       "npcId": 45131,
+       "mobKey": "l1j_45131",
+       "count": 15,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 67,
+       "note": "鼠人",
+       "npcId": 45122,
+       "mobKey": "l1j_45122",
+       "count": 25,
+       "spawnDelaySeconds": 20,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 68,
+       "note": "長者",
+       "npcId": 45372,
+       "mobKey": "l1j_45372",
+       "count": 15,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 69,
+       "note": "卡司特",
+       "npcId": 45223,
+       "mobKey": "l1j_45223",
+       "count": 15,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 70,
+       "note": "食人妖精",
+       "npcId": 45264,
+       "mobKey": "l1j_45264",
+       "count": 15,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 71,
+       "note": "艾爾摩士兵",
+       "npcId": 45364,
+       "mobKey": "l1j_45364",
+       "count": 15,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 72,
+       "note": "艾爾摩法師",
+       "npcId": 45298,
+       "mobKey": "l1j_45298",
+       "count": 10,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 73,
+       "note": "艾爾摩將軍",
+       "npcId": 45359,
+       "mobKey": "l1j_45359",
+       "count": 10,
+       "spawnDelaySeconds": 30,
+       "sealCount": 0
+      }
+     ],
+     "2": [
+      {
+       "sourceId": 74,
+       "note": "地獄犬",
+       "npcId": 45269,
+       "mobKey": "l1j_45269",
+       "count": 10,
+       "spawnDelaySeconds": 4,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 75,
+       "note": "毒蠍",
+       "npcId": 45278,
+       "mobKey": "l1j_45278",
+       "count": 15,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 76,
+       "note": "骷髏警衛",
+       "npcId": 45373,
+       "mobKey": "l1j_45373",
+       "count": 15,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 77,
+       "note": "骷髏神射手",
+       "npcId": 45445,
+       "mobKey": "l1j_45445",
+       "count": 15,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 78,
+       "note": "骷髏鬥士",
+       "npcId": 45578,
+       "mobKey": "l1j_45578",
+       "count": 2,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 79,
+       "note": "爆彈花",
+       "npcId": 45190,
+       "mobKey": "l1j_45190",
+       "count": 20,
+       "spawnDelaySeconds": 20,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 80,
+       "note": "冰原老虎",
+       "npcId": 45289,
+       "mobKey": "l1j_45289",
+       "count": 26,
+       "spawnDelaySeconds": 4,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 81,
+       "note": "歐吉",
+       "npcId": 45387,
+       "mobKey": "l1j_45387",
+       "count": 15,
+       "spawnDelaySeconds": 4,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 82,
+       "note": "多羅",
+       "npcId": 45162,
+       "mobKey": "l1j_45162",
+       "count": 25,
+       "spawnDelaySeconds": 20,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 83,
+       "note": "黑暗精靈",
+       "npcId": 45445,
+       "mobKey": "l1j_45445",
+       "count": 20,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 84,
+       "note": "火焰戰士",
+       "npcId": 45322,
+       "mobKey": "l1j_45322",
+       "count": 15,
+       "spawnDelaySeconds": 3,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 85,
+       "note": "火焰弓箭手",
+       "npcId": 45298,
+       "mobKey": "l1j_45298",
+       "count": 15,
+       "spawnDelaySeconds": 0,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 86,
+       "note": "食人妖精王",
+       "npcId": 45162,
+       "mobKey": "l1j_45162",
+       "count": 15,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 87,
+       "note": "莫妮亞",
+       "npcId": 45393,
+       "mobKey": "l1j_45393",
+       "count": 15,
+       "spawnDelaySeconds": 60,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 88,
+       "note": "雪怪",
+       "npcId": 45515,
+       "mobKey": "l1j_45515",
+       "count": 1,
+       "spawnDelaySeconds": 20,
+       "sealCount": 4
+      }
+     ],
+     "3": [
+      {
+       "sourceId": 89,
+       "note": "活鎧甲",
+       "npcId": 45278,
+       "mobKey": "l1j_45278",
+       "count": 10,
+       "spawnDelaySeconds": 4,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 90,
+       "note": "火蜥蜴",
+       "npcId": 45162,
+       "mobKey": "l1j_45162",
+       "count": 15,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 91,
+       "note": "卡司特王",
+       "npcId": 45445,
+       "mobKey": "l1j_45445",
+       "count": 20,
+       "spawnDelaySeconds": 14,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 92,
+       "note": "黑長者",
+       "npcId": 45387,
+       "mobKey": "l1j_45387",
+       "count": 25,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 93,
+       "note": "阿西塔基奧",
+       "npcId": 45578,
+       "mobKey": "l1j_45578",
+       "count": 2,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 94,
+       "note": "阿魯巴",
+       "npcId": 45122,
+       "mobKey": "l1j_45122",
+       "count": 10,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 95,
+       "note": "熔岩高崙",
+       "npcId": 45364,
+       "mobKey": "l1j_45364",
+       "count": 15,
+       "spawnDelaySeconds": 20,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 96,
+       "note": "鋼鐵高崙",
+       "npcId": 45445,
+       "mobKey": "l1j_45445",
+       "count": 15,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 97,
+       "note": "思克巴",
+       "npcId": 45387,
+       "mobKey": "l1j_45387",
+       "count": 10,
+       "spawnDelaySeconds": 4,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 98,
+       "note": "烈炎獸",
+       "npcId": 45162,
+       "mobKey": "l1j_45162",
+       "count": 10,
+       "spawnDelaySeconds": 4,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 99,
+       "note": "獨眼巨人",
+       "npcId": 45174,
+       "mobKey": "l1j_45174",
+       "count": 15,
+       "spawnDelaySeconds": 20,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 100,
+       "note": "巴列斯",
+       "npcId": 45264,
+       "mobKey": "l1j_45264",
+       "count": 15,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 101,
+       "note": "巴列斯",
+       "npcId": 45298,
+       "mobKey": "l1j_45298",
+       "count": 15,
+       "spawnDelaySeconds": 14,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 102,
+       "note": "侏儒戰士",
+       "npcId": 45420,
+       "mobKey": "l1j_45420",
+       "count": 10,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 103,
+       "note": "妖魔法師",
+       "npcId": 45341,
+       "mobKey": "l1j_45341",
+       "count": 10,
+       "spawnDelaySeconds": 4,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 104,
+       "note": "蟑螂人",
+       "npcId": 45372,
+       "mobKey": "l1j_45372",
+       "count": 10,
+       "spawnDelaySeconds": 4,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 105,
+       "note": "石頭高崙",
+       "npcId": 45578,
+       "mobKey": "l1j_45578",
+       "count": 5,
+       "spawnDelaySeconds": 90,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 106,
+       "note": "骷髏弓箭手",
+       "npcId": 45617,
+       "mobKey": "l1j_45617",
+       "count": 1,
+       "spawnDelaySeconds": 30,
+       "sealCount": 6
+      }
+     ],
+     "4": [
+      {
+       "sourceId": 107,
+       "note": "骷髏斧手",
+       "npcId": 45614,
+       "mobKey": "l1j_45614",
+       "count": 1,
+       "spawnDelaySeconds": 0,
+       "sealCount": 15
+      }
+     ]
+    }
+   }
+  },
+  {
+   "ubId": 3,
+   "name": "古魯丁競技場",
+   "mapId": 92,
+   "mapKey": "l1j_map_92",
+   "area": {
+    "x1": 32682,
+    "y1": 32878,
+    "x2": 32717,
+    "y2": 32913
+   },
+   "minLevel": 31,
+   "maxLevel": 51,
+   "maxPlayer": 20,
+   "classes": {
+    "royal": true,
+    "knight": true,
+    "mage": true,
+    "elf": true,
+    "darkElf": true,
+    "dragonKnight": true,
+    "illusionist": true
+   },
+   "male": true,
+   "female": true,
+   "usePotion": false,
+   "managerNpcIds": [
+    50028,
+    50029
+   ],
+   "openTimes": [
+    200,
+    500,
+    800,
+    1100,
+    1400,
+    1700,
+    2000,
+    2300
+   ],
+   "patterns": {
+    "1": {
+     "1": [
+      {
+       "sourceId": 108,
+       "note": "骷髏槍兵",
+       "npcId": 45161,
+       "mobKey": "l1j_45161",
+       "count": 20,
+       "spawnDelaySeconds": 14,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 109,
+       "note": "夏洛伯",
+       "npcId": 45122,
+       "mobKey": "l1j_45122",
+       "count": 15,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 110,
+       "note": "妖魔巡守",
+       "npcId": 45130,
+       "mobKey": "l1j_45130",
+       "count": 15,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 111,
+       "note": "蜥蜴人",
+       "npcId": 45131,
+       "mobKey": "l1j_45131",
+       "count": 15,
+       "spawnDelaySeconds": 14,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 112,
+       "note": "食屍鬼",
+       "npcId": 45082,
+       "mobKey": "l1j_45082",
+       "count": 20,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 113,
+       "note": "史巴托",
+       "npcId": 45138,
+       "mobKey": "l1j_45138",
+       "count": 15,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 114,
+       "note": "蟹人",
+       "npcId": 45121,
+       "mobKey": "l1j_45121",
+       "count": 10,
+       "spawnDelaySeconds": 14,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 115,
+       "note": "萊肯",
+       "npcId": 45192,
+       "mobKey": "l1j_45192",
+       "count": 10,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 116,
+       "note": "楊果里恩",
+       "npcId": 45144,
+       "mobKey": "l1j_45144",
+       "count": 10,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 117,
+       "note": "巨大兵蟻",
+       "npcId": 45164,
+       "mobKey": "l1j_45164",
+       "count": 10,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 118,
+       "note": "鼠人",
+       "npcId": 45223,
+       "mobKey": "l1j_45223",
+       "count": 10,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 119,
+       "note": "長者",
+       "npcId": 45173,
+       "mobKey": "l1j_45173",
+       "count": 10,
+       "spawnDelaySeconds": 14,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 120,
+       "note": "卡司特",
+       "npcId": 45136,
+       "mobKey": "l1j_45136",
+       "count": 20,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 121,
+       "note": "食人妖精",
+       "npcId": 45184,
+       "mobKey": "l1j_45184",
+       "count": 15,
+       "spawnDelaySeconds": 110,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 122,
+       "note": "艾爾摩士兵",
+       "npcId": 45216,
+       "mobKey": "l1j_45216",
+       "count": 20,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 123,
+       "note": "艾爾摩法師",
+       "npcId": 45224,
+       "mobKey": "l1j_45224",
+       "count": 15,
+       "spawnDelaySeconds": 14,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 124,
+       "note": "艾爾摩將軍",
+       "npcId": 45248,
+       "mobKey": "l1j_45248",
+       "count": 15,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 125,
+       "note": "地獄犬",
+       "npcId": 45215,
+       "mobKey": "l1j_45215",
+       "count": 15,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 126,
+       "note": "毒蠍",
+       "npcId": 45213,
+       "mobKey": "l1j_45213",
+       "count": 15,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 127,
+       "note": "骷髏警衛",
+       "npcId": 45223,
+       "mobKey": "l1j_45223",
+       "count": 10,
+       "spawnDelaySeconds": 14,
+       "sealCount": 0
+      }
+     ],
+     "2": [
+      {
+       "sourceId": 128,
+       "note": "骷髏神射手",
+       "npcId": 45269,
+       "mobKey": "l1j_45269",
+       "count": 12,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 129,
+       "note": "骷髏鬥士",
+       "npcId": 45270,
+       "mobKey": "l1j_45270",
+       "count": 12,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 130,
+       "note": "爆彈花",
+       "npcId": 45286,
+       "mobKey": "l1j_45286",
+       "count": 12,
+       "spawnDelaySeconds": 14,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 131,
+       "note": "冰原老虎",
+       "npcId": 45284,
+       "mobKey": "l1j_45284",
+       "count": 12,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 132,
+       "note": "歐吉",
+       "npcId": 45291,
+       "mobKey": "l1j_45291",
+       "count": 12,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 133,
+       "note": "多羅",
+       "npcId": 45322,
+       "mobKey": "l1j_45322",
+       "count": 12,
+       "spawnDelaySeconds": 14,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 134,
+       "note": "黑暗精靈",
+       "npcId": 45278,
+       "mobKey": "l1j_45278",
+       "count": 10,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 135,
+       "note": "火焰戰士",
+       "npcId": 45280,
+       "mobKey": "l1j_45280",
+       "count": 10,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 136,
+       "note": "火焰弓箭手",
+       "npcId": 45364,
+       "mobKey": "l1j_45364",
+       "count": 10,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 137,
+       "note": "食人妖精王",
+       "npcId": 45267,
+       "mobKey": "l1j_45267",
+       "count": 10,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 138,
+       "note": "莫妮亞",
+       "npcId": 45223,
+       "mobKey": "l1j_45223",
+       "count": 12,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 139,
+       "note": "雪怪",
+       "npcId": 45298,
+       "mobKey": "l1j_45298",
+       "count": 12,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 140,
+       "note": "活鎧甲",
+       "npcId": 45294,
+       "mobKey": "l1j_45294",
+       "count": 10,
+       "spawnDelaySeconds": 60,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 141,
+       "note": "火蜥蜴",
+       "npcId": 45513,
+       "mobKey": "l1j_45513",
+       "count": 1,
+       "spawnDelaySeconds": 10,
+       "sealCount": 3
+      }
+     ],
+     "3": [
+      {
+       "sourceId": 142,
+       "note": "卡司特王",
+       "npcId": 45365,
+       "mobKey": "l1j_45365",
+       "count": 10,
+       "spawnDelaySeconds": 4,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 143,
+       "note": "黑長者",
+       "npcId": 45346,
+       "mobKey": "l1j_45346",
+       "count": 15,
+       "spawnDelaySeconds": 4,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 144,
+       "note": "阿西塔基奧",
+       "npcId": 45359,
+       "mobKey": "l1j_45359",
+       "count": 10,
+       "spawnDelaySeconds": 4,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 145,
+       "note": "阿魯巴",
+       "npcId": 81176,
+       "mobKey": "l1j_81176",
+       "count": 15,
+       "spawnDelaySeconds": 10,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 146,
+       "note": "熔岩高崙",
+       "npcId": 45373,
+       "mobKey": "l1j_45373",
+       "count": 10,
+       "spawnDelaySeconds": 8,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 147,
+       "note": "鋼鐵高崙",
+       "npcId": 45531,
+       "mobKey": "l1j_45531",
+       "count": 10,
+       "spawnDelaySeconds": 8,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 148,
+       "note": "思克巴",
+       "npcId": 45393,
+       "mobKey": "l1j_45393",
+       "count": 15,
+       "spawnDelaySeconds": 6,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 149,
+       "note": "烈炎獸",
+       "npcId": 45372,
+       "mobKey": "l1j_45372",
+       "count": 15,
+       "spawnDelaySeconds": 6,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 150,
+       "note": "獨眼巨人",
+       "npcId": 45341,
+       "mobKey": "l1j_45341",
+       "count": 15,
+       "spawnDelaySeconds": 4,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 151,
+       "note": "不死鳥",
+       "npcId": 45420,
+       "mobKey": "l1j_45420",
+       "count": 20,
+       "spawnDelaySeconds": 4,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 152,
+       "note": "鱷魚",
+       "npcId": 45578,
+       "mobKey": "l1j_45578",
+       "count": 3,
+       "spawnDelaySeconds": 110,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 153,
+       "note": "妖魔法師",
+       "npcId": 45606,
+       "mobKey": "l1j_45606",
+       "count": 1,
+       "spawnDelaySeconds": 0,
+       "sealCount": 5
+      }
+     ],
+     "4": [
+      {
+       "sourceId": 154,
+       "note": "蟑螂人",
+       "npcId": 45583,
+       "mobKey": "l1j_45583",
+       "count": 1,
+       "spawnDelaySeconds": 0,
+       "sealCount": 15
+      }
+     ]
+    }
+   }
+  },
+  {
+   "ubId": 4,
+   "name": "說話之島競技場",
+   "mapId": 91,
+   "mapKey": "l1j_map_91",
+   "area": {
+    "x1": 32682,
+    "y1": 32878,
+    "x2": 32717,
+    "y2": 32913
+   },
+   "minLevel": 25,
+   "maxLevel": 44,
+   "maxPlayer": 20,
+   "classes": {
+    "royal": true,
+    "knight": true,
+    "mage": true,
+    "elf": true,
+    "darkElf": true,
+    "dragonKnight": true,
+    "illusionist": true
+   },
+   "male": true,
+   "female": true,
+   "usePotion": false,
+   "managerNpcIds": [
+    50018,
+    50019
+   ],
+   "openTimes": [
+    100,
+    400,
+    700,
+    1000,
+    1300,
+    1600,
+    1900,
+    2200
+   ],
+   "patterns": {
+    "1": {
+     "1": [
+      {
+       "sourceId": 820,
+       "note": "侏儒",
+       "npcId": 45041,
+       "mobKey": "l1j_45041",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 821,
+       "note": "安普",
+       "npcId": 45051,
+       "mobKey": "l1j_45051",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 822,
+       "note": "史萊姆",
+       "npcId": 45060,
+       "mobKey": "l1j_45060",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 823,
+       "note": "漂浮之眼",
+       "npcId": 45068,
+       "mobKey": "l1j_45068",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 824,
+       "note": "侏儒",
+       "npcId": 45041,
+       "mobKey": "l1j_45041",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 825,
+       "note": "侏儒戰士",
+       "npcId": 45092,
+       "mobKey": "l1j_45092",
+       "count": 20,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 826,
+       "note": "骷髏",
+       "npcId": 45107,
+       "mobKey": "l1j_45107",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 827,
+       "note": "骷髏弓箭手",
+       "npcId": 45129,
+       "mobKey": "l1j_45129",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 828,
+       "note": "骷髏槍兵",
+       "npcId": 45131,
+       "mobKey": "l1j_45131",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 829,
+       "note": "骷髏斧手",
+       "npcId": 45130,
+       "mobKey": "l1j_45130",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 830,
+       "note": "夏洛伯",
+       "npcId": 45136,
+       "mobKey": "l1j_45136",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 831,
+       "note": "史萊姆",
+       "npcId": 45060,
+       "mobKey": "l1j_45060",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      }
+     ],
+     "2": [
+      {
+       "sourceId": 832,
+       "note": "骷髏",
+       "npcId": 45107,
+       "mobKey": "l1j_45107",
+       "count": 20,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 833,
+       "note": "骷髏弓箭手",
+       "npcId": 45129,
+       "mobKey": "l1j_45129",
+       "count": 20,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 834,
+       "note": "骷髏槍兵",
+       "npcId": 45131,
+       "mobKey": "l1j_45131",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 835,
+       "note": "骷髏斧手",
+       "npcId": 45130,
+       "mobKey": "l1j_45130",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 836,
+       "note": "人形殭屍",
+       "npcId": 45105,
+       "mobKey": "l1j_45105",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 837,
+       "note": "骷髏斧手",
+       "npcId": 45130,
+       "mobKey": "l1j_45130",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 838,
+       "note": "骷髏槍兵",
+       "npcId": 45131,
+       "mobKey": "l1j_45131",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 839,
+       "note": "骷髏",
+       "npcId": 45107,
+       "mobKey": "l1j_45107",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 840,
+       "note": "骷髏弓箭手",
+       "npcId": 45129,
+       "mobKey": "l1j_45129",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 841,
+       "note": "史巴托",
+       "npcId": 45161,
+       "mobKey": "l1j_45161",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      }
+     ],
+     "3": [
+      {
+       "sourceId": 842,
+       "note": "石頭高崙",
+       "npcId": 45126,
+       "mobKey": "l1j_45126",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 843,
+       "note": "密密",
+       "npcId": 45141,
+       "mobKey": "l1j_45141",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 844,
+       "note": "鬼魂",
+       "npcId": 45174,
+       "mobKey": "l1j_45174",
+       "count": 1,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 845,
+       "note": "歐熊",
+       "npcId": 45371,
+       "mobKey": "l1j_45371",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 846,
+       "note": "骷髏",
+       "npcId": 45107,
+       "mobKey": "l1j_45107",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 847,
+       "note": "骷髏弓箭手",
+       "npcId": 45129,
+       "mobKey": "l1j_45129",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 848,
+       "note": "楊果里恩",
+       "npcId": 45184,
+       "mobKey": "l1j_45184",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 849,
+       "note": "夏洛伯",
+       "npcId": 45136,
+       "mobKey": "l1j_45136",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      }
+     ],
+     "4": [
+      {
+       "sourceId": 850,
+       "note": "黑長者",
+       "npcId": 81176,
+       "mobKey": "l1j_81176",
+       "count": 4,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 851,
+       "note": "黑長者",
+       "npcId": 81176,
+       "mobKey": "l1j_81176",
+       "count": 1,
+       "spawnDelaySeconds": 15,
+       "sealCount": 15
+      }
+     ]
+    },
+    "2": {
+     "1": [
+      {
+       "sourceId": 852,
+       "note": "侏儒",
+       "npcId": 45041,
+       "mobKey": "l1j_45041",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 853,
+       "note": "艾多倫",
+       "npcId": 45027,
+       "mobKey": "l1j_45027",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 854,
+       "note": "冰原狼人",
+       "npcId": 45079,
+       "mobKey": "l1j_45079",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 855,
+       "note": "紙人",
+       "npcId": 45088,
+       "mobKey": "l1j_45088",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 856,
+       "note": "妖魔鬥士",
+       "npcId": 45082,
+       "mobKey": "l1j_45082",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 857,
+       "note": "骷髏",
+       "npcId": 45107,
+       "mobKey": "l1j_45107",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 858,
+       "note": "骷髏弓箭手",
+       "npcId": 45129,
+       "mobKey": "l1j_45129",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 859,
+       "note": "骷髏槍兵",
+       "npcId": 45131,
+       "mobKey": "l1j_45131",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 860,
+       "note": "骷髏斧手",
+       "npcId": 45130,
+       "mobKey": "l1j_45130",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 861,
+       "note": "夏洛伯",
+       "npcId": 45136,
+       "mobKey": "l1j_45136",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 862,
+       "note": "史萊姆",
+       "npcId": 45060,
+       "mobKey": "l1j_45060",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      }
+     ],
+     "2": [
+      {
+       "sourceId": 863,
+       "note": "骷髏",
+       "npcId": 45107,
+       "mobKey": "l1j_45107",
+       "count": 20,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 864,
+       "note": "骷髏弓箭手",
+       "npcId": 45129,
+       "mobKey": "l1j_45129",
+       "count": 20,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 865,
+       "note": "骷髏槍兵",
+       "npcId": 45131,
+       "mobKey": "l1j_45131",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 866,
+       "note": "骷髏斧手",
+       "npcId": 45130,
+       "mobKey": "l1j_45130",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 867,
+       "note": "狐狸",
+       "npcId": 45048,
+       "mobKey": "l1j_45048",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 868,
+       "note": "骷髏斧手",
+       "npcId": 45130,
+       "mobKey": "l1j_45130",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 869,
+       "note": "蘑菇",
+       "npcId": 45551,
+       "mobKey": "l1j_45551",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 870,
+       "note": "熊",
+       "npcId": 45040,
+       "mobKey": "l1j_45040",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 871,
+       "note": "骷髏弓箭手",
+       "npcId": 45129,
+       "mobKey": "l1j_45129",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 872,
+       "note": "史巴托",
+       "npcId": 45161,
+       "mobKey": "l1j_45161",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      }
+     ],
+     "3": [
+      {
+       "sourceId": 873,
+       "note": "石頭高崙",
+       "npcId": 45126,
+       "mobKey": "l1j_45126",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 874,
+       "note": "密密",
+       "npcId": 45141,
+       "mobKey": "l1j_45141",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 875,
+       "note": "鬼魂",
+       "npcId": 45174,
+       "mobKey": "l1j_45174",
+       "count": 1,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 876,
+       "note": "歐熊",
+       "npcId": 45371,
+       "mobKey": "l1j_45371",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 877,
+       "note": "食人妖精",
+       "npcId": 45223,
+       "mobKey": "l1j_45223",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 878,
+       "note": "骷髏弓箭手",
+       "npcId": 45129,
+       "mobKey": "l1j_45129",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 879,
+       "note": "骷髏槍兵",
+       "npcId": 45131,
+       "mobKey": "l1j_45131",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 880,
+       "note": "羅孚妖魔",
+       "npcId": 45127,
+       "mobKey": "l1j_45127",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 881,
+       "note": "萊肯",
+       "npcId": 45173,
+       "mobKey": "l1j_45173",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 882,
+       "note": "夏洛伯",
+       "npcId": 45136,
+       "mobKey": "l1j_45136",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 883,
+       "note": "楊果里恩",
+       "npcId": 45184,
+       "mobKey": "l1j_45184",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 884,
+       "note": "穴居人",
+       "npcId": 45155,
+       "mobKey": "l1j_45155",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      }
+     ],
+     "4": [
+      {
+       "sourceId": 885,
+       "note": "黑長者",
+       "npcId": 81176,
+       "mobKey": "l1j_81176",
+       "count": 9,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 886,
+       "note": "黑長者",
+       "npcId": 81176,
+       "mobKey": "l1j_81176",
+       "count": 1,
+       "spawnDelaySeconds": 15,
+       "sealCount": 15
+      }
+     ]
+    },
+    "3": {
+     "1": [
+      {
+       "sourceId": 887,
+       "note": "侏儒",
+       "npcId": 45041,
+       "mobKey": "l1j_45041",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 888,
+       "note": "妖魔",
+       "npcId": 45017,
+       "mobKey": "l1j_45017",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 889,
+       "note": "漂浮之眼",
+       "npcId": 45068,
+       "mobKey": "l1j_45068",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 890,
+       "note": "蘑菇",
+       "npcId": 45551,
+       "mobKey": "l1j_45551",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 891,
+       "note": "冰原狼人",
+       "npcId": 45079,
+       "mobKey": "l1j_45079",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 892,
+       "note": "妖魔鬥士",
+       "npcId": 45082,
+       "mobKey": "l1j_45082",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 893,
+       "note": "鱷魚",
+       "npcId": 45101,
+       "mobKey": "l1j_45101",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 894,
+       "note": "妖魔殭屍",
+       "npcId": 45104,
+       "mobKey": "l1j_45104",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 895,
+       "note": "妖魔法師",
+       "npcId": 45121,
+       "mobKey": "l1j_45121",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 896,
+       "note": "夏洛伯",
+       "npcId": 45136,
+       "mobKey": "l1j_45136",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 897,
+       "note": "史萊姆",
+       "npcId": 45060,
+       "mobKey": "l1j_45060",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      }
+     ],
+     "2": [
+      {
+       "sourceId": 898,
+       "note": "骷髏",
+       "npcId": 45107,
+       "mobKey": "l1j_45107",
+       "count": 20,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 899,
+       "note": "骷髏弓箭手",
+       "npcId": 45129,
+       "mobKey": "l1j_45129",
+       "count": 20,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 900,
+       "note": "骷髏槍兵",
+       "npcId": 45131,
+       "mobKey": "l1j_45131",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 901,
+       "note": "骷髏斧手",
+       "npcId": 45130,
+       "mobKey": "l1j_45130",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 902,
+       "note": "人形殭屍",
+       "npcId": 45105,
+       "mobKey": "l1j_45105",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 903,
+       "note": "巨蟻",
+       "npcId": 45115,
+       "mobKey": "l1j_45115",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 904,
+       "note": "夏洛伯",
+       "npcId": 45136,
+       "mobKey": "l1j_45136",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 905,
+       "note": "蜥蜴人",
+       "npcId": 45144,
+       "mobKey": "l1j_45144",
+       "count": 20,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 906,
+       "note": "史巴托",
+       "npcId": 45161,
+       "mobKey": "l1j_45161",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      }
+     ],
+     "3": [
+      {
+       "sourceId": 907,
+       "note": "石頭高崙",
+       "npcId": 45126,
+       "mobKey": "l1j_45126",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 908,
+       "note": "密密",
+       "npcId": 45141,
+       "mobKey": "l1j_45141",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 909,
+       "note": "鬼魂",
+       "npcId": 45174,
+       "mobKey": "l1j_45174",
+       "count": 1,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 910,
+       "note": "歐熊",
+       "npcId": 45371,
+       "mobKey": "l1j_45371",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 911,
+       "note": "蟹人",
+       "npcId": 45164,
+       "mobKey": "l1j_45164",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 912,
+       "note": "骷髏槍兵",
+       "npcId": 45131,
+       "mobKey": "l1j_45131",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 913,
+       "note": "骷髏斧手",
+       "npcId": 45130,
+       "mobKey": "l1j_45130",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 914,
+       "note": "楊果里恩",
+       "npcId": 45184,
+       "mobKey": "l1j_45184",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 915,
+       "note": "夏洛伯",
+       "npcId": 45136,
+       "mobKey": "l1j_45136",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      }
+     ],
+     "4": [
+      {
+       "sourceId": 916,
+       "note": "黑長者",
+       "npcId": 81176,
+       "mobKey": "l1j_81176",
+       "count": 4,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 917,
+       "note": "黑長者",
+       "npcId": 81176,
+       "mobKey": "l1j_81176",
+       "count": 1,
+       "spawnDelaySeconds": 15,
+       "sealCount": 15
+      }
+     ]
+    },
+    "4": {
+     "1": [
+      {
+       "sourceId": 918,
+       "note": "侏儒",
+       "npcId": 45041,
+       "mobKey": "l1j_45041",
+       "count": 12,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 919,
+       "note": "狐狸",
+       "npcId": 45048,
+       "mobKey": "l1j_45048",
+       "count": 20,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 920,
+       "note": "漂浮之眼",
+       "npcId": 45068,
+       "mobKey": "l1j_45068",
+       "count": 12,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 921,
+       "note": "侏儒",
+       "npcId": 45041,
+       "mobKey": "l1j_45041",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 922,
+       "note": "冰原狼人",
+       "npcId": 45079,
+       "mobKey": "l1j_45079",
+       "count": 20,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 923,
+       "note": "妖魔鬥士",
+       "npcId": 45082,
+       "mobKey": "l1j_45082",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 924,
+       "note": "骷髏弓箭手",
+       "npcId": 45129,
+       "mobKey": "l1j_45129",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 925,
+       "note": "骷髏槍兵",
+       "npcId": 45131,
+       "mobKey": "l1j_45131",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 926,
+       "note": "骷髏斧手",
+       "npcId": 45130,
+       "mobKey": "l1j_45130",
+       "count": 7,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 927,
+       "note": "夏洛伯",
+       "npcId": 45136,
+       "mobKey": "l1j_45136",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 928,
+       "note": "史萊姆",
+       "npcId": 45060,
+       "mobKey": "l1j_45060",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      }
+     ],
+     "2": [
+      {
+       "sourceId": 929,
+       "note": "骷髏",
+       "npcId": 45107,
+       "mobKey": "l1j_45107",
+       "count": 25,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 930,
+       "note": "骷髏弓箭手",
+       "npcId": 45129,
+       "mobKey": "l1j_45129",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 931,
+       "note": "骷髏槍兵",
+       "npcId": 45131,
+       "mobKey": "l1j_45131",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 932,
+       "note": "骷髏斧手",
+       "npcId": 45130,
+       "mobKey": "l1j_45130",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 933,
+       "note": "人形殭屍",
+       "npcId": 45105,
+       "mobKey": "l1j_45105",
+       "count": 25,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 934,
+       "note": "巨蟻",
+       "npcId": 45115,
+       "mobKey": "l1j_45115",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 935,
+       "note": "夏洛伯",
+       "npcId": 45136,
+       "mobKey": "l1j_45136",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 936,
+       "note": "蜥蜴人",
+       "npcId": 45144,
+       "mobKey": "l1j_45144",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 937,
+       "note": "史巴托",
+       "npcId": 45161,
+       "mobKey": "l1j_45161",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      }
+     ],
+     "3": [
+      {
+       "sourceId": 938,
+       "note": "石頭高崙",
+       "npcId": 45126,
+       "mobKey": "l1j_45126",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 939,
+       "note": "密密",
+       "npcId": 45141,
+       "mobKey": "l1j_45141",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 940,
+       "note": "鬼魂",
+       "npcId": 45174,
+       "mobKey": "l1j_45174",
+       "count": 2,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 941,
+       "note": "歐熊",
+       "npcId": 45371,
+       "mobKey": "l1j_45371",
+       "count": 12,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 942,
+       "note": "蟹人",
+       "npcId": 45164,
+       "mobKey": "l1j_45164",
+       "count": 12,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 943,
+       "note": "骷髏槍兵",
+       "npcId": 45131,
+       "mobKey": "l1j_45131",
+       "count": 12,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 944,
+       "note": "骷髏斧手",
+       "npcId": 45130,
+       "mobKey": "l1j_45130",
+       "count": 12,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 945,
+       "note": "楊果里恩",
+       "npcId": 45184,
+       "mobKey": "l1j_45184",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 946,
+       "note": "夏洛伯",
+       "npcId": 45136,
+       "mobKey": "l1j_45136",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      }
+     ],
+     "4": [
+      {
+       "sourceId": 947,
+       "note": "黑長者",
+       "npcId": 81176,
+       "mobKey": "l1j_81176",
+       "count": 4,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 948,
+       "note": "黑長者",
+       "npcId": 81176,
+       "mobKey": "l1j_81176",
+       "count": 1,
+       "spawnDelaySeconds": 15,
+       "sealCount": 15
+      }
+     ]
+    }
+   }
+  },
+  {
+   "ubId": 5,
+   "name": "銀騎士競技場",
+   "mapId": 95,
+   "mapKey": "l1j_map_95",
+   "area": {
+    "x1": 32682,
+    "y1": 32878,
+    "x2": 32717,
+    "y2": 32913
+   },
+   "minLevel": 1,
+   "maxLevel": 30,
+   "maxPlayer": 20,
+   "classes": {
+    "royal": true,
+    "knight": true,
+    "mage": true,
+    "elf": true,
+    "darkElf": true,
+    "dragonKnight": true,
+    "illusionist": true
+   },
+   "male": true,
+   "female": true,
+   "usePotion": false,
+   "managerNpcIds": [
+    50061,
+    50062
+   ],
+   "openTimes": [
+    200,
+    500,
+    800,
+    1100,
+    1400,
+    1700,
+    2000,
+    2300
+   ],
+   "patterns": {
+    "1": {
+     "1": [
+      {
+       "sourceId": 949,
+       "note": "妖魔弓箭手",
+       "npcId": 45019,
+       "mobKey": "l1j_45019",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 950,
+       "note": "妖魔鬥士",
+       "npcId": 45082,
+       "mobKey": "l1j_45082",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 951,
+       "note": "紙人",
+       "npcId": 45088,
+       "mobKey": "l1j_45088",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 952,
+       "note": "骷髏",
+       "npcId": 45107,
+       "mobKey": "l1j_45107",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 953,
+       "note": "熊",
+       "npcId": 45040,
+       "mobKey": "l1j_45040",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 954,
+       "note": "妖魔法師",
+       "npcId": 45121,
+       "mobKey": "l1j_45121",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 955,
+       "note": "食人妖精",
+       "npcId": 45223,
+       "mobKey": "l1j_45223",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 956,
+       "note": "狐狸",
+       "npcId": 45048,
+       "mobKey": "l1j_45048",
+       "count": 20,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 957,
+       "note": "安普",
+       "npcId": 45051,
+       "mobKey": "l1j_45051",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 958,
+       "note": "安普長老",
+       "npcId": 45064,
+       "mobKey": "l1j_45064",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 959,
+       "note": "巨蟻",
+       "npcId": 45115,
+       "mobKey": "l1j_45115",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 960,
+       "note": "人形殭屍",
+       "npcId": 45105,
+       "mobKey": "l1j_45105",
+       "count": 20,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 961,
+       "note": "冰原狼人",
+       "npcId": 45079,
+       "mobKey": "l1j_45079",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 962,
+       "note": "骷髏弓箭手",
+       "npcId": 45129,
+       "mobKey": "l1j_45129",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      }
+     ],
+     "2": [
+      {
+       "sourceId": 963,
+       "note": "密密",
+       "npcId": 45141,
+       "mobKey": "l1j_45141",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 964,
+       "note": "哈柏哥布林",
+       "npcId": 45140,
+       "mobKey": "l1j_45140",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 965,
+       "note": "歐熊",
+       "npcId": 45371,
+       "mobKey": "l1j_45371",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 966,
+       "note": "穴居人",
+       "npcId": 45155,
+       "mobKey": "l1j_45155",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 967,
+       "note": "蟹人",
+       "npcId": 45164,
+       "mobKey": "l1j_45164",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 968,
+       "note": "怪手",
+       "npcId": 45083,
+       "mobKey": "l1j_45083",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 969,
+       "note": "侏儒戰士",
+       "npcId": 45092,
+       "mobKey": "l1j_45092",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 970,
+       "note": "骷髏",
+       "npcId": 45107,
+       "mobKey": "l1j_45107",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 971,
+       "note": "夏洛伯",
+       "npcId": 45136,
+       "mobKey": "l1j_45136",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 972,
+       "note": "食屍鬼",
+       "npcId": 45157,
+       "mobKey": "l1j_45157",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 973,
+       "note": "史巴托",
+       "npcId": 45161,
+       "mobKey": "l1j_45161",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 974,
+       "note": "史萊姆",
+       "npcId": 45060,
+       "mobKey": "l1j_45060",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      }
+     ],
+     "3": [
+      {
+       "sourceId": 975,
+       "note": "食屍鬼",
+       "npcId": 45157,
+       "mobKey": "l1j_45157",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 976,
+       "note": "艾多倫",
+       "npcId": 45027,
+       "mobKey": "l1j_45027",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 977,
+       "note": "安普長老",
+       "npcId": 45064,
+       "mobKey": "l1j_45064",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 978,
+       "note": "穴居人",
+       "npcId": 45155,
+       "mobKey": "l1j_45155",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 979,
+       "note": "哈柏哥布林",
+       "npcId": 45140,
+       "mobKey": "l1j_45140",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 980,
+       "note": "巨蟻",
+       "npcId": 45115,
+       "mobKey": "l1j_45115",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 981,
+       "note": "夏洛伯",
+       "npcId": 45136,
+       "mobKey": "l1j_45136",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 982,
+       "note": "侏儒戰士",
+       "npcId": 45092,
+       "mobKey": "l1j_45092",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 983,
+       "note": "冰石高崙",
+       "npcId": 45182,
+       "mobKey": "l1j_45182",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 984,
+       "note": "石頭高崙",
+       "npcId": 45126,
+       "mobKey": "l1j_45126",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 985,
+       "note": "巨大兵蟻",
+       "npcId": 45190,
+       "mobKey": "l1j_45190",
+       "count": 2,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 986,
+       "note": "蘑菇",
+       "npcId": 45551,
+       "mobKey": "l1j_45551",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 987,
+       "note": "冰原狼人",
+       "npcId": 45079,
+       "mobKey": "l1j_45079",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 988,
+       "note": "毒蠍",
+       "npcId": 45259,
+       "mobKey": "l1j_45259",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      }
+     ],
+     "4": [
+      {
+       "sourceId": 989,
+       "note": "卡司特",
+       "npcId": 45213,
+       "mobKey": "l1j_45213",
+       "count": 2,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 990,
+       "note": "卡司特王",
+       "npcId": 45346,
+       "mobKey": "l1j_45346",
+       "count": 1,
+       "spawnDelaySeconds": 15,
+       "sealCount": 15
+      }
+     ]
+    },
+    "2": {
+     "1": [
+      {
+       "sourceId": 991,
+       "note": "人形殭屍",
+       "npcId": 45105,
+       "mobKey": "l1j_45105",
+       "count": 20,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 992,
+       "note": "冰原狼人",
+       "npcId": 45079,
+       "mobKey": "l1j_45079",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 993,
+       "note": "鱷魚",
+       "npcId": 45101,
+       "mobKey": "l1j_45101",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 994,
+       "note": "野豬",
+       "npcId": 45023,
+       "mobKey": "l1j_45023",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 995,
+       "note": "蘑菇",
+       "npcId": 45551,
+       "mobKey": "l1j_45551",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 996,
+       "note": "艾多倫",
+       "npcId": 45027,
+       "mobKey": "l1j_45027",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 997,
+       "note": "妖魔鬥士",
+       "npcId": 45082,
+       "mobKey": "l1j_45082",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 998,
+       "note": "阿吐巴妖魔",
+       "npcId": 45149,
+       "mobKey": "l1j_45149",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 999,
+       "note": "都達瑪拉妖魔",
+       "npcId": 45143,
+       "mobKey": "l1j_45143",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1000,
+       "note": "妖魔殭屍",
+       "npcId": 45104,
+       "mobKey": "l1j_45104",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1001,
+       "note": "妖魔巡守",
+       "npcId": 45138,
+       "mobKey": "l1j_45138",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1002,
+       "note": "妖魔法師",
+       "npcId": 45121,
+       "mobKey": "l1j_45121",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1003,
+       "note": "石頭高崙",
+       "npcId": 45126,
+       "mobKey": "l1j_45126",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      }
+     ],
+     "2": [
+      {
+       "sourceId": 1004,
+       "note": "蜥蜴人",
+       "npcId": 45144,
+       "mobKey": "l1j_45144",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1005,
+       "note": "哈柏哥布林",
+       "npcId": 45140,
+       "mobKey": "l1j_45140",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1006,
+       "note": "骷髏斧手",
+       "npcId": 45130,
+       "mobKey": "l1j_45130",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1007,
+       "note": "骷髏槍兵",
+       "npcId": 45131,
+       "mobKey": "l1j_45131",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1008,
+       "note": "骷髏弓箭手",
+       "npcId": 45129,
+       "mobKey": "l1j_45129",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1009,
+       "note": "史巴托",
+       "npcId": 45161,
+       "mobKey": "l1j_45161",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1010,
+       "note": "夏洛伯",
+       "npcId": 45136,
+       "mobKey": "l1j_45136",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1011,
+       "note": "歐熊",
+       "npcId": 45371,
+       "mobKey": "l1j_45371",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1012,
+       "note": "人形殭屍",
+       "npcId": 45105,
+       "mobKey": "l1j_45105",
+       "count": 20,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1013,
+       "note": "漂浮之眼",
+       "npcId": 45068,
+       "mobKey": "l1j_45068",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1014,
+       "note": "穴居人",
+       "npcId": 45155,
+       "mobKey": "l1j_45155",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1015,
+       "note": "史萊姆",
+       "npcId": 45060,
+       "mobKey": "l1j_45060",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      }
+     ],
+     "3": [
+      {
+       "sourceId": 1016,
+       "note": "人形殭屍",
+       "npcId": 45105,
+       "mobKey": "l1j_45105",
+       "count": 20,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1017,
+       "note": "妖魔鬥士",
+       "npcId": 45082,
+       "mobKey": "l1j_45082",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1018,
+       "note": "鱷魚",
+       "npcId": 45101,
+       "mobKey": "l1j_45101",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1019,
+       "note": "食人妖精",
+       "npcId": 45223,
+       "mobKey": "l1j_45223",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1020,
+       "note": "史萊姆",
+       "npcId": 45060,
+       "mobKey": "l1j_45060",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1021,
+       "note": "巨蟻",
+       "npcId": 45115,
+       "mobKey": "l1j_45115",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1022,
+       "note": "夏洛伯",
+       "npcId": 45136,
+       "mobKey": "l1j_45136",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1023,
+       "note": "侏儒戰士",
+       "npcId": 45092,
+       "mobKey": "l1j_45092",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1024,
+       "note": "冰石高崙",
+       "npcId": 45182,
+       "mobKey": "l1j_45182",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1025,
+       "note": "石頭高崙",
+       "npcId": 45126,
+       "mobKey": "l1j_45126",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1026,
+       "note": "巨大兵蟻",
+       "npcId": 45190,
+       "mobKey": "l1j_45190",
+       "count": 2,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1027,
+       "note": "骷髏",
+       "npcId": 45107,
+       "mobKey": "l1j_45107",
+       "count": 12,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1028,
+       "note": "冰原狼人",
+       "npcId": 45079,
+       "mobKey": "l1j_45079",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1029,
+       "note": "蛇女",
+       "npcId": 45387,
+       "mobKey": "l1j_45387",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1030,
+       "note": "密密",
+       "npcId": 45141,
+       "mobKey": "l1j_45141",
+       "count": 7,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      }
+     ],
+     "4": [
+      {
+       "sourceId": 1031,
+       "note": "卡司特",
+       "npcId": 45213,
+       "mobKey": "l1j_45213",
+       "count": 2,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1032,
+       "note": "卡司特王",
+       "npcId": 45346,
+       "mobKey": "l1j_45346",
+       "count": 1,
+       "spawnDelaySeconds": 15,
+       "sealCount": 15
+      }
+     ]
+    },
+    "3": {
+     "1": [
+      {
+       "sourceId": 1033,
+       "note": "蘑菇",
+       "npcId": 45551,
+       "mobKey": "l1j_45551",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1034,
+       "note": "狐狸",
+       "npcId": 45048,
+       "mobKey": "l1j_45048",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1035,
+       "note": "巨蟻",
+       "npcId": 45115,
+       "mobKey": "l1j_45115",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1036,
+       "note": "夏洛伯",
+       "npcId": 45136,
+       "mobKey": "l1j_45136",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1037,
+       "note": "人形殭屍",
+       "npcId": 45105,
+       "mobKey": "l1j_45105",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1038,
+       "note": "侏儒",
+       "npcId": 45041,
+       "mobKey": "l1j_45041",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1039,
+       "note": "侏儒戰士",
+       "npcId": 45092,
+       "mobKey": "l1j_45092",
+       "count": 12,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1040,
+       "note": "骷髏",
+       "npcId": 45107,
+       "mobKey": "l1j_45107",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1041,
+       "note": "骷髏弓箭手",
+       "npcId": 45129,
+       "mobKey": "l1j_45129",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1042,
+       "note": "骷髏斧手",
+       "npcId": 45130,
+       "mobKey": "l1j_45130",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1043,
+       "note": "骷髏槍兵",
+       "npcId": 45131,
+       "mobKey": "l1j_45131",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1044,
+       "note": "石頭高崙",
+       "npcId": 45126,
+       "mobKey": "l1j_45126",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1045,
+       "note": "妖魔巡守",
+       "npcId": 45138,
+       "mobKey": "l1j_45138",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      }
+     ],
+     "2": [
+      {
+       "sourceId": 1046,
+       "note": "蟹人",
+       "npcId": 45164,
+       "mobKey": "l1j_45164",
+       "count": 13,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1047,
+       "note": "食人妖精",
+       "npcId": 45223,
+       "mobKey": "l1j_45223",
+       "count": 2,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1048,
+       "note": "冰石高崙",
+       "npcId": 45182,
+       "mobKey": "l1j_45182",
+       "count": 1,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1049,
+       "note": "楊果里恩",
+       "npcId": 45184,
+       "mobKey": "l1j_45184",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1050,
+       "note": "哈柏哥布林",
+       "npcId": 45140,
+       "mobKey": "l1j_45140",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1051,
+       "note": "歐熊",
+       "npcId": 45371,
+       "mobKey": "l1j_45371",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1052,
+       "note": "穴居人",
+       "npcId": 45155,
+       "mobKey": "l1j_45155",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1053,
+       "note": "妖魔法師",
+       "npcId": 45121,
+       "mobKey": "l1j_45121",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1054,
+       "note": "鼠人",
+       "npcId": 45192,
+       "mobKey": "l1j_45192",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1055,
+       "note": "萊肯",
+       "npcId": 45173,
+       "mobKey": "l1j_45173",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1056,
+       "note": "史萊姆",
+       "npcId": 45060,
+       "mobKey": "l1j_45060",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      }
+     ],
+     "3": [
+      {
+       "sourceId": 1057,
+       "note": "食屍鬼",
+       "npcId": 45157,
+       "mobKey": "l1j_45157",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1058,
+       "note": "蘑菇",
+       "npcId": 45551,
+       "mobKey": "l1j_45551",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1059,
+       "note": "人形殭屍",
+       "npcId": 45105,
+       "mobKey": "l1j_45105",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1060,
+       "note": "熊",
+       "npcId": 45040,
+       "mobKey": "l1j_45040",
+       "count": 13,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1061,
+       "note": "穴居人",
+       "npcId": 45155,
+       "mobKey": "l1j_45155",
+       "count": 13,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1062,
+       "note": "哈柏哥布林",
+       "npcId": 45140,
+       "mobKey": "l1j_45140",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1063,
+       "note": "巨蟻",
+       "npcId": 45115,
+       "mobKey": "l1j_45115",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1064,
+       "note": "夏洛伯",
+       "npcId": 45136,
+       "mobKey": "l1j_45136",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1065,
+       "note": "冰原狼人",
+       "npcId": 45079,
+       "mobKey": "l1j_45079",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1066,
+       "note": "冰石高崙",
+       "npcId": 45182,
+       "mobKey": "l1j_45182",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1067,
+       "note": "妖魔法師",
+       "npcId": 45121,
+       "mobKey": "l1j_45121",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1068,
+       "note": "巨大兵蟻",
+       "npcId": 45190,
+       "mobKey": "l1j_45190",
+       "count": 2,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1069,
+       "note": "楊果里恩",
+       "npcId": 45184,
+       "mobKey": "l1j_45184",
+       "count": 3,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1070,
+       "note": "冰原狼人",
+       "npcId": 45079,
+       "mobKey": "l1j_45079",
+       "count": 20,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1071,
+       "note": "鼠人",
+       "npcId": 45192,
+       "mobKey": "l1j_45192",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1072,
+       "note": "歐熊",
+       "npcId": 45371,
+       "mobKey": "l1j_45371",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      }
+     ],
+     "4": [
+      {
+       "sourceId": 1073,
+       "note": "卡司特",
+       "npcId": 45213,
+       "mobKey": "l1j_45213",
+       "count": 2,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1074,
+       "note": "卡司特王",
+       "npcId": 45346,
+       "mobKey": "l1j_45346",
+       "count": 1,
+       "spawnDelaySeconds": 15,
+       "sealCount": 15
+      }
+     ]
+    },
+    "4": {
+     "1": [
+      {
+       "sourceId": 1075,
+       "note": "漂浮之眼",
+       "npcId": 45068,
+       "mobKey": "l1j_45068",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1076,
+       "note": "怪手",
+       "npcId": 45083,
+       "mobKey": "l1j_45083",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1077,
+       "note": "安普",
+       "npcId": 45051,
+       "mobKey": "l1j_45051",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1078,
+       "note": "安普長老",
+       "npcId": 45064,
+       "mobKey": "l1j_45064",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1079,
+       "note": "野豬",
+       "npcId": 45023,
+       "mobKey": "l1j_45023",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1080,
+       "note": "侏儒",
+       "npcId": 45041,
+       "mobKey": "l1j_45041",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1081,
+       "note": "侏儒戰士",
+       "npcId": 45092,
+       "mobKey": "l1j_45092",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1082,
+       "note": "骷髏",
+       "npcId": 45107,
+       "mobKey": "l1j_45107",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1083,
+       "note": "熊",
+       "npcId": 45040,
+       "mobKey": "l1j_45040",
+       "count": 12,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1084,
+       "note": "食人妖精",
+       "npcId": 45223,
+       "mobKey": "l1j_45223",
+       "count": 12,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1085,
+       "note": "哈柏哥布林",
+       "npcId": 45140,
+       "mobKey": "l1j_45140",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1086,
+       "note": "夏洛伯",
+       "npcId": 45136,
+       "mobKey": "l1j_45136",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1087,
+       "note": "蜥蜴人",
+       "npcId": 45144,
+       "mobKey": "l1j_45144",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1088,
+       "note": "穴居人",
+       "npcId": 45155,
+       "mobKey": "l1j_45155",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      }
+     ],
+     "2": [
+      {
+       "sourceId": 1089,
+       "note": "巨蟻",
+       "npcId": 45115,
+       "mobKey": "l1j_45115",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1090,
+       "note": "妖魔殭屍",
+       "npcId": 45104,
+       "mobKey": "l1j_45104",
+       "count": 13,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1091,
+       "note": "妖魔法師",
+       "npcId": 45121,
+       "mobKey": "l1j_45121",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1092,
+       "note": "妖魔鬥士",
+       "npcId": 45082,
+       "mobKey": "l1j_45082",
+       "count": 13,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1093,
+       "note": "狐狸",
+       "npcId": 45048,
+       "mobKey": "l1j_45048",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1094,
+       "note": "艾多倫",
+       "npcId": 45027,
+       "mobKey": "l1j_45027",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1095,
+       "note": "冰原狼人",
+       "npcId": 45079,
+       "mobKey": "l1j_45079",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1096,
+       "note": "鱷魚",
+       "npcId": 45101,
+       "mobKey": "l1j_45101",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1097,
+       "note": "甘地妖魔",
+       "npcId": 45098,
+       "mobKey": "l1j_45098",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1098,
+       "note": "羅孚妖魔",
+       "npcId": 45127,
+       "mobKey": "l1j_45127",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1099,
+       "note": "阿吐巴妖魔",
+       "npcId": 45149,
+       "mobKey": "l1j_45149",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1100,
+       "note": "都達瑪拉妖魔",
+       "npcId": 45143,
+       "mobKey": "l1j_45143",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1101,
+       "note": "史萊姆",
+       "npcId": 45060,
+       "mobKey": "l1j_45060",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      }
+     ],
+     "3": [
+      {
+       "sourceId": 1102,
+       "note": "食屍鬼",
+       "npcId": 45157,
+       "mobKey": "l1j_45157",
+       "count": 20,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1103,
+       "note": "蘑菇",
+       "npcId": 45551,
+       "mobKey": "l1j_45551",
+       "count": 20,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1104,
+       "note": "人形殭屍",
+       "npcId": 45105,
+       "mobKey": "l1j_45105",
+       "count": 20,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1105,
+       "note": "熊",
+       "npcId": 45040,
+       "mobKey": "l1j_45040",
+       "count": 13,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1106,
+       "note": "穴居人",
+       "npcId": 45155,
+       "mobKey": "l1j_45155",
+       "count": 13,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1107,
+       "note": "哈柏哥布林",
+       "npcId": 45140,
+       "mobKey": "l1j_45140",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1108,
+       "note": "巨蟻",
+       "npcId": 45115,
+       "mobKey": "l1j_45115",
+       "count": 8,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1109,
+       "note": "夏洛伯",
+       "npcId": 45136,
+       "mobKey": "l1j_45136",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1110,
+       "note": "冰原狼人",
+       "npcId": 45079,
+       "mobKey": "l1j_45079",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1111,
+       "note": "冰石高崙",
+       "npcId": 45182,
+       "mobKey": "l1j_45182",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1112,
+       "note": "妖魔法師",
+       "npcId": 45121,
+       "mobKey": "l1j_45121",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1113,
+       "note": "巨大兵蟻",
+       "npcId": 45190,
+       "mobKey": "l1j_45190",
+       "count": 2,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1114,
+       "note": "楊果里恩",
+       "npcId": 45184,
+       "mobKey": "l1j_45184",
+       "count": 5,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1115,
+       "note": "冰原狼人",
+       "npcId": 45079,
+       "mobKey": "l1j_45079",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1116,
+       "note": "鼠人",
+       "npcId": 45192,
+       "mobKey": "l1j_45192",
+       "count": 15,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1117,
+       "note": "歐熊",
+       "npcId": 45371,
+       "mobKey": "l1j_45371",
+       "count": 10,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      }
+     ],
+     "4": [
+      {
+       "sourceId": 1118,
+       "note": "卡司特",
+       "npcId": 45213,
+       "mobKey": "l1j_45213",
+       "count": 2,
+       "spawnDelaySeconds": 15,
+       "sealCount": 0
+      },
+      {
+       "sourceId": 1119,
+       "note": "卡司特王",
+       "npcId": 45346,
+       "mobKey": "l1j_45346",
+       "count": 1,
+       "spawnDelaySeconds": 15,
+       "sealCount": 15
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

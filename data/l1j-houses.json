@@ -1,0 +1,3551 @@
+{
+ "schemaVersion": 1,
+ "source": [
+  "L1j-TW-main/db/InnoDB_TW/house.sql",
+  "L1j-TW-main/db/InnoDB_TW/board_auction.sql",
+  "L1j-TW-main/db/InnoDB_TW/npc.sql",
+  "L1j-TW-main/db/InnoDB_TW/spawnlist_npc.sql",
+  "L1j-TW-main/src/net/l1j/server/model/L1HouseLocation.java"
+ ],
+ "constants": {
+  "minimumLeaderLevel": 15,
+  "initialAuctionPrice": 100000,
+  "auctionDays": 5,
+  "sellerPaymentPercent": 90,
+  "taxAdena": 2000,
+  "taxIntervalDays": 10,
+  "basementAdena": 5000000,
+  "maximumPrice": 2000000000
+ },
+ "counts": {
+  "sourceRows": 129,
+  "operational": 62,
+  "sourceOnlyAden": 67,
+  "startingAuctions": 62,
+  "basements": 56
+ },
+ "houses": [
+  {
+   "houseId": 262145,
+   "name": "奇岩血盟小屋1",
+   "area": 78,
+   "location": "奇岩1號血盟小屋",
+   "keeperId": 50527,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 1,
+   "operational": true,
+   "keeper": {
+    "npcId": 50527,
+    "name": "艾瑪",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33373,
+     "gameY": 32656,
+     "heading": 4
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5068,
+    "mapKey": "clan_house_giran_01",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262146,
+   "name": "奇岩血盟小屋2",
+   "area": 45,
+   "location": "奇岩2號血盟小屋",
+   "keeperId": 50505,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 2,
+   "operational": true,
+   "keeper": {
+    "npcId": 50505,
+    "name": "戴安那",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33385,
+     "gameY": 32656,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5069,
+    "mapKey": "clan_house_giran_02",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262147,
+   "name": "奇岩血盟小屋3",
+   "area": 120,
+   "location": "奇岩3號血盟小屋",
+   "keeperId": 50519,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 3,
+   "operational": true,
+   "keeper": {
+    "npcId": 50519,
+    "name": "巴斯",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33397,
+     "gameY": 32657,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5070,
+    "mapKey": "clan_house_giran_03",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262148,
+   "name": "奇岩血盟小屋4",
+   "area": 45,
+   "location": "奇岩4號血盟小屋",
+   "keeperId": 50545,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 4,
+   "operational": true,
+   "keeper": {
+    "npcId": 50545,
+    "name": "漢妮塔",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33427,
+     "gameY": 32658,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5071,
+    "mapKey": "clan_house_giran_04",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262149,
+   "name": "奇岩血盟小屋5",
+   "area": 78,
+   "location": "奇岩5號血盟小屋",
+   "keeperId": 50531,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 5,
+   "operational": true,
+   "keeper": {
+    "npcId": 50531,
+    "name": "查士丁尼",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33440,
+     "gameY": 32667,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5072,
+    "mapKey": "clan_house_giran_05",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262150,
+   "name": "奇岩血盟小屋6",
+   "area": 120,
+   "location": "奇岩6號血盟小屋",
+   "keeperId": 50529,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 6,
+   "operational": true,
+   "keeper": {
+    "npcId": 50529,
+    "name": "汪汪",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33458,
+     "gameY": 32655,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5073,
+    "mapKey": "clan_house_giran_06",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262151,
+   "name": "奇岩血盟小屋7",
+   "area": 45,
+   "location": "奇岩7號血盟小屋",
+   "keeperId": 50516,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 7,
+   "operational": true,
+   "keeper": {
+    "npcId": 50516,
+    "name": "法斯加",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33476,
+     "gameY": 32667,
+     "heading": 4
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5074,
+    "mapKey": "clan_house_giran_07",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262152,
+   "name": "奇岩血盟小屋8",
+   "area": 78,
+   "location": "奇岩8號血盟小屋",
+   "keeperId": 50538,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 8,
+   "operational": true,
+   "keeper": {
+    "npcId": 50538,
+    "name": "卡繆兒",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33472,
+     "gameY": 32680,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5075,
+    "mapKey": "clan_house_giran_08",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262153,
+   "name": "奇岩血盟小屋9",
+   "area": 78,
+   "location": "奇岩9號血盟小屋",
+   "keeperId": 50518,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 9,
+   "operational": true,
+   "keeper": {
+    "npcId": 50518,
+    "name": "立夫那",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33458,
+     "gameY": 32699,
+     "heading": 4
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5076,
+    "mapKey": "clan_house_giran_09",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262154,
+   "name": "奇岩血盟小屋10",
+   "area": 120,
+   "location": "奇岩10號血盟小屋",
+   "keeperId": 50509,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 10,
+   "operational": true,
+   "keeper": {
+    "npcId": 50509,
+    "name": "利芙雅",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33425,
+     "gameY": 32692,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5077,
+    "mapKey": "clan_house_giran_10",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262155,
+   "name": "奇岩血盟小屋11",
+   "area": 78,
+   "location": "奇岩11號血盟小屋",
+   "keeperId": 50536,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 11,
+   "operational": true,
+   "keeper": {
+    "npcId": 50536,
+    "name": "吉達",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33410,
+     "gameY": 32676,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5078,
+    "mapKey": "clan_house_giran_11",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262156,
+   "name": "奇岩血盟小屋12",
+   "area": 78,
+   "location": "奇岩12號血盟小屋",
+   "keeperId": 50520,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 12,
+   "operational": true,
+   "keeper": {
+    "npcId": 50520,
+    "name": "莎拉",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33419,
+     "gameY": 32708,
+     "heading": 4
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5079,
+    "mapKey": "clan_house_giran_12",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262157,
+   "name": "奇岩血盟小屋13",
+   "area": 120,
+   "location": "奇岩13號血盟小屋",
+   "keeperId": 50543,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 13,
+   "operational": true,
+   "keeper": {
+    "npcId": 50543,
+    "name": "塔克拉",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33376,
+     "gameY": 32699,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5080,
+    "mapKey": "clan_house_giran_13",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262158,
+   "name": "奇岩血盟小屋14",
+   "area": 78,
+   "location": "奇岩14號血盟小屋",
+   "keeperId": 50526,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 14,
+   "operational": true,
+   "keeper": {
+    "npcId": 50526,
+    "name": "艾隆娜",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33362,
+     "gameY": 32683,
+     "heading": 4
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5081,
+    "mapKey": "clan_house_giran_14",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262159,
+   "name": "奇岩血盟小屋15",
+   "area": 45,
+   "location": "奇岩15號血盟小屋",
+   "keeperId": 50512,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 15,
+   "operational": true,
+   "keeper": {
+    "npcId": 50512,
+    "name": "馬莉",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33361,
+     "gameY": 32671,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5082,
+    "mapKey": "clan_house_giran_15",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262160,
+   "name": "奇岩血盟小屋16",
+   "area": 78,
+   "location": "奇岩16號血盟小屋",
+   "keeperId": 50510,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 16,
+   "operational": true,
+   "keeper": {
+    "npcId": 50510,
+    "name": "瑪麗娜",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33342,
+     "gameY": 32662,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5083,
+    "mapKey": "clan_house_giran_16",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262161,
+   "name": "奇岩血盟小屋17",
+   "area": 45,
+   "location": "奇岩17號血盟小屋",
+   "keeperId": 50504,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 17,
+   "operational": true,
+   "keeper": {
+    "npcId": 50504,
+    "name": "尼可莉尼",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33345,
+     "gameY": 32674,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5084,
+    "mapKey": "clan_house_giran_17",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262162,
+   "name": "奇岩血盟小屋18",
+   "area": 120,
+   "location": "奇岩18號血盟小屋",
+   "keeperId": 50525,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 18,
+   "operational": true,
+   "keeper": {
+    "npcId": 50525,
+    "name": "以拉利雅",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33342,
+     "gameY": 32711,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5085,
+    "mapKey": "clan_house_giran_18",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262163,
+   "name": "奇岩血盟小屋19",
+   "area": 78,
+   "location": "奇岩19號血盟小屋",
+   "keeperId": 50534,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 19,
+   "operational": true,
+   "keeper": {
+    "npcId": 50534,
+    "name": "朱利雅",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33354,
+     "gameY": 32733,
+     "heading": 4
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5086,
+    "mapKey": "clan_house_giran_19",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262164,
+   "name": "奇岩血盟小屋20",
+   "area": 78,
+   "location": "奇岩20號血盟小屋",
+   "keeperId": 50540,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 20,
+   "operational": true,
+   "keeper": {
+    "npcId": 50540,
+    "name": "卡特琳娜",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33367,
+     "gameY": 32715,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5087,
+    "mapKey": "clan_house_giran_20",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262165,
+   "name": "奇岩血盟小屋21",
+   "area": 45,
+   "location": "奇岩21號血盟小屋",
+   "keeperId": 50515,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 21,
+   "operational": true,
+   "keeper": {
+    "npcId": 50515,
+    "name": "邁倫",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33380,
+     "gameY": 32714,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5088,
+    "mapKey": "clan_house_giran_21",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262166,
+   "name": "奇岩血盟小屋22",
+   "area": 120,
+   "location": "奇岩22號血盟小屋",
+   "keeperId": 50513,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 22,
+   "operational": true,
+   "keeper": {
+    "npcId": 50513,
+    "name": "曼尼佛",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33405,
+     "gameY": 32740,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5089,
+    "mapKey": "clan_house_giran_22",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262167,
+   "name": "奇岩血盟小屋23",
+   "area": 78,
+   "location": "奇岩23號血盟小屋",
+   "keeperId": 50528,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 23,
+   "operational": true,
+   "keeper": {
+    "npcId": 50528,
+    "name": "歐薩",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33425,
+     "gameY": 32719,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5090,
+    "mapKey": "clan_house_giran_23",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262168,
+   "name": "奇岩血盟小屋24",
+   "area": 45,
+   "location": "奇岩24號血盟小屋",
+   "keeperId": 50533,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 24,
+   "operational": true,
+   "keeper": {
+    "npcId": 50533,
+    "name": "喬安娜",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33448,
+     "gameY": 32731,
+     "heading": 4
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5091,
+    "mapKey": "clan_house_giran_24",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262169,
+   "name": "奇岩血盟小屋25",
+   "area": 45,
+   "location": "奇岩25號血盟小屋",
+   "keeperId": 50542,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 25,
+   "operational": true,
+   "keeper": {
+    "npcId": 50542,
+    "name": "泰多娜",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33404,
+     "gameY": 32756,
+     "heading": 4
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5092,
+    "mapKey": "clan_house_giran_25",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262170,
+   "name": "奇岩血盟小屋26",
+   "area": 120,
+   "location": "奇岩26號血盟小屋",
+   "keeperId": 50511,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 26,
+   "operational": true,
+   "keeper": {
+    "npcId": 50511,
+    "name": "瑪格利",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33367,
+     "gameY": 32762,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5093,
+    "mapKey": "clan_house_giran_26",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262171,
+   "name": "奇岩血盟小屋27",
+   "area": 78,
+   "location": "奇岩27號血盟小屋",
+   "keeperId": 50501,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 27,
+   "operational": true,
+   "keeper": {
+    "npcId": 50501,
+    "name": "葛達",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33352,
+     "gameY": 32776,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5094,
+    "mapKey": "clan_house_giran_27",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262172,
+   "name": "奇岩血盟小屋28",
+   "area": 45,
+   "location": "奇岩28號血盟小屋",
+   "keeperId": 50503,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 28,
+   "operational": true,
+   "keeper": {
+    "npcId": 50503,
+    "name": "娜拉",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33359,
+     "gameY": 32790,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5095,
+    "mapKey": "clan_house_giran_28",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262173,
+   "name": "奇岩血盟小屋29",
+   "area": 78,
+   "location": "奇岩29號血盟小屋",
+   "keeperId": 50508,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 29,
+   "operational": true,
+   "keeper": {
+    "npcId": 50508,
+    "name": "露辛達",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33371,
+     "gameY": 32791,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5096,
+    "mapKey": "clan_house_giran_29",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262174,
+   "name": "奇岩血盟小屋30",
+   "area": 45,
+   "location": "奇岩30號血盟小屋",
+   "keeperId": 50514,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 30,
+   "operational": true,
+   "keeper": {
+    "npcId": 50514,
+    "name": "蜜拉瓦",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33383,
+     "gameY": 32775,
+     "heading": 4
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5097,
+    "mapKey": "clan_house_giran_30",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262175,
+   "name": "奇岩血盟小屋31",
+   "area": 78,
+   "location": "奇岩31號血盟小屋",
+   "keeperId": 50532,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 31,
+   "operational": true,
+   "keeper": {
+    "npcId": 50532,
+    "name": "葛瑞丁娜",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33402,
+     "gameY": 32793,
+     "heading": 4
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5098,
+    "mapKey": "clan_house_giran_31",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262176,
+   "name": "奇岩血盟小屋32",
+   "area": 78,
+   "location": "奇岩32號血盟小屋",
+   "keeperId": 50544,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 32,
+   "operational": true,
+   "keeper": {
+    "npcId": 50544,
+    "name": "寶琳娜",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33484,
+     "gameY": 32793,
+     "heading": 4
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5099,
+    "mapKey": "clan_house_giran_32",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262177,
+   "name": "奇岩血盟小屋33",
+   "area": 45,
+   "location": "奇岩33號血盟小屋",
+   "keeperId": 50524,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 33,
+   "operational": true,
+   "keeper": {
+    "npcId": 50524,
+    "name": "艾蜜利雅",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33498,
+     "gameY": 32803,
+     "heading": 4
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5100,
+    "mapKey": "clan_house_giran_33",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262178,
+   "name": "奇岩血盟小屋34",
+   "area": 45,
+   "location": "奇岩34號血盟小屋",
+   "keeperId": 50535,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 34,
+   "operational": true,
+   "keeper": {
+    "npcId": 50535,
+    "name": "朱利雅娜",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33383,
+     "gameY": 32805,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5101,
+    "mapKey": "clan_house_giran_34",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262179,
+   "name": "奇岩血盟小屋35",
+   "area": 120,
+   "location": "奇岩35號血盟小屋",
+   "keeperId": 50521,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 35,
+   "operational": true,
+   "keeper": {
+    "npcId": 50521,
+    "name": "莎洛瑪",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33378,
+     "gameY": 32829,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5102,
+    "mapKey": "clan_house_giran_35",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262180,
+   "name": "奇岩血盟小屋36",
+   "area": 45,
+   "location": "奇岩36號血盟小屋",
+   "keeperId": 50517,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 36,
+   "operational": true,
+   "keeper": {
+    "npcId": 50517,
+    "name": "伯羅尼斯",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33398,
+     "gameY": 32812,
+     "heading": 4
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5103,
+    "mapKey": "clan_house_giran_36",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262181,
+   "name": "奇岩血盟小屋37",
+   "area": 78,
+   "location": "奇岩37號血盟小屋",
+   "keeperId": 50537,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 37,
+   "operational": true,
+   "keeper": {
+    "npcId": 50537,
+    "name": "凱瑞利雅",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33398,
+     "gameY": 32823,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5104,
+    "mapKey": "clan_house_giran_37",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262182,
+   "name": "奇岩血盟小屋38",
+   "area": 78,
+   "location": "奇岩38號血盟小屋",
+   "keeperId": 50539,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 38,
+   "operational": true,
+   "keeper": {
+    "npcId": 50539,
+    "name": "凱利娜",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33436,
+     "gameY": 32843,
+     "heading": 4
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5105,
+    "mapKey": "clan_house_giran_38",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262183,
+   "name": "奇岩血盟小屋39",
+   "area": 45,
+   "location": "奇岩39號血盟小屋",
+   "keeperId": 50507,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 39,
+   "operational": true,
+   "keeper": {
+    "npcId": 50507,
+    "name": "利奧羅娜",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33460,
+     "gameY": 32841,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5106,
+    "mapKey": "clan_house_giran_39",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262184,
+   "name": "奇岩血盟小屋40",
+   "area": 78,
+   "location": "奇岩40號血盟小屋",
+   "keeperId": 50530,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 40,
+   "operational": true,
+   "keeper": {
+    "npcId": 50530,
+    "name": "奧娜",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33390,
+     "gameY": 32850,
+     "heading": 4
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5107,
+    "mapKey": "clan_house_giran_40",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262185,
+   "name": "奇岩血盟小屋41",
+   "area": 78,
+   "location": "奇岩41號血盟小屋",
+   "keeperId": 50502,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 41,
+   "operational": true,
+   "keeper": {
+    "npcId": 50502,
+    "name": "吉娜娃",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33400,
+     "gameY": 32861,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5108,
+    "mapKey": "clan_house_giran_41",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262186,
+   "name": "奇岩血盟小屋42",
+   "area": 45,
+   "location": "奇岩42號血盟小屋",
+   "keeperId": 50506,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 42,
+   "operational": true,
+   "keeper": {
+    "npcId": 50506,
+    "name": "都瓦納",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33414,
+     "gameY": 32852,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5109,
+    "mapKey": "clan_house_giran_42",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262187,
+   "name": "奇岩血盟小屋43",
+   "area": 120,
+   "location": "奇岩43號血盟小屋",
+   "keeperId": 50522,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 43,
+   "operational": true,
+   "keeper": {
+    "npcId": 50522,
+    "name": "辛格立德",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33376,
+     "gameY": 32874,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5110,
+    "mapKey": "clan_house_giran_43",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262188,
+   "name": "奇岩血盟小屋44",
+   "area": 120,
+   "location": "奇岩44號血盟小屋",
+   "keeperId": 50541,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 44,
+   "operational": true,
+   "keeper": {
+    "npcId": 50541,
+    "name": "泰莎",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33429,
+     "gameY": 32872,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5111,
+    "mapKey": "clan_house_giran_44",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 262189,
+   "name": "奇岩血盟小屋45",
+   "area": 78,
+   "location": "奇岩45號血盟小屋",
+   "keeperId": 50523,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "giran",
+   "number": 45,
+   "operational": true,
+   "keeper": {
+    "npcId": 50523,
+    "name": "阿瑪",
+    "title": "奇岩女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33444,
+     "gameY": 32871,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5112,
+    "mapKey": "clan_house_giran_45",
+    "gameX": 32780,
+    "gameY": 32815
+   }
+  },
+  {
+   "houseId": 327681,
+   "name": "海音血盟小屋1",
+   "area": 0,
+   "location": "海音1號血盟小屋",
+   "keeperId": 50620,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "heine",
+   "number": 1,
+   "operational": true,
+   "keeper": {
+    "npcId": 50620,
+    "name": "艾迪娜",
+    "title": "海音女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33610,
+     "gameY": 33218,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5113,
+    "mapKey": "clan_house_heine_01",
+    "gameX": 32772,
+    "gameY": 32814
+   }
+  },
+  {
+   "houseId": 327682,
+   "name": "海音血盟小屋2",
+   "area": 0,
+   "location": "海音2號血盟小屋",
+   "keeperId": 50623,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "heine",
+   "number": 2,
+   "operational": true,
+   "keeper": {
+    "npcId": 50623,
+    "name": "蘭妮雅",
+    "title": "海音女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33629,
+     "gameY": 33209,
+     "heading": 4
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5114,
+    "mapKey": "clan_house_heine_02",
+    "gameX": 32772,
+    "gameY": 32814
+   }
+  },
+  {
+   "houseId": 327683,
+   "name": "海音血盟小屋3",
+   "area": 0,
+   "location": "海音3號血盟小屋",
+   "keeperId": 50619,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "heine",
+   "number": 3,
+   "operational": true,
+   "keeper": {
+    "npcId": 50619,
+    "name": "蜜瑞雅",
+    "title": "海音女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33626,
+     "gameY": 33225,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5115,
+    "mapKey": "clan_house_heine_03",
+    "gameX": 32772,
+    "gameY": 32814
+   }
+  },
+  {
+   "houseId": 327684,
+   "name": "海音血盟小屋4",
+   "area": 0,
+   "location": "海音4號血盟小屋",
+   "keeperId": 50621,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "heine",
+   "number": 4,
+   "operational": true,
+   "keeper": {
+    "npcId": 50621,
+    "name": "依卓",
+    "title": "海音女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33632,
+     "gameY": 33247,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5116,
+    "mapKey": "clan_house_heine_04",
+    "gameX": 32772,
+    "gameY": 32814
+   }
+  },
+  {
+   "houseId": 327685,
+   "name": "海音血盟小屋5",
+   "area": 0,
+   "location": "海音5號血盟小屋",
+   "keeperId": 50622,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "heine",
+   "number": 5,
+   "operational": true,
+   "keeper": {
+    "npcId": 50622,
+    "name": "艾爾莎",
+    "title": "海音女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33618,
+     "gameY": 33266,
+     "heading": 4
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5117,
+    "mapKey": "clan_house_heine_05",
+    "gameX": 32772,
+    "gameY": 32814
+   }
+  },
+  {
+   "houseId": 327686,
+   "name": "海音血盟小屋6",
+   "area": 0,
+   "location": "海音6號血盟小屋",
+   "keeperId": 50624,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "heine",
+   "number": 6,
+   "operational": true,
+   "keeper": {
+    "npcId": 50624,
+    "name": "卓娜",
+    "title": "海音女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33576,
+     "gameY": 33233,
+     "heading": 4
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5118,
+    "mapKey": "clan_house_heine_06",
+    "gameX": 32772,
+    "gameY": 32814
+   }
+  },
+  {
+   "houseId": 327687,
+   "name": "海音血盟小屋7",
+   "area": 0,
+   "location": "海音7號血盟小屋",
+   "keeperId": 50617,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "heine",
+   "number": 7,
+   "operational": true,
+   "keeper": {
+    "npcId": 50617,
+    "name": "露蘿娜",
+    "title": "海音女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33583,
+     "gameY": 33305,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5119,
+    "mapKey": "clan_house_heine_07",
+    "gameX": 32772,
+    "gameY": 32814
+   }
+  },
+  {
+   "houseId": 327688,
+   "name": "海音血盟小屋8",
+   "area": 0,
+   "location": "海音8號血盟小屋",
+   "keeperId": 50614,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "heine",
+   "number": 8,
+   "operational": true,
+   "keeper": {
+    "npcId": 50614,
+    "name": "諾薇塔",
+    "title": "海音女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33582,
+     "gameY": 33339,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5120,
+    "mapKey": "clan_house_heine_08",
+    "gameX": 32772,
+    "gameY": 32814
+   }
+  },
+  {
+   "houseId": 327689,
+   "name": "海音血盟小屋9",
+   "area": 0,
+   "location": "海音9號血盟小屋",
+   "keeperId": 50618,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "heine",
+   "number": 9,
+   "operational": true,
+   "keeper": {
+    "npcId": 50618,
+    "name": "默娜",
+    "title": "海音女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33619,
+     "gameY": 33380,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5121,
+    "mapKey": "clan_house_heine_09",
+    "gameX": 32772,
+    "gameY": 32814
+   }
+  },
+  {
+   "houseId": 327690,
+   "name": "海音血盟小屋10",
+   "area": 0,
+   "location": "海音10號血盟小屋",
+   "keeperId": 50616,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "heine",
+   "number": 10,
+   "operational": true,
+   "keeper": {
+    "npcId": 50616,
+    "name": "黛利雅",
+    "title": "海音女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33625,
+     "gameY": 33397,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5122,
+    "mapKey": "clan_house_heine_10",
+    "gameX": 32772,
+    "gameY": 32814
+   }
+  },
+  {
+   "houseId": 327691,
+   "name": "海音血盟小屋11",
+   "area": 0,
+   "location": "海音11號血盟小屋",
+   "keeperId": 50615,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "heine",
+   "number": 11,
+   "operational": true,
+   "keeper": {
+    "npcId": 50615,
+    "name": "達英",
+    "title": "海音女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 33626,
+     "gameY": 33446,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-02-18 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": {
+    "mapId": 5123,
+    "mapKey": "clan_house_heine_11",
+    "gameX": 32772,
+    "gameY": 32814
+   }
+  },
+  {
+   "houseId": 458753,
+   "name": "亞丁血盟小屋1",
+   "area": 51,
+   "location": "亞丁1號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 1,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458754,
+   "name": "亞丁血盟小屋2",
+   "area": 24,
+   "location": "亞丁2號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 2,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458755,
+   "name": "亞丁血盟小屋3",
+   "area": 24,
+   "location": "亞丁3號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 3,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458756,
+   "name": "亞丁血盟小屋4",
+   "area": 56,
+   "location": "亞丁4號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 4,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458757,
+   "name": "亞丁血盟小屋5",
+   "area": 24,
+   "location": "亞丁5號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 5,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458758,
+   "name": "亞丁血盟小屋6",
+   "area": 63,
+   "location": "亞丁6號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 6,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458759,
+   "name": "亞丁血盟小屋7",
+   "area": 24,
+   "location": "亞丁7號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 7,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458760,
+   "name": "亞丁血盟小屋8",
+   "area": 63,
+   "location": "亞丁8號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 8,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458761,
+   "name": "亞丁血盟小屋9",
+   "area": 24,
+   "location": "亞丁9號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 9,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458762,
+   "name": "亞丁血盟小屋10",
+   "area": 24,
+   "location": "亞丁10號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 10,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458763,
+   "name": "亞丁血盟小屋11",
+   "area": 24,
+   "location": "亞丁11號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 11,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458764,
+   "name": "亞丁血盟小屋12",
+   "area": 24,
+   "location": "亞丁12號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 12,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458765,
+   "name": "亞丁血盟小屋13",
+   "area": 24,
+   "location": "亞丁13號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 13,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458766,
+   "name": "亞丁血盟小屋14",
+   "area": 63,
+   "location": "亞丁14號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 14,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458767,
+   "name": "亞丁血盟小屋15",
+   "area": 24,
+   "location": "亞丁15號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 15,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458768,
+   "name": "亞丁血盟小屋16",
+   "area": 56,
+   "location": "亞丁16號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 16,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458769,
+   "name": "亞丁血盟小屋17",
+   "area": 63,
+   "location": "亞丁17號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 17,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458770,
+   "name": "亞丁血盟小屋18",
+   "area": 24,
+   "location": "亞丁18號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 18,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458771,
+   "name": "亞丁血盟小屋19",
+   "area": 32,
+   "location": "亞丁19號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 19,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458772,
+   "name": "亞丁血盟小屋20",
+   "area": 64,
+   "location": "亞丁20號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 20,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458773,
+   "name": "亞丁血盟小屋21",
+   "area": 24,
+   "location": "亞丁21號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 21,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458774,
+   "name": "亞丁血盟小屋22",
+   "area": 20,
+   "location": "亞丁22號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 22,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458775,
+   "name": "亞丁血盟小屋23",
+   "area": 24,
+   "location": "亞丁23號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 23,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458776,
+   "name": "亞丁血盟小屋24",
+   "area": 56,
+   "location": "亞丁24號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 24,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458777,
+   "name": "亞丁血盟小屋25",
+   "area": 24,
+   "location": "亞丁25號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 25,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458778,
+   "name": "亞丁血盟小屋26",
+   "area": 20,
+   "location": "亞丁26號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 26,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458779,
+   "name": "亞丁血盟小屋27",
+   "area": 42,
+   "location": "亞丁27號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 27,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458780,
+   "name": "亞丁血盟小屋28",
+   "area": 15,
+   "location": "亞丁28號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 28,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458781,
+   "name": "亞丁血盟小屋29",
+   "area": 24,
+   "location": "亞丁29號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 29,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458782,
+   "name": "亞丁血盟小屋30",
+   "area": 24,
+   "location": "亞丁30號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 30,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458783,
+   "name": "亞丁血盟小屋31",
+   "area": 42,
+   "location": "亞丁31號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 31,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458784,
+   "name": "亞丁血盟小屋32",
+   "area": 48,
+   "location": "亞丁32號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 32,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458785,
+   "name": "亞丁血盟小屋33",
+   "area": 24,
+   "location": "亞丁33號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 33,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458786,
+   "name": "亞丁血盟小屋34",
+   "area": 15,
+   "location": "亞丁34號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 34,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458787,
+   "name": "亞丁血盟小屋35",
+   "area": 24,
+   "location": "亞丁35號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 35,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458788,
+   "name": "亞丁血盟小屋36",
+   "area": 24,
+   "location": "亞丁36號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 36,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458789,
+   "name": "亞丁血盟小屋37",
+   "area": 64,
+   "location": "亞丁37號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 37,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458790,
+   "name": "亞丁血盟小屋38",
+   "area": 15,
+   "location": "亞丁38號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 38,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458791,
+   "name": "亞丁血盟小屋39",
+   "area": 15,
+   "location": "亞丁39號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 39,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458792,
+   "name": "亞丁血盟小屋40",
+   "area": 24,
+   "location": "亞丁40號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 40,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458793,
+   "name": "亞丁血盟小屋41",
+   "area": 24,
+   "location": "亞丁41號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 41,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458794,
+   "name": "亞丁血盟小屋42",
+   "area": 29,
+   "location": "亞丁42號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 42,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458795,
+   "name": "亞丁血盟小屋43",
+   "area": 24,
+   "location": "亞丁43號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 43,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458796,
+   "name": "亞丁血盟小屋44",
+   "area": 15,
+   "location": "亞丁44號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 44,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458797,
+   "name": "亞丁血盟小屋45",
+   "area": 56,
+   "location": "亞丁45號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 45,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458798,
+   "name": "亞丁血盟小屋46",
+   "area": 15,
+   "location": "亞丁46號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 46,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458799,
+   "name": "亞丁血盟小屋47",
+   "area": 24,
+   "location": "亞丁47號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 47,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458800,
+   "name": "亞丁血盟小屋48",
+   "area": 24,
+   "location": "亞丁48號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 48,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458801,
+   "name": "亞丁血盟小屋49",
+   "area": 24,
+   "location": "亞丁49號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 49,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458802,
+   "name": "亞丁血盟小屋50",
+   "area": 48,
+   "location": "亞丁50號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 50,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458803,
+   "name": "亞丁血盟小屋51",
+   "area": 24,
+   "location": "亞丁51號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 51,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458804,
+   "name": "亞丁血盟小屋52",
+   "area": 24,
+   "location": "亞丁52號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 52,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458805,
+   "name": "亞丁血盟小屋53",
+   "area": 54,
+   "location": "亞丁53號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 53,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458806,
+   "name": "亞丁血盟小屋54",
+   "area": 24,
+   "location": "亞丁54號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 54,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458807,
+   "name": "亞丁血盟小屋55",
+   "area": 63,
+   "location": "亞丁55號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 55,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458808,
+   "name": "亞丁血盟小屋56",
+   "area": 63,
+   "location": "亞丁56號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 56,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458809,
+   "name": "亞丁血盟小屋57",
+   "area": 42,
+   "location": "亞丁57號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 57,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458810,
+   "name": "亞丁血盟小屋58",
+   "area": 24,
+   "location": "亞丁58號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 58,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458811,
+   "name": "亞丁血盟小屋59",
+   "area": 24,
+   "location": "亞丁59號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 59,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458812,
+   "name": "亞丁血盟小屋60",
+   "area": 63,
+   "location": "亞丁60號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 60,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458813,
+   "name": "亞丁血盟小屋61",
+   "area": 24,
+   "location": "亞丁61號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 61,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458814,
+   "name": "亞丁血盟小屋62",
+   "area": 21,
+   "location": "亞丁62號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 62,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458815,
+   "name": "亞丁血盟小屋63",
+   "area": 63,
+   "location": "亞丁63號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 63,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458816,
+   "name": "亞丁血盟小屋64",
+   "area": 24,
+   "location": "亞丁64號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 64,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458817,
+   "name": "亞丁血盟小屋65",
+   "area": 24,
+   "location": "亞丁65號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 65,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458818,
+   "name": "亞丁血盟小屋66",
+   "area": 48,
+   "location": "亞丁66號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 66,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 458819,
+   "name": "亞丁血盟小屋67",
+   "area": 24,
+   "location": "亞丁67號血盟小屋",
+   "keeperId": 0,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "aden",
+   "number": 67,
+   "operational": false,
+   "keeper": null,
+   "startingAuction": null,
+   "basement": null
+  },
+  {
+   "houseId": 524289,
+   "name": "古魯丁血盟小屋1",
+   "area": 48,
+   "location": "古魯丁1號血盟小屋",
+   "keeperId": 50626,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "gludin",
+   "number": 1,
+   "operational": true,
+   "keeper": {
+    "npcId": 50626,
+    "name": "米雪",
+    "title": "古魯丁女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 32565,
+     "gameY": 32676,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-09-20 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": null
+  },
+  {
+   "houseId": 524290,
+   "name": "古魯丁血盟小屋2",
+   "area": 71,
+   "location": "古魯丁2號血盟小屋",
+   "keeperId": 50627,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "gludin",
+   "number": 2,
+   "operational": true,
+   "keeper": {
+    "npcId": 50627,
+    "name": "波比",
+    "title": "古魯丁女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 32548,
+     "gameY": 32706,
+     "heading": 4
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-09-20 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": null
+  },
+  {
+   "houseId": 524291,
+   "name": "古魯丁血盟小屋3",
+   "area": 48,
+   "location": "古魯丁3號血盟小屋",
+   "keeperId": 50628,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "gludin",
+   "number": 3,
+   "operational": true,
+   "keeper": {
+    "npcId": 50628,
+    "name": "艾利沙",
+    "title": "古魯丁女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 32537,
+     "gameY": 32781,
+     "heading": 4
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-09-20 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": null
+  },
+  {
+   "houseId": 524292,
+   "name": "古魯丁血盟小屋4",
+   "area": 48,
+   "location": "古魯丁4號血盟小屋",
+   "keeperId": 50629,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "gludin",
+   "number": 4,
+   "operational": true,
+   "keeper": {
+    "npcId": 50629,
+    "name": "圖羅希",
+    "title": "古魯丁女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 32559,
+     "gameY": 32787,
+     "heading": 6
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-09-20 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": null
+  },
+  {
+   "houseId": 524293,
+   "name": "古魯丁血盟小屋5",
+   "area": 82,
+   "location": "古魯丁5號血盟小屋",
+   "keeperId": 50630,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "gludin",
+   "number": 5,
+   "operational": true,
+   "keeper": {
+    "npcId": 50630,
+    "name": "拿塔夏",
+    "title": "古魯丁女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 32535,
+     "gameY": 32808,
+     "heading": 4
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-09-20 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": null
+  },
+  {
+   "houseId": 524294,
+   "name": "古魯丁血盟小屋6",
+   "area": 40,
+   "location": "古魯丁6號血盟小屋",
+   "keeperId": 50631,
+   "sourceOnSale": true,
+   "sourcePurchaseBasement": false,
+   "sourceTaxDeadline": "2008-08-01 00:00:00",
+   "city": "gludin",
+   "number": 6,
+   "operational": true,
+   "keeper": {
+    "npcId": 50631,
+    "name": "美諾亞",
+    "title": "古魯丁女僕",
+    "impl": "L1Housekeeper",
+    "gfx": 1256,
+    "spawn": {
+     "mapId": 4,
+     "gameX": 32553,
+     "gameY": 32820,
+     "heading": 0
+    }
+   },
+   "startingAuction": {
+    "deadlineSource": "2008-09-20 00:00:00",
+    "price": 100000,
+    "oldOwner": "",
+    "oldOwnerId": 0,
+    "bidder": "",
+    "bidderId": 0
+   },
+   "basement": null
+  }
+ ]
+}

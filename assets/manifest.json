@@ -1,0 +1,2240 @@
+{
+  "version": "1.0.0",
+  "description": "Idle Lineage Web CDN Manifest",
+  "maps": {
+    "aden_sewer": {
+      "size_mb": 12.46,
+      "page_count": 32
+    },
+    "ant_queen_lair": {
+      "size_mb": 15.44,
+      "page_count": 27
+    },
+    "antharas_lair": {
+      "size_mb": 14.0,
+      "page_count": 12
+    },
+    "antharas_nest_1": {
+      "size_mb": 5.66,
+      "page_count": 10
+    },
+    "antharas_nest_2": {
+      "size_mb": 22.06,
+      "page_count": 21
+    },
+    "antharas_nest_3": {
+      "size_mb": 5.78,
+      "page_count": 3
+    },
+    "assassin_king_room": {
+      "size_mb": 8.15,
+      "page_count": 19
+    },
+    "balrog_room": {
+      "size_mb": 5.02,
+      "page_count": 12
+    },
+    "behemoth": {
+      "size_mb": 20.89,
+      "page_count": 25
+    },
+    "clan_house_giran_01": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_02": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_03": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_04": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_05": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_06": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_07": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_08": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_09": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_10": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_11": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_12": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_13": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_14": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_15": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_16": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_17": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_18": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_19": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_20": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_21": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_22": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_23": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_24": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_25": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_26": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_27": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_28": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_29": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_30": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_31": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_32": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_33": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_34": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_35": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_36": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_37": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_38": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_39": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_40": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_41": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_42": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_43": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_44": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_giran_45": {
+      "size_mb": 3.04,
+      "page_count": 12
+    },
+    "clan_house_heine_01": {
+      "size_mb": 2.88,
+      "page_count": 12
+    },
+    "clan_house_heine_02": {
+      "size_mb": 2.88,
+      "page_count": 12
+    },
+    "clan_house_heine_03": {
+      "size_mb": 2.88,
+      "page_count": 12
+    },
+    "clan_house_heine_04": {
+      "size_mb": 2.88,
+      "page_count": 12
+    },
+    "clan_house_heine_05": {
+      "size_mb": 2.88,
+      "page_count": 12
+    },
+    "clan_house_heine_06": {
+      "size_mb": 2.88,
+      "page_count": 12
+    },
+    "clan_house_heine_07": {
+      "size_mb": 2.88,
+      "page_count": 12
+    },
+    "clan_house_heine_08": {
+      "size_mb": 2.88,
+      "page_count": 12
+    },
+    "clan_house_heine_09": {
+      "size_mb": 2.88,
+      "page_count": 12
+    },
+    "clan_house_heine_10": {
+      "size_mb": 2.88,
+      "page_count": 12
+    },
+    "clan_house_heine_11": {
+      "size_mb": 2.88,
+      "page_count": 12
+    },
+    "crystal_cave1": {
+      "size_mb": 17.83,
+      "page_count": 17
+    },
+    "crystal_cave2": {
+      "size_mb": 26.82,
+      "page_count": 30
+    },
+    "crystal_cave3": {
+      "size_mb": 25.74,
+      "page_count": 23
+    },
+    "custom_map_09051936": {
+      "size_mb": 2.04,
+      "page_count": 0
+    },
+    "custom_map_09061348": {
+      "size_mb": 1.71,
+      "page_count": 0
+    },
+    "custom_map_09071836": {
+      "size_mb": 32.74,
+      "page_count": 0
+    },
+    "custom_map_09072227": {
+      "size_mb": 6.67,
+      "page_count": 0
+    },
+    "custom_map_09072247": {
+      "size_mb": 151.86,
+      "page_count": 0
+    },
+    "custom_map_09072259": {
+      "size_mb": 6.47,
+      "page_count": 0
+    },
+    "custom_map_09072313": {
+      "size_mb": 218.08,
+      "page_count": 0
+    },
+    "custom_map_09172025": {
+      "size_mb": 1358.49,
+      "page_count": 1241
+    },
+    "custom_map_09172042": {
+      "size_mb": 1363.3,
+      "page_count": 1241
+    },
+    "custom_map_09172129": {
+      "size_mb": 39.49,
+      "page_count": 0
+    },
+    "custom_map_09181830": {
+      "size_mb": 36.78,
+      "page_count": 0
+    },
+    "custom_map_09181941": {
+      "size_mb": 31.51,
+      "page_count": 0
+    },
+    "dark_elf_sanctuary": {
+      "size_mb": 54.36,
+      "page_count": 47
+    },
+    "dark_magic_lab": {
+      "size_mb": 17.51,
+      "page_count": 23
+    },
+    "demon_temple": {
+      "size_mb": 40.57,
+      "page_count": 62
+    },
+    "desire_cave_entrance": {
+      "size_mb": 6.89,
+      "page_count": 22
+    },
+    "desire_cave_hall": {
+      "size_mb": 11.55,
+      "page_count": 41
+    },
+    "desire_realm_earth": {
+      "size_mb": 9.96,
+      "page_count": 26
+    },
+    "desire_realm_fire": {
+      "size_mb": 13.07,
+      "page_count": 24
+    },
+    "desire_realm_water": {
+      "size_mb": 12.29,
+      "page_count": 12
+    },
+    "desire_realm_wind": {
+      "size_mb": 11.14,
+      "page_count": 24
+    },
+    "diad_fortress": {
+      "size_mb": 52.01,
+      "page_count": 70
+    },
+    "dragon_valley_dungeon_7f": {
+      "size_mb": 10.29,
+      "page_count": 26
+    },
+    "dream_island": {
+      "size_mb": 60.09,
+      "page_count": 68
+    },
+    "elder_room": {
+      "size_mb": 6.23,
+      "page_count": 12
+    },
+    "elf_grave": {
+      "size_mb": 36.03,
+      "page_count": 60
+    },
+    "eva_kingdom": {
+      "size_mb": 52.59,
+      "page_count": 59
+    },
+    "fafurion_lair": {
+      "size_mb": 3.13,
+      "page_count": 12
+    },
+    "flame_audience_hall": {
+      "size_mb": 5.02,
+      "page_count": 12
+    },
+    "flame_shadow_lab": {
+      "size_mb": 6.99,
+      "page_count": 12
+    },
+    "giant_tomb": {
+      "size_mb": 120.69,
+      "page_count": 151
+    },
+    "hidden_cave": {
+      "size_mb": 4.15,
+      "page_count": 17
+    },
+    "hidden_dock": {
+      "size_mb": 3.48,
+      "page_count": 8
+    },
+    "hyperia": {
+      "size_mb": 12.7,
+      "page_count": 19
+    },
+    "ivory_tower_1f": {
+      "size_mb": 5.8,
+      "page_count": 17
+    },
+    "ivory_tower_2f": {
+      "size_mb": 5.96,
+      "page_count": 12
+    },
+    "ivory_tower_3f": {
+      "size_mb": 5.96,
+      "page_count": 12
+    },
+    "jim_dungeon": {
+      "size_mb": 1.14,
+      "page_count": 3
+    },
+    "king_baranka_room": {
+      "size_mb": 15.41,
+      "page_count": 21
+    },
+    "l1j_map_1002": {
+      "size_mb": 89.74,
+      "page_count": 108
+    },
+    "l1j_map_1011": {
+      "size_mb": 81.73,
+      "page_count": 110
+    },
+    "l1j_map_15": {
+      "size_mb": 1.18,
+      "page_count": 3
+    },
+    "l1j_map_16": {
+      "size_mb": 0.89,
+      "page_count": 13
+    },
+    "l1j_map_16384": {
+      "size_mb": 0.64,
+      "page_count": 3
+    },
+    "l1j_map_16896": {
+      "size_mb": 0.77,
+      "page_count": 3
+    },
+    "l1j_map_17": {
+      "size_mb": 1.56,
+      "page_count": 3
+    },
+    "l1j_map_17408": {
+      "size_mb": 0.41,
+      "page_count": 3
+    },
+    "l1j_map_17920": {
+      "size_mb": 0.55,
+      "page_count": 3
+    },
+    "l1j_map_18": {
+      "size_mb": 1.6,
+      "page_count": 3
+    },
+    "l1j_map_18432": {
+      "size_mb": 0.41,
+      "page_count": 3
+    },
+    "l1j_map_18944": {
+      "size_mb": 0.58,
+      "page_count": 3
+    },
+    "l1j_map_19456": {
+      "size_mb": 0.39,
+      "page_count": 3
+    },
+    "l1j_map_19968": {
+      "size_mb": 0.59,
+      "page_count": 3
+    },
+    "l1j_map_2004": {
+      "size_mb": 14.58,
+      "page_count": 26
+    },
+    "l1j_map_2005": {
+      "size_mb": 86.74,
+      "page_count": 78
+    },
+    "l1j_map_201": {
+      "size_mb": 17.08,
+      "page_count": 103
+    },
+    "l1j_map_202": {
+      "size_mb": 7.76,
+      "page_count": 91
+    },
+    "l1j_map_203": {
+      "size_mb": 7.76,
+      "page_count": 91
+    },
+    "l1j_map_204": {
+      "size_mb": 7.76,
+      "page_count": 91
+    },
+    "l1j_map_20480": {
+      "size_mb": 0.39,
+      "page_count": 3
+    },
+    "l1j_map_205": {
+      "size_mb": 7.76,
+      "page_count": 91
+    },
+    "l1j_map_206": {
+      "size_mb": 7.76,
+      "page_count": 91
+    },
+    "l1j_map_207": {
+      "size_mb": 7.76,
+      "page_count": 91
+    },
+    "l1j_map_208": {
+      "size_mb": 7.76,
+      "page_count": 91
+    },
+    "l1j_map_209": {
+      "size_mb": 2.02,
+      "page_count": 3
+    },
+    "l1j_map_20992": {
+      "size_mb": 0.58,
+      "page_count": 3
+    },
+    "l1j_map_210": {
+      "size_mb": 7.76,
+      "page_count": 91
+    },
+    "l1j_map_211": {
+      "size_mb": 7.76,
+      "page_count": 91
+    },
+    "l1j_map_213": {
+      "size_mb": 1.52,
+      "page_count": 3
+    },
+    "l1j_map_21504": {
+      "size_mb": 0.39,
+      "page_count": 3
+    },
+    "l1j_map_22": {
+      "size_mb": 7.24,
+      "page_count": 28
+    },
+    "l1j_map_22016": {
+      "size_mb": 0.58,
+      "page_count": 3
+    },
+    "l1j_map_221": {
+      "size_mb": 7.38,
+      "page_count": 26
+    },
+    "l1j_map_22528": {
+      "size_mb": 0.39,
+      "page_count": 3
+    },
+    "l1j_map_23": {
+      "size_mb": 7.59,
+      "page_count": 28
+    },
+    "l1j_map_23040": {
+      "size_mb": 0.58,
+      "page_count": 3
+    },
+    "l1j_map_23552": {
+      "size_mb": 0.39,
+      "page_count": 3
+    },
+    "l1j_map_24": {
+      "size_mb": 7.69,
+      "page_count": 26
+    },
+    "l1j_map_240": {
+      "size_mb": 8.14,
+      "page_count": 12
+    },
+    "l1j_map_24064": {
+      "size_mb": 0.58,
+      "page_count": 3
+    },
+    "l1j_map_241": {
+      "size_mb": 7.05,
+      "page_count": 12
+    },
+    "l1j_map_242": {
+      "size_mb": 7.31,
+      "page_count": 17
+    },
+    "l1j_map_243": {
+      "size_mb": 14.05,
+      "page_count": 21
+    },
+    "l1j_map_244": {
+      "size_mb": 69.99,
+      "page_count": 67
+    },
+    "l1j_map_24576": {
+      "size_mb": 0.39,
+      "page_count": 3
+    },
+    "l1j_map_248": {
+      "size_mb": 5.35,
+      "page_count": 12
+    },
+    "l1j_map_249": {
+      "size_mb": 2.07,
+      "page_count": 10
+    },
+    "l1j_map_250": {
+      "size_mb": 5.71,
+      "page_count": 12
+    },
+    "l1j_map_25088": {
+      "size_mb": 0.58,
+      "page_count": 3
+    },
+    "l1j_map_251": {
+      "size_mb": 1.11,
+      "page_count": 3
+    },
+    "l1j_map_252": {
+      "size_mb": 9.88,
+      "page_count": 12
+    },
+    "l1j_map_253": {
+      "size_mb": 16.47,
+      "page_count": 21
+    },
+    "l1j_map_254": {
+      "size_mb": 24.58,
+      "page_count": 27
+    },
+    "l1j_map_255": {
+      "size_mb": 16.45,
+      "page_count": 25
+    },
+    "l1j_map_256": {
+      "size_mb": 36.15,
+      "page_count": 40
+    },
+    "l1j_map_257": {
+      "size_mb": 14.54,
+      "page_count": 21
+    },
+    "l1j_map_258": {
+      "size_mb": 40.35,
+      "page_count": 53
+    },
+    "l1j_map_259": {
+      "size_mb": 11.17,
+      "page_count": 17
+    },
+    "l1j_map_29": {
+      "size_mb": 1.26,
+      "page_count": 3
+    },
+    "l1j_map_3": {
+      "size_mb": 1.93,
+      "page_count": 22
+    },
+    "l1j_map_300": {
+      "size_mb": 3.83,
+      "page_count": 15
+    },
+    "l1j_map_305": {
+      "size_mb": 3.71,
+      "page_count": 3
+    },
+    "l1j_map_306": {
+      "size_mb": 16.32,
+      "page_count": 36
+    },
+    "l1j_map_34": {
+      "size_mb": 3.54,
+      "page_count": 15
+    },
+    "l1j_map_340": {
+      "size_mb": 18.58,
+      "page_count": 24
+    },
+    "l1j_map_350": {
+      "size_mb": 14.76,
+      "page_count": 12
+    },
+    "l1j_map_360": {
+      "size_mb": 5.44,
+      "page_count": 11
+    },
+    "l1j_map_370": {
+      "size_mb": 9.86,
+      "page_count": 11
+    },
+    "l1j_map_38": {
+      "size_mb": 3.29,
+      "page_count": 13
+    },
+    "l1j_map_39": {
+      "size_mb": 3.25,
+      "page_count": 13
+    },
+    "l1j_map_40": {
+      "size_mb": 3.26,
+      "page_count": 15
+    },
+    "l1j_map_41": {
+      "size_mb": 3.29,
+      "page_count": 13
+    },
+    "l1j_map_446": {
+      "size_mb": 0.5,
+      "page_count": 6
+    },
+    "l1j_map_447": {
+      "size_mb": 0.57,
+      "page_count": 3
+    },
+    "l1j_map_481": {
+      "size_mb": 3.12,
+      "page_count": 17
+    },
+    "l1j_map_482": {
+      "size_mb": 23.39,
+      "page_count": 32
+    },
+    "l1j_map_483": {
+      "size_mb": 15.78,
+      "page_count": 28
+    },
+    "l1j_map_484": {
+      "size_mb": 10.71,
+      "page_count": 21
+    },
+    "l1j_map_4941": {
+      "size_mb": 7.01,
+      "page_count": 12
+    },
+    "l1j_map_5": {
+      "size_mb": 0.57,
+      "page_count": 3
+    },
+    "l1j_map_500": {
+      "size_mb": 3.66,
+      "page_count": 11
+    },
+    "l1j_map_5001": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5002": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5003": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5004": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5005": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5006": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5007": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5008": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5009": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_501": {
+      "size_mb": 66.52,
+      "page_count": 131
+    },
+    "l1j_map_5010": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5011": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5012": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5013": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5014": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5015": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5016": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5017": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5018": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5019": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_502": {
+      "size_mb": 67.71,
+      "page_count": 116
+    },
+    "l1j_map_5020": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5021": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5022": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5023": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5024": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5025": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5026": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5027": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5028": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5029": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_503": {
+      "size_mb": 61.72,
+      "page_count": 116
+    },
+    "l1j_map_5030": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5031": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5032": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5033": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5034": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5035": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5036": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5037": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5038": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5039": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_504": {
+      "size_mb": 62.74,
+      "page_count": 116
+    },
+    "l1j_map_5040": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5041": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5042": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5043": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5044": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5045": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5046": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5047": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5048": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5049": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_505": {
+      "size_mb": 67.98,
+      "page_count": 116
+    },
+    "l1j_map_5050": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5051": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5052": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5053": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5054": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5055": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5056": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5057": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5058": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5059": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_506": {
+      "size_mb": 63.59,
+      "page_count": 139
+    },
+    "l1j_map_5060": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5061": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5062": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5063": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5064": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5065": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5066": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_5067": {
+      "size_mb": 3.24,
+      "page_count": 12
+    },
+    "l1j_map_507": {
+      "size_mb": 29.77,
+      "page_count": 44
+    },
+    "l1j_map_508": {
+      "size_mb": 7.52,
+      "page_count": 12
+    },
+    "l1j_map_509": {
+      "size_mb": 3.29,
+      "page_count": 3
+    },
+    "l1j_map_511": {
+      "size_mb": 44.9,
+      "page_count": 98
+    },
+    "l1j_map_512": {
+      "size_mb": 44.9,
+      "page_count": 98
+    },
+    "l1j_map_5124": {
+      "size_mb": 5.94,
+      "page_count": 11
+    },
+    "l1j_map_5125": {
+      "size_mb": 6.5,
+      "page_count": 8
+    },
+    "l1j_map_513": {
+      "size_mb": 44.9,
+      "page_count": 98
+    },
+    "l1j_map_5131": {
+      "size_mb": 6.68,
+      "page_count": 3
+    },
+    "l1j_map_5132": {
+      "size_mb": 6.68,
+      "page_count": 3
+    },
+    "l1j_map_5133": {
+      "size_mb": 6.68,
+      "page_count": 3
+    },
+    "l1j_map_5134": {
+      "size_mb": 6.68,
+      "page_count": 3
+    },
+    "l1j_map_514": {
+      "size_mb": 44.9,
+      "page_count": 98
+    },
+    "l1j_map_5140": {
+      "size_mb": 21.86,
+      "page_count": 47
+    },
+    "l1j_map_5143": {
+      "size_mb": 15.32,
+      "page_count": 12
+    },
+    "l1j_map_515": {
+      "size_mb": 44.9,
+      "page_count": 98
+    },
+    "l1j_map_516": {
+      "size_mb": 44.9,
+      "page_count": 98
+    },
+    "l1j_map_5166": {
+      "size_mb": 1.63,
+      "page_count": 4
+    },
+    "l1j_map_5167": {
+      "size_mb": 18.57,
+      "page_count": 30
+    },
+    "l1j_map_52": {
+      "size_mb": 1.19,
+      "page_count": 8
+    },
+    "l1j_map_5300": {
+      "size_mb": 21.42,
+      "page_count": 24
+    },
+    "l1j_map_5301": {
+      "size_mb": 21.45,
+      "page_count": 24
+    },
+    "l1j_map_5302": {
+      "size_mb": 21.45,
+      "page_count": 24
+    },
+    "l1j_map_541": {
+      "size_mb": 4.77,
+      "page_count": 19
+    },
+    "l1j_map_542": {
+      "size_mb": 4.52,
+      "page_count": 19
+    },
+    "l1j_map_550": {
+      "size_mb": 101.27,
+      "page_count": 136
+    },
+    "l1j_map_551": {
+      "size_mb": 2.26,
+      "page_count": 12
+    },
+    "l1j_map_552": {
+      "size_mb": 0.79,
+      "page_count": 10
+    },
+    "l1j_map_553": {
+      "size_mb": 3.2,
+      "page_count": 12
+    },
+    "l1j_map_554": {
+      "size_mb": 2.45,
+      "page_count": 12
+    },
+    "l1j_map_555": {
+      "size_mb": 0.86,
+      "page_count": 10
+    },
+    "l1j_map_556": {
+      "size_mb": 2.62,
+      "page_count": 12
+    },
+    "l1j_map_557": {
+      "size_mb": 2.48,
+      "page_count": 12
+    },
+    "l1j_map_558": {
+      "size_mb": 152.73,
+      "page_count": 144
+    },
+    "l1j_map_57": {
+      "size_mb": 41.2,
+      "page_count": 81
+    },
+    "l1j_map_5701": {
+      "size_mb": 41.17,
+      "page_count": 81
+    },
+    "l1j_map_58": {
+      "size_mb": 50.88,
+      "page_count": 67
+    },
+    "l1j_map_5801": {
+      "size_mb": 50.4,
+      "page_count": 67
+    },
+    "l1j_map_5802": {
+      "size_mb": 50.37,
+      "page_count": 67
+    },
+    "l1j_map_5803": {
+      "size_mb": 50.37,
+      "page_count": 67
+    },
+    "l1j_map_5804": {
+      "size_mb": 50.37,
+      "page_count": 67
+    },
+    "l1j_map_5805": {
+      "size_mb": 50.37,
+      "page_count": 67
+    },
+    "l1j_map_6": {
+      "size_mb": 0.39,
+      "page_count": 4
+    },
+    "l1j_map_610": {
+      "size_mb": 18.64,
+      "page_count": 26
+    },
+    "l1j_map_611": {
+      "size_mb": 12.51,
+      "page_count": 24
+    },
+    "l1j_map_612": {
+      "size_mb": 18.68,
+      "page_count": 26
+    },
+    "l1j_map_613": {
+      "size_mb": 10.64,
+      "page_count": 24
+    },
+    "l1j_map_62": {
+      "size_mb": 5.48,
+      "page_count": 10
+    },
+    "l1j_map_630": {
+      "size_mb": 49.5,
+      "page_count": 59
+    },
+    "l1j_map_631": {
+      "size_mb": 44.96,
+      "page_count": 72
+    },
+    "l1j_map_632": {
+      "size_mb": 65.1,
+      "page_count": 65
+    },
+    "l1j_map_64": {
+      "size_mb": 3.09,
+      "page_count": 12
+    },
+    "l1j_map_66": {
+      "size_mb": 7.71,
+      "page_count": 23
+    },
+    "l1j_map_68": {
+      "size_mb": 50.13,
+      "page_count": 81
+    },
+    "l1j_map_69": {
+      "size_mb": 77.52,
+      "page_count": 67
+    },
+    "l1j_map_7001": {
+      "size_mb": 83.52,
+      "page_count": 93
+    },
+    "l1j_map_701": {
+      "size_mb": 41.41,
+      "page_count": 81
+    },
+    "l1j_map_777": {
+      "size_mb": 31.5,
+      "page_count": 60
+    },
+    "l1j_map_778": {
+      "size_mb": 40.93,
+      "page_count": 66
+    },
+    "l1j_map_779": {
+      "size_mb": 11.34,
+      "page_count": 26
+    },
+    "l1j_map_83": {
+      "size_mb": 0.49,
+      "page_count": 6
+    },
+    "l1j_map_84": {
+      "size_mb": 0.57,
+      "page_count": 3
+    },
+    "l1j_map_85": {
+      "size_mb": 25.67,
+      "page_count": 45
+    },
+    "l1j_map_86": {
+      "size_mb": 18.09,
+      "page_count": 34
+    },
+    "l1j_map_87": {
+      "size_mb": 0.8,
+      "page_count": 3
+    },
+    "l1j_map_88": {
+      "size_mb": 9.02,
+      "page_count": 12
+    },
+    "l1j_map_89": {
+      "size_mb": 11.24,
+      "page_count": 12
+    },
+    "l1j_map_90": {
+      "size_mb": 11.24,
+      "page_count": 12
+    },
+    "l1j_map_91": {
+      "size_mb": 11.24,
+      "page_count": 12
+    },
+    "l1j_map_92": {
+      "size_mb": 11.24,
+      "page_count": 12
+    },
+    "l1j_map_93": {
+      "size_mb": 11.24,
+      "page_count": 12
+    },
+    "l1j_map_94": {
+      "size_mb": 11.24,
+      "page_count": 12
+    },
+    "l1j_map_95": {
+      "size_mb": 11.24,
+      "page_count": 12
+    },
+    "l1j_map_96": {
+      "size_mb": 11.24,
+      "page_count": 12
+    },
+    "l1j_map_97": {
+      "size_mb": 11.24,
+      "page_count": 12
+    },
+    "l1j_map_98": {
+      "size_mb": 11.24,
+      "page_count": 12
+    },
+    "l1j_map_99": {
+      "size_mb": 0.58,
+      "page_count": 3
+    },
+    "l1j_map_997": {
+      "size_mb": 0.13,
+      "page_count": 1
+    },
+    "l1j_map_998": {
+      "size_mb": 0.13,
+      "page_count": 1
+    },
+    "law_king_room": {
+      "size_mb": 8.47,
+      "page_count": 21
+    },
+    "mainland_south": {
+      "size_mb": 1377.93,
+      "page_count": 1241
+    },
+    "mineral_cave": {
+      "size_mb": 7.35,
+      "page_count": 24
+    },
+    "necro_king_room": {
+      "size_mb": 9.31,
+      "page_count": 21
+    },
+    "necro_training": {
+      "size_mb": 14.76,
+      "page_count": 23
+    },
+    "oblivion_island": {
+      "size_mb": 83.52,
+      "page_count": 93
+    },
+    "oum_dungeon": {
+      "size_mb": 19.28,
+      "page_count": 32
+    },
+    "pirate_back": {
+      "size_mb": 53.58,
+      "page_count": 55
+    },
+    "pirate_dungeon": {
+      "size_mb": 18.4,
+      "page_count": 32
+    },
+    "pirate_dungeon_2f": {
+      "size_mb": 20.35,
+      "page_count": 25
+    },
+    "pirate_dungeon_3f": {
+      "size_mb": 20.75,
+      "page_count": 41
+    },
+    "pirate_dungeon_4f": {
+      "size_mb": 1.82,
+      "page_count": 3
+    },
+    "pirate_wild": {
+      "size_mb": 175.59,
+      "page_count": 138
+    },
+    "pride_f1": {
+      "size_mb": 21.57,
+      "page_count": 27
+    },
+    "pride_f10": {
+      "size_mb": 16.03,
+      "page_count": 23
+    },
+    "pride_f100": {
+      "size_mb": 26.63,
+      "page_count": 40
+    },
+    "pride_f11": {
+      "size_mb": 19.93,
+      "page_count": 27
+    },
+    "pride_f12": {
+      "size_mb": 20.0,
+      "page_count": 25
+    },
+    "pride_f13": {
+      "size_mb": 19.85,
+      "page_count": 27
+    },
+    "pride_f14": {
+      "size_mb": 19.46,
+      "page_count": 27
+    },
+    "pride_f15": {
+      "size_mb": 22.8,
+      "page_count": 27
+    },
+    "pride_f16": {
+      "size_mb": 6.06,
+      "page_count": 10
+    },
+    "pride_f17": {
+      "size_mb": 19.84,
+      "page_count": 27
+    },
+    "pride_f18": {
+      "size_mb": 18.76,
+      "page_count": 27
+    },
+    "pride_f19": {
+      "size_mb": 17.87,
+      "page_count": 27
+    },
+    "pride_f2": {
+      "size_mb": 20.05,
+      "page_count": 25
+    },
+    "pride_f20": {
+      "size_mb": 16.05,
+      "page_count": 23
+    },
+    "pride_f21": {
+      "size_mb": 19.93,
+      "page_count": 27
+    },
+    "pride_f22": {
+      "size_mb": 20.03,
+      "page_count": 25
+    },
+    "pride_f23": {
+      "size_mb": 19.86,
+      "page_count": 27
+    },
+    "pride_f24": {
+      "size_mb": 19.46,
+      "page_count": 27
+    },
+    "pride_f25": {
+      "size_mb": 22.78,
+      "page_count": 27
+    },
+    "pride_f26": {
+      "size_mb": 6.06,
+      "page_count": 10
+    },
+    "pride_f27": {
+      "size_mb": 19.86,
+      "page_count": 27
+    },
+    "pride_f28": {
+      "size_mb": 18.76,
+      "page_count": 27
+    },
+    "pride_f29": {
+      "size_mb": 17.89,
+      "page_count": 27
+    },
+    "pride_f3": {
+      "size_mb": 19.85,
+      "page_count": 27
+    },
+    "pride_f30": {
+      "size_mb": 16.49,
+      "page_count": 23
+    },
+    "pride_f31": {
+      "size_mb": 19.93,
+      "page_count": 27
+    },
+    "pride_f32": {
+      "size_mb": 19.94,
+      "page_count": 25
+    },
+    "pride_f33": {
+      "size_mb": 19.85,
+      "page_count": 27
+    },
+    "pride_f34": {
+      "size_mb": 19.51,
+      "page_count": 27
+    },
+    "pride_f35": {
+      "size_mb": 22.81,
+      "page_count": 27
+    },
+    "pride_f36": {
+      "size_mb": 6.06,
+      "page_count": 10
+    },
+    "pride_f37": {
+      "size_mb": 19.88,
+      "page_count": 27
+    },
+    "pride_f38": {
+      "size_mb": 18.78,
+      "page_count": 27
+    },
+    "pride_f39": {
+      "size_mb": 17.87,
+      "page_count": 27
+    },
+    "pride_f4": {
+      "size_mb": 19.46,
+      "page_count": 27
+    },
+    "pride_f40": {
+      "size_mb": 16.05,
+      "page_count": 23
+    },
+    "pride_f41": {
+      "size_mb": 19.92,
+      "page_count": 27
+    },
+    "pride_f42": {
+      "size_mb": 19.96,
+      "page_count": 25
+    },
+    "pride_f43": {
+      "size_mb": 19.87,
+      "page_count": 27
+    },
+    "pride_f44": {
+      "size_mb": 19.46,
+      "page_count": 27
+    },
+    "pride_f45": {
+      "size_mb": 22.8,
+      "page_count": 27
+    },
+    "pride_f46": {
+      "size_mb": 6.06,
+      "page_count": 10
+    },
+    "pride_f47": {
+      "size_mb": 19.88,
+      "page_count": 27
+    },
+    "pride_f48": {
+      "size_mb": 18.78,
+      "page_count": 27
+    },
+    "pride_f49": {
+      "size_mb": 17.87,
+      "page_count": 27
+    },
+    "pride_f5": {
+      "size_mb": 22.8,
+      "page_count": 27
+    },
+    "pride_f50": {
+      "size_mb": 16.09,
+      "page_count": 23
+    },
+    "pride_f51": {
+      "size_mb": 19.8,
+      "page_count": 27
+    },
+    "pride_f52": {
+      "size_mb": 20.14,
+      "page_count": 27
+    },
+    "pride_f53": {
+      "size_mb": 16.17,
+      "page_count": 27
+    },
+    "pride_f54": {
+      "size_mb": 15.88,
+      "page_count": 23
+    },
+    "pride_f55": {
+      "size_mb": 20.4,
+      "page_count": 25
+    },
+    "pride_f56": {
+      "size_mb": 4.78,
+      "page_count": 10
+    },
+    "pride_f57": {
+      "size_mb": 20.83,
+      "page_count": 27
+    },
+    "pride_f58": {
+      "size_mb": 18.87,
+      "page_count": 27
+    },
+    "pride_f59": {
+      "size_mb": 17.58,
+      "page_count": 27
+    },
+    "pride_f6": {
+      "size_mb": 6.06,
+      "page_count": 10
+    },
+    "pride_f60": {
+      "size_mb": 17.91,
+      "page_count": 27
+    },
+    "pride_f61": {
+      "size_mb": 19.84,
+      "page_count": 27
+    },
+    "pride_f62": {
+      "size_mb": 20.17,
+      "page_count": 27
+    },
+    "pride_f63": {
+      "size_mb": 16.2,
+      "page_count": 27
+    },
+    "pride_f64": {
+      "size_mb": 15.87,
+      "page_count": 23
+    },
+    "pride_f65": {
+      "size_mb": 20.37,
+      "page_count": 25
+    },
+    "pride_f66": {
+      "size_mb": 4.78,
+      "page_count": 10
+    },
+    "pride_f67": {
+      "size_mb": 20.84,
+      "page_count": 27
+    },
+    "pride_f68": {
+      "size_mb": 18.86,
+      "page_count": 27
+    },
+    "pride_f69": {
+      "size_mb": 17.62,
+      "page_count": 27
+    },
+    "pride_f7": {
+      "size_mb": 19.86,
+      "page_count": 27
+    },
+    "pride_f70": {
+      "size_mb": 17.95,
+      "page_count": 27
+    },
+    "pride_f71": {
+      "size_mb": 19.83,
+      "page_count": 27
+    },
+    "pride_f72": {
+      "size_mb": 20.19,
+      "page_count": 27
+    },
+    "pride_f73": {
+      "size_mb": 16.19,
+      "page_count": 27
+    },
+    "pride_f74": {
+      "size_mb": 15.88,
+      "page_count": 23
+    },
+    "pride_f75": {
+      "size_mb": 20.37,
+      "page_count": 25
+    },
+    "pride_f76": {
+      "size_mb": 4.78,
+      "page_count": 10
+    },
+    "pride_f77": {
+      "size_mb": 20.83,
+      "page_count": 27
+    },
+    "pride_f78": {
+      "size_mb": 18.86,
+      "page_count": 27
+    },
+    "pride_f79": {
+      "size_mb": 17.65,
+      "page_count": 27
+    },
+    "pride_f8": {
+      "size_mb": 18.78,
+      "page_count": 27
+    },
+    "pride_f80": {
+      "size_mb": 17.88,
+      "page_count": 27
+    },
+    "pride_f81": {
+      "size_mb": 19.83,
+      "page_count": 27
+    },
+    "pride_f82": {
+      "size_mb": 20.17,
+      "page_count": 27
+    },
+    "pride_f83": {
+      "size_mb": 16.22,
+      "page_count": 27
+    },
+    "pride_f84": {
+      "size_mb": 15.91,
+      "page_count": 23
+    },
+    "pride_f85": {
+      "size_mb": 20.37,
+      "page_count": 25
+    },
+    "pride_f86": {
+      "size_mb": 4.78,
+      "page_count": 10
+    },
+    "pride_f87": {
+      "size_mb": 20.91,
+      "page_count": 27
+    },
+    "pride_f88": {
+      "size_mb": 18.85,
+      "page_count": 27
+    },
+    "pride_f89": {
+      "size_mb": 17.62,
+      "page_count": 27
+    },
+    "pride_f9": {
+      "size_mb": 17.87,
+      "page_count": 27
+    },
+    "pride_f90": {
+      "size_mb": 17.88,
+      "page_count": 27
+    },
+    "pride_f91": {
+      "size_mb": 19.82,
+      "page_count": 27
+    },
+    "pride_f92": {
+      "size_mb": 20.18,
+      "page_count": 27
+    },
+    "pride_f93": {
+      "size_mb": 16.17,
+      "page_count": 27
+    },
+    "pride_f94": {
+      "size_mb": 15.89,
+      "page_count": 23
+    },
+    "pride_f95": {
+      "size_mb": 20.37,
+      "page_count": 25
+    },
+    "pride_f96": {
+      "size_mb": 4.78,
+      "page_count": 10
+    },
+    "pride_f97": {
+      "size_mb": 20.82,
+      "page_count": 27
+    },
+    "pride_f98": {
+      "size_mb": 18.86,
+      "page_count": 27
+    },
+    "pride_f99": {
+      "size_mb": 17.63,
+      "page_count": 27
+    },
+    "rastabad_1f_assault_training": {
+      "size_mb": 6.25,
+      "page_count": 12
+    },
+    "rastabad_1f_beast_summoning": {
+      "size_mb": 5.96,
+      "page_count": 12
+    },
+    "rastabad_1f_beast_training_a": {
+      "size_mb": 7.09,
+      "page_count": 17
+    },
+    "rastabad_1f_dark_barrier": {
+      "size_mb": 2.3,
+      "page_count": 8
+    },
+    "rastabad_1f_gathering": {
+      "size_mb": 6.65,
+      "page_count": 17
+    },
+    "rastabad_2f_dark_elf_lab": {
+      "size_mb": 6.19,
+      "page_count": 12
+    },
+    "rastabad_2f_dark_magic_training": {
+      "size_mb": 6.8,
+      "page_count": 21
+    },
+    "rastabad_2f_oblivion_a": {
+      "size_mb": 2.57,
+      "page_count": 8
+    },
+    "rastabad_2f_oblivion_b": {
+      "size_mb": 2.58,
+      "page_count": 8
+    },
+    "rastabad_2f_spirit_habitat": {
+      "size_mb": 8.17,
+      "page_count": 12
+    },
+    "rastabad_2f_spirit_king_study": {
+      "size_mb": 6.45,
+      "page_count": 12
+    },
+    "rastabad_2f_spirit_summoning": {
+      "size_mb": 5.22,
+      "page_count": 12
+    },
+    "rastabad_3f_central_control": {
+      "size_mb": 5.94,
+      "page_count": 17
+    },
+    "rastabad_3f_control_area": {
+      "size_mb": 3.28,
+      "page_count": 17
+    },
+    "rastabad_3f_demon_altar": {
+      "size_mb": 6.36,
+      "page_count": 12
+    },
+    "rastabad_3f_demon_mercenary": {
+      "size_mb": 6.84,
+      "page_count": 17
+    },
+    "rastabad_3f_mercenary_training": {
+      "size_mb": 3.9,
+      "page_count": 17
+    },
+    "rastabad_3f_oblivion_sanctuary": {
+      "size_mb": 2.76,
+      "page_count": 11
+    },
+    "rastabad_3f_oum_lab": {
+      "size_mb": 5.4,
+      "page_count": 12
+    },
+    "rastabad_3f_spirit_altar": {
+      "size_mb": 7.45,
+      "page_count": 19
+    },
+    "rastabad_4f_batas_balos_andis": {
+      "size_mb": 13.82,
+      "page_count": 30
+    },
+    "rastabad_4f_council_kassandra_dantes": {
+      "size_mb": 12.77,
+      "page_count": 23
+    },
+    "rastabad_4f_garden_aidil": {
+      "size_mb": 10.58,
+      "page_count": 21
+    },
+    "rastabad_4f_grankain_kina": {
+      "size_mb": 10.77,
+      "page_count": 28
+    },
+    "rastabad_4f_taemas_lamans_barud": {
+      "size_mb": 12.14,
+      "page_count": 28
+    },
+    "rastabad_b1_arena": {
+      "size_mb": 7.41,
+      "page_count": 19
+    },
+    "rastabad_b1_control": {
+      "size_mb": 7.15,
+      "page_count": 12
+    },
+    "rastabad_b1_execution": {
+      "size_mb": 6.04,
+      "page_count": 12
+    },
+    "rastabad_b1_passage": {
+      "size_mb": 8.36,
+      "page_count": 21
+    },
+    "rastabad_b1_prison": {
+      "size_mb": 6.22,
+      "page_count": 12
+    },
+    "rastabad_beast": {
+      "size_mb": 8.47,
+      "page_count": 21
+    },
+    "rastabad_cave1": {
+      "size_mb": 22.21,
+      "page_count": 34
+    },
+    "rastabad_cave2": {
+      "size_mb": 29.51,
+      "page_count": 44
+    },
+    "rastabad_cave3": {
+      "size_mb": 38.35,
+      "page_count": 51
+    },
+    "rastabad_gate": {
+      "size_mb": 13.87,
+      "page_count": 30
+    },
+    "shadow_temple": {
+      "size_mb": 12.22,
+      "page_count": 25
+    },
+    "shadow_temple_2f": {
+      "size_mb": 5.69,
+      "page_count": 19
+    },
+    "shadow_temple_3f": {
+      "size_mb": 7.75,
+      "page_count": 19
+    },
+    "shadow_temple_4f": {
+      "size_mb": 6.32,
+      "page_count": 19
+    },
+    "silent_outer": {
+      "size_mb": 55.53,
+      "page_count": 53
+    },
+    "talking_island": {
+      "size_mb": 179.9,
+      "page_count": 124
+    },
+    "teleport_towns": {
+      "size_mb": 0.75,
+      "page_count": 0
+    },
+    "thebes_desert": {
+      "size_mb": 48.85,
+      "page_count": 59
+    },
+    "thebes_pyramid": {
+      "size_mb": 18.55,
+      "page_count": 44
+    },
+    "thebes_temple": {
+      "size_mb": 7.22,
+      "page_count": 12
+    },
+    "tikal_altar": {
+      "size_mb": 3.31,
+      "page_count": 8
+    },
+    "tikal_area": {
+      "size_mb": 141.3,
+      "page_count": 108
+    },
+    "town_aden": {
+      "size_mb": 4.17,
+      "page_count": 0
+    },
+    "town_giran": {
+      "size_mb": 3.27,
+      "page_count": 0
+    },
+    "town_gludio": {
+      "size_mb": 2.84,
+      "page_count": 0
+    },
+    "town_heine": {
+      "size_mb": 3.32,
+      "page_count": 0
+    },
+    "town_kent": {
+      "size_mb": 2.69,
+      "page_count": 0
+    },
+    "town_orc": {
+      "size_mb": 2.81,
+      "page_count": 0
+    },
+    "town_silver_knight": {
+      "size_mb": 3.4,
+      "page_count": 0
+    },
+    "town_talking_island": {
+      "size_mb": 1.58,
+      "page_count": 0
+    },
+    "town_werldan": {
+      "size_mb": 2.91,
+      "page_count": 0
+    },
+    "town_woodbeck": {
+      "size_mb": 2.95,
+      "page_count": 0
+    },
+    "under_lake": {
+      "size_mb": 20.28,
+      "page_count": 36
+    },
+    "undersea_passage": {
+      "size_mb": 5.5,
+      "page_count": 54
+    },
+    "valakas_lair": {
+      "size_mb": 16.77,
+      "page_count": 15
+    },
+    "zone_03": {
+      "size_mb": 41.91,
+      "page_count": 61
+    },
+    "zone_06": {
+      "size_mb": 5.5,
+      "page_count": 12
+    },
+    "zone_07": {
+      "size_mb": 5.55,
+      "page_count": 12
+    },
+    "zone_08": {
+      "size_mb": 5.59,
+      "page_count": 12
+    },
+    "zone_09": {
+      "size_mb": 4.76,
+      "page_count": 12
+    },
+    "zone_10": {
+      "size_mb": 5.84,
+      "page_count": 12
+    },
+    "zone_11": {
+      "size_mb": 5.94,
+      "page_count": 12
+    },
+    "zone_12": {
+      "size_mb": 5.95,
+      "page_count": 12
+    },
+    "zone_13": {
+      "size_mb": 16.69,
+      "page_count": 26
+    },
+    "zone_14": {
+      "size_mb": 21.93,
+      "page_count": 41
+    },
+    "zone_15": {
+      "size_mb": 6.24,
+      "page_count": 28
+    },
+    "zone_16": {
+      "size_mb": 4.88,
+      "page_count": 12
+    },
+    "zone_17": {
+      "size_mb": 6.39,
+      "page_count": 21
+    },
+    "zone_18": {
+      "size_mb": 10.62,
+      "page_count": 24
+    },
+    "zone_19": {
+      "size_mb": 11.41,
+      "page_count": 24
+    },
+    "zone_20": {
+      "size_mb": 8.87,
+      "page_count": 30
+    },
+    "zone_21": {
+      "size_mb": 10.63,
+      "page_count": 24
+    },
+    "zone_22": {
+      "size_mb": 7.87,
+      "page_count": 21
+    },
+    "zone_23": {
+      "size_mb": 6.0,
+      "page_count": 30
+    },
+    "zone_24": {
+      "size_mb": 6.46,
+      "page_count": 30
+    },
+    "zone_25": {
+      "size_mb": 6.85,
+      "page_count": 30
+    },
+    "zone_26": {
+      "size_mb": 9.08,
+      "page_count": 26
+    },
+    "zone_27": {
+      "size_mb": 6.91,
+      "page_count": 24
+    },
+    "zone_28": {
+      "size_mb": 8.46,
+      "page_count": 28
+    },
+    "zone_29": {
+      "size_mb": 8.35,
+      "page_count": 28
+    },
+    "zone_30": {
+      "size_mb": 7.92,
+      "page_count": 28
+    },
+    "zone_31": {
+      "size_mb": 8.13,
+      "page_count": 26
+    },
+    "zone_32": {
+      "size_mb": 7.16,
+      "page_count": 12
+    },
+    "zone_32_b": {
+      "size_mb": 7.61,
+      "page_count": 12
+    },
+    "zone_32_c": {
+      "size_mb": 7.39,
+      "page_count": 12
+    },
+    "zone_32_d": {
+      "size_mb": 7.45,
+      "page_count": 12
+    },
+    "zone_32_e": {
+      "size_mb": 7.28,
+      "page_count": 12
+    },
+    "zone_32_f": {
+      "size_mb": 7.05,
+      "page_count": 12
+    },
+    "zone_32_g": {
+      "size_mb": 7.3,
+      "page_count": 12
+    },
+    "zone_32_h": {
+      "size_mb": 7.52,
+      "page_count": 12
+    },
+    "zone_33": {
+      "size_mb": 15.22,
+      "page_count": 27
+    },
+    "zone_34": {
+      "size_mb": 10.63,
+      "page_count": 21
+    },
+    "zone_35": {
+      "size_mb": 10.52,
+      "page_count": 17
+    },
+    "zone_36": {
+      "size_mb": 7.47,
+      "page_count": 12
+    },
+    "zone_37": {
+      "size_mb": 9.85,
+      "page_count": 12
+    },
+    "zone_38": {
+      "size_mb": 9.5,
+      "page_count": 12
+    },
+    "zone_39": {
+      "size_mb": 11.58,
+      "page_count": 12
+    },
+    "zone_40": {
+      "size_mb": 11.4,
+      "page_count": 12
+    },
+    "zone_41": {
+      "size_mb": 11.64,
+      "page_count": 12
+    }
+  },
+  "atlases": {},
+  "audio": {}
+}

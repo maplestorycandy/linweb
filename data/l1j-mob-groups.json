@@ -1,0 +1,2341 @@
+{
+ "schemaVersion": 1,
+ "source": "L1j-TW-main/db/InnoDB_TW/mobgroup.sql",
+ "counts": {
+  "groups": 76,
+  "removeWithLeaderGroups": 10,
+  "minionDefinitions": 106,
+  "minionInstancesPerFullSpawn": 195,
+  "referencedMobKeys": 132,
+  "groupsUsedBySpawnlist": 61,
+  "groupsUsedByBossCycle": 12,
+  "ordinarySourceRows": 231,
+  "ordinaryRuntimeSlots": 587,
+  "bossSourceRows": 14,
+  "leaderMetadataMismatchGroups": 4
+ },
+ "groups": [
+  {
+   "groupId": 1,
+   "note": "黑騎士搜索隊(8)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 81066,
+   "leaderMobKey": "l1j_81066",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 81066,
+     "mobKey": "l1j_81066",
+     "count": 1
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 13,
+    "normalSlots": 10,
+    "bossRows": 0,
+    "mapKeys": [
+     "mainland_south"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_81066"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 2,
+   "note": "艾爾摩將軍+艾爾摩士兵(2)+艾爾摩法師(2)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45248,
+   "leaderMobKey": "l1j_45248",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45216,
+     "mobKey": "l1j_45216",
+     "count": 2
+    },
+    {
+     "slot": 2,
+     "npcId": 45224,
+     "mobKey": "l1j_45224",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 14,
+    "normalSlots": 14,
+    "bossRows": 0,
+    "mapKeys": [
+     "mainland_south",
+     "zone_03"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45248"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 3,
+   "note": "艾爾摩將軍+艾爾摩士兵+艾爾摩法師(2)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45248,
+   "leaderMobKey": "l1j_45248",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45216,
+     "mobKey": "l1j_45216",
+     "count": 1
+    },
+    {
+     "slot": 2,
+     "npcId": 45224,
+     "mobKey": "l1j_45224",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 1,
+    "normalSlots": 1,
+    "bossRows": 0,
+    "mapKeys": [
+     "mainland_south"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45248"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 4,
+   "note": "艾爾摩將軍+艾爾摩士兵(2)+艾爾摩法師",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45248,
+   "leaderMobKey": "l1j_45248",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45216,
+     "mobKey": "l1j_45216",
+     "count": 2
+    },
+    {
+     "slot": 2,
+     "npcId": 45224,
+     "mobKey": "l1j_45224",
+     "count": 1
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 1,
+    "normalSlots": 1,
+    "bossRows": 0,
+    "mapKeys": [
+     "mainland_south"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45248"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 5,
+   "note": "哥布林(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45008,
+   "leaderMobKey": "l1j_45008",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45008,
+     "mobKey": "l1j_45008",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 8,
+    "normalSlots": 8,
+    "bossRows": 0,
+    "mapKeys": [
+     "l1j_map_2005",
+     "l1j_map_68",
+     "l1j_map_69",
+     "mainland_south"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45008"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 6,
+   "note": "哈柏哥布林+哥布林(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45140,
+   "leaderMobKey": "l1j_45140",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45008,
+     "mobKey": "l1j_45008",
+     "count": 3
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 5,
+    "normalSlots": 5,
+    "bossRows": 0,
+    "mapKeys": [
+     "mainland_south"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45140"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 7,
+   "note": "長老+漂浮之眼(2)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45215,
+   "leaderMobKey": "l1j_45215",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45068,
+     "mobKey": "l1j_45068",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 10,
+    "normalSlots": 16,
+    "bossRows": 0,
+    "mapKeys": [
+     "mainland_south",
+     "talking_island"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45215"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 8,
+   "note": "變形怪首領+妖魔(2)+妖魔巡守(2)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45082,
+   "leaderMobKey": "l1j_45082",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45017,
+     "mobKey": "l1j_45017",
+     "count": 2
+    },
+    {
+     "slot": 2,
+     "npcId": 45019,
+     "mobKey": "l1j_45019",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 10,
+    "normalSlots": 10,
+    "bossRows": 0,
+    "mapKeys": [
+     "l1j_map_2005",
+     "l1j_map_68",
+     "l1j_map_69",
+     "mainland_south"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45082"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 9,
+   "note": "火炎蛋(4)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45206,
+   "leaderMobKey": "l1j_45206",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45206,
+     "mobKey": "l1j_45206",
+     "count": 1
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 5,
+    "normalSlots": 5,
+    "bossRows": 0,
+    "mapKeys": [
+     "mainland_south"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45206"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 10,
+   "note": "卡司特王+卡司特(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45346,
+   "leaderMobKey": "l1j_45346",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45213,
+     "mobKey": "l1j_45213",
+     "count": 3
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 4,
+    "normalSlots": 2,
+    "bossRows": 0,
+    "mapKeys": [
+     "mainland_south"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45346"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 11,
+   "note": "人形殭屍(16)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45065,
+   "leaderMobKey": "l1j_45065",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45065,
+     "mobKey": "l1j_45065",
+     "count": 15
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 2,
+    "normalSlots": 2,
+    "bossRows": 0,
+    "mapKeys": [
+     "l1j_map_68"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45065"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 12,
+   "note": "美人魚+人魚(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45154,
+   "leaderMobKey": "l1j_45154",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45940,
+     "mobKey": "l1j_45940",
+     "count": 1
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 1,
+    "normalSlots": 10,
+    "bossRows": 0,
+    "mapKeys": [
+     "eva_kingdom"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45154"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 13,
+   "note": "克特+黑騎士(8)",
+   "removeGroupIfLeaderDies": true,
+   "leaderNpcId": 45600,
+   "leaderMobKey": "l1j_45600",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45165,
+     "mobKey": "l1j_45165",
+     "count": 8
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 0,
+    "normalSlots": 0,
+    "bossRows": 1,
+    "mapKeys": [
+     "talking_island"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45600"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 14,
+   "note": "卡士伯+馬庫爾+巴土瑟+西瑪",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45488,
+   "leaderMobKey": "l1j_45488",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45497,
+     "mobKey": "l1j_45497",
+     "count": 1
+    },
+    {
+     "slot": 2,
+     "npcId": 45473,
+     "mobKey": "l1j_45473",
+     "count": 1
+    },
+    {
+     "slot": 3,
+     "npcId": 45464,
+     "mobKey": "l1j_45464",
+     "count": 1
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 0,
+    "normalSlots": 0,
+    "bossRows": 1,
+    "mapKeys": [
+     "zone_08"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45488"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 15,
+   "note": "魔法師+食屍鬼(4)+漂浮之眼(2)",
+   "removeGroupIfLeaderDies": true,
+   "leaderNpcId": 45456,
+   "leaderMobKey": "l1j_45456",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45157,
+     "mobKey": "l1j_45157",
+     "count": 4
+    },
+    {
+     "slot": 2,
+     "npcId": 45068,
+     "mobKey": "l1j_45068",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 0,
+    "normalSlots": 0,
+    "bossRows": 1,
+    "mapKeys": [
+     "zone_11"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45456"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 16,
+   "note": "黑長者+史巴托(2)",
+   "removeGroupIfLeaderDies": true,
+   "leaderNpcId": 45545,
+   "leaderMobKey": "l1j_45545",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45161,
+     "mobKey": "l1j_45161",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 0,
+    "normalSlots": 0,
+    "bossRows": 2,
+    "mapKeys": [
+     "mainland_south"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45545"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 17,
+   "note": "深紅飛龍(2)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45529,
+   "leaderMobKey": "l1j_45529",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45529,
+     "mobKey": "l1j_45529",
+     "count": 1
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 0,
+    "normalSlots": 0,
+    "bossRows": 2,
+    "mapKeys": [
+     "mainland_south"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45529"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 18,
+   "note": "反王肯恩+賽尼斯",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45680,
+   "leaderMobKey": "l1j_45680",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45678,
+     "mobKey": "l1j_45678",
+     "count": 1
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 0,
+    "normalSlots": 0,
+    "bossRows": 1,
+    "mapKeys": [
+     "mainland_south"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45680"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 19,
+   "note": "巴蘭卡+蕾雅",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45651,
+   "leaderMobKey": "l1j_45651",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45677,
+     "mobKey": "l1j_45677",
+     "count": 1
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 0,
+    "normalSlots": 0,
+    "bossRows": 1,
+    "mapKeys": [
+     "diad_fortress"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45651"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 20,
+   "note": "曼波兔+曼波兔部下(3)",
+   "removeGroupIfLeaderDies": true,
+   "leaderNpcId": 45534,
+   "leaderMobKey": "l1j_45534",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45366,
+     "mobKey": "l1j_45366",
+     "count": 3
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 0,
+    "normalSlots": 0,
+    "bossRows": 1,
+    "mapKeys": [
+     "pirate_wild"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45534"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 21,
+   "note": "曼波兔+曼波兔部下(3)",
+   "removeGroupIfLeaderDies": true,
+   "leaderNpcId": 45535,
+   "leaderMobKey": "l1j_45535",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45366,
+     "mobKey": "l1j_45366",
+     "count": 3
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 0,
+    "normalSlots": 0,
+    "bossRows": 1,
+    "mapKeys": [
+     "elf_grave"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45535"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 22,
+   "note": "深淵之主+地之牙+水之牙+火之牙+風之牙",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45646,
+   "leaderMobKey": "l1j_45646",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45416,
+     "mobKey": "l1j_45416",
+     "count": 1
+    },
+    {
+     "slot": 2,
+     "npcId": 45419,
+     "mobKey": "l1j_45419",
+     "count": 1
+    },
+    {
+     "slot": 3,
+     "npcId": 45424,
+     "mobKey": "l1j_45424",
+     "count": 1
+    },
+    {
+     "slot": 4,
+     "npcId": 45418,
+     "mobKey": "l1j_45418",
+     "count": 1
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 0,
+    "normalSlots": 0,
+    "bossRows": 1,
+    "mapKeys": [
+     "elf_grave"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45646"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 23,
+   "note": "變種楊果里恩(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45348,
+   "leaderMobKey": "l1j_45348",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45348,
+     "mobKey": "l1j_45348",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 3,
+    "normalSlots": 15,
+    "bossRows": 0,
+    "mapKeys": [
+     "pride_f2",
+     "pride_f3",
+     "pride_f4"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45348"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 24,
+   "note": "梅杜莎(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45380,
+   "leaderMobKey": "l1j_45380",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45380,
+     "mobKey": "l1j_45380",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 5,
+    "normalSlots": 12,
+    "bossRows": 0,
+    "mapKeys": [
+     "pride_f10",
+     "pride_f5",
+     "pride_f7",
+     "pride_f8",
+     "pride_f9"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45380"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 25,
+   "note": "奇美拉(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45407,
+   "leaderMobKey": "l1j_45407",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45407,
+     "mobKey": "l1j_45407",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 5,
+    "normalSlots": 23,
+    "bossRows": 0,
+    "mapKeys": [
+     "pride_f10",
+     "pride_f5",
+     "pride_f7",
+     "pride_f8",
+     "pride_f9"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45407"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 26,
+   "note": "亞力安(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 81173,
+   "leaderMobKey": "l1j_81173",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 81173,
+     "mobKey": "l1j_81173",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 5,
+    "normalSlots": 11,
+    "bossRows": 0,
+    "mapKeys": [
+     "pride_f10",
+     "pride_f5",
+     "pride_f7",
+     "pride_f8",
+     "pride_f9"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_81173"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 27,
+   "note": "思克巴(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45394,
+   "leaderMobKey": "l1j_45394",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45394,
+     "mobKey": "l1j_45394",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 4,
+    "normalSlots": 20,
+    "bossRows": 0,
+    "mapKeys": [
+     "pride_f11",
+     "pride_f12",
+     "pride_f13",
+     "pride_f14"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45394"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 28,
+   "note": "魔狼(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45409,
+   "leaderMobKey": "l1j_45409",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45409,
+     "mobKey": "l1j_45409",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 6,
+    "normalSlots": 32,
+    "bossRows": 0,
+    "mapKeys": [
+     "pride_f14",
+     "pride_f15",
+     "pride_f17",
+     "pride_f18",
+     "pride_f19",
+     "pride_f20"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45409"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 29,
+   "note": "邪惡多眼怪(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45406,
+   "leaderMobKey": "l1j_45406",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45406,
+     "mobKey": "l1j_45406",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 5,
+    "normalSlots": 16,
+    "bossRows": 0,
+    "mapKeys": [
+     "pride_f15",
+     "pride_f17",
+     "pride_f18",
+     "pride_f19",
+     "pride_f20"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45406"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 30,
+   "note": "死亡之劍(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45386,
+   "leaderMobKey": "l1j_45386",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45386,
+     "mobKey": "l1j_45386",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 4,
+    "normalSlots": 13,
+    "bossRows": 0,
+    "mapKeys": [
+     "pride_f17",
+     "pride_f18",
+     "pride_f19",
+     "pride_f20"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45386"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 31,
+   "note": "夢魘(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45440,
+   "leaderMobKey": "l1j_45440",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45440,
+     "mobKey": "l1j_45440",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 6,
+    "normalSlots": 30,
+    "bossRows": 0,
+    "mapKeys": [
+     "pride_f21",
+     "pride_f22",
+     "pride_f23",
+     "pride_f24",
+     "pride_f25",
+     "pride_f30"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45440"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 32,
+   "note": "恐怖的火炎蛋(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45384,
+   "leaderMobKey": "l1j_45384",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45384,
+     "mobKey": "l1j_45384",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 4,
+    "normalSlots": 11,
+    "bossRows": 0,
+    "mapKeys": [
+     "pride_f21",
+     "pride_f22",
+     "pride_f23",
+     "pride_f24"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45384"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 33,
+   "note": "恐怖的地獄犬(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45471,
+   "leaderMobKey": "l1j_45471",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45471,
+     "mobKey": "l1j_45471",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 8,
+    "normalSlots": 30,
+    "bossRows": 0,
+    "mapKeys": [
+     "pride_f22",
+     "pride_f23",
+     "pride_f24",
+     "pride_f25",
+     "pride_f27",
+     "pride_f28",
+     "pride_f29",
+     "pride_f30"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45471"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 34,
+   "note": "小惡魔(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45481,
+   "leaderMobKey": "l1j_45481",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45481,
+     "mobKey": "l1j_45481",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 5,
+    "normalSlots": 25,
+    "bossRows": 0,
+    "mapKeys": [
+     "pride_f25",
+     "pride_f27",
+     "pride_f28",
+     "pride_f29",
+     "pride_f30"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45481"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 35,
+   "note": "艾弗力特(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45515,
+   "leaderMobKey": "l1j_45515",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45515,
+     "mobKey": "l1j_45515",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 4,
+    "normalSlots": 13,
+    "bossRows": 0,
+    "mapKeys": [
+     "pride_f27",
+     "pride_f28",
+     "pride_f29",
+     "pride_f30"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45515"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 36,
+   "note": "殘暴的骷髏槍兵(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45403,
+   "leaderMobKey": "l1j_45403",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45403,
+     "mobKey": "l1j_45403",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 3,
+    "normalSlots": 15,
+    "bossRows": 0,
+    "mapKeys": [
+     "pride_f32",
+     "pride_f33",
+     "pride_f34"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45403"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 37,
+   "note": "殘暴的食屍鬼(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45454,
+   "leaderMobKey": "l1j_45454",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45454,
+     "mobKey": "l1j_45454",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 5,
+    "normalSlots": 10,
+    "bossRows": 0,
+    "mapKeys": [
+     "pride_f31",
+     "pride_f32",
+     "pride_f33",
+     "pride_f34",
+     "pride_f35"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45454"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 38,
+   "note": "殘暴的史巴托(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45455,
+   "leaderMobKey": "l1j_45455",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45455,
+     "mobKey": "l1j_45455",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 6,
+    "normalSlots": 27,
+    "bossRows": 0,
+    "mapKeys": [
+     "pride_f34",
+     "pride_f35",
+     "pride_f37",
+     "pride_f38",
+     "pride_f39",
+     "pride_f40"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45455"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 39,
+   "note": "殘暴的骷髏神射手(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45494,
+   "leaderMobKey": "l1j_45494",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45494,
+     "mobKey": "l1j_45494",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 5,
+    "normalSlots": 12,
+    "bossRows": 0,
+    "mapKeys": [
+     "pride_f35",
+     "pride_f37",
+     "pride_f38",
+     "pride_f39",
+     "pride_f40"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45494"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 40,
+   "note": "受詛咒的艾爾摩將軍(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45541,
+   "leaderMobKey": "l1j_45541",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45541,
+     "mobKey": "l1j_45541",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 4,
+    "normalSlots": 11,
+    "bossRows": 0,
+    "mapKeys": [
+     "pride_f57",
+     "pride_f58",
+     "pride_f59",
+     "pride_f60"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45541"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 41,
+   "note": "火焰烈炎獸(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45520,
+   "leaderMobKey": "l1j_45520",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45520,
+     "mobKey": "l1j_45520",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 4,
+    "normalSlots": 8,
+    "bossRows": 0,
+    "mapKeys": [
+     "pride_f67",
+     "pride_f68",
+     "pride_f69",
+     "pride_f70"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45520"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 42,
+   "note": "火焰阿西塔基奧(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45572,
+   "leaderMobKey": "l1j_45572",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45572,
+     "mobKey": "l1j_45572",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 4,
+    "normalSlots": 8,
+    "bossRows": 0,
+    "mapKeys": [
+     "pride_f67",
+     "pride_f68",
+     "pride_f69",
+     "pride_f70"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45572"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 43,
+   "note": "暗黑火焰弓箭手(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45532,
+   "leaderMobKey": "l1j_45532",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45532,
+     "mobKey": "l1j_45532",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 4,
+    "normalSlots": 12,
+    "bossRows": 0,
+    "mapKeys": [
+     "pride_f77",
+     "pride_f78",
+     "pride_f79",
+     "pride_f80"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45532"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 44,
+   "note": "傲慢的潔尼斯女王(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45581,
+   "leaderMobKey": "l1j_45581",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45581,
+     "mobKey": "l1j_45581",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 6,
+    "normalSlots": 30,
+    "bossRows": 0,
+    "mapKeys": [
+     "pride_f81",
+     "pride_f82",
+     "pride_f83",
+     "pride_f84",
+     "pride_f87",
+     "pride_f88"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45581"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 45,
+   "note": "馬昆斯吸血鬼(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45604,
+   "leaderMobKey": "l1j_45604",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45604,
+     "mobKey": "l1j_45604",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 4,
+    "normalSlots": 11,
+    "bossRows": 0,
+    "mapKeys": [
+     "pride_f87",
+     "pride_f88",
+     "pride_f89",
+     "pride_f90"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45604"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 46,
+   "note": "恐怖的殭屍王(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45589,
+   "leaderMobKey": "l1j_45589",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45589,
+     "mobKey": "l1j_45589",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 4,
+    "normalSlots": 10,
+    "bossRows": 0,
+    "mapKeys": [
+     "pride_f87",
+     "pride_f88",
+     "pride_f89",
+     "pride_f90"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45589"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 47,
+   "note": "火精靈王(2)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45622,
+   "leaderMobKey": "l1j_45622",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45622,
+     "mobKey": "l1j_45622",
+     "count": 1
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 2,
+    "normalSlots": 5,
+    "bossRows": 0,
+    "mapKeys": [
+     "pride_f100",
+     "pride_f97"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45622"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 48,
+   "note": "水精靈王(2)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45620,
+   "leaderMobKey": "l1j_45620",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45620,
+     "mobKey": "l1j_45620",
+     "count": 1
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 3,
+    "normalSlots": 7,
+    "bossRows": 0,
+    "mapKeys": [
+     "pride_f100",
+     "pride_f98",
+     "pride_f99"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45620"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 49,
+   "note": "庫曼+重裝蜥蜴人(2)",
+   "removeGroupIfLeaderDies": true,
+   "leaderNpcId": 45492,
+   "leaderMobKey": "l1j_45492",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 81174,
+     "mobKey": "l1j_81174",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 0,
+    "normalSlots": 0,
+    "bossRows": 1,
+    "mapKeys": [
+     "pirate_back"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45492"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 50,
+   "note": "黑騎士(8)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45165,
+   "leaderMobKey": "l1j_45165",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45165,
+     "mobKey": "l1j_45165",
+     "count": 1
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 6,
+    "normalSlots": 6,
+    "bossRows": 0,
+    "mapKeys": [
+     "mainland_south"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45165"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 51,
+   "note": "伯爵親衛隊長+貪慾的杜賓狗(2)",
+   "removeGroupIfLeaderDies": true,
+   "leaderNpcId": 46024,
+   "leaderMobKey": "l1j_46024",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 46019,
+     "mobKey": "l1j_46019",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 0,
+    "normalSlots": 0,
+    "bossRows": 1,
+    "mapKeys": [
+     "l1j_map_250"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_46024"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 52,
+   "note": "巡察兵(慾望)1-3",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 46082,
+   "leaderMobKey": "l1j_46082",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 46083,
+     "mobKey": "l1j_46083",
+     "count": 1
+    },
+    {
+     "slot": 2,
+     "npcId": 46084,
+     "mobKey": "l1j_46084",
+     "count": 1
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 1,
+    "normalSlots": 1,
+    "bossRows": 0,
+    "mapKeys": [
+     "l1j_map_778"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_46082"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 53,
+   "note": "巡察兵(慾望)4-6",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 46085,
+   "leaderMobKey": "l1j_46085",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 46086,
+     "mobKey": "l1j_46086",
+     "count": 1
+    },
+    {
+     "slot": 2,
+     "npcId": 46087,
+     "mobKey": "l1j_46087",
+     "count": 1
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 1,
+    "normalSlots": 1,
+    "bossRows": 0,
+    "mapKeys": [
+     "l1j_map_778"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_46085"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 54,
+   "note": "巡察兵(慾望)7-9",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 46088,
+   "leaderMobKey": "l1j_46088",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 46089,
+     "mobKey": "l1j_46089",
+     "count": 1
+    },
+    {
+     "slot": 2,
+     "npcId": 46090,
+     "mobKey": "l1j_46090",
+     "count": 1
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 1,
+    "normalSlots": 1,
+    "bossRows": 0,
+    "mapKeys": [
+     "l1j_map_778"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_46088"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 55,
+   "note": "巡察兵(影之神殿)1-3",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 46097,
+   "leaderMobKey": "l1j_46097",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 46098,
+     "mobKey": "l1j_46098",
+     "count": 1
+    },
+    {
+     "slot": 2,
+     "npcId": 46099,
+     "mobKey": "l1j_46099",
+     "count": 1
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 1,
+    "normalSlots": 1,
+    "bossRows": 0,
+    "mapKeys": [
+     "l1j_map_777"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_46097"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 56,
+   "note": "巡察兵(影之神殿)4-6",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 46100,
+   "leaderMobKey": "l1j_46100",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 46101,
+     "mobKey": "l1j_46101",
+     "count": 1
+    },
+    {
+     "slot": 2,
+     "npcId": 46102,
+     "mobKey": "l1j_46102",
+     "count": 1
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 1,
+    "normalSlots": 1,
+    "bossRows": 0,
+    "mapKeys": [
+     "l1j_map_777"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_46098"
+    ],
+    "leaderMetadataMismatchRows": 1
+   }
+  },
+  {
+   "groupId": 57,
+   "note": "巡察兵(影之神殿)6-7",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 46103,
+   "leaderMobKey": "l1j_46103",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 46104,
+     "mobKey": "l1j_46104",
+     "count": 1
+    },
+    {
+     "slot": 2,
+     "npcId": 46105,
+     "mobKey": "l1j_46105",
+     "count": 1
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 1,
+    "normalSlots": 1,
+    "bossRows": 0,
+    "mapKeys": [
+     "l1j_map_777"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_46099"
+    ],
+    "leaderMetadataMismatchRows": 1
+   }
+  },
+  {
+   "groupId": 58,
+   "note": "西斯+深淵食屍鬼(2)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45539,
+   "leaderMobKey": "l1j_45539",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45501,
+     "mobKey": "l1j_45501",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 2,
+    "normalSlots": 4,
+    "bossRows": 0,
+    "mapKeys": [
+     "elf_grave"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45539"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 59,
+   "note": "西斯+深淵弓箭手(2)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45539,
+   "leaderMobKey": "l1j_45539",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45502,
+     "mobKey": "l1j_45502",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 2,
+    "normalSlots": 4,
+    "bossRows": 0,
+    "mapKeys": [
+     "elf_grave"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45539"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 60,
+   "note": "地底巨王龜+地底蟹人(2)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45422,
+   "leaderMobKey": "l1j_45422",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45297,
+     "mobKey": "l1j_45297",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 1,
+    "normalSlots": 5,
+    "bossRows": 0,
+    "mapKeys": [
+     "under_lake"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45422"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 61,
+   "note": "地底多眼怪+地底蜥蜴人(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45423,
+   "leaderMobKey": "l1j_45423",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45374,
+     "mobKey": "l1j_45374",
+     "count": 3
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 1,
+    "normalSlots": 5,
+    "bossRows": 0,
+    "mapKeys": [
+     "under_lake"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45423"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 62,
+   "note": "巨大墳墓守護者+墳墓守護者騎士+墳墓守護者法師+墳墓守護者",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45603,
+   "leaderMobKey": "l1j_45603",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45537,
+     "mobKey": "l1j_45537",
+     "count": 1
+    },
+    {
+     "slot": 2,
+     "npcId": 45530,
+     "mobKey": "l1j_45530",
+     "count": 1
+    },
+    {
+     "slot": 3,
+     "npcId": 45498,
+     "mobKey": "l1j_45498",
+     "count": 1
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 5,
+    "normalSlots": 6,
+    "bossRows": 0,
+    "mapKeys": [
+     "giant_tomb"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45603"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 63,
+   "note": "底比斯 曼陀羅草(2)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 46107,
+   "leaderMobKey": "l1j_46107",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 46107,
+     "mobKey": "l1j_46107",
+     "count": 1
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 0,
+    "normalSlots": 0,
+    "bossRows": 0,
+    "mapKeys": [],
+    "spawnLeaderMobKeys": [],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 64,
+   "note": "冰之女王禁衛兵(槍)(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 46135,
+   "leaderMobKey": "l1j_46135",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 46135,
+     "mobKey": "l1j_46135",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 1,
+    "normalSlots": 3,
+    "bossRows": 0,
+    "mapKeys": [
+     "crystal_cave2"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_46135"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 65,
+   "note": "冰之女王禁衛兵(弓)(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 46138,
+   "leaderMobKey": "l1j_46138",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 46138,
+     "mobKey": "l1j_46138",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 1,
+    "normalSlots": 3,
+    "bossRows": 0,
+    "mapKeys": [
+     "crystal_cave2"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_46138"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 66,
+   "note": "冰之女王禁衛兵(槍)(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 46139,
+   "leaderMobKey": "l1j_46139",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 46139,
+     "mobKey": "l1j_46139",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 1,
+    "normalSlots": 3,
+    "bossRows": 0,
+    "mapKeys": [
+     "crystal_cave3"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_46139"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 67,
+   "note": "冰之女王禁衛兵(弓)(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 46137,
+   "leaderMobKey": "l1j_46137",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 46137,
+     "mobKey": "l1j_46137",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 1,
+    "normalSlots": 3,
+    "bossRows": 0,
+    "mapKeys": [
+     "crystal_cave3"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_46137"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 68,
+   "note": "冰之女王+冰之女王侍女(3)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 46141,
+   "leaderMobKey": "l1j_46141",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 46140,
+     "mobKey": "l1j_46140",
+     "count": 3
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 1,
+    "normalSlots": 1,
+    "bossRows": 0,
+    "mapKeys": [
+     "crystal_cave3"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_46140"
+    ],
+    "leaderMetadataMismatchRows": 1
+   }
+  },
+  {
+   "groupId": 69,
+   "note": "拉斯塔巴德調教師+黑虎(2)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45448,
+   "leaderMobKey": "l1j_45448",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45836,
+     "mobKey": "l1j_45836",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 1,
+    "normalSlots": 7,
+    "bossRows": 0,
+    "mapKeys": [
+     "rastabad_1f_gathering"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45448"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 70,
+   "note": "炎魔的分身+惡魔+巴列斯+巴風特+小惡魔+思克巴女皇+思克巴",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45315,
+   "leaderMobKey": "l1j_45315",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45647,
+     "mobKey": "l1j_45647",
+     "count": 1
+    },
+    {
+     "slot": 2,
+     "npcId": 45579,
+     "mobKey": "l1j_45579",
+     "count": 1
+    },
+    {
+     "slot": 3,
+     "npcId": 45569,
+     "mobKey": "l1j_45569",
+     "count": 1
+    },
+    {
+     "slot": 4,
+     "npcId": 45482,
+     "mobKey": "l1j_45482",
+     "count": 1
+    },
+    {
+     "slot": 5,
+     "npcId": 45450,
+     "mobKey": "l1j_45450",
+     "count": 1
+    },
+    {
+     "slot": 6,
+     "npcId": 45391,
+     "mobKey": "l1j_45391",
+     "count": 1
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 2,
+    "normalSlots": 7,
+    "bossRows": 0,
+    "mapKeys": [
+     "demon_temple"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45315"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 71,
+   "note": "墮落的司祭(5)",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45570,
+   "leaderMobKey": "l1j_45570",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45571,
+     "mobKey": "l1j_45571",
+     "count": 1
+    },
+    {
+     "slot": 2,
+     "npcId": 45582,
+     "mobKey": "l1j_45582",
+     "count": 1
+    },
+    {
+     "slot": 3,
+     "npcId": 45587,
+     "mobKey": "l1j_45587",
+     "count": 1
+    },
+    {
+     "slot": 4,
+     "npcId": 45605,
+     "mobKey": "l1j_45605",
+     "count": 1
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 3,
+    "normalSlots": 16,
+    "bossRows": 0,
+    "mapKeys": [
+     "demon_temple"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45570"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 72,
+   "note": "妖魔密使+妖魔密使護衛兵(2)",
+   "removeGroupIfLeaderDies": true,
+   "leaderNpcId": 46157,
+   "leaderMobKey": "l1j_46157",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 46160,
+     "mobKey": "l1j_46160",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 3,
+    "normalSlots": 3,
+    "bossRows": 0,
+    "mapKeys": [
+     "mainland_south"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_46157",
+     "l1j_46158",
+     "l1j_46159"
+    ],
+    "leaderMetadataMismatchRows": 3
+   }
+  },
+  {
+   "groupId": 73,
+   "note": "妖魔密使+妖魔密使護衛兵(2)",
+   "removeGroupIfLeaderDies": true,
+   "leaderNpcId": 46158,
+   "leaderMobKey": "l1j_46158",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 46160,
+     "mobKey": "l1j_46160",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 0,
+    "normalSlots": 0,
+    "bossRows": 0,
+    "mapKeys": [],
+    "spawnLeaderMobKeys": [],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 74,
+   "note": "妖魔密使+妖魔密使護衛兵(2)",
+   "removeGroupIfLeaderDies": true,
+   "leaderNpcId": 46159,
+   "leaderMobKey": "l1j_46159",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 46160,
+     "mobKey": "l1j_46160",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 0,
+    "normalSlots": 0,
+    "bossRows": 0,
+    "mapKeys": [],
+    "spawnLeaderMobKeys": [],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 75,
+   "note": "火焰之影親衛兵",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45624,
+   "leaderMobKey": "l1j_45624",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45628,
+     "mobKey": "l1j_45628",
+     "count": 2
+    },
+    {
+     "slot": 2,
+     "npcId": 45629,
+     "mobKey": "l1j_45629",
+     "count": 1
+    },
+    {
+     "slot": 3,
+     "npcId": 45630,
+     "mobKey": "l1j_45630",
+     "count": 1
+    },
+    {
+     "slot": 4,
+     "npcId": 45596,
+     "mobKey": "l1j_45596",
+     "count": 2
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 1,
+    "normalSlots": 2,
+    "bossRows": 0,
+    "mapKeys": [
+     "shadow_temple_4f"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45624"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  },
+  {
+   "groupId": 76,
+   "note": "火焰之影親衛兵",
+   "removeGroupIfLeaderDies": false,
+   "leaderNpcId": 45623,
+   "leaderMobKey": "l1j_45623",
+   "minions": [
+    {
+     "slot": 1,
+     "npcId": 45631,
+     "mobKey": "l1j_45631",
+     "count": 2
+    },
+    {
+     "slot": 2,
+     "npcId": 45632,
+     "mobKey": "l1j_45632",
+     "count": 4
+    }
+   ],
+   "spawnUsage": {
+    "normalRows": 1,
+    "normalSlots": 2,
+    "bossRows": 0,
+    "mapKeys": [
+     "shadow_temple_4f"
+    ],
+    "spawnLeaderMobKeys": [
+     "l1j_45623"
+    ],
+    "leaderMetadataMismatchRows": 0
+   }
+  }
+ ]
+}

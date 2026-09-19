@@ -1,0 +1,667 @@
+{
+ "中級治癒術": {
+  "dir": "中級治癒術",
+  "prefix": "744-0",
+  "n": 21,
+  "fps": 16,
+  "blend": "screen",
+  "h": 0.5
+ },
+ "保護罩": {
+  "dir": "保護罩",
+  "prefix": "221-0",
+  "n": 5,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "全部治癒術": {
+  "dir": "全部治癒術",
+  "prefix": "744-0",
+  "n": 21,
+  "fps": 16,
+  "blend": "screen",
+  "h": 0.62
+ },
+ "冥想術": {
+  "dir": "冥想術",
+  "prefix": "2173-0",
+  "n": 17,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "冰雪颶風": {
+  "dir": "冰雪颶風",
+  "prefix": "3933-0",
+  "n": 31,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "初級治癒術": {
+  "dir": "初級治癒術",
+  "prefix": "744-0",
+  "n": 21,
+  "fps": 16,
+  "blend": "screen",
+  "h": 0.42
+ },
+ "力量提升": {
+  "dir": "力量提升",
+  "prefix": "3909-0",
+  "n": 18,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "加速術": {
+  "dir": "加速術",
+  "prefix": "755-0",
+  "n": 6,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "反擊屏障": {
+  "dir": "反擊屏障",
+  "prefix": "5832-0",
+  "n": 17,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "單屬性防禦": {
+  "dir": "單屬性防禦",
+  "prefix": "2285-0",
+  "n": 13,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "堅固防護": {
+  "dir": "堅固防護",
+  "prefix": "5831-0",
+  "n": 14,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "增幅防禦": {
+  "dir": "增幅防禦",
+  "prefix": "4824-0",
+  "n": 19,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "大地屏障": {
+  "dir": "大地屏障",
+  "prefix": "2251-0",
+  "n": 21,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "大地的祝福": {
+  "dir": "大地的祝福",
+  "prefix": "2287-0",
+  "n": 13,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "大地防護": {
+  "dir": "大地防護",
+  "prefix": "2249-0",
+  "n": 13,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "尖刺盔甲": {
+  "dir": "尖刺盔甲",
+  "prefix": "4648-0",
+  "n": 22,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "屬性之火": {
+  "dir": "屬性之火",
+  "prefix": "4402-0",
+  "n": 17,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "屬性防禦": {
+  "dir": "屬性防禦",
+  "prefix": "2184-0",
+  "n": 13,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "強力加速術": {
+  "dir": "強力加速術",
+  "prefix": "3104-0",
+  "n": 6,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "影之防護": {
+  "dir": "影之防護",
+  "prefix": "2943-0",
+  "n": 13,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "心靈轉換": {
+  "dir": "心靈轉換",
+  "prefix": "2179-0",
+  "n": 19,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "擬似魔法武器": {
+  "dir": "擬似魔法武器",
+  "prefix": "747-0",
+  "n": 19,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "敏捷提升": {
+  "dir": "敏捷提升",
+  "prefix": "3910-0",
+  "n": 18,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "暗影之牙": {
+  "dir": "暗影之牙",
+  "prefix": "2951-0",
+  "n": 13,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "暗影閃避": {
+  "dir": "暗影閃避",
+  "prefix": "2950-0",
+  "n": 15,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "暗隱術": {
+  "dir": "暗隱術",
+  "prefix": "2944-0",
+  "n": 9,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "暴風之眼": {
+  "dir": "暴風之眼",
+  "prefix": "2288-0",
+  "n": 13,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "暴風神射": {
+  "dir": "暴風神射",
+  "prefix": "2248-0",
+  "n": 13,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "毒性抵抗": {
+  "dir": "毒性抵抗",
+  "prefix": "2948-0",
+  "n": 11,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "水之元氣": {
+  "dir": "水之元氣",
+  "prefix": "4401-0",
+  "n": 21,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "治癒能量風暴": {
+  "dir": "治癒能量風暴",
+  "prefix": "hs",
+  "n": 19,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.6,
+  "overHead": true
+ },
+ "淨化精神": {
+  "dir": "淨化精神",
+  "prefix": "2180-0",
+  "n": 11,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "火焰武器": {
+  "dir": "火焰武器",
+  "prefix": "2182-0",
+  "n": 11,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "火牢": {
+  "dir": "火牢",
+  "prefix": "168-0",
+  "n": 11,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "烈炎武器": {
+  "dir": "烈炎武器",
+  "prefix": "2242-0",
+  "n": 13,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "烈焰之魂": {
+  "dir": "烈焰之魂",
+  "prefix": "5833-0",
+  "n": 13,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "無所遁形術": {
+  "dir": "無所遁形術",
+  "prefix": "749-0",
+  "n": 23,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "燃燒鬥志": {
+  "dir": "燃燒鬥志",
+  "prefix": "2946-0",
+  "n": 9,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "狂暴術": {
+  "dir": "狂暴術",
+  "prefix": "3943-0",
+  "n": 27,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "生命之泉": {
+  "dir": "生命之泉",
+  "prefix": "2243-0",
+  "n": 16,
+  "fps": 16,
+  "blend": "screen",
+  "h": 0.5
+ },
+ "生命的祝福": {
+  "dir": "生命的祝福",
+  "prefix": "2244-0",
+  "n": 16,
+  "fps": 16,
+  "blend": "screen",
+  "h": 0.5
+ },
+ "祝福魔法武器": {
+  "dir": "祝福魔法武器",
+  "prefix": "2176-0",
+  "n": 17,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "神聖武器": {
+  "dir": "神聖武器",
+  "prefix": "2165-0",
+  "n": 13,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "神聖疾走": {
+  "dir": "神聖疾走",
+  "prefix": "3936-0",
+  "n": 13,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "精準射擊": {
+  "dir": "精準射擊",
+  "prefix": "5826-0",
+  "n": 12,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "精準目標": {
+  "dir": "精準目標",
+  "prefix": "1765-0",
+  "n": 31,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "絕對屏障": {
+  "dir": "絕對屏障",
+  "prefix": "2234-0",
+  "n": 31,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "聖潔之光": {
+  "dir": "聖潔之光",
+  "prefix": "227-0",
+  "n": 7,
+  "fps": 16,
+  "blend": "screen",
+  "h": 0.5
+ },
+ "聖結界": {
+  "dir": "聖結界",
+  "prefix": "228-0",
+  "n": 7,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "能量激發": {
+  "dir": "能量激發",
+  "prefix": "5825-0",
+  "n": 16,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "行走加速": {
+  "dir": "行走加速",
+  "prefix": "2945-0",
+  "n": 6,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "負重強化": {
+  "dir": "負重強化",
+  "prefix": "2170-0",
+  "n": 13,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "返生術": {
+  "dir": "返生術",
+  "prefix": "3944-0",
+  "n": 24,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.55
+ },
+ "通暢氣脈術": {
+  "dir": "通暢氣脈術",
+  "prefix": "750-0",
+  "n": 11,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "造屍術": {
+  "dir": "造屍術",
+  "prefix": "226-0",
+  "n": 7,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "鋼鐵防護": {
+  "dir": "鋼鐵防護",
+  "prefix": "2252-0",
+  "n": 15,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "鎧甲護持": {
+  "dir": "鎧甲護持",
+  "prefix": "748-0",
+  "n": 20,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "鏡反射": {
+  "dir": "鏡反射",
+  "prefix": "4395-0",
+  "n": 13,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "附加劇毒": {
+  "dir": "附加劇毒",
+  "prefix": "2942-0",
+  "n": 9,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "雙重破壞": {
+  "dir": "雙重破壞",
+  "prefix": "2949-0",
+  "n": 13,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "靈魂昇華": {
+  "dir": "靈魂昇華",
+  "prefix": "3935-0",
+  "n": 19,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "風之疾走": {
+  "dir": "風之疾走",
+  "prefix": "2247-0",
+  "n": 14,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "風之神射": {
+  "dir": "風之神射",
+  "prefix": "2246-0",
+  "n": 13,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "體力回復術": {
+  "dir": "體力回復術",
+  "prefix": "759-0",
+  "n": 10,
+  "fps": 16,
+  "blend": "screen",
+  "h": 0.5
+ },
+ "體能激發": {
+  "dir": "體能激發",
+  "prefix": "4400-0",
+  "n": 16,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "體魄強健術": {
+  "dir": "體魄強健術",
+  "prefix": "751-0",
+  "n": 11,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "高級治癒術": {
+  "dir": "高級治癒術",
+  "prefix": "744-0",
+  "n": 21,
+  "fps": 16,
+  "blend": "screen",
+  "h": 0.58
+ },
+ "魂體轉換": {
+  "dir": "魂體轉換",
+  "prefix": "2178-0",
+  "n": 19,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "魔力奪取": {
+  "dir": "魔力奪取",
+  "prefix": "2171-0",
+  "n": 9,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "魔法屏障": {
+  "dir": "魔法屏障",
+  "prefix": "2174-0",
+  "n": 15,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "魔法相消術": {
+  "dir": "魔法相消術",
+  "prefix": "870-0",
+  "n": 1,
+  "fps": 16,
+  "blend": "screen",
+  "h": 0.5
+ },
+ "魔法防禦": {
+  "dir": "魔法防禦",
+  "prefix": "2186-0",
+  "n": 13,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.5,
+  "overHead": true
+ },
+ "傳送術": {
+  "dir": "傳送術",
+  "prefix": "169-0",
+  "n": 7,
+  "fps": 14,
+  "blend": "screen",
+  "h": 0.85,
+  "cy": 0.55
+ },
+ "三重矢": {
+  "dir": "三重矢",
+  "prefix": "4394-0",
+  "n": 6,
+  "fps": 18,
+  "blend": "screen",
+  "h": 0.65,
+  "overHead": true
+ },
+ "sk_elf_triple": {
+  "dir": "三重矢",
+  "prefix": "4394-0",
+  "n": 6,
+  "fps": 18,
+  "blend": "screen",
+  "h": 0.65,
+  "overHead": true
+ }
+}

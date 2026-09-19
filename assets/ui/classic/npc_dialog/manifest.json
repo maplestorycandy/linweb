@@ -1,0 +1,121 @@
+{
+  "schema": 1,
+  "authority": "HyperTextUI.decrypted.xml",
+  "window": {
+    "width": 239,
+    "height": 317,
+    "baseSurf": 1969
+  },
+  "surfaces": [
+    {
+      "id": 1968,
+      "file": "1968.png",
+      "width": 227,
+      "height": 304,
+      "source": "3,3 UI",
+      "sourcePath": "C:\\Users\\User\\Downloads\\3,3 UI\\1968.png",
+      "sha256": "bdf0a974c3fa80b9fb4c7dd3b58a664af84eca3b08c3c1490d811d61c5182687"
+    },
+    {
+      "id": 1969,
+      "file": "1969.png",
+      "width": 239,
+      "height": 317,
+      "source": "3,3 UI",
+      "sourcePath": "C:\\Users\\User\\Downloads\\3,3 UI\\1969.png",
+      "sha256": "6e63eb35e78b08c74598faf8b4906f5c84969a3bbc1f75da7aace56e9cf5fe43"
+    },
+    {
+      "id": 1970,
+      "file": "1970.png",
+      "width": 12,
+      "height": 224,
+      "source": "3,3 UI",
+      "sourcePath": "C:\\Users\\User\\Downloads\\3,3 UI\\1970.png",
+      "sha256": "8d2a6d107a1fa18702649c0d3746c9bb3771eec2661bbba2ac3d97096c19da4d"
+    },
+    {
+      "id": 2040,
+      "file": "2040.png",
+      "width": 12,
+      "height": 14,
+      "source": "3,3 UI",
+      "sourcePath": "C:\\Users\\User\\Downloads\\3,3 UI\\2040.png",
+      "sha256": "b5cd070f2656f7ce4fd74e2e0f1dae4cb45a0082247d6efae71b28c077c439ce"
+    },
+    {
+      "id": 2041,
+      "file": "2041.png",
+      "width": 12,
+      "height": 14,
+      "source": "3,3 UI",
+      "sourcePath": "C:\\Users\\User\\Downloads\\3,3 UI\\2041.png",
+      "sha256": "8a17166ee40aaf90eaf552212650439e77dc03cbf436800d90fb61303c4a945f"
+    },
+    {
+      "id": 2042,
+      "file": "2042.png",
+      "width": 12,
+      "height": 14,
+      "source": "3,3 UI",
+      "sourcePath": "C:\\Users\\User\\Downloads\\3,3 UI\\2042.png",
+      "sha256": "ae55b92a4d2a50ef3f88085255fe41cb556882a41a60dab414828ee940466e44"
+    },
+    {
+      "id": 2043,
+      "file": "2043.png",
+      "width": 12,
+      "height": 14,
+      "source": "3,3 UI",
+      "sourcePath": "C:\\Users\\User\\Downloads\\3,3 UI\\2043.png",
+      "sha256": "c3fb0ec43ca9d38859ce0c33d22339b63999f3bcda3a9491361bd602a50df28e"
+    },
+    {
+      "id": 2044,
+      "file": "2044.png",
+      "width": 11,
+      "height": 16,
+      "source": "3,3 UI",
+      "sourcePath": "C:\\Users\\User\\Downloads\\3,3 UI\\2044.png",
+      "sha256": "97e3a669ffe9ee7011be8a32575ca54e1d3f0d34996c61c7aae2e3e8908409f7"
+    },
+    {
+      "id": 2045,
+      "file": "2045.png",
+      "width": 11,
+      "height": 16,
+      "source": "3,3 UI",
+      "sourcePath": "C:\\Users\\User\\Downloads\\3,3 UI\\2045.png",
+      "sha256": "cd5ef6a4022e1728c08df77d9fc7e585f9916fe55019ad6bbfc8b1114e416434"
+    },
+    {
+      "id": 9183,
+      "file": "9183.png",
+      "width": 20,
+      "height": 19,
+      "source": "3,3 UI",
+      "sourcePath": "C:\\Users\\User\\Downloads\\3,3 UI\\9183.png",
+      "sha256": "c35e094679c180ccdfc200d681226fa19e845870fd6025cc2c9ce1762e107fa7"
+    }
+  ],
+  "fallbackSurfaces": [],
+  "missingSurfaces": [],
+  "inactiveOmitted": [
+    {
+      "id": 1111,
+      "reason": "HyperTextUI Cancel BaseSurf is Activate=0; allowed fallback is 160x270, not the 46x15 UI surface."
+    },
+    {
+      "id": 1112,
+      "reason": "HyperTextUI Cancel PushPng is Activate=0; allowed fallback is 160x270, not the 46x15 UI surface."
+    },
+    {
+      "id": 1114,
+      "reason": "HyperTextUI OK BaseSurf is Activate=0; allowed fallback is 160x270, not the 46x15 UI surface."
+    },
+    {
+      "id": 1115,
+      "reason": "HyperTextUI OK PushPng is Activate=0; allowed fallback is 160x270, not the 46x15 UI surface."
+    }
+  ]
+}

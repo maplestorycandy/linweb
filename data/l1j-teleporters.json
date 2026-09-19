@@ -1,0 +1,8256 @@
+{
+ "__doc": [
+  "L1J-TW 傳送師（座標＋目的地＋台詞鍵）——由 tools/l1j-import/import_l1j_doors_teleporters.py 產生。",
+  "⚠️ 機器產物，**不要手改**：重跑整份覆蓋。",
+  "`cell`／`to[].cell` 都是**港版本地格**（已扣掉 source.gameOrigin）。",
+  "`to[].price` 是 L1J 原價（0＝免費）；`action`／`dialogue` 指向 Downloads/3.8c npc台詞。",
+  "保留作來源稽核；runtime 由 L1J_NPC_SHOPS 的同一位 NPC 搭配無損 NPC_ACTIONS 執行。"
+ ],
+ "teleporters": [
+  {
+   "npcid": 50004,
+   "n": "初級傳送師",
+   "map": "l1j_map_69",
+   "cell": [
+    139,
+    144
+   ],
+   "heading": 4,
+   "gfx": 2141,
+   "src": "l1j",
+   "action": "htel",
+   "dialogue": "htel-c.html",
+   "pages": [
+    "htel",
+    "htel1",
+    "htel2"
+   ],
+   "to": [
+    {
+     "action": "teleport hidden-velley-for-newbie",
+     "map": "mainland_south",
+     "cell": [
+      571,
+      1259
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50004,
+   "n": "初級傳送師",
+   "map": "l1j_map_69",
+   "cell": [
+    219,
+    180
+   ],
+   "heading": 5,
+   "gfx": 2141,
+   "src": "l1j",
+   "action": "htel",
+   "dialogue": "htel-c.html",
+   "pages": [
+    "htel",
+    "htel1",
+    "htel2"
+   ],
+   "to": [
+    {
+     "action": "teleport hidden-velley-for-newbie",
+     "map": "mainland_south",
+     "cell": [
+      571,
+      1259
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50004,
+   "n": "初級傳送師",
+   "map": "l1j_map_69",
+   "cell": [
+    231,
+    91
+   ],
+   "heading": 6,
+   "gfx": 2141,
+   "src": "l1j",
+   "action": "htel",
+   "dialogue": "htel-c.html",
+   "pages": [
+    "htel",
+    "htel1",
+    "htel2"
+   ],
+   "to": [
+    {
+     "action": "teleport hidden-velley-for-newbie",
+     "map": "mainland_south",
+     "cell": [
+      571,
+      1259
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50004,
+   "n": "初級傳送師",
+   "map": "l1j_map_69",
+   "cell": [
+    164,
+    142
+   ],
+   "heading": 6,
+   "gfx": 2141,
+   "src": "l1j",
+   "action": "htel",
+   "dialogue": "htel-c.html",
+   "pages": [
+    "htel",
+    "htel1",
+    "htel2"
+   ],
+   "to": [
+    {
+     "action": "teleport hidden-velley-for-newbie",
+     "map": "mainland_south",
+     "cell": [
+      571,
+      1259
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50004,
+   "n": "初級傳送師",
+   "map": "l1j_map_69",
+   "cell": [
+    213,
+    105
+   ],
+   "heading": 6,
+   "gfx": 2141,
+   "src": "l1j",
+   "action": "htel",
+   "dialogue": "htel-c.html",
+   "pages": [
+    "htel",
+    "htel1",
+    "htel2"
+   ],
+   "to": [
+    {
+     "action": "teleport hidden-velley-for-newbie",
+     "map": "mainland_south",
+     "cell": [
+      571,
+      1259
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50004,
+   "n": "初級傳送師",
+   "map": "l1j_map_69",
+   "cell": [
+    229,
+    115
+   ],
+   "heading": 6,
+   "gfx": 2141,
+   "src": "l1j",
+   "action": "htel",
+   "dialogue": "htel-c.html",
+   "pages": [
+    "htel",
+    "htel1",
+    "htel2"
+   ],
+   "to": [
+    {
+     "action": "teleport hidden-velley-for-newbie",
+     "map": "mainland_south",
+     "cell": [
+      571,
+      1259
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50004,
+   "n": "初級傳送師",
+   "map": "l1j_map_69",
+   "cell": [
+    216,
+    168
+   ],
+   "heading": 6,
+   "gfx": 2141,
+   "src": "l1j",
+   "action": "htel",
+   "dialogue": "htel-c.html",
+   "pages": [
+    "htel",
+    "htel1",
+    "htel2"
+   ],
+   "to": [
+    {
+     "action": "teleport hidden-velley-for-newbie",
+     "map": "mainland_south",
+     "cell": [
+      571,
+      1259
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50004,
+   "n": "初級傳送師",
+   "map": "l1j_map_69",
+   "cell": [
+    194,
+    177
+   ],
+   "heading": 6,
+   "gfx": 2141,
+   "src": "l1j",
+   "action": "htel",
+   "dialogue": "htel-c.html",
+   "pages": [
+    "htel",
+    "htel1",
+    "htel2"
+   ],
+   "to": [
+    {
+     "action": "teleport hidden-velley-for-newbie",
+     "map": "mainland_south",
+     "cell": [
+      571,
+      1259
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50004,
+   "n": "初級傳送師",
+   "map": "l1j_map_69",
+   "cell": [
+    151,
+    180
+   ],
+   "heading": 4,
+   "gfx": 2141,
+   "src": "l1j",
+   "action": "htel",
+   "dialogue": "htel-c.html",
+   "pages": [
+    "htel",
+    "htel1",
+    "htel2"
+   ],
+   "to": [
+    {
+     "action": "teleport hidden-velley-for-newbie",
+     "map": "mainland_south",
+     "cell": [
+      571,
+      1259
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50010,
+   "n": "初級傳送師",
+   "map": "l1j_map_68",
+   "cell": [
+    181,
+    246
+   ],
+   "heading": 4,
+   "gfx": 2141,
+   "src": "l1j",
+   "action": "stel",
+   "dialogue": "stel-c.html",
+   "pages": [
+    "stel",
+    "stel1",
+    "stel2"
+   ],
+   "to": [
+    {
+     "action": "teleport talking-island-for-newbie",
+     "map": "talking_island",
+     "cell": [
+      337,
+      154
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50010,
+   "n": "初級傳送師",
+   "map": "l1j_map_68",
+   "cell": [
+    222,
+    271
+   ],
+   "heading": 4,
+   "gfx": 2141,
+   "src": "l1j",
+   "action": "stel",
+   "dialogue": "stel-c.html",
+   "pages": [
+    "stel",
+    "stel1",
+    "stel2"
+   ],
+   "to": [
+    {
+     "action": "teleport talking-island-for-newbie",
+     "map": "talking_island",
+     "cell": [
+      337,
+      154
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50010,
+   "n": "初級傳送師",
+   "map": "l1j_map_68",
+   "cell": [
+    252,
+    250
+   ],
+   "heading": 4,
+   "gfx": 2141,
+   "src": "l1j",
+   "action": "stel",
+   "dialogue": "stel-c.html",
+   "pages": [
+    "stel",
+    "stel1",
+    "stel2"
+   ],
+   "to": [
+    {
+     "action": "teleport talking-island-for-newbie",
+     "map": "talking_island",
+     "cell": [
+      337,
+      154
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50010,
+   "n": "初級傳送師",
+   "map": "l1j_map_68",
+   "cell": [
+    252,
+    229
+   ],
+   "heading": 4,
+   "gfx": 2141,
+   "src": "l1j",
+   "action": "stel",
+   "dialogue": "stel-c.html",
+   "pages": [
+    "stel",
+    "stel1",
+    "stel2"
+   ],
+   "to": [
+    {
+     "action": "teleport talking-island-for-newbie",
+     "map": "talking_island",
+     "cell": [
+      337,
+      154
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50010,
+   "n": "初級傳送師",
+   "map": "l1j_map_68",
+   "cell": [
+    251,
+    214
+   ],
+   "heading": 4,
+   "gfx": 2141,
+   "src": "l1j",
+   "action": "stel",
+   "dialogue": "stel-c.html",
+   "pages": [
+    "stel",
+    "stel1",
+    "stel2"
+   ],
+   "to": [
+    {
+     "action": "teleport talking-island-for-newbie",
+     "map": "talking_island",
+     "cell": [
+      337,
+      154
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50010,
+   "n": "初級傳送師",
+   "map": "l1j_map_68",
+   "cell": [
+    152,
+    239
+   ],
+   "heading": 4,
+   "gfx": 2141,
+   "src": "l1j",
+   "action": "stel",
+   "dialogue": "stel-c.html",
+   "pages": [
+    "stel",
+    "stel1",
+    "stel2"
+   ],
+   "to": [
+    {
+     "action": "teleport talking-island-for-newbie",
+     "map": "talking_island",
+     "cell": [
+      337,
+      154
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50055,
+   "n": "德瑞斯特",
+   "map": "mainland_south",
+   "cell": [
+    575,
+    1260
+   ],
+   "heading": 5,
+   "gfx": 1510,
+   "src": "l1j",
+   "action": "drist2",
+   "pages": [
+    "drist2"
+   ],
+   "to": [
+    {
+     "action": "teleport hidden-valley",
+     "map": "l1j_map_69",
+     "cell": [
+      163,
+      157
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50056,
+   "n": "麥特",
+   "map": "mainland_south",
+   "cell": [
+    568,
+    1257
+   ],
+   "heading": 7,
+   "gfx": 6377,
+   "src": "l1j",
+   "action": "telesilver1",
+   "dialogue": "telesilver1-c.html",
+   "pages": [
+    "telesilver1",
+    "telesilver2",
+    "telesilver3"
+   ],
+   "to": [
+    {
+     "action": "teleport silver-kent",
+     "map": "mainland_south",
+     "cell": [
+      538,
+      654
+     ],
+     "heading": 5,
+     "price": 55
+    },
+    {
+     "action": "teleport silver-woods",
+     "map": "mainland_south",
+     "cell": [
+      128,
+      1075
+     ],
+     "heading": 5,
+     "price": 55
+    },
+    {
+     "action": "teleport silver-heine",
+     "map": "mainland_south",
+     "cell": [
+      1100,
+      1129
+     ],
+     "heading": 5,
+     "price": 55
+    },
+    {
+     "action": "teleport silver-gludin",
+     "map": "mainland_south",
+     "cell": [
+      96,
+      606
+     ],
+     "heading": 5,
+     "price": 132
+    },
+    {
+     "action": "teleport silver-giran",
+     "map": "mainland_south",
+     "cell": [
+      926,
+      668
+     ],
+     "heading": 5,
+     "price": 132
+    },
+    {
+     "action": "teleport silver-aden",
+     "map": "mainland_south",
+     "cell": [
+      1453,
+      1125
+     ],
+     "heading": 5,
+     "price": 132
+    },
+    {
+     "action": "teleport silver-willow",
+     "map": "mainland_south",
+     "cell": [
+      203,
+      320
+     ],
+     "heading": 5,
+     "price": 198
+    },
+    {
+     "action": "teleport silver-werldern",
+     "map": "mainland_south",
+     "cell": [
+      1197,
+      372
+     ],
+     "heading": 5,
+     "price": 198
+    },
+    {
+     "action": "teleport silver-behemoth",
+     "map": "behemoth",
+     "cell": [
+      75,
+      119
+     ],
+     "heading": 5,
+     "price": 1000
+    },
+    {
+     "action": "teleport silver-silveria",
+     "map": "hyperia",
+     "cell": [
+      137,
+      88
+     ],
+     "heading": 2,
+     "price": 1000
+    },
+    {
+     "action": "teleport silver-oren",
+     "map": "zone_03",
+     "cell": [
+      14,
+      150
+     ],
+     "heading": 5,
+     "price": 246
+    },
+    {
+     "action": "teleport silver-island",
+     "map": "talking_island",
+     "cell": [
+      327,
+      156
+     ],
+     "heading": 5,
+     "price": 770
+    },
+    {
+     "action": "teleport silver-diad",
+     "map": "diad_fortress",
+     "cell": [
+      188,
+      132
+     ],
+     "heading": 5,
+     "price": 7480
+    },
+    {
+     "action": "teleport silver-train",
+     "map": "mainland_south",
+     "cell": [
+      471,
+      1377
+     ],
+     "heading": 5,
+     "price": 110
+    },
+    {
+     "action": "teleport silver-oasis",
+     "map": "mainland_south",
+     "cell": [
+      349,
+      1125
+     ],
+     "heading": 5,
+     "price": 110
+    },
+    {
+     "action": "teleport silver-gludun",
+     "map": "mainland_south",
+     "cell": [
+      188,
+      796
+     ],
+     "heading": 5,
+     "price": 242
+    },
+    {
+     "action": "teleport silver-girdun",
+     "map": "mainland_south",
+     "cell": [
+      808,
+      932
+     ],
+     "heading": 5,
+     "price": 242
+    },
+    {
+     "action": "teleport silver-under",
+     "map": "mainland_south",
+     "cell": [
+      45,
+      1338
+     ],
+     "heading": 5,
+     "price": 242
+    },
+    {
+     "action": "teleport silver-eva",
+     "map": "mainland_south",
+     "cell": [
+      1111,
+      1373
+     ],
+     "heading": 5,
+     "price": 242
+    },
+    {
+     "action": "teleport silver-mirr",
+     "map": "mainland_south",
+     "cell": [
+      1206,
+      800
+     ],
+     "heading": 5,
+     "price": 363
+    },
+    {
+     "action": "teleport silver-dragon",
+     "map": "mainland_south",
+     "cell": [
+      923,
+      416
+     ],
+     "heading": 5,
+     "price": 363
+    },
+    {
+     "action": "teleport silver-reed",
+     "map": "mainland_south",
+     "cell": [
+      234,
+      233
+     ],
+     "heading": 5,
+     "price": 363
+    },
+    {
+     "action": "teleport silver-gypsy",
+     "map": "mainland_south",
+     "cell": [
+      1465,
+      813
+     ],
+     "heading": 5,
+     "price": 363
+    }
+   ]
+  },
+  {
+   "npcid": 50054,
+   "n": "特萊",
+   "map": "mainland_south",
+   "cell": [
+    128,
+    1076
+   ],
+   "heading": 7,
+   "gfx": 6377,
+   "src": "l1j",
+   "action": "telewoods1",
+   "dialogue": "telewoods1-c.html",
+   "pages": [
+    "telewoods1",
+    "telewoods2",
+    "telewoods3",
+    "guidestart",
+    "guide_5"
+   ],
+   "to": [
+    {
+     "action": "teleport woods-silver",
+     "map": "mainland_south",
+     "cell": [
+      568,
+      1258
+     ],
+     "heading": 5,
+     "price": 50
+    },
+    {
+     "action": "teleport woods-kent",
+     "map": "mainland_south",
+     "cell": [
+      538,
+      654
+     ],
+     "heading": 5,
+     "price": 120
+    },
+    {
+     "action": "teleport woods-willow",
+     "map": "mainland_south",
+     "cell": [
+      203,
+      320
+     ],
+     "heading": 5,
+     "price": 240
+    },
+    {
+     "action": "teleport woods-heine",
+     "map": "mainland_south",
+     "cell": [
+      1100,
+      1129
+     ],
+     "heading": 5,
+     "price": 120
+    },
+    {
+     "action": "teleport woods-giran",
+     "map": "mainland_south",
+     "cell": [
+      926,
+      668
+     ],
+     "heading": 5,
+     "price": 180
+    },
+    {
+     "action": "teleport woods-aden",
+     "map": "mainland_south",
+     "cell": [
+      1453,
+      1125
+     ],
+     "heading": 5,
+     "price": 180
+    },
+    {
+     "action": "teleport woods-werldern",
+     "map": "mainland_south",
+     "cell": [
+      1197,
+      372
+     ],
+     "heading": 5,
+     "price": 240
+    },
+    {
+     "action": "teleport woods-oren",
+     "map": "zone_03",
+     "cell": [
+      14,
+      150
+     ],
+     "heading": 5,
+     "price": 300
+    },
+    {
+     "action": "teleport woods-lowful",
+     "map": "mainland_south",
+     "cell": [
+      606,
+      805
+     ],
+     "heading": 5,
+     "price": 200
+    },
+    {
+     "action": "teleport woods-chaos",
+     "map": "mainland_south",
+     "cell": [
+      373,
+      524
+     ],
+     "heading": 5,
+     "price": 200
+    },
+    {
+     "action": "teleport woods-island",
+     "map": "talking_island",
+     "cell": [
+      327,
+      156
+     ],
+     "heading": 5,
+     "price": 500
+    },
+    {
+     "action": "teleport woods-diad",
+     "map": "diad_fortress",
+     "cell": [
+      188,
+      132
+     ],
+     "heading": 5,
+     "price": 6500
+    },
+    {
+     "action": "teleport woods-oasis",
+     "map": "mainland_south",
+     "cell": [
+      349,
+      1125
+     ],
+     "heading": 5,
+     "price": 100
+    },
+    {
+     "action": "teleport woods-under",
+     "map": "mainland_south",
+     "cell": [
+      45,
+      1338
+     ],
+     "heading": 5,
+     "price": 100
+    },
+    {
+     "action": "teleport woods-gludun",
+     "map": "mainland_south",
+     "cell": [
+      188,
+      796
+     ],
+     "heading": 5,
+     "price": 220
+    },
+    {
+     "action": "teleport woods-train",
+     "map": "mainland_south",
+     "cell": [
+      471,
+      1377
+     ],
+     "heading": 5,
+     "price": 220
+    },
+    {
+     "action": "teleport woods-girdun",
+     "map": "mainland_south",
+     "cell": [
+      808,
+      932
+     ],
+     "heading": 5,
+     "price": 242
+    },
+    {
+     "action": "teleport woods-dragon",
+     "map": "mainland_south",
+     "cell": [
+      923,
+      416
+     ],
+     "heading": 5,
+     "price": 330
+    },
+    {
+     "action": "teleport woods-reed",
+     "map": "mainland_south",
+     "cell": [
+      234,
+      233
+     ],
+     "heading": 5,
+     "price": 330
+    },
+    {
+     "action": "teleport woods-eva",
+     "map": "mainland_south",
+     "cell": [
+      1111,
+      1373
+     ],
+     "heading": 5,
+     "price": 330
+    },
+    {
+     "action": "teleport woods-mirr",
+     "map": "mainland_south",
+     "cell": [
+      1206,
+      800
+     ],
+     "heading": 5,
+     "price": 440
+    },
+    {
+     "action": "teleport woods-gypsy",
+     "map": "mainland_south",
+     "cell": [
+      1465,
+      813
+     ],
+     "heading": 5,
+     "price": 550
+    }
+   ]
+  },
+  {
+   "npcid": 50024,
+   "n": "史提夫",
+   "map": "mainland_south",
+   "cell": [
+    99,
+    604
+   ],
+   "heading": 6,
+   "gfx": 6377,
+   "src": "l1j",
+   "action": "telegludin1",
+   "dialogue": "telegludin1-c.html",
+   "pages": [
+    "telegludin1",
+    "telegludin2",
+    "telegludin3",
+    "guidestart",
+    "guide_5"
+   ],
+   "to": [
+    {
+     "action": "teleport gludin-kent",
+     "map": "mainland_south",
+     "cell": [
+      538,
+      654
+     ],
+     "heading": 5,
+     "price": 55
+    },
+    {
+     "action": "teleport gludin-woods",
+     "map": "mainland_south",
+     "cell": [
+      128,
+      1075
+     ],
+     "heading": 5,
+     "price": 55
+    },
+    {
+     "action": "teleport gludin-willow",
+     "map": "mainland_south",
+     "cell": [
+      203,
+      320
+     ],
+     "heading": 5,
+     "price": 55
+    },
+    {
+     "action": "teleport gludin-giran",
+     "map": "mainland_south",
+     "cell": [
+      926,
+      668
+     ],
+     "heading": 5,
+     "price": 132
+    },
+    {
+     "action": "teleport gludin-silver",
+     "map": "mainland_south",
+     "cell": [
+      568,
+      1258
+     ],
+     "heading": 5,
+     "price": 132
+    },
+    {
+     "action": "teleport gludin-heine",
+     "map": "mainland_south",
+     "cell": [
+      1100,
+      1129
+     ],
+     "heading": 5,
+     "price": 198
+    },
+    {
+     "action": "teleport gludin-werldern",
+     "map": "mainland_south",
+     "cell": [
+      1197,
+      372
+     ],
+     "heading": 5,
+     "price": 198
+    },
+    {
+     "action": "teleport gludin-behemoth",
+     "map": "behemoth",
+     "cell": [
+      75,
+      119
+     ],
+     "heading": 5,
+     "price": 1000
+    },
+    {
+     "action": "teleport gludin-silveria",
+     "map": "hyperia",
+     "cell": [
+      137,
+      88
+     ],
+     "heading": 2,
+     "price": 1000
+    },
+    {
+     "action": "teleport gludin-oren",
+     "map": "zone_03",
+     "cell": [
+      14,
+      150
+     ],
+     "heading": 5,
+     "price": 264
+    },
+    {
+     "action": "teleport gludin-aden",
+     "map": "mainland_south",
+     "cell": [
+      1453,
+      1125
+     ],
+     "heading": 5,
+     "price": 264
+    },
+    {
+     "action": "teleport gludin-lowful",
+     "map": "mainland_south",
+     "cell": [
+      606,
+      805
+     ],
+     "heading": 5,
+     "price": 220
+    },
+    {
+     "action": "teleport gludin-chaos",
+     "map": "mainland_south",
+     "cell": [
+      373,
+      524
+     ],
+     "heading": 5,
+     "price": 220
+    },
+    {
+     "action": "teleport gludin-island",
+     "map": "talking_island",
+     "cell": [
+      327,
+      156
+     ],
+     "heading": 5,
+     "price": 550
+    },
+    {
+     "action": "teleport gludin-diad",
+     "map": "diad_fortress",
+     "cell": [
+      188,
+      132
+     ],
+     "heading": 5,
+     "price": 7480
+    },
+    {
+     "action": "teleport gludin-gludun",
+     "map": "mainland_south",
+     "cell": [
+      188,
+      796
+     ],
+     "heading": 5,
+     "price": 110
+    },
+    {
+     "action": "teleport gludin-oasis",
+     "map": "mainland_south",
+     "cell": [
+      349,
+      1125
+     ],
+     "heading": 5,
+     "price": 242
+    },
+    {
+     "action": "teleport gludin-under",
+     "map": "mainland_south",
+     "cell": [
+      45,
+      1338
+     ],
+     "heading": 5,
+     "price": 242
+    },
+    {
+     "action": "teleport gludin-reed",
+     "map": "mainland_south",
+     "cell": [
+      234,
+      233
+     ],
+     "heading": 5,
+     "price": 242
+    },
+    {
+     "action": "teleport gludin-girdun",
+     "map": "mainland_south",
+     "cell": [
+      808,
+      932
+     ],
+     "heading": 5,
+     "price": 363
+    },
+    {
+     "action": "teleport gludin-train",
+     "map": "mainland_south",
+     "cell": [
+      471,
+      1377
+     ],
+     "heading": 5,
+     "price": 363
+    },
+    {
+     "action": "teleport gludin-mirr",
+     "map": "mainland_south",
+     "cell": [
+      1206,
+      800
+     ],
+     "heading": 5,
+     "price": 484
+    },
+    {
+     "action": "teleport gludin-dragon",
+     "map": "mainland_south",
+     "cell": [
+      923,
+      416
+     ],
+     "heading": 5,
+     "price": 363
+    },
+    {
+     "action": "teleport gludin-eva",
+     "map": "mainland_south",
+     "cell": [
+      1111,
+      1373
+     ],
+     "heading": 5,
+     "price": 484
+    },
+    {
+     "action": "teleport gludin-gypsy",
+     "map": "mainland_south",
+     "cell": [
+      1465,
+      813
+     ],
+     "heading": 5,
+     "price": 605
+    }
+   ]
+  },
+  {
+   "npcid": 50015,
+   "n": "盧卡斯",
+   "map": "talking_island",
+   "cell": [
+    327,
+    154
+   ],
+   "heading": 4,
+   "gfx": 6377,
+   "src": "l1j",
+   "action": "teleisland1",
+   "dialogue": "teleisland1-c.html",
+   "pages": [
+    "teleisland1",
+    "teleisland2"
+   ],
+   "to": [
+    {
+     "action": "teleport island-gludin",
+     "map": "mainland_south",
+     "cell": [
+      96,
+      606
+     ],
+     "heading": 5,
+     "price": 1500
+    }
+   ]
+  },
+  {
+   "npcid": 50020,
+   "n": "史坦利",
+   "map": "mainland_south",
+   "cell": [
+    538,
+    655
+   ],
+   "heading": 7,
+   "gfx": 6377,
+   "src": "l1j",
+   "action": "telekent1",
+   "dialogue": "telekent1-c.html",
+   "pages": [
+    "telekent1",
+    "telekent2",
+    "telekent3",
+    "guidestart",
+    "guide_5"
+   ],
+   "to": [
+    {
+     "action": "teleport kent-gludin",
+     "map": "mainland_south",
+     "cell": [
+      96,
+      606
+     ],
+     "heading": 5,
+     "price": 50
+    },
+    {
+     "action": "teleport kent-giran",
+     "map": "mainland_south",
+     "cell": [
+      926,
+      668
+     ],
+     "heading": 5,
+     "price": 50
+    },
+    {
+     "action": "teleport kent-silver",
+     "map": "mainland_south",
+     "cell": [
+      568,
+      1258
+     ],
+     "heading": 5,
+     "price": 50
+    },
+    {
+     "action": "teleport kent-woods",
+     "map": "mainland_south",
+     "cell": [
+      128,
+      1075
+     ],
+     "heading": 5,
+     "price": 120
+    },
+    {
+     "action": "teleport kent-willow",
+     "map": "mainland_south",
+     "cell": [
+      203,
+      320
+     ],
+     "heading": 5,
+     "price": 120
+    },
+    {
+     "action": "teleport kent-heine",
+     "map": "mainland_south",
+     "cell": [
+      1100,
+      1129
+     ],
+     "heading": 5,
+     "price": 120
+    },
+    {
+     "action": "teleport kent-werldern",
+     "map": "mainland_south",
+     "cell": [
+      1197,
+      372
+     ],
+     "heading": 5,
+     "price": 120
+    },
+    {
+     "action": "teleport kent-oren",
+     "map": "zone_03",
+     "cell": [
+      14,
+      150
+     ],
+     "heading": 5,
+     "price": 180
+    },
+    {
+     "action": "teleport kent-aden",
+     "map": "mainland_south",
+     "cell": [
+      1453,
+      1125
+     ],
+     "heading": 5,
+     "price": 180
+    },
+    {
+     "action": "teleport kent-lowful",
+     "map": "mainland_south",
+     "cell": [
+      606,
+      805
+     ],
+     "heading": 5,
+     "price": 200
+    },
+    {
+     "action": "teleport kent-chaos",
+     "map": "mainland_south",
+     "cell": [
+      373,
+      524
+     ],
+     "heading": 5,
+     "price": 200
+    },
+    {
+     "action": "teleport kent-island",
+     "map": "talking_island",
+     "cell": [
+      327,
+      156
+     ],
+     "heading": 5,
+     "price": 600
+    },
+    {
+     "action": "teleport kent-diad",
+     "map": "diad_fortress",
+     "cell": [
+      188,
+      132
+     ],
+     "heading": 5,
+     "price": 7100
+    },
+    {
+     "action": "teleport kent-gludun",
+     "map": "mainland_south",
+     "cell": [
+      188,
+      796
+     ],
+     "heading": 5,
+     "price": 100
+    },
+    {
+     "action": "teleport kent-girdun",
+     "map": "mainland_south",
+     "cell": [
+      808,
+      932
+     ],
+     "heading": 5,
+     "price": 220
+    },
+    {
+     "action": "teleport kent-train",
+     "map": "mainland_south",
+     "cell": [
+      471,
+      1377
+     ],
+     "heading": 5,
+     "price": 220
+    },
+    {
+     "action": "teleport kent-mirr",
+     "map": "mainland_south",
+     "cell": [
+      1206,
+      800
+     ],
+     "heading": 5,
+     "price": 220
+    },
+    {
+     "action": "teleport kent-dragon",
+     "map": "mainland_south",
+     "cell": [
+      923,
+      416
+     ],
+     "heading": 5,
+     "price": 220
+    },
+    {
+     "action": "teleport kent-reed",
+     "map": "mainland_south",
+     "cell": [
+      234,
+      233
+     ],
+     "heading": 5,
+     "price": 220
+    },
+    {
+     "action": "teleport kent-oasis",
+     "map": "mainland_south",
+     "cell": [
+      349,
+      1125
+     ],
+     "heading": 5,
+     "price": 230
+    },
+    {
+     "action": "teleport kent-under",
+     "map": "mainland_south",
+     "cell": [
+      45,
+      1338
+     ],
+     "heading": 5,
+     "price": 330
+    },
+    {
+     "action": "teleport kent-eva",
+     "map": "mainland_south",
+     "cell": [
+      1111,
+      1373
+     ],
+     "heading": 5,
+     "price": 330
+    },
+    {
+     "action": "teleport kent-gypsy",
+     "map": "mainland_south",
+     "cell": [
+      1465,
+      813
+     ],
+     "heading": 5,
+     "price": 440
+    }
+   ]
+  },
+  {
+   "npcid": 50066,
+   "n": "里歐",
+   "map": "mainland_south",
+   "cell": [
+    1101,
+    1129
+   ],
+   "heading": 7,
+   "gfx": 6377,
+   "src": "l1j",
+   "action": "teleheine1",
+   "dialogue": "teleheine1-c.html",
+   "pages": [
+    "teleheine1",
+    "teleheine2",
+    "teleheine3",
+    "guidestart",
+    "guide_5"
+   ],
+   "to": [
+    {
+     "action": "teleport heine-giran",
+     "map": "mainland_south",
+     "cell": [
+      926,
+      668
+     ],
+     "heading": 5,
+     "price": 50
+    },
+    {
+     "action": "teleport heine-silver",
+     "map": "mainland_south",
+     "cell": [
+      568,
+      1258
+     ],
+     "heading": 5,
+     "price": 50
+    },
+    {
+     "action": "teleport heine-aden",
+     "map": "mainland_south",
+     "cell": [
+      1453,
+      1125
+     ],
+     "heading": 5,
+     "price": 50
+    },
+    {
+     "action": "teleport heine-kent",
+     "map": "mainland_south",
+     "cell": [
+      538,
+      654
+     ],
+     "heading": 5,
+     "price": 120
+    },
+    {
+     "action": "teleport heine-woods",
+     "map": "mainland_south",
+     "cell": [
+      128,
+      1075
+     ],
+     "heading": 5,
+     "price": 120
+    },
+    {
+     "action": "teleport heine-werldern",
+     "map": "mainland_south",
+     "cell": [
+      1197,
+      372
+     ],
+     "heading": 5,
+     "price": 120
+    },
+    {
+     "action": "teleport heine-oren",
+     "map": "zone_03",
+     "cell": [
+      14,
+      150
+     ],
+     "heading": 5,
+     "price": 180
+    },
+    {
+     "action": "teleport heine-gludin",
+     "map": "mainland_south",
+     "cell": [
+      96,
+      606
+     ],
+     "heading": 5,
+     "price": 180
+    },
+    {
+     "action": "teleport heine-willow",
+     "map": "mainland_south",
+     "cell": [
+      203,
+      320
+     ],
+     "heading": 5,
+     "price": 240
+    },
+    {
+     "action": "teleport heine-lowful",
+     "map": "mainland_south",
+     "cell": [
+      606,
+      805
+     ],
+     "heading": 5,
+     "price": 400
+    },
+    {
+     "action": "teleport heine-chaos",
+     "map": "mainland_south",
+     "cell": [
+      373,
+      524
+     ],
+     "heading": 5,
+     "price": 400
+    },
+    {
+     "action": "teleport heine-island",
+     "map": "talking_island",
+     "cell": [
+      327,
+      156
+     ],
+     "heading": 5,
+     "price": 800
+    },
+    {
+     "action": "teleport heine-diad",
+     "map": "diad_fortress",
+     "cell": [
+      188,
+      132
+     ],
+     "heading": 5,
+     "price": 7100
+    },
+    {
+     "action": "teleport heine-mirr",
+     "map": "mainland_south",
+     "cell": [
+      1206,
+      800
+     ],
+     "heading": 5,
+     "price": 100
+    },
+    {
+     "action": "teleport heine-eva",
+     "map": "mainland_south",
+     "cell": [
+      1111,
+      1373
+     ],
+     "heading": 5,
+     "price": 100
+    },
+    {
+     "action": "teleport heine-girdun",
+     "map": "mainland_south",
+     "cell": [
+      808,
+      932
+     ],
+     "heading": 5,
+     "price": 220
+    },
+    {
+     "action": "teleport heine-oasis",
+     "map": "mainland_south",
+     "cell": [
+      349,
+      1125
+     ],
+     "heading": 5,
+     "price": 220
+    },
+    {
+     "action": "teleport heine-train",
+     "map": "mainland_south",
+     "cell": [
+      471,
+      1377
+     ],
+     "heading": 5,
+     "price": 220
+    },
+    {
+     "action": "teleport heine-gypsy",
+     "map": "mainland_south",
+     "cell": [
+      1465,
+      813
+     ],
+     "heading": 5,
+     "price": 220
+    },
+    {
+     "action": "teleport heine-under",
+     "map": "mainland_south",
+     "cell": [
+      45,
+      1338
+     ],
+     "heading": 5,
+     "price": 330
+    },
+    {
+     "action": "teleport heine-dragon",
+     "map": "mainland_south",
+     "cell": [
+      923,
+      416
+     ],
+     "heading": 5,
+     "price": 330
+    },
+    {
+     "action": "teleport heine-gludun",
+     "map": "mainland_south",
+     "cell": [
+      188,
+      796
+     ],
+     "heading": 5,
+     "price": 440
+    },
+    {
+     "action": "teleport heine-reed",
+     "map": "mainland_south",
+     "cell": [
+      234,
+      233
+     ],
+     "heading": 5,
+     "price": 550
+    }
+   ]
+  },
+  {
+   "npcid": 50044,
+   "n": "西里烏斯",
+   "map": "mainland_south",
+   "cell": [
+    1452,
+    1124
+   ],
+   "heading": 4,
+   "gfx": 6377,
+   "src": "l1j",
+   "action": "sirius1",
+   "dialogue": "sirius1-c.html",
+   "pages": [
+    "sirius1",
+    "sirius2",
+    "sirius3",
+    "guidestart",
+    "guide_5"
+   ],
+   "to": [
+    {
+     "action": "teleport aden-heine",
+     "map": "mainland_south",
+     "cell": [
+      1100,
+      1129
+     ],
+     "heading": 5,
+     "price": 54
+    },
+    {
+     "action": "teleport aden-giran",
+     "map": "mainland_south",
+     "cell": [
+      926,
+      668
+     ],
+     "heading": 5,
+     "price": 129
+    },
+    {
+     "action": "teleport aden-silver",
+     "map": "mainland_south",
+     "cell": [
+      568,
+      1258
+     ],
+     "heading": 5,
+     "price": 129
+    },
+    {
+     "action": "teleport aden-kent",
+     "map": "mainland_south",
+     "cell": [
+      538,
+      654
+     ],
+     "heading": 5,
+     "price": 194
+    },
+    {
+     "action": "teleport aden-woods",
+     "map": "mainland_south",
+     "cell": [
+      128,
+      1075
+     ],
+     "heading": 5,
+     "price": 194
+    },
+    {
+     "action": "teleport aden-werldern",
+     "map": "mainland_south",
+     "cell": [
+      1197,
+      372
+     ],
+     "heading": 5,
+     "price": 194
+    },
+    {
+     "action": "teleport aden-gludin",
+     "map": "mainland_south",
+     "cell": [
+      96,
+      606
+     ],
+     "heading": 5,
+     "price": 259
+    },
+    {
+     "action": "teleport aden-oren",
+     "map": "zone_03",
+     "cell": [
+      14,
+      150
+     ],
+     "heading": 5,
+     "price": 259
+    },
+    {
+     "action": "teleport aden-willow",
+     "map": "mainland_south",
+     "cell": [
+      203,
+      320
+     ],
+     "heading": 5,
+     "price": 324
+    },
+    {
+     "action": "teleport aden-lowful",
+     "map": "mainland_south",
+     "cell": [
+      606,
+      805
+     ],
+     "heading": 5,
+     "price": 540
+    },
+    {
+     "action": "teleport aden-chaos",
+     "map": "mainland_south",
+     "cell": [
+      373,
+      524
+     ],
+     "heading": 5,
+     "price": 540
+    },
+    {
+     "action": "teleport aden-island",
+     "map": "talking_island",
+     "cell": [
+      327,
+      156
+     ],
+     "heading": 5,
+     "price": 972
+    },
+    {
+     "action": "teleport aden-diad",
+     "map": "diad_fortress",
+     "cell": [
+      188,
+      132
+     ],
+     "heading": 5,
+     "price": 7992
+    },
+    {
+     "action": "teleport aden-gypsy",
+     "map": "mainland_south",
+     "cell": [
+      1465,
+      813
+     ],
+     "heading": 5,
+     "price": 108
+    },
+    {
+     "action": "teleport aden-eva",
+     "map": "mainland_south",
+     "cell": [
+      1111,
+      1373
+     ],
+     "heading": 5,
+     "price": 237
+    },
+    {
+     "action": "teleport aden-mirr",
+     "map": "mainland_south",
+     "cell": [
+      1206,
+      800
+     ],
+     "heading": 5,
+     "price": 237
+    },
+    {
+     "action": "teleport aden-girdun",
+     "map": "mainland_south",
+     "cell": [
+      808,
+      932
+     ],
+     "heading": 5,
+     "price": 356
+    },
+    {
+     "action": "teleport aden-dragon",
+     "map": "mainland_south",
+     "cell": [
+      923,
+      416
+     ],
+     "heading": 5,
+     "price": 356
+    },
+    {
+     "action": "teleport aden-oasis",
+     "map": "mainland_south",
+     "cell": [
+      349,
+      1125
+     ],
+     "heading": 5,
+     "price": 475
+    },
+    {
+     "action": "teleport aden-train",
+     "map": "mainland_south",
+     "cell": [
+      471,
+      1377
+     ],
+     "heading": 5,
+     "price": 475
+    },
+    {
+     "action": "teleport aden-gludun",
+     "map": "mainland_south",
+     "cell": [
+      188,
+      796
+     ],
+     "heading": 5,
+     "price": 594
+    },
+    {
+     "action": "teleport aden-under",
+     "map": "mainland_south",
+     "cell": [
+      45,
+      1338
+     ],
+     "heading": 5,
+     "price": 594
+    },
+    {
+     "action": "teleport aden-reed",
+     "map": "mainland_south",
+     "cell": [
+      234,
+      233
+     ],
+     "heading": 5,
+     "price": 594
+    }
+   ]
+  },
+  {
+   "npcid": 50046,
+   "n": "艾勒里斯",
+   "map": "mainland_south",
+   "cell": [
+    1422,
+    1223
+   ],
+   "heading": 6,
+   "gfx": 6377,
+   "src": "l1j",
+   "action": "elleris1",
+   "dialogue": "elleris1-c.html",
+   "pages": [
+    "elleris1",
+    "elleris2",
+    "elleris3",
+    "guidestart",
+    "guide_5"
+   ],
+   "to": [
+    {
+     "action": "teleport aden-heine",
+     "map": "mainland_south",
+     "cell": [
+      1100,
+      1129
+     ],
+     "heading": 5,
+     "price": 54
+    },
+    {
+     "action": "teleport aden-giran",
+     "map": "mainland_south",
+     "cell": [
+      926,
+      668
+     ],
+     "heading": 5,
+     "price": 129
+    },
+    {
+     "action": "teleport aden-silver",
+     "map": "mainland_south",
+     "cell": [
+      568,
+      1258
+     ],
+     "heading": 5,
+     "price": 129
+    },
+    {
+     "action": "teleport aden-kent",
+     "map": "mainland_south",
+     "cell": [
+      538,
+      654
+     ],
+     "heading": 5,
+     "price": 194
+    },
+    {
+     "action": "teleport aden-woods",
+     "map": "mainland_south",
+     "cell": [
+      128,
+      1075
+     ],
+     "heading": 5,
+     "price": 194
+    },
+    {
+     "action": "teleport aden-werldern",
+     "map": "mainland_south",
+     "cell": [
+      1197,
+      372
+     ],
+     "heading": 5,
+     "price": 194
+    },
+    {
+     "action": "teleport aden-gludin",
+     "map": "mainland_south",
+     "cell": [
+      96,
+      606
+     ],
+     "heading": 5,
+     "price": 259
+    },
+    {
+     "action": "teleport aden-oren",
+     "map": "zone_03",
+     "cell": [
+      14,
+      150
+     ],
+     "heading": 5,
+     "price": 259
+    },
+    {
+     "action": "teleport aden-willow",
+     "map": "mainland_south",
+     "cell": [
+      203,
+      320
+     ],
+     "heading": 5,
+     "price": 324
+    },
+    {
+     "action": "teleport aden-lowful",
+     "map": "mainland_south",
+     "cell": [
+      606,
+      805
+     ],
+     "heading": 5,
+     "price": 540
+    },
+    {
+     "action": "teleport aden-chaos",
+     "map": "mainland_south",
+     "cell": [
+      373,
+      524
+     ],
+     "heading": 5,
+     "price": 540
+    },
+    {
+     "action": "teleport aden-island",
+     "map": "talking_island",
+     "cell": [
+      327,
+      156
+     ],
+     "heading": 5,
+     "price": 972
+    },
+    {
+     "action": "teleport aden-diad",
+     "map": "diad_fortress",
+     "cell": [
+      188,
+      132
+     ],
+     "heading": 5,
+     "price": 7992
+    },
+    {
+     "action": "teleport aden-gypsy",
+     "map": "mainland_south",
+     "cell": [
+      1465,
+      813
+     ],
+     "heading": 5,
+     "price": 108
+    },
+    {
+     "action": "teleport aden-eva",
+     "map": "mainland_south",
+     "cell": [
+      1111,
+      1373
+     ],
+     "heading": 5,
+     "price": 237
+    },
+    {
+     "action": "teleport aden-mirr",
+     "map": "mainland_south",
+     "cell": [
+      1206,
+      800
+     ],
+     "heading": 5,
+     "price": 237
+    },
+    {
+     "action": "teleport aden-girdun",
+     "map": "mainland_south",
+     "cell": [
+      808,
+      932
+     ],
+     "heading": 5,
+     "price": 356
+    },
+    {
+     "action": "teleport aden-dragon",
+     "map": "mainland_south",
+     "cell": [
+      923,
+      416
+     ],
+     "heading": 5,
+     "price": 356
+    },
+    {
+     "action": "teleport aden-oasis",
+     "map": "mainland_south",
+     "cell": [
+      349,
+      1125
+     ],
+     "heading": 5,
+     "price": 475
+    },
+    {
+     "action": "teleport aden-train",
+     "map": "mainland_south",
+     "cell": [
+      471,
+      1377
+     ],
+     "heading": 5,
+     "price": 475
+    },
+    {
+     "action": "teleport aden-gludun",
+     "map": "mainland_south",
+     "cell": [
+      188,
+      796
+     ],
+     "heading": 5,
+     "price": 594
+    },
+    {
+     "action": "teleport aden-under",
+     "map": "mainland_south",
+     "cell": [
+      45,
+      1338
+     ],
+     "heading": 5,
+     "price": 594
+    },
+    {
+     "action": "teleport aden-reed",
+     "map": "mainland_south",
+     "cell": [
+      234,
+      233
+     ],
+     "heading": 5,
+     "price": 594
+    }
+   ]
+  },
+  {
+   "npcid": 50608,
+   "n": "奇寧",
+   "map": "mainland_south",
+   "cell": [
+    1597,
+    1222
+   ],
+   "heading": 4,
+   "gfx": 1256,
+   "src": "l1j",
+   "action": "kinin2",
+   "dialogue": "kinin2-c.html",
+   "pages": [
+    "kinin2"
+   ],
+   "to": [
+    {
+     "action": "teleport aden-willow",
+     "map": "mainland_south",
+     "cell": [
+      203,
+      320
+     ],
+     "heading": 5,
+     "price": 324
+    },
+    {
+     "action": "teleport aden-lowful",
+     "map": "mainland_south",
+     "cell": [
+      606,
+      805
+     ],
+     "heading": 5,
+     "price": 540
+    },
+    {
+     "action": "teleport aden-chaos",
+     "map": "mainland_south",
+     "cell": [
+      373,
+      524
+     ],
+     "heading": 5,
+     "price": 540
+    },
+    {
+     "action": "teleport aden-island",
+     "map": "talking_island",
+     "cell": [
+      327,
+      156
+     ],
+     "heading": 5,
+     "price": 972
+    }
+   ]
+  },
+  {
+   "npcid": 50051,
+   "n": "吉利烏斯",
+   "map": "zone_03",
+   "cell": [
+    15,
+    150
+   ],
+   "heading": 5,
+   "gfx": 6377,
+   "src": "l1j",
+   "action": "kirius1",
+   "dialogue": "kirius1-c.html",
+   "pages": [
+    "kirius1",
+    "kirius2",
+    "kirius3",
+    "guidestart",
+    "guide_5"
+   ],
+   "to": [
+    {
+     "action": "teleport oren-werldern",
+     "map": "mainland_south",
+     "cell": [
+      1197,
+      372
+     ],
+     "heading": 5,
+     "price": 50
+    },
+    {
+     "action": "teleport oren-giran",
+     "map": "mainland_south",
+     "cell": [
+      926,
+      668
+     ],
+     "heading": 5,
+     "price": 120
+    },
+    {
+     "action": "teleport oren-heine",
+     "map": "mainland_south",
+     "cell": [
+      1100,
+      1129
+     ],
+     "heading": 5,
+     "price": 180
+    },
+    {
+     "action": "teleport oren-kent",
+     "map": "mainland_south",
+     "cell": [
+      538,
+      654
+     ],
+     "heading": 5,
+     "price": 180
+    },
+    {
+     "action": "teleport oren-gludin",
+     "map": "mainland_south",
+     "cell": [
+      96,
+      606
+     ],
+     "heading": 5,
+     "price": 240
+    },
+    {
+     "action": "teleport oren-silver",
+     "map": "mainland_south",
+     "cell": [
+      568,
+      1258
+     ],
+     "heading": 5,
+     "price": 240
+    },
+    {
+     "action": "teleport oren-aden",
+     "map": "mainland_south",
+     "cell": [
+      1453,
+      1125
+     ],
+     "heading": 5,
+     "price": 240
+    },
+    {
+     "action": "teleport oren-woods",
+     "map": "mainland_south",
+     "cell": [
+      128,
+      1075
+     ],
+     "heading": 5,
+     "price": 300
+    },
+    {
+     "action": "teleport oren-willow",
+     "map": "mainland_south",
+     "cell": [
+      203,
+      320
+     ],
+     "heading": 5,
+     "price": 300
+    },
+    {
+     "action": "teleport oren-lowful",
+     "map": "mainland_south",
+     "cell": [
+      606,
+      805
+     ],
+     "heading": 5,
+     "price": 500
+    },
+    {
+     "action": "teleport oren-chaos",
+     "map": "mainland_south",
+     "cell": [
+      373,
+      524
+     ],
+     "heading": 5,
+     "price": 500
+    },
+    {
+     "action": "teleport oren-island",
+     "map": "talking_island",
+     "cell": [
+      327,
+      156
+     ],
+     "heading": 5,
+     "price": 900
+    },
+    {
+     "action": "teleport oren-diad",
+     "map": "diad_fortress",
+     "cell": [
+      188,
+      132
+     ],
+     "heading": 5,
+     "price": 8000
+    },
+    {
+     "action": "teleport oren-gypsy",
+     "map": "mainland_south",
+     "cell": [
+      1465,
+      813
+     ],
+     "heading": 5,
+     "price": 220
+    },
+    {
+     "action": "teleport oren-girdun",
+     "map": "mainland_south",
+     "cell": [
+      808,
+      932
+     ],
+     "heading": 5,
+     "price": 330
+    },
+    {
+     "action": "teleport oren-mirr",
+     "map": "mainland_south",
+     "cell": [
+      1206,
+      800
+     ],
+     "heading": 5,
+     "price": 330
+    },
+    {
+     "action": "teleport oren-dragon",
+     "map": "mainland_south",
+     "cell": [
+      923,
+      416
+     ],
+     "heading": 5,
+     "price": 330
+    },
+    {
+     "action": "teleport oren-train",
+     "map": "mainland_south",
+     "cell": [
+      471,
+      1377
+     ],
+     "heading": 5,
+     "price": 440
+    },
+    {
+     "action": "teleport oren-eva",
+     "map": "mainland_south",
+     "cell": [
+      1111,
+      1373
+     ],
+     "heading": 5,
+     "price": 440
+    },
+    {
+     "action": "teleport oren-reed",
+     "map": "mainland_south",
+     "cell": [
+      234,
+      233
+     ],
+     "heading": 5,
+     "price": 550
+    },
+    {
+     "action": "teleport oren-gludun",
+     "map": "mainland_south",
+     "cell": [
+      188,
+      796
+     ],
+     "heading": 5,
+     "price": 550
+    },
+    {
+     "action": "teleport oren-oasis",
+     "map": "mainland_south",
+     "cell": [
+      349,
+      1125
+     ],
+     "heading": 5,
+     "price": 550
+    },
+    {
+     "action": "teleport oren-under",
+     "map": "mainland_south",
+     "cell": [
+      45,
+      1338
+     ],
+     "heading": 5,
+     "price": 550
+    }
+   ]
+  },
+  {
+   "npcid": 50039,
+   "n": "萊思利",
+   "map": "mainland_south",
+   "cell": [
+    1197,
+    371
+   ],
+   "heading": 6,
+   "gfx": 6377,
+   "src": "l1j",
+   "action": "televala1",
+   "dialogue": "televala1-c.html",
+   "pages": [
+    "televala1",
+    "televala2",
+    "televala3",
+    "guidestart",
+    "guide_5"
+   ],
+   "to": [
+    {
+     "action": "teleport dwarf-giran",
+     "map": "mainland_south",
+     "cell": [
+      926,
+      668
+     ],
+     "heading": 5,
+     "price": 51
+    },
+    {
+     "action": "teleport dwarf-oren",
+     "map": "zone_03",
+     "cell": [
+      14,
+      150
+     ],
+     "heading": 5,
+     "price": 51
+    },
+    {
+     "action": "teleport dwarf-kent",
+     "map": "mainland_south",
+     "cell": [
+      538,
+      654
+     ],
+     "heading": 5,
+     "price": 123
+    },
+    {
+     "action": "teleport dwarf-heine",
+     "map": "mainland_south",
+     "cell": [
+      1100,
+      1129
+     ],
+     "heading": 5,
+     "price": 123
+    },
+    {
+     "action": "teleport dwarf-gludin",
+     "map": "mainland_south",
+     "cell": [
+      96,
+      606
+     ],
+     "heading": 5,
+     "price": 185
+    },
+    {
+     "action": "teleport dwarf-silver",
+     "map": "mainland_south",
+     "cell": [
+      568,
+      1258
+     ],
+     "heading": 5,
+     "price": 185
+    },
+    {
+     "action": "teleport dwarf-aden",
+     "map": "mainland_south",
+     "cell": [
+      1453,
+      1125
+     ],
+     "heading": 5,
+     "price": 185
+    },
+    {
+     "action": "teleport dwarf-woods",
+     "map": "mainland_south",
+     "cell": [
+      128,
+      1075
+     ],
+     "heading": 5,
+     "price": 247
+    },
+    {
+     "action": "teleport dwarf-willow",
+     "map": "mainland_south",
+     "cell": [
+      203,
+      320
+     ],
+     "heading": 5,
+     "price": 247
+    },
+    {
+     "action": "teleport dwarf-lowful",
+     "map": "mainland_south",
+     "cell": [
+      606,
+      805
+     ],
+     "heading": 5,
+     "price": 412
+    },
+    {
+     "action": "teleport dwarf-chaos",
+     "map": "mainland_south",
+     "cell": [
+      373,
+      524
+     ],
+     "heading": 5,
+     "price": 412
+    },
+    {
+     "action": "teleport dwarf-island",
+     "map": "talking_island",
+     "cell": [
+      327,
+      156
+     ],
+     "heading": 5,
+     "price": 824
+    },
+    {
+     "action": "teleport dwarf-diad",
+     "map": "diad_fortress",
+     "cell": [
+      188,
+      132
+     ],
+     "heading": 5,
+     "price": 7931
+    },
+    {
+     "action": "teleport dwarf-dragon",
+     "map": "mainland_south",
+     "cell": [
+      923,
+      416
+     ],
+     "heading": 5,
+     "price": 103
+    },
+    {
+     "action": "teleport dwarf-girdun",
+     "map": "mainland_south",
+     "cell": [
+      808,
+      932
+     ],
+     "heading": 5,
+     "price": 226
+    },
+    {
+     "action": "teleport dwarf-mirr",
+     "map": "mainland_south",
+     "cell": [
+      1206,
+      800
+     ],
+     "heading": 5,
+     "price": 226
+    },
+    {
+     "action": "teleport dwarf-gypsy",
+     "map": "mainland_south",
+     "cell": [
+      1465,
+      813
+     ],
+     "heading": 5,
+     "price": 339
+    },
+    {
+     "action": "teleport dwarf-train",
+     "map": "mainland_south",
+     "cell": [
+      471,
+      1377
+     ],
+     "heading": 5,
+     "price": 339
+    },
+    {
+     "action": "teleport dwarf-gludun",
+     "map": "mainland_south",
+     "cell": [
+      188,
+      796
+     ],
+     "heading": 5,
+     "price": 339
+    },
+    {
+     "action": "teleport dwarf-oasis",
+     "map": "mainland_south",
+     "cell": [
+      349,
+      1125
+     ],
+     "heading": 5,
+     "price": 339
+    },
+    {
+     "action": "teleport dwarf-eva",
+     "map": "mainland_south",
+     "cell": [
+      1111,
+      1373
+     ],
+     "heading": 5,
+     "price": 339
+    },
+    {
+     "action": "teleport dwarf-under",
+     "map": "mainland_south",
+     "cell": [
+      45,
+      1338
+     ],
+     "heading": 5,
+     "price": 453
+    },
+    {
+     "action": "teleport dwarf-reed",
+     "map": "mainland_south",
+     "cell": [
+      234,
+      233
+     ],
+     "heading": 5,
+     "price": 453
+    }
+   ]
+  },
+  {
+   "npcid": 50036,
+   "n": "爾瑪",
+   "map": "mainland_south",
+   "cell": [
+    925,
+    667
+   ],
+   "heading": 4,
+   "gfx": 6377,
+   "src": "l1j",
+   "action": "telegiran1",
+   "dialogue": "telegiran1-c.html",
+   "pages": [
+    "telegiran1",
+    "telegiran2",
+    "telegiran3",
+    "guidestart",
+    "guide_5"
+   ],
+   "to": [
+    {
+     "action": "teleport giran-kent",
+     "map": "mainland_south",
+     "cell": [
+      538,
+      654
+     ],
+     "heading": 5,
+     "price": 52
+    },
+    {
+     "action": "teleport giran-heine",
+     "map": "mainland_south",
+     "cell": [
+      1100,
+      1129
+     ],
+     "heading": 5,
+     "price": 52
+    },
+    {
+     "action": "teleport giran-werldern",
+     "map": "mainland_south",
+     "cell": [
+      1197,
+      372
+     ],
+     "heading": 5,
+     "price": 52
+    },
+    {
+     "action": "teleport giran-silver",
+     "map": "mainland_south",
+     "cell": [
+      568,
+      1258
+     ],
+     "heading": 5,
+     "price": 126
+    },
+    {
+     "action": "teleport giran-gludin",
+     "map": "mainland_south",
+     "cell": [
+      96,
+      606
+     ],
+     "heading": 5,
+     "price": 126
+    },
+    {
+     "action": "teleport giran-oren",
+     "map": "zone_03",
+     "cell": [
+      14,
+      150
+     ],
+     "heading": 5,
+     "price": 126
+    },
+    {
+     "action": "teleport giran-aden",
+     "map": "mainland_south",
+     "cell": [
+      1453,
+      1125
+     ],
+     "heading": 5,
+     "price": 126
+    },
+    {
+     "action": "teleport giran-woods",
+     "map": "mainland_south",
+     "cell": [
+      128,
+      1075
+     ],
+     "heading": 5,
+     "price": 189
+    },
+    {
+     "action": "teleport giran-willow",
+     "map": "mainland_south",
+     "cell": [
+      203,
+      320
+     ],
+     "heading": 5,
+     "price": 189
+    },
+    {
+     "action": "teleport giran-lowful",
+     "map": "mainland_south",
+     "cell": [
+      606,
+      805
+     ],
+     "heading": 5,
+     "price": 315
+    },
+    {
+     "action": "teleport giran-chaos",
+     "map": "mainland_south",
+     "cell": [
+      373,
+      524
+     ],
+     "heading": 5,
+     "price": 315
+    },
+    {
+     "action": "teleport giran-island",
+     "map": "talking_island",
+     "cell": [
+      327,
+      156
+     ],
+     "heading": 5,
+     "price": 735
+    },
+    {
+     "action": "teleport giran-diad",
+     "map": "diad_fortress",
+     "cell": [
+      188,
+      132
+     ],
+     "heading": 5,
+     "price": 7770
+    },
+    {
+     "action": "teleport giran-girdun",
+     "map": "mainland_south",
+     "cell": [
+      808,
+      932
+     ],
+     "heading": 5,
+     "price": 105
+    },
+    {
+     "action": "teleport giran-mirr",
+     "map": "mainland_south",
+     "cell": [
+      1206,
+      800
+     ],
+     "heading": 5,
+     "price": 105
+    },
+    {
+     "action": "teleport giran-dragon",
+     "map": "mainland_south",
+     "cell": [
+      923,
+      416
+     ],
+     "heading": 5,
+     "price": 105
+    },
+    {
+     "action": "teleport giran-gludun",
+     "map": "mainland_south",
+     "cell": [
+      188,
+      796
+     ],
+     "heading": 5,
+     "price": 231
+    },
+    {
+     "action": "teleport giran-train",
+     "map": "mainland_south",
+     "cell": [
+      471,
+      1377
+     ],
+     "heading": 5,
+     "price": 231
+    },
+    {
+     "action": "teleport giran-eva",
+     "map": "mainland_south",
+     "cell": [
+      1111,
+      1373
+     ],
+     "heading": 5,
+     "price": 231
+    },
+    {
+     "action": "teleport giran-gypsy",
+     "map": "mainland_south",
+     "cell": [
+      1465,
+      813
+     ],
+     "heading": 5,
+     "price": 346
+    },
+    {
+     "action": "teleport giran-oasis",
+     "map": "mainland_south",
+     "cell": [
+      349,
+      1125
+     ],
+     "heading": 5,
+     "price": 346
+    },
+    {
+     "action": "teleport giran-under",
+     "map": "mainland_south",
+     "cell": [
+      45,
+      1338
+     ],
+     "heading": 5,
+     "price": 346
+    },
+    {
+     "action": "teleport giran-reed",
+     "map": "mainland_south",
+     "cell": [
+      234,
+      233
+     ],
+     "heading": 5,
+     "price": 462
+    }
+   ]
+  },
+  {
+   "npcid": 50079,
+   "n": "丹尼爾",
+   "map": "mainland_south",
+   "cell": [
+    147,
+    396
+   ],
+   "heading": 6,
+   "gfx": 6377,
+   "src": "l1j",
+   "action": "telediad1",
+   "dialogue": "telediad1-c.html",
+   "pages": [
+    "telediad1",
+    "telediad2",
+    "telediad3"
+   ],
+   "to": [
+    {
+     "action": "teleport diad-woods",
+     "map": "mainland_south",
+     "cell": [
+      128,
+      1075
+     ],
+     "heading": 5,
+     "price": 550
+    },
+    {
+     "action": "teleport diad-gludin",
+     "map": "mainland_south",
+     "cell": [
+      96,
+      606
+     ],
+     "heading": 5,
+     "price": 550
+    },
+    {
+     "action": "teleport diad-silver",
+     "map": "mainland_south",
+     "cell": [
+      568,
+      1258
+     ],
+     "heading": 5,
+     "price": 550
+    },
+    {
+     "action": "teleport diad-kent",
+     "map": "mainland_south",
+     "cell": [
+      538,
+      654
+     ],
+     "heading": 5,
+     "price": 600
+    },
+    {
+     "action": "teleport diad-willow",
+     "map": "mainland_south",
+     "cell": [
+      203,
+      320
+     ],
+     "heading": 5,
+     "price": 600
+    },
+    {
+     "action": "teleport diad-heine",
+     "map": "mainland_south",
+     "cell": [
+      1100,
+      1129
+     ],
+     "heading": 5,
+     "price": 600
+    },
+    {
+     "action": "teleport diad-giran",
+     "map": "mainland_south",
+     "cell": [
+      926,
+      668
+     ],
+     "heading": 5,
+     "price": 650
+    },
+    {
+     "action": "teleport diad-werldern",
+     "map": "mainland_south",
+     "cell": [
+      1197,
+      372
+     ],
+     "heading": 5,
+     "price": 700
+    },
+    {
+     "action": "teleport diad-oren",
+     "map": "zone_03",
+     "cell": [
+      14,
+      150
+     ],
+     "heading": 5,
+     "price": 750
+    },
+    {
+     "action": "teleport diad-aden",
+     "map": "mainland_south",
+     "cell": [
+      1453,
+      1125
+     ],
+     "heading": 5,
+     "price": 750
+    },
+    {
+     "action": "teleport diad-lowful",
+     "map": "mainland_south",
+     "cell": [
+      606,
+      805
+     ],
+     "heading": 5,
+     "price": 500
+    },
+    {
+     "action": "teleport diad-chaos",
+     "map": "mainland_south",
+     "cell": [
+      373,
+      524
+     ],
+     "heading": 5,
+     "price": 500
+    },
+    {
+     "action": "teleport diad-island",
+     "map": "talking_island",
+     "cell": [
+      327,
+      156
+     ],
+     "heading": 5,
+     "price": 700
+    },
+    {
+     "action": "teleport diad-occ",
+     "map": "diad_fortress",
+     "cell": [
+      89,
+      87
+     ],
+     "heading": 5,
+     "price": 700
+    },
+    {
+     "action": "teleport diad-oumdun",
+     "map": "diad_fortress",
+     "cell": [
+      165,
+      29
+     ],
+     "heading": 5,
+     "price": 800
+    },
+    {
+     "action": "teleport diad-mincave",
+     "map": "diad_fortress",
+     "cell": [
+      364,
+      77
+     ],
+     "heading": 5,
+     "price": 800
+    },
+    {
+     "action": "teleport diad-cavern",
+     "map": "giant_tomb",
+     "cell": [
+      123,
+      100
+     ],
+     "heading": 5,
+     "price": 1000
+    }
+   ]
+  },
+  {
+   "npcid": 50080,
+   "n": "保羅",
+   "map": "mainland_south",
+   "cell": [
+    145,
+    412
+   ],
+   "heading": 4,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "paul1",
+   "dialogue": "paul1-c.html",
+   "pages": [
+    "paul1",
+    "teleorcbdg1"
+   ],
+   "to": [
+    {
+     "action": "teleport gludio-orcfortress",
+     "map": "mainland_south",
+     "cell": [
+      145,
+      392
+     ],
+     "heading": 5,
+     "price": 15
+    }
+   ]
+  },
+  {
+   "npcid": 50065,
+   "n": "魯比恩",
+   "map": "mainland_south",
+   "cell": [
+    542,
+    220
+   ],
+   "heading": 4,
+   "gfx": 914,
+   "src": "l1j",
+   "action": "ribian4",
+   "dialogue": "ribian4-c.html",
+   "pages": [
+    "ribian4"
+   ],
+   "to": [
+    {
+     "action": "teleport valley-in",
+     "map": "l1j_map_2005",
+     "cell": [
+      174,
+      166
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50006,
+   "n": "小柯",
+   "map": "l1j_map_69",
+   "cell": [
+    168,
+    107
+   ],
+   "heading": 6,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "coco4",
+   "dialogue": "coco4-c.html",
+   "pages": [
+    "coco4",
+    "coco1"
+   ],
+   "to": [
+    {
+     "action": "teleport dungeon-in",
+     "map": "l1j_map_86",
+     "cell": [
+      104,
+      158
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50003,
+   "n": "伊爾卓斯",
+   "map": "l1j_map_69",
+   "cell": [
+    176,
+    167
+   ],
+   "heading": 4,
+   "gfx": 1511,
+   "src": "l1j",
+   "action": "illdrath",
+   "dialogue": "illdrath-c.html",
+   "pages": [
+    "illdrath",
+    "illdrath1",
+    "illdrath2"
+   ],
+   "to": [
+    {
+     "action": "teleport talking island-in",
+     "map": "talking_island",
+     "cell": [
+      327,
+      161
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50001,
+   "n": "巴尼亞",
+   "map": "l1j_map_69",
+   "cell": [
+    185,
+    148
+   ],
+   "heading": 6,
+   "gfx": 916,
+   "src": "l1j",
+   "action": "barnia1",
+   "dialogue": "barnia1-c.html",
+   "pages": [
+    "barnia1",
+    "barnia4"
+   ],
+   "to": [
+    {
+     "action": "teleport elvenforest-in",
+     "map": "mainland_south",
+     "cell": [
+      547,
+      215
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50060,
+   "n": "商店村傳送師",
+   "map": "mainland_south",
+   "cell": [
+    565,
+    1255
+   ],
+   "heading": 5,
+   "gfx": 2141,
+   "src": "l1j",
+   "action": "sktztele",
+   "dialogue": "sktztele-c.html",
+   "pages": [
+    "sktztele",
+    "sktztele1"
+   ],
+   "to": [
+    {
+     "action": "teleport silver-silver-trade-zone",
+     "map": "l1j_map_370",
+     "cell": [
+      93,
+      88
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50060,
+   "n": "商店村傳送師",
+   "map": "mainland_south",
+   "cell": [
+    583,
+    1230
+   ],
+   "heading": 5,
+   "gfx": 2141,
+   "src": "l1j",
+   "action": "sktztele",
+   "dialogue": "sktztele-c.html",
+   "pages": [
+    "sktztele",
+    "sktztele1"
+   ],
+   "to": [
+    {
+     "action": "teleport silver-silver-trade-zone",
+     "map": "l1j_map_370",
+     "cell": [
+      93,
+      88
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50027,
+   "n": "商店村傳送師",
+   "map": "mainland_south",
+   "cell": [
+    122,
+    669
+   ],
+   "heading": 6,
+   "gfx": 2141,
+   "src": "l1j",
+   "action": "gltztele",
+   "dialogue": "gltztele-c.html",
+   "pages": [
+    "gltztele",
+    "gltztele1"
+   ],
+   "to": [
+    {
+     "action": "teleport gludio-gludin-trade-zone",
+     "map": "l1j_map_340",
+     "cell": [
+      139,
+      144
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50027,
+   "n": "商店村傳送師",
+   "map": "mainland_south",
+   "cell": [
+    117,
+    593
+   ],
+   "heading": 5,
+   "gfx": 2141,
+   "src": "l1j",
+   "action": "gltztele",
+   "dialogue": "gltztele-c.html",
+   "pages": [
+    "gltztele",
+    "gltztele1"
+   ],
+   "to": [
+    {
+     "action": "teleport gludio-gludin-trade-zone",
+     "map": "l1j_map_340",
+     "cell": [
+      139,
+      144
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50050,
+   "n": "商店村傳送師",
+   "map": "zone_03",
+   "cell": [
+    13,
+    177
+   ],
+   "heading": 4,
+   "gfx": 2141,
+   "src": "l1j",
+   "action": "ortztele",
+   "dialogue": "ortztele-c.html",
+   "pages": [
+    "ortztele",
+    "ortztele1"
+   ],
+   "to": [
+    {
+     "action": "teleport oren-oren-trade-zone",
+     "map": "l1j_map_360",
+     "cell": [
+      93,
+      88
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50050,
+   "n": "商店村傳送師",
+   "map": "zone_03",
+   "cell": [
+    14,
+    145
+   ],
+   "heading": 4,
+   "gfx": 2141,
+   "src": "l1j",
+   "action": "ortztele",
+   "dialogue": "ortztele-c.html",
+   "pages": [
+    "ortztele",
+    "ortztele1"
+   ],
+   "to": [
+    {
+     "action": "teleport oren-oren-trade-zone",
+     "map": "l1j_map_360",
+     "cell": [
+      93,
+      88
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50034,
+   "n": "商店村傳送師",
+   "map": "mainland_south",
+   "cell": [
+    926,
+    681
+   ],
+   "heading": 5,
+   "gfx": 2141,
+   "src": "l1j",
+   "action": "grtztele",
+   "dialogue": "grtztele-c.html",
+   "pages": [
+    "grtztele",
+    "grtztele1"
+   ],
+   "to": [
+    {
+     "action": "teleport giran-giran-trade-zone",
+     "map": "l1j_map_350",
+     "cell": [
+      62,
+      74
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50034,
+   "n": "商店村傳送師",
+   "map": "mainland_south",
+   "cell": [
+    998,
+    638
+   ],
+   "heading": 4,
+   "gfx": 2141,
+   "src": "l1j",
+   "action": "grtztele",
+   "dialogue": "grtztele-c.html",
+   "pages": [
+    "grtztele",
+    "grtztele1"
+   ],
+   "to": [
+    {
+     "action": "teleport giran-giran-trade-zone",
+     "map": "l1j_map_350",
+     "cell": [
+      62,
+      74
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50007,
+   "n": "預言者",
+   "map": "l1j_map_69",
+   "cell": [
+    209,
+    181
+   ],
+   "heading": 4,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "esmereld",
+   "dialogue": "esmereld-c.html",
+   "pages": [
+    "esmereld",
+    "esmereld2"
+   ]
+  },
+  {
+   "npcid": 50007,
+   "n": "預言者",
+   "map": "l1j_map_68",
+   "cell": [
+    226,
+    264
+   ],
+   "heading": 4,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "esmereld",
+   "dialogue": "esmereld-c.html",
+   "pages": [
+    "esmereld",
+    "esmereld2"
+   ]
+  },
+  {
+   "npcid": 50009,
+   "n": "伊斯塔",
+   "map": "l1j_map_68",
+   "cell": [
+    219,
+    261
+   ],
+   "heading": 4,
+   "gfx": 703,
+   "src": "l1j",
+   "action": "ishtar1",
+   "dialogue": "ishtar1-c.html",
+   "pages": [
+    "ishtar1",
+    "ishtar"
+   ],
+   "to": [
+    {
+     "action": "teleport talking-island-for-newbie",
+     "map": "talking_island",
+     "cell": [
+      337,
+      154
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50016,
+   "n": "傑諾",
+   "map": "talking_island",
+   "cell": [
+    344,
+    146
+   ],
+   "heading": 5,
+   "gfx": 1510,
+   "src": "l1j",
+   "action": "zeno",
+   "dialogue": "zeno-c.html",
+   "pages": [
+    "zeno",
+    "zeno2"
+   ]
+  },
+  {
+   "npcid": 50071,
+   "n": "阿西理斯",
+   "map": "oblivion_island",
+   "cell": [
+    47,
+    52
+   ],
+   "heading": 7,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "escapefi1",
+   "dialogue": "escapefi1-c.html",
+   "pages": [
+    "escapefi1",
+    "escapefi2"
+   ],
+   "to": [
+    {
+     "action": "teleport escape-forgotten-island",
+     "map": "mainland_south",
+     "cell": [
+      915,
+      1353
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50070,
+   "n": "洛奇",
+   "map": "oblivion_island",
+   "cell": [
+    276,
+    250
+   ],
+   "heading": 6,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "luck1",
+   "dialogue": "luck1-c.html",
+   "pages": [
+    "luck1",
+    "luck2"
+   ],
+   "to": [
+    {
+     "action": "teleport escape-forgotten-island",
+     "map": "mainland_south",
+     "cell": [
+      915,
+      1353
+     ],
+     "heading": 5,
+     "price": 7
+    }
+   ]
+  },
+  {
+   "npcid": 50011,
+   "n": "昆",
+   "map": "l1j_map_68",
+   "cell": [
+    209,
+    339
+   ],
+   "heading": 6,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "kun4",
+   "dialogue": "kun4-c.html",
+   "pages": [
+    "kun4",
+    "kun2"
+   ],
+   "to": [
+    {
+     "action": "teleport dungeon-in",
+     "map": "l1j_map_85",
+     "cell": [
+      163,
+      227
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50045,
+   "n": "艾德連",
+   "map": "mainland_south",
+   "cell": [
+    1466,
+    795
+   ],
+   "heading": 4,
+   "gfx": 2781,
+   "src": "l1j",
+   "action": "telephantasm",
+   "dialogue": "telephantasm-c.html",
+   "pages": [
+    "telephantasm",
+    "phantasmisle"
+   ],
+   "to": [
+    {
+     "action": "teleport phantasm-island",
+     "map": "dream_island",
+     "cell": [
+      59,
+      305
+     ],
+     "heading": 5,
+     "price": 1000
+    }
+   ]
+  },
+  {
+   "npcid": 50005,
+   "n": "卡連",
+   "map": "l1j_map_69",
+   "cell": [
+    173,
+    143
+   ],
+   "heading": 4,
+   "gfx": 2801,
+   "src": "l1j",
+   "action": "karen3",
+   "dialogue": "karen3-c.html",
+   "pages": [
+    "karen3"
+   ],
+   "to": [
+    {
+     "action": "teleport dark island-in",
+     "map": "silent_outer",
+     "cell": [
+      347,
+      30
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50068,
+   "n": "迪亞諾斯",
+   "map": "silent_outer",
+   "cell": [
+    318,
+    118
+   ],
+   "heading": 6,
+   "gfx": 2794,
+   "src": "l1j",
+   "action": "telescave1",
+   "dialogue": "telescave1-c.html",
+   "pages": [
+    "telescave1",
+    "telescave2"
+   ],
+   "to": [
+    {
+     "action": "teleport scave-gludin",
+     "map": "mainland_south",
+     "cell": [
+      96,
+      606
+     ],
+     "heading": 5,
+     "price": 1500
+    },
+    {
+     "action": "teleport scave-kent",
+     "map": "mainland_south",
+     "cell": [
+      538,
+      654
+     ],
+     "heading": 5,
+     "price": 800
+    },
+    {
+     "action": "teleport scave-giran",
+     "map": "mainland_south",
+     "cell": [
+      926,
+      668
+     ],
+     "heading": 5,
+     "price": 600
+    },
+    {
+     "action": "teleport scave-aden",
+     "map": "mainland_south",
+     "cell": [
+      1453,
+      1125
+     ],
+     "heading": 5,
+     "price": 1800
+    },
+    {
+     "action": "teleport scave-heine",
+     "map": "mainland_south",
+     "cell": [
+      1100,
+      1129
+     ],
+     "heading": 5,
+     "price": 1800
+    },
+    {
+     "action": "teleport scave-oren",
+     "map": "zone_03",
+     "cell": [
+      14,
+      150
+     ],
+     "heading": 5,
+     "price": 1000
+    }
+   ]
+  },
+  {
+   "npcid": 50057,
+   "n": "班曲",
+   "map": "mainland_south",
+   "cell": [
+    563,
+    1277
+   ],
+   "heading": 6,
+   "gfx": 794,
+   "src": "l1j",
+   "action": "telefire1",
+   "pages": [
+    "telefire1",
+    "telefire2",
+    "telefire3",
+    "telefire4"
+   ]
+  },
+  {
+   "npcid": 50017,
+   "n": "凱瑟",
+   "map": "talking_island",
+   "cell": [
+    321,
+    189
+   ],
+   "heading": 6,
+   "gfx": 984,
+   "src": "l1j",
+   "action": "telefire1",
+   "pages": [
+    "telefire1",
+    "telefire2",
+    "telefire3",
+    "telefire4"
+   ]
+  },
+  {
+   "npcid": 50030,
+   "n": "胡帕",
+   "map": "mainland_south",
+   "cell": [
+    119,
+    664
+   ],
+   "heading": 6,
+   "gfx": 792,
+   "src": "l1j",
+   "action": "telefire1",
+   "pages": [
+    "telefire1",
+    "telefire2",
+    "telefire3",
+    "telefire4"
+   ]
+  },
+  {
+   "npcid": 50022,
+   "n": "海瑞森",
+   "map": "mainland_south",
+   "cell": [
+    548,
+    628
+   ],
+   "heading": 6,
+   "gfx": 981,
+   "src": "l1j",
+   "action": "telefire1",
+   "pages": [
+    "telefire1",
+    "telefire2",
+    "telefire3",
+    "telefire4"
+   ]
+  },
+  {
+   "npcid": 50053,
+   "n": "卡爾",
+   "map": "mainland_south",
+   "cell": [
+    114,
+    1054
+   ],
+   "heading": 6,
+   "gfx": 793,
+   "src": "l1j",
+   "action": "telefire1",
+   "pages": [
+    "telefire1",
+    "telefire2",
+    "telefire3",
+    "telefire4"
+   ]
+  },
+  {
+   "npcid": 50043,
+   "n": "拉姆塔",
+   "map": "pride_f2",
+   "cell": [
+    89,
+    92
+   ],
+   "heading": 4,
+   "gfx": 2778,
+   "src": "l1j",
+   "action": "ramudap2",
+   "dialogue": "ramudap2-c.html",
+   "pages": [
+    "ramudap2",
+    "ramudap1"
+   ]
+  },
+  {
+   "npcid": 50014,
+   "n": "迪隆",
+   "map": "zone_13",
+   "cell": [
+    93,
+    107
+   ],
+   "heading": 6,
+   "gfx": 834,
+   "src": "l1j",
+   "action": "dilong2",
+   "dialogue": "dilong2-c.html",
+   "pages": [
+    "dilong2",
+    "dilongs"
+   ]
+  },
+  {
+   "npcid": 50019,
+   "n": "競技場入場管理員",
+   "map": "mainland_south",
+   "cell": [
+    628,
+    1227
+   ],
+   "heading": 5,
+   "gfx": 800,
+   "src": "l1j",
+   "action": "colusher",
+   "dialogue": "colusher-c.html",
+   "pages": [
+    "colusher",
+    "colticket2"
+   ]
+  },
+  {
+   "npcid": 50013,
+   "n": "競技場警衛",
+   "map": "l1j_map_68",
+   "cell": [
+    253,
+    262
+   ],
+   "heading": 4,
+   "gfx": 148,
+   "src": "l1j",
+   "action": "agsiout",
+   "pages": [
+    "agsiout",
+    "agout",
+    "arenaguide"
+   ]
+  },
+  {
+   "npcid": 50019,
+   "n": "競技場入場管理員",
+   "map": "l1j_map_68",
+   "cell": [
+    262,
+    270
+   ],
+   "heading": 4,
+   "gfx": 800,
+   "src": "l1j",
+   "action": "colusher",
+   "dialogue": "colusher-c.html",
+   "pages": [
+    "colusher",
+    "colticket2"
+   ]
+  },
+  {
+   "npcid": 50008,
+   "n": "競技場警衛",
+   "map": "l1j_map_69",
+   "cell": [
+    189,
+    83
+   ],
+   "heading": 4,
+   "gfx": 148,
+   "src": "l1j",
+   "action": "aghvout",
+   "pages": [
+    "aghvout",
+    "agout",
+    "arenaguide"
+   ]
+  },
+  {
+   "npcid": 50019,
+   "n": "競技場入場管理員",
+   "map": "l1j_map_69",
+   "cell": [
+    197,
+    66
+   ],
+   "heading": 4,
+   "gfx": 800,
+   "src": "l1j",
+   "action": "colusher",
+   "dialogue": "colusher-c.html",
+   "pages": [
+    "colusher",
+    "colticket2"
+   ]
+  },
+  {
+   "npcid": 50061,
+   "n": "競技場管理員",
+   "map": "mainland_south",
+   "cell": [
+    543,
+    1234
+   ],
+   "heading": 4,
+   "gfx": 992,
+   "src": "l1j",
+   "action": "colos",
+   "dialogue": "colos-c.html",
+   "pages": [
+    "colos",
+    "colos1"
+   ]
+  },
+  {
+   "npcid": 50062,
+   "n": "競技場入場管理員",
+   "map": "mainland_south",
+   "cell": [
+    548,
+    1234
+   ],
+   "heading": 6,
+   "gfx": 800,
+   "src": "l1j",
+   "action": "colusher",
+   "dialogue": "colusher-c.html",
+   "pages": [
+    "colusher",
+    "colticket2"
+   ]
+  },
+  {
+   "npcid": 50037,
+   "n": "競技場管理員",
+   "map": "mainland_south",
+   "cell": [
+    993,
+    634
+   ],
+   "heading": 4,
+   "gfx": 992,
+   "src": "l1j",
+   "action": "colos",
+   "dialogue": "colos-c.html",
+   "pages": [
+    "colos",
+    "colos1"
+   ]
+  },
+  {
+   "npcid": 50038,
+   "n": "競技場入場管理員",
+   "map": "mainland_south",
+   "cell": [
+    985,
+    633
+   ],
+   "heading": 6,
+   "gfx": 800,
+   "src": "l1j",
+   "action": "colusher",
+   "dialogue": "colusher-c.html",
+   "pages": [
+    "colusher",
+    "colticket2"
+   ]
+  },
+  {
+   "npcid": 50084,
+   "n": "警衛",
+   "map": "l1j_map_88",
+   "cell": [
+    44,
+    99
+   ],
+   "heading": 6,
+   "gfx": 148,
+   "src": "l1j",
+   "action": "exitghost1",
+   "dialogue": "exitghost1-c.html",
+   "pages": [
+    "exitghost1"
+   ]
+  },
+  {
+   "npcid": 50018,
+   "n": "競技場管理員",
+   "map": "talking_island",
+   "cell": [
+    295,
+    238
+   ],
+   "heading": 4,
+   "gfx": 992,
+   "src": "l1j",
+   "action": "colos",
+   "dialogue": "colos-c.html",
+   "pages": [
+    "colos",
+    "colos1"
+   ]
+  },
+  {
+   "npcid": 50028,
+   "n": "競技場管理員",
+   "map": "mainland_south",
+   "cell": [
+    61,
+    623
+   ],
+   "heading": 4,
+   "gfx": 992,
+   "src": "l1j",
+   "action": "colos",
+   "dialogue": "colos-c.html",
+   "pages": [
+    "colos",
+    "colos1"
+   ]
+  },
+  {
+   "npcid": 50029,
+   "n": "競技場入場管理員",
+   "map": "mainland_south",
+   "cell": [
+    61,
+    628
+   ],
+   "heading": 6,
+   "gfx": 800,
+   "src": "l1j",
+   "action": "colusher",
+   "dialogue": "colusher-c.html",
+   "pages": [
+    "colusher",
+    "colticket2"
+   ]
+  },
+  {
+   "npcid": 50019,
+   "n": "競技場入場管理員",
+   "map": "mainland_south",
+   "cell": [
+    581,
+    622
+   ],
+   "heading": 5,
+   "gfx": 800,
+   "src": "l1j",
+   "action": "colusher",
+   "dialogue": "colusher-c.html",
+   "pages": [
+    "colusher",
+    "colticket2"
+   ]
+  },
+  {
+   "npcid": 50019,
+   "n": "競技場入場管理員",
+   "map": "mainland_south",
+   "cell": [
+    87,
+    1013
+   ],
+   "heading": 5,
+   "gfx": 800,
+   "src": "l1j",
+   "action": "colusher",
+   "dialogue": "colusher-c.html",
+   "pages": [
+    "colusher",
+    "colticket2"
+   ]
+  },
+  {
+   "npcid": 50041,
+   "n": "競技場管理員",
+   "map": "mainland_south",
+   "cell": [
+    1234,
+    400
+   ],
+   "heading": 4,
+   "gfx": 992,
+   "src": "l1j",
+   "action": "colos",
+   "dialogue": "colos-c.html",
+   "pages": [
+    "colos",
+    "colos1"
+   ]
+  },
+  {
+   "npcid": 50042,
+   "n": "競技場入場管理員",
+   "map": "mainland_south",
+   "cell": [
+    1239,
+    400
+   ],
+   "heading": 6,
+   "gfx": 800,
+   "src": "l1j",
+   "action": "colusher",
+   "dialogue": "colusher-c.html",
+   "pages": [
+    "colusher",
+    "colticket2"
+   ]
+  },
+  {
+   "npcid": 50023,
+   "n": "奧貝勒",
+   "map": "l1j_map_15",
+   "cell": [
+    47,
+    28
+   ],
+   "heading": 4,
+   "gfx": 460,
+   "src": "l1j",
+   "action": "kentober1",
+   "dialogue": "kentober1-c.html",
+   "pages": [
+    "kentober1",
+    "kentober2"
+   ],
+   "to": [
+    {
+     "action": "teleport kentcd",
+     "map": "l1j_map_240",
+     "cell": [
+      81,
+      63
+     ],
+     "heading": 5,
+     "price": 10000
+    }
+   ]
+  },
+  {
+   "npcid": 50021,
+   "n": "王宮門口守門人",
+   "map": "l1j_map_15",
+   "cell": [
+    30,
+    16
+   ],
+   "heading": 4,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "teleckent1",
+   "dialogue": "teleckent1-c.html",
+   "pages": [
+    "teleckent1",
+    "teleckent2"
+   ],
+   "to": [
+    {
+     "action": "teleport kentc-village",
+     "map": "mainland_south",
+     "cell": [
+      538,
+      654
+     ],
+     "heading": 5,
+     "price": 0
+    },
+    {
+     "action": "teleport kentc-gludun",
+     "map": "zone_09",
+     "cell": [
+      60,
+      70
+     ],
+     "heading": 5,
+     "price": 0
+    },
+    {
+     "action": "teleport kentc-girdun",
+     "map": "zone_19",
+     "cell": [
+      169,
+      153
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50052,
+   "n": "王宮門口守門人",
+   "map": "l1j_map_29",
+   "cell": [
+    29,
+    16
+   ],
+   "heading": 4,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "telecwoods1",
+   "dialogue": "telecwoods1-c.html",
+   "pages": [
+    "telecwoods1",
+    "telecwoods2"
+   ],
+   "to": [
+    {
+     "action": "teleport woodsc-village",
+     "map": "mainland_south",
+     "cell": [
+      128,
+      1075
+     ],
+     "heading": 5,
+     "price": 0
+    },
+    {
+     "action": "teleport woodsc-windun",
+     "map": "zone_24",
+     "cell": [
+      165,
+      107
+     ],
+     "heading": 5,
+     "price": 0
+    },
+    {
+     "action": "teleport woodsc-oasis",
+     "map": "mainland_south",
+     "cell": [
+      351,
+      1124
+     ],
+     "heading": 5,
+     "price": 0
+    },
+    {
+     "action": "teleport woodsc-sknight",
+     "map": "mainland_south",
+     "cell": [
+      568,
+      1258
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50063,
+   "n": "要塞門口守門人",
+   "map": "mainland_south",
+   "cell": [
+    289,
+    140
+   ],
+   "heading": 2,
+   "gfx": 782,
+   "src": "l1j",
+   "action": "telecorc1",
+   "dialogue": "telecorc1-c.html",
+   "pages": [
+    "telecorc1",
+    "telecorc2"
+   ],
+   "to": [
+    {
+     "action": "teleport orc-village",
+     "map": "mainland_south",
+     "cell": [
+      203,
+      320
+     ],
+     "heading": 5,
+     "price": 0
+    },
+    {
+     "action": "teleport orc-elvendun",
+     "map": "zone_17",
+     "cell": [
+      120,
+      57
+     ],
+     "heading": 5,
+     "price": 0
+    },
+    {
+     "action": "teleport orc-dragonvalley",
+     "map": "mainland_south",
+     "cell": [
+      920,
+      418
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50035,
+   "n": "王宮門口守門人",
+   "map": "l1j_map_52",
+   "cell": [
+    93,
+    21
+   ],
+   "heading": 5,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "telecgiran1",
+   "dialogue": "telecgiran1-c.html",
+   "pages": [
+    "telecgiran1",
+    "telecgiran2"
+   ],
+   "to": [
+    {
+     "action": "teleport giranc-village",
+     "map": "mainland_south",
+     "cell": [
+      926,
+      668
+     ],
+     "heading": 5,
+     "price": 0
+    },
+    {
+     "action": "teleport giranc-girandun",
+     "map": "zone_20",
+     "cell": [
+      91,
+      24
+     ],
+     "heading": 5,
+     "price": 0
+    },
+    {
+     "action": "teleport giranc-dragonvalley",
+     "map": "mainland_south",
+     "cell": [
+      920,
+      418
+     ],
+     "heading": 5,
+     "price": 0
+    },
+    {
+     "action": "teleport giranc-littlebb",
+     "map": "mainland_south",
+     "cell": [
+      1005,
+      723
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50067,
+   "n": "王宮門口守門人",
+   "map": "l1j_map_64",
+   "cell": [
+    67,
+    43
+   ],
+   "heading": 6,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "telecheine1",
+   "dialogue": "telecheine1-c.html",
+   "pages": [
+    "telecheine1",
+    "telecheine2"
+   ],
+   "to": [
+    {
+     "action": "teleport heinec-village",
+     "map": "mainland_south",
+     "cell": [
+      1100,
+      1129
+     ],
+     "heading": 5,
+     "price": 0
+    },
+    {
+     "action": "teleport heinec-evadun",
+     "map": "zone_36",
+     "cell": [
+      54,
+      60
+     ],
+     "heading": 5,
+     "price": 0
+    },
+    {
+     "action": "teleport heinec-forgotten",
+     "map": "mainland_south",
+     "cell": [
+      915,
+      1353
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50040,
+   "n": "王宮門口守門人",
+   "map": "l1j_map_66",
+   "cell": [
+    161,
+    35
+   ],
+   "heading": 6,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "telecdwarf1",
+   "dialogue": "telecdwarf1-c.html",
+   "pages": [
+    "telecdwarf1",
+    "telecdwarf2"
+   ],
+   "to": [
+    {
+     "action": "teleport dwarfc-village",
+     "map": "mainland_south",
+     "cell": [
+      1197,
+      372
+     ],
+     "heading": 5,
+     "price": 0
+    },
+    {
+     "action": "teleport dwarfc-ivorytower",
+     "map": "zone_38",
+     "cell": [
+      69,
+      38
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50047,
+   "n": "王宮門口守門人",
+   "map": "l1j_map_300",
+   "cell": [
+    59,
+    76
+   ],
+   "heading": 4,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "telecaden1",
+   "dialogue": "telecaden1-c.html",
+   "pages": [
+    "telecaden1",
+    "telecaden2"
+   ],
+   "to": [
+    {
+     "action": "teleport adenc-village",
+     "map": "mainland_south",
+     "cell": [
+      1453,
+      1125
+     ],
+     "heading": 5,
+     "price": 0
+    },
+    {
+     "action": "teleport adenc-omantower",
+     "map": "pride_f1",
+     "cell": [
+      91,
+      94
+     ],
+     "heading": 5,
+     "price": 0
+    },
+    {
+     "action": "teleport adenc-gypsy",
+     "map": "mainland_south",
+     "cell": [
+      1467,
+      798
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 70853,
+   "n": "精靈公主",
+   "map": "mainland_south",
+   "cell": [
+    456,
+    315
+   ],
+   "heading": 5,
+   "gfx": 896,
+   "src": "l1j",
+   "action": "fairyp3",
+   "dialogue": "fairyp3-c.html",
+   "pages": [
+    "fairyp3"
+   ]
+  },
+  {
+   "npcid": 50031,
+   "n": "賽菲亞",
+   "map": "zone_28",
+   "cell": [
+    137,
+    138
+   ],
+   "heading": 6,
+   "gfx": 2712,
+   "src": "l1j",
+   "action": "sepia2",
+   "dialogue": "sepia2-c.html",
+   "pages": [
+    "sepia2"
+   ]
+  },
+  {
+   "npcid": 50019,
+   "n": "競技場入場管理員",
+   "map": "talking_island",
+   "cell": [
+    290,
+    238
+   ],
+   "heading": 6,
+   "gfx": 800,
+   "src": "l1j",
+   "action": "colusher",
+   "dialogue": "colusher-c.html",
+   "pages": [
+    "colusher",
+    "colticket2"
+   ]
+  },
+  {
+   "npcid": 50064,
+   "n": "杜發",
+   "map": "mainland_south",
+   "cell": [
+    209,
+    315
+   ],
+   "heading": 6,
+   "gfx": 1514,
+   "src": "l1j",
+   "action": "duvall1",
+   "dialogue": "duvall1-c.html",
+   "pages": [
+    "duvall1",
+    "duvall3",
+    "duvall2"
+   ],
+   "to": [
+    {
+     "action": "teleport orctown-hiddendock",
+     "map": "hidden_dock",
+     "cell": [
+      34,
+      25
+     ],
+     "heading": 5,
+     "price": 100
+    }
+   ]
+  },
+  {
+   "npcid": 50072,
+   "n": "迪亞路哲",
+   "map": "oum_dungeon",
+   "cell": [
+    165,
+    26
+   ],
+   "heading": 3,
+   "gfx": 2820,
+   "src": "l1j",
+   "action": "teleoum1",
+   "dialogue": "teleoum1-c.html",
+   "pages": [
+    "teleoum1",
+    "teleoum2"
+   ],
+   "to": [
+    {
+     "action": "teleport oum-gludin",
+     "map": "mainland_south",
+     "cell": [
+      96,
+      606
+     ],
+     "heading": 5,
+     "price": 2200
+    },
+    {
+     "action": "teleport oum-kent",
+     "map": "mainland_south",
+     "cell": [
+      538,
+      654
+     ],
+     "heading": 5,
+     "price": 1800
+    },
+    {
+     "action": "teleport oum-giran",
+     "map": "mainland_south",
+     "cell": [
+      926,
+      668
+     ],
+     "heading": 5,
+     "price": 1000
+    },
+    {
+     "action": "teleport oum-aden",
+     "map": "mainland_south",
+     "cell": [
+      1453,
+      1125
+     ],
+     "heading": 5,
+     "price": 1600
+    },
+    {
+     "action": "teleport oum-heine",
+     "map": "mainland_south",
+     "cell": [
+      1100,
+      1129
+     ],
+     "heading": 5,
+     "price": 2200
+    },
+    {
+     "action": "teleport oum-oren",
+     "map": "zone_03",
+     "cell": [
+      14,
+      150
+     ],
+     "heading": 5,
+     "price": 1200
+    },
+    {
+     "action": "teleport oum-scave",
+     "map": "silent_outer",
+     "cell": [
+      346,
+      34
+     ],
+     "heading": 5,
+     "price": 1300
+    },
+    {
+     "action": "teleport oum-lowful",
+     "map": "mainland_south",
+     "cell": [
+      606,
+      805
+     ],
+     "heading": 5,
+     "price": 2000
+    },
+    {
+     "action": "teleport oum-chaos",
+     "map": "mainland_south",
+     "cell": [
+      373,
+      524
+     ],
+     "heading": 5,
+     "price": 2000
+    }
+   ]
+  },
+  {
+   "npcid": 50073,
+   "n": "迪雅貝斯",
+   "map": "diad_fortress",
+   "cell": [
+    318,
+    89
+   ],
+   "heading": 2,
+   "gfx": 2794,
+   "src": "l1j",
+   "action": "telediad1",
+   "dialogue": "telediad1-c.html",
+   "pages": [
+    "telediad1",
+    "telediad2"
+   ],
+   "to": [
+    {
+     "action": "teleport diad-woods",
+     "map": "mainland_south",
+     "cell": [
+      128,
+      1075
+     ],
+     "heading": 5,
+     "price": 550
+    },
+    {
+     "action": "teleport diad-gludin",
+     "map": "mainland_south",
+     "cell": [
+      96,
+      606
+     ],
+     "heading": 5,
+     "price": 2200
+    },
+    {
+     "action": "teleport diad-silver",
+     "map": "mainland_south",
+     "cell": [
+      568,
+      1258
+     ],
+     "heading": 5,
+     "price": 550
+    },
+    {
+     "action": "teleport diad-kent",
+     "map": "mainland_south",
+     "cell": [
+      538,
+      654
+     ],
+     "heading": 5,
+     "price": 1800
+    },
+    {
+     "action": "teleport diad-willow",
+     "map": "mainland_south",
+     "cell": [
+      203,
+      320
+     ],
+     "heading": 5,
+     "price": 600
+    },
+    {
+     "action": "teleport diad-heine",
+     "map": "mainland_south",
+     "cell": [
+      1100,
+      1129
+     ],
+     "heading": 5,
+     "price": 2200
+    },
+    {
+     "action": "teleport diad-giran",
+     "map": "mainland_south",
+     "cell": [
+      926,
+      668
+     ],
+     "heading": 5,
+     "price": 1000
+    },
+    {
+     "action": "teleport diad-werldern",
+     "map": "mainland_south",
+     "cell": [
+      1197,
+      372
+     ],
+     "heading": 5,
+     "price": 700
+    },
+    {
+     "action": "teleport diad-oren",
+     "map": "zone_03",
+     "cell": [
+      14,
+      150
+     ],
+     "heading": 5,
+     "price": 1200
+    },
+    {
+     "action": "teleport diad-aden",
+     "map": "mainland_south",
+     "cell": [
+      1453,
+      1125
+     ],
+     "heading": 5,
+     "price": 1600
+    },
+    {
+     "action": "teleport diad-lowful",
+     "map": "mainland_south",
+     "cell": [
+      606,
+      805
+     ],
+     "heading": 5,
+     "price": 2000
+    },
+    {
+     "action": "teleport diad-chaos",
+     "map": "mainland_south",
+     "cell": [
+      373,
+      524
+     ],
+     "heading": 5,
+     "price": 2000
+    },
+    {
+     "action": "teleport diad-island",
+     "map": "talking_island",
+     "cell": [
+      327,
+      156
+     ],
+     "heading": 5,
+     "price": 700
+    }
+   ]
+  },
+  {
+   "npcid": 50074,
+   "n": "大洞穴空間移動師",
+   "map": "diad_fortress",
+   "cell": [
+    323,
+    170
+   ],
+   "heading": 6,
+   "gfx": 2794,
+   "src": "l1j",
+   "action": "telecavern1",
+   "dialogue": "telecavern1-c.html",
+   "pages": [
+    "telecavern1",
+    "telecavern2"
+   ],
+   "to": [
+    {
+     "action": "teleport diad-cavern",
+     "map": "giant_tomb",
+     "cell": [
+      122,
+      89
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50075,
+   "n": "要塞門口守門人",
+   "map": "diad_fortress",
+   "cell": [
+    360,
+    160
+   ],
+   "heading": 4,
+   "gfx": 2794,
+   "src": "l1j",
+   "action": "telecdiad1",
+   "dialogue": "telecdiad1-c.html",
+   "pages": [
+    "telecdiad1",
+    "telecdiad2"
+   ],
+   "to": [
+    {
+     "action": "teleport diadc-village",
+     "map": "oum_dungeon",
+     "cell": [
+      160,
+      33
+     ],
+     "heading": 5,
+     "price": 0
+    },
+    {
+     "action": "teleport diadc-oumdun",
+     "map": "oum_dungeon",
+     "cell": [
+      224,
+      171
+     ],
+     "heading": 5,
+     "price": 0
+    },
+    {
+     "action": "teleport diadc-omantower",
+     "map": "pride_f1",
+     "cell": [
+      91,
+      94
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50076,
+   "n": "精靈墓穴看守者",
+   "map": "elf_grave",
+   "cell": [
+    282,
+    94
+   ],
+   "heading": 6,
+   "gfx": 4047,
+   "src": "l1j",
+   "action": "telgrave1",
+   "dialogue": "telgrave1-c.html",
+   "pages": [
+    "telgrave1",
+    "telgrave2",
+    "telgrave3"
+   ],
+   "to": [
+    {
+     "action": "teleport elegrave-abysslake",
+     "map": "under_lake",
+     "cell": [
+      160,
+      219
+     ],
+     "heading": 5,
+     "price": 0
+    },
+    {
+     "action": "teleport elegrave-drakeIsland",
+     "map": "pirate_wild",
+     "cell": [
+      413,
+      214
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50077,
+   "n": "精靈墓穴看守者",
+   "map": "under_lake",
+   "cell": [
+    164,
+    215
+   ],
+   "heading": 6,
+   "gfx": 4047,
+   "src": "l1j",
+   "action": "telabyss1",
+   "dialogue": "telabyss1-c.html",
+   "pages": [
+    "telabyss1",
+    "telabyss2",
+    "telgrave3"
+   ],
+   "to": [
+    {
+     "action": "teleport abysslake-elegrave",
+     "map": "elf_grave",
+     "cell": [
+      284,
+      97
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50078,
+   "n": "精靈墓穴看守者",
+   "map": "pirate_dungeon_4f",
+   "cell": [
+    32,
+    39
+   ],
+   "heading": 6,
+   "gfx": 155,
+   "src": "l1j",
+   "action": "picrystal",
+   "dialogue": "picrystal-c.html",
+   "pages": [
+    "picrystal",
+    "picrystal1"
+   ],
+   "to": [
+    {
+     "action": "teleport piratedungeon-elementaltomb",
+     "map": "elf_grave",
+     "cell": [
+      284,
+      97
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50608,
+   "n": "奇寧",
+   "map": "mainland_south",
+   "cell": [
+    1597,
+    1222
+   ],
+   "heading": 4,
+   "gfx": 1256,
+   "src": "l1j",
+   "action": "kinin2",
+   "dialogue": "kinin2-c.html",
+   "pages": [
+    "kinin2"
+   ],
+   "to": [
+    {
+     "action": "teleport aden-willow",
+     "map": "mainland_south",
+     "cell": [
+      203,
+      320
+     ],
+     "heading": 5,
+     "price": 324
+    },
+    {
+     "action": "teleport aden-lowful",
+     "map": "mainland_south",
+     "cell": [
+      606,
+      805
+     ],
+     "heading": 5,
+     "price": 540
+    },
+    {
+     "action": "teleport aden-chaos",
+     "map": "mainland_south",
+     "cell": [
+      373,
+      524
+     ],
+     "heading": 5,
+     "price": 540
+    },
+    {
+     "action": "teleport aden-island",
+     "map": "talking_island",
+     "cell": [
+      327,
+      156
+     ],
+     "heading": 5,
+     "price": 972
+    }
+   ]
+  },
+  {
+   "npcid": 70779,
+   "n": "看守螞蟻",
+   "map": "zone_32_e",
+   "cell": [
+    36,
+    26
+   ],
+   "heading": 5,
+   "gfx": 2438,
+   "src": "l1j",
+   "action": "ants2",
+   "dialogue": "ants2-c.html",
+   "pages": [
+    "ants2",
+    "antss"
+   ]
+  },
+  {
+   "npcid": 50114,
+   "n": "齊柯",
+   "map": "mainland_south",
+   "cell": [
+    360,
+    380
+   ],
+   "heading": 5,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "orenh2",
+   "dialogue": "orenh2-c.html",
+   "pages": [
+    "orenh2"
+   ]
+  },
+  {
+   "npcid": 50124,
+   "n": "波利卡",
+   "map": "mainland_south",
+   "cell": [
+    1201,
+    363
+   ],
+   "heading": 6,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "orenm2",
+   "dialogue": "orenm2-c.html",
+   "pages": [
+    "orenm2"
+   ]
+  },
+  {
+   "npcid": 50121,
+   "n": "胡尼",
+   "map": "mainland_south",
+   "cell": [
+    242,
+    315
+   ],
+   "heading": 5,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "oreng2",
+   "dialogue": "oreng2-c.html",
+   "pages": [
+    "oreng2"
+   ]
+  },
+  {
+   "npcid": 50119,
+   "n": "奧西利亞",
+   "map": "mainland_south",
+   "cell": [
+    103,
+    1066
+   ],
+   "heading": 6,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "orenf2",
+   "dialogue": "orenf2-c.html",
+   "pages": [
+    "orenf2"
+   ]
+  },
+  {
+   "npcid": 50117,
+   "n": "希利亞",
+   "map": "mainland_south",
+   "cell": [
+    557,
+    662
+   ],
+   "heading": 5,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "orene2",
+   "dialogue": "orene2-c.html",
+   "pages": [
+    "orene2"
+   ]
+  },
+  {
+   "npcid": 50126,
+   "n": "傑瑞",
+   "map": "mainland_south",
+   "cell": [
+    1463,
+    1113
+   ],
+   "heading": 4,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "orenn2",
+   "dialogue": "orenn2-c.html",
+   "pages": [
+    "orenn2"
+   ]
+  },
+  {
+   "npcid": 50120,
+   "n": "賀伯",
+   "map": "mainland_south",
+   "cell": [
+    588,
+    1246
+   ],
+   "heading": 6,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "oreni2",
+   "dialogue": "oreni2-c.html",
+   "pages": [
+    "oreni2"
+   ]
+  },
+  {
+   "npcid": 50123,
+   "n": "迦利溫",
+   "map": "mainland_south",
+   "cell": [
+    1107,
+    1119
+   ],
+   "heading": 5,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "orenk2",
+   "dialogue": "orenk2-c.html",
+   "pages": [
+    "orenk2"
+   ]
+  },
+  {
+   "npcid": 50112,
+   "n": "賽利安",
+   "map": "l1j_map_68",
+   "cell": [
+    212,
+    273
+   ],
+   "heading": 4,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "orenb1",
+   "dialogue": "orenb1-c.html",
+   "pages": [
+    "orenb1"
+   ]
+  },
+  {
+   "npcid": 50113,
+   "n": "雷克曼",
+   "map": "l1j_map_69",
+   "cell": [
+    204,
+    161
+   ],
+   "heading": 5,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "orena1",
+   "dialogue": "orena1-c.html",
+   "pages": [
+    "orena1"
+   ]
+  },
+  {
+   "npcid": 50116,
+   "n": "奇溫",
+   "map": "mainland_south",
+   "cell": [
+    98,
+    598
+   ],
+   "heading": 6,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "orend2",
+   "dialogue": "orend2-c.html",
+   "pages": [
+    "orend2"
+   ]
+  },
+  {
+   "npcid": 50125,
+   "n": "吉伯特",
+   "map": "zone_03",
+   "cell": [
+    5,
+    143
+   ],
+   "heading": 5,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "orenl2",
+   "dialogue": "orenl2-c.html",
+   "pages": [
+    "orenl2"
+   ]
+  },
+  {
+   "npcid": 50115,
+   "n": "賈魯曼",
+   "map": "silent_outer",
+   "cell": [
+    277,
+    131
+   ],
+   "heading": 6,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "oreno2",
+   "dialogue": "oreno2-c.html",
+   "pages": [
+    "oreno2"
+   ]
+  },
+  {
+   "npcid": 80048,
+   "n": "扭曲的空間",
+   "map": "zone_03",
+   "cell": [
+    219,
+    60
+   ],
+   "heading": 6,
+   "gfx": 4825,
+   "src": "l1j",
+   "action": "entgate",
+   "dialogue": "entgate-c.html",
+   "pages": [
+    "entgate"
+   ]
+  },
+  {
+   "npcid": 80058,
+   "n": "次元之門",
+   "map": "mainland_south",
+   "cell": [
+    248,
+    1331
+   ],
+   "heading": 4,
+   "gfx": 5460,
+   "src": "l1j",
+   "action": "cpass01",
+   "dialogue": "cpass01-c.html",
+   "pages": [
+    "cpass01"
+   ]
+  },
+  {
+   "npcid": 50025,
+   "n": "商店村警衛",
+   "map": "l1j_map_340",
+   "cell": [
+    85,
+    112
+   ],
+   "heading": 2,
+   "gfx": 148,
+   "src": "l1j",
+   "action": "gltzguard",
+   "dialogue": "gltzguard-c.html",
+   "pages": [
+    "gltzguard",
+    "gltzguard1"
+   ],
+   "to": [
+    {
+     "action": "teleport gludin-trade-zone-gludio",
+     "map": "mainland_south",
+     "cell": [
+      96,
+      606
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50025,
+   "n": "商店村警衛",
+   "map": "l1j_map_340",
+   "cell": [
+    85,
+    108
+   ],
+   "heading": 2,
+   "gfx": 148,
+   "src": "l1j",
+   "action": "gltzguard",
+   "dialogue": "gltzguard-c.html",
+   "pages": [
+    "gltzguard",
+    "gltzguard1"
+   ],
+   "to": [
+    {
+     "action": "teleport gludin-trade-zone-gludio",
+     "map": "mainland_south",
+     "cell": [
+      96,
+      606
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50025,
+   "n": "商店村警衛",
+   "map": "l1j_map_340",
+   "cell": [
+    125,
+    88
+   ],
+   "heading": 4,
+   "gfx": 148,
+   "src": "l1j",
+   "action": "gltzguard",
+   "dialogue": "gltzguard-c.html",
+   "pages": [
+    "gltzguard",
+    "gltzguard1"
+   ],
+   "to": [
+    {
+     "action": "teleport gludin-trade-zone-gludio",
+     "map": "mainland_south",
+     "cell": [
+      96,
+      606
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50025,
+   "n": "商店村警衛",
+   "map": "l1j_map_340",
+   "cell": [
+    128,
+    88
+   ],
+   "heading": 4,
+   "gfx": 148,
+   "src": "l1j",
+   "action": "gltzguard",
+   "dialogue": "gltzguard-c.html",
+   "pages": [
+    "gltzguard",
+    "gltzguard1"
+   ],
+   "to": [
+    {
+     "action": "teleport gludin-trade-zone-gludio",
+     "map": "mainland_south",
+     "cell": [
+      96,
+      606
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50025,
+   "n": "商店村警衛",
+   "map": "l1j_map_340",
+   "cell": [
+    171,
+    114
+   ],
+   "heading": 6,
+   "gfx": 148,
+   "src": "l1j",
+   "action": "gltzguard",
+   "dialogue": "gltzguard-c.html",
+   "pages": [
+    "gltzguard",
+    "gltzguard1"
+   ],
+   "to": [
+    {
+     "action": "teleport gludin-trade-zone-gludio",
+     "map": "mainland_south",
+     "cell": [
+      96,
+      606
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50025,
+   "n": "商店村警衛",
+   "map": "l1j_map_340",
+   "cell": [
+    171,
+    118
+   ],
+   "heading": 6,
+   "gfx": 148,
+   "src": "l1j",
+   "action": "gltzguard",
+   "dialogue": "gltzguard-c.html",
+   "pages": [
+    "gltzguard",
+    "gltzguard1"
+   ],
+   "to": [
+    {
+     "action": "teleport gludin-trade-zone-gludio",
+     "map": "mainland_south",
+     "cell": [
+      96,
+      606
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50025,
+   "n": "商店村警衛",
+   "map": "l1j_map_340",
+   "cell": [
+    117,
+    167
+   ],
+   "heading": 0,
+   "gfx": 148,
+   "src": "l1j",
+   "action": "gltzguard",
+   "dialogue": "gltzguard-c.html",
+   "pages": [
+    "gltzguard",
+    "gltzguard1"
+   ],
+   "to": [
+    {
+     "action": "teleport gludin-trade-zone-gludio",
+     "map": "mainland_south",
+     "cell": [
+      96,
+      606
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50025,
+   "n": "商店村警衛",
+   "map": "l1j_map_340",
+   "cell": [
+    120,
+    167
+   ],
+   "heading": 0,
+   "gfx": 148,
+   "src": "l1j",
+   "action": "gltzguard",
+   "dialogue": "gltzguard-c.html",
+   "pages": [
+    "gltzguard",
+    "gltzguard1"
+   ],
+   "to": [
+    {
+     "action": "teleport gludin-trade-zone-gludio",
+     "map": "mainland_south",
+     "cell": [
+      96,
+      606
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50026,
+   "n": "商店村傳送師",
+   "map": "l1j_map_340",
+   "cell": [
+    91,
+    103
+   ],
+   "heading": 4,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "telegltz1",
+   "pages": [
+    "telegltz1",
+    "telegltz2"
+   ],
+   "to": [
+    {
+     "action": "teleport gludintz-girantz",
+     "map": "l1j_map_350",
+     "cell": [
+      62,
+      74
+     ],
+     "heading": 5,
+     "price": 550
+    },
+    {
+     "action": "teleport gludintz-orentz",
+     "map": "l1j_map_360",
+     "cell": [
+      93,
+      88
+     ],
+     "heading": 5,
+     "price": 700
+    },
+    {
+     "action": "teleport gludintz-silvertz",
+     "map": "l1j_map_370",
+     "cell": [
+      93,
+      88
+     ],
+     "heading": 5,
+     "price": 810
+    }
+   ]
+  },
+  {
+   "npcid": 50026,
+   "n": "商店村傳送師",
+   "map": "l1j_map_340",
+   "cell": [
+    130,
+    92
+   ],
+   "heading": 6,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "telegltz1",
+   "pages": [
+    "telegltz1",
+    "telegltz2"
+   ],
+   "to": [
+    {
+     "action": "teleport gludintz-girantz",
+     "map": "l1j_map_350",
+     "cell": [
+      62,
+      74
+     ],
+     "heading": 5,
+     "price": 550
+    },
+    {
+     "action": "teleport gludintz-orentz",
+     "map": "l1j_map_360",
+     "cell": [
+      93,
+      88
+     ],
+     "heading": 5,
+     "price": 700
+    },
+    {
+     "action": "teleport gludintz-silvertz",
+     "map": "l1j_map_370",
+     "cell": [
+      93,
+      88
+     ],
+     "heading": 5,
+     "price": 810
+    }
+   ]
+  },
+  {
+   "npcid": 50026,
+   "n": "商店村傳送師",
+   "map": "l1j_map_340",
+   "cell": [
+    164,
+    117
+   ],
+   "heading": 4,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "telegltz1",
+   "pages": [
+    "telegltz1",
+    "telegltz2"
+   ],
+   "to": [
+    {
+     "action": "teleport gludintz-girantz",
+     "map": "l1j_map_350",
+     "cell": [
+      62,
+      74
+     ],
+     "heading": 5,
+     "price": 550
+    },
+    {
+     "action": "teleport gludintz-orentz",
+     "map": "l1j_map_360",
+     "cell": [
+      93,
+      88
+     ],
+     "heading": 5,
+     "price": 700
+    },
+    {
+     "action": "teleport gludintz-silvertz",
+     "map": "l1j_map_370",
+     "cell": [
+      93,
+      88
+     ],
+     "heading": 5,
+     "price": 810
+    }
+   ]
+  },
+  {
+   "npcid": 50026,
+   "n": "商店村傳送師",
+   "map": "l1j_map_340",
+   "cell": [
+    115,
+    163
+   ],
+   "heading": 2,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "telegltz1",
+   "pages": [
+    "telegltz1",
+    "telegltz2"
+   ],
+   "to": [
+    {
+     "action": "teleport gludintz-girantz",
+     "map": "l1j_map_350",
+     "cell": [
+      62,
+      74
+     ],
+     "heading": 5,
+     "price": 550
+    },
+    {
+     "action": "teleport gludintz-orentz",
+     "map": "l1j_map_360",
+     "cell": [
+      93,
+      88
+     ],
+     "heading": 5,
+     "price": 700
+    },
+    {
+     "action": "teleport gludintz-silvertz",
+     "map": "l1j_map_370",
+     "cell": [
+      93,
+      88
+     ],
+     "heading": 5,
+     "price": 810
+    }
+   ]
+  },
+  {
+   "npcid": 50032,
+   "n": "商店村警衛",
+   "map": "l1j_map_350",
+   "cell": [
+    64,
+    39
+   ],
+   "heading": 4,
+   "gfx": 148,
+   "src": "l1j",
+   "action": "grtzguard",
+   "dialogue": "grtzguard-c.html",
+   "pages": [
+    "grtzguard",
+    "grtzguard1"
+   ],
+   "to": [
+    {
+     "action": "teleport giran-trade-zone-giran",
+     "map": "mainland_south",
+     "cell": [
+      926,
+      668
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50032,
+   "n": "商店村警衛",
+   "map": "l1j_map_350",
+   "cell": [
+    67,
+    39
+   ],
+   "heading": 4,
+   "gfx": 148,
+   "src": "l1j",
+   "action": "grtzguard",
+   "dialogue": "grtzguard-c.html",
+   "pages": [
+    "grtzguard",
+    "grtzguard1"
+   ],
+   "to": [
+    {
+     "action": "teleport giran-trade-zone-giran",
+     "map": "mainland_south",
+     "cell": [
+      926,
+      668
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50032,
+   "n": "商店村警衛",
+   "map": "l1j_map_350",
+   "cell": [
+    86,
+    74
+   ],
+   "heading": 6,
+   "gfx": 148,
+   "src": "l1j",
+   "action": "grtzguard",
+   "dialogue": "grtzguard-c.html",
+   "pages": [
+    "grtzguard",
+    "grtzguard1"
+   ],
+   "to": [
+    {
+     "action": "teleport giran-trade-zone-giran",
+     "map": "mainland_south",
+     "cell": [
+      926,
+      668
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50032,
+   "n": "商店村警衛",
+   "map": "l1j_map_350",
+   "cell": [
+    86,
+    78
+   ],
+   "heading": 6,
+   "gfx": 148,
+   "src": "l1j",
+   "action": "grtzguard",
+   "dialogue": "grtzguard-c.html",
+   "pages": [
+    "grtzguard",
+    "grtzguard1"
+   ],
+   "to": [
+    {
+     "action": "teleport giran-trade-zone-giran",
+     "map": "mainland_south",
+     "cell": [
+      926,
+      668
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50032,
+   "n": "商店村警衛",
+   "map": "l1j_map_350",
+   "cell": [
+    32,
+    80
+   ],
+   "heading": 2,
+   "gfx": 148,
+   "src": "l1j",
+   "action": "grtzguard",
+   "dialogue": "grtzguard-c.html",
+   "pages": [
+    "grtzguard",
+    "grtzguard1"
+   ],
+   "to": [
+    {
+     "action": "teleport giran-trade-zone-giran",
+     "map": "mainland_south",
+     "cell": [
+      926,
+      668
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50032,
+   "n": "商店村警衛",
+   "map": "l1j_map_350",
+   "cell": [
+    32,
+    83
+   ],
+   "heading": 2,
+   "gfx": 148,
+   "src": "l1j",
+   "action": "grtzguard",
+   "dialogue": "grtzguard-c.html",
+   "pages": [
+    "grtzguard",
+    "grtzguard1"
+   ],
+   "to": [
+    {
+     "action": "teleport giran-trade-zone-giran",
+     "map": "mainland_south",
+     "cell": [
+      926,
+      668
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50033,
+   "n": "商店村傳送師",
+   "map": "l1j_map_350",
+   "cell": [
+    82,
+    79
+   ],
+   "heading": 0,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "telegrtz1",
+   "pages": [
+    "telegrtz1",
+    "telegrtz2"
+   ],
+   "to": [
+    {
+     "action": "teleport girantz-gludintz",
+     "map": "l1j_map_340",
+     "cell": [
+      139,
+      144
+     ],
+     "heading": 5,
+     "price": 560
+    },
+    {
+     "action": "teleport girantz-orentz",
+     "map": "l1j_map_360",
+     "cell": [
+      93,
+      88
+     ],
+     "heading": 5,
+     "price": 720
+    },
+    {
+     "action": "teleport girantz-silvertz",
+     "map": "l1j_map_370",
+     "cell": [
+      93,
+      88
+     ],
+     "heading": 5,
+     "price": 560
+    }
+   ]
+  },
+  {
+   "npcid": 50033,
+   "n": "商店村傳送師",
+   "map": "l1j_map_350",
+   "cell": [
+    71,
+    40
+   ],
+   "heading": 4,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "telegrtz1",
+   "pages": [
+    "telegrtz1",
+    "telegrtz2"
+   ],
+   "to": [
+    {
+     "action": "teleport girantz-gludintz",
+     "map": "l1j_map_340",
+     "cell": [
+      139,
+      144
+     ],
+     "heading": 5,
+     "price": 560
+    },
+    {
+     "action": "teleport girantz-orentz",
+     "map": "l1j_map_360",
+     "cell": [
+      93,
+      88
+     ],
+     "heading": 5,
+     "price": 720
+    },
+    {
+     "action": "teleport girantz-silvertz",
+     "map": "l1j_map_370",
+     "cell": [
+      93,
+      88
+     ],
+     "heading": 5,
+     "price": 560
+    }
+   ]
+  },
+  {
+   "npcid": 50033,
+   "n": "商店村傳送師",
+   "map": "l1j_map_350",
+   "cell": [
+    39,
+    81
+   ],
+   "heading": 2,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "telegrtz1",
+   "pages": [
+    "telegrtz1",
+    "telegrtz2"
+   ],
+   "to": [
+    {
+     "action": "teleport girantz-gludintz",
+     "map": "l1j_map_340",
+     "cell": [
+      139,
+      144
+     ],
+     "heading": 5,
+     "price": 560
+    },
+    {
+     "action": "teleport girantz-orentz",
+     "map": "l1j_map_360",
+     "cell": [
+      93,
+      88
+     ],
+     "heading": 5,
+     "price": 720
+    },
+    {
+     "action": "teleport girantz-silvertz",
+     "map": "l1j_map_370",
+     "cell": [
+      93,
+      88
+     ],
+     "heading": 5,
+     "price": 560
+    }
+   ]
+  },
+  {
+   "npcid": 50048,
+   "n": "商店村警衛",
+   "map": "l1j_map_360",
+   "cell": [
+    95,
+    80
+   ],
+   "heading": 4,
+   "gfx": 148,
+   "src": "l1j",
+   "action": "ortzguard",
+   "dialogue": "ortzguard-c.html",
+   "pages": [
+    "ortzguard",
+    "ortzguard1"
+   ],
+   "to": [
+    {
+     "action": "teleport oren-trade-zone-oren",
+     "map": "zone_03",
+     "cell": [
+      14,
+      150
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50048,
+   "n": "商店村警衛",
+   "map": "l1j_map_360",
+   "cell": [
+    99,
+    80
+   ],
+   "heading": 4,
+   "gfx": 148,
+   "src": "l1j",
+   "action": "ortzguard",
+   "dialogue": "ortzguard-c.html",
+   "pages": [
+    "ortzguard",
+    "ortzguard1"
+   ],
+   "to": [
+    {
+     "action": "teleport oren-trade-zone-oren",
+     "map": "zone_03",
+     "cell": [
+      14,
+      150
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50048,
+   "n": "商店村警衛",
+   "map": "l1j_map_360",
+   "cell": [
+    94,
+    111
+   ],
+   "heading": 0,
+   "gfx": 148,
+   "src": "l1j",
+   "action": "ortzguard",
+   "dialogue": "ortzguard-c.html",
+   "pages": [
+    "ortzguard",
+    "ortzguard1"
+   ],
+   "to": [
+    {
+     "action": "teleport oren-trade-zone-oren",
+     "map": "zone_03",
+     "cell": [
+      14,
+      150
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50048,
+   "n": "商店村警衛",
+   "map": "l1j_map_360",
+   "cell": [
+    97,
+    111
+   ],
+   "heading": 0,
+   "gfx": 148,
+   "src": "l1j",
+   "action": "ortzguard",
+   "dialogue": "ortzguard-c.html",
+   "pages": [
+    "ortzguard",
+    "ortzguard1"
+   ],
+   "to": [
+    {
+     "action": "teleport oren-trade-zone-oren",
+     "map": "zone_03",
+     "cell": [
+      14,
+      150
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50049,
+   "n": "商店村傳送師",
+   "map": "l1j_map_360",
+   "cell": [
+    90,
+    84
+   ],
+   "heading": 4,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "teleortz1",
+   "pages": [
+    "teleortz1",
+    "teleortz2"
+   ],
+   "to": [
+    {
+     "action": "teleport orentz-gludintz",
+     "map": "l1j_map_340",
+     "cell": [
+      139,
+      144
+     ],
+     "heading": 5,
+     "price": 1150
+    },
+    {
+     "action": "teleport orentz-girantz",
+     "map": "l1j_map_350",
+     "cell": [
+      62,
+      74
+     ],
+     "heading": 5,
+     "price": 980
+    },
+    {
+     "action": "teleport orentz-silvertz",
+     "map": "l1j_map_370",
+     "cell": [
+      93,
+      88
+     ],
+     "heading": 5,
+     "price": 590
+    }
+   ]
+  },
+  {
+   "npcid": 50049,
+   "n": "商店村傳送師",
+   "map": "l1j_map_360",
+   "cell": [
+    103,
+    107
+   ],
+   "heading": 6,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "teleortz1",
+   "pages": [
+    "teleortz1",
+    "teleortz2"
+   ],
+   "to": [
+    {
+     "action": "teleport orentz-gludintz",
+     "map": "l1j_map_340",
+     "cell": [
+      139,
+      144
+     ],
+     "heading": 5,
+     "price": 1150
+    },
+    {
+     "action": "teleport orentz-girantz",
+     "map": "l1j_map_350",
+     "cell": [
+      62,
+      74
+     ],
+     "heading": 5,
+     "price": 980
+    },
+    {
+     "action": "teleport orentz-silvertz",
+     "map": "l1j_map_370",
+     "cell": [
+      93,
+      88
+     ],
+     "heading": 5,
+     "price": 590
+    }
+   ]
+  },
+  {
+   "npcid": 50058,
+   "n": "商店村警衛",
+   "map": "l1j_map_370",
+   "cell": [
+    95,
+    110
+   ],
+   "heading": 0,
+   "gfx": 148,
+   "src": "l1j",
+   "action": "sktzguard",
+   "dialogue": "sktzguard-c.html",
+   "pages": [
+    "sktzguard",
+    "sktzguard1"
+   ],
+   "to": [
+    {
+     "action": "teleport silver-trade-zone-silver",
+     "map": "mainland_south",
+     "cell": [
+      571,
+      1259
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50058,
+   "n": "商店村警衛",
+   "map": "l1j_map_370",
+   "cell": [
+    92,
+    110
+   ],
+   "heading": 0,
+   "gfx": 148,
+   "src": "l1j",
+   "action": "sktzguard",
+   "dialogue": "sktzguard-c.html",
+   "pages": [
+    "sktzguard",
+    "sktzguard1"
+   ],
+   "to": [
+    {
+     "action": "teleport silver-trade-zone-silver",
+     "map": "mainland_south",
+     "cell": [
+      571,
+      1259
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50058,
+   "n": "商店村警衛",
+   "map": "l1j_map_370",
+   "cell": [
+    100,
+    80
+   ],
+   "heading": 4,
+   "gfx": 148,
+   "src": "l1j",
+   "action": "sktzguard",
+   "dialogue": "sktzguard-c.html",
+   "pages": [
+    "sktzguard",
+    "sktzguard1"
+   ],
+   "to": [
+    {
+     "action": "teleport silver-trade-zone-silver",
+     "map": "mainland_south",
+     "cell": [
+      571,
+      1259
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50058,
+   "n": "商店村警衛",
+   "map": "l1j_map_370",
+   "cell": [
+    97,
+    80
+   ],
+   "heading": 4,
+   "gfx": 148,
+   "src": "l1j",
+   "action": "sktzguard",
+   "dialogue": "sktzguard-c.html",
+   "pages": [
+    "sktzguard",
+    "sktzguard1"
+   ],
+   "to": [
+    {
+     "action": "teleport silver-trade-zone-silver",
+     "map": "mainland_south",
+     "cell": [
+      571,
+      1259
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50059,
+   "n": "商店村傳送師",
+   "map": "l1j_map_370",
+   "cell": [
+    91,
+    106
+   ],
+   "heading": 2,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "telesktz1",
+   "pages": [
+    "telesktz1",
+    "telesktz2"
+   ],
+   "to": [
+    {
+     "action": "teleport silvertz-gludintz",
+     "map": "l1j_map_340",
+     "cell": [
+      139,
+      144
+     ],
+     "heading": 5,
+     "price": 580
+    },
+    {
+     "action": "teleport silvertz-girantz",
+     "map": "l1j_map_350",
+     "cell": [
+      62,
+      74
+     ],
+     "heading": 5,
+     "price": 680
+    },
+    {
+     "action": "teleport silvertz-orentz",
+     "map": "l1j_map_360",
+     "cell": [
+      93,
+      88
+     ],
+     "heading": 5,
+     "price": 680
+    }
+   ]
+  },
+  {
+   "npcid": 50059,
+   "n": "商店村傳送師",
+   "map": "l1j_map_370",
+   "cell": [
+    105,
+    83
+   ],
+   "heading": 6,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "telesktz1",
+   "pages": [
+    "telesktz1",
+    "telesktz2"
+   ],
+   "to": [
+    {
+     "action": "teleport silvertz-gludintz",
+     "map": "l1j_map_340",
+     "cell": [
+      139,
+      144
+     ],
+     "heading": 5,
+     "price": 580
+    },
+    {
+     "action": "teleport silvertz-girantz",
+     "map": "l1j_map_350",
+     "cell": [
+      62,
+      74
+     ],
+     "heading": 5,
+     "price": 680
+    },
+    {
+     "action": "teleport silvertz-orentz",
+     "map": "l1j_map_360",
+     "cell": [
+      93,
+      88
+     ],
+     "heading": 5,
+     "price": 680
+    }
+   ]
+  },
+  {
+   "npcid": 80153,
+   "n": "新手協助^新手導師",
+   "map": "l1j_map_2005",
+   "cell": [
+    140,
+    144
+   ],
+   "heading": 5,
+   "gfx": 5913,
+   "src": "l1j",
+   "action": "tutor",
+   "dialogue": "tutor-c.html",
+   "pages": [
+    "tutor"
+   ]
+  },
+  {
+   "npcid": 80153,
+   "n": "新手協助^新手導師",
+   "map": "l1j_map_2005",
+   "cell": [
+    167,
+    160
+   ],
+   "heading": 5,
+   "gfx": 5913,
+   "src": "l1j",
+   "action": "tutor",
+   "dialogue": "tutor-c.html",
+   "pages": [
+    "tutor"
+   ]
+  },
+  {
+   "npcid": 50003,
+   "n": "伊爾卓斯",
+   "map": "l1j_map_2005",
+   "cell": [
+    184,
+    150
+   ],
+   "heading": 6,
+   "gfx": 1511,
+   "src": "l1j",
+   "action": "illdrath",
+   "dialogue": "illdrath-c.html",
+   "pages": [
+    "illdrath",
+    "illdrath1",
+    "illdrath2"
+   ],
+   "to": [
+    {
+     "action": "teleport talking island-in",
+     "map": "talking_island",
+     "cell": [
+      327,
+      161
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50001,
+   "n": "巴尼亞",
+   "map": "l1j_map_2005",
+   "cell": [
+    184,
+    148
+   ],
+   "heading": 6,
+   "gfx": 916,
+   "src": "l1j",
+   "action": "barnia1",
+   "dialogue": "barnia1-c.html",
+   "pages": [
+    "barnia1",
+    "barnia4"
+   ],
+   "to": [
+    {
+     "action": "teleport elvenforest-in",
+     "map": "mainland_south",
+     "cell": [
+      547,
+      215
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 80155,
+   "n": "希培利亞村莊傳送師^幻術士 艾希雅",
+   "map": "l1j_map_2005",
+   "cell": [
+    184,
+    145
+   ],
+   "heading": 6,
+   "gfx": 6977,
+   "src": "l1j",
+   "action": "asha1",
+   "dialogue": "asha1-c.html",
+   "pages": [
+    "asha1",
+    "asha3"
+   ]
+  },
+  {
+   "npcid": 80156,
+   "n": "貝希摩斯村莊傳送師^龍騎士 費艾娜",
+   "map": "l1j_map_2005",
+   "cell": [
+    184,
+    142
+   ],
+   "heading": 6,
+   "gfx": 6793,
+   "src": "l1j",
+   "action": "feaena1",
+   "dialogue": "feaena1-c.html",
+   "pages": [
+    "feaena1",
+    "feaena3"
+   ],
+   "to": [
+    {
+     "action": "teleport dragonknight island-in",
+     "map": "behemoth",
+     "cell": [
+      106,
+      105
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 80157,
+   "n": "沉默洞穴傳送師^卡連",
+   "map": "l1j_map_2005",
+   "cell": [
+    181,
+    139
+   ],
+   "heading": 5,
+   "gfx": 2801,
+   "src": "l1j",
+   "action": "karen1",
+   "dialogue": "karen1-c.html",
+   "pages": [
+    "karen1",
+    "karen3"
+   ],
+   "to": [
+    {
+     "action": "teleport dark island-in",
+     "map": "silent_outer",
+     "cell": [
+      107,
+      77
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50007,
+   "n": "預言者",
+   "map": "l1j_map_2005",
+   "cell": [
+    179,
+    166
+   ],
+   "heading": 5,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "esmereld",
+   "dialogue": "esmereld-c.html",
+   "pages": [
+    "esmereld",
+    "esmereld2"
+   ]
+  },
+  {
+   "npcid": 50006,
+   "n": "小柯",
+   "map": "l1j_map_2005",
+   "cell": [
+    168,
+    107
+   ],
+   "heading": 6,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "coco4",
+   "dialogue": "coco4-c.html",
+   "pages": [
+    "coco4",
+    "coco1"
+   ],
+   "to": [
+    {
+     "action": "teleport dungeon-in",
+     "map": "l1j_map_86",
+     "cell": [
+      104,
+      158
+     ],
+     "heading": 5,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 50084,
+   "n": "警衛",
+   "map": "l1j_map_95",
+   "cell": [
+    77,
+    67
+   ],
+   "heading": 6,
+   "gfx": 148,
+   "src": "l1j",
+   "action": "exitghost1",
+   "dialogue": "exitghost1-c.html",
+   "pages": [
+    "exitghost1"
+   ]
+  },
+  {
+   "npcid": 50084,
+   "n": "警衛",
+   "map": "l1j_map_91",
+   "cell": [
+    77,
+    67
+   ],
+   "heading": 6,
+   "gfx": 148,
+   "src": "l1j",
+   "action": "exitghost1",
+   "dialogue": "exitghost1-c.html",
+   "pages": [
+    "exitghost1"
+   ]
+  },
+  {
+   "npcid": 50084,
+   "n": "警衛",
+   "map": "l1j_map_92",
+   "cell": [
+    77,
+    67
+   ],
+   "heading": 6,
+   "gfx": 148,
+   "src": "l1j",
+   "action": "exitghost1",
+   "dialogue": "exitghost1-c.html",
+   "pages": [
+    "exitghost1"
+   ]
+  },
+  {
+   "npcid": 50084,
+   "n": "警衛",
+   "map": "l1j_map_98",
+   "cell": [
+    77,
+    67
+   ],
+   "heading": 6,
+   "gfx": 148,
+   "src": "l1j",
+   "action": "exitghost1",
+   "dialogue": "exitghost1-c.html",
+   "pages": [
+    "exitghost1"
+   ]
+  },
+  {
+   "npcid": 80146,
+   "n": "賽莉恩",
+   "map": "hyperia",
+   "cell": [
+    138,
+    92
+   ],
+   "heading": 5,
+   "gfx": 6804,
+   "src": "l1j",
+   "action": "sharial1",
+   "dialogue": "sharial1-c.html",
+   "pages": [
+    "sharial1",
+    "sharial2",
+    "sharial3"
+   ],
+   "to": [
+    {
+     "action": "teleport silveria-oren",
+     "map": "zone_03",
+     "cell": [
+      14,
+      150
+     ],
+     "heading": 5,
+     "price": 246
+    },
+    {
+     "action": "teleport silveria-werldern",
+     "map": "mainland_south",
+     "cell": [
+      1197,
+      372
+     ],
+     "heading": 5,
+     "price": 198
+    },
+    {
+     "action": "teleport silveria-behemoth",
+     "map": "behemoth",
+     "cell": [
+      75,
+      119
+     ],
+     "heading": 5,
+     "price": 220
+    },
+    {
+     "action": "teleport silveria-giran",
+     "map": "mainland_south",
+     "cell": [
+      926,
+      668
+     ],
+     "heading": 5,
+     "price": 132
+    },
+    {
+     "action": "teleport silveria-heine",
+     "map": "mainland_south",
+     "cell": [
+      1100,
+      1129
+     ],
+     "heading": 5,
+     "price": 55
+    },
+    {
+     "action": "teleport silveria-kent",
+     "map": "mainland_south",
+     "cell": [
+      538,
+      654
+     ],
+     "heading": 5,
+     "price": 55
+    },
+    {
+     "action": "teleport silveria-gludin",
+     "map": "mainland_south",
+     "cell": [
+      96,
+      606
+     ],
+     "heading": 5,
+     "price": 132
+    },
+    {
+     "action": "teleport silveria-silver",
+     "map": "mainland_south",
+     "cell": [
+      568,
+      1258
+     ],
+     "heading": 5,
+     "price": 132
+    },
+    {
+     "action": "teleport silveria-aden",
+     "map": "mainland_south",
+     "cell": [
+      1453,
+      1125
+     ],
+     "heading": 5,
+     "price": 132
+    },
+    {
+     "action": "teleport silveria-woods",
+     "map": "mainland_south",
+     "cell": [
+      128,
+      1075
+     ],
+     "heading": 5,
+     "price": 55
+    },
+    {
+     "action": "teleport silveria-willow",
+     "map": "mainland_south",
+     "cell": [
+      203,
+      320
+     ],
+     "heading": 5,
+     "price": 198
+    },
+    {
+     "action": "teleport silveria-lowful",
+     "map": "mainland_south",
+     "cell": [
+      606,
+      805
+     ],
+     "heading": 5,
+     "price": 330
+    },
+    {
+     "action": "teleport silveria-chaos",
+     "map": "mainland_south",
+     "cell": [
+      373,
+      524
+     ],
+     "heading": 5,
+     "price": 330
+    },
+    {
+     "action": "teleport silveria-island",
+     "map": "talking_island",
+     "cell": [
+      327,
+      156
+     ],
+     "heading": 5,
+     "price": 770
+    },
+    {
+     "action": "teleport silveria-diad",
+     "map": "diad_fortress",
+     "cell": [
+      188,
+      132
+     ],
+     "heading": 5,
+     "price": 7480
+    },
+    {
+     "action": "teleport silveria-gypsy",
+     "map": "mainland_south",
+     "cell": [
+      1457,
+      813
+     ],
+     "heading": 5,
+     "price": 220
+    },
+    {
+     "action": "teleport silveria-mirr",
+     "map": "mainland_south",
+     "cell": [
+      1205,
+      793
+     ],
+     "heading": 5,
+     "price": 330
+    },
+    {
+     "action": "teleport silveria-dragon",
+     "map": "mainland_south",
+     "cell": [
+      922,
+      418
+     ],
+     "heading": 5,
+     "price": 330
+    },
+    {
+     "action": "teleport silveria-train",
+     "map": "mainland_south",
+     "cell": [
+      457,
+      1386
+     ],
+     "heading": 5,
+     "price": 440
+    },
+    {
+     "action": "teleport silveria-eva",
+     "map": "mainland_south",
+     "cell": [
+      1115,
+      1381
+     ],
+     "heading": 5,
+     "price": 440
+    },
+    {
+     "action": "teleport silveria-reed",
+     "map": "mainland_south",
+     "cell": [
+      228,
+      249
+     ],
+     "heading": 5,
+     "price": 550
+    },
+    {
+     "action": "teleport silveria-gludun",
+     "map": "mainland_south",
+     "cell": [
+      207,
+      802
+     ],
+     "heading": 5,
+     "price": 550
+    },
+    {
+     "action": "teleport silveria-oasis",
+     "map": "mainland_south",
+     "cell": [
+      349,
+      1127
+     ],
+     "heading": 5,
+     "price": 550
+    },
+    {
+     "action": "teleport silveria-under",
+     "map": "mainland_south",
+     "cell": [
+      49,
+      1332
+     ],
+     "heading": 5,
+     "price": 550
+    }
+   ]
+  },
+  {
+   "npcid": 80132,
+   "n": "蒂卡菲兒",
+   "map": "behemoth",
+   "cell": [
+    80,
+    115
+   ],
+   "heading": 5,
+   "gfx": 6899,
+   "src": "l1j",
+   "action": "dekabia1",
+   "dialogue": "dekabia1-c.html",
+   "pages": [
+    "dekabia1",
+    "dekabia2",
+    "dekabia3"
+   ],
+   "to": [
+    {
+     "action": "teleport behemoth-werldern",
+     "map": "mainland_south",
+     "cell": [
+      1197,
+      372
+     ],
+     "heading": 5,
+     "price": 198
+    },
+    {
+     "action": "teleport behemoth-giran",
+     "map": "mainland_south",
+     "cell": [
+      926,
+      668
+     ],
+     "heading": 5,
+     "price": 132
+    },
+    {
+     "action": "teleport behemoth-oren",
+     "map": "zone_03",
+     "cell": [
+      14,
+      150
+     ],
+     "heading": 5,
+     "price": 246
+    },
+    {
+     "action": "teleport behemoth-silveria",
+     "map": "hyperia",
+     "cell": [
+      137,
+      88
+     ],
+     "heading": 5,
+     "price": 220
+    },
+    {
+     "action": "teleport behemoth-kent",
+     "map": "mainland_south",
+     "cell": [
+      538,
+      654
+     ],
+     "heading": 5,
+     "price": 55
+    },
+    {
+     "action": "teleport behemoth-heine",
+     "map": "mainland_south",
+     "cell": [
+      1100,
+      1129
+     ],
+     "heading": 5,
+     "price": 55
+    },
+    {
+     "action": "teleport behemoth-gludin",
+     "map": "mainland_south",
+     "cell": [
+      96,
+      606
+     ],
+     "heading": 5,
+     "price": 132
+    },
+    {
+     "action": "teleport behemoth-silver",
+     "map": "mainland_south",
+     "cell": [
+      568,
+      1258
+     ],
+     "heading": 5,
+     "price": 132
+    },
+    {
+     "action": "teleport behemoth-aden",
+     "map": "mainland_south",
+     "cell": [
+      1453,
+      1125
+     ],
+     "heading": 5,
+     "price": 132
+    },
+    {
+     "action": "teleport behemoth-woods",
+     "map": "mainland_south",
+     "cell": [
+      128,
+      1075
+     ],
+     "heading": 5,
+     "price": 55
+    },
+    {
+     "action": "teleport behemoth-willow",
+     "map": "mainland_south",
+     "cell": [
+      203,
+      320
+     ],
+     "heading": 5,
+     "price": 198
+    },
+    {
+     "action": "teleport behemoth-lowful",
+     "map": "mainland_south",
+     "cell": [
+      606,
+      805
+     ],
+     "heading": 5,
+     "price": 330
+    },
+    {
+     "action": "teleport behemoth-chaos",
+     "map": "mainland_south",
+     "cell": [
+      373,
+      524
+     ],
+     "heading": 5,
+     "price": 330
+    },
+    {
+     "action": "teleport behemoth-island",
+     "map": "talking_island",
+     "cell": [
+      327,
+      156
+     ],
+     "heading": 5,
+     "price": 770
+    },
+    {
+     "action": "teleport behemoth-diad",
+     "map": "diad_fortress",
+     "cell": [
+      188,
+      132
+     ],
+     "heading": 5,
+     "price": 7480
+    },
+    {
+     "action": "teleport behemoth-dragon",
+     "map": "mainland_south",
+     "cell": [
+      922,
+      418
+     ],
+     "heading": 5,
+     "price": 100
+    },
+    {
+     "action": "teleport behemoth-mirr",
+     "map": "mainland_south",
+     "cell": [
+      1205,
+      793
+     ],
+     "heading": 5,
+     "price": 220
+    },
+    {
+     "action": "teleport behemoth-gypsy",
+     "map": "mainland_south",
+     "cell": [
+      1457,
+      813
+     ],
+     "heading": 5,
+     "price": 220
+    },
+    {
+     "action": "teleport behemoth-train",
+     "map": "mainland_south",
+     "cell": [
+      457,
+      1386
+     ],
+     "heading": 5,
+     "price": 330
+    },
+    {
+     "action": "teleport behemoth-gludun",
+     "map": "mainland_south",
+     "cell": [
+      207,
+      802
+     ],
+     "heading": 5,
+     "price": 330
+    },
+    {
+     "action": "teleport behemoth-oasis",
+     "map": "mainland_south",
+     "cell": [
+      349,
+      1127
+     ],
+     "heading": 5,
+     "price": 330
+    },
+    {
+     "action": "teleport behemoth-eva",
+     "map": "mainland_south",
+     "cell": [
+      1115,
+      1381
+     ],
+     "heading": 5,
+     "price": 330
+    },
+    {
+     "action": "teleport behemoth-under",
+     "map": "mainland_south",
+     "cell": [
+      49,
+      1332
+     ],
+     "heading": 5,
+     "price": 440
+    },
+    {
+     "action": "teleport behemoth-reed",
+     "map": "mainland_south",
+     "cell": [
+      228,
+      249
+     ],
+     "heading": 5,
+     "price": 440
+    }
+   ]
+  },
+  {
+   "npcid": 50079,
+   "n": "丹尼爾",
+   "map": "diad_fortress",
+   "cell": [
+    173,
+    149
+   ],
+   "heading": 4,
+   "gfx": 6377,
+   "src": "l1j",
+   "action": "telediad1",
+   "dialogue": "telediad1-c.html",
+   "pages": [
+    "telediad1",
+    "telediad2",
+    "telediad3"
+   ],
+   "to": [
+    {
+     "action": "teleport diad-woods",
+     "map": "mainland_south",
+     "cell": [
+      128,
+      1075
+     ],
+     "heading": 5,
+     "price": 550
+    },
+    {
+     "action": "teleport diad-gludin",
+     "map": "mainland_south",
+     "cell": [
+      96,
+      606
+     ],
+     "heading": 5,
+     "price": 550
+    },
+    {
+     "action": "teleport diad-silver",
+     "map": "mainland_south",
+     "cell": [
+      568,
+      1258
+     ],
+     "heading": 5,
+     "price": 550
+    },
+    {
+     "action": "teleport diad-kent",
+     "map": "mainland_south",
+     "cell": [
+      538,
+      654
+     ],
+     "heading": 5,
+     "price": 600
+    },
+    {
+     "action": "teleport diad-willow",
+     "map": "mainland_south",
+     "cell": [
+      203,
+      320
+     ],
+     "heading": 5,
+     "price": 600
+    },
+    {
+     "action": "teleport diad-heine",
+     "map": "mainland_south",
+     "cell": [
+      1100,
+      1129
+     ],
+     "heading": 5,
+     "price": 600
+    },
+    {
+     "action": "teleport diad-giran",
+     "map": "mainland_south",
+     "cell": [
+      926,
+      668
+     ],
+     "heading": 5,
+     "price": 650
+    },
+    {
+     "action": "teleport diad-werldern",
+     "map": "mainland_south",
+     "cell": [
+      1197,
+      372
+     ],
+     "heading": 5,
+     "price": 700
+    },
+    {
+     "action": "teleport diad-oren",
+     "map": "zone_03",
+     "cell": [
+      14,
+      150
+     ],
+     "heading": 5,
+     "price": 750
+    },
+    {
+     "action": "teleport diad-aden",
+     "map": "mainland_south",
+     "cell": [
+      1453,
+      1125
+     ],
+     "heading": 5,
+     "price": 750
+    },
+    {
+     "action": "teleport diad-lowful",
+     "map": "mainland_south",
+     "cell": [
+      606,
+      805
+     ],
+     "heading": 5,
+     "price": 500
+    },
+    {
+     "action": "teleport diad-chaos",
+     "map": "mainland_south",
+     "cell": [
+      373,
+      524
+     ],
+     "heading": 5,
+     "price": 500
+    },
+    {
+     "action": "teleport diad-island",
+     "map": "talking_island",
+     "cell": [
+      327,
+      156
+     ],
+     "heading": 5,
+     "price": 700
+    },
+    {
+     "action": "teleport diad-occ",
+     "map": "diad_fortress",
+     "cell": [
+      89,
+      87
+     ],
+     "heading": 5,
+     "price": 700
+    },
+    {
+     "action": "teleport diad-oumdun",
+     "map": "diad_fortress",
+     "cell": [
+      165,
+      29
+     ],
+     "heading": 5,
+     "price": 800
+    },
+    {
+     "action": "teleport diad-mincave",
+     "map": "diad_fortress",
+     "cell": [
+      364,
+      77
+     ],
+     "heading": 5,
+     "price": 800
+    },
+    {
+     "action": "teleport diad-cavern",
+     "map": "giant_tomb",
+     "cell": [
+      123,
+      100
+     ],
+     "heading": 5,
+     "price": 1000
+    }
+   ]
+  },
+  {
+   "npcid": 91003,
+   "n": "退休的侍從長-曼孟",
+   "map": "l1j_map_52",
+   "cell": [
+    79,
+    31
+   ],
+   "heading": 4,
+   "gfx": 5900,
+   "src": "l1j",
+   "action": "gr_mammon1",
+   "dialogue": "gr_mammon1-c.html",
+   "pages": [
+    "gr_mammon1",
+    "gr_mammon2",
+    "gr_mammon3"
+   ],
+   "to": [
+    {
+     "action": "teleport grtel",
+     "map": "l1j_map_248",
+     "cell": [
+      101,
+      25
+     ],
+     "heading": 5,
+     "price": 1950
+    }
+   ]
+  },
+  {
+   "npcid": 50113,
+   "n": "雷克曼",
+   "map": "l1j_map_69",
+   "cell": [
+    204,
+    161
+   ],
+   "heading": 5,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "orena1",
+   "dialogue": "orena1-c.html",
+   "pages": [
+    "orena1"
+   ]
+  },
+  {
+   "npcid": 50114,
+   "n": "齊柯",
+   "map": "mainland_south",
+   "cell": [
+    360,
+    380
+   ],
+   "heading": 5,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "orenh2",
+   "dialogue": "orenh2-c.html",
+   "pages": [
+    "orenh2"
+   ]
+  },
+  {
+   "npcid": 50121,
+   "n": "胡尼",
+   "map": "mainland_south",
+   "cell": [
+    242,
+    315
+   ],
+   "heading": 5,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "oreng2",
+   "dialogue": "oreng2-c.html",
+   "pages": [
+    "oreng2"
+   ]
+  },
+  {
+   "npcid": 50119,
+   "n": "奧西利亞",
+   "map": "mainland_south",
+   "cell": [
+    103,
+    1066
+   ],
+   "heading": 5,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "orenf2",
+   "dialogue": "orenf2-c.html",
+   "pages": [
+    "orenf2"
+   ]
+  },
+  {
+   "npcid": 50117,
+   "n": "希利亞",
+   "map": "mainland_south",
+   "cell": [
+    557,
+    662
+   ],
+   "heading": 5,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "orene2",
+   "dialogue": "orene2-c.html",
+   "pages": [
+    "orene2"
+   ]
+  },
+  {
+   "npcid": 50126,
+   "n": "傑瑞",
+   "map": "mainland_south",
+   "cell": [
+    1463,
+    1113
+   ],
+   "heading": 5,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "orenn2",
+   "dialogue": "orenn2-c.html",
+   "pages": [
+    "orenn2"
+   ]
+  },
+  {
+   "npcid": 50120,
+   "n": "賀伯",
+   "map": "mainland_south",
+   "cell": [
+    588,
+    1246
+   ],
+   "heading": 5,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "oreni2",
+   "dialogue": "oreni2-c.html",
+   "pages": [
+    "oreni2"
+   ]
+  },
+  {
+   "npcid": 50123,
+   "n": "迦利溫",
+   "map": "mainland_south",
+   "cell": [
+    1107,
+    1119
+   ],
+   "heading": 5,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "orenk2",
+   "dialogue": "orenk2-c.html",
+   "pages": [
+    "orenk2"
+   ]
+  },
+  {
+   "npcid": 50112,
+   "n": "賽利安",
+   "map": "l1j_map_68",
+   "cell": [
+    212,
+    273
+   ],
+   "heading": 5,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "orenb1",
+   "dialogue": "orenb1-c.html",
+   "pages": [
+    "orenb1"
+   ]
+  },
+  {
+   "npcid": 50116,
+   "n": "奇溫",
+   "map": "mainland_south",
+   "cell": [
+    98,
+    598
+   ],
+   "heading": 5,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "orend2",
+   "dialogue": "orend2-c.html",
+   "pages": [
+    "orend2"
+   ]
+  },
+  {
+   "npcid": 50125,
+   "n": "吉伯特",
+   "map": "zone_03",
+   "cell": [
+    5,
+    143
+   ],
+   "heading": 5,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "orenl2",
+   "dialogue": "orenl2-c.html",
+   "pages": [
+    "orenl2"
+   ]
+  },
+  {
+   "npcid": 50115,
+   "n": "賈魯曼",
+   "map": "silent_outer",
+   "cell": [
+    277,
+    131
+   ],
+   "heading": 5,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "oreno2",
+   "dialogue": "oreno2-c.html",
+   "pages": [
+    "oreno2"
+   ]
+  },
+  {
+   "npcid": 50122,
+   "n": "托克",
+   "map": "mainland_south",
+   "cell": [
+    935,
+    676
+   ],
+   "heading": 2,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "orenj2",
+   "dialogue": "orenj2-c.html",
+   "pages": [
+    "orenj2"
+   ]
+  },
+  {
+   "npcid": 50124,
+   "n": "波利卡",
+   "map": "mainland_south",
+   "cell": [
+    1201,
+    363
+   ],
+   "heading": 5,
+   "gfx": 940,
+   "src": "l1j",
+   "action": "orenm2",
+   "dialogue": "orenm2-c.html",
+   "pages": [
+    "orenm2"
+   ]
+  },
+  {
+   "npcid": 91006,
+   "n": "普若亞",
+   "map": "l1j_map_300",
+   "cell": [
+    38,
+    107
+   ],
+   "heading": 4,
+   "gfx": 2141,
+   "src": "l1j",
+   "action": "adenflora1",
+   "dialogue": "adenflora1-c.html",
+   "pages": [
+    "adenflora1",
+    "adenflora2"
+   ],
+   "to": [
+    {
+     "action": "teleport adencd",
+     "map": "l1j_map_257",
+     "cell": [
+      20,
+      32
+     ],
+     "heading": 5,
+     "price": 1950
+    }
+   ]
+  },
+  {
+   "npcid": 91065,
+   "n": "魔法師 梅琳",
+   "map": "mainland_south",
+   "cell": [
+    917,
+    696
+   ],
+   "heading": 4,
+   "gfx": 2400,
+   "src": "l1j",
+   "action": "merlin1",
+   "dialogue": "merlin1-c.html",
+   "pages": [
+    "merlin1",
+    "merlin2"
+   ],
+   "to": [
+    {
+     "action": "teleport giranD",
+     "map": "zone_18",
+     "cell": [
+      170,
+      91
+     ],
+     "heading": 6,
+     "price": 0
+    }
+   ]
+  },
+  {
+   "npcid": 90521,
+   "n": "提卡爾 庫庫爾坎祭壇守門人",
+   "map": "tikal_area",
+   "cell": [
+    556,
+    167
+   ],
+   "heading": 6,
+   "gfx": 7263,
+   "src": "l1j",
+   "action": "tikalgate1",
+   "dialogue": "tikalgate1-c.html",
+   "pages": [
+    "tikalgate1",
+    "tikalgate6"
+   ]
+  }
+ ]
+}

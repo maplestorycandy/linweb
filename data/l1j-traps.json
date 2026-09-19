@@ -1,0 +1,6191 @@
+{
+ "schemaVersion": 1,
+ "source": [
+  "L1j-TW-main/db/InnoDB_TW/trap.sql",
+  "L1j-TW-main/db/InnoDB_TW/spawnlist_trap.sql"
+ ],
+ "counts": {
+  "definitions": 52,
+  "placementRows": 325,
+  "resolvedPlacementRows": 316,
+  "runtimeMaps": 28,
+  "sourceInstances": 4492,
+  "runtimeInstances": 3842,
+  "missingMapRows": 9,
+  "types": {
+   "L1DamageTrap": 3,
+   "L1HealingTrap": 1,
+   "L1MonsterTrap": 34,
+   "L1PoisonTrap": 3,
+   "L1SkillTrap": 4,
+   "L1TeleportTrap": 7
+  }
+ },
+ "missingMaps": {
+  "5140": 9
+ },
+ "definitions": [
+  {
+   "trapId": 1,
+   "note": "捕獸夾",
+   "type": "L1DamageTrap",
+   "gfxId": 1065,
+   "detectionable": true,
+   "base": 10,
+   "dice": 10,
+   "diceCount": 1,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 0,
+   "monsterMobKey": null,
+   "monsterCount": 0,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 2,
+   "note": "治癒術",
+   "type": "L1HealingTrap",
+   "gfxId": 1074,
+   "detectionable": false,
+   "base": 10,
+   "dice": 10,
+   "diceCount": 1,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 0,
+   "monsterMobKey": null,
+   "monsterCount": 0,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 3,
+   "note": "攻擊毒",
+   "type": "L1PoisonTrap",
+   "gfxId": 1066,
+   "detectionable": true,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "d",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 5000,
+   "poisonDamage": 10,
+   "monsterNpcId": 0,
+   "monsterMobKey": null,
+   "monsterCount": 0,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 4,
+   "note": "沉默毒",
+   "type": "L1PoisonTrap",
+   "gfxId": 1066,
+   "detectionable": true,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "s",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 10,
+   "monsterNpcId": 0,
+   "monsterMobKey": null,
+   "monsterCount": 0,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 5,
+   "note": "麻痺毒",
+   "type": "L1PoisonTrap",
+   "gfxId": 1066,
+   "detectionable": true,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "p",
+   "poisonDelayMs": 5000,
+   "poisonTimeMs": 5000,
+   "poisonDamage": 0,
+   "monsterNpcId": 0,
+   "monsterMobKey": null,
+   "monsterCount": 0,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 6,
+   "note": "流星雨",
+   "type": "L1DamageTrap",
+   "gfxId": 1085,
+   "detectionable": true,
+   "base": 10,
+   "dice": 10,
+   "diceCount": 1,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 0,
+   "monsterMobKey": null,
+   "monsterCount": 0,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 7,
+   "note": "針(横)",
+   "type": "L1DamageTrap",
+   "gfxId": 1070,
+   "detectionable": true,
+   "base": 10,
+   "dice": 10,
+   "diceCount": 1,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 0,
+   "monsterMobKey": null,
+   "monsterCount": 0,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 8,
+   "note": "傲慢之塔 4樓-怪物",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45348,
+   "monsterMobKey": "l1j_45348",
+   "monsterCount": 2,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 9,
+   "note": "傲慢之塔 8樓-怪物",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45407,
+   "monsterMobKey": "l1j_45407",
+   "monsterCount": 2,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 10,
+   "note": "傲慢之塔 14樓-怪物",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45394,
+   "monsterMobKey": "l1j_45394",
+   "monsterCount": 2,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 11,
+   "note": "傲慢之塔 18樓-怪物",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45406,
+   "monsterMobKey": "l1j_45406",
+   "monsterCount": 2,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 12,
+   "note": "傲慢之塔 24樓-怪物",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45384,
+   "monsterMobKey": "l1j_45384",
+   "monsterCount": 2,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 13,
+   "note": "傲慢之塔 28樓-怪物",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45471,
+   "monsterMobKey": "l1j_45471",
+   "monsterCount": 2,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 14,
+   "note": "傲慢之塔 34樓-怪物",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45403,
+   "monsterMobKey": "l1j_45403",
+   "monsterCount": 2,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 15,
+   "note": "傲慢之塔 38樓-怪物",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45455,
+   "monsterMobKey": "l1j_45455",
+   "monsterCount": 2,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 16,
+   "note": "傲慢之塔 44樓-怪物",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45514,
+   "monsterMobKey": "l1j_45514",
+   "monsterCount": 2,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 17,
+   "note": "傲慢之塔 48樓-怪物",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45522,
+   "monsterMobKey": "l1j_45522",
+   "monsterCount": 2,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 18,
+   "note": "傲慢之塔 54樓-怪物",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45524,
+   "monsterMobKey": "l1j_45524",
+   "monsterCount": 2,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 19,
+   "note": "傲慢之塔 64樓-怪物",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45528,
+   "monsterMobKey": "l1j_45528",
+   "monsterCount": 2,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 20,
+   "note": "傲慢之塔 74樓-怪物",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45503,
+   "monsterMobKey": "l1j_45503",
+   "monsterCount": 2,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 21,
+   "note": "傲慢之塔 78樓-怪物",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45532,
+   "monsterMobKey": "l1j_45532",
+   "monsterCount": 2,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 22,
+   "note": "傲慢之塔 84樓-怪物",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45586,
+   "monsterMobKey": "l1j_45586",
+   "monsterCount": 2,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 23,
+   "note": "傲慢之塔 94樓-怪物",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45621,
+   "monsterMobKey": "l1j_45621",
+   "monsterCount": 2,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 24,
+   "note": "象牙塔 4樓-鋼鐵高崙",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45372,
+   "monsterMobKey": "l1j_45372",
+   "monsterCount": 2,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 25,
+   "note": "象牙塔 4樓-密密",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45141,
+   "monsterMobKey": "l1j_45141",
+   "monsterCount": 2,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 26,
+   "note": "象牙塔 4樓-活鎧甲",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45322,
+   "monsterMobKey": "l1j_45322",
+   "monsterCount": 2,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 27,
+   "note": "象牙塔 5樓-鋼鐵高崙",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45372,
+   "monsterMobKey": "l1j_45372",
+   "monsterCount": 3,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 28,
+   "note": "象牙塔 5樓-密密",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45141,
+   "monsterMobKey": "l1j_45141",
+   "monsterCount": 3,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 29,
+   "note": "象牙塔 5樓-活鎧甲",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45322,
+   "monsterMobKey": "l1j_45322",
+   "monsterCount": 3,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 30,
+   "note": "象牙塔 6樓-影魔",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45162,
+   "monsterMobKey": "l1j_45162",
+   "monsterCount": 3,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 31,
+   "note": "象牙塔 6樓-死神",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45221,
+   "monsterMobKey": "l1j_45221",
+   "monsterCount": 3,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 32,
+   "note": "象牙塔 7樓-影魔",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45162,
+   "monsterMobKey": "l1j_45162",
+   "monsterCount": 4,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 33,
+   "note": "象牙塔 7樓-死神",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45221,
+   "monsterMobKey": "l1j_45221",
+   "monsterCount": 4,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 34,
+   "note": "象牙塔 8樓-鋼鐵高崙",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45372,
+   "monsterMobKey": "l1j_45372",
+   "monsterCount": 5,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 35,
+   "note": "象牙塔 8樓-影魔",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45162,
+   "monsterMobKey": "l1j_45162",
+   "monsterCount": 5,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 36,
+   "note": "象牙塔 8樓-死神",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45221,
+   "monsterMobKey": "l1j_45221",
+   "monsterCount": 5,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 37,
+   "note": "象牙塔 8樓-活鎧甲",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 45322,
+   "monsterMobKey": "l1j_45322",
+   "monsterCount": 5,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 38,
+   "note": "福朗克的迷宮-海賊骷髏",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 46057,
+   "monsterMobKey": "l1j_46057",
+   "monsterCount": 4,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 39,
+   "note": "福朗克的迷宮-海賊骷髏士兵",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 46058,
+   "monsterMobKey": "l1j_46058",
+   "monsterCount": 4,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 40,
+   "note": "福朗克的迷宮-海賊骷髏首領",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 46059,
+   "monsterMobKey": "l1j_46059",
+   "monsterCount": 4,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 41,
+   "note": "福朗克的迷宮-海賊骷髏刀手",
+   "type": "L1MonsterTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 46056,
+   "monsterMobKey": "l1j_46056",
+   "monsterCount": 4,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 42,
+   "note": "福朗克的迷宮-開始地點",
+   "type": "L1TeleportTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 0,
+   "monsterMobKey": null,
+   "monsterCount": 4,
+   "teleportGame": [
+    32679,
+    32742,
+    482
+   ],
+   "teleport": {
+    "mapKey": "l1j_map_482",
+    "cell": [
+     103,
+     38
+    ]
+   },
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 43,
+   "note": "迪哥的廢氣監獄-開始地點",
+   "type": "L1TeleportTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "n",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 0,
+   "monsterMobKey": null,
+   "monsterCount": 0,
+   "teleportGame": [
+    32736,
+    32800,
+    483
+   ],
+   "teleport": {
+    "mapKey": "l1j_map_483",
+    "cell": [
+     96,
+     96
+    ]
+   },
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 44,
+   "note": "幽靈之家-木乃伊的詛咒",
+   "type": "L1SkillTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 0,
+   "monsterMobKey": null,
+   "monsterCount": 0,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 33,
+   "skillKey": "sk_mummy_curse",
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 45,
+   "note": "幽靈之家-闇盲咒術",
+   "type": "L1SkillTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 0,
+   "monsterMobKey": null,
+   "monsterCount": 0,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 20,
+   "skillKey": "sk_dark_blind",
+   "skillTimeSeconds": 5
+  },
+  {
+   "trapId": 46,
+   "note": "幽靈之家-緩速術",
+   "type": "L1SkillTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 0,
+   "monsterMobKey": null,
+   "monsterCount": 0,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 29,
+   "skillKey": "sk_slow",
+   "skillTimeSeconds": 5
+  },
+  {
+   "trapId": 47,
+   "note": "幽靈之家-加速術",
+   "type": "L1SkillTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 0,
+   "monsterMobKey": null,
+   "monsterCount": 0,
+   "teleportGame": [
+    0,
+    0,
+    0
+   ],
+   "teleport": null,
+   "skillId": 43,
+   "skillKey": "sk_haste_spell",
+   "skillTimeSeconds": 5
+  },
+  {
+   "trapId": 48,
+   "note": "幽靈之家-傳送術",
+   "type": "L1TeleportTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 0,
+   "monsterMobKey": null,
+   "monsterCount": 0,
+   "teleportGame": [
+    32730,
+    32829,
+    5140
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 49,
+   "note": "幽靈之家-傳送術",
+   "type": "L1TeleportTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 0,
+   "monsterMobKey": null,
+   "monsterCount": 0,
+   "teleportGame": [
+    32749,
+    32813,
+    5140
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 50,
+   "note": "幽靈之家-傳送術",
+   "type": "L1TeleportTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 0,
+   "monsterMobKey": null,
+   "monsterCount": 0,
+   "teleportGame": [
+    32747,
+    32867,
+    5140
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 51,
+   "note": "幽靈之家-傳送術",
+   "type": "L1TeleportTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 0,
+   "monsterMobKey": null,
+   "monsterCount": 0,
+   "teleportGame": [
+    32785,
+    32819,
+    5140
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  },
+  {
+   "trapId": 52,
+   "note": "幽靈之家-傳送術",
+   "type": "L1TeleportTrap",
+   "gfxId": 0,
+   "detectionable": false,
+   "base": 0,
+   "dice": 0,
+   "diceCount": 0,
+   "poisonType": "-",
+   "poisonDelayMs": 0,
+   "poisonTimeMs": 0,
+   "poisonDamage": 0,
+   "monsterNpcId": 0,
+   "monsterMobKey": null,
+   "monsterCount": 0,
+   "teleportGame": [
+    32797,
+    32869,
+    5140
+   ],
+   "teleport": null,
+   "skillId": 0,
+   "skillKey": null,
+   "skillTimeSeconds": 0
+  }
+ ],
+ "maps": {
+  "l1j_map_482": [
+   {
+    "spawnId": 155,
+    "note": "福朗克的迷宮",
+    "trapId": 3,
+    "cell": [
+     119,
+     31
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 156,
+    "note": "福朗克的迷宮",
+    "trapId": 4,
+    "cell": [
+     120,
+     42
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 157,
+    "note": "福朗克的迷宮",
+    "trapId": 38,
+    "cell": [
+     116,
+     46
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 158,
+    "note": "福朗克的迷宮",
+    "trapId": 5,
+    "cell": [
+     140,
+     32
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 159,
+    "note": "福朗克的迷宮",
+    "trapId": 39,
+    "cell": [
+     140,
+     36
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 160,
+    "note": "福朗克的迷宮",
+    "trapId": 6,
+    "cell": [
+     148,
+     40
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 161,
+    "note": "福朗克的迷宮",
+    "trapId": 3,
+    "cell": [
+     151,
+     37
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 162,
+    "note": "福朗克的迷宮",
+    "trapId": 38,
+    "cell": [
+     151,
+     43
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 163,
+    "note": "福朗克的迷宮",
+    "trapId": 4,
+    "cell": [
+     154,
+     40
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 164,
+    "note": "福朗克的迷宮",
+    "trapId": 5,
+    "cell": [
+     223,
+     32
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 165,
+    "note": "福朗克的迷宮",
+    "trapId": 40,
+    "cell": [
+     198,
+     36
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 166,
+    "note": "福朗克的迷宮",
+    "trapId": 40,
+    "cell": [
+     152,
+     80
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 167,
+    "note": "福朗克的迷宮",
+    "trapId": 6,
+    "cell": [
+     158,
+     140
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 168,
+    "note": "福朗克的迷宮",
+    "trapId": 3,
+    "cell": [
+     155,
+     146
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 169,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 41,
+    "cell": [
+     194,
+     153
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 170,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 40,
+    "cell": [
+     200,
+     144
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 171,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 5,
+    "cell": [
+     194,
+     143
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 172,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 6,
+    "cell": [
+     165,
+     146
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 173,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 40,
+    "cell": [
+     127,
+     164
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 174,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 5,
+    "cell": [
+     124,
+     162
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 175,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 4,
+    "cell": [
+     176,
+     77
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 176,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 38,
+    "cell": [
+     212,
+     65
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 177,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 39,
+    "cell": [
+     205,
+     98
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 178,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 5,
+    "cell": [
+     195,
+     100
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 179,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 40,
+    "cell": [
+     202,
+     54
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 180,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 41,
+    "cell": [
+     161,
+     88
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 181,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 4,
+    "cell": [
+     161,
+     100
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 182,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 4,
+    "cell": [
+     177,
+     106
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 183,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 40,
+    "cell": [
+     155,
+     88
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 184,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 41,
+    "cell": [
+     155,
+     94
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 185,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 5,
+    "cell": [
+     155,
+     100
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 186,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 38,
+    "cell": [
+     92,
+     56
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 187,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 39,
+    "cell": [
+     97,
+     61
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 188,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 3,
+    "cell": [
+     100,
+     75
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 189,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 4,
+    "cell": [
+     102,
+     78
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 190,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 40,
+    "cell": [
+     104,
+     84
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 191,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 41,
+    "cell": [
+     97,
+     83
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 192,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 4,
+    "cell": [
+     96,
+     109
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 193,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 5,
+    "cell": [
+     106,
+     112
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 194,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 6,
+    "cell": [
+     113,
+     100
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 195,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 38,
+    "cell": [
+     121,
+     106
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 196,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 39,
+    "cell": [
+     118,
+     109
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 197,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 3,
+    "cell": [
+     167,
+     140
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 198,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 4,
+    "cell": [
+     128,
+     125
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 199,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 40,
+    "cell": [
+     130,
+     132
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 200,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 41,
+    "cell": [
+     126,
+     135
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 201,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 6,
+    "cell": [
+     148,
+     104
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 202,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 38,
+    "cell": [
+     147,
+     52
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 203,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 5,
+    "cell": [
+     150,
+     50
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 204,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 40,
+    "cell": [
+     156,
+     52
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 205,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 41,
+    "cell": [
+     139,
+     98
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 206,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 4,
+    "cell": [
+     219,
+     107
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 207,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 4,
+    "cell": [
+     217,
+     98
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 208,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 40,
+    "cell": [
+     167,
+     88
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 209,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 41,
+    "cell": [
+     167,
+     94
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 210,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 5,
+    "cell": [
+     167,
+     100
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 211,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 6,
+    "cell": [
+     201,
+     32
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 212,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 42,
+    "cell": [
+     210,
+     122
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 213,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 42,
+    "cell": [
+     87,
+     142
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 214,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 42,
+    "cell": [
+     169,
+     140
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 215,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 42,
+    "cell": [
+     136,
+     100
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 216,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 42,
+    "cell": [
+     119,
+     78
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   }
+  ],
+  "l1j_map_483": [
+   {
+    "spawnId": 217,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 38,
+    "cell": [
+     110,
+     113
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 218,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 39,
+    "cell": [
+     100,
+     130
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 219,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 5,
+    "cell": [
+     95,
+     147
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 220,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 4,
+    "cell": [
+     109,
+     139
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 221,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 40,
+    "cell": [
+     141,
+     97
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 222,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 43,
+    "cell": [
+     140,
+     98
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 223,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 3,
+    "cell": [
+     141,
+     99
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 224,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 6,
+    "cell": [
+     142,
+     98
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 225,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 6,
+    "cell": [
+     143,
+     103
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 226,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 43,
+    "cell": [
+     150,
+     96
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 227,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 41,
+    "cell": [
+     143,
+     105
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 228,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 43,
+    "cell": [
+     142,
+     104
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 229,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 6,
+    "cell": [
+     149,
+     98
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 230,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 40,
+    "cell": [
+     153,
+     99
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 231,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 6,
+    "cell": [
+     153,
+     97
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 232,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 39,
+    "cell": [
+     153,
+     95
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 233,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 46,
+    "cell": [
+     155,
+     95
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 234,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 4,
+    "cell": [
+     143,
+     109
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 235,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 43,
+    "cell": [
+     142,
+     110
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 236,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 39,
+    "cell": [
+     143,
+     111
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 237,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 6,
+    "cell": [
+     144,
+     110
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 238,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 41,
+    "cell": [
+     143,
+     111
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 239,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 43,
+    "cell": [
+     139,
+     113
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 240,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 40,
+    "cell": [
+     140,
+     114
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 241,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 39,
+    "cell": [
+     149,
+     109
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 242,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 5,
+    "cell": [
+     148,
+     110
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 243,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 43,
+    "cell": [
+     149,
+     111
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 244,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 44,
+    "cell": [
+     150,
+     110
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 245,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 4,
+    "cell": [
+     146,
+     116
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 246,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 6,
+    "cell": [
+     147,
+     115
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 247,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 5,
+    "cell": [
+     155,
+     109
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 248,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 6,
+    "cell": [
+     154,
+     110
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 249,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 43,
+    "cell": [
+     156,
+     110
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 250,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 40,
+    "cell": [
+     155,
+     111
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 251,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 3,
+    "cell": [
+     156,
+     106
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 252,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 39,
+    "cell": [
+     157,
+     107
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 253,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 44,
+    "cell": [
+     151,
+     114
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 254,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 43,
+    "cell": [
+     151,
+     116
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 255,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 5,
+    "cell": [
+     152,
+     115
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 256,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 6,
+    "cell": [
+     156,
+     115
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 257,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 4,
+    "cell": [
+     157,
+     114
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 258,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 6,
+    "cell": [
+     158,
+     106
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 259,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 43,
+    "cell": [
+     159,
+     105
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 260,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 5,
+    "cell": [
+     159,
+     107
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 261,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 40,
+    "cell": [
+     160,
+     106
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 262,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 6,
+    "cell": [
+     162,
+     105
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 263,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 43,
+    "cell": [
+     161,
+     104
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 264,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 41,
+    "cell": [
+     163,
+     104
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 265,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 3,
+    "cell": [
+     162,
+     103
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 266,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 6,
+    "cell": [
+     167,
+     103
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 267,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 43,
+    "cell": [
+     166,
+     104
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 268,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 6,
+    "cell": [
+     160,
+     103
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 269,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 4,
+    "cell": [
+     160,
+     98
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 270,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 6,
+    "cell": [
+     163,
+     99
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 271,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 3,
+    "cell": [
+     164,
+     100
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 272,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 41,
+    "cell": [
+     163,
+     99
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 273,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 43,
+    "cell": [
+     164,
+     98
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 274,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 6,
+    "cell": [
+     164,
+     96
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 275,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 43,
+    "cell": [
+     162,
+     96
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 276,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 39,
+    "cell": [
+     163,
+     95
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 277,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 43,
+    "cell": [
+     162,
+     109
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 278,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 5,
+    "cell": [
+     166,
+     108
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 279,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 41,
+    "cell": [
+     167,
+     109
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 280,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 38,
+    "cell": [
+     168,
+     110
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 281,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 6,
+    "cell": [
+     162,
+     111
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 282,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 5,
+    "cell": [
+     161,
+     112
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 283,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 43,
+    "cell": [
+     163,
+     112
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 284,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 43,
+    "cell": [
+     140,
+     133
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 285,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 5,
+    "cell": [
+     155,
+     143
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 286,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 5,
+    "cell": [
+     95,
+     127
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 287,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 43,
+    "cell": [
+     121,
+     103
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 288,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 38,
+    "cell": [
+     163,
+     110
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 289,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 40,
+    "cell": [
+     165,
+     99
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 290,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 5,
+    "cell": [
+     165,
+     194
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 291,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 4,
+    "cell": [
+     148,
+     223
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 292,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 5,
+    "cell": [
+     107,
+     160
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 293,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 5,
+    "cell": [
+     142,
+     203
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 294,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 5,
+    "cell": [
+     133,
+     176
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 295,
+    "note": "迪哥的廢氣監獄",
+    "trapId": 5,
+    "cell": [
+     108,
+     210
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   }
+  ],
+  "l1j_map_484": [
+   {
+    "spawnId": 296,
+    "note": "豪勢的地監",
+    "trapId": 5,
+    "cell": [
+     28,
+     117
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 297,
+    "note": "豪勢的地監",
+    "trapId": 39,
+    "cell": [
+     34,
+     117
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 298,
+    "note": "豪勢的地監",
+    "trapId": 4,
+    "cell": [
+     55,
+     96
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 299,
+    "note": "豪勢的地監",
+    "trapId": 41,
+    "cell": [
+     65,
+     88
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 300,
+    "note": "豪勢的地監",
+    "trapId": 6,
+    "cell": [
+     68,
+     89
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 301,
+    "note": "豪勢的地監",
+    "trapId": 39,
+    "cell": [
+     88,
+     92
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 302,
+    "note": "豪勢的地監",
+    "trapId": 40,
+    "cell": [
+     103,
+     89
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 303,
+    "note": "豪勢的地監",
+    "trapId": 2,
+    "cell": [
+     100,
+     92
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 304,
+    "note": "豪勢的地監",
+    "trapId": 5,
+    "cell": [
+     97,
+     106
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 305,
+    "note": "豪勢的地監",
+    "trapId": 4,
+    "cell": [
+     102,
+     126
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 306,
+    "note": "豪勢的地監",
+    "trapId": 41,
+    "cell": [
+     88,
+     122
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 307,
+    "note": "豪勢的地監",
+    "trapId": 5,
+    "cell": [
+     88,
+     137
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 308,
+    "note": "豪勢的地監",
+    "trapId": 40,
+    "cell": [
+     105,
+     142
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 309,
+    "note": "豪勢的地監",
+    "trapId": 3,
+    "cell": [
+     83,
+     140
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 310,
+    "note": "豪勢的地監",
+    "trapId": 5,
+    "cell": [
+     80,
+     158
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 311,
+    "note": "豪勢的地監",
+    "trapId": 41,
+    "cell": [
+     75,
+     144
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 312,
+    "note": "豪勢的地監",
+    "trapId": 45,
+    "cell": [
+     70,
+     124
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 313,
+    "note": "豪勢的地監",
+    "trapId": 39,
+    "cell": [
+     58,
+     141
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   },
+   {
+    "spawnId": 314,
+    "note": "豪勢的地監",
+    "trapId": 5,
+    "cell": [
+     59,
+     146
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 315,
+    "note": "豪勢的地監",
+    "trapId": 44,
+    "cell": [
+     57,
+     149
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 316,
+    "note": "豪勢的地監",
+    "trapId": 41,
+    "cell": [
+     75,
+     97
+    ],
+    "random": [
+     0,
+     0
+    ],
+    "count": 1,
+    "spanMs": 10000
+   }
+  ],
+  "pride_f14": [
+   {
+    "spawnId": 15,
+    "note": "",
+    "trapId": 10,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 16,
+    "note": "",
+    "trapId": 2,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 17,
+    "note": "",
+    "trapId": 3,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 18,
+    "note": "",
+    "trapId": 4,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 19,
+    "note": "",
+    "trapId": 5,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 20,
+    "note": "",
+    "trapId": 6,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 21,
+    "note": "",
+    "trapId": 7,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   }
+  ],
+  "pride_f18": [
+   {
+    "spawnId": 22,
+    "note": "",
+    "trapId": 11,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 23,
+    "note": "",
+    "trapId": 2,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 24,
+    "note": "",
+    "trapId": 3,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 25,
+    "note": "",
+    "trapId": 4,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 26,
+    "note": "",
+    "trapId": 5,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 27,
+    "note": "",
+    "trapId": 6,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 28,
+    "note": "",
+    "trapId": 7,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   }
+  ],
+  "pride_f24": [
+   {
+    "spawnId": 29,
+    "note": "",
+    "trapId": 12,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 30,
+    "note": "",
+    "trapId": 2,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 31,
+    "note": "",
+    "trapId": 3,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 32,
+    "note": "",
+    "trapId": 4,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 33,
+    "note": "",
+    "trapId": 5,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 34,
+    "note": "",
+    "trapId": 6,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 35,
+    "note": "",
+    "trapId": 7,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   }
+  ],
+  "pride_f28": [
+   {
+    "spawnId": 36,
+    "note": "",
+    "trapId": 13,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 37,
+    "note": "",
+    "trapId": 2,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 38,
+    "note": "",
+    "trapId": 3,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 39,
+    "note": "",
+    "trapId": 4,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 40,
+    "note": "",
+    "trapId": 5,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 41,
+    "note": "",
+    "trapId": 6,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 42,
+    "note": "",
+    "trapId": 7,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   }
+  ],
+  "pride_f34": [
+   {
+    "spawnId": 43,
+    "note": "",
+    "trapId": 14,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 44,
+    "note": "",
+    "trapId": 2,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 45,
+    "note": "",
+    "trapId": 3,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 46,
+    "note": "",
+    "trapId": 4,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 47,
+    "note": "",
+    "trapId": 5,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 48,
+    "note": "",
+    "trapId": 6,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 49,
+    "note": "",
+    "trapId": 7,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   }
+  ],
+  "pride_f38": [
+   {
+    "spawnId": 50,
+    "note": "",
+    "trapId": 15,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 51,
+    "note": "",
+    "trapId": 2,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 52,
+    "note": "",
+    "trapId": 3,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 53,
+    "note": "",
+    "trapId": 4,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 54,
+    "note": "",
+    "trapId": 5,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 55,
+    "note": "",
+    "trapId": 6,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 56,
+    "note": "",
+    "trapId": 7,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   }
+  ],
+  "pride_f4": [
+   {
+    "spawnId": 1,
+    "note": "",
+    "trapId": 8,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 2,
+    "note": "",
+    "trapId": 2,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 3,
+    "note": "",
+    "trapId": 3,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 4,
+    "note": "",
+    "trapId": 4,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 5,
+    "note": "",
+    "trapId": 5,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 6,
+    "note": "",
+    "trapId": 6,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 7,
+    "note": "",
+    "trapId": 7,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   }
+  ],
+  "pride_f44": [
+   {
+    "spawnId": 57,
+    "note": "",
+    "trapId": 16,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 58,
+    "note": "",
+    "trapId": 2,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 59,
+    "note": "",
+    "trapId": 3,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 60,
+    "note": "",
+    "trapId": 4,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 61,
+    "note": "",
+    "trapId": 5,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 62,
+    "note": "",
+    "trapId": 6,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 63,
+    "note": "",
+    "trapId": 7,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   }
+  ],
+  "pride_f48": [
+   {
+    "spawnId": 64,
+    "note": "",
+    "trapId": 17,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 65,
+    "note": "",
+    "trapId": 2,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 66,
+    "note": "",
+    "trapId": 3,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 67,
+    "note": "",
+    "trapId": 4,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 68,
+    "note": "",
+    "trapId": 5,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 69,
+    "note": "",
+    "trapId": 6,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 70,
+    "note": "",
+    "trapId": 7,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   }
+  ],
+  "pride_f54": [
+   {
+    "spawnId": 71,
+    "note": "",
+    "trapId": 18,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 72,
+    "note": "",
+    "trapId": 2,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 73,
+    "note": "",
+    "trapId": 3,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 74,
+    "note": "",
+    "trapId": 4,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 75,
+    "note": "",
+    "trapId": 5,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 76,
+    "note": "",
+    "trapId": 6,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 77,
+    "note": "",
+    "trapId": 7,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   }
+  ],
+  "pride_f58": [
+   {
+    "spawnId": 78,
+    "note": "",
+    "trapId": 18,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 79,
+    "note": "",
+    "trapId": 2,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 80,
+    "note": "",
+    "trapId": 3,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 81,
+    "note": "",
+    "trapId": 4,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 82,
+    "note": "",
+    "trapId": 5,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 83,
+    "note": "",
+    "trapId": 6,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 84,
+    "note": "",
+    "trapId": 7,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   }
+  ],
+  "pride_f64": [
+   {
+    "spawnId": 85,
+    "note": "",
+    "trapId": 19,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 86,
+    "note": "",
+    "trapId": 2,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 87,
+    "note": "",
+    "trapId": 3,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 88,
+    "note": "",
+    "trapId": 4,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 89,
+    "note": "",
+    "trapId": 5,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 90,
+    "note": "",
+    "trapId": 6,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 91,
+    "note": "",
+    "trapId": 7,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   }
+  ],
+  "pride_f68": [
+   {
+    "spawnId": 92,
+    "note": "",
+    "trapId": 19,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 93,
+    "note": "",
+    "trapId": 2,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 94,
+    "note": "",
+    "trapId": 3,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 95,
+    "note": "",
+    "trapId": 4,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 96,
+    "note": "",
+    "trapId": 5,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 97,
+    "note": "",
+    "trapId": 6,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 98,
+    "note": "",
+    "trapId": 7,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   }
+  ],
+  "pride_f74": [
+   {
+    "spawnId": 99,
+    "note": "",
+    "trapId": 20,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 100,
+    "note": "",
+    "trapId": 2,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 101,
+    "note": "",
+    "trapId": 3,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 102,
+    "note": "",
+    "trapId": 4,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 103,
+    "note": "",
+    "trapId": 5,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 104,
+    "note": "",
+    "trapId": 6,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 105,
+    "note": "",
+    "trapId": 7,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   }
+  ],
+  "pride_f78": [
+   {
+    "spawnId": 106,
+    "note": "",
+    "trapId": 21,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 107,
+    "note": "",
+    "trapId": 2,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 108,
+    "note": "",
+    "trapId": 3,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 109,
+    "note": "",
+    "trapId": 4,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 110,
+    "note": "",
+    "trapId": 5,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 111,
+    "note": "",
+    "trapId": 6,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 112,
+    "note": "",
+    "trapId": 7,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   }
+  ],
+  "pride_f8": [
+   {
+    "spawnId": 8,
+    "note": "",
+    "trapId": 9,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 9,
+    "note": "",
+    "trapId": 2,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 10,
+    "note": "",
+    "trapId": 3,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 11,
+    "note": "",
+    "trapId": 4,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 12,
+    "note": "",
+    "trapId": 5,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 13,
+    "note": "",
+    "trapId": 6,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 14,
+    "note": "",
+    "trapId": 7,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   }
+  ],
+  "pride_f84": [
+   {
+    "spawnId": 113,
+    "note": "",
+    "trapId": 22,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 114,
+    "note": "",
+    "trapId": 2,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 115,
+    "note": "",
+    "trapId": 3,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 116,
+    "note": "",
+    "trapId": 4,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 117,
+    "note": "",
+    "trapId": 5,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 118,
+    "note": "",
+    "trapId": 6,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 119,
+    "note": "",
+    "trapId": 7,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   }
+  ],
+  "pride_f88": [
+   {
+    "spawnId": 120,
+    "note": "",
+    "trapId": 22,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 121,
+    "note": "",
+    "trapId": 2,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 122,
+    "note": "",
+    "trapId": 3,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 123,
+    "note": "",
+    "trapId": 4,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 124,
+    "note": "",
+    "trapId": 5,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 125,
+    "note": "",
+    "trapId": 6,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 126,
+    "note": "",
+    "trapId": 7,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   }
+  ],
+  "pride_f94": [
+   {
+    "spawnId": 127,
+    "note": "",
+    "trapId": 23,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 128,
+    "note": "",
+    "trapId": 2,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 129,
+    "note": "",
+    "trapId": 3,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 130,
+    "note": "",
+    "trapId": 4,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 131,
+    "note": "",
+    "trapId": 5,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 132,
+    "note": "",
+    "trapId": 6,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 133,
+    "note": "",
+    "trapId": 7,
+    "cell": [
+     94,
+     94
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   }
+  ],
+  "pride_f98": [
+   {
+    "spawnId": 134,
+    "note": "",
+    "trapId": 23,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 135,
+    "note": "",
+    "trapId": 2,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 136,
+    "note": "",
+    "trapId": 3,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 137,
+    "note": "",
+    "trapId": 4,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 138,
+    "note": "",
+    "trapId": 5,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 139,
+    "note": "",
+    "trapId": 6,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 140,
+    "note": "",
+    "trapId": 7,
+    "cell": [
+     94,
+     93
+    ],
+    "random": [
+     100,
+     100
+    ],
+    "count": 20,
+    "spanMs": 0
+   }
+  ],
+  "zone_37": [
+   {
+    "spawnId": 141,
+    "note": "",
+    "trapId": 24,
+    "cell": [
+     64,
+     66
+    ],
+    "random": [
+     50,
+     10
+    ],
+    "count": 30,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 142,
+    "note": "",
+    "trapId": 25,
+    "cell": [
+     64,
+     66
+    ],
+    "random": [
+     50,
+     10
+    ],
+    "count": 30,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 143,
+    "note": "",
+    "trapId": 26,
+    "cell": [
+     64,
+     66
+    ],
+    "random": [
+     50,
+     10
+    ],
+    "count": 30,
+    "spanMs": 0
+   }
+  ],
+  "zone_38": [
+   {
+    "spawnId": 144,
+    "note": "",
+    "trapId": 27,
+    "cell": [
+     66,
+     66
+    ],
+    "random": [
+     50,
+     10
+    ],
+    "count": 50,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 145,
+    "note": "",
+    "trapId": 28,
+    "cell": [
+     66,
+     66
+    ],
+    "random": [
+     50,
+     10
+    ],
+    "count": 50,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 146,
+    "note": "",
+    "trapId": 29,
+    "cell": [
+     66,
+     66
+    ],
+    "random": [
+     50,
+     10
+    ],
+    "count": 50,
+    "spanMs": 0
+   }
+  ],
+  "zone_39": [
+   {
+    "spawnId": 147,
+    "note": "",
+    "trapId": 30,
+    "cell": [
+     63,
+     65
+    ],
+    "random": [
+     50,
+     50
+    ],
+    "count": 100,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 148,
+    "note": "",
+    "trapId": 31,
+    "cell": [
+     63,
+     65
+    ],
+    "random": [
+     50,
+     50
+    ],
+    "count": 100,
+    "spanMs": 0
+   }
+  ],
+  "zone_40": [
+   {
+    "spawnId": 149,
+    "note": "",
+    "trapId": 32,
+    "cell": [
+     58,
+     61
+    ],
+    "random": [
+     50,
+     50
+    ],
+    "count": 120,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 150,
+    "note": "",
+    "trapId": 33,
+    "cell": [
+     58,
+     61
+    ],
+    "random": [
+     50,
+     50
+    ],
+    "count": 120,
+    "spanMs": 0
+   }
+  ],
+  "zone_41": [
+   {
+    "spawnId": 151,
+    "note": "",
+    "trapId": 34,
+    "cell": [
+     61,
+     66
+    ],
+    "random": [
+     50,
+     50
+    ],
+    "count": 50,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 152,
+    "note": "",
+    "trapId": 35,
+    "cell": [
+     61,
+     66
+    ],
+    "random": [
+     50,
+     50
+    ],
+    "count": 50,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 153,
+    "note": "",
+    "trapId": 36,
+    "cell": [
+     61,
+     66
+    ],
+    "random": [
+     50,
+     50
+    ],
+    "count": 50,
+    "spanMs": 0
+   },
+   {
+    "spawnId": 154,
+    "note": "",
+    "trapId": 37,
+    "cell": [
+     61,
+     66
+    ],
+    "random": [
+     50,
+     50
+    ],
+    "count": 50,
+    "spanMs": 0
+   }
+  ]
+ }
+}
