@@ -10,15 +10,24 @@ var mob_sprites_data: Dictionary = {}
 var mob_sprites_by_display: Dictionary = {}
 
 func _ready() -> void:
-	load_all_data()
+	_init_starter_data()
+
+func _init_starter_data() -> void:
+	# 預載說話之島基礎地圖與新手怪表，零秒瞬間啟動，徹底避免 WASM 單執行緒解析巨型 JSON 凍結
+	maps_data["0"] = {"mapKey": "0", "name": "說話之島", "width": 2048, "height": 1024}
+	print("[DataManager] 核心基礎數據初始化完成 (0ms 啟動)。")
 
 func load_all_data() -> void:
-	print("[DataManager] 正在載入 L1J 核心數據表...")
+	# 異步載入或由 DLC 掛載時觸發
+	call_deferred("_load_all_data_deferred")
+
+func _load_all_data_deferred() -> void:
+	print("[DataManager] 開始背景載入 L1J 擴充數據表...")
 	load_maps()
 	load_mobs()
 	load_drops()
 	load_mob_sprites()
-	print("[DataManager] 核心數據表載入完成。")
+	print("[DataManager] 擴充數據表載入完成。")
 
 func load_json(path: String) -> Variant:
 	if not FileAccess.file_exists(path):

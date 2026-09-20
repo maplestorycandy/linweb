@@ -33,6 +33,18 @@ var _frame_cache: Dictionary = {}
 var _missing: Dictionary = {}
 
 
+func _ready() -> void:
+	if has_node("/root/BackgroundPackLoader"):
+		var loader = get_node("/root/BackgroundPackLoader")
+		loader.pack_loaded.connect(_on_pack_loaded)
+
+func _on_pack_loaded(pack_name: String) -> void:
+	_missing.clear()
+	_manifests.clear()
+	_textures.clear()
+	_frame_cache.clear()
+	print("[AtlasLibrary] DLC %s 掛載完畢，已清空資源缺失快取。" % pack_name)
+
 func has_atlas(group: String, atlas_name: String) -> bool:
 	return get_manifest(group, atlas_name) != null
 

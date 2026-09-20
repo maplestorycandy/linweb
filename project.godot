@@ -19,6 +19,7 @@ config/features=PackedStringArray("4.3", "GL Compatibility")
 
 AtlasLibrary="*res://scripts/atlas_library.gd"
 DataManager="*res://scripts/data_manager.gd"
+BackgroundPackLoader="*res://scripts/network/background_pack_loader.gd"
 
 [display]
 

@@ -112,6 +112,10 @@ func _ready() -> void:
 	_setup_hud()
 	_setup_dialogs()
 	
+	if has_node("/root/BackgroundPackLoader"):
+		var loader = get_node("/root/BackgroundPackLoader")
+		loader.pack_loaded.connect(_on_dlc_pack_loaded)
+	
 	_add_chat_msg("[color=#facc15]★ 歡迎來到說話之島！全技能已為您學滿，點擊【技能】面板即可施放。[/color]", "ALL")
 	_add_chat_msg("[color=#60a5fa]系統：點擊地面移動，點擊怪物自動走位揮刀攻擊，擊敗怪物有金幣掉落。[/color]", "ALL")
 	_add_chat_msg("[color=#4ade80]提示：點擊右側【連線開房】按鈕即可創房或輸入房號與好友組隊冒險！[/color]", "ALL")
@@ -373,10 +377,22 @@ func _swap_player_dir(new_dir: int) -> void:
 	var atlas_name = _player_atlas_base + sfx
 	if not _player_dir_frames.has(new_dir):
 		var sf = AtlasLibrary.get_sprite_frames("classanim", atlas_name, 8.0, true)
+		if sf == null:
+			sf = AtlasLibrary.get_sprite_frames("classanim", _player_atlas_base, 8.0, true)
+		if sf == null:
+			# 若進階職業 DLC 仍在下載中，優雅回退至基礎職業 (男騎士/女騎士)
+			var fallback_base = "男騎士" if _char_data.get("gender", "male") == "male" else "女騎士"
+			sf = AtlasLibrary.get_sprite_frames("classanim", fallback_base + sfx, 8.0, true)
+			if sf == null:
+				sf = AtlasLibrary.get_sprite_frames("classanim", fallback_base, 8.0, true)
 		if sf != null:
 			_player_dir_frames[new_dir] = sf
-		else:
-			_player_dir_frames[new_dir] = AtlasLibrary.get_sprite_frames("classanim", _player_atlas_base, 8.0, true)
+
+func _on_dlc_pack_loaded(pack_name: String) -> void:
+	if pack_name.contains("classes"):
+		_player_dir_frames.clear()
+		_swap_player_dir(_player_cur_dir)
+		_add_chat_msg("[color=#4ade80]系統：進階職業擴充資源包已載入完畢，外觀已無縫更新！[/color]", "ALL")
 	
 	var cur_sf = _player_dir_frames.get(new_dir)
 	if cur_sf != null and _player_sprite != null:

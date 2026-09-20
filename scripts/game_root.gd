@@ -11,6 +11,11 @@ func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
 	_apply_theme()
 	show_menu()
+	_start_background_dlc_downloads()
+
+func _start_background_dlc_downloads() -> void:
+	if BackgroundPackLoader != null:
+		BackgroundPackLoader.start_downloads(["dlc_classes.pck", "dlc_world.pck"])
 
 func _apply_theme() -> void:
 	# 載入輕量像素繁體中文字型 Cubic_11，解決 WebAssembly 平台缺字 tofu 亂碼問題，且體積僅 2.7MB 秒開
