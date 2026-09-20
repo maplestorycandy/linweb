@@ -1,12 +1,11 @@
 extends Control
 
 # 經典天堂裝備視窗 (EquipmentDialog)
+# 支援各職業真實專屬裝備與數值即時連動
 signal closed
 signal stats_changed
 
 var _char_data: Dictionary = {}
-var _equipped_items: Dictionary = {}
-var _panel_bg: TextureRect
 var _drag_offset: Vector2 = Vector2.ZERO
 var _is_dragging: bool = false
 
@@ -15,6 +14,9 @@ func init_dialog(char_data: Dictionary) -> void:
 	_setup_ui()
 
 func _setup_ui() -> void:
+	for c in get_children():
+		c.queue_free()
+		
 	size = Vector2(280, 390)
 	position = Vector2(100, 80)
 	
@@ -81,20 +83,8 @@ func _setup_ui() -> void:
 		body_tex.modulate = Color(1, 1, 1, 0.45)
 		add_child(body_tex)
 	
-	# 裝備槽位清單
-	var slots = [
-		{"name": "武器", "item": "+9 瑟魯基之劍", "pos": Vector2(16, 42)},
-		{"name": "頭盔", "item": "+7 騎士面甲", "pos": Vector2(16, 76)},
-		{"name": "盔甲", "item": "+7 水晶盔甲", "pos": Vector2(16, 110)},
-		{"name": "斗篷", "item": "+7 抗魔法斗篷", "pos": Vector2(16, 144)},
-		{"name": "盾牌", "item": "+7 敏捷盾牌", "pos": Vector2(150, 42)},
-		{"name": "手套", "item": "+7 腕甲", "pos": Vector2(150, 76)},
-		{"name": "靴子", "item": "+7 鋼鐵長靴", "pos": Vector2(150, 110)},
-		{"name": "項鍊", "item": "力量項鍊", "pos": Vector2(150, 144)},
-		{"name": "戒指", "item": "滅魔戒指 x2", "pos": Vector2(16, 178)},
-		{"name": "腰帶", "item": "多羅皮帶", "pos": Vector2(150, 178)},
-	]
-	
+	# 對應職業專屬裝備清單
+	var slots = _get_class_equipment(c_key)
 	for s in slots:
 		var slot_p = ColorRect.new()
 		slot_p.color = Color(0.12, 0.15, 0.2, 0.75)
@@ -112,7 +102,7 @@ func _setup_ui() -> void:
 		var l_val = Label.new()
 		l_val.text = s["item"]
 		l_val.position = Vector2(4, 13)
-		l_val.add_theme_font_size_override("font_size", 10)
+		l_val.add_theme_font_size_override("font_size", 9)
 		l_val.add_theme_color_override("font_color", Color("#fbbf24"))
 		slot_p.add_child(l_val)
 	
@@ -141,6 +131,114 @@ func _setup_ui() -> void:
 		sl.add_theme_font_size_override("font_size", 10)
 		sl.add_theme_color_override("font_color", Color("#e2e8f0") if i < 3 else Color("#67e8f9"))
 		stat_panel.add_child(sl)
+
+func _get_class_equipment(c_key: String) -> Array:
+	match c_key:
+		"knight":
+			return [
+				{"name": "武器", "item": "+8 大馬士革刀", "pos": Vector2(16, 42)},
+				{"name": "頭盔", "item": "+6 鋼鐵頭盔", "pos": Vector2(16, 76)},
+				{"name": "盔甲", "item": "+7 鋼鐵金屬鎧甲", "pos": Vector2(16, 110)},
+				{"name": "斗篷", "item": "+6 抗魔法斗篷", "pos": Vector2(16, 144)},
+				{"name": "盾牌", "item": "+6 鋼鐵盾牌", "pos": Vector2(150, 42)},
+				{"name": "手套", "item": "+6 鋼鐵手套", "pos": Vector2(150, 76)},
+				{"name": "靴子", "item": "+6 鋼鐵長靴", "pos": Vector2(150, 110)},
+				{"name": "項鍊", "item": "力量項鍊 (+1 STR)", "pos": Vector2(150, 144)},
+				{"name": "戒指", "item": "抗魔戒指 x2", "pos": Vector2(16, 178)},
+				{"name": "腰帶", "item": "多羅皮帶 (+500 負重)", "pos": Vector2(150, 178)}
+			]
+		"mage":
+			return [
+				{"name": "武器", "item": "+8 巫術魔法杖", "pos": Vector2(16, 42)},
+				{"name": "頭盔", "item": "+6 智力頭巾", "pos": Vector2(16, 76)},
+				{"name": "盔甲", "item": "+6 巫師魔袍", "pos": Vector2(16, 110)},
+				{"name": "斗篷", "item": "+7 瑪那斗篷 (MP+5)", "pos": Vector2(16, 144)},
+				{"name": "盾牌", "item": "+6 魔法師魔杖", "pos": Vector2(150, 42)},
+				{"name": "手套", "item": "屬性魔手", "pos": Vector2(150, 76)},
+				{"name": "靴子", "item": "+4 法師長靴", "pos": Vector2(150, 110)},
+				{"name": "項鍊", "item": "智力項鍊 (+1 INT)", "pos": Vector2(150, 144)},
+				{"name": "戒指", "item": "知識戒指 x2", "pos": Vector2(16, 178)},
+				{"name": "腰帶", "item": "心靈皮帶 (MP+50)", "pos": Vector2(150, 178)}
+			]
+		"elf":
+			return [
+				{"name": "武器", "item": "+8 尤米弓", "pos": Vector2(16, 42)},
+				{"name": "頭盔", "item": "+6 艾爾穆的祝福", "pos": Vector2(16, 76)},
+				{"name": "盔甲", "item": "+7 精靈金屬盔甲", "pos": Vector2(16, 110)},
+				{"name": "斗篷", "item": "+6 保護斗篷", "pos": Vector2(16, 144)},
+				{"name": "盾牌", "item": "精靈金羽箭袋", "pos": Vector2(150, 42)},
+				{"name": "手套", "item": "+6 敏捷手套", "pos": Vector2(150, 76)},
+				{"name": "靴子", "item": "+6 精靈長靴", "pos": Vector2(150, 110)},
+				{"name": "項鍊", "item": "敏捷項鍊 (+1 DEX)", "pos": Vector2(150, 144)},
+				{"name": "戒指", "item": "深淵戒指 x2", "pos": Vector2(16, 178)},
+				{"name": "腰帶", "item": "妖精皮帶", "pos": Vector2(150, 178)}
+			]
+		"dark":
+			return [
+				{"name": "武器", "item": "+8 幽暗鋼爪", "pos": Vector2(16, 42)},
+				{"name": "頭盔", "item": "+6 影之面具", "pos": Vector2(16, 76)},
+				{"name": "盔甲", "item": "+6 暗黑金屬鎧甲", "pos": Vector2(16, 110)},
+				{"name": "斗篷", "item": "+6 黑暗披風", "pos": Vector2(16, 144)},
+				{"name": "盾牌", "item": "+7 幽暗雙刀 (副手)", "pos": Vector2(150, 42)},
+				{"name": "手套", "item": "+6 影之手套", "pos": Vector2(150, 76)},
+				{"name": "靴子", "item": "+6 影之長靴", "pos": Vector2(150, 110)},
+				{"name": "項鍊", "item": "狂暴項鍊", "pos": Vector2(150, 144)},
+				{"name": "戒指", "item": "黑暗戒指 x2", "pos": Vector2(16, 178)},
+				{"name": "腰帶", "item": "身體皮帶 (HP+50)", "pos": Vector2(150, 178)}
+			]
+		"royal":
+			return [
+				{"name": "武器", "item": "+8 黃金西洋劍", "pos": Vector2(16, 42)},
+				{"name": "頭盔", "item": "+6 君主頭冠", "pos": Vector2(16, 76)},
+				{"name": "盔甲", "item": "+6 貴族胸甲", "pos": Vector2(16, 110)},
+				{"name": "斗篷", "item": "+6 紅色斗篷", "pos": Vector2(16, 144)},
+				{"name": "盾牌", "item": "+6 守護者盾牌", "pos": Vector2(150, 42)},
+				{"name": "手套", "item": "+5 王族手套", "pos": Vector2(150, 76)},
+				{"name": "靴子", "item": "+5 皇家長靴", "pos": Vector2(150, 110)},
+				{"name": "項鍊", "item": "魅力項鍊 (+1 CHA)", "pos": Vector2(150, 144)},
+				{"name": "戒指", "item": "君主戒指 x2", "pos": Vector2(16, 178)},
+				{"name": "腰帶", "item": "歐姆皮帶", "pos": Vector2(150, 178)}
+			]
+		"warrior":
+			return [
+				{"name": "武器", "item": "+8 狂暴雙斧 (主)", "pos": Vector2(16, 42)},
+				{"name": "頭盔", "item": "+6 戰士頭盔", "pos": Vector2(16, 76)},
+				{"name": "盔甲", "item": "+7 蠻牛巨甲", "pos": Vector2(16, 110)},
+				{"name": "斗篷", "item": "+6 狂暴披風", "pos": Vector2(16, 144)},
+				{"name": "盾牌", "item": "+8 狂暴雙斧 (副)", "pos": Vector2(150, 42)},
+				{"name": "手套", "item": "+6 巨力手套", "pos": Vector2(150, 76)},
+				{"name": "靴子", "item": "+6 鐵靴", "pos": Vector2(150, 110)},
+				{"name": "項鍊", "item": "體質項鍊 (+1 CON)", "pos": Vector2(150, 144)},
+				{"name": "戒指", "item": "泰坦戒指 x2", "pos": Vector2(16, 178)},
+				{"name": "腰帶", "item": "泰坦皮帶", "pos": Vector2(150, 178)}
+			]
+		"illusion":
+			return [
+				{"name": "武器", "item": "+8 藍寶石奇古獸", "pos": Vector2(16, 42)},
+				{"name": "頭盔", "item": "+6 心靈頭巾", "pos": Vector2(16, 76)},
+				{"name": "盔甲", "item": "+6 幻術法袍", "pos": Vector2(16, 110)},
+				{"name": "斗篷", "item": "+6 幻影斗篷", "pos": Vector2(16, 144)},
+				{"name": "盾牌", "item": "+5 精神魔方", "pos": Vector2(150, 42)},
+				{"name": "手套", "item": "+5 心靈手套", "pos": Vector2(150, 76)},
+				{"name": "靴子", "item": "+5 幻影長靴", "pos": Vector2(150, 110)},
+				{"name": "項鍊", "item": "精神項鍊 (+1 WIS)", "pos": Vector2(150, 144)},
+				{"name": "戒指", "item": "幻影戒指 x2", "pos": Vector2(16, 178)},
+				{"name": "腰帶", "item": "時空皮帶", "pos": Vector2(150, 178)}
+			]
+		"dragon":
+			return [
+				{"name": "武器", "item": "+8 屠龍之矛", "pos": Vector2(16, 42)},
+				{"name": "頭盔", "item": "+6 龍骨頭盔", "pos": Vector2(16, 76)},
+				{"name": "盔甲", "item": "+7 龍鱗鎧甲", "pos": Vector2(16, 110)},
+				{"name": "斗篷", "item": "+6 巨龍披風", "pos": Vector2(16, 144)},
+				{"name": "盾牌", "item": "+6 龍之臂甲", "pos": Vector2(150, 42)},
+				{"name": "手套", "item": "+6 龍爪手套", "pos": Vector2(150, 76)},
+				{"name": "靴子", "item": "+6 龍鱗長靴", "pos": Vector2(150, 110)},
+				{"name": "項鍊", "item": "巨龍項鍊 (+1 STR)", "pos": Vector2(150, 144)},
+				{"name": "戒指", "item": "龍血戒指 x2", "pos": Vector2(16, 178)},
+				{"name": "腰帶", "item": "巨龍皮帶", "pos": Vector2(150, 178)}
+			]
+	return []
 
 func _get_class_name(c: String) -> String:
 	match c:

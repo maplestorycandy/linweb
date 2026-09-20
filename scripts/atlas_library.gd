@@ -128,13 +128,27 @@ func get_frame(group: String, atlas_name: String, action: String, index: int) ->
 		return null
 
 	var f: Dictionary = arr[index]
+	var dx = float(f.get("dx", 0.0))
+	var dy = float(f.get("dy", 0.0))
+	var w = float(f.get("w", 0.0))
+	var h = float(f.get("h", 0.0))
+	var cw = float(f.get("cw", w))
+	var ch = float(f.get("ch", h))
+
+	# 走路動畫補償：消除原版 Lineage 走格內置位移導致的每循環末尾拉回/倒退現象
+	if action.contains("walk") and arr.size() > 1:
+		var f0: Dictionary = arr[0]
+		var foot_x0 = float(f0.get("dx", 0.0)) + float(f0.get("w", 0.0)) * 0.5
+		var foot_y0 = float(f0.get("dy", 0.0)) + float(f0.get("h", 0.0))
+		var cur_foot_x = dx + w * 0.5
+		var cur_foot_y = dy + h
+		dx -= (cur_foot_x - foot_x0)
+		dy -= (cur_foot_y - foot_y0)
+
 	var at: = AtlasTexture.new()
 	at.atlas = tex
 	at.region = Rect2(f["x"], f["y"], f["w"], f["h"])
-
-
-	at.margin = Rect2(f["dx"], f["dy"], int(f["cw"]) - int(f["w"]), int(f["ch"]) - int(f["h"]))
-
+	at.margin = Rect2(dx, dy, int(cw) - int(w), int(ch) - int(h))
 	at.filter_clip = true
 	_frame_cache[ck] = at
 	return at
@@ -180,26 +194,22 @@ func get_content_bounds(group: String, atlas_name: String, action: String = "") 
 	if man == null or not man.has("frames"):
 		return {"cx": 0.0, "top": 0.0, "bottom": 0.0, "height": 0.0}
 	var frames_dict: Dictionary = man["frames"]
-	var target_act = action
-	if not frames_dict.has(target_act):
-		if frames_dict.has("d0/idle"):
-			target_act = "d0/idle"
-		elif frames_dict.has("sword1_idle"):
-			target_act = "sword1_idle"
-		elif frames_dict.has("idle"):
-			target_act = "idle"
-		else:
-			for k in frames_dict.keys():
-				if (k as String).contains("idle") or (k as String).contains("walk"):
-					target_act = k
-					break
-			if not frames_dict.has(target_act) and frames_dict.size() > 0:
-				target_act = frames_dict.keys()[0]
 	
-	if not frames_dict.has(target_act):
-		return {"cx": 0.0, "top": 0.0, "bottom": 0.0, "height": 0.0}
+	# 尋找標準 idle 動作計算基準腳底錨點，確保動作切換時腳底絕對鎖定不抽搐
+	var base_act = ""
+	for candidate in ["d0/idle", "d5/idle", "sword1_idle", "idle"]:
+		if frames_dict.has(candidate):
+			base_act = candidate
+			break
+	if base_act.is_empty():
+		for k in frames_dict.keys():
+			if (k as String).contains("idle"):
+				base_act = k
+				break
+	if base_act.is_empty() and frames_dict.size() > 0:
+		base_act = frames_dict.keys()[0]
 	
-	var arr: Array = frames_dict[target_act]
+	var arr: Array = frames_dict[base_act]
 	var min_x = 1e9
 	var max_x = -1e9
 	var min_y = 1e9

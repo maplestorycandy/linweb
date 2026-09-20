@@ -8,6 +8,8 @@ signal remote_player_moved(peer_id: String, pos: Vector2, facing: int, is_moving
 signal remote_player_attacked(peer_id: String, pos: Vector2)
 signal remote_player_chatted(peer_id: String, name: String, message: String)
 signal remote_player_left(peer_id: String)
+signal sync_mobs_received(mobs_data: Array)
+signal damage_mob_received(mob_idx: int, dmg: int, attacker_id: String)
 
 var local_id: String = ""
 var room_id: String = ""
@@ -15,6 +17,8 @@ var is_host: bool = false
 var is_connected: bool = false
 var connected_peers: Dictionary = {}
 
+var _local_char_data: Dictionary = {}
+var _local_pos: Vector2 = Vector2.ZERO
 var _bc_js_name: String = ""
 var _heartbeat_timer: float = 0.0
 
@@ -64,11 +68,14 @@ func leave_room() -> void:
 	room_state_changed.emit(false, "", false)
 
 func send_handshake(char_data: Dictionary, pos: Vector2) -> void:
+	_local_char_data = char_data
+	_local_pos = pos
 	if not is_connected:
 		return
 	var packet = {
 		"type": "handshake",
 		"sender": local_id,
+		"reply": true,
 		"name": char_data.get("name", "勇者"),
 		"class": char_data.get("class", "knight"),
 		"gender": char_data.get("gender", "male"),
@@ -80,6 +87,7 @@ func send_handshake(char_data: Dictionary, pos: Vector2) -> void:
 	_broadcast_packet(packet)
 
 func send_move(pos: Vector2, facing: int, is_moving: bool) -> void:
+	_local_pos = pos
 	if not is_connected:
 		return
 	var packet = {
@@ -114,8 +122,29 @@ func send_chat(player_name: String, text: String) -> void:
 	}
 	_broadcast_packet(packet)
 
+func send_sync_mobs(mobs_data: Array) -> void:
+	if not is_connected or not is_host:
+		return
+	var packet = {
+		"type": "sync_mobs",
+		"sender": local_id,
+		"mobs": mobs_data
+	}
+	_broadcast_packet(packet)
+
+func send_damage_mob(mob_idx: int, dmg: int) -> void:
+	if not is_connected:
+		return
+	var packet = {
+		"type": "damage_mob",
+		"sender": local_id,
+		"idx": mob_idx,
+		"dmg": dmg
+	}
+	_broadcast_packet(packet)
+
 func _send_heartbeat() -> void:
-	_broadcast_packet({"type": "heartbeat", "sender": local_id})
+	_broadcast_packet({"type": "heartbeat", "sender": local_id, "pos_x": _local_pos.x, "pos_y": _local_pos.y})
 
 # ----------------- 底層 Web BroadcastChannel 封裝 -----------------
 func _setup_broadcast_channel(r_id: String) -> void:
@@ -176,15 +205,37 @@ func _handle_received_packet(pkt: Dictionary) -> void:
 		"handshake":
 			connected_peers[sender] = pkt
 			remote_player_joined.emit(sender, pkt)
-			# 若本機為房主或已存在，向新加入者回傳自身 Handshake
-			if is_host:
-				_send_heartbeat()
+			# 收到 Handshake 時，若對方要求 reply，立刻回覆自身的完整角色資訊
+			if pkt.get("reply", true):
+				var reply_pkt = {
+					"type": "handshake",
+					"sender": local_id,
+					"reply": false,
+					"name": _local_char_data.get("name", "勇者"),
+					"class": _local_char_data.get("class", "knight"),
+					"gender": _local_char_data.get("gender", "male"),
+					"level": _local_char_data.get("level", 1),
+					"pos_x": _local_pos.x,
+					"pos_y": _local_pos.y,
+					"is_host": is_host
+				}
+				_broadcast_packet(reply_pkt)
 		"move":
 			remote_player_moved.emit(sender, Vector2(pkt.get("x", 0), pkt.get("y", 0)), pkt.get("facing", 2), pkt.get("moving", false))
 		"attack":
 			remote_player_attacked.emit(sender, Vector2(pkt.get("tx", 0), pkt.get("ty", 0)))
 		"chat":
 			remote_player_chatted.emit(sender, pkt.get("name", "隊友"), pkt.get("text", ""))
+		"sync_mobs":
+			if not is_host:
+				var m_arr = pkt.get("mobs", [])
+				if typeof(m_arr) == TYPE_ARRAY:
+					sync_mobs_received.emit(m_arr)
+		"damage_mob":
+			if is_host:
+				var m_idx = int(pkt.get("idx", 0))
+				var dmg = int(pkt.get("dmg", 0))
+				damage_mob_received.emit(m_idx, dmg, sender)
 		"leave":
 			if connected_peers.has(sender):
 				connected_peers.erase(sender)

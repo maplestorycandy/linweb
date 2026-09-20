@@ -33,6 +33,12 @@ var _player_dir_frames: Dictionary = {}
 var _player_atk_cd: float = 0.0
 var _player_is_attacking: bool = false
 var _target_mob: Dictionary = {}
+var _is_player_dead: bool = false
+var _death_dialog: Control = null
+var _barrier_timer: float = 0.0
+var _speed_buff_timer: float = 0.0
+var _crit_buff_timer: float = 0.0
+var _mob_sync_timer: float = 0.0
 
 # 玩家屬性
 var _player_hp: float = 150.0
@@ -133,6 +139,8 @@ func _setup_network() -> void:
 	_room_manager.remote_player_chatted.connect(_on_remote_player_chatted)
 	_room_manager.remote_player_left.connect(_on_remote_player_left)
 	_room_manager.room_state_changed.connect(_on_room_state_changed)
+	_room_manager.sync_mobs_received.connect(_on_sync_mobs_received)
+	_room_manager.damage_mob_received.connect(_on_damage_mob_received)
 
 func _on_room_state_changed(is_in_room: bool, r_id: String, is_host: bool) -> void:
 	if is_in_room:
@@ -244,40 +252,69 @@ func _show_chat_bubble(target_node: Node2D, text: String) -> void:
 
 # ----------------- 全技能學滿與道具背包資料 -----------------
 func _init_all_skills() -> void:
+	var c_key = _char_data.get("class", "knight")
 	_skills_list = [
-		{"id": "sk_heal1", "name": "初級治癒術", "mp": 4, "icon": 2056, "desc": "瞬間恢復 35 點生命力", "type": "heal", "amount": 35},
-		{"id": "sk_lightarrow", "name": "光箭", "mp": 3, "icon": 2057, "desc": "發射神聖魔法光箭攻擊目標", "type": "attack", "dmg": 22},
-		{"id": "sk_shield", "name": "保護罩", "mp": 8, "icon": 2058, "desc": "提升自身防禦力 AC -2", "type": "buff", "buff": "shield"},
-		{"id": "sk_teleport", "name": "指定傳送", "mp": 10, "icon": 2059, "desc": "隨機瞬間移動到島內安全地點", "type": "teleport"},
-		{"id": "sk_heal2", "name": "中級治癒術", "mp": 12, "icon": 2060, "desc": "瞬間恢復 80 點生命力", "type": "heal", "amount": 80},
-		{"id": "sk_firearrow", "name": "火箭", "mp": 4, "icon": 2061, "desc": "發射烈火之箭造成火屬性傷害", "type": "attack", "dmg": 28},
-		{"id": "sk_curse_poison", "name": "毒咒", "mp": 10, "icon": 2062, "desc": "使目標陷入中毒狀態持續損血", "type": "attack", "dmg": 18},
-		{"id": "sk_enchant_weapon", "name": "擬似魔法武器", "mp": 10, "icon": 2063, "desc": "提升近戰武器攻擊力 +2", "type": "buff", "buff": "atk"},
-		{"id": "sk_ice_breath", "name": "寒冰氣息", "mp": 10, "icon": 2064, "desc": "噴吐極寒凍氣攻擊目標", "type": "attack", "dmg": 35},
-		{"id": "sk_haste", "name": "加速術", "mp": 10, "icon": 2065, "desc": "提升移動速度與攻擊頻率", "type": "buff", "buff": "haste"},
-		{"id": "sk_earth_jail", "name": "地裂術", "mp": 16, "icon": 2066, "desc": "震裂大地造成範圍巨量傷害", "type": "attack", "dmg": 55},
-		{"id": "sk_lightning", "name": "極道落雷", "mp": 20, "icon": 2067, "desc": "召喚九天神雷轟擊目標", "type": "attack", "dmg": 75},
-		{"id": "sk_fire_storm", "name": "烈炎術", "mp": 24, "icon": 2068, "desc": "召喚熾烈地獄之火吞噬目標", "type": "attack", "dmg": 95},
-		{"id": "sk_heal3", "name": "高級治癒術", "mp": 24, "icon": 2069, "desc": "瞬間恢復 180 點生命力", "type": "heal", "amount": 180},
-		{"id": "sk_holy_walk", "name": "神聖疾走", "mp": 15, "icon": 2070, "desc": "大幅提高奔跑疾行速度", "type": "buff", "buff": "speed"},
-		{"id": "sk_bless_weapon", "name": "祝福魔法武器", "mp": 15, "icon": 2071, "desc": "提升武器命中率與攻擊力 +4", "type": "buff", "buff": "bless"},
-		{"id": "sk_sanctuary", "name": "聖結界", "mp": 30, "icon": 2072, "desc": "受到的所有傷害降低 50%", "type": "buff", "buff": "barrier"},
-		{"id": "sk_soul_ascent", "name": "靈魂昇華", "mp": 35, "icon": 2073, "desc": "提升最大生命與魔力上限", "type": "buff", "buff": "max_hp"},
-		{"id": "sk_body_con", "name": "體魄強健術", "mp": 15, "icon": 2074, "desc": "力量與體質各提升 +5", "type": "buff", "buff": "str"},
-		{"id": "sk_dex_boost", "name": "通暢氣脈術", "mp": 15, "icon": 2075, "desc": "敏捷屬性提升 +5", "type": "buff", "buff": "dex"},
-		{"id": "sk_invis", "name": "隱身術", "mp": 20, "icon": 2076, "desc": "使自身進入完全隱形狀態", "type": "buff", "buff": "invis"},
-		{"id": "sk_dispel", "name": "魔法相消術", "mp": 25, "icon": 2077, "desc": "消除目標身上的一切輔助魔法", "type": "attack", "dmg": 10},
-		{"id": "sk_barrier", "name": "絕對屏障", "mp": 50, "icon": 2078, "desc": "進入完全無敵絕對防禦狀態", "type": "buff", "buff": "invincible"},
-		{"id": "sk_meteor", "name": "究極光裂術", "mp": 60, "icon": 2079, "desc": "召喚究極光芒裂解目標！", "type": "attack", "dmg": 180},
-		{"id": "sk_shock_stun", "name": "衝擊之暈", "mp": 15, "icon": 2080, "desc": "騎士絕技：重擊目標使其陷入暈眩！", "type": "attack", "dmg": 45},
-		{"id": "sk_counter_barrier", "name": "反擊屏障", "mp": 30, "icon": 2081, "desc": "迴避近戰攻擊並對敵人雙倍反擊", "type": "buff", "buff": "counter"},
-		{"id": "sk_triple_arrow", "name": "三重矢", "mp": 15, "icon": 2082, "desc": "妖精絕技：連續快速射出三枚箭矢", "type": "attack", "dmg": 60},
-		{"id": "sk_double_break", "name": "雙重破壞", "mp": 20, "icon": 2083, "desc": "黑暗妖精：有機率造成雙倍暴擊傷害", "type": "buff", "buff": "double"},
-		{"id": "sk_slaughter", "name": "屠宰者", "mp": 15, "icon": 2084, "desc": "龍騎士：狂暴連續三段毀滅重擊！", "type": "attack", "dmg": 75}
+		{"id": "sk_heal1", "name": "初級治癒術", "mp": 4, "icon": 2056, "desc": "瞬間恢復 45 點生命力", "type": "heal", "amount": 45},
+		{"id": "sk_lightarrow", "name": "光箭", "mp": 3, "icon": 2057, "desc": "發射神聖魔法光箭攻擊目標", "type": "attack", "dmg": 25, "fx": "energy_bolt"},
+		{"id": "sk_shield", "name": "保護罩", "mp": 8, "icon": 2058, "desc": "提升自身防禦力 AC -2", "type": "buff", "buff": "shield", "duration": 30.0},
+		{"id": "sk_teleport", "name": "指定傳送", "mp": 10, "icon": 2059, "desc": "隨機瞬間移動到島內安全地點", "type": "teleport"}
 	]
+	
+	match c_key:
+		"knight":
+			_skills_list.append({"id": "sk_shock_stun", "name": "衝擊之暈", "mp": 15, "icon": 2080, "desc": "騎士專屬：雙手劍重擊使怪物昏迷 2.5 秒", "type": "stun", "dmg": 45})
+			_skills_list.append({"id": "sk_reduction", "name": "增幅防禦", "mp": 10, "icon": 2081, "desc": "騎士專屬：減免自身所受傷害", "type": "buff", "buff": "reduction", "duration": 30.0})
+			_skills_list.append({"id": "sk_bounce", "name": "狂暴", "mp": 20, "icon": 2063, "desc": "騎士專屬：提升近戰攻擊力 +6", "type": "buff", "buff": "atk", "duration": 30.0})
+			_skills_list.append({"id": "sk_counter", "name": "反擊屏障", "mp": 30, "icon": 2078, "desc": "騎士終極神技：迴避近戰攻擊並反彈雙倍傷害！", "type": "buff", "buff": "counter", "duration": 20.0})
+		"mage":
+			_skills_list.append({"id": "sk_heal2", "name": "中級治癒術", "mp": 12, "icon": 2060, "desc": "瞬間恢復 95 點生命力", "type": "heal", "amount": 95})
+			_skills_list.append({"id": "sk_fireball", "name": "火球術", "mp": 16, "icon": 2061, "desc": "發射巨大烈焰火球造成範圍爆炸傷害", "type": "attack", "dmg": 65, "fx": "fireball"})
+			_skills_list.append({"id": "sk_lightning", "name": "極道落雷", "mp": 22, "icon": 2067, "desc": "召喚九天神雷轟擊目標", "type": "attack", "dmg": 90, "fx": "lightning"})
+			_skills_list.append({"id": "sk_heal3", "name": "高級治癒術", "mp": 24, "icon": 2069, "desc": "瞬間恢復 220 點生命力", "type": "heal", "amount": 220})
+			_skills_list.append({"id": "sk_sanctuary", "name": "聖結界", "mp": 30, "icon": 2072, "desc": "法師神技：受到的所有傷害降低 50%", "type": "buff", "buff": "barrier", "duration": 16.0})
+			_skills_list.append({"id": "sk_meteor", "name": "究極光裂術", "mp": 50, "icon": 2079, "desc": "法師終極禁咒：召喚究極神聖光束裂解目標！", "type": "attack", "dmg": 220, "fx": "lightning"})
+			_skills_list.append({"id": "sk_barrier", "name": "絕對屏障", "mp": 40, "icon": 2078, "desc": "進入完全無敵絕對防禦狀態", "type": "buff", "buff": "invincible", "duration": 8.0})
+		"elf":
+			_skills_list.append({"id": "sk_triple", "name": "三重矢", "mp": 15, "icon": 2082, "desc": "妖精專屬：連續高速射出三支魔力飛矢！", "type": "triple_shot", "dmg": 28})
+			_skills_list.append({"id": "sk_wind_walk", "name": "風之疾走", "mp": 15, "icon": 2070, "desc": "妖精專屬：精靈疾風環繞，移動速度大幅提升", "type": "buff", "buff": "speed", "duration": 30.0})
+			_skills_list.append({"id": "sk_storm_shot", "name": "暴風神射", "mp": 20, "icon": 2063, "desc": "妖精專屬：遠程弓箭命中率與傷害大幅提升", "type": "buff", "buff": "atk", "duration": 30.0})
+			_skills_list.append({"id": "sk_water_life", "name": "水之防護", "mp": 20, "icon": 2060, "desc": "妖精專屬：精靈之水湧動，治癒效果加倍", "type": "heal", "amount": 140})
+		"dark":
+			_skills_list.append({"id": "sk_burning", "name": "燃燒鬥志", "mp": 15, "icon": 2083, "desc": "黑妖專屬：攻擊時 33% 機率觸發 1.5 倍暴擊！", "type": "buff", "buff": "crit", "duration": 30.0})
+			_skills_list.append({"id": "sk_double_break", "name": "雙重破壞", "mp": 20, "icon": 2083, "desc": "黑妖專屬：鋼爪爆發撕裂，造成雙倍傷害", "type": "attack", "dmg": 95})
+			_skills_list.append({"id": "sk_shadow_fang", "name": "暗影之牙", "mp": 12, "icon": 2063, "desc": "黑妖專屬：武器淬毒提升近戰攻擊力 +5", "type": "buff", "buff": "atk", "duration": 30.0})
+			_skills_list.append({"id": "sk_invis", "name": "隱身術", "mp": 15, "icon": 2076, "desc": "進入完全潛行隱身狀態", "type": "buff", "buff": "invis", "duration": 20.0})
+		"royal":
+			_skills_list.append({"id": "sk_true_target", "name": "精準目標", "mp": 10, "icon": 2063, "desc": "王族專屬：標記目標使全隊集中攻擊造成額外傷害", "type": "attack", "dmg": 40})
+			_skills_list.append({"id": "sk_brave_mental", "name": "激勵士氣", "mp": 20, "icon": 2071, "desc": "王族專屬：全隊攻擊力與命中率提升", "type": "buff", "buff": "atk", "duration": 30.0})
+			_skills_list.append({"id": "sk_impact_mental", "name": "衝擊士氣", "mp": 25, "icon": 2072, "desc": "王族專屬：全隊防禦力與魔防大幅提升", "type": "buff", "buff": "barrier", "duration": 30.0})
+		"warrior":
+			_skills_list.append({"id": "sk_fury_axe", "name": "迅猛雙斧", "mp": 15, "icon": 2084, "desc": "戰士專屬：雙斧狂暴旋風連續二連擊！", "type": "attack", "dmg": 70})
+			_skills_list.append({"id": "sk_howl", "name": "咆哮", "mp": 18, "icon": 2068, "desc": "戰士專屬：戰意咆哮震懾周遭敵人", "type": "attack", "dmg": 50})
+			_skills_list.append({"id": "sk_titan_rock", "name": "泰坦岩石", "mp": 25, "icon": 2078, "desc": "戰士專屬：近戰完全迴避並反擊", "type": "buff", "buff": "counter", "duration": 15.0})
+		"illusion":
+			_skills_list.append({"id": "sk_mind_break", "name": "心靈破壞", "mp": 15, "icon": 2067, "desc": "幻術專屬：心靈奇術無視防禦直接破壞精神", "type": "attack", "dmg": 75, "fx": "lightning"})
+			_skills_list.append({"id": "sk_cube_shock", "name": "立方：衝擊", "mp": 20, "icon": 2066, "desc": "幻術專屬：展開衝擊立方削弱敵人防禦", "type": "attack", "dmg": 60})
+			_skills_list.append({"id": "sk_illusion_ogre", "name": "幻覺：高崙", "mp": 25, "icon": 2074, "desc": "幻術專屬：化身石頭高崙獲得超重護甲", "type": "buff", "buff": "shield", "duration": 30.0})
+		"dragon":
+			_skills_list.append({"id": "sk_slaughter", "name": "屠宰者", "mp": 15, "icon": 2084, "desc": "龍騎專屬：屠龍槍技狂暴連續三段重擊！", "type": "attack", "dmg": 85})
+			_skills_list.append({"id": "sk_dragon_skin", "name": "龍之護甲", "mp": 18, "icon": 2072, "desc": "龍騎專屬：召喚古龍護甲大幅減免傷害", "type": "buff", "buff": "barrier", "duration": 30.0})
+			_skills_list.append({"id": "sk_awake_fire", "name": "覺醒：巴拉卡斯", "mp": 30, "icon": 2073, "desc": "龍騎專屬：火龍附體，普攻附加巨量火傷！", "type": "buff", "buff": "atk", "duration": 30.0})
 
 func _init_inventory() -> void:
+	var c_key = _char_data.get("class", "knight")
+	var starter_weapon_name = "+6 騎士之劍"
+	match c_key:
+		"mage": starter_weapon_name = "+6 巫術魔法杖"
+		"elf": starter_weapon_name = "+6 尤米弓"
+		"dark": starter_weapon_name = "+6 幽暗雙刀"
+		"royal": starter_weapon_name = "+6 黃金西洋劍"
+		"warrior": starter_weapon_name = "+6 狂暴雙斧"
+		"illusion": starter_weapon_name = "+6 藍寶石奇古獸"
+		"dragon": starter_weapon_name = "+6 屠龍之矛"
+
 	_inventory_items = [
+		{"id": "wpn_main", "name": starter_weapon_name, "count": 1, "icon": "res://assets/ui/rn_adena_btn.png", "desc": "專屬初始神兵 (+6 附魔)", "usable": false},
 		{"id": "pot_red", "name": "紅色藥水", "count": 100, "icon": "res://assets/ui/rn_adena_btn.png", "desc": "恢復 45 點 HP", "type": "heal_hp", "val": 45, "usable": true},
 		{"id": "pot_orange", "name": "橙色藥水", "count": 50, "icon": "res://assets/ui/rn_adena_btn.png", "desc": "恢復 90 點 HP", "type": "heal_hp", "val": 90, "usable": true},
 		{"id": "pot_clear", "name": "白色藥水", "count": 20, "icon": "res://assets/ui/rn_adena_btn.png", "desc": "恢復 160 點 HP", "type": "heal_hp", "val": 160, "usable": true},
@@ -291,14 +328,28 @@ func _init_inventory() -> void:
 # ----------------- 地圖與玩家設定 -----------------
 func _setup_map() -> void:
 	_map_sprite = Sprite2D.new()
-	if ResourceLoader.exists(MAP_PREVIEW):
-		_map_sprite.texture = load(MAP_PREVIEW)
+	var map_candidates = [
+		"res://assets/maps/town_talking_island/l1j-map-0-preview.png",
+		"res://assets/maps/l1j-map-0-preview.png"
+	]
+	var map_tex: Texture2D = null
+	for p in map_candidates:
+		if ResourceLoader.exists(p):
+			map_tex = load(p)
+			if map_tex != null:
+				break
+	if map_tex != null:
+		_map_sprite.texture = map_tex
 		_map_sprite.centered = false
 		_map_sprite.position = Vector2.ZERO
-		var sz = _map_sprite.texture.get_size()
+		var sz = map_tex.get_size()
 		_map_width = sz.x
 		_map_height = sz.y
+		print("[ARPG] 成功載入說話之島地圖：", sz)
+	else:
+		push_warning("[ARPG] 警告：找不到地圖材質！")
 	add_child(_map_sprite)
+
 	
 	_camera = Camera2D.new()
 	_camera.position = _player_pos
@@ -388,12 +439,6 @@ func _swap_player_dir(new_dir: int) -> void:
 		if sf != null:
 			_player_dir_frames[new_dir] = sf
 
-func _on_dlc_pack_loaded(pack_name: String) -> void:
-	if pack_name.contains("classes"):
-		_player_dir_frames.clear()
-		_swap_player_dir(_player_cur_dir)
-		_add_chat_msg("[color=#4ade80]系統：進階職業擴充資源包已載入完畢，外觀已無縫更新！[/color]", "ALL")
-	
 	var cur_sf = _player_dir_frames.get(new_dir)
 	if cur_sf != null and _player_sprite != null:
 		var cur_anim = _player_sprite.animation if _player_sprite.animation != StringName() else "sword1_idle"
@@ -414,6 +459,12 @@ func _on_dlc_pack_loaded(pack_name: String) -> void:
 				_player_sprite.play()
 		else:
 			_play_player_anim("idle")
+
+func _on_dlc_pack_loaded(pack_name: String) -> void:
+	if pack_name.contains("classes"):
+		_player_dir_frames.clear()
+		_swap_player_dir(_player_cur_dir)
+		_add_chat_msg("[color=#4ade80]系統：進階職業擴充資源包已載入完畢，外觀已無縫更新！[/color]", "ALL")
 
 func _vector_to_dir8(dir: Vector2) -> int:
 	var angle = roundi(atan2(dir.y, dir.x) * 4.0 / PI)
@@ -916,6 +967,9 @@ func _refresh_chat_display() -> void:
 
 # ----------------- 技能施放與道具使用回調 -----------------
 func _on_skill_cast(sk: Dictionary) -> void:
+	if _is_player_dead:
+		_add_chat_msg("[color=#f87171]角色已陣亡，無法施放技能！[/color]", "ALL")
+		return
 	var mp_cost = sk.get("mp", 10)
 	if _player_mp < mp_cost:
 		_add_chat_msg("[color=#f87171]魔力不足！無法施放【%s】。[/color]" % sk["name"], "ALL")
@@ -928,23 +982,93 @@ func _on_skill_cast(sk: Dictionary) -> void:
 	_add_chat_msg("[color=#38bdf8]你施放了魔法【%s】！[/color]" % sk["name"], "ALL")
 	
 	var s_type = sk.get("type", "buff")
-	if s_type == "heal":
-		var amt = sk.get("amount", 50)
-		_player_hp = min(_player_max_hp, _player_hp + amt)
-		_show_damage_float(_player_pos + Vector2(0, -40), "+%d HP" % amt, Color("#4ade80"))
-	elif s_type == "attack":
+	match s_type:
+		"heal":
+			var amt = sk.get("amount", 50)
+			_player_hp = min(_player_max_hp, _player_hp + amt)
+			_spawn_heal_vfx(_player_pos)
+			_show_damage_float(_player_pos + Vector2(0, -40), "+%d HP" % amt, Color("#4ade80"))
+		"attack":
+			var fx_type = sk.get("fx", "energy_bolt")
+			var target_pos = _target_mob["pos"] if (not _target_mob.is_empty() and not _target_mob["is_dead"]) else get_global_mouse_position()
+			if fx_type == "energy_bolt":
+				_cast_projectile(_player_pos, target_pos, Color("#facc15"), func():
+					_apply_skill_attack_damage(sk)
+				)
+			elif fx_type == "fireball":
+				_cast_projectile(_player_pos, target_pos, Color("#f97316"), func():
+					_apply_skill_attack_damage(sk, 80.0)
+				)
+			elif fx_type == "lightning":
+				_spawn_lightning_vfx(target_pos)
+				_apply_skill_attack_damage(sk)
+			else:
+				_apply_skill_attack_damage(sk)
+		"stun":
+			if not _target_mob.is_empty() and not _target_mob["is_dead"]:
+				var dmg = sk.get("dmg", 45)
+				_target_mob["hp"] -= dmg
+				_target_mob["atk_cd"] = 2.5
+				_spawn_stun_vfx(_target_mob["node"])
+				_show_damage_float(_target_mob["pos"] + Vector2(0, -40), "%d (暈眩!)" % dmg, Color("#f59e0b"))
+				_add_chat_msg("[color=#f59e0b]衝擊之暈命中 [%s]！目標陷入昏迷 2.5 秒！[/color]" % _target_mob["name"], "ALL")
+				if _target_mob["hp"] <= 0:
+					_kill_mob(_target_mob)
+			else:
+				_add_chat_msg("[color=#94a3b8]（未鎖定目標，衝擊劍氣揮空）[/color]", "ALL")
+		"triple_shot":
+			var target_pos = _target_mob["pos"] if (not _target_mob.is_empty() and not _target_mob["is_dead"]) else get_global_mouse_position()
+			for i in range(3):
+				get_tree().create_timer(i * 0.12).timeout.connect(func():
+					_cast_projectile(_player_pos, target_pos, Color("#22c55e"), func():
+						_apply_skill_attack_damage(sk)
+					)
+				)
+		"buff":
+			var b = sk.get("buff", "")
+			var dur = sk.get("duration", 30.0)
+			match b:
+				"barrier":
+					_barrier_timer = dur
+					_spawn_barrier_vfx(_player_node, dur)
+					_add_chat_msg("[color=#fbbf24]聖結界生效！全傷害減半，持續 %d 秒。[/color]" % int(dur), "ALL")
+				"speed":
+					_speed_buff_timer = dur
+					_player_speed = 210.0
+					_spawn_speed_wind_vfx(_player_node, dur)
+					_add_chat_msg("[color=#4ade80]疾行加速生效！移動速度大幅提升，持續 %d 秒。[/color]" % int(dur), "ALL")
+				"crit":
+					_crit_buff_timer = dur
+					_add_chat_msg("[color=#f43f5e]燃燒鬥志激發！暴擊率大幅提升，持續 %d 秒。[/color]" % int(dur), "ALL")
+				"counter":
+					_barrier_timer = dur
+					_add_chat_msg("[color=#a855f7]反擊屏障展開！持續 %d 秒。[/color]" % int(dur), "ALL")
+				_:
+					_add_chat_msg("[color=#67e8f9]輔助魔法【%s】已施放完成。[/color]" % sk["name"], "ALL")
+		"teleport":
+			_teleport_random()
+
+func _apply_skill_attack_damage(sk: Dictionary, splash_radius: float = 0.0) -> void:
+	var base_dmg = sk.get("dmg", 30) + randi_range(5, 15)
+	if splash_radius > 0.0:
+		var center = _target_mob["pos"] if (not _target_mob.is_empty() and not _target_mob["is_dead"]) else _player_pos
+		for m in _mobs:
+			if not m["is_dead"] and m["pos"].distance_to(center) <= splash_radius:
+				m["hp"] -= base_dmg
+				_play_mob_anim(m, "hurt")
+				_show_damage_float(m["pos"] + Vector2(0, -40), str(base_dmg), Color("#f43f5e"))
+				if m["hp"] <= 0:
+					_kill_mob(m)
+		_add_chat_msg("[color=#f97316]範圍爆炸對周遭敵人造成了 %d 點範圍傷害！[/color]" % base_dmg, "ALL")
+	else:
 		if not _target_mob.is_empty() and not _target_mob["is_dead"]:
-			var dmg = sk.get("dmg", 30) + randi_range(5, 15)
-			_target_mob["hp"] -= dmg
+			_target_mob["hp"] -= base_dmg
 			_play_mob_anim(_target_mob, "hurt")
-			_show_damage_float(_target_mob["pos"] + Vector2(0, -40), str(dmg), Color("#f43f5e"))
-			_add_chat_msg("[color=#f43f5e]【%s】對 [%s] 造成了 %d 點魔法傷害！[/color]" % [sk["name"], _target_mob["name"], dmg], "ALL")
+			_show_damage_float(_target_mob["pos"] + Vector2(0, -40), str(base_dmg), Color("#f43f5e"))
+			_add_chat_msg("[color=#f43f5e]【%s】對 [%s] 造成了 %d 點魔法傷害！[/color]" % [sk["name"], _target_mob["name"], base_dmg], "ALL")
 			if _target_mob["hp"] <= 0:
 				_kill_mob(_target_mob)
-		else:
-			_add_chat_msg("[color=#94a3b8]（未鎖定目標，魔法能量釋放至空中）[/color]", "ALL")
-	elif s_type == "teleport":
-		_teleport_random()
+
 
 func _on_item_used(item: Dictionary) -> void:
 	var t = item.get("type", "")
@@ -1034,6 +1158,22 @@ func _on_chat_submitted(text: String) -> void:
 
 # ----------------- 遊戲循環：走位、戰鬥、AI -----------------
 func _process(delta: float) -> void:
+	if _barrier_timer > 0.0:
+		_barrier_timer -= delta
+	if _speed_buff_timer > 0.0:
+		_speed_buff_timer -= delta
+		if _speed_buff_timer <= 0.0:
+			_player_speed = 150.0
+	if _crit_buff_timer > 0.0:
+		_crit_buff_timer -= delta
+		
+	# 房主怪物同步輪詢 (每 0.2 秒向隊員廣播全場怪物位置與狀態)
+	if _room_manager != null and _room_manager.is_connected and _room_manager.is_host:
+		_mob_sync_timer += delta
+		if _mob_sync_timer >= 0.2:
+			_mob_sync_timer = 0.0
+			_send_host_mob_sync()
+
 	_update_player(delta)
 	_update_mobs(delta)
 	_update_ground_drops(delta)
@@ -1044,6 +1184,8 @@ func _process(delta: float) -> void:
 		_camera.position = _player_node.position
 
 func _unhandled_input(event: InputEvent) -> void:
+	if _is_player_dead:
+		return
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		var click_world_pos = get_global_mouse_position()
 		
@@ -1074,6 +1216,8 @@ func _find_mob_at(wpos: Vector2) -> Dictionary:
 	return {}
 
 func _update_player(delta: float) -> void:
+	if _is_player_dead:
+		return
 	if _player_atk_cd > 0.0:
 		_player_atk_cd -= delta
 	
@@ -1121,28 +1265,38 @@ func _play_player_anim(act: String) -> void:
 	var anims = sf.get_animation_names()
 	for a in anims:
 		if a.contains(act):
+			if act == "death":
+				sf.set_animation_loop(a, false)
 			if _player_sprite.animation != a or not _player_sprite.is_playing():
 				_player_sprite.play(a)
 			return
 
 func _player_attack_target(mob: Dictionary) -> void:
+	if _is_player_dead:
+		return
 	_player_is_attacking = true
 	_play_player_anim("attack")
 	
 	var str_val = _char_data.get("str", 16)
-	var dmg = int(randf_range(str_val * 0.9, str_val * 1.6))
-	mob["hp"] -= dmg
+	var is_crit = _crit_buff_timer > 0.0 and randf() < 0.35
+	var crit_mul = 1.6 if is_crit else 1.0
+	var dmg = int(randf_range(str_val * 0.9, str_val * 1.6) * crit_mul)
 	
-	_show_damage_float(mob["pos"] + Vector2(0, -40), str(dmg), Color("#facc15"))
+	_show_damage_float(mob["pos"] + Vector2(0, -40), ("暴擊! " if is_crit else "") + str(dmg), Color("#f43f5e") if is_crit else Color("#facc15"))
 	_add_chat_msg("[color=#e2e8f0]你對 [%s] 造成了 %d 點傷害！[/color]" % [mob["name"], dmg], "ALL")
 	
-	_play_mob_anim(mob, "hurt")
-	
-	if _room_manager != null and _room_manager.is_connected:
-		_room_manager.send_attack(mob["pos"])
-	
-	if mob["hp"] <= 0:
-		_kill_mob(mob)
+	if _room_manager != null and _room_manager.is_connected and not _room_manager.is_host:
+		var m_idx = _mobs.find(mob)
+		if m_idx >= 0:
+			_room_manager.send_damage_mob(m_idx, dmg)
+		_play_mob_anim(mob, "hurt")
+	else:
+		mob["hp"] -= dmg
+		_play_mob_anim(mob, "hurt")
+		if _room_manager != null and _room_manager.is_connected:
+			_room_manager.send_attack(mob["pos"])
+		if mob["hp"] <= 0:
+			_kill_mob(mob)
 	
 	get_tree().create_timer(0.4).timeout.connect(func(): _player_is_attacking = false)
 
@@ -1215,6 +1369,21 @@ func _update_ground_drops(_delta: float) -> void:
 		_ground_drops.erase(r)
 
 func _update_mobs(delta: float) -> void:
+	# 若為非房主隊員，怪物的走位、朝向與攻擊皆由房主端權威同步，本地僅進行平滑顯示與死亡淡出
+	if _room_manager != null and _room_manager.is_connected and not _room_manager.is_host:
+		for m in _mobs:
+			if m["is_dead"]:
+				m["dead_timer"] -= delta
+				if m["node"] != null:
+					m["node"].modulate.a = max(0.0, m["dead_timer"] / 3.5)
+			else:
+				if m["node"] != null:
+					m["node"].position = m["pos"]
+				if m["hp_fill"] != null:
+					var ratio = clamp(m["hp"] / m["max_hp"], 0.0, 1.0)
+					m["hp_fill"].size.x = 30.0 * ratio
+		return
+
 	for m in _mobs:
 		if m["is_dead"]:
 			m["dead_timer"] -= delta
@@ -1262,10 +1431,17 @@ func _update_mobs(delta: float) -> void:
 				_play_mob_anim(m, "idle")
 
 func _mob_attack_player(m: Dictionary) -> void:
-	var dmg = max(1, m["dmg"] - int(_char_data.get("ac", 10) * 0.25))
+	if _is_player_dead:
+		return
+	var raw_dmg = max(1, m["dmg"] - int(_char_data.get("ac", 10) * 0.25))
+	if _barrier_timer > 0.0:
+		raw_dmg = max(1, int(raw_dmg * 0.5))
+	var dmg = raw_dmg
 	_player_hp = max(0.0, _player_hp - dmg)
 	_show_damage_float(_player_pos + Vector2(0, -50), str(dmg), Color("#ef4444"))
 	_add_chat_msg("[color=#f87171][%s] 對你造成了 %d 點傷害！[/color]" % [m["name"], dmg], "ALL")
+	if _player_hp <= 0.0 and not _is_player_dead:
+		_trigger_player_death()
 
 func _update_remote_players(delta: float) -> void:
 	for p in _remote_players.values():
@@ -1366,3 +1542,302 @@ func _show_damage_float(world_pos: Vector2, text: String, color: Color) -> void:
 
 func _on_return_pressed() -> void:
 	return_to_menu.emit()
+
+# ----------------- 技能視覺特效 (VFX) 實作 -----------------
+func _cast_projectile(start_pos: Vector2, target_pos: Vector2, color: Color, on_hit: Callable) -> void:
+	var proj = Node2D.new()
+	proj.position = start_pos + Vector2(0, -25)
+	add_child(proj)
+	
+	# 光球本體
+	var orb = ColorRect.new()
+	orb.color = color
+	orb.size = Vector2(8, 8)
+	orb.position = Vector2(-4, -4)
+	proj.add_child(orb)
+	
+	# 外圍光暈
+	var glow = ColorRect.new()
+	glow.color = Color(color.r, color.g, color.b, 0.45)
+	glow.size = Vector2(14, 14)
+	glow.position = Vector2(-7, -7)
+	proj.add_child(glow)
+	
+	var dest = target_pos + Vector2(0, -25)
+	var travel_time = clamp(proj.position.distance_to(dest) / 450.0, 0.12, 0.35)
+	
+	var tw = create_tween()
+	tw.tween_property(proj, "position", dest, travel_time).set_trans(Tween.TRANS_LINEAR)
+	tw.tween_callback(func():
+		_spawn_hit_sparkles(dest, color)
+		if on_hit.is_valid():
+			on_hit.call()
+		proj.queue_free()
+	)
+
+func _spawn_hit_sparkles(pos: Vector2, color: Color) -> void:
+	for i in range(6):
+		var spark = ColorRect.new()
+		spark.color = color
+		spark.size = Vector2(4, 4)
+		spark.position = pos
+		add_child(spark)
+		var angle = randf() * TAU
+		var dist = randf_range(15.0, 35.0)
+		var s_dest = pos + Vector2(cos(angle), sin(angle)) * dist
+		var tw = create_tween()
+		tw.tween_property(spark, "position", s_dest, 0.25).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
+		tw.parallel().tween_property(spark, "modulate:a", 0.0, 0.25)
+		tw.tween_callback(spark.queue_free)
+
+func _spawn_lightning_vfx(target_pos: Vector2) -> void:
+	var l_node = Node2D.new()
+	l_node.position = target_pos + Vector2(0, -20)
+	add_child(l_node)
+	
+	var line = Line2D.new()
+	line.width = 3.5
+	line.default_color = Color("#a5f3fc")
+	
+	var cur_p = Vector2(randf_range(-15, 15), -200)
+	line.add_point(cur_p)
+	for seg in range(5):
+		var pct = float(seg + 1) / 5.0
+		var seg_y = lerp(-200.0, 0.0, pct)
+		var seg_x = lerp(cur_p.x, 0.0, pct) + randf_range(-16.0, 16.0) if pct < 1.0 else 0.0
+		line.add_point(Vector2(seg_x, seg_y))
+	l_node.add_child(line)
+	
+	# 地面爆發雷光
+	var blast = ColorRect.new()
+	blast.color = Color("#fef08a")
+	blast.size = Vector2(24, 24)
+	blast.position = Vector2(-12, -12)
+	l_node.add_child(blast)
+	
+	var tw = create_tween()
+	tw.tween_property(l_node, "modulate:a", 0.0, 0.25)
+	tw.tween_callback(l_node.queue_free)
+
+func _spawn_heal_vfx(pos: Vector2) -> void:
+	for i in range(8):
+		var p_lbl = Label.new()
+		p_lbl.text = "+"
+		p_lbl.add_theme_font_size_override("font_size", 14)
+		p_lbl.add_theme_color_override("font_color", Color("#4ade80"))
+		var start_p = pos + Vector2(randf_range(-25, 25), randf_range(-10, 10))
+		p_lbl.position = start_p
+		add_child(p_lbl)
+		
+		var tw = create_tween()
+		tw.tween_property(p_lbl, "position:y", start_p.y - randf_range(40, 70), randf_range(0.4, 0.7)).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
+		tw.parallel().tween_property(p_lbl, "modulate:a", 0.0, 0.6)
+		tw.tween_callback(p_lbl.queue_free)
+
+func _spawn_stun_vfx(node: Node2D) -> void:
+	if node == null:
+		return
+	var stun_root = Node2D.new()
+	stun_root.position = Vector2(0, -65)
+	node.add_child(stun_root)
+	
+	var stars = []
+	for i in range(3):
+		var star = Label.new()
+		star.text = "★"
+		star.add_theme_font_size_override("font_size", 12)
+		star.add_theme_color_override("font_color", Color("#fbbf24"))
+		stun_root.add_child(star)
+		stars.append(star)
+	
+	var rot_tween = create_tween().set_loops(10)
+	rot_tween.tween_method(func(rot: float):
+		for idx in range(stars.size()):
+			var a = rot + (float(idx) * TAU / 3.0)
+			stars[idx].position = Vector2(cos(a) * 16.0 - 5.0, sin(a) * 8.0 - 6.0)
+	, 0.0, TAU, 0.7)
+	
+	get_tree().create_timer(2.5).timeout.connect(func():
+		if is_instance_valid(stun_root):
+			stun_root.queue_free()
+	)
+
+func _spawn_barrier_vfx(target_node: Node2D, dur: float) -> void:
+	if target_node == null:
+		return
+	var barrier = ReferenceRect.new()
+	barrier.size = Vector2(48, 64)
+	barrier.position = Vector2(-24, -58)
+	barrier.border_color = Color("#fbbf24")
+	barrier.border_width = 2.0
+	barrier.editor_only = false
+	target_node.add_child(barrier)
+	
+	var glow = ColorRect.new()
+	glow.color = Color(0.98, 0.75, 0.14, 0.18)
+	glow.size = barrier.size
+	barrier.add_child(glow)
+	
+	var pulse_tw = create_tween().set_loops()
+	pulse_tw.tween_property(glow, "modulate:a", 0.5, 0.6)
+	pulse_tw.tween_property(glow, "modulate:a", 0.15, 0.6)
+	
+	get_tree().create_timer(dur).timeout.connect(func():
+		if is_instance_valid(barrier):
+			barrier.queue_free()
+	)
+
+func _spawn_speed_wind_vfx(target_node: Node2D, dur: float) -> void:
+	if target_node == null:
+		return
+	var wind_root = Node2D.new()
+	wind_root.position = Vector2(0, -6)
+	target_node.add_child(wind_root)
+	
+	var ring = ReferenceRect.new()
+	ring.size = Vector2(34, 14)
+	ring.position = Vector2(-17, -7)
+	ring.border_color = Color("#4ade80")
+	ring.border_width = 1.5
+	ring.editor_only = false
+	wind_root.add_child(ring)
+	
+	var tw = create_tween().set_loops()
+	tw.tween_property(ring, "scale", Vector2(1.2, 1.2), 0.4)
+	tw.tween_property(ring, "scale", Vector2(0.9, 0.9), 0.4)
+	
+	get_tree().create_timer(dur).timeout.connect(func():
+		if is_instance_valid(wind_root):
+			wind_root.queue_free()
+	)
+
+# ----------------- 死亡與安全區復活處理 -----------------
+func _trigger_player_death() -> void:
+	_is_player_dead = true
+	_player_hp = 0.0
+	_target_mob = {}
+	_play_player_anim("death")
+	if _player_sprite != null:
+		_player_sprite.modulate = Color(0.7, 0.2, 0.2, 0.8)
+	_add_chat_msg("[color=#ef4444]★ 角色已陣亡！你在冒險中倒下了。[/color]", "ALL")
+	_show_death_modal()
+
+func _show_death_modal() -> void:
+	if _death_dialog != null and is_instance_valid(_death_dialog):
+		_death_dialog.queue_free()
+	
+	_death_dialog = Control.new()
+	_death_dialog.size = Vector2(360, 200)
+	var vp = get_viewport_rect().size
+	_death_dialog.position = (vp - _death_dialog.size) * 0.5
+	
+	var bg = ColorRect.new()
+	bg.size = _death_dialog.size
+	bg.color = Color(0.06, 0.08, 0.12, 0.95)
+	_death_dialog.add_child(bg)
+	
+	var border = ReferenceRect.new()
+	border.size = _death_dialog.size
+	border.border_color = Color("#ef4444")
+	border.editor_only = false
+	_death_dialog.add_child(border)
+	
+	var title = Label.new()
+	title.text = "☠ 角色陣亡"
+	title.position = Vector2(0, 20)
+	title.size = Vector2(360, 28)
+	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	title.add_theme_font_size_override("font_size", 18)
+	title.add_theme_color_override("font_color", Color("#ef4444"))
+	_death_dialog.add_child(title)
+	
+	var desc = Label.new()
+	desc.text = "你在說話之島的戰鬥中不幸陣亡。\n是否返回說話之島村莊安全區甦醒？"
+	desc.position = Vector2(20, 65)
+	desc.size = Vector2(320, 45)
+	desc.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	desc.add_theme_font_size_override("font_size", 12)
+	desc.add_theme_color_override("font_color", Color("#e2e8f0"))
+	_death_dialog.add_child(desc)
+	
+	var btn_respawn = Button.new()
+	btn_respawn.text = "✦ 村莊安全區復活 (完全復原)"
+	btn_respawn.position = Vector2(70, 130)
+	btn_respawn.size = Vector2(220, 36)
+	btn_respawn.focus_mode = Control.FOCUS_NONE
+	btn_respawn.add_theme_font_size_override("font_size", 12)
+	btn_respawn.add_theme_color_override("font_color", Color("#4ade80"))
+	btn_respawn.pressed.connect(_respawn_player)
+	_death_dialog.add_child(btn_respawn)
+	
+	_hud_layer.add_child(_death_dialog)
+
+func _respawn_player() -> void:
+	if _death_dialog != null and is_instance_valid(_death_dialog):
+		_death_dialog.queue_free()
+		_death_dialog = null
+	
+	_is_player_dead = false
+	_player_hp = _player_max_hp
+	_player_mp = _player_max_mp
+	_player_pos = Vector2(1318, 517)
+	_player_target_pos = _player_pos
+	_player_node.position = _player_pos
+	if _player_sprite != null:
+		_player_sprite.modulate = Color.WHITE
+	_play_player_anim("idle")
+	_show_damage_float(_player_pos + Vector2(0, -60), "REBORN!", GOLD)
+	_add_chat_msg("[color=#4ade80]★ 你在說話之島安全區甦醒，體力與魔力已完全恢復！[/color]", "ALL")
+	if _room_manager != null and _room_manager.is_connected:
+		_room_manager.send_move(_player_pos, _player_cur_dir, false)
+
+# ----------------- 房主怪物同步輪詢與傷害處理 -----------------
+func _send_host_mob_sync() -> void:
+	var m_list = []
+	for i in range(_mobs.size()):
+		var m = _mobs[i]
+		m_list.append({
+			"i": i,
+			"x": m["pos"].x,
+			"y": m["pos"].y,
+			"hp": m["hp"],
+			"dead": m["is_dead"],
+			"h": m.get("heading", 5)
+		})
+	_room_manager.send_sync_mobs(m_list)
+
+func _on_sync_mobs_received(m_arr: Array) -> void:
+	for item in m_arr:
+		var idx = int(item.get("i", -1))
+		if idx >= 0 and idx < _mobs.size():
+			var m = _mobs[idx]
+			var nx = float(item.get("x", m["pos"].x))
+			var ny = float(item.get("y", m["pos"].y))
+			m["pos"] = Vector2(nx, ny)
+			if m["node"] != null:
+				m["node"].position = m["pos"]
+			m["hp"] = float(item.get("hp", m["hp"]))
+			var is_dead = bool(item.get("dead", false))
+			if is_dead != m["is_dead"]:
+				m["is_dead"] = is_dead
+				if is_dead:
+					_play_mob_anim(m, "death")
+				else:
+					if m["node"] != null:
+						m["node"].modulate.a = 1.0
+					_play_mob_anim(m, "idle")
+			m["heading"] = int(item.get("h", m.get("heading", 5)))
+			if m["hp_fill"] != null:
+				m["hp_fill"].size.x = 30.0 * clamp(m["hp"] / m["max_hp"], 0.0, 1.0)
+
+func _on_damage_mob_received(mob_idx: int, dmg: int, sender: String) -> void:
+	if not _room_manager.is_host:
+		return
+	if mob_idx >= 0 and mob_idx < _mobs.size():
+		var m = _mobs[mob_idx]
+		if not m["is_dead"]:
+			m["hp"] -= dmg
+			_play_mob_anim(m, "hurt")
+			_show_damage_float(m["pos"] + Vector2(0, -40), "%d (隊友)" % dmg, Color("#38bdf8"))
+			if m["hp"] <= 0:
+				_kill_mob(m)

@@ -21,6 +21,9 @@ func init_dialog(rm: Node) -> void:
 	_room_manager = rm
 	_setup_ui()
 	_update_state()
+	if _room_manager != null:
+		_room_manager.remote_player_joined.connect(func(_id, _info): _update_state())
+		_room_manager.remote_player_left.connect(func(_id): _update_state())
 
 func update_display() -> void:
 	_update_state()
