@@ -71,32 +71,36 @@ func load_mob_sprites() -> void:
 
 func resolve_mob_atlas(identity: String) -> String:
 	if identity.is_empty():
-		return ""
+		return "mob_1110"
 	if mob_sprites_by_display.has(identity):
 		var val = mob_sprites_by_display[identity]
 		if typeof(val) == TYPE_DICTIONARY and val.has("atlas"):
 			return val["atlas"]
 		elif typeof(val) == TYPE_STRING:
 			return val
+	if mob_sprites_data.has("ambiguousDisplay") and mob_sprites_data["ambiguousDisplay"].has(identity):
+		var arr = mob_sprites_data["ambiguousDisplay"][identity]
+		if typeof(arr) == TYPE_ARRAY and arr.size() > 0:
+			return arr[0]
 	if mob_sprites_data.has("byMobKey") and mob_sprites_data["byMobKey"].has(identity):
 		var val2 = mob_sprites_data["byMobKey"][identity]
 		if typeof(val2) == TYPE_DICTIONARY and val2.has("atlas"):
 			return val2["atlas"]
 	# 預設常見怪物 fallback
 	match identity:
-		"狼人": return "mob_1011"
-		"妖魔", "歐克": return "mob_110"
-		"妖魔鬥士": return "mob_111"
-		"哥布林": return "mob_1002"
-		"侏儒": return "mob_1003"
-		"夏洛伯": return "mob_1037"
-		"高崙", "石頭高崙": return "mob_1020"
-		"史萊姆": return "mob_1014"
-		"骷髏": return "mob_1022"
-		"骷髏弓箭手": return "mob_1024"
-		"黑妖魔": return "mob_1104"
-		"妖魔弓箭手": return "mob_1106"
-	return "mob_1011"
+		"狼人": return "mob_1110"
+		"妖魔", "歐克": return "mob_56"
+		"妖魔鬥士": return "mob_94"
+		"妖魔弓箭手": return "mob_57"
+		"哥布林": return "mob_1022"
+		"侏儒": return "mob_54"
+		"夏洛伯": return "mob_95"
+		"高崙", "石頭高崙": return "mob_49"
+		"史萊姆": return "mob_31"
+		"骷髏": return "mob_30"
+		"骷髏弓箭手": return "mob_30"
+		"黑妖魔": return "mob_94"
+	return "mob_1110"
 
 func get_mob(mob_id: String) -> Dictionary:
 	if mobs_data.has(mob_id):

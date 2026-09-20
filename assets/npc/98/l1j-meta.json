@@ -1,0 +1,272 @@
+{
+ "gfx": 98,
+ "sourceGfx": 98,
+ "sourceReason": "direct 3.8c gfx",
+ "name": "pandora",
+ "shadowGfx": 99,
+ "placements": 1,
+ "headings": [
+  5
+ ],
+ "npcIds": [
+  70014
+ ],
+ "implementations": [
+  "L1Merchant"
+ ],
+ "directionCount": 8,
+ "actions": [
+  {
+   "action": "breath",
+   "prefix": "idle",
+   "actionSourceGfx": null,
+   "tokens": [
+    {
+     "block": 8,
+     "frame": 0,
+     "ticks": 4
+    },
+    {
+     "block": 8,
+     "frame": 1,
+     "ticks": 4
+    },
+    {
+     "block": 8,
+     "frame": 2,
+     "ticks": 4
+    },
+    {
+     "block": 8,
+     "frame": 3,
+     "ticks": 4
+    },
+    {
+     "block": 8,
+     "frame": 4,
+     "ticks": 4
+    },
+    {
+     "block": 8,
+     "frame": 5,
+     "ticks": 4
+    }
+   ],
+   "block": 8,
+   "frames": [
+    {
+     "block": 8,
+     "frame": 0,
+     "ticks": 4
+    },
+    {
+     "block": 8,
+     "frame": 1,
+     "ticks": 4
+    },
+    {
+     "block": 8,
+     "frame": 2,
+     "ticks": 4
+    },
+    {
+     "block": 8,
+     "frame": 3,
+     "ticks": 4
+    },
+    {
+     "block": 8,
+     "frame": 4,
+     "ticks": 4
+    },
+    {
+     "block": 8,
+     "frame": 5,
+     "ticks": 4
+    }
+   ],
+   "totalTicks": 24,
+   "inferred": false
+  },
+  {
+   "action": "walk",
+   "prefix": "walk",
+   "actionSourceGfx": null,
+   "tokens": [
+    {
+     "block": 0,
+     "frame": 0,
+     "ticks": 4
+    },
+    {
+     "block": 0,
+     "frame": 1,
+     "ticks": 4
+    },
+    {
+     "block": 0,
+     "frame": 2,
+     "ticks": 4
+    },
+    {
+     "block": 0,
+     "frame": 3,
+     "ticks": 4
+    }
+   ],
+   "block": 0,
+   "frames": [
+    {
+     "block": 0,
+     "frame": 0,
+     "ticks": 4
+    },
+    {
+     "block": 0,
+     "frame": 1,
+     "ticks": 4
+    },
+    {
+     "block": 0,
+     "frame": 2,
+     "ticks": 4
+    },
+    {
+     "block": 0,
+     "frame": 3,
+     "ticks": 4
+    }
+   ],
+   "totalTicks": 16,
+   "inferred": false
+  },
+  {
+   "action": "spell direction",
+   "prefix": "spell",
+   "actionSourceGfx": null,
+   "tokens": [
+    {
+     "block": 16,
+     "frame": 0,
+     "ticks": 4
+    },
+    {
+     "block": 16,
+     "frame": 1,
+     "ticks": 4
+    },
+    {
+     "block": 16,
+     "frame": 2,
+     "ticks": 4
+    }
+   ],
+   "block": 16,
+   "frames": [
+    {
+     "block": 16,
+     "frame": 0,
+     "ticks": 4
+    },
+    {
+     "block": 16,
+     "frame": 1,
+     "ticks": 4
+    },
+    {
+     "block": 16,
+     "frame": 2,
+     "ticks": 4
+    }
+   ],
+   "totalTicks": 12,
+   "inferred": false
+  },
+  {
+   "action": "spell no direction",
+   "prefix": "spell_nd",
+   "actionSourceGfx": null,
+   "tokens": [
+    {
+     "block": 24,
+     "frame": 0,
+     "ticks": 4
+    },
+    {
+     "block": 24,
+     "frame": 1,
+     "ticks": 4
+    },
+    {
+     "block": 24,
+     "frame": 2,
+     "ticks": 4
+    },
+    {
+     "block": 24,
+     "frame": 3,
+     "ticks": 4
+    },
+    {
+     "block": 24,
+     "frame": 4,
+     "ticks": 4
+    }
+   ],
+   "block": 24,
+   "frames": [
+    {
+     "block": 24,
+     "frame": 0,
+     "ticks": 4
+    },
+    {
+     "block": 24,
+     "frame": 1,
+     "ticks": 4
+    },
+    {
+     "block": 24,
+     "frame": 2,
+     "ticks": 4
+    },
+    {
+     "block": 24,
+     "frame": 3,
+     "ticks": 4
+    },
+    {
+     "block": 24,
+     "frame": 4,
+     "ticks": 4
+    }
+   ],
+   "totalTicks": 20,
+   "inferred": false
+  }
+ ],
+ "staticSprite": false,
+ "inferredBlock": false,
+ "shadowAvailable": true,
+ "attr": 0,
+ "clothes": [],
+ "clothesDeclared": [],
+ "renderedClothes": [],
+ "box": {
+  "x0": -1,
+  "y0": -50,
+  "x1": 47,
+  "y1": 24
+ },
+ "canvas": {
+  "width": 49,
+  "height": 75
+ },
+ "pixelPolicy": {
+  "body": "exact",
+  "shadow": "black-alpha-inverse-luma",
+  "additiveClothes": "rgb-alpha-luma-additive",
+  "alphaClothes": "exact-rgb-alpha-128"
+ },
+ "conversionWarnings": []
+}

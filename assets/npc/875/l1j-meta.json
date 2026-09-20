@@ -1,0 +1,648 @@
+{
+ "gfx": 875,
+ "sourceGfx": 875,
+ "sourceReason": "direct 3.8c gfx",
+ "name": "pan",
+ "shadowGfx": 876,
+ "placements": 10,
+ "headings": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ],
+ "npcIds": [
+  70850
+ ],
+ "implementations": [
+  "L1Guardian"
+ ],
+ "directionCount": 8,
+ "actions": [
+  {
+   "action": "breath",
+   "prefix": "idle",
+   "actionSourceGfx": null,
+   "tokens": [
+    {
+     "block": 8,
+     "frame": 0,
+     "ticks": 2
+    },
+    {
+     "block": 8,
+     "frame": 1,
+     "ticks": 5
+    },
+    {
+     "block": 8,
+     "frame": 2,
+     "ticks": 3
+    },
+    {
+     "block": 8,
+     "frame": 3,
+     "ticks": 3
+    },
+    {
+     "block": 8,
+     "frame": 4,
+     "ticks": 3
+    },
+    {
+     "block": 8,
+     "frame": 5,
+     "ticks": 4
+    },
+    {
+     "block": 8,
+     "frame": 6,
+     "ticks": 6
+    },
+    {
+     "block": 8,
+     "frame": 7,
+     "ticks": 6
+    },
+    {
+     "block": 8,
+     "frame": 8,
+     "ticks": 6
+    },
+    {
+     "block": 8,
+     "frame": 9,
+     "ticks": 6
+    },
+    {
+     "block": 8,
+     "frame": 10,
+     "ticks": 6
+    },
+    {
+     "block": 8,
+     "frame": 11,
+     "ticks": 6
+    }
+   ],
+   "block": 8,
+   "frames": [
+    {
+     "block": 8,
+     "frame": 0,
+     "ticks": 2
+    },
+    {
+     "block": 8,
+     "frame": 1,
+     "ticks": 5
+    },
+    {
+     "block": 8,
+     "frame": 2,
+     "ticks": 3
+    },
+    {
+     "block": 8,
+     "frame": 3,
+     "ticks": 3
+    },
+    {
+     "block": 8,
+     "frame": 4,
+     "ticks": 3
+    },
+    {
+     "block": 8,
+     "frame": 5,
+     "ticks": 4
+    },
+    {
+     "block": 8,
+     "frame": 6,
+     "ticks": 6
+    },
+    {
+     "block": 8,
+     "frame": 7,
+     "ticks": 6
+    },
+    {
+     "block": 8,
+     "frame": 8,
+     "ticks": 6
+    },
+    {
+     "block": 8,
+     "frame": 9,
+     "ticks": 6
+    },
+    {
+     "block": 8,
+     "frame": 10,
+     "ticks": 6
+    },
+    {
+     "block": 8,
+     "frame": 11,
+     "ticks": 6
+    }
+   ],
+   "totalTicks": 56,
+   "inferred": false
+  },
+  {
+   "action": "walk",
+   "prefix": "walk",
+   "actionSourceGfx": null,
+   "tokens": [
+    {
+     "block": 0,
+     "frame": 0,
+     "ticks": 2
+    },
+    {
+     "block": 0,
+     "frame": 1,
+     "ticks": 2
+    },
+    {
+     "block": 0,
+     "frame": 2,
+     "ticks": 2
+    },
+    {
+     "block": 0,
+     "frame": 3,
+     "ticks": 2
+    },
+    {
+     "block": 0,
+     "frame": 4,
+     "ticks": 2
+    },
+    {
+     "block": 0,
+     "frame": 5,
+     "ticks": 2
+    },
+    {
+     "block": 0,
+     "frame": 6,
+     "ticks": 2
+    },
+    {
+     "block": 0,
+     "frame": 7,
+     "ticks": 2
+    }
+   ],
+   "block": 0,
+   "frames": [
+    {
+     "block": 0,
+     "frame": 0,
+     "ticks": 2
+    },
+    {
+     "block": 0,
+     "frame": 1,
+     "ticks": 2
+    },
+    {
+     "block": 0,
+     "frame": 2,
+     "ticks": 2
+    },
+    {
+     "block": 0,
+     "frame": 3,
+     "ticks": 2
+    },
+    {
+     "block": 0,
+     "frame": 4,
+     "ticks": 2
+    },
+    {
+     "block": 0,
+     "frame": 5,
+     "ticks": 2
+    },
+    {
+     "block": 0,
+     "frame": 6,
+     "ticks": 2
+    },
+    {
+     "block": 0,
+     "frame": 7,
+     "ticks": 2
+    }
+   ],
+   "totalTicks": 16,
+   "inferred": false
+  },
+  {
+   "action": "attack",
+   "prefix": "attack",
+   "actionSourceGfx": null,
+   "tokens": [
+    {
+     "block": 16,
+     "frame": 0,
+     "ticks": 3,
+     "sound": 158
+    },
+    {
+     "block": 16,
+     "frame": 1,
+     "ticks": 5
+    },
+    {
+     "block": 16,
+     "frame": 2,
+     "ticks": 6
+    },
+    {
+     "block": 16,
+     "frame": 3,
+     "ticks": 3
+    },
+    {
+     "block": 16,
+     "frame": 4,
+     "ticks": 3
+    },
+    {
+     "block": 16,
+     "frame": 5,
+     "ticks": 6,
+     "release": true
+    },
+    {
+     "block": 0,
+     "frame": 0,
+     "ticks": 4
+    }
+   ],
+   "block": 16,
+   "frames": [
+    {
+     "block": 16,
+     "frame": 0,
+     "ticks": 3
+    },
+    {
+     "block": 16,
+     "frame": 1,
+     "ticks": 5
+    },
+    {
+     "block": 16,
+     "frame": 2,
+     "ticks": 6
+    },
+    {
+     "block": 16,
+     "frame": 3,
+     "ticks": 3
+    },
+    {
+     "block": 16,
+     "frame": 4,
+     "ticks": 3
+    },
+    {
+     "block": 16,
+     "frame": 5,
+     "ticks": 6
+    },
+    {
+     "block": 0,
+     "frame": 0,
+     "ticks": 4
+    }
+   ],
+   "totalTicks": 30,
+   "inferred": false
+  },
+  {
+   "action": "damage",
+   "prefix": "damage",
+   "actionSourceGfx": null,
+   "tokens": [
+    {
+     "block": 24,
+     "frame": 0,
+     "ticks": 6,
+     "sound": 159
+    },
+    {
+     "block": 24,
+     "frame": 1,
+     "ticks": 4
+    },
+    {
+     "block": 0,
+     "frame": 0,
+     "ticks": 4
+    }
+   ],
+   "block": 24,
+   "frames": [
+    {
+     "block": 24,
+     "frame": 0,
+     "ticks": 6
+    },
+    {
+     "block": 24,
+     "frame": 1,
+     "ticks": 4
+    },
+    {
+     "block": 0,
+     "frame": 0,
+     "ticks": 4
+    }
+   ],
+   "totalTicks": 14,
+   "inferred": false
+  },
+  {
+   "action": "death",
+   "prefix": "death",
+   "actionSourceGfx": null,
+   "tokens": [
+    {
+     "block": 32,
+     "frame": 0,
+     "ticks": 3,
+     "sound": 3333
+    },
+    {
+     "block": 32,
+     "frame": 1,
+     "ticks": 3
+    },
+    {
+     "block": 32,
+     "frame": 2,
+     "ticks": 3
+    },
+    {
+     "block": 32,
+     "frame": 3,
+     "ticks": 3
+    },
+    {
+     "block": 32,
+     "frame": 4,
+     "ticks": 5
+    },
+    {
+     "block": 32,
+     "frame": 5,
+     "ticks": 4
+    }
+   ],
+   "block": 32,
+   "frames": [
+    {
+     "block": 32,
+     "frame": 0,
+     "ticks": 3
+    },
+    {
+     "block": 32,
+     "frame": 1,
+     "ticks": 3
+    },
+    {
+     "block": 32,
+     "frame": 2,
+     "ticks": 3
+    },
+    {
+     "block": 32,
+     "frame": 3,
+     "ticks": 3
+    },
+    {
+     "block": 32,
+     "frame": 4,
+     "ticks": 5
+    },
+    {
+     "block": 32,
+     "frame": 5,
+     "ticks": 4
+    }
+   ],
+   "totalTicks": 21,
+   "inferred": false
+  },
+  {
+   "action": "spell",
+   "prefix": "spell",
+   "actionSourceGfx": null,
+   "tokens": [
+    {
+     "block": 16,
+     "frame": 0,
+     "ticks": 3,
+     "sound": 158
+    },
+    {
+     "block": 16,
+     "frame": 1,
+     "ticks": 5
+    },
+    {
+     "block": 16,
+     "frame": 2,
+     "ticks": 6
+    },
+    {
+     "block": 16,
+     "frame": 3,
+     "ticks": 3
+    },
+    {
+     "block": 16,
+     "frame": 4,
+     "ticks": 3
+    },
+    {
+     "block": 16,
+     "frame": 5,
+     "ticks": 6,
+     "release": true
+    },
+    {
+     "block": 0,
+     "frame": 0,
+     "ticks": 4
+    }
+   ],
+   "block": 16,
+   "frames": [
+    {
+     "block": 16,
+     "frame": 0,
+     "ticks": 3
+    },
+    {
+     "block": 16,
+     "frame": 1,
+     "ticks": 5
+    },
+    {
+     "block": 16,
+     "frame": 2,
+     "ticks": 6
+    },
+    {
+     "block": 16,
+     "frame": 3,
+     "ticks": 3
+    },
+    {
+     "block": 16,
+     "frame": 4,
+     "ticks": 3
+    },
+    {
+     "block": 16,
+     "frame": 5,
+     "ticks": 6
+    },
+    {
+     "block": 0,
+     "frame": 0,
+     "ticks": 4
+    }
+   ],
+   "totalTicks": 30,
+   "inferred": false
+  },
+  {
+   "action": "spellnd",
+   "prefix": "spell_nd",
+   "actionSourceGfx": null,
+   "tokens": [
+    {
+     "block": 16,
+     "frame": 0,
+     "ticks": 3,
+     "sound": 158
+    },
+    {
+     "block": 16,
+     "frame": 1,
+     "ticks": 5
+    },
+    {
+     "block": 16,
+     "frame": 2,
+     "ticks": 6
+    },
+    {
+     "block": 16,
+     "frame": 3,
+     "ticks": 3
+    },
+    {
+     "block": 16,
+     "frame": 4,
+     "ticks": 3
+    },
+    {
+     "block": 16,
+     "frame": 5,
+     "ticks": 6,
+     "release": true
+    },
+    {
+     "block": 0,
+     "frame": 0,
+     "ticks": 4
+    }
+   ],
+   "block": 16,
+   "frames": [
+    {
+     "block": 16,
+     "frame": 0,
+     "ticks": 3
+    },
+    {
+     "block": 16,
+     "frame": 1,
+     "ticks": 5
+    },
+    {
+     "block": 16,
+     "frame": 2,
+     "ticks": 6
+    },
+    {
+     "block": 16,
+     "frame": 3,
+     "ticks": 3
+    },
+    {
+     "block": 16,
+     "frame": 4,
+     "ticks": 3
+    },
+    {
+     "block": 16,
+     "frame": 5,
+     "ticks": 6
+    },
+    {
+     "block": 0,
+     "frame": 0,
+     "ticks": 4
+    }
+   ],
+   "totalTicks": 30,
+   "inferred": false
+  }
+ ],
+ "staticSprite": false,
+ "inferredBlock": false,
+ "shadowAvailable": true,
+ "attr": 0,
+ "clothes": [],
+ "clothesDeclared": [],
+ "renderedClothes": [],
+ "box": {
+  "x0": -72,
+  "y0": -83,
+  "x1": 116,
+  "y1": 40
+ },
+ "canvas": {
+  "width": 189,
+  "height": 124
+ },
+ "pixelPolicy": {
+  "body": "exact",
+  "shadow": "black-alpha-inverse-luma",
+  "additiveClothes": "rgb-alpha-luma-additive",
+  "alphaClothes": "exact-rgb-alpha-128"
+ },
+ "conversionWarnings": [
+  "875-7.spr f6: header bbox mismatch: decoded top=-54 right=-3 bottom=3 vs A-12=-54 B-1=65533 C-13=3",
+  "875-7.spr f7: header bbox mismatch: decoded top=-54 right=-7 bottom=4 vs A-12=-54 B-1=65529 C-13=4",
+  "876-7.spr f6: header bbox mismatch: decoded top=-7 right=-7 bottom=5 vs A-12=-7 B-1=65529 C-13=5",
+  "876-7.spr f7: header bbox mismatch: decoded top=-8 right=-8 bottom=5 vs A-12=-8 B-1=65528 C-13=5"
+ ]
+}

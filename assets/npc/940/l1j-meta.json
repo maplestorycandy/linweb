@@ -1,0 +1,327 @@
+{
+ "gfx": 940,
+ "sourceGfx": 940,
+ "sourceReason": "direct 3.8c gfx",
+ "name": "Teleporter",
+ "shadowGfx": 921,
+ "placements": 15,
+ "headings": [
+  4,
+  5,
+  6,
+  7
+ ],
+ "npcIds": [
+  50021,
+  50035,
+  50040,
+  50047,
+  50052,
+  50067,
+  50070,
+  50080,
+  50111,
+  50114,
+  50118,
+  70764,
+  71028,
+  71029
+ ],
+ "implementations": [
+  "L1Merchant",
+  "L1Teleporter"
+ ],
+ "directionCount": 8,
+ "actions": [
+  {
+   "action": "breath",
+   "prefix": "idle",
+   "actionSourceGfx": null,
+   "tokens": [
+    {
+     "block": 8,
+     "frame": 0,
+     "ticks": 4
+    },
+    {
+     "block": 8,
+     "frame": 1,
+     "ticks": 4
+    },
+    {
+     "block": 8,
+     "frame": 2,
+     "ticks": 4
+    },
+    {
+     "block": 8,
+     "frame": 3,
+     "ticks": 4
+    },
+    {
+     "block": 8,
+     "frame": 4,
+     "ticks": 4
+    },
+    {
+     "block": 8,
+     "frame": 5,
+     "ticks": 4
+    },
+    {
+     "block": 8,
+     "frame": 6,
+     "ticks": 4
+    }
+   ],
+   "block": 8,
+   "frames": [
+    {
+     "block": 8,
+     "frame": 0,
+     "ticks": 4
+    },
+    {
+     "block": 8,
+     "frame": 1,
+     "ticks": 4
+    },
+    {
+     "block": 8,
+     "frame": 2,
+     "ticks": 4
+    },
+    {
+     "block": 8,
+     "frame": 3,
+     "ticks": 4
+    },
+    {
+     "block": 8,
+     "frame": 4,
+     "ticks": 4
+    },
+    {
+     "block": 8,
+     "frame": 5,
+     "ticks": 4
+    },
+    {
+     "block": 8,
+     "frame": 6,
+     "ticks": 4
+    }
+   ],
+   "totalTicks": 28,
+   "inferred": false
+  },
+  {
+   "action": "walk",
+   "prefix": "walk",
+   "actionSourceGfx": null,
+   "tokens": [
+    {
+     "block": 0,
+     "frame": 0,
+     "ticks": 4
+    },
+    {
+     "block": 0,
+     "frame": 1,
+     "ticks": 4
+    },
+    {
+     "block": 0,
+     "frame": 2,
+     "ticks": 4
+    },
+    {
+     "block": 0,
+     "frame": 3,
+     "ticks": 4
+    }
+   ],
+   "block": 0,
+   "frames": [
+    {
+     "block": 0,
+     "frame": 0,
+     "ticks": 4
+    },
+    {
+     "block": 0,
+     "frame": 1,
+     "ticks": 4
+    },
+    {
+     "block": 0,
+     "frame": 2,
+     "ticks": 4
+    },
+    {
+     "block": 0,
+     "frame": 3,
+     "ticks": 4
+    }
+   ],
+   "totalTicks": 16,
+   "inferred": false
+  },
+  {
+   "action": "damage",
+   "prefix": "damage",
+   "actionSourceGfx": null,
+   "tokens": [
+    {
+     "block": 16,
+     "frame": 0,
+     "ticks": 0,
+     "event": 704
+    },
+    {
+     "block": 16,
+     "frame": 0,
+     "ticks": 6,
+     "event": 3166
+    },
+    {
+     "block": 16,
+     "frame": 1,
+     "ticks": 3
+    },
+    {
+     "block": 0,
+     "frame": 0,
+     "ticks": 4
+    }
+   ],
+   "block": 16,
+   "frames": [
+    {
+     "block": 16,
+     "frame": 0,
+     "ticks": 0
+    },
+    {
+     "block": 16,
+     "frame": 0,
+     "ticks": 6
+    },
+    {
+     "block": 16,
+     "frame": 1,
+     "ticks": 3
+    },
+    {
+     "block": 0,
+     "frame": 0,
+     "ticks": 4
+    }
+   ],
+   "totalTicks": 13,
+   "inferred": false
+  },
+  {
+   "action": "death",
+   "prefix": "death",
+   "actionSourceGfx": null,
+   "tokens": [
+    {
+     "block": 24,
+     "frame": 0,
+     "ticks": 4,
+     "sound": 3168
+    },
+    {
+     "block": 24,
+     "frame": 1,
+     "ticks": 4
+    },
+    {
+     "block": 24,
+     "frame": 2,
+     "ticks": 4
+    },
+    {
+     "block": 24,
+     "frame": 3,
+     "ticks": 4
+    },
+    {
+     "block": 24,
+     "frame": 4,
+     "ticks": 4
+    },
+    {
+     "block": 24,
+     "frame": 5,
+     "ticks": 4
+    }
+   ],
+   "block": 24,
+   "frames": [
+    {
+     "block": 24,
+     "frame": 0,
+     "ticks": 4
+    },
+    {
+     "block": 24,
+     "frame": 1,
+     "ticks": 4
+    },
+    {
+     "block": 24,
+     "frame": 2,
+     "ticks": 4
+    },
+    {
+     "block": 24,
+     "frame": 3,
+     "ticks": 4
+    },
+    {
+     "block": 24,
+     "frame": 4,
+     "ticks": 4
+    },
+    {
+     "block": 24,
+     "frame": 5,
+     "ticks": 4
+    }
+   ],
+   "totalTicks": 24,
+   "inferred": false
+  }
+ ],
+ "staticSprite": false,
+ "inferredBlock": false,
+ "shadowAvailable": true,
+ "attr": 0,
+ "clothes": [],
+ "clothesDeclared": [],
+ "renderedClothes": [],
+ "box": {
+  "x0": -41,
+  "y0": -63,
+  "x1": 112,
+  "y1": 23
+ },
+ "canvas": {
+  "width": 154,
+  "height": 87
+ },
+ "pixelPolicy": {
+  "body": "exact",
+  "shadow": "black-alpha-inverse-luma",
+  "additiveClothes": "rgb-alpha-luma-additive",
+  "alphaClothes": "exact-rgb-alpha-128"
+ },
+ "conversionWarnings": [
+  "940-29.spr f5: header bbox mismatch: decoded top=-54 right=40 bottom=-18 vs A-12=-54 B-1=40 C-13=65518",
+  "921-29.spr f3: header bbox mismatch: decoded top=-42 right=37 bottom=-15 vs A-12=-42 B-1=37 C-13=65521",
+  "921-29.spr f4: header bbox mismatch: decoded top=-46 right=39 bottom=-17 vs A-12=-46 B-1=39 C-13=65519",
+  "921-29.spr f5: header bbox mismatch: decoded top=-48 right=39 bottom=-18 vs A-12=-48 B-1=39 C-13=65518"
+ ]
+}
