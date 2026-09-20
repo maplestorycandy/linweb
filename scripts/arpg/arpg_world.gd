@@ -327,6 +327,13 @@ func _init_inventory() -> void:
 
 # ----------------- 地圖與玩家設定 -----------------
 func _setup_map() -> void:
+	# 草原泥土地底色 (防灰屏安全底層)
+	var ground_bg = ColorRect.new()
+	ground_bg.color = Color("#3e542c")
+	ground_bg.size = Vector2(2048, 1024)
+	ground_bg.position = Vector2.ZERO
+	add_child(ground_bg)
+
 	_map_sprite = Sprite2D.new()
 	var map_candidates = [
 		"res://assets/maps/town_talking_island/l1j-map-0-preview.png",
@@ -345,6 +352,7 @@ func _setup_map() -> void:
 		var sz = map_tex.get_size()
 		_map_width = sz.x
 		_map_height = sz.y
+		ground_bg.size = sz
 		print("[ARPG] 成功載入說話之島地圖：", sz)
 	else:
 		push_warning("[ARPG] 警告：找不到地圖材質！")

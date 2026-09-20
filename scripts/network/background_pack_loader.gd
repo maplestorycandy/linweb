@@ -62,13 +62,20 @@ func _process_next_pack() -> void:
 	
 	# 發起 HTTP 下載
 	_http_request.download_file = save_path
-	var url = _current_pack
+	var url = _get_pack_url(_current_pack)
 	print("[BackgroundPackLoader] 開始後台靜默下載分包: ", url)
 	var err = _http_request.request(url)
 	if err != OK:
 		push_warning("[BackgroundPackLoader] 發起下載請求失敗: %s, 錯誤碼: %d" % [url, err])
 		_is_downloading = false
 		_process_next_pack()
+
+func _get_pack_url(pack_name: String) -> String:
+	if OS.has_feature("web"):
+		var base = JavaScriptBridge.eval("window.location.origin + window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/') + 1)")
+		if base != null and str(base).begins_with("http"):
+			return str(base) + pack_name
+	return "http://localhost:8000/" + pack_name
 
 func _on_request_completed(result: int, response_code: int, headers: PackedStringArray, body: PackedByteArray) -> void:
 	var save_path = "user://" + _current_pack

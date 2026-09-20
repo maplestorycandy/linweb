@@ -56,10 +56,11 @@ jobs:
           godot --headless --export-pack "DLC_Classes" build/web/dlc_classes.pck
           godot --headless --export-pack "DLC_World" build/web/dlc_world.pck
           
-          cp coi-serviceworker.js build/web/coi-serviceworker.js || true
+          # Run Web build optimizer (Gzip streaming wasm + pck, SW unregister)
+          python3 tools/optimize_web_build.py build/web
           
           echo "=== 匯出產物體積清單 ==="
-          ls -lh build/web/*.pck
+          ls -lh build/web/
 
       - name: Upload GitHub Pages Artifact
         uses: actions/upload-pages-artifact@v3
