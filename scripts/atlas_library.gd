@@ -163,12 +163,64 @@ func clear_cache(group: String = "", atlas_name: String = "") -> void :
 			_frame_cache.erase(k)
 
 
+func get_content_bounds(group: String, atlas_name: String, action: String = "") -> Dictionary:
+	var man = get_manifest(group, atlas_name)
+	if man == null or not man.has("frames"):
+		return {"cx": 0.0, "top": 0.0, "bottom": 0.0, "height": 0.0}
+	var frames_dict: Dictionary = man["frames"]
+	var target_act = action
+	if not frames_dict.has(target_act):
+		if frames_dict.has("d0/idle"):
+			target_act = "d0/idle"
+		elif frames_dict.has("sword1_idle"):
+			target_act = "sword1_idle"
+		elif frames_dict.has("idle"):
+			target_act = "idle"
+		else:
+			for k in frames_dict.keys():
+				if (k as String).contains("idle") or (k as String).contains("walk"):
+					target_act = k
+					break
+			if not frames_dict.has(target_act) and frames_dict.size() > 0:
+				target_act = frames_dict.keys()[0]
+	
+	if not frames_dict.has(target_act):
+		return {"cx": 0.0, "top": 0.0, "bottom": 0.0, "height": 0.0}
+	
+	var arr: Array = frames_dict[target_act]
+	var min_x = 1e9
+	var max_x = -1e9
+	var min_y = 1e9
+	var max_y = -1e9
+	for f in arr:
+		var dx = float(f.get("dx", 0.0))
+		var dy = float(f.get("dy", 0.0))
+		var w = float(f.get("w", 0.0))
+		var h = float(f.get("h", 0.0))
+		min_x = min(min_x, dx)
+		max_x = max(max_x, dx + w)
+		min_y = min(min_y, dy)
+		max_y = max(max_y, dy + h)
+	
+	if max_x < min_x:
+		return {"cx": 0.0, "top": 0.0, "bottom": 0.0, "height": 0.0}
+	var cx = (min_x + max_x) * 0.5
+	return {"cx": cx, "top": min_y, "bottom": max_y, "height": max_y - min_y}
+
 func make_sprite(group: String, atlas_name: String, action: String = "idle", fps: float = 8.0, loop: bool = true) -> AnimatedSprite2D:
 	var sf = get_sprite_frames(group, atlas_name, fps, loop)
 	if sf == null:
 		return null
 	var spr = AnimatedSprite2D.new()
 	spr.sprite_frames = sf
+	spr.centered = false
+	
+	var bounds = get_content_bounds(group, atlas_name, action)
+	if bounds["bottom"] > 0.0:
+		spr.offset = Vector2(-bounds["cx"], -bounds["bottom"])
+	else:
+		spr.centered = true
+		
 	var anims = sf.get_animation_names()
 	if anims.size() == 0:
 		return spr
